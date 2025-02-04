@@ -4,7 +4,7 @@ Documentation used in my projects
 ### ARIS
 #### SCHEER
 ##### BASE
-1 [ARISmet24] ARIS Method Manual VERSION 10.0 - SERVICE RELEASE 27 AND HIGHER (10.2024)
+1 [ARISmet24] ARIS Method Manual VERSION 10.0 - SERVICE RELEASE 27 AND HIGHER OCTOBER 2024
 https://bpmbpm.github.io/doc/BPM/ARIS/SCHEER/BASE/10-0sr6_Method_Manual.pdf
 
 Исходный: https://docs.aris.com/10.0.27.0/yaa-method-guide/en/Method-Manual.pdf

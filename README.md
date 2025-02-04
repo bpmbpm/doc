@@ -20,5 +20,6 @@ https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494393/en/1
 # Проблема
 Для ссылок на страницу документа pdf требуется указать #page=xx. Однако известные сервисы: Adobe Document Cloud, Dropbox, Google Drive, 4Shared и [сотня подобных](https://www.reddit.com/r/DataHoarder/comments/vm2xtm/cloud_storage_providers_for_free_storage/) не дают прямых ссылкок на файл pdf. Ссылка на страницу pdf в них не возможна.   
 
-["мы дошли до того, что обсуждается Web3, но на большинстве популярных сервисов мы лишились абсолютно базовой функциональности, чтобы (ух ты!) получить файл по ссылке"] (https://www.reddit.com/r/DataHoarder/comments/yl2b2h/what_online_storage_lets_you_create_a_direct_link). Ничего лучше не придумал, чем создать в отдельном проекте github хранилище документации, используемой в своих проектах. 
+[мы дошли до того, что обсуждается Web3, но на большинстве популярных сервисов мы лишились абсолютно базовой функциональности, чтобы (ух ты!) получить файл по ссылке] (https://www.reddit.com/r/DataHoarder/comments/yl2b2h/what_online_storage_lets_you_create_a_direct_link) 
+Ничего лучше не придумал, чем создать в отдельном проекте github хранилище документации, используемой в своих проектах. 
 Одна из проблем - это ограничение на файл в 25 Мб. Для этого можно использовать bigpdf.11zon.com для compress & split

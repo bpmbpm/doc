@@ -55,3 +55,5 @@ EA: Archimate, C4
 plantUML / [UML sequence-диаграмма](https://habr.com/ru/articles/814769/)
 
 Обзоры нотаций: [1](https://infostart.ru/pm/1435952/)
+## Некоторые проекты
+- [SemanticBPM](https://github.com/bpmbpm/SemanticBPM)

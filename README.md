@@ -37,4 +37,5 @@ VAD, EPC, Дракон, BPMN, UML (Sequence diagram, Activity diagram,  State ma
 Archimate, C4
 
 plantUML / [UML sequence-диаграмма](https://habr.com/ru/articles/814769/)
-[Обзор натаций 1](https://infostart.ru/pm/1435952/)
+
+Обзоры нотаций: [1](https://infostart.ru/pm/1435952/)

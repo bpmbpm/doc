@@ -26,3 +26,9 @@ https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494393/en/1
 Онлайн-редактор для рисования схем [dgrm.net](https://dgrm.net/ru/)
 ## RDF и онтологии
 Визуализация наборов данных RDF [Ontodia](https://github.com/metaphacts/ontodia/). Муромцев, Д., Павлов, Д., Емельянов, Ю., Морозов, А., Раздьяконов, Д. и Галкин, М., 2015. Простой веб-инструмент для визуализации и обмена семантическими данными и онтологиями.  
+## Некоторые нотации
+VAD, EPC, Дракон, BPMN, UMLsequence diagram
+
+Archimate, C4
+
+plantUML / [UML sequence-диаграмма](https://habr.com/ru/articles/814769/)

@@ -30,7 +30,8 @@ https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494393/en/1
 ## Семантические "доски" 
 [ontonet.ru](https://ontonet.ru/)
 ## Linked Data
-### RDF и онтологии
+[Linked Data](https://en.wikipedia.org/wiki/Linked_data)
+### RDF
 Визуализация наборов данных RDF [Ontodia](https://github.com/metaphacts/ontodia/). Муромцев, Д., Павлов, Д., Емельянов, Ю., Морозов, А., Раздьяконов, Д. и Галкин, М., 2015. Простой веб-инструмент для визуализации и обмена семантическими данными и онтологиями.  
 ### SPARQL
 - [Язык запросов SPARQL для RDF](https://web.archive.org/web/20090401192412/http://shcherbak.net/translations/ru_sparql_shcherbak_net.html), перевод.  
@@ -40,6 +41,11 @@ https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494393/en/1
 - [Apache Jena Fuseki ](https://jena.apache.org/documentation/fuseki2/)
 ### LD-Инструменты
 [Semantic Web Development Tools](https://www.w3.org/2001/sw/wiki/Tools)
+### LD-Проекты
+- Semantic Web: 1 [Linked Data Quality of DBpedia, Freebase,OpenCyc, Wikidata, and YAGO](https://www.researchgate.net/publication/315065385_Linked_data_quality_of_DBpedia_Freebase_OpenCyc_Wikidata_and_YAGO)
+- Solid [Social Linked Data](https://ru.wikipedia.org/wiki/Solid_(%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82_%D0%B4%D0%B5%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B2%D1%81%D0%B5%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B9_%D0%BF%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D1%8B))
+### Онтологии
+
 ## Некоторые графические нотации
 BPM: VAD, EPC, [Дракон](https://habr.com/ru/articles/541478/), BPMN, UML (Sequence diagram, Activity diagram,  State machine), ГОСТ 19.701-90 (ИСО 5807-85).
 

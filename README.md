@@ -32,8 +32,9 @@ https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494393/en/1
 ## RDF и онтологии
 Визуализация наборов данных RDF [Ontodia](https://github.com/metaphacts/ontodia/). Муромцев, Д., Павлов, Д., Емельянов, Ю., Морозов, А., Раздьяконов, Д. и Галкин, М., 2015. Простой веб-инструмент для визуализации и обмена семантическими данными и онтологиями.  
 ## Некоторые нотации
-VAD, EPC, Дракон, BPMN, UMLsequence diagram
+VAD, EPC, Дракон, BPMN, UML (Sequence diagram, Activity diagram,  State machine), ГОСТ 19.701-90 (ИСО 5807-85).
 
 Archimate, C4
 
 plantUML / [UML sequence-диаграмма](https://habr.com/ru/articles/814769/)
+[Обзор натаций 1](https://infostart.ru/pm/1435952/)

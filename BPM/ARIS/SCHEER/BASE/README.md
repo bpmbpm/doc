@@ -1,3 +1,3 @@
 # Библия BPM
-- Method
+- Method Manual
 - Method Reference

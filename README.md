@@ -63,3 +63,5 @@ plantUML / [UML sequence-диаграмма](https://habr.com/ru/articles/814769
 - Surrogate-TM [MS Visio](https://github.com/Surrogate-TM/surrogate-tm.github.io/tree/master)
 - nbelyh [github](https://github.com/) ; [unmanagedvisio.com](https://unmanagedvisio.com/about/)
 - bzinchenko [bpmnview](https://github.com/bzinchenko/bpmnview)
+## Интересное
+- EKG: [Enterprise Knowledge Graph Forum](https://www.ekgf.org/) ; [DPROD](https://ekgf.github.io/data-product-spec/dprod.html#normative-references)

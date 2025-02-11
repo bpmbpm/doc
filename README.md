@@ -39,6 +39,8 @@ https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494393/en/1
 - Orbus iServer: [Обзор](https://koptelov.info/orbus-iserver/) ; [Руководство](https://orbus.blob.core.windows.net/ecosystem/user-guides/russian/1%20iS2019%20%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20iServer.pdf) ; ВТБ использует
 ### Некоторые BPMS 
 ARIS ; [fujitsu i-Flow](https://www.fujitsu.com/downloads/SG/fapl/workflow/iflow_whitepaper.pdf) ; 
+#### MegA 
+[mega.com](https://www.mega.com/bmp-business-process-management-tool) ; [ru1](http://mega.mag-records.ru/it-architecture-modeling.html) ; [press](https://mega-bpmi.blogspot.com/)
 ## Некоторые графические нотации
 BPM: VAD, EPC, [Дракон](https://habr.com/ru/articles/541478/), BPMN, UML (Sequence diagram, Activity diagram,  State machine), ГОСТ 19.701-90 (ИСО 5807-85).
 

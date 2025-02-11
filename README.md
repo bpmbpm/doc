@@ -32,7 +32,7 @@ https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494393/en/1
 ## Семантические "доски"
 [ontonet.ru](https://ontonet.ru/)
 ## Linked Data
-[Linked Data](https://en.wikipedia.org/wiki/Linked_data)
+Введение: [wiki](https://en.wikipedia.org/wiki/Linked_data) ; [на примере родословных](https://habr.com/ru/articles/270857/) ; 
 ### RDF
 Визуализация наборов данных RDF [Ontodia](https://github.com/metaphacts/ontodia/). Муромцев, Д., Павлов, Д., Емельянов, Ю., Морозов, А., Раздьяконов, Д. и Галкин, М., 2015. Простой веб-инструмент для визуализации и обмена семантическими данными и онтологиями.  
 ### SPARQL
@@ -40,9 +40,11 @@ https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494393/en/1
 - [SPARQL and SQL, w3.org](https://www.w3.org/2012/Talks/0604-SPARQL-SQL/high-level)
 - Примеры SPARQL: 1 [SPARQL Query Tests](https://www.w3.org/2001/sw/DataAccess/rq23/examples.html) ; 2 [SPARQL example query](https://sparql.uniprot.org/.well-known/sparql-examples/)
 - Примеры SPARQL в rdflib.js (не путать с одноименной для Python) SPARQLToQuery: 1 [linkeddata.github.io](https://linkeddata.github.io/rdflib.js/doc/functions/SPARQLToQuery.html) ; 2 [kursovaya_rabota_2.docx](https://www.kubsu.ru/sites/default/files/users/8735/portfolio/kursovaya_rabota_2_0.docx)
-- [Apache Jena Fuseki ](https://jena.apache.org/documentation/fuseki2/)
+- [Apache Jena Fuseki - SPARQL server](https://jena.apache.org/documentation/fuseki2/)
 ### LD-Инструменты
-[Semantic Web Development Tools](https://www.w3.org/2001/sw/wiki/Tools)
+- [Semantic Web Development Tools](https://www.w3.org/2001/sw/wiki/Tools)
+- js lib: [rdflib.js](https://linkeddata.github.io/rdflib.js/doc/index.html) ;
+- Обзоры js lib: [rdf.js.org](https://rdf.js.org/) ; [w3.org rdfjs](https://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries) ; [libhunt](https://js.libhunt.com/rdflib-js-alternatives)
 ### LD-Проекты
 - Semantic Web: 1 [Linked Data Quality of DBpedia, Freebase,OpenCyc, Wikidata, and YAGO](https://www.researchgate.net/publication/315065385_Linked_data_quality_of_DBpedia_Freebase_OpenCyc_Wikidata_and_YAGO)
 - Solid, Social Linked Data: 1 [wiki](https://ru.wikipedia.org/wiki/Solid_(%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82_%D0%B4%D0%B5%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B2%D1%81%D0%B5%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B9_%D0%BF%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D1%8B) ) ;

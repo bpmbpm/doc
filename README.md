@@ -65,3 +65,4 @@ plantUML / [UML sequence-диаграмма](https://habr.com/ru/articles/814769
 - bzinchenko [bpmnview](https://github.com/bzinchenko/bpmnview)
 ## Интересное
 - EKG: [Enterprise Knowledge Graph Forum](https://www.ekgf.org/) ; [DPROD](https://ekgf.github.io/data-product-spec/dprod.html#normative-references) ; [GraphArch](https://ekgf.github.io/grapharch/) ; [github](https://github.com/EKGF)
+- EKG статьи: [Михаил Галкин, 17](https://www.semanticscholar.org/paper/Enterprise-Knowledge-Graphs%3A-A-Semantic-Approach-in-Galkin-Auer/ab92297e4d12a84d1b3ecb688e43f8cabbb8015d)

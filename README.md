@@ -40,16 +40,12 @@ https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494393/en/1
 ### Некоторые BPMS 
 ARIS ; [fujitsu i-Flow](https://www.fujitsu.com/downloads/SG/fapl/workflow/iflow_whitepaper.pdf) ; 
 #### MegA (BPM \ EA \ GRC)
-[mega.com](https://www.mega.com/bmp-business-process-management-tool) ; [ru1](http://mega.mag-records.ru/it-architecture-modeling.html) ; [press](https://mega-bpmi.blogspot.com/)
+[mega.com](https://www.mega.com/bmp-business-process-management-tool) ; [ru1](http://mega.mag-records.ru/it-architecture-modeling.html) ; [press](https://mega-bpmi.blogspot.com/) ; [hopex-bpm](https://www.mega.com/product-hopex-bpm-pricing)
 ## Некоторые графические нотации
-BPM: VAD, EPC, [Дракон](https://habr.com/ru/articles/541478/), BPMN, UML (Sequence diagram, Activity diagram,  State machine), ГОСТ 19.701-90 (ИСО 5807-85).
-
-EA: Archimate, C4
-
-plantUML / [UML sequence-диаграмма](https://habr.com/ru/articles/814769/)
-
-Обзоры нотаций: [1](https://infostart.ru/pm/1435952/)
-
+- BPM: VAD, EPC, [Дракон](https://habr.com/ru/articles/541478/), BPMN, UML (Sequence diagram, Activity diagram,  State machine), ГОСТ 19.701-90 (ИСО 5807-85).
+- EA: Archimate, C4
+- code to dia: 1 plantUML / [UML sequence-диаграмма](https://habr.com/ru/articles/814769/) ;
+- Обзоры нотаций: [1](https://infostart.ru/pm/1435952/)
 # Закладки Linked Data 
 ## Семантические "доски"
 [ontonet.ru](https://ontonet.ru/)

@@ -58,7 +58,7 @@ plantUML / [UML sequence-диаграмма](https://habr.com/ru/articles/814769
 
 Обзоры нотаций: [1](https://infostart.ru/pm/1435952/)
 ## Некоторые проекты
-- bpmpbm [SemanticBPM](https://github.com/bpmbpm/SemanticBPM) ; [habr@itGuevara](https://habr.com/ru/users/itGuevara/articles/)
+- bpmbpm [SemanticBPM](https://github.com/bpmbpm/SemanticBPM) ; [habr@itGuevara](https://habr.com/ru/users/itGuevara/articles/)
 - prozion [semanter](https://codeberg.org/prozion/semanter) ; [github](https://github.com/prozion)
 - Surrogate-TM [about Microsoft Visio](https://github.com/Surrogate-TM/surrogate-tm.github.io/tree/master)
 - nbelyh [github](https://github.com/) ; [unmanagedvisio.com](https://unmanagedvisio.com/about/)

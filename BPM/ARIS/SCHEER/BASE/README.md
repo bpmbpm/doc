@@ -1,3 +1,3 @@
 # Библия BPM
-- Method Manual
-- Method Reference
+- ARIS Method Manual
+- ARIS Method Reference

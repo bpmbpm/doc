@@ -25,10 +25,18 @@ https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494393/en/1
 ## Онтология предприятия
 [Ян Дитц, Ганс Малдер. Онтология предприятия. Человекоцентричный подход к пониманию сущности организации](https://ontograph.ru/ontologiya-predpriyatiya-cheloveko-tsentrichnyy-podhod-k-ponimaniyu-suschnosti-organizatsii/)
 # Закладки
-## Графические редакторы
+## Графические векторные редакторы
 - основные: visio, drawio, yEd, 
 - SVG:
 - Другие: 1 Онлайн-редактор для рисования схем [dgrm.net](https://dgrm.net/ru/)
+## BPM-системы / инструменты
+### visio-based BPM
+- Busines Studio
+- BPM-X: [osp.ru(https://www.osp.ru/) ; полный вариант: [часть 1](https://learn.microsoft.com/ru-ru/archive/blogs/visio_ru/108) ,  [часть 2](https://learn.microsoft.com/ru-ru/archive/blogs/visio_ru/108-2) , [часть 3](https://learn.microsoft.com/ru-ru/archive/blogs/visio_ru/108-3)
+- process4.biz: [sourceforge](https://sourceforge.net/) ; [github](https://github.com/process4/docs/tree/master) ; [press](https://www.pressetext.com/news/yaveon-tochter-process4biz-als-microsoft-visio-partner-des-jahres-ausgezeichnet.html)
+- Enterprise Explorer
+- Orbus iServer: [Обзор](https://koptelov.info/orbus-iserver/) ; [Руководство](https://orbus.blob.core.windows.net/ecosystem/user-guides/russian/1%20iS2019%20%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20iServer.pdf) ; ВТБ использует
+
 ## Семантические "доски"
 [ontonet.ru](https://ontonet.ru/)
 ## Linked Data

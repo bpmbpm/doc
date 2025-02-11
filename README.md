@@ -26,8 +26,10 @@ https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494393/en/1
 [Ян Дитц, Ганс Малдер. Онтология предприятия. Человекоцентричный подход к пониманию сущности организации](https://ontograph.ru/ontologiya-predpriyatiya-cheloveko-tsentrichnyy-podhod-k-ponimaniyu-suschnosti-organizatsii/)
 # Закладки
 ## Графические редакторы
-Онлайн-редактор для рисования схем [dgrm.net](https://dgrm.net/ru/)
-## Семантические "доски" 
+- основные: visio, drawio, yEd, 
+- SVG:
+- Другие: 1 Онлайн-редактор для рисования схем [dgrm.net](https://dgrm.net/ru/)
+## Семантические "доски"
 [ontonet.ru](https://ontonet.ru/)
 ## Linked Data
 [Linked Data](https://en.wikipedia.org/wiki/Linked_data)
@@ -56,4 +58,8 @@ plantUML / [UML sequence-диаграмма](https://habr.com/ru/articles/814769
 
 Обзоры нотаций: [1](https://infostart.ru/pm/1435952/)
 ## Некоторые проекты
-- [SemanticBPM](https://github.com/bpmbpm/SemanticBPM)
+- bpmpbm [SemanticBPM](https://github.com/bpmbpm/SemanticBPM) ; [habr@itGuevara](https://habr.com/ru/users/itGuevara/articles/)
+- prozion [semanter](https://codeberg.org/prozion/semanter) ; [github](https://github.com/prozion)
+- Surrogate-TM [about Microsoft Visio](https://github.com/Surrogate-TM/surrogate-tm.github.io/tree/master)
+- nbelyh [https://github.com](https://github.com/) ; [unmanagedvisio.com](https://unmanagedvisio.com/about/)
+- bzinchenko [bpmnview](https://github.com/bzinchenko/bpmnview)

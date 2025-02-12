@@ -79,6 +79,7 @@ txt
 ## Некоторые проекты
 - bpmbpm [SemanticBPM](https://github.com/bpmbpm/SemanticBPM) ; [habr@itGuevara](https://habr.com/ru/users/itGuevara/articles/)
 - prozion [semanter](https://codeberg.org/prozion/semanter) ; [github](https://github.com/prozion)
+- smer44 [Графовый семантический движок](https://github.com/smer44/graph-semantical-engine)
 - Surrogate-TM [MS Visio](https://github.com/Surrogate-TM/surrogate-tm.github.io/tree/master)
 - nbelyh [github](https://github.com/) ; [unmanagedvisio.com](https://unmanagedvisio.com/about/)
 - bzinchenko [bpmnview](https://github.com/bzinchenko/bpmnview)

@@ -60,7 +60,7 @@ ARIS ; [fujitsu i-Flow](https://www.fujitsu.com/downloads/SG/fapl/workflow/iflow
 - Примеры SPARQL в rdflib.js (не путать с одноименной для Python) SPARQLToQuery: 1 [linkeddata.github.io](https://linkeddata.github.io/rdflib.js/doc/functions/SPARQLToQuery.html) ; 2 [kursovaya_rabota_2.docx](https://www.kubsu.ru/sites/default/files/users/8735/portfolio/kursovaya_rabota_2_0.docx)
 - [Apache Jena Fuseki - SPARQL server](https://jena.apache.org/documentation/fuseki2/)
 ### LD-Инструменты
-- [Semantic Web Development Tools](https://www.w3.org/2001/sw/wiki/Tools)
+- Semantic Web Development Tools: [www.w3.org](https://www.w3.org/2001/sw/wiki/Tools) ; [search "rdf online"](https://www.google.com/search?q=rdf+online&oq=rdf+online) , [RDF grapher](https://www.ldf.fi/service/rdf-grapher) , [easyrdf.org](https://www.easyrdf.org/converter) ;
 - js lib: [rdflib.js](https://linkeddata.github.io/rdflib.js/doc/index.html) ;
 - Обзоры js lib: [rdf.js.org](https://rdf.js.org/) ; [w3.org rdfjs](https://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries) ; [libhunt](https://js.libhunt.com/rdflib-js-alternatives)
 ### LD-Проекты
@@ -68,6 +68,9 @@ ARIS ; [fujitsu i-Flow](https://www.fujitsu.com/downloads/SG/fapl/workflow/iflow
 - Solid, Social Linked Data: 1 [wiki](https://ru.wikipedia.org/wiki/Solid_(%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82_%D0%B4%D0%B5%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B2%D1%81%D0%B5%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B9_%D0%BF%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D1%8B) ) ;
 2 [SOLID project](https://habr.com/ru/articles/539170/) (EAV модель ) ;
 ### Онтологии
+# DOC - разделы отдельных проектов
+## DOC - раздел Semantic BPM
+txt
 # Разное
 ## Некоторые проекты
 - bpmbpm [SemanticBPM](https://github.com/bpmbpm/SemanticBPM) ; [habr@itGuevara](https://habr.com/ru/users/itGuevara/articles/)

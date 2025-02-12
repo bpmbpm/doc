@@ -15,10 +15,12 @@ Camunda и подобные это исключительно моделиров
 3. Зачем Semantic BPM. Сейчас «ARISов» не стало ([MegA](https://www.mega.com/bmp-business-process-management-tool) и еще пары десятков подобных), а его ru-аналоги, например, Sila Union, хуже и дороже. Хотя ARIS - подобную систему сделать и не так сложно, как может показаться.
 
 Однако не хотелось «тупо» повторить ARIS, а хотелось с заменой его семантического «поршневого движка» (см. таблички с семантикой в ARIS Method_Reference) сразу на реактивный (Linked Data: OWL\RDF\SPARQL). 
-Как-то так, если кратко, а подробнее см. две статьи на хабре с приставкой в назывании «Semantic BPM». Идейно концепт «BPM vs Semantic BPM» аналогичен концепту: «MediaWiki vs Semantic MediaWiki» или «Web vs Semantic Web».
+
+Идейно концепт «BPM vs Semantic BPM» аналогичен концепту: «MediaWiki vs Semantic MediaWiki» или «Web vs Semantic Web».
 4. «более интересная задача - как раз описать и нарисовать схему процесса НЕ ПРИБЕГАЯ к визуальным редакторам». 
 
-Это тоже проектом [Semantic BPM](https://github.com/bpmbpm/SemanticBPM/) предусматривается, см. "AutoVAD from rdf". Более того, ранее чем начали применяться Diagram as Code: plantUML \ graphviz-dot \ mermaid в «древний» ARIS был встроен Smart Design, см. [ВРМ. Смарт-инструменты «Таблица -> Схема» для формализации бизнес-процессов. Рестайлинг ARIS SmartDesign](https://habr.com/ru/articles/810851/) 
+Это тоже проектом [Semantic BPM](https://github.com/bpmbpm/SemanticBPM/) предусматривается, см. "AutoVAD from rdf". Более того, ранее чем начали применяться Diagram as Code: plantUML \ graphviz-dot \ mermaid в «древний» ARIS был встроен Smart Design, см. [ВРМ. Смарт-инструменты «Таблица -> Схема» для формализации бизнес-процессов. Рестайлинг ARIS SmartDesign](https://habr.com/ru/articles/810851/). 
+
 Отмечу, что крупные ARIS-подобные системы давно позиционируются как «три в одном флаконе» BPM \ EA \ GRC, а некоторые (MegA) добавляют и четвертую компоненту «Data Gov». 
 data gov  указывает, что это также инструмент управления качеством данных. В camunda и т п. нет инструментов ни про модели данных, ни Docflow и т п. Там только про workflow и то очень поверхностно (без связок паспортов процессов и т. п.).
 

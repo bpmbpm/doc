@@ -52,7 +52,8 @@ ARIS ; [fujitsu i-Flow](https://www.fujitsu.com/downloads/SG/fapl/workflow/iflow
 ## Linked Data
 Введение: [wiki](https://en.wikipedia.org/wiki/Linked_data) ; [на примере родословных](https://habr.com/ru/articles/270857/) ; 
 ### RDF
-Визуализация наборов данных RDF [Ontodia](https://github.com/metaphacts/ontodia/). Муромцев, Д., Павлов, Д., Емельянов, Ю., Морозов, А., Раздьяконов, Д. и Галкин, М., 2015. Простой веб-инструмент для визуализации и обмена семантическими данными и онтологиями.  
+- [rdf11-primer](https://www.w3.org/TR/rdf11-primer/)
+- Визуализация наборов данных RDF [Ontodia](https://github.com/metaphacts/ontodia/). Муромцев, Д., Павлов, Д., Емельянов, Ю., Морозов, А., Раздьяконов, Д. и Галкин, М., 2015. Простой веб-инструмент для визуализации и обмена семантическими данными и онтологиями.  
 ### SPARQL
 - [Язык запросов SPARQL для RDF](https://web.archive.org/web/20090401192412/http://shcherbak.net/translations/ru_sparql_shcherbak_net.html), перевод.  
 - [SPARQL and SQL, w3.org](https://www.w3.org/2012/Talks/0604-SPARQL-SQL/high-level)

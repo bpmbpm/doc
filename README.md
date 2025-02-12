@@ -75,8 +75,8 @@ ARIS ; [fujitsu i-Flow](https://www.fujitsu.com/downloads/SG/fapl/workflow/iflow
 [Руководство по оформлению Markdown файлов](https://gist.github.com/Jekins/2bf2d0638163f1294637)
 # DOC - разделы отдельных проектов
 ## DOC - раздел Semantic BPM
-### FAQ1
-
+### FAQ 
+[FAQsemBPM](https://github.com/bpmbpm/doc/blob/main/FAQ/FAQsemBPM.md)
 # Разное
 ## Некоторые проекты
 - bpmbpm [SemanticBPM](https://github.com/bpmbpm/SemanticBPM) ; [habr@itGuevara](https://habr.com/ru/users/itGuevara/articles/)

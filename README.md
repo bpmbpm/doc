@@ -16,8 +16,8 @@ pdf [Исходный:](https://docs.aris.com/10.0.27.0/yaa-method-guide/en/Meth
 [мы дошли до того, что обсуждается Web3, но на большинстве популярных сервисов мы лишились абсолютно базовой функциональности, чтобы (ух ты!) получить файл по ссылке](https://www.reddit.com/r/DataHoarder/comments/yl2b2h/what_online_storage_lets_you_create_a_direct_link/) 
 Ничего лучше не придумал, чем создать в отдельном проекте github хранилище документации, используемой в своих проектах. 
 Одна из проблем - это ограничение у github на загрузку файл более 25 Мб. Для уменьшения размера использовал: compress на ilovepdf.com & split на bigpdf.11zon.com
-## Поиск книг
-### Онтология предприятия
+### Поиск книг
+#### Онтология предприятия
 [Ян Дитц, Ганс Малдер. Онтология предприятия. Человекоцентричный подход к пониманию сущности организации](https://ontograph.ru/ontologiya-predpriyatiya-cheloveko-tsentrichnyy-podhod-k-ponimaniyu-suschnosti-organizatsii/)
 # Закладки BPM 
 ## Графические векторные редакторы

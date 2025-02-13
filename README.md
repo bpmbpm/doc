@@ -4,15 +4,13 @@ Documentation used in my projects
 ### ARIS
 #### SCHEER
 ##### BASE
-1 [ARISmet24] ARIS Method Manual VERSION 10.0 - SERVICE RELEASE 27 AND HIGHER OCTOBER 2024
-https://bpmbpm.github.io/doc/BPM/ARIS/SCHEER/BASE/10-0sr6_Method_Manual.pdf
-
-Исходный: https://docs.aris.com/10.0.27.0/yaa-method-guide/en/Method-Manual.pdf
+1 [ARISmet24] [ARIS Method Manual VERSION 10.0 - SERVICE RELEASE 27 AND HIGHER OCTOBER 2024](https://bpmbpm.github.io/doc/BPM/ARIS/SCHEER/BASE/10-0sr6_Method_Manual.pdf)
+pdf [Исходный:](https://docs.aris.com/10.0.27.0/yaa-method-guide/en/Method-Manual.pdf)
 
 2 [ARISMR17] ARIS Method Reference Version 10.0 - Service Release 3  December 2017
 https://bpmbpm.github.io/doc/BPM/ARIS/SCHEER/BASE/ARIS_10-0sr3_Method_Reference.pdf
 
-on-line (на раздел VAD)
+on-line Method Reference (на раздел VAD)
 https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494393/en/1
 
 # Проблемы

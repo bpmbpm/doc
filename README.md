@@ -8,7 +8,9 @@ Documentation used in my projects
 pdf [Исходный:](https://docs.aris.com/10.0.27.0/yaa-method-guide/en/Method-Manual.pdf)
 2. [ARISMR17] [ARIS Method Reference Version 10.0 - Service Release 3  December 2017](https://bpmbpm.github.io/doc/BPM/ARIS/SCHEER/BASE/ARIS_10-0sr3_Method_Reference.pdf) pdf
 3. [on-line Method Reference](https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494393/en/1) (на раздел VAD)
-
+## IT
+### CIO
+Учебник 4CIO
 ## Проблемы
 ### Прямые ссылки
 Для ссылок на страницу документа pdf требуется указать #page=xx. Однако известные сервисы: Adobe Document Cloud, Dropbox, Google Drive, 4Shared и [сотня подобных](https://www.reddit.com/r/DataHoarder/comments/vm2xtm/cloud_storage_providers_for_free_storage/) не дают прямых ссылкок на файл pdf. Ссылка на страницу pdf в них не возможна.   

@@ -40,6 +40,7 @@ ARIS ; [fujitsu i-Flow](https://www.fujitsu.com/downloads/SG/fapl/workflow/iflow
 - EA: Archimate, C4
 - code to dia: 1 plantUML / [UML sequence-диаграмма](https://habr.com/ru/articles/814769/) ;
 - Обзоры нотаций: [1](https://infostart.ru/pm/1435952/)
+- Редкие: [turtle](https://www.surajmech.com/2020/03/turtle-diagram-in-iatf-169492016.html)
 # Закладки Linked Data 
 ## Семантические "доски"
 [ontonet.ru](https://ontonet.ru/)

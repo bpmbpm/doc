@@ -90,6 +90,7 @@ ARIS ; [fujitsu i-Flow](https://www.fujitsu.com/downloads/SG/fapl/workflow/iflow
 - nbelyh [github](https://github.com/) ; [unmanagedvisio.com](https://unmanagedvisio.com/about/)
 - bzinchenko [bpmnview](https://github.com/bzinchenko/bpmnview)
 ## Интересное
+### Enterprise Knowledge Graph
 - EKG: [Enterprise Knowledge Graph Forum](https://www.ekgf.org/) ; [DPROD](https://ekgf.github.io/data-product-spec/dprod.html#normative-references) ; [GraphArch](https://ekgf.github.io/grapharch/) ; [github](https://github.com/EKGF)
 - EKG статьи: [Михаил Галкин, 17](https://www.semanticscholar.org/paper/Enterprise-Knowledge-Graphs%3A-A-Semantic-Approach-in-Galkin-Auer/ab92297e4d12a84d1b3ecb688e43f8cabbb8015d)
 - semantic CMDB: [RDF-based CMDB](https://habr.com/ru/articles/854240/comments/#comment_27495234) ;

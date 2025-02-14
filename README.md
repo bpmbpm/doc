@@ -62,7 +62,7 @@ ARIS ; [fujitsu i-Flow](https://www.fujitsu.com/downloads/SG/fapl/workflow/iflow
 - Semantic Web Development Tools: [www.w3.org](https://www.w3.org/2001/sw/wiki/Tools) ; [search "rdf online"](https://www.google.com/search?q=rdf+online&oq=rdf+online) , [RDF grapher](https://www.ldf.fi/service/rdf-grapher) , [easyrdf.org](https://www.easyrdf.org/converter) ;
 - часть 2: [rdf-visualizer](https://issemantic.net/rdf-visualizer) ; [tableconvert](https://tableconvert.com/rdf-generator) ;
 - Validator: [TurtleValidator](https://github.com/IDLabResearch/TurtleValidator) ; [w3.org](https://www.w3.org/RDF/Validator/) ;
-- js lib: [rdflib.js](https://linkeddata.github.io/rdflib.js/doc/index.html) ;
+- js lib: [rdflib.js](https://linkeddata.github.io/rdflib.js/doc/index.html) ; [n3](https://www.npmjs.com/package/n3) ; [N3-components](https://github.com/N3-components/N3-components)
 - Обзоры js lib: [rdf.js.org](https://rdf.js.org/) ; [w3.org rdfjs](https://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries) ; [libhunt](https://js.libhunt.com/rdflib-js-alternatives)
 ### LD-Проекты
 - Semantic Web: 1 [Linked Data Quality of DBpedia, Freebase,OpenCyc, Wikidata, and YAGO](https://www.researchgate.net/publication/315065385_Linked_data_quality_of_DBpedia_Freebase_OpenCyc_Wikidata_and_YAGO)

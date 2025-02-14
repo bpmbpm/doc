@@ -73,7 +73,7 @@ ARIS ; [fujitsu i-Flow](https://www.fujitsu.com/downloads/SG/fapl/workflow/iflow
 ## Закладки github
 [Руководство по оформлению Markdown файлов](https://gist.github.com/Jekins/2bf2d0638163f1294637)
 ## Network
-Блокировки: [openvpn](https://www.pvsm.ru/cat/openvpn)) ; [habr](https://www.pvsm.ru/openvpn/410582) ; [vc](https://vc.ru/tech/1737675-luchshie-besplatnye-vpn-dlya-rossii-v-2025) ;
+Блокировки: [openvpn](https://www.pvsm.ru/cat/openvpn) ; [habr](https://www.pvsm.ru/openvpn/410582) ; [vc](https://vc.ru/tech/1737675-luchshie-besplatnye-vpn-dlya-rossii-v-2025) ;
 # DOC - разделы отдельных проектов
 ## DOC - раздел Semantic BPM
 ### FAQ 

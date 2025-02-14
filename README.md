@@ -79,8 +79,8 @@ ARIS ; [fujitsu i-Flow](https://www.fujitsu.com/downloads/SG/fapl/workflow/iflow
 Блокировки: [openvpn](https://www.pvsm.ru/cat/openvpn) ; [habr](https://www.pvsm.ru/openvpn/410582) ; [vc](https://vc.ru/tech/1737675-luchshie-besplatnye-vpn-dlya-rossii-v-2025) ;
 # DOC - разделы отдельных проектов
 ## DOC - раздел Semantic BPM
-### FAQ 
-[FAQsemBPM](https://github.com/bpmbpm/doc/blob/main/FAQ/FAQsemBPM.md)
+### FAQs 
+[FAQ к проекту Semantic BPM](https://github.com/bpmbpm/doc/blob/main/FAQ/FAQsemBPM.md)
 # Разное
 ## Некоторые проекты
 - bpmbpm [SemanticBPM](https://github.com/bpmbpm/SemanticBPM) ; [habr@itGuevara](https://habr.com/ru/users/itGuevara/articles/)

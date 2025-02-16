@@ -25,8 +25,9 @@ pdf [Исходный:](https://docs.aris.com/10.0.27.0/yaa-method-guide/en/Meth
 # Закладки BPM 
 ## Графические векторные редакторы
 - основные: visio, drawio, yEd, 
-- SVG: некоторые lib [deeplook](https://github.com/deeplook/svglib) ; 
-- Другие: 1 Онлайн-редактор для рисования схем [dgrm.net](https://dgrm.net/ru/)
+- SVG: некоторые lib [deeplook - конвертирование SVG в другие форматы](https://github.com/deeplook/svglib) ; 
+- Другие: 1 Онлайн-редактор для рисования схем [dgrm.net](https://dgrm.net/ru/) ;
+- [Предлагаю еще "в уме держать"...](https://github.com/bpmbpm/SemanticBPM/blob/main/docs/implementations.md#upd1-bpmbpm)
 ## BPM-системы / инструменты
 ### visio-based BPM
 - Busines Studio

@@ -45,6 +45,21 @@ ARIS ; [fujitsu i-Flow](https://www.fujitsu.com/downloads/SG/fapl/workflow/iflow
 - code to dia: 1 plantUML / [UML sequence-диаграмма](https://habr.com/ru/articles/814769/) ;
 - Обзоры нотаций: [1](https://infostart.ru/pm/1435952/)
 - Редкие: [turtle](https://www.surajmech.com/2020/03/turtle-diagram-in-iatf-169492016.html)
+# Закладки EA
+## Классификация Архитектуры (Enterprise Architecture)
+Обзоры:
+- [Tinkoff](https://tellmeabout.tech/architecture-decisions-6cff1a6bac1a)
+## Примеры EA
+Opengroup case-study-models:
+- [Общая](https://pubs.opengroup.org/architecture/case-study-models/)
+- [ArchiSurance opengroup](https://pubs.opengroup.org/architecture/case-study-models/archisurance-html/)
+- [ArchiSurance github](https://github.com/archimate-models/archisurance) ; [archimate-models.github.io](https://archimate-models.github.io/archisurance/)
+- [pdf](https://www.uio.no/studier/emner/matnat/ifi/INF5120/v18/Resources/archisurance-case-study.pdf)
+- [ArchiMetal opengroup](https://pubs.opengroup.org/architecture/case-study-models/archimetal-html/)
+
+Другие примеры:
+- [Простая Enterprise Architecture. Архитектура компании садоводов](https://habr.com/ru/articles/726428/)
+- Nepal
 # Закладки Linked Data 
 ## Семантические "доски"
 [ontonet.ru](https://ontonet.ru/)

@@ -74,6 +74,8 @@ Opengroup case-study-models:
 [ontonet.ru](https://ontonet.ru/)
 ## Linked Data
 Введение: [wiki](https://en.wikipedia.org/wiki/Linked_data) ; [на примере родословных](https://habr.com/ru/articles/270857/) ; 
+### Книги
+-[Сергей Горшков, Введение в онтологическое моделирование ревизия 2.4](https://trinidata.ru/files/SemanticIntro.pdf)
 ### RDF
 - [rdf11-primer](https://www.w3.org/TR/rdf11-primer/)
 - Визуализация наборов данных RDF [Ontodia](https://github.com/metaphacts/ontodia/). Муромцев, Д., Павлов, Д., Емельянов, Ю., Морозов, А., Раздьяконов, Д. и Галкин, М., 2015. Простой веб-инструмент для визуализации и обмена семантическими данными и онтологиями.

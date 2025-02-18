@@ -25,6 +25,8 @@ https://github.com/bpmbpm/doc/blob/main/BPM/ARIS/SCHEER/BASE/10-0sr6_Method_Manu
 а соответсвующую страницу Github Pages (bpmbpm.github.io): 
 https://bpmbpm.github.io/doc/BPM/ARIS/SCHEER/BASE/10-0sr6_Method_Manual.pdf#page=32
 Будет показана: "4.1.1.1 Function tree"
+### "Диверсии"
+Также склад материалов решает проблему удаления и перкладывания материалов на внешних источниках. Например, ARIS Method Manual и Method Reference годами лежали на постоянных ссылках docs.aris.com, но потом там зачем-то поперекладывали эти книжки и прежние ссылки перестали работать.  
 ### Поиск книг
 #### Онтология предприятия
 - [Ян Дитц, Ганс Малдер. Онтология предприятия. Человекоцентричный подход к пониманию сущности организации](https://ontograph.ru/ontologiya-predpriyatiya-cheloveko-tsentrichnyy-podhod-k-ponimaniyu-suschnosti-organizatsii/)

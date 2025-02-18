@@ -122,4 +122,5 @@ Opengroup case-study-models:
 - EKG статьи: [Михаил Галкин, 17](https://www.semanticscholar.org/paper/Enterprise-Knowledge-Graphs%3A-A-Semantic-Approach-in-Galkin-Auer/ab92297e4d12a84d1b3ecb688e43f8cabbb8015d)
 - semantic CMDB: [RDF-based CMDB](https://habr.com/ru/articles/854240/comments/#comment_27495234) ;
 ### Стандартизаторы
-- OMG (BPMN, UML); OpenGoup(TOGAF)
+- OMG (BPMN, UML); OpenGoup(TOGAF, ArchiMate)
+- W3C (LD, LOD, Semantic Web)

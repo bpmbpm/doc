@@ -121,6 +121,9 @@ Opengroup case-study-models:
 - EKG: [Enterprise Knowledge Graph Forum](https://www.ekgf.org/) ; [DPROD](https://ekgf.github.io/data-product-spec/dprod.html#normative-references) ; [GraphArch](https://ekgf.github.io/grapharch/) ; [github](https://github.com/EKGF)
 - EKG статьи: [Михаил Галкин, 17](https://www.semanticscholar.org/paper/Enterprise-Knowledge-Graphs%3A-A-Semantic-Approach-in-Galkin-Auer/ab92297e4d12a84d1b3ecb688e43f8cabbb8015d)
 - semantic CMDB: [RDF-based CMDB](https://habr.com/ru/articles/854240/comments/#comment_27495234) ;
+### К Semantic BPM
+- [Иллюстрации](https://github.com/bpmbpm/doc/blob/main/BPM/semantic/README.md)
+- [SemanticBPM / semantic ARIS](https://github.com/bpmbpm/SemanticBPM) 
 ### Стандартизаторы
 - OMG (BPMN, UML); OpenGoup(TOGAF, ArchiMate)
 - W3C (LD, LOD, Semantic Web)

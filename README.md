@@ -123,7 +123,7 @@ Opengroup case-study-models:
 - semantic CMDB: [RDF-based CMDB](https://habr.com/ru/articles/854240/comments/#comment_27495234) ;
 ### К Semantic BPM
 - [Иллюстрации](https://github.com/bpmbpm/doc/blob/main/BPM/semantic/README.md)
-- Семантическое предприятие [проект SemanticBPM / EA, semantic ARIS](https://github.com/bpmbpm/SemanticBPM) 
+- Семантическое предприятие [проект Semantic BPM / EA, semantic ARIS](https://github.com/bpmbpm/SemanticBPM) 
 ### Стандартизаторы
 - OMG (BPMN, UML); OpenGoup(TOGAF, ArchiMate)
 - W3C (LD, LOD, Semantic Web)

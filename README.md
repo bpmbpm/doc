@@ -125,5 +125,5 @@ Opengroup case-study-models:
 - [Иллюстрации](https://github.com/bpmbpm/doc/blob/main/BPM/semantic/README.md)
 - Семантическое предприятие [проект Semantic BPM / EA, semantic ARIS](https://github.com/bpmbpm/SemanticBPM) 
 ### Стандартизаторы
-- OMG (BPMN, UML); OpenGoup(TOGAF, ArchiMate)
+- OMG (BPMN, UML); OpenGoup (TOGAF, ArchiMate)
 - W3C (LD, LOD, Semantic Web)

@@ -1,0 +1,33 @@
+<svg width="700" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect id="box1" x="50" y="50" width="200" height="100" fill="lightblue" />
+  <rect id="box2" x="400" y="150" width="200" height="100" fill="lightgreen" />
+  <!-- свойства прямоугольников в отдельный файл  -->
+  <g id="connectors"></g>
+
+  <script>
+  // убрать в отдельный file.js
+    function createConnector(id1, id2) {
+      const box1 = document.getElementById(id1); // id1
+      const box2 = document.getElementById(id2);
+
+      const x1 = parseFloat(box1.getAttribute('x')) + box1.width.baseVal.value; // Правый край первого
+  //    const x1 = parseFloat(box1.getAttribute('x')) + box1.width.baseVal.value / 2; 
+      const y1 = parseFloat(box1.getAttribute('y')) + box1.height.baseVal.value / 2; // Середина высоты первого
+      const x2 = parseFloat(box2.getAttribute('x')) + 0;  // Левый край второго
+  //     const x2 = parseFloat(box2.getAttribute('x')) + box2.width.baseVal.value / 2;  
+      const y2 = parseFloat(box2.getAttribute('y')) + box2.height.baseVal.value / 2;
+
+      const connector = document.createElementNS("http://www.w3.org/2000/svg", "line");
+      connector.setAttribute("x1", x1);
+      connector.setAttribute("y1", y1);
+      connector.setAttribute("x2", x2);
+      connector.setAttribute("y2", y2);
+      connector.setAttribute("stroke", "black");
+      connector.setAttribute("stroke-width", "2");
+
+      document.getElementById('connectors').appendChild(connector);
+    }
+
+    createConnector('box1', 'box2');
+  </script>
+</svg>

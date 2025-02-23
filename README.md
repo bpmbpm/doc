@@ -1,4 +1,4 @@
-Documentation used in my projects: [SemanticBPM](https://github.com/bpmbpm/SemanticBPM)
+Documentation used in my projects: [SemanticBPM](https://github.com/bpmbpm/SemanticBPM) ; [doc-раздел к нему](https://github.com/bpmbpm/doc/tree/main/Project/SemanticBPM) ; [github.io](https://bpmbpm.github.io/doc/)
 # 1 Оглавление библиотеки
 ## BPM
 ### ARIS
@@ -125,4 +125,5 @@ Opengroup case-study-models:
 - Семантическое предприятие или [проект Semantic BPM](https://github.com/bpmbpm/SemanticBPM) - "он же" semantic EA, semantic ARIS.
 - DOC-раздел на [bpmbpm/DOC](https://github.com/bpmbpm/doc/tree/main/Project/SemanticBPM) к проекту Semantic BPM
 - [Иллюстрации к общему представлению семантики, понятю "знание" и семантики в бизнес-процессах](https://github.com/bpmbpm/doc/blob/main/BPM/semantic/README.md)
+
 

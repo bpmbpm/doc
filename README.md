@@ -1,4 +1,4 @@
-Documentation used in my projects
+Documentation used in my projects: [SemanticBPM](https://github.com/bpmbpm/SemanticBPM)
 # 1 Оглавление библиотеки
 ## BPM
 ### ARIS

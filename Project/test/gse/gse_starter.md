@@ -8,13 +8,13 @@
 >    На моем компьютере административно заблокирована командная строка **cmd.exe**, а также установлено две версии **PowerShell**.    
 >    По умолчанию, терминал пытается запуститься в устаревшей версии, процесс длится 10-15 минут и завершается неудачно.    
 >    Для того, чтобы запустить новую версию **PowerShell**, нажмите на кнопку `˅` (крайнюю справа).
->    ![Выбор терминала](https://github.com/bpmbpm/SemanticBPM/blob/main/sandbox/onto/pycharm_term.png)    
+>    ![Выбор терминала](pycharm_term.png)    
 >    Выберите пункт меню **PowerShell**
 5. Далее перейдите в папку с репозиторием, введя команду `cd <путь>\graph-semantical-engine-main\graph-semantical-engine-main`
 6. Далее введите команду `python -m gse.gui`
 # Работа с графическим семантическим движком
 После выполнения пунктов 3-6, открывается окно **tk**.    
-![Окно tk](https://github.com/bpmbpm/SemanticBPM/blob/main/sandbox/onto/gse.png)    
+![Окно tk](gse.png)    
 a. В появившемся окне **tk**, выберите меню **File** -> **Open**    
 b. В окне проводника выберите образцы схем в папке `<путь>\graph-semantical-engine-main\graph-semantical-engine-main\gse\examples`    
 c. Горячие клавиши для основных манипуляций с элементами схемы можно найти в меню **Help** -> **Keymap**    

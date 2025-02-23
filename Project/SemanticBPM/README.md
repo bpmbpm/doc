@@ -1,7 +1,7 @@
 В папке doc/Project/SemanticBPM складываем материалы - рассуждения и теоретические аспекты к проекту [SemanticBPM](https://github.com/bpmbpm/SemanticBPM) чтобы "разгрузить" его от этого.  
 ## Основные:
 ### Методология, ARIS - подобная метамодель [папка method](https://github.com/bpmbpm/doc/blob/main/Project/SemanticBPM/method/README.md)
-### Основной GUI (design/mainGUI.md)
+### [Основной GUI](design/mainGUI.md)
 
 ## Второстепенные
 LD:

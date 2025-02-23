@@ -14,4 +14,4 @@
 Можно добавлять свои To-Do List ...
 
 ## Завершено:
-[Archive](https://github.com/bpmbpm/SemanticBPM/blob/main/misc/TODOsemBPMarc.md)
+[Archive](TODOsemBPMarc.md)

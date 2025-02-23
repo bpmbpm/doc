@@ -1,5 +1,13 @@
 # FAQ к проекту [Semantic BPM](https://github.com/bpmbpm/SemanticBPM/)
-## A1 «Вопрос основной - а нахрена он нужен, этот ваш проект?»
+## A1 Смежные технологии и заимствование
+### Базовые (родители)
+Semantic BPM это скрещевание двух технологий \ инструментов BPM (business process management) и LD (Linked Data).  
+В существующих BPM-системах нет стандартизованного семантического движка, а только проприетарный, например, в ARIS - см. [Method_Reference.pdf](https://github.com/bpmbpm/doc/tree/main/BPM/ARIS/SCHEER/BASE). Когда говорим про BPM-системы, то подразумеваем, что поддержка в них нотаций типа C4 и ArchiMate делает их EA-системами. Т.е. Enterprise Architecture и BPM-системы по сути это одни и теже системы (инструменты с "разной насадкой"): в одних процессные нотации, в других представления архитектур ИТ-систем. Соответсвенно Semantic Enterprise Architecture это часть того же EKG.
+
+В существующих LD-системах нет возможности добавления нотаций BPM (читай добавление произвольной графической нотации). Однако сам концепт EKG (граф знаний предприятия) схож с [Semantic Web](https://meta.wikimedia.org/wiki/Wikidata/Notes/DBpedia_and_Wikidata), включая [wikidata](https://www.wikidata.org/) и [DBpedia](https://en.wikipedia.org/wiki/DBpedia), а инструментально это аналог [Semantic MediaWiki (SMW)](https://en.wikipedia.org/wiki/Semantic_MediaWiki) c поддержкой нотаций BPM / EA. 
+
+Фактически мы берем концепцию ARIS и "переписываем" ее в стеке LD, что дает Semantic ARIS. При этом за основу берем ARIS Publisher, а подготовка схем вынесена в отдельный этап. Семантическая "раскраска" BPM-нотаций (вначале VAD) позволяет использовать багаж инструментов LD в класическом облиук BPM - дизайна (привычного GUI).  
+## A2 «Вопрос основной - а нахрена он нужен, этот ваш проект?»
 Ответы [из обсуждения в ТГ-канале архитекторов](https://t.me/c/2066031887/1075), поэтому будет много повторов ("живое обсуждение") и сознательный уход в конце обсуждения от холивара «Зачем вообще нужен этот ARIS» (неоднозначное к нему отношение).
 
 **1 Зачем нужна ARIS система?** Формализация процессной архитектуры, ИТ-архитектуры и т.п. 
@@ -62,11 +70,6 @@ data gov  указывает, что это также инструмент уп
 - [Semantic BPM. Семантика и синтаксис бизнес-процессов](https://habr.com/ru/articles/795883/)
 - [Semantic BPM. Онтологическое моделирование верхнеуровневых процессов. VAD](https://habr.com/ru/articles/828266/)
 
-## A2 Смежные технологии и заимствование
-### Базовые (родители)
-Semantic BPM это скрещевание двух технологий \ инструментов BPM (business process management) и LD (Linked Data).  
-В существующих BPM-системах нет стандартизованного семантического движка, а только проприетарный, например, в ARIS - см. [Method_Reference.pdf](https://github.com/bpmbpm/doc/tree/main/BPM/ARIS/SCHEER/BASE). Когда говорим про BPM-системы, то подразумеваем, что поддержка в них нотаций типа C4 и ArchiMate делает их EA-системами. Т.е. Enterprise Architecture и BPM-системы по сути это одни и теже системы (инструменты с "разной насадкой"): в одних процессные нотации, в других представления архитектур ИТ-систем. Соответсвенно Semantic Enterprise Architecture это часть того же EKG.
-
-В существующих LD-системах нет возможности добавления нотаций BPM (читай добавление произвольной графической нотации). Однако сам концепт EKG (граф знаний предприятия) схож с [Semantic Web](https://meta.wikimedia.org/wiki/Wikidata/Notes/DBpedia_and_Wikidata), включая [wikidata](https://www.wikidata.org/) и [DBpedia](https://en.wikipedia.org/wiki/DBpedia), а инструментально это аналог [Semantic MediaWiki (SMW)](https://en.wikipedia.org/wiki/Semantic_MediaWiki) c поддержкой нотаций BPM / EA. 
+## Другие технологии
 ### Далекие родственники
 BIM\IFC\IFC-Turtle. В целом [IFC (Industry Foundation Classes)](https://habr.com/ru/articles/882890/) имеет семантическую природу, но более интересны его Turtle\RDF\OWL форматы (сериализации).

@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#"
+     xml:base="http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:d4a500e1-133b-4062-8e92-6c498d431db6="http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#">
+    <owl:Ontology rdf:about="http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#incomingRole -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#incomingRole">
+        <rdfs:comment>Incoming role</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#outgoingRole -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#outgoingRole">
+        <rdfs:comment>Outgoing role</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#hasNext -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#hasNext">
+        <rdfs:label>hasNext</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#hasNext_NS9b9F -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#hasNext_NS9b9F">
+        <rdfs:label>hasNext</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#hasParent -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#hasParent">
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>hasParent</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#hasParent_IrIH2B -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#hasParent_IrIH2B">
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>hasParent</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#hasParent_zvHrQZ -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#hasParent_zvHrQZ">
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>hasParent</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#ProcessType -->
+
+
+    <owl:Class rdf:about="http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#ProcessType">
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>ProcessType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#Process_1_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#Process_1_1">
+        <rdf:type rdf:resource="http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#ProcessType"/>
+        <hasNext rdf:resource="http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#Process_1_2"/>
+        <hasParent>Process_1</hasParent>
+        <rdfs:comment>
+</rdfs:comment>
+        <rdfs:label>Process_1_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#Process_1_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#Process_1_2">
+        <rdf:type rdf:resource="http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#ProcessType"/>
+        <hasNext_NS9b9F rdf:resource="http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#Process_1_3"/>
+        <hasParent_zvHrQZ>Process_1</hasParent_zvHrQZ>
+        <rdfs:label>Process_1_2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#Process_1_3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#Process_1_3">
+        <rdf:type rdf:resource="http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#ProcessType"/>
+        <hasParent_IrIH2B>Process_1</hasParent_IrIH2B>
+        <rdfs:label>Process_1_3</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.5.1.2024-09-07T21:41:32Z) https://github.com/owlcs/owlapi/ -->
+
+

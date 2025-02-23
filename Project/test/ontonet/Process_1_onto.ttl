@@ -1,0 +1,59 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns0: <http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#> .
+
+<http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#> a owl:Ontology .
+<http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#incomingRole>
+  a owl:AnnotationProperty ;
+  rdfs:comment "Incoming role" .
+
+<http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#outgoingRole>
+  a owl:AnnotationProperty ;
+  rdfs:comment "Outgoing role" .
+
+<http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#hasNext>
+  a owl:ObjectProperty ;
+  rdfs:label "hasNext" .
+
+<http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#hasNext_NS9b9F>
+  a owl:ObjectProperty ;
+  rdfs:label "hasNext" .
+
+<http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#hasParent>
+  a owl:DatatypeProperty ;
+  rdfs:comment "" ;
+  rdfs:label "hasParent" .
+
+<http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#hasParent_IrIH2B>
+  a owl:DatatypeProperty ;
+  rdfs:comment "" ;
+  rdfs:label "hasParent" .
+
+<http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#hasParent_zvHrQZ>
+  a owl:DatatypeProperty ;
+  rdfs:comment "" ;
+  rdfs:label "hasParent" .
+
+<http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#ProcessType>
+  a owl:Class ;
+  rdfs:comment "" ;
+  rdfs:label "ProcessType" .
+
+<http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#Process_1_1>
+  a owl:NamedIndividual, <http://www.ontonet.ru/ontology/realm/d4a500e1-133b-4062-8e92-6c498d431db6#ProcessType> ;
+  ns0:hasNext ns0:Process_1_2 ;
+  ns0:hasParent "Process_1" ;
+  rdfs:comment """
+""" ;
+  rdfs:label "Process_1_1" .
+
+ns0:Process_1_2
+  a owl:NamedIndividual, ns0:ProcessType ;
+  ns0:hasNext_NS9b9F ns0:Process_1_3 ;
+  ns0:hasParent_zvHrQZ "Process_1" ;
+  rdfs:label "Process_1_2" .
+
+ns0:Process_1_3
+  a owl:NamedIndividual, ns0:ProcessType ;
+  ns0:hasParent_IrIH2B "Process_1" ;
+  rdfs:label "Process_1_3" .

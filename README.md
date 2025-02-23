@@ -104,10 +104,6 @@ Opengroup case-study-models:
 [Руководство по оформлению Markdown файлов](https://gist.github.com/Jekins/2bf2d0638163f1294637)
 ## Network
 Блокировки: [openvpn](https://www.pvsm.ru/cat/openvpn) ; [habr](https://www.pvsm.ru/openvpn/410582) ; [vc](https://vc.ru/tech/1737675-luchshie-besplatnye-vpn-dlya-rossii-v-2025) ;
-# DOC - разделы отдельных проектов
-## DOC - раздел Semantic BPM
-### FAQs 
-[FAQ к проекту Semantic BPM](https://github.com/bpmbpm/doc/blob/main/FAQ/FAQsemBPM.md)
 # Разное
 ## Некоторые проекты
 - bpmbpm [SemanticBPM](https://github.com/bpmbpm/SemanticBPM) ; [habr@itGuevara](https://habr.com/ru/users/itGuevara/articles/)
@@ -121,8 +117,9 @@ Opengroup case-study-models:
 - EKG: [Enterprise Knowledge Graph Forum](https://www.ekgf.org/) ; [DPROD](https://ekgf.github.io/data-product-spec/dprod.html#normative-references) ; [GraphArch](https://ekgf.github.io/grapharch/) ; [github](https://github.com/EKGF)
 - EKG статьи: [Михаил Галкин, 17](https://www.semanticscholar.org/paper/Enterprise-Knowledge-Graphs%3A-A-Semantic-Approach-in-Galkin-Auer/ab92297e4d12a84d1b3ecb688e43f8cabbb8015d)
 - semantic CMDB: [RDF-based CMDB](https://habr.com/ru/articles/854240/comments/#comment_27495234) ;
-### К Semantic BPM
-- Семантическое предприятие или [проект Semantic BPM / EA, semantic ARIS](https://github.com/bpmbpm/SemanticBPM) 
+### К проекту Semantic BPM
+- Семантическое предприятие или [проект Semantic BPM / EA, semantic ARIS](https://github.com/bpmbpm/SemanticBPM)
+- DOC-раздел на [bpmbpm/DOC](https://github.com/bpmbpm/doc/tree/main/Project/SemanticBPM) к проекту Semantic BPM
 - [Иллюстрации к общему представлению семантики, понятю "знание" и семантики процессов](https://github.com/bpmbpm/doc/blob/main/BPM/semantic/README.md)
 ### Стандартизаторы
 - OMG (BPMN, UML); OpenGoup (TOGAF, ArchiMate)

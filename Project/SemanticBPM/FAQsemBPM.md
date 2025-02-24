@@ -70,6 +70,8 @@ data gov  указывает, что это также инструмент уп
 - [Semantic BPM. Семантика и синтаксис бизнес-процессов](https://habr.com/ru/articles/795883/)
 - [Semantic BPM. Онтологическое моделирование верхнеуровневых процессов. VAD](https://habr.com/ru/articles/828266/)
 
-## Б1 Другие технологии
-### Далекие родственники
-BIM\IFC\IFC-Turtle. В целом [IFC (Industry Foundation Classes)](https://habr.com/ru/articles/882890/) имеет семантическую природу, но более интересны его Turtle\RDF\OWL форматы (сериализации).
+## Б1 Близкие технологии
+### С "семантикой" на борту
+- BIM\IFC\IFC-Turtle. В целом [IFC (Industry Foundation Classes)](https://habr.com/ru/articles/882890/) имеет семантическую природу, но более интересны его Turtle\RDF\OWL форматы (сериализации);
+- Семантическая доска (semantic miro) ontonet.ru [тест выгрузки семантики](https://github.com/bpmbpm/doc/tree/main/Project/test/ontonet)
+- Comindware [ElasticData](https://kb.comindware.ru/article/%d0%a2%d0%b5%d1%85%d0%bd%d0%be%d0%bb%d0%be%d0%b3%d0%b8%d1%8f-comindware-elasticdata-2638.html). Не понял зачем использовать графовую базу и не "вынести" семантику на уровень объектов бизнес-процесса. 

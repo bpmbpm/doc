@@ -71,10 +71,10 @@ data gov  указывает, что это также инструмент уп
 - [Semantic BPM. Онтологическое моделирование верхнеуровневых процессов. VAD](https://habr.com/ru/articles/828266/)
 
 ## Б1 Близкие технологии (с "семантикой на борту")
-### Крупные
+### Senior
 - BIM\IFC\IFC-Turtle. В целом [IFC (Industry Foundation Classes)](https://habr.com/ru/articles/882890/) имеет семантическую природу, но более интересны его Turtle\RDF\OWL форматы (сериализации);
-### Средние
+### Middle
 - Comindware [ElasticData](https://kb.comindware.ru/article/%d0%a2%d0%b5%d1%85%d0%bd%d0%be%d0%bb%d0%be%d0%b3%d0%b8%d1%8f-comindware-elasticdata-2638.html). Не понял зачем использовать графовую базу и не "вынести" семантику на уровень объектов бизнес-процесса. Если был бы открытый проект, то можно было бы попробовать "достучаться" из бизнес-процесса (репозитария процессов EKG) до "глубоко зарытого" встроенного семантического инструментария.
-### Малые
+### Junior
 - Семантическая доска (semantic miro) ontonet.ru [тест выгрузки семантики](https://github.com/bpmbpm/doc/tree/main/Project/test/ontonet)
 

@@ -2,7 +2,8 @@
 ## Основные папки:
 ### [method](https://github.com/bpmbpm/doc/blob/main/Project/SemanticBPM/method/README.md): Методология, ARIS - подобная метамодель, [Базовый технологический концепт, arisLDconcept.md](method/arisLDconcept.md)
 ### [design](design): [Основной GUI](design/mainGUI.md)
-
+## Файлы:
+### [FAQ](FAQsemBPM.md)
 ## Второстепенные
 LD:
 

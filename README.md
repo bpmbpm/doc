@@ -113,9 +113,10 @@ Opengroup case-study-models:
 - Surrogate-TM [MS Visio](https://github.com/Surrogate-TM/surrogate-tm.github.io/tree/master)
 - nbelyh [github](https://github.com/) ; [unmanagedvisio.com](https://unmanagedvisio.com/about/)
 - bzinchenko [bpmnview](https://github.com/bzinchenko/bpmnview)
-еще:
-- OpenMetamodel.org / Sirius (eclipse) [обсуждение применимости к Semantic BPM](https://github.com/bpmbpm/doc/blob/main/METAMODEL/SIRIUS/SIRIUSBPM.md)
-- boldsea
+еще (логкальные сслылки):
+- OpenMetamodel.org / Sirius (eclipse) [обсуждение применимости к Semantic BPM](METAMODEL/SIRIUS/SIRIUSBPM.md)
+- boldsea [подборка ссылок](Project/test/boldsea/README.md)
+- папка [Project \ test](Project/test)
 ## Интересное
 ### Enterprise Knowledge Graph
 - EKG: [Enterprise Knowledge Graph Forum](https://www.ekgf.org/) ; [DPROD](https://ekgf.github.io/data-product-spec/dprod.html#normative-references) ; [GraphArch](https://ekgf.github.io/grapharch/) ; [github](https://github.com/EKGF)

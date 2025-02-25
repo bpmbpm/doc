@@ -112,8 +112,8 @@ Opengroup case-study-models:
 - smer44 [Графовый семантический движок](https://github.com/smer44/graph-semantical-engine)
 - Surrogate-TM [MS Visio](https://github.com/Surrogate-TM/surrogate-tm.github.io/tree/master)
 - nbelyh [github](https://github.com/) ; [unmanagedvisio.com](https://unmanagedvisio.com/about/)
-- bzinchenko [bpmnview](https://github.com/bzinchenko/bpmnview)
-еще (логкальные сслылки):
+- bzinchenko [bpmnview](https://github.com/bzinchenko/bpmnview)  
+еще (локальные сслылки):
 - OpenMetamodel.org / Sirius (eclipse) [обсуждение применимости к Semantic BPM](METAMODEL/SIRIUS/SIRIUSBPM.md)
 - boldsea [подборка ссылок](Project/test/boldsea/README.md)
 - папка [Project \ test](Project/test)

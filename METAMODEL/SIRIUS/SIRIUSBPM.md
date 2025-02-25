@@ -4,7 +4,7 @@ https://t.me/semanticengine/1792
 Это опенсурсный движок. В нем есть язык ограничений (ocl/aql), есть язык преобразования модель - модель и модель - код/текст.
 
 1. Ссылки Sirius Web (eclipse):
-https://eclipse.dev/sirius/sirius-web.html
+https://eclipse.dev/sirius/sirius-web.html  
 Не путать с https://sirius-web.org/ 
 2. Форк Sirius Web: OpenMetamodel.org
 - Форум проекта, например [Как связаны MOF и RDF](https://forum.openmetamodel.org/d/56-kak-svyazany-mof-i-rdf) ; [Есть два основных подхода к моделированию](https://t.me/semanticengine/1862)

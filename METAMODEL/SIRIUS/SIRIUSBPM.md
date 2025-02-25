@@ -1,4 +1,5 @@
 Обсуждение варианта реализации Semantic BPM (semantic ARIS) на Sirius Web
+## Общая часть
 https://t.me/semanticengine/1792 
 ### Sirius Web
 Это опенсурсный движок. В нем есть язык ограничений (ocl/aql), есть язык преобразования модель - модель и модель - код/текст.
@@ -54,5 +55,7 @@ https://habr.com/ru/companies/cit/articles/271945/
 https://habr.com/ru/users/Ares_ekb/articles/
 
 Всё то же самое можно делать и для RDF просто это параллельное пространство моделирования https://www.sfu.ca/~dgasevic/papers/The_Tao_of_Modeling_Spaces.pdf со своим подходом, инструментарием 
-
+## CASE
+### Case1 VADtoTreeView
+Упражнение по формированию [TreeView по VAD диаграммам]( https://github.com/bpmbpm/doc/blob/main/METAMODEL/SIRIUS/Case1_VADtoTreeView.md)
 

@@ -125,6 +125,7 @@ Opengroup case-study-models:
 ### Стандартизаторы
 - OMG (BPMN, UML); OpenGoup (TOGAF, ArchiMate)
 - W3C (LD, LOD, Semantic Web)
+- BOK: eabok, bizbok, babok, BPM cbok, dmbok, [IASA - BTABoK](https://iasa-global.github.io/btabok)
 ## К проекту Semantic BPM
 - Семантическое предприятие или [проект Semantic BPM](https://github.com/bpmbpm/SemanticBPM) - "он же" semantic EA, semantic ARIS.
 - DOC-раздел на [bpmbpm/DOC](https://github.com/bpmbpm/doc/tree/main/Project/SemanticBPM) к проекту Semantic BPM

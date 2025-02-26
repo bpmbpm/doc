@@ -9,7 +9,7 @@
 2014 (1 апреля) Scheer Group приобрела практику SAP Consulting у Software AG в регионе DACH и создала новое подразделение под названием IDS Scheer Consulting GmbH  
 
 Примечания.  
-1. 2004 опубликован [BPMN 1.0](https://ru.wikipedia.org/wiki/BPMN) и появляется [исполняемость, например, тема EPC2BPEL transformation](https://complexevents.com/slides/Helge_Hess_IDS_Scheer_Event_Processing_Symposium.pdf#page=14)
+1. 2004 опубликован [BPMN 1.0](https://ru.wikipedia.org/wiki/BPMN) и появляется исполняемость, например, тема [EPC2BPEL transformation](https://complexevents.com/slides/Helge_Hess_IDS_Scheer_Event_Processing_Symposium.pdf#page=14)
 2. Не путать: Oracle BPM Suite and [Oracle BPA Suite](https://iaassaaspaas.ru/rating/bpm-sistemy/oracle), см. [стр. 12](
 https://download.oracle.com/opndocs/emea/Oracle_BPM_Training-03_Oracle_BPM_Suite_Solution.pdf)
 

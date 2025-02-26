@@ -20,3 +20,8 @@
 
 
 На будущее: Варианты реализации двухстороннего обмена (real-time) наподобие [ARIS Smart Design](https://habr.com/ru/articles/810851/)
+
+
+Примеры подобия из схожих систем:
+- [SU](https://bpmbpm.github.io/doc/BPM//SU/DOC1/SILA_Union_reglament_polzovatela.pdf#page=60)
+- 

@@ -1,4 +1,4 @@
-[Price softline](https://store.softline.ru/silaunion/sila-union-viewer/#licenses) 26.02.2025:
+### SILA Union [Price softline](https://store.softline.ru/silaunion/sila-union-viewer/#licenses) 26.02.2025:
 
 **SILA Union Modeler** (руб.). Именная \ конкурентная (Competitive):
 

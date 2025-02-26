@@ -13,4 +13,4 @@
 2. Не путать: Oracle BPM Suite and [Oracle BPA Suite](https://iaassaaspaas.ru/rating/bpm-sistemy/oracle), см. [стр. 12](
 https://download.oracle.com/opndocs/emea/Oracle_BPM_Training-03_Oracle_BPM_Suite_Solution.pdf)
 
-Фактически Шееру удалось продать ARIS дважды: вначале ORACLE в 2006, а потом в 2009 Software AG вместе с комапнией IDS Scheer 
+Фактически Шееру удалось продать ARIS дважды: вначале ORACLE в 2006, а потом Software AG в 2009 вместе с комапнией IDS Scheer. 

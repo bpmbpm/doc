@@ -1,6 +1,6 @@
 [Price softline](https://store.softline.ru/silaunion/sila-union-viewer/#licenses) 26.02.2025:
 
-**SILA Union Modeler** (руб.). Нижняя строка именная \ конкурентная (Competitive)
+**SILA Union Modeler** (руб.). Именная \ конкурентная (Competitive)
 
 | Лицензии Cloud в месяц | Лицензии в месяц | Постоянные лицензии |
 |---|---|---|

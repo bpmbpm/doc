@@ -24,4 +24,4 @@
 
 Примеры подобия из схожих систем:
 - [SU](https://bpmbpm.github.io/doc/BPM//SU/DOC1/SILA_Union_reglament_polzovatela.pdf#page=60)
-- 
+- ARIS [рис. 10 и 11](https://compress.ru/article.aspx?id=19375)

@@ -9,3 +9,5 @@
 Смотрелка (Viewer):  
 1. ARIS Web Publisher и 300 Run-Time-Licences  € 13,924
 2. Every further Run-Time-Licence   € 30
+
+Сравни с [Sila Union](https://github.com/bpmbpm/doc/blob/main/BPM/SU/README.md)

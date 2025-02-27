@@ -7,5 +7,5 @@
 - каждая дополнительная пользовательская лицензия для 1 пользователя € 177 
 
 Смотрелка (Viewer)  
-1. ARIS Web Publisher и 300 Run-Time-Licences  €13,924
+1. ARIS Web Publisher и 300 Run-Time-Licences  € 13,924
 2. Every further Run-Time-Licence   € 30

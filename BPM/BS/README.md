@@ -1,4 +1,4 @@
 Business Studio: версии Professional, Enterprise и Ultimate
 - [Сравнение версий](https://www.sgs-business.ru/bs_version)
-- [Прайс от BS](https://sgs-business.ru/bs_price)
-- [Прайс от softline](https://store.softline.ru/businessstudio/business-studio/)
+- [Прайс от BS](https://sgs-business.ru/bs_price), см. pdf в папке
+- [Прайс от softline](https://store.softline.ru/businessstudio/business-studio/), см. excel папке

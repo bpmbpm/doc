@@ -17,6 +17,10 @@ https://download.oracle.com/opndocs/emea/Oracle_BPM_Training-03_Oracle_BPM_Suite
 
 ## Версии ARIS
 - 1994
+- 1996 ARIS Toolset (for R/3) [Затаив дыхание](https://www.itweek.ru/infrastructure/article/detail.php?ID=76815)
+- 1998 4 [Стефан Принцкоский](https://www.itweek.ru/themes/detail.php?ID=47829). Для рабочих мест достаточно ПК с процессором 486 и 16 Мб ОЗУ, для сервера - ПК на базе Pentium [В ARIS есть всё](https://www.itweek.ru/themes/detail.php?ID=48514)
+- 2001 5.01 [КомпьютерПресс 9'2001](https://compress.ru/article.aspx?id=11748), (BPwin 4.0), [ARIS Toolset/BPwin](https://www.interface.ru/home.asp?artId=4269)
+- 2003 6.1 (Allfusion Process Modeler 4.1 / BPwin 2.0), softwaregids 2003
 - 2005 7
 - 2007 ARIS IT Architect – основа ARIS Enterprise Architecture Solution (DoDAF, C4ISR, Zachman, TOGAF, TEAF, FEAF, ArchiMate и IT City Planning), ARIS SOA Architect [BPEL](https://www.cnews.ru/news/line/ids_scheer_predstavila_novye_resheniya_aris)
 - 2008 7.1 ARIS [Business Performance Edition](https://www.cnews.ru/news/line/ids_scheer_vypustila_novuyu_versiyu_aris), BPMN
@@ -29,16 +33,24 @@ https://download.oracle.com/opndocs/emea/Oracle_BPM_Training-03_Oracle_BPM_Suite
 - 2014 "ARIS 9 — первый апгрейд со значительными изменениями в архитектуре системы с момента выпуска в 2005 г. версии ARIS 7" [Логика BPM](https://www.cnews.ru/news/line/logika_bpm_perevedet_rossijskie_organizatsii). Как по мне: в части базовой финкциональности (моделер и паблишер процессов) - что ARIS 5, что ARIS 10 - одно и тоже. 
 - 2015 9.8 SR2
 - 2019 10 SR8
+- 2024 10.0 SR 27 
 
 ARIS Toolset (IDS Scheer AG) = ARIS Business Architect
 Источники:
 - [tadviser](https://www.tadviser.ru/index.php/%D0%9F%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82:ARIS)
 - [cnews](https://www.cnews.ru/book/Software_AG_-_ARIS_Platform)
+- [interface](https://www.interface.ru/iservices/search.asp?thisform=2search&catId=*&skeys=aris)
 - [Сравнение версий Aris 10.X, 9.X, 7.X](https://dainova.su/products/arisplatform)
+- [itweek](https://www.itweek.ru/search/?spell=1&q=ARIS&where=&how=d&PAGEN_1=19)
 
 Материалы:
 - [Model Interchange between ARIS and Eclipse EMF](https://www.dsmforum.org/events/DSM07/papers/kern.pdf)
-- [Основы системного анализа деятельности организаций, 137 слайдов](https://ppt-online.org/211409)
+- [Основы системного анализа деятельности организаций, 137 слайдов](https://ppt-online.org/211409) ; [studfile.net](https://studfile.net/preview/426630/)
 - [ARIS 6.1](https://quality.eup.ru/DOCUM3/iisarisesmk.html)
 - [UML Tools](https://blog.csdn.net/jueqing007/article/details/5831966)
 - [softwaregids 2003](https://biplatform.nl/magazines/Aveq/105577.pdf)
+- [CASE-средства: в борьбе со сложностью мира](https://www.interface.ru/home.asp?artId=986)
+- [Методические указания к лабораторным работам по CASE-пакету ARIS Toolset](https://study.urfu.ru/Aid/Publication/88/1/Aris.pdf)
+- [Модули, ARIS for Interstage BPM - исполнение процесса в Fujitsu Interstage BPM](https://www.r-p-c.ru/page/optimizaciya-biznes-processov-s-pomoshchyu-aris.html)
+- [ARIS - основы теории](https://citforum.ru/seminars/cis99/vest_03.shtml)
+- [П. А. Зиновьев](https://www.mathnet.ru/links/c66cf983c757a0aec032ac7669131e4a/ipi37.pdf)

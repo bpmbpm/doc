@@ -30,6 +30,15 @@ https://download.oracle.com/opndocs/emea/Oracle_BPM_Training-03_Oracle_BPM_Suite
 - 2015 9.8 SR2
 - 2019 10 SR8
 
+ARIS Toolset (IDS Scheer AG) = ARIS Business Architect
 Источники:
 - [tadviser](https://www.tadviser.ru/index.php/%D0%9F%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82:ARIS)
 - [cnews](https://www.cnews.ru/book/Software_AG_-_ARIS_Platform)
+- [Сравнение версий Aris 10.X, 9.X, 7.X](https://dainova.su/products/arisplatform)
+
+Материалы:
+- [Model Interchange between ARIS and Eclipse EMF](https://www.dsmforum.org/events/DSM07/papers/kern.pdf)
+- [Основы системного анализа деятельности организаций, 137 слайдов](https://ppt-online.org/211409)
+- [ARIS 6.1](https://quality.eup.ru/DOCUM3/iisarisesmk.html)
+- [UML Tools](https://blog.csdn.net/jueqing007/article/details/5831966)
+- [softwaregids 2003](https://biplatform.nl/magazines/Aveq/105577.pdf)

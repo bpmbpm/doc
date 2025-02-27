@@ -3,7 +3,7 @@
 1984 основание IDS Scheer - разработчик Business Process Management (BPM) software. [wiki](https://en.wikipedia.org/wiki/IDS_Scheer): , Saarbrücken, Saarland, Germany. IDS = Integrated Data-processing Systems. Первое название компании: «IDS Prof. Scheer Gesellschaft für integrierte Datenverarbeitungssysteme mbH»  
 1994 [ARIS](https://ru.wikipedia.org/wiki/ARIS)  
 1999 IPO на Франкфуртской бирже  
-2006 (2 августа)  Oracle покупает ARIS и продает то же самое под новой торговой маркой: Oracle Business Process Analysis Suite дополняет существующие основанные на стандартах продукты Oracle BPM, включая Oracle SOA Suite и Oracle BPEL Process Manager. [Oracle расширяет возможности Oracle Fusion Middleware по управлению бизнес-процессами с помощью платформы ARIS от IDS Scheer](https://web.archive.org/web/20061021045147/http://www.oracle.com/corporate/press/2006_aug/oracle_business_process_analysis_suite_0.html). Фактически на рынке продаются два идентичных продукта под разными названиями.     
+2006 (2 августа)  Oracle покупает ARIS и продает то же самое под новой торговой маркой: **Oracle Business Process Analysis Suite** дополняет существующие основанные на стандартах продукты Oracle BPM, включая Oracle SOA Suite и Oracle BPEL Process Manager. [Oracle расширяет возможности Oracle Fusion Middleware по управлению бизнес-процессами с помощью платформы ARIS от IDS Scheer](https://web.archive.org/web/20061021045147/http://www.oracle.com/corporate/press/2006_aug/oracle_business_process_analysis_suite_0.html). Фактически на рынке продаются два идентичных продукта под разными названиями.     
 2009 (июль) [Software AG](https://ru.wikipedia.org/wiki/Software_AG) покупает IDS Scheer за 487 миллионов евро. Интересно, что менее года назад в интервью CNews Август Шеер отрицал возможность продажи компании: [Сейчас этот вопрос не стоит на повестке дня](https://www.cnews.ru/news/top/software_ag_pokupaet_ids_scheer)  
 2010 Август-Вильгельм Шеер создает новую компанию Scheer Group для предоставления консалтинговых услуг в регионе DACH: D (Германия, Deutschland), A (Австрия, лат. Austria) и CH (Швейцария, лат. Confoederatio Helvetica).  
 2014 (1 апреля) Scheer Group приобрела практику SAP Consulting у Software AG в регионе DACH и создала новое подразделение под названием IDS Scheer Consulting GmbH  
@@ -14,3 +14,17 @@
 https://download.oracle.com/opndocs/emea/Oracle_BPM_Training-03_Oracle_BPM_Suite_Solution.pdf)
 
 Фактически Шееру удалось продать ARIS дважды: вначале ORACLE в 2006, а потом Software AG в 2009 вместе с комапнией IDS Scheer. 
+
+## Версии ARIS
+- 1994
+- 2005 7
+- 2011 Enterprise BPM = ARIS + webMethods [CeBIT 2011](https://www.cnews.ru/news/line/software_ag_predstavila_enterprise)
+- 2011 7.2
+- 2012 9.0
+- 2014 "ARIS 9 — первый апгрейд со значительными изменениями в архитектуре системы с момента выпуска в 2005 г. версии ARIS 7" [Логика BPM](https://www.cnews.ru/news/line/logika_bpm_perevedet_rossijskie_organizatsii). Как по мне: что ARIS 5, что ARIS 10 - одно и тоже. 
+- 2015 9.8 SR2
+- 2019 10 SR8
+
+Источники:
+- [tadviser](https://www.tadviser.ru/index.php/%D0%9F%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82:ARIS)
+- [cnews](https://www.cnews.ru/book/Software_AG_-_ARIS_Platform)

@@ -45,8 +45,9 @@ https://download.oracle.com/opndocs/emea/Oracle_BPM_Training-03_Oracle_BPM_Suite
 - 2020 ARIS Cloud
 - 2024 10.0 SR 27 
 
-Вообще: "GPT считает" - в разных запросах он указаывает разные даты, путается, источники сказать не может, т.е. доверрие к нему малое.   
+Вообще: "GPT считает" - в разных запросах он указаывает разные даты, путается, источники сказать не может, т.е. доверрие к нему малое. Сайты IDS Scheer и softwareag зачем то поудаляли все старые статьи с описанием прежних версий ("следы заметают").  
 ARIS Toolset (IDS Scheer AG) = ARIS Business Architect
+
 Источники:
 - [tadviser](https://www.tadviser.ru/index.php/%D0%9F%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82:ARIS)
 - [cnews](https://www.cnews.ru/book/Software_AG_-_ARIS_Platform)

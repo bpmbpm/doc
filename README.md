@@ -117,6 +117,7 @@ Opengroup case-study-models:
 - OpenMetamodel.org / Sirius (eclipse) [обсуждение применимости к Semantic BPM](METAMODEL/SIRIUS/SIRIUSBPM.md)
 - boldsea [подборка ссылок](Project/test/boldsea/README.md)
 - Nevalang [Потоко-Ориентированный ЯП](https://github.com/nevalang/neva)
+- автоматическое извлечения KG из текстов [ontogpt](https://github.com/monarch-initiative/ontogpt) 
 - папка [Project \ test](Project/test)
 ## Интересное
 ### Enterprise Knowledge Graph

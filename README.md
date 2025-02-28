@@ -130,7 +130,7 @@ Opengroup case-study-models:
 - Семантическое предприятие или [проект Semantic BPM](https://github.com/bpmbpm/SemanticBPM) - "он же" semantic EA, semantic ARIS.
 - DOC-раздел на [bpmbpm/DOC](https://github.com/bpmbpm/doc/tree/main/Project/SemanticBPM) к проекту Semantic BPM
 - К общему представлению семантики, понятию "знание" и семантики в бизнес-процессах [см. Иллюстрации](https://github.com/bpmbpm/doc/blob/main/BPM/semantic/README.md) и в целом папка [doc/BPM/semantic](https://github.com/bpmbpm/doc/tree/main/BPM/semantic)
-- test [github.io](https://bpmbpm.github.io/doc/): https://bpmbpm.github.io/doc/
+- test [bpmbpm.github.io/doc](https://bpmbpm.github.io/doc/)
 ### Тестирование схожих проектов
 - [gse / smer44](https://github.com/bpmbpm/doc/tree/main/Project/test/gse)
 - [ontonet.ru](https://github.com/bpmbpm/doc/tree/main/Project/test/ontonet)

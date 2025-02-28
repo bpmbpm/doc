@@ -16,25 +16,36 @@ https://download.oracle.com/opndocs/emea/Oracle_BPM_Training-03_Oracle_BPM_Suite
 Фактически Шееру удалось продать ARIS дважды: вначале ORACLE в 2006, а потом Software AG в 2009 вместе с комапнией IDS Scheer. 
 
 ## Версии ARIS
-- 1994
-- 1996 ARIS Toolset (for R/3) [Затаив дыхание](https://www.itweek.ru/infrastructure/article/detail.php?ID=76815)
-- 1998 4 [Стефан Принцкоский](https://www.itweek.ru/themes/detail.php?ID=47829). Для рабочих мест достаточно ПК с процессором 486 и 16 Мб ОЗУ, для сервера - ПК на базе Pentium [В ARIS есть всё](https://www.itweek.ru/themes/detail.php?ID=48514)
+- 1992 1. Почему в wiki указан год появления ARIS 1994? GPT отвечает, что его заметили только после рекламных компаний и внедрений в 1994
+- 1994 2
+- 1996 3. Ссылки: ARIS Toolset (for R/3) [Затаив дыхание](https://www.itweek.ru/infrastructure/article/detail.php?ID=76815)
+- 1998 4 Анонс: [Стефан Принцкоский: В середине июля выйдет новая версия ARIS 4.0.](https://www.itweek.ru/themes/detail.php?ID=47829). Для рабочих мест достаточно ПК с процессором 486 и 16 Мб ОЗУ, для сервера - ПК на базе Pentium [В ARIS есть всё](https://www.itweek.ru/themes/detail.php?ID=48514)
+- 1999 4 (PT считает)
 - 2001 5.01 [КомпьютерПресс 9'2001](https://compress.ru/article.aspx?id=11748), (BPwin 4.0), [ARIS Toolset/BPwin](https://www.interface.ru/home.asp?artId=4269)
-- 2003 6.1 (Allfusion Process Modeler 4.1 / BPwin 2.0), softwaregids 2003
-- 2005 7
+- 2003 6.1 (Allfusion Process Modeler 4.1 / BPwin 2.0), softwaregids 2003. GPT считает, что 2004 год.
+- 2005 6.2 см. price 2005 (15 августа)
+- 2006 7 
+- 2007 7.1 (GPT считает)
 - 2007 ARIS IT Architect – основа ARIS Enterprise Architecture Solution (DoDAF, C4ISR, Zachman, TOGAF, TEAF, FEAF, ArchiMate и IT City Planning), ARIS SOA Architect [BPEL](https://www.cnews.ru/news/line/ids_scheer_predstavila_novye_resheniya_aris)
 - 2008 7.1 ARIS [Business Performance Edition](https://www.cnews.ru/news/line/ids_scheer_vypustila_novuyu_versiyu_aris), BPMN
 - 2008 интеграции ARIS Platform и Microsoft BizTalk Server 2006 R2 [исполнение](https://www.cnews.ru/news/line/aris_platform_integrirovana_s_microsoft)
-- 2009 ARIS Express
+- 2009 7.3 + ARIS Express
 - 2010 «дорожная карта» интеграции ARIS и webMethods [CeBIT 2010](https://www.cnews.ru/news/line/software_ag_i_ids_scheer_predstavili)
 - 2011 Enterprise BPM = ARIS + webMethods [CeBIT 2011](https://www.cnews.ru/news/line/software_ag_predstavila_enterprise)
-- 2011 7.2
+- 2011 7.2 (?)
 - 2012 9.0
+- 2013 9.1
+- 2013 9.5
 - 2014 "ARIS 9 — первый апгрейд со значительными изменениями в архитектуре системы с момента выпуска в 2005 г. версии ARIS 7" [Логика BPM](https://www.cnews.ru/news/line/logika_bpm_perevedet_rossijskie_organizatsii). Как по мне: в части базовой финкциональности (моделер и паблишер процессов) - что ARIS 5, что ARIS 10 - одно и тоже. 
 - 2015 9.8 SR2
+- 2016 10
+- 2018 10 SR1
+- 2019 10 SR2 (GPT считает)
 - 2019 10 SR8
+- 2020 ARIS Cloud
 - 2024 10.0 SR 27 
 
+Вообще: "GPT считает" - в разных запросах он указаывает разные даты, источники сказать не может, т.е. доверрие к нему малое.   
 ARIS Toolset (IDS Scheer AG) = ARIS Business Architect
 Источники:
 - [tadviser](https://www.tadviser.ru/index.php/%D0%9F%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82:ARIS)

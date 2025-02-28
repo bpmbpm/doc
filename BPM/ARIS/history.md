@@ -19,8 +19,8 @@ https://download.oracle.com/opndocs/emea/Oracle_BPM_Training-03_Oracle_BPM_Suite
 - 1992 1. Почему в wiki указан год появления ARIS 1994? GPT отвечает, что его заметили только после рекламных компаний и внедрений в 1994
 - 1994 2
 - 1996 3. Ссылки: ARIS Toolset (for R/3) [Затаив дыхание](https://www.itweek.ru/infrastructure/article/detail.php?ID=76815)
-- 1998 4 Анонс: [Стефан Принцкоский: В середине июля выйдет новая версия ARIS 4.0.](https://www.itweek.ru/themes/detail.php?ID=47829). Для рабочих мест достаточно ПК с процессором 486 и 16 Мб ОЗУ, для сервера - ПК на базе Pentium [В ARIS есть всё](https://www.itweek.ru/themes/detail.php?ID=48514)
-- 1999 4 (PT считает)
+- 1998 4. Анонс: [Стефан Принцкоский: В середине июля выйдет новая версия ARIS 4.0.](https://www.itweek.ru/themes/detail.php?ID=47829). Для рабочих мест достаточно ПК с процессором 486 и 16 Мб ОЗУ, для сервера - ПК на базе Pentium [В ARIS есть всё](https://www.itweek.ru/themes/detail.php?ID=48514)
+- 1999 4 (GPT считает)
 - 2001 5.01 [КомпьютерПресс 9'2001](https://compress.ru/article.aspx?id=11748), (BPwin 4.0), [ARIS Toolset/BPwin](https://www.interface.ru/home.asp?artId=4269)
 - 2003 6.1 (Allfusion Process Modeler 4.1 / BPwin 2.0), softwaregids 2003. GPT считает, что 2004 год.
 - 2005 6.2 см. price 2005 (15 августа)
@@ -29,7 +29,7 @@ https://download.oracle.com/opndocs/emea/Oracle_BPM_Training-03_Oracle_BPM_Suite
 - 2007 ARIS IT Architect – основа ARIS Enterprise Architecture Solution (DoDAF, C4ISR, Zachman, TOGAF, TEAF, FEAF, ArchiMate и IT City Planning), ARIS SOA Architect [BPEL](https://www.cnews.ru/news/line/ids_scheer_predstavila_novye_resheniya_aris)
 - 2008 7.1 ARIS [Business Performance Edition](https://www.cnews.ru/news/line/ids_scheer_vypustila_novuyu_versiyu_aris), BPMN
 - 2008 интеграции ARIS Platform и Microsoft BizTalk Server 2006 R2 [исполнение](https://www.cnews.ru/news/line/aris_platform_integrirovana_s_microsoft)
-- 2009 7.3 + ARIS Express
+- 2009 7.3 (?) + ARIS Express
 - 2010 «дорожная карта» интеграции ARIS и webMethods [CeBIT 2010](https://www.cnews.ru/news/line/software_ag_i_ids_scheer_predstavili)
 - 2011 Enterprise BPM = ARIS + webMethods [CeBIT 2011](https://www.cnews.ru/news/line/software_ag_predstavila_enterprise)
 - 2011 7.2 (?)

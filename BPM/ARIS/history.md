@@ -23,7 +23,7 @@ https://download.oracle.com/opndocs/emea/Oracle_BPM_Training-03_Oracle_BPM_Suite
 - 1999 4 (GPT считает)
 - 2001 5.01 [КомпьютерПресс 9'2001](https://compress.ru/article.aspx?id=11748), (BPwin 4.0), [ARIS Toolset/BPwin](https://www.interface.ru/home.asp?artId=4269)
 - 2003 6.1 (Allfusion Process Modeler 4.1 / BPwin 2.0), softwaregids 2003. GPT считает, что 2004 год.
-- 2005 6.2 см. price 2005 (15 августа)
+- 2005 6.2 см. [price 2005 (15 августа)](https://github.com/bpmbpm/doc/blob/main/BPM/ARIS/price/README.md#2005-1508-toolset-62)
 - 2006 7 
 - 2007 7.1 (GPT считает)
 - 2007 ARIS IT Architect – основа ARIS Enterprise Architecture Solution (DoDAF, C4ISR, Zachman, TOGAF, TEAF, FEAF, ArchiMate и IT City Planning), ARIS SOA Architect [BPEL](https://www.cnews.ru/news/line/ids_scheer_predstavila_novye_resheniya_aris)

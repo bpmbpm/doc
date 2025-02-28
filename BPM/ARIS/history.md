@@ -77,6 +77,8 @@ ARIS Toolset (IDS Scheer AG) = ARIS Business Architect
 - [Рис. 3.1. Семейство продуктов ARIS](https://portal.tpu.ru/SHARED/h/haperskaya/Materials/IT/%D0%A3%D1%87-%D0%BC%D0%B5%D1%82.ARIS%20(1).pdf)
 - [Модули ARIS, nextconsulting](https://nextconsulting.ru/products/aris)
 - [Картинки, включая Publisher](https://www.trainning.com.br/download/Business%20Process%20Modelling%20-%20Introduction%20to%20ARIS%20Methodolgy.pdf#page=32)
+- [Aris 6.2 2006, скриншоты](https://a5.ru.myklad.plus/3/6/3/aris-6-2-2006-3d-modelirovanie.html)
+- [ARIS Toolset v.6.2](https://itclub.me/threads/aris-toolset-v-6-2.21298)
 
 Обзор систем:
 - [2009 Абис Софт](https://www.cfin.ru/software/kis/b-model.shtml)

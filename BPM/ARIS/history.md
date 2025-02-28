@@ -66,5 +66,5 @@ ARIS Toolset (IDS Scheer AG) = ARIS Business Architect
 - [П. А. Зиновьев](https://www.mathnet.ru/links/c66cf983c757a0aec032ac7669131e4a/ipi37.pdf)
 
 softwaregids:  
-1. Business Process Magazine:
+1. Business Process Magazine \ WorkFlowManagement/BPM:
 - [softwaregids februari 2003, nr.1](https://biplatform.nl/magazines/Aveq/105577.pdf)

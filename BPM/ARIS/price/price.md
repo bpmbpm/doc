@@ -1,4 +1,5 @@
 ### Price ToolSet 6.2 [15.08.2005](https://t-asu.ru/images/page41/prajs_2005_08_15.pdf)  
+**Ключевые позиции**  
 Рисовалка (Modeler):
 1. ARIS Toolset 6.2     € 7,316
 2. ARIS Business Server 6.2 (включает стандартную базу данных Sybase), лицензия на сервер для 

@@ -1,4 +1,4 @@
-## История Scheer \ ARIS  
+## Scheer \ ARIS  
 - 1980 Dr. August-Wilhelm Scheer разработал Y-модель (логотип IDS Scheer)  
 - 1984 основание IDS Scheer - разработчик Business Process Management (BPM) software. [wiki](https://en.wikipedia.org/wiki/IDS_Scheer): , Saarbrücken, Saarland, Germany. IDS = Integrated Data-processing Systems. Первое название компании: «IDS Prof. Scheer Gesellschaft für integrierte Datenverarbeitungssysteme mbH»  
 - 1994 [ARIS](https://ru.wikipedia.org/wiki/ARIS)  
@@ -15,7 +15,7 @@ https://download.oracle.com/opndocs/emea/Oracle_BPM_Training-03_Oracle_BPM_Suite
 
 Фактически Шееру удалось продать ARIS дважды: вначале ORACLE в 2006, а потом Software AG в 2009 вместе с комапнией IDS Scheer. 
 
-## Версии ARIS
+## ARIS versions
 - 1992 1. Почему в wiki указан год появления ARIS 1994? GPT отвечает, что его заметили только после рекламных компаний и внедрений в 1994
 - 1994 2
 - 1996 3. Ссылки: ARIS Toolset (for R/3) [Затаив дыхание](https://www.itweek.ru/infrastructure/article/detail.php?ID=76815)

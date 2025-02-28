@@ -116,6 +116,7 @@ Opengroup case-study-models:
 еще (локальные сслылки):
 - OpenMetamodel.org / Sirius (eclipse) [обсуждение применимости к Semantic BPM](METAMODEL/SIRIUS/SIRIUSBPM.md)
 - boldsea [подборка ссылок](Project/test/boldsea/README.md)
+- [Nevalang Потоко-Ориентированный ЯП](https://github.com/nevalang/neva)
 - папка [Project \ test](Project/test)
 ## Интересное
 ### Enterprise Knowledge Graph
@@ -125,7 +126,7 @@ Opengroup case-study-models:
 ### Стандартизаторы
 - OMG (BPMN, UML); OpenGoup (TOGAF, ArchiMate)
 - W3C (LD, LOD, Semantic Web)
-- BOK: eabok, bizbok, babok, BPM cbok, dmbok, [IASA - BTABoK](https://iasa-global.github.io/btabok)
+- BOK: eabok, bizbok, babok, BPM cbok, dmbok, [IASA - BTABoK](https://iasa-global.github.io/btabok). СМ. папки [IT/BOK](https://github.com/bpmbpm/doc/tree/main/IT/BOK) ; [PM_BA](PM_BA)
 ## К проекту [Semantic BPM](https://github.com/bpmbpm/SemanticBPM)
 - Семантическое предприятие или [проект Semantic BPM](https://github.com/bpmbpm/SemanticBPM) - "он же" semantic EA, semantic ARIS.
 - DOC-раздел на [bpmbpm/DOC](https://github.com/bpmbpm/doc/tree/main/Project/SemanticBPM) к проекту Semantic BPM

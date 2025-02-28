@@ -70,3 +70,6 @@ ARIS Toolset (IDS Scheer AG) = ARIS Business Architect
 - [softwaregids februari 2003, nr.1](https://biplatform.nl/magazines/Aveq/105577.pdf) !!
 - [softwaregids april 2003, nr.3](https://release.nl/magazines/Aveq/105902.pdf). KwaliteitsManagement (управление качеством): Quality Management Scout 1.1
 - [softwaregids Acrive](https://biplatform.nl/magazines/Aveq/)
+
+Статьи
+- [Business Modelling. Languages and Tools](https://www.researchgate.net/profile/Audris_Kalnins/publication/242281975_Business_Modelling._Languages_and_Tools/links/54fda70d0cf270426d12c7d3.pdf)

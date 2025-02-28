@@ -65,8 +65,8 @@ ARIS Toolset (IDS Scheer AG) = ARIS Business Architect
 - [ARIS - основы теории](https://citforum.ru/seminars/cis99/vest_03.shtml)
 - [П. А. Зиновьев](https://www.mathnet.ru/links/c66cf983c757a0aec032ac7669131e4a/ipi37.pdf)
 
-softwaregids:  
+#### softwaregids  
 1. Business Process Magazine \ WorkFlowManagement/BPM:
 - [softwaregids februari 2003, nr.1](https://biplatform.nl/magazines/Aveq/105577.pdf) !!
-- [softwaregids februari 2003, nr.3](https://release.nl/magazines/Aveq/105902.pdf). KwaliteitsManagement (управление качеством): Quality Management Scout 1.1
+- [softwaregids april 2003, nr.3](https://release.nl/magazines/Aveq/105902.pdf). KwaliteitsManagement (управление качеством): Quality Management Scout 1.1
 - [softwaregids Acrive](https://biplatform.nl/magazines/Aveq/)

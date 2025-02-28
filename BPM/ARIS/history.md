@@ -72,4 +72,4 @@ ARIS Toolset (IDS Scheer AG) = ARIS Business Architect
 - [softwaregids Acrive](https://biplatform.nl/magazines/Aveq/)
 
 Статьи
-- [Business Modelling. Languages and Tools](https://www.researchgate.net/profile/Audris_Kalnins/publication/242281975_Business_Modelling._Languages_and_Tools/links/54fda70d0cf270426d12c7d3.pdf)
+- 2004 [Business Modelling. Languages and Tools](https://www.researchgate.net/profile/Audris_Kalnins/publication/242281975_Business_Modelling._Languages_and_Tools/links/54fda70d0cf270426d12c7d3.pdf)

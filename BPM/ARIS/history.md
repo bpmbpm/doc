@@ -36,7 +36,7 @@ https://download.oracle.com/opndocs/emea/Oracle_BPM_Training-03_Oracle_BPM_Suite
 - 2012 9.0
 - 2013 9.1
 - 2013 9.5
-- 2014 "ARIS 9 — первый апгрейд со значительными изменениями в архитектуре системы с момента выпуска в 2005 г. версии ARIS 7" [Логика BPM](https://www.cnews.ru/news/line/logika_bpm_perevedet_rossijskie_organizatsii). Как по мне: в части базовой финкциональности (моделер и паблишер процессов) - что ARIS 5, что ARIS 10 - одно и тоже. 
+- 2014 "ARIS 9 — первый апгрейд со значительными изменениями в архитектуре системы с момента выпуска в 2005 г. версии ARIS 7" [Логика BPM](https://www.cnews.ru/news/line/logika_bpm_perevedet_rossijskie_organizatsii). Как по мне: в части базовой финкциональности (моделер и паблишер процессов) - что ARIS 5, что ARIS 10 - одно и тоже (меня и публикация на статическом web-site вполне устраивал). 
 - 2015 9.8 SR2
 - 2016 10
 - 2018 10 SR1

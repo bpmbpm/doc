@@ -68,5 +68,5 @@ ARIS Toolset (IDS Scheer AG) = ARIS Business Architect
 softwaregids:  
 1. Business Process Magazine \ WorkFlowManagement/BPM:
 - [softwaregids februari 2003, nr.1](https://biplatform.nl/magazines/Aveq/105577.pdf) !!
-- [softwaregids februari 2003, nr.3](https://release.nl/magazines/Aveq/105902.pdf): Quality Management Scout 1.1
+- [softwaregids februari 2003, nr.3](https://release.nl/magazines/Aveq/105902.pdf). KwaliteitsManagement (управление качеством): Quality Management Scout 1.1
 - [softwaregids Acrive](https://biplatform.nl/magazines/Aveq/)

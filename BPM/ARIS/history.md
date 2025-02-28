@@ -73,5 +73,6 @@ ARIS Toolset (IDS Scheer AG) = ARIS Business Architect
 
 Статьи
 - 2004 [Business Modelling. Languages and Tools](https://www.researchgate.net/profile/Audris_Kalnins/publication/242281975_Business_Modelling._Languages_and_Tools/links/54fda70d0cf270426d12c7d3.pdf)
+- [Business Process Measures](https://arxiv.org/pdf/cs/0406042)
 - [Рис. 3.1. Семейство продуктов ARIS](https://portal.tpu.ru/SHARED/h/haperskaya/Materials/IT/%D0%A3%D1%87-%D0%BC%D0%B5%D1%82.ARIS%20(1).pdf)
 - [Картинки, включая Publisher](https://www.trainning.com.br/download/Business%20Process%20Modelling%20-%20Introduction%20to%20ARIS%20Methodolgy.pdf#page=32)

@@ -59,9 +59,12 @@ ARIS Toolset (IDS Scheer AG) = ARIS Business Architect
 - [Основы системного анализа деятельности организаций, 137 слайдов](https://ppt-online.org/211409) ; [studfile.net](https://studfile.net/preview/426630/)
 - [ARIS 6.1](https://quality.eup.ru/DOCUM3/iisarisesmk.html)
 - [UML Tools](https://blog.csdn.net/jueqing007/article/details/5831966)
-- [softwaregids 2003](https://biplatform.nl/magazines/Aveq/105577.pdf)
 - [CASE-средства: в борьбе со сложностью мира](https://www.interface.ru/home.asp?artId=986)
 - [Методические указания к лабораторным работам по CASE-пакету ARIS Toolset](https://study.urfu.ru/Aid/Publication/88/1/Aris.pdf)
 - [Модули, ARIS for Interstage BPM - исполнение процесса в Fujitsu Interstage BPM](https://www.r-p-c.ru/page/optimizaciya-biznes-processov-s-pomoshchyu-aris.html)
 - [ARIS - основы теории](https://citforum.ru/seminars/cis99/vest_03.shtml)
 - [П. А. Зиновьев](https://www.mathnet.ru/links/c66cf983c757a0aec032ac7669131e4a/ipi37.pdf)
+
+softwaregids:  
+1. Business Process Magazine:
+- [softwaregids februari 2003, nr.1](https://biplatform.nl/magazines/Aveq/105577.pdf)

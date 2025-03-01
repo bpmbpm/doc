@@ -6,7 +6,7 @@
 Некоторые источники:
 - [Общие подходы к формированию id процесса](https://github.com/bpmbpm/SemanticBPM/blob/main/implementations/drawio/principles.md)
 - Склад по [ARIS - методологии](https://github.com/bpmbpm/doc?tab=readme-ov-file#base)
-- on-line справочник по "родной" семантике ARIS, [ссылка на раздел VAD](https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494393/en/1)
+- on-line справочник по "родной" семантике ARIS, ссылка на МЕтоды АРИС в [раздел VAD](https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494393/en/1)
 - [VAD-материалы из проекта](https://github.com/bpmbpm/SemanticBPM/blob/main/docs/VAD/README.md) 
 
 Сборка отношений ведется в файле method.xlsx. 

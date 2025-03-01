@@ -1,7 +1,7 @@
 ## Scheer \ ARIS  
 - 1980 Dr. August-Wilhelm Scheer разработал Y-модель (логотип IDS Scheer)  
 - 1984 основание IDS Scheer - разработчик Business Process Management (BPM) software. [wiki](https://en.wikipedia.org/wiki/IDS_Scheer): , Saarbrücken, Saarland, Germany. IDS = Integrated Data-processing Systems. Первое название компании: «IDS Prof. Scheer Gesellschaft für integrierte Datenverarbeitungssysteme mbH»  
-- 1994 [ARIS](https://ru.wikipedia.org/wiki/ARIS)  
+- 1992 - 1994 [ARIS](https://ru.wikipedia.org/wiki/ARIS)  
 - 1999 IPO на Франкфуртской бирже  
 - 2006 (2 августа)  Oracle покупает ARIS и продает то же самое под новой торговой маркой: **Oracle Business Process Analysis Suite** дополняет существующие основанные на стандартах продукты Oracle BPM, включая Oracle SOA Suite и Oracle BPEL Process Manager. [Oracle расширяет возможности Oracle Fusion Middleware по управлению бизнес-процессами с помощью платформы ARIS от IDS Scheer](https://web.archive.org/web/20061021045147/http://www.oracle.com/corporate/press/2006_aug/oracle_business_process_analysis_suite_0.html). Фактически на рынке продаются два идентичных продукта под разными названиями.     
 - 2009 (июль) [Software AG](https://ru.wikipedia.org/wiki/Software_AG) покупает IDS Scheer за 487 миллионов евро. Интересно, что менее года назад в интервью CNews Август Шеер отрицал возможность продажи компании: [Сейчас этот вопрос не стоит на повестке дня](https://www.cnews.ru/news/top/software_ag_pokupaet_ids_scheer)  
@@ -16,6 +16,7 @@ https://download.oracle.com/opndocs/emea/Oracle_BPM_Training-03_Oracle_BPM_Suite
 Фактически Шееру удалось продать ARIS дважды: вначале ORACLE в 2006, а потом Software AG в 2009 вместе с комапнией IDS Scheer. 
 
 ## ARIS versions
+- 1989 Data modeling with SAP R/3 [Реклама 2009](https://bpmbpm.github.io/BPM/ARIS/reclame/ARIS_Platform_2009_rus.pdf)
 - 1992 1. Почему в wiki указан год появления ARIS 1994? GPT отвечает, что его заметили только после рекламных компаний и внедрений в 1994
 - 1994 2
 - 1996 3. Ссылки: ARIS Toolset (for R/3) [Затаив дыхание](https://www.itweek.ru/infrastructure/article/detail.php?ID=76815)
@@ -67,10 +68,13 @@ ARIS Toolset (IDS Scheer AG) = ARIS Business Architect
 - [П. А. Зиновьев](https://www.mathnet.ru/links/c66cf983c757a0aec032ac7669131e4a/ipi37.pdf)
 
 #### softwaregids  
-1. Business Process Magazine \ WorkFlowManagement/BPM:
+Business Process Magazine \ WorkFlowManagement/BPM:
 - [softwaregids februari 2003, nr.1](https://biplatform.nl/magazines/Aveq/105577.pdf) !!
 - [softwaregids april 2003, nr.3](https://release.nl/magazines/Aveq/105902.pdf). KwaliteitsManagement (управление качеством): Quality Management Scout 1.1
 - [softwaregids Archive](https://biplatform.nl/magazines/Aveq/)
+
+Реклама
+- [Реклама 2009]()
 
 Статьи
 - 2004 [Business Modelling. Languages and Tools](https://www.researchgate.net/profile/Audris_Kalnins/publication/242281975_Business_Modelling._Languages_and_Tools/links/54fda70d0cf270426d12c7d3.pdf)

@@ -16,7 +16,7 @@ https://download.oracle.com/opndocs/emea/Oracle_BPM_Training-03_Oracle_BPM_Suite
 Фактически Шееру удалось продать ARIS дважды: вначале ORACLE в 2006, а потом Software AG в 2009 вместе с комапнией IDS Scheer. 
 
 ## ARIS versions
-- 1989 Data modeling with SAP R/3 [Реклама 2009](https://bpmbpm.github.io/BPM/ARIS/reclame/ARIS_Platform_2009_rus.pdf)
+- 1989 Data modeling with SAP R/3 [Реклама 2009](https://bpmbpm.github.io/BPM/ARIS/reclame/ARIS_Platform2009rus.pdf)
 - 1992 1. Почему в wiki указан год появления ARIS 1994? GPT отвечает, что его заметили только после рекламных компаний и внедрений в 1994
 - 1994 2
 - 1996 3. Ссылки: ARIS Toolset (for R/3) [Затаив дыхание](https://www.itweek.ru/infrastructure/article/detail.php?ID=76815)

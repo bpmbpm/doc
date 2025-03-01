@@ -75,7 +75,7 @@ Business Process Magazine \ WorkFlowManagement/BPM:
 - [softwaregids Archive](https://biplatform.nl/magazines/Aveq/)
 
 Реклама
-- [[Реклама 2009, стр. 40](https://bpmbpm.github.io/doc/BPM/ARIS/reclame/ARIS_Platform2009rus.pdf#page=40)
+- [Реклама 2009, стр. 40](https://bpmbpm.github.io/doc/BPM/ARIS/reclame/ARIS_Platform2009rus.pdf#page=40)
 
 Статьи
 - 2004 [Business Modelling. Languages and Tools](https://www.researchgate.net/profile/Audris_Kalnins/publication/242281975_Business_Modelling._Languages_and_Tools/links/54fda70d0cf270426d12c7d3.pdf)

@@ -1,5 +1,5 @@
 Книги trinidata.ru
-- Введение в онтологическое моделирование, 2016[SemanticIntro.pdf](https://trinidata.ru/files/SemanticIntro.pdf)
+- Введение в онтологическое моделирование, 2016, [SemanticIntro.pdf](https://trinidata.ru/files/SemanticIntro.pdf)
 - Онтологическое моделирование предприятий: методы и технологии, 2019 [EnterpriseModeling.pdf](https://trinidata.ru/files/EnterpriseModeling.pdf)
 - Корпоративные автоматизированные системы на основе онтологических моделей: книга рецептов, 2020 [CookBook.pdf](https://trinidata.ru/files/CookBook.pdf)
 

@@ -18,6 +18,7 @@ https://download.oracle.com/opndocs/emea/Oracle_BPM_Training-03_Oracle_BPM_Suite
 ## ARIS versions
 - 1989 Data modeling with SAP R/3 [Реклама 2009, стр. 40](https://bpmbpm.github.io/doc/BPM/ARIS/reclame/ARIS_Platform2009rus.pdf#page=40)
 - 1992 1. Почему в wiki указан год появления ARIS 1994? GPT отвечает, что его заметили только после рекламных компаний и внедрений в 1994
+- 1993 From ARIS House to ARIS Platform and lifecycle concept
 - 1994 2
 - 1996 3. Ссылки: ARIS Toolset (for R/3) [Затаив дыхание](https://www.itweek.ru/infrastructure/article/detail.php?ID=76815)
 - 1998 4. Анонс: [Стефан Принцкоский: В середине июля выйдет новая версия ARIS 4.0.](https://www.itweek.ru/themes/detail.php?ID=47829). Для рабочих мест достаточно ПК с процессором 486 и 16 Мб ОЗУ, для сервера - ПК на базе Pentium [В ARIS есть всё](https://www.itweek.ru/themes/detail.php?ID=48514)

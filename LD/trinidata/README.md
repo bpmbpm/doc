@@ -26,3 +26,6 @@ https://cyberleninka.ru/article/n/sobytiynaya-ontologicheskaya-model-ekonomiches
 Другое:
 https://www.ontology-of-designing.ru/article/2019_4(34)/Ontology_Of_Designing_4_2019_opt.pdf
 https://www.litres.ru/book/a-v-kychkin/tehnologiya-programmnoy-implementacii-cifrovogo-dvoynika-v-kon-67125372/
+
+### trinidata Products
+АрхиГраф.Мир [SemanticIntro.pdf c89](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=89)  

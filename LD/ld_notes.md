@@ -20,3 +20,6 @@
 ### Триплет - граф
 Пример набора триплетов и графа Альфа - Бета  
 [SemanticIntro.pdf c69](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=69)  
+
+### SPARQL
+Пример SPARQL для Альфа - Бета [SemanticIntro.pdf c73](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=73)   

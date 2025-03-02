@@ -52,4 +52,4 @@ _:b0 [SemanticIntro.pdf c113](https://bpmbpm.github.io/doc/LD/trinidata/Semantic
 
 ## Termin
 ### Linked Data
-Бернерс-Ли [EnterpriseModeling.pdf c23](https://bpmbpm.github.io/doc/LD/trinidata/EnterpriseModeling.pdf#page=23)  
+Бернерс-Ли [EnterpriseModeling.pdf c23+1](https://bpmbpm.github.io/doc/LD/trinidata/EnterpriseModeling.pdf#page=24)  

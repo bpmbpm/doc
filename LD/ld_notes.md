@@ -42,5 +42,10 @@ _:b0 [SemanticIntro.pdf c113](https://bpmbpm.github.io/doc/LD/trinidata/Semantic
 ### Reasoner
 Машина логического вывода [SemanticIntro.pdf c79](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=79)   
 
+## MetaOntology
 ### Группировка сущностей
 Типы, Категории (Классификация vs Типизация) [SemanticIntro.pdf c138](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=138)  
+### Concept-individ-role
+Итак, в дескрипционных логиках у нас есть индивиды, концепты и роли. Сущности эти близко соответствуют первопорядковым константам и одно- и двуместным предикатам.
+Кроме того, у нас есть аксиомы, примерно соответствующие первопорядковым формулам, позволяющие выражать связи между индивидами, концептами и ролями.
+[EnterpriseModeling.pdf c20](https://bpmbpm.github.io/doc/LD/trinidata/EnterpriseModeling.pdf#page=20)  

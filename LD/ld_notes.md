@@ -16,6 +16,7 @@
 - Data properties – свойства-литералы,
 - Object properties – свойства-указатели на объекты.  
 Закладка Entities позволяет увидеть все эти элементы одновременно.  
+
 2 Редакторы онтологий и их возможности [EnterpriseModeling.pdf c190+1](https://bpmbpm.github.io/doc/LD/trinidata/EnterpriseModeling.pdf#page=191)  
 ### Триплет - граф
 Пример набора триплетов и графа Альфа - Бета  

@@ -24,6 +24,9 @@
 ### OWL API
 [SemanticIntro.pdf c87](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=87)   
 
+### RDF
+Группировка в RDF [SemanticIntro.pdf c98](trinidata/SemanticIntro.pdf#page=98)   
+
 ### SPARQL
 Пример SPARQL для Альфа - Бета [SemanticIntro.pdf c73](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=73)   
 

@@ -8,7 +8,7 @@
 [SemanticIntro.pdf c48](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=48)
 
 ### Protege
-закладки редактора  
+1 закладки редактора  
 3.3. Простые онтологические модели: индивидуальные объекты и свойства [SemanticIntro.pdf c58](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=58)  
 В Protégé сущности всех типов создаются похожим образом, только для этого используются разные закладки редактора:
 - Classes – классы,
@@ -16,7 +16,7 @@
 - Data properties – свойства-литералы,
 - Object properties – свойства-указатели на объекты.  
 Закладка Entities позволяет увидеть все эти элементы одновременно.
-
+2 Редакторы онтологий и их возможности [EnterpriseModeling.pdf c190+1](https://bpmbpm.github.io/doc/LD/trinidata/EnterpriseModeling.pdf#page=191)  
 ### Триплет - граф
 Пример набора триплетов и графа Альфа - Бета  
 [SemanticIntro.pdf c69](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=69)  

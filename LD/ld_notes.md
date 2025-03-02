@@ -24,6 +24,10 @@
 ### blank nodes
 _:b0 [SemanticIntro.pdf c113](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=113) 
 
+### Event Онтология
+Класс Событие [SemanticIntro.pdf c135](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=135)  
+Время в семантических моделях: John Sowa в книге «Knowledge representation. Logical, philosophical and computational foundations» ; ISO 15926
+
 ### OWL API
 [SemanticIntro.pdf c87](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=87)   
 
@@ -37,3 +41,6 @@ _:b0 [SemanticIntro.pdf c113](https://bpmbpm.github.io/doc/LD/trinidata/Semantic
 [SemanticIntro.pdf c83](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=83)   
 ### Reasoner
 Машина логического вывода [SemanticIntro.pdf c79](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=79)   
+
+### Группировка сущностей
+[SemanticIntro.pdf c138](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=138)  

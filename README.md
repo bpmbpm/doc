@@ -15,16 +15,19 @@ pdf [Исходный:](https://docs.aris.com/10.0.27.0/yaa-method-guide/en/Meth
 ### Прямые ссылки
 Для ссылок на страницу документа pdf требуется указать #page=xx. Однако известные сервисы: Adobe Document Cloud, Dropbox, Google Drive, 4Shared и [сотня подобных](https://www.reddit.com/r/DataHoarder/comments/vm2xtm/cloud_storage_providers_for_free_storage/) не дают прямых ссылкок на файл pdf. Ссылка на страницу pdf в них не возможна.   
 
-[мы дошли до того, что обсуждается Web3, но на большинстве популярных сервисов мы лишились абсолютно базовой функциональности, чтобы (ух ты!) получить файл по ссылке](https://www.reddit.com/r/DataHoarder/comments/yl2b2h/what_online_storage_lets_you_create_a_direct_link/) 
+[мы дошли до того, что обсуждается Web3, но на большинстве популярных сервисов мы лишились абсолютно базовой функциональности, чтобы (ух ты!) получить файл по ссылке](https://www.reddit.com/r/DataHoarder/comments/yl2b2h/what_online_storage_lets_you_create_a_direct_link/)  
 Ничего лучше не придумал, чем создать в отдельном проекте github хранилище документации, используемой в своих проектах. 
 Одна из проблем - это ограничение у github на загрузку файл более 25 Мб. Для уменьшения размера использовал: compress на ilovepdf.com & split на bigpdf.11zon.com
 ### Вызов нужной страницы pdf по прямой ссылке
 Чтобы обратиться к нужной страницие, например, #page=32, этой библиотеки нужно вызывать не (github.com/bpmbpm): 
 https://github.com/bpmbpm/doc/blob/main/BPM/ARIS/SCHEER/BASE/10-0sr6_Method_Manual.pdf#page=32
 
-а соответсвующую страницу Github Pages (bpmbpm.github.io): 
+а соответсвующую страницу Github Pages (bpmbpm.github.io):  
 https://bpmbpm.github.io/doc/BPM/ARIS/SCHEER/BASE/10-0sr6_Method_Manual.pdf#page=32
-Будет показана: "4.1.1.1 Function tree"
+Будет показана: "4.1.1.1 Function tree"  
+Номера страниц.  Часто нумерация страниц в pdf-файле отличается от источника, чаше на 1. Поэтому часто пишу так:  
+Бернерс-Ли [EnterpriseModeling.pdf c23+1] (https://bpmbpm.github.io/doc/LD/trinidata/EnterpriseModeling.pdf#page=24)  
+
 ### "Диверсии"
 Также склад материалов решает проблему удаления и перкладывания материалов на внешних источниках. Например, ARIS Method Manual и Method Reference годами лежали на постоянных ссылках docs.aris.com, но потом там зачем-то поперекладывали эти книжки и прежние ссылки перестали работать.  
 ### Поиск книг

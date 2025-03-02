@@ -1,6 +1,6 @@
 ## Текущие обсуждения:
 Trig:  
-https://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries
+https://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries  
 Ранее:   
 Пример SPARQL запроса к TripleStore (RDF store) на rdflib.js [Triple](https://github.com/bpmbpm/SemanticBPM/blob/main/samples/vad_1_rdflib/README.md)
 

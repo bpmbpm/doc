@@ -48,7 +48,7 @@ _:b0 [SemanticIntro.pdf c113](https://bpmbpm.github.io/doc/LD/trinidata/Semantic
 ### Concept-individ-role
 Итак, в дескрипционных логиках у нас есть индивиды, концепты и роли. Сущности эти близко соответствуют первопорядковым константам и одно- и двуместным предикатам.
 Кроме того, у нас есть аксиомы, примерно соответствующие первопорядковым формулам, позволяющие выражать связи между индивидами, концептами и ролями.
-[EnterpriseModeling.pdf c20](https://bpmbpm.github.io/doc/LD/trinidata/EnterpriseModeling.pdf#page=20)  
+[EnterpriseModeling.pdf c20](https://bpmbpm.github.io/doc/LD/trinidata/EnterpriseModeling.pdf#page=21)  
 
 ## Termin
 ### Linked Data

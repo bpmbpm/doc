@@ -25,7 +25,8 @@ https://github.com/bpmbpm/doc/blob/main/BPM/ARIS/SCHEER/BASE/10-0sr6_Method_Manu
 а соответсвующую страницу Github Pages (bpmbpm.github.io):  
 https://bpmbpm.github.io/doc/BPM/ARIS/SCHEER/BASE/10-0sr6_Method_Manual.pdf#page=32
 Будет показана: "4.1.1.1 Function tree"  
-Номера страниц.  Часто нумерация страниц в pdf-файле отличается от источника, чаше на 1. Поэтому часто пишу так:  
+### Номера страниц со знаком  
+Часто нумерация страниц в pdf-файле отличается от источника, чаще на 1. Поэтому часто пишу так:  
 Бернерс-Ли [EnterpriseModeling.pdf c23+1] (https://bpmbpm.github.io/doc/LD/trinidata/EnterpriseModeling.pdf#page=24)  
 
 ### "Диверсии"

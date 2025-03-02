@@ -23,3 +23,6 @@
 
 ### SPARQL
 Пример SPARQL для Альфа - Бета [SemanticIntro.pdf c73](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=73)   
+
+### Reasoner
+Машина логического вывода [SemanticIntro.pdf c79](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=79)   

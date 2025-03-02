@@ -1,6 +1,8 @@
 ## Текущие обсуждения:
-Перетащили многое из вкладки Code в wiki, некоторые ссылки перестали работать, со временем поправим
-В отдельный [doc-репо для Semantic BPM](https://github.com/bpmbpm/doc/tree/main/Project/SemanticBPM) убрал: 
+Пример SPARQL запроса к TripleStore (RDF store) на rdflib.js [Triple](https://github.com/bpmbpm/SemanticBPM/blob/main/samples/vad_1_rdflib/README.md)
+
+Перетащили многое из вкладки Code в wiki, некоторые ссылки перестали работать, со временем поправим.  
+Убрал в отдельный [doc-репо для Semantic BPM](https://github.com/bpmbpm/doc/tree/main/Project/SemanticBPM) : 
 1. [Общую теорию, включая методологические материалы:]( https://github.com/bpmbpm/doc/blob/main/Project/SemanticBPM/method/README.md) 
 Базовый технологический концепт и МетаМодель Репозитария схем процессов на TriG (quads) Repo MetaModel на TriG
 2. Описание [основного GUI]( https://github.com/bpmbpm/doc/blob/main/Project/SemanticBPM/design/mainGUI.md)

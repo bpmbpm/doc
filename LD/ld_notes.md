@@ -43,4 +43,4 @@ _:b0 [SemanticIntro.pdf c113](https://bpmbpm.github.io/doc/LD/trinidata/Semantic
 Машина логического вывода [SemanticIntro.pdf c79](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=79)   
 
 ### Группировка сущностей
-Типы, Категории [SemanticIntro.pdf c138](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=138)  
+Типы, Категории (Классификация vs Типизация) [SemanticIntro.pdf c138](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=138)  

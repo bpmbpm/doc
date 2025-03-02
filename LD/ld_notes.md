@@ -28,8 +28,11 @@ _:b0 [SemanticIntro.pdf c113](https://bpmbpm.github.io/doc/LD/trinidata/Semantic
 Класс Событие [SemanticIntro.pdf c135](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=135)  
 Время в семантических моделях: John Sowa в книге «Knowledge representation. Logical, philosophical and computational foundations» ; ISO 15926
 
+## OWL 
 ### OWL API
 [SemanticIntro.pdf c87](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=87)   
+### «корневые» типы сущностей модели OWL
+В стандарте представления онтологических моделей OWL определены несколько «корневых» типов сущностей, среди которых для нас важны класс (owl:Class) и индивидуальный объект (owl:NamedIndividual) [EnterpriseModeling.pdf c130+1](https://bpmbpm.github.io/doc/LD/trinidata/EnterpriseModeling.pdf#page=131) 
 
 ### RDF
 Группировка в RDF [SemanticIntro.pdf c98](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=98)   

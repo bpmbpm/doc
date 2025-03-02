@@ -21,6 +21,9 @@
 Пример набора триплетов и графа Альфа - Бета  
 [SemanticIntro.pdf c69](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=69)  
 
+### bkank nodes
+_:b0 [SemanticIntro.pdf c113](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=113) 
+
 ### OWL API
 [SemanticIntro.pdf c87](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=87)   
 

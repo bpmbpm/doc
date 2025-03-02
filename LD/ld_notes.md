@@ -56,5 +56,6 @@ _:b0 [SemanticIntro.pdf c113](https://bpmbpm.github.io/doc/LD/trinidata/Semantic
 ## Termin
 ### Linked Data
 Бернерс-Ли [EnterpriseModeling.pdf c23+1](https://bpmbpm.github.io/doc/LD/trinidata/EnterpriseModeling.pdf#page=24)   
+### triple
 Триплет – это элементарное высказывание, состоящее из трех элементов: субъекта, предиката и объекта (или, в терминах грамматики русского языка, подлежащего,
 сказуемого и дополнения), например: «змея является животным» [EnterpriseModeling.pdf c131+1](https://bpmbpm.github.io/doc/LD/trinidata/EnterpriseModeling.pdf#page=131)   

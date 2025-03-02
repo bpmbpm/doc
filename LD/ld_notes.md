@@ -21,8 +21,13 @@
 Пример набора триплетов и графа Альфа - Бета  
 [SemanticIntro.pdf c69](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=69)  
 
+### OWL API
+[SemanticIntro.pdf c87](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=87)   
+
 ### SPARQL
 Пример SPARQL для Альфа - Бета [SemanticIntro.pdf c73](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=73)   
 
+### SWRL
+[SemanticIntro.pdf c83](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=83)   
 ### Reasoner
 Машина логического вывода [SemanticIntro.pdf c79](https://bpmbpm.github.io/doc/LD/trinidata/SemanticIntro.pdf#page=79)   

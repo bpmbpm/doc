@@ -5,4 +5,4 @@
 
 Не путать с [IBM EE](https://www.ibm.com/docs/en/wasdtfe?topic=projects-enterprise-explorer-view-web-development)
 
-Построен на [DevExpress](https://github.com/devexpress) ; [Examples](https://github.com/DevExpress-Examples) ; [DevExpress Desktop](https://learn.microsoft.com/ru-ru/shows/visual-studio-toolbox/devexpress-desktop-components)
+Построен на [DevExpress](https://github.com/devexpress): [Examples](https://github.com/DevExpress-Examples) ; [DevExpress Desktop](https://learn.microsoft.com/ru-ru/shows/visual-studio-toolbox/devexpress-desktop-components)

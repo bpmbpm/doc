@@ -1,0 +1,6 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <rect id="blue-rectangle" width="50" height="30" fill="blue" />
+        <circle id="blue-circle" cx="75" cy="75" r="20" fill="blue" />
+    </defs>
+</svg>

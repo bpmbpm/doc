@@ -16,6 +16,12 @@ test
 `const box1Width = 50; // Ширина прямоугольника VAD1`  
 Их нужно определять в def или в крайнем случае в <style>. 
 
+Best:
+- https://habr.com/ru/articles/320504/
+- https://www.w3.org/TR/SVG2/struct.html#MetadataElement		
+Метаданные, включаемые в содержимое SVG, должны быть указаны в элементах ' metadata ' .
+Вот пример того, как метаданные могут быть включены в документ SVG. В примере используется схема Dublin Core версии 1.1.
+
 Ссылки:
 - [Перевод книги Pocket Guide to Writing SVG, c разрешения автора — Джони Трайтел](https://css-live.ru/articles/karmannoe-rukovodstvo-po-napisaniyu-svg-glava-1-organizaciya-dokumenta.html), Элемент defs
 - [SVG в вебе. Практическое руководство](https://svgontheweb.com/ru/)

@@ -1,0 +1,4 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <use href="https://bpmbpm.github.io/doc/test/SVG/first_file.svg#blue-rectangle" x="10" y="10" />
+    <use href="https://bpmbpm.github.io/doc/test/SVG/first_file.svg#blue-circle" x="100" y="100" />
+</svg>

@@ -9,6 +9,10 @@ https://t.me/rusontology/9468
 1. [BoldSea - это система автоматизации информационных процессов, сопровождающих производственные процессы.](https://t.me/boldsea/755)
 2. [Сравнение с 1С](https://t.me/rusontology/9565) отсюда: https://t.me/rusontology/9565  
 
+WFE (3/03/25)
+- [rusontology](https://t.me/rusontology/9569)
+- [boldsea](https://t.me/boldsea/772)
+
 Статьи:  
 1. osp:  
 https://www.osp.ru/os/2021/03/13055996

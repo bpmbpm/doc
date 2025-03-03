@@ -1,0 +1,64 @@
+<svg width="700" height="500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .boxProcBlue {
+      width: 100px;
+      height: 50px;
+      fill: lightblue;
+        
+    }
+    .boxProcGreen {
+      width: 100px;
+      height: 50px;
+      fill: lightgreen;
+        
+    }
+  </style>
+
+  <rect id="box1" class="boxProcGreen" x="50" y="50" width="100" height="50"/>
+  <rect id="box2" class="boxProcBlue" x="200" y="80" width="100" height="50" />
+  <rect id="box3" class="boxProcGreen" x="350" y="50" width="100" height="50" />
+  
+  <rect id="box4" class="boxProcGreen" x="500" y="50" width="100" height="50" />
+  <g id="connectors"></g>
+
+  <script>
+    function createConnector(id1, id2) {
+      const box1 = document.getElementById(id1);
+      const box2 = document.getElementById(id2);
+
+      const x1 = parseFloat(box1.getAttribute('x')) + box1.width.baseVal.value; // Правый край первого
+      const y1 = parseFloat(box1.getAttribute('y')) + box1.height.baseVal.value / 2; // Середина высоты первого
+      const x2 = parseFloat(box2.getAttribute('x')); // Левый край второго
+      const y2 = parseFloat(box2.getAttribute('y')) + box2.height.baseVal.value / 2;
+
+      // Создаем линию
+      const connector = document.createElementNS("http://www.w3.org/2000/svg", "line");
+      connector.setAttribute("x1", x1);
+      connector.setAttribute("y1", y1);
+      connector.setAttribute("x2", x2);
+      connector.setAttribute("y2", y2);
+      connector.setAttribute("stroke", "black");
+      connector.setAttribute("stroke-width", "2");
+
+      // Создаем стрелку
+      const arrowHead = document.createElementNS("http://www.w3.org/2000/svg", "polygon");
+      const arrowSize = 10; // Размер стрелки
+      const angle = Math.atan2(y2 - y1, x2 - x1); // Угол наклона стрелки
+      const arrowX = x2 - arrowSize * Math.cos(angle - Math.PI / 6);
+      const arrowY = y2 - arrowSize * Math.sin(angle - Math.PI / 6);
+      const arrowX2 = x2 - arrowSize * Math.cos(angle + Math.PI / 6);
+      const arrowY2 = y2 - arrowSize * Math.sin(angle + Math.PI / 6);
+      arrowHead.setAttribute("points", `${x2},${y2} ${arrowX},${arrowY} ${arrowX2},${arrowY2}`);
+      arrowHead.setAttribute("fill", "black");
+
+      document.getElementById('connectors').appendChild(connector);
+      document.getElementById('connectors').appendChild(arrowHead);
+    }
+
+    // Создаем соединения между элементами
+    createConnector('box1', 'box2');
+    createConnector('box2', 'box3'); // Соединяем box2 и box3
+    
+    createConnector('box3', 'box4'); // Соединяем box3 и box4
+  </script>
+</svg>

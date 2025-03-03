@@ -18,11 +18,19 @@
 Viewer:
 - [Opening a GRAPHML File](https://filext.com/file-extension/GRAPHML) Перетащите свой файл сюда, чтобы увидеть формат файла и предварительный просмотр вашего файла GRAPHML.
 
+graphml viewer open source:
+- [CyberPhoenix90](https://github.com/CyberPhoenix90/graphml-viewer) Библиотека для встраивания графиков graphml в вашу веб-страницу. Рендеринг с использованием SVG
+- [jsdelivr.com](https://www.jsdelivr.com/)
+- [yEd-GitHub chrome extension](https://site.robaone.com/blog/github-graphml-viewer)
+
 Editor yEd:
 - [yed-live](https://www.yworks.com/yed-live/)
 
 Материалы от yworks:  
 - [fileformat](https://yed.yworks.com/support/manual/fileformat.html)
+
+#### 1.1 gephi
+https://gephi.org/
 
 #### 2 JGraphT  
 - [JGraphT](https://coe.psu.ac.th/ad/party3/jgrapht/index.html)

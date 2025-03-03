@@ -7,5 +7,6 @@
 - [Как Comindware хранит данные Подробнее: https://www.comindware.ru/blog/%D0%BA%D0%B0%D0%BA-comindware-%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D1%82-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5/](https://www.comindware.ru/blog/%D0%BA%D0%B0%D0%BA-comindware-%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D1%82-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5/)
 - [База данных Apache Ignite](https://www.comindware.ru/assets/dl2/pdf/comindware-presentation-database.pdf)
 - [Моделирование знаний на графах / Триплеты: субъект-предикат-объект](https://kb.comindware.ru/article/modelirovanie-znanij-na-grafah-4857.html)
+- [Структура описания онтологий](https://kb.comindware.ru/article/%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BE%D0%BD%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9-1478.html)
 
 [Price](https://www.comindware.ru/comindware-pricing/)

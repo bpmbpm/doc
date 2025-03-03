@@ -15,3 +15,15 @@ test
 Результат см. ttest4no.svg. Однако определение высоты и ширины объекта (rect) в коде js не верно:   
 `const box1Width = 50; // Ширина прямоугольника VAD1`  
 Их нужно определять в def или в крайнем случае в <style>. 
+
+Ссылки:
+- [Перевод книги Pocket Guide to Writing SVG, c разрешения автора — Джони Трайтел](https://css-live.ru/articles/karmannoe-rukovodstvo-po-napisaniyu-svg-glava-1-organizaciya-dokumenta.html), Элемент defs
+- [SVG в вебе. Практическое руководство](https://svgontheweb.com/ru/)
+- [Структура SVG-файла](https://webmaster.alexanderklimov.ru/html/svg/structure.php)
+- [Библиотека js по изменению форм в SVG элементах](https://ru.stackoverflow.com/questions/616315/%d0%91%d0%b8%d0%b1%d0%bb%d0%b8%d0%be%d1%82%d0%b5%d0%ba%d0%b0-js-%d0%bf%d0%be-%d0%b8%d0%b7%d0%bc%d0%b5%d0%bd%d0%b5%d0%bd%d0%b8%d1%8e-%d1%84%d0%be%d1%80%d0%bc-%d0%b2-svg-%d1%8d%d0%bb%d0%b5%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d1%85)
+- [svg-art](https://svg-art.ru/?page_id=1047)
+- [mozilla: Element/use](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use)
+- [Как нарисовать прямоугольник на SVG движением мыши](https://ru.stackoverflow.com/questions/1335194/%D0%A0%D0%B8%D1%81%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-svg-%D0%B2-%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80%D0%B5-%D0%92%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE-%D0%BB%D0%B8)
+- https://ru.hexlet.io/blog/posts/kak-rabotat-s-formatom-svg-rukovodstvo-dlya-nachinayuschih-veb-razrabotchikov
+- https://serganbus.github.io/d3tutorials/svg_primer.html
+- https://serganbus.github.io/d3tutorials/index.html

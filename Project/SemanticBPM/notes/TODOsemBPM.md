@@ -1,4 +1,6 @@
 ## Текущие обсуждения:
+[SVG_createConnector](https://github.com/bpmbpm/SemanticBPM/tree/main/implementations/SVG/connector#svg_createconnector)
+
 Trig:  
 https://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries  
 Ранее:   

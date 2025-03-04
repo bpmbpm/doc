@@ -1,4 +1,5 @@
 ## Текущие обсуждения:
+Эксперименты:  
 [SVG_createConnector](https://github.com/bpmbpm/SemanticBPM/tree/main/implementations/SVG/connector#svg_createconnector)  
 [Связанная ссылка на Файл ttest5a.svg](https://github.com/bpmbpm/doc/blob/main/test/SVG/README.md)  
 

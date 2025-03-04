@@ -3,6 +3,9 @@
 [SVG_createConnector](https://github.com/bpmbpm/SemanticBPM/tree/main/implementations/SVG/connector#svg_createconnector)  
 [Связанная ссылка на Файл ttest5a.svg](https://github.com/bpmbpm/doc/blob/main/test/SVG/README.md)  
 
+Ключевая проблема:  
+[Замечания bpmbpm (24.02)](https://github.com/bpmbpm/SemanticBPM/wiki/%D0%97%D0%B0%D0%BC%D0%B5%D1%87%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BA-%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E#%D0%B7%D0%B0%D0%BC%D0%B5%D1%87%D0%B0%D0%BD%D0%B8%D1%8F-bpmbpm-2402)
+
 Trig:  
 https://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries  
 Ранее:   

@@ -1,5 +1,7 @@
 test
 ### Текущий вариант
+Связанная ссылка [SVG/connector](https://github.com/bpmbpm/SemanticBPM/tree/main/implementations/SVG/connector#svg_createconnector)  
+
 Файл ttest5a.svg показывает, как легко можно вводить данные по VAD - процессу. См. конец файла:  
 `<use id="box1" href="#VAD1" x="10" y="10" />` \
 `addInnerLabel('box1', 'Закупка заготовок');`\

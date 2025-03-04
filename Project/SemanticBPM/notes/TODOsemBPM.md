@@ -18,6 +18,7 @@ https://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries
 2. Описание [основного GUI]( https://github.com/bpmbpm/doc/blob/main/Project/SemanticBPM/design/mainGUI.md)
 3. test для [gse и onto](https://github.com/bpmbpm/doc/tree/main/Project/test)
 
+https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/process.md  
 Можно добавлять свои To-Do List ...
 
 ## Завершено:

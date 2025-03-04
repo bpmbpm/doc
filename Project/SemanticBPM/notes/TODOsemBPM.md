@@ -6,9 +6,9 @@
 Ключевая проблема:  
 [Замечания bpmbpm (24.02)](https://github.com/bpmbpm/SemanticBPM/wiki/%D0%97%D0%B0%D0%BC%D0%B5%D1%87%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BA-%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E#%D0%B7%D0%B0%D0%BC%D0%B5%D1%87%D0%B0%D0%BD%D0%B8%D1%8F-bpmbpm-2402)
 
-Trig:  
+Проблема с Trig, т.к. rdflib.js его не поддерживает:  
 https://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries  
-Ранее:   
+Ранее (теперь нужен Trig):   
 Пример SPARQL запроса к TripleStore (RDF store) на rdflib.js [Triple](https://github.com/bpmbpm/SemanticBPM/blob/main/samples/vad_1_rdflib/README.md)
 
 Перетащили многое из вкладки Code в wiki, некоторые ссылки перестали работать, со временем поправим.  

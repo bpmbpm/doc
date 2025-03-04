@@ -1,5 +1,14 @@
 test
-### Вызов элементов из библиотеки, реализуемой в отдельном (первом) svg
+### Текущий вариант
+Файл ttest5a.svg показывает, как легко можно вводить данные по VAD - процессу. См. конец файла:
+`<use id="box1" href="#VAD1" x="10" y="10" />` \
+`addInnerLabel('box1', 'Закупка заготовок');`\
+`createDirectedConnector('box1', 'box2');` \
+`addLabel('box1', 'Блок 1');` \
+Таким образом мы указали id (subject), надпись к нему, далее отношение vad:hasNent (как функция createDirectedConnector) и подпись внизу элемента (это будет роль \ исполнитель).
+[файл ttest5a.svg на Pages](https://bpmbpm.github.io/doc/test/SVG/ttest5a.svg)
+
+### Архив 1. Вызов элементов из библиотеки, реализуемой в отдельном (первом) svg
 [sec_file_http.svg](https://bpmbpm.github.io/doc/test/SVG/sec_file_http.svg) клонирует элементы из first_file_http.svg  
 Два файла first_file.svg и sec_file.svg при скачивании не сработают, т.к. будет ошибка безопасности (CORS): URLs are treated as unique security origins.
 
@@ -16,6 +25,7 @@ test
 `const box1Width = 50; // Ширина прямоугольника VAD1`  
 Их нужно определять в def или в крайнем случае в <style>. 
 
+### Материалы
 Best:
 - https://habr.com/ru/articles/320504/
 - https://www.w3.org/TR/SVG2/struct.html#MetadataElement		

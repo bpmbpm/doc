@@ -1,0 +1,114 @@
+<svg width="700" height="500" xmlns="http://www.w3.org/2000/svg">
+
+  <script>
+    const DEFAULT_WIDTH = 100; // Глобальное значение по умолчанию для ширины
+    const DEFAULT_HEIGHT = 60; // Глобальное значение по умолчанию для высоты
+
+    function createDirectedConnector(id1, id2) {
+      const boxA = document.getElementById(id1);
+      const boxB = document.getElementById(id2);
+      
+      const widthA = parseFloat(boxA.getAttribute('width')) || DEFAULT_WIDTH; // Ширина
+      const heightA = parseFloat(boxA.getAttribute('height')) || DEFAULT_HEIGHT; // Высота
+      const widthB = parseFloat(boxB.getAttribute('width')) || DEFAULT_WIDTH; // Ширина
+      const heightB = parseFloat(boxB.getAttribute('height')) || DEFAULT_HEIGHT; // Высота
+
+      const x1 = parseFloat(boxA.getAttribute('x')) + widthA; // Правый край boxA
+      const y1 = parseFloat(boxA.getAttribute('y')) + heightA / 2; // Центр по y
+      const x2 = parseFloat(boxB.getAttribute('x')); // Левый край boxB
+      const y2 = parseFloat(boxB.getAttribute('y')) + heightB / 2; // Центр по y
+
+      const connector = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+      connector.setAttribute('x1', x1);
+      connector.setAttribute('y1', y1);
+     // connector.setAttribute('x2', x2 - 5); // Уменьшаем x2 на 5, чтобы избежать наложения конца стрелки на rect
+      connector.setAttribute('x2', x2 - 9);
+      connector.setAttribute('y2', y2);
+      connector.setAttribute('stroke', 'black');
+      connector.setAttribute('marker-end', 'url(#arrowhead)'); // Добавляем стрелку на конце
+
+      document.getElementById('connectors').appendChild(connector);
+    }
+
+    function addLabel(boxId, labelText) {
+      const box = document.getElementById(boxId);
+      const width = parseFloat(box.getAttribute('width')) || DEFAULT_WIDTH; // Ширина
+      const height = parseFloat(box.getAttribute('height')) || DEFAULT_HEIGHT; // Высота
+      const x = parseFloat(box.getAttribute('x')) || 0; // Координата x
+      const y = parseFloat(box.getAttribute('y')) || 0; // Координата y
+
+      const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      text.setAttribute('class', 'label');
+      text.setAttribute('x', x + width / 2); // Центрируем по x
+      text.setAttribute('y', y + height + 15); // Под прямоугольником
+      text.textContent = labelText;
+
+      document.getElementById('connectors').appendChild(text);
+    }
+
+    function addInnerLabel(boxId, labelText) {
+      const box = document.getElementById(boxId);
+      const width = parseFloat(box.getAttribute('width')) || DEFAULT_WIDTH; // Ширина
+      const height = parseFloat(box.getAttribute('height')) || DEFAULT_HEIGHT; // Высота
+      const x = parseFloat(box.getAttribute('x')) || 0; // Координата x
+      const y = parseFloat(box.getAttribute('y')) || 0; // Координата y
+
+      const innerText = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      innerText.setAttribute('class', 'inner-label');
+      innerText.setAttribute('x', x + width / 2); // Центрируем по x
+      innerText.setAttribute('y', y + height / 2); // Центрируем по y
+      innerText.textContent = labelText;
+
+      document.getElementById('connectors').appendChild(innerText);
+    }
+ </script>
+
+  <defs>
+        <rect id="VAD1" width="100" height="60" fill="blue" />
+        <rect id="VAD2" width="100" height="60" fill="green" />
+        <style>
+            .label {
+                font-family: Arial;
+                font-size: 12px;
+                fill: black;
+            }
+            .inner-label {
+                font-family: Arial;
+                font-size: 10px;
+                fill: white; /* Цвет текста внутри блока */
+                text-anchor: middle; /* Центрируем текст */
+            }
+        </style>
+   <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+           refX="0" refY="3.5" orient="auto">
+     <polygon points="0 0, 10 3.5, 0 7" fill="black" />
+   </marker>
+ </defs>
+ 
+ <!-- Заполняем семантические свойства (кроме координат) 
+ Для блока VAD: назначаем id и указываем тип процесса (узла)
+ -->
+ <use id="box1" href="#VAD1" x="10" y="10" />
+ <use id="box2" href="#VAD2" x="160" y="20" />
+ <use id="box3" href="#VAD1" x="320" y="10" />
+
+ <g id="connectors"></g>
+
+<script>
+    // Подпись к VAD блоку + соединитель + указание исполнителя снизу блока
+    // Добавляем надписи внутрь блоков (название процесса)
+    addInnerLabel('box1', 'Закупка заготовок');
+    addInnerLabel('box2', 'Блок 2');
+    addInnerLabel('box3', 'Блок 3');
+    
+    // Создаем стрелочные соединения между элементами
+    createDirectedConnector('box1', 'box2');
+    createDirectedConnector('box2', 'box3');
+
+    // Добавляем подписи снизу блока (исполнители)
+    addLabel('box1', 'Блок 1');
+    addLabel('box2', 'Блок 2');
+    addLabel('box3', 'Блок 3');
+ 
+ </script>
+</svg>

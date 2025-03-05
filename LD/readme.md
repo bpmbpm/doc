@@ -4,10 +4,12 @@
 
 [Среда Описания Ресурса (RDF): Понятия и Абстрактный Синтаксис](https://www.w3.org/2007/03/rdf_concepts_ru)
 
+## LD-SVG 
+[SVGTiny12](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/metadata.html#MetadataAttributes) SVG documents contain RDF metadata (Dublin Core)
+
 ## LD-projects
 - [ExcelRDF](https://github.com/RealEstateCore/ExcelRDF) а также DTDLOntologyViewer, [dotnetrdf](https://dotnetrdf.org/)
 - [semantic-machines/veda](https://github.com/semantic-machines/veda) платформа разработки приложений на основе онтологии. Использует [jsplumbtoolkit](https://jsplumbtoolkit.com/)
-
 
 ## RDF vs property graph
 [5 отличий триплета от графа свойств](https://bigdataschool.ru/blog/what-is-triplets-rdf-in-neo4j-with-neosemantics.html)

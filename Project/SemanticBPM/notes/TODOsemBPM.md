@@ -20,6 +20,12 @@ https://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries
 
 https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/process.md  
 Можно добавлять свои To-Do List ...
+## Недавно
+1. SVG_createConnector
+https://github.com/bpmbpm/SemanticBPM/tree/main/implementations/SVG/connector
+[Связанная ссылка на Файл ttest5a.svg](https://github.com/bpmbpm/doc/blob/main/test/SVG/README.md)  
+2. https://github.com/bpmbpm/doc/tree/main/METAMODEL/PROCESS
+
 
 ## Завершено:
 [Archive](TODOsemBPMarc.md)

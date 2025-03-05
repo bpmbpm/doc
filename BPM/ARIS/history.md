@@ -49,6 +49,7 @@ https://download.oracle.com/opndocs/emea/Oracle_BPM_Training-03_Oracle_BPM_Suite
 - 2024 10.0 SR 27 
 
 "GPT считает" - в разных запросах он указаывает разные даты, путается (в показаниях), источники сказать не может, т.е. доверрие к нему малое. Сайты IDS Scheer и softwareag зачем то поудаляли все старые статьи с описанием прежних версий ("следы заметают").  
+см. также [history2.md](https://github.com/bpmbpm/doc/blob/main/BPM/ARIS/history2.md)  
 ARIS Toolset (IDS Scheer AG) = ARIS Business Architect
 
 Источники:

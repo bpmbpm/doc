@@ -6,7 +6,7 @@
 
 ## LD-projects
 - [ExcelRDF](https://github.com/RealEstateCore/ExcelRDF) а также DTDLOntologyViewer, [dotnetrdf](https://dotnetrdf.org/)
-- [semantic-machines/veda](https://github.com/semantic-machines/veda)
+- [semantic-machines/veda](https://github.com/semantic-machines/veda) платформа разработки приложений на основе онтологии
 
 
 ## RDF vs property graph

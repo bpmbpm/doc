@@ -4,6 +4,9 @@
 
 [Среда Описания Ресурса (RDF): Понятия и Абстрактный Синтаксис](https://www.w3.org/2007/03/rdf_concepts_ru)
 
+## Некоторые проекты
+[ExcelRDF](https://github.com/RealEstateCore/ExcelRDF) а также DTDLOntologyViewer, [dotnetrdf](https://dotnetrdf.org/)
+
 
 ## RDF vs property graph
 [5 отличий триплета от графа свойств](https://bigdataschool.ru/blog/what-is-triplets-rdf-in-neo4j-with-neosemantics.html)

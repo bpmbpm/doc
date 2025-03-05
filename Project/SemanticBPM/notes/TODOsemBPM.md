@@ -27,6 +27,7 @@ https://github.com/bpmbpm/SemanticBPM/tree/main/implementations/SVG/connector
 2. https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/process.md  
 3. Выбор js библиотек: https://github.com/bpmbpm/SemanticBPM/wiki/%D0%92%D1%8B%D0%B1%D0%BE%D1%80-%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA
 4. low-level process ontology https://github.com/bpmbpm/doc/blob/main/Project/SemanticBPM/method/onto_concept.md   
+5. Скопировать вопрос по онтологиям 
 
 ## Завершено:
 [Archive](TODOsemBPMarc.md)

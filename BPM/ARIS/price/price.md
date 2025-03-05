@@ -17,3 +17,8 @@
 - Итого: € 156,000, т.е. 15,6 млн. руб.
 
 Сравни с [Sila Union](https://github.com/bpmbpm/doc/blob/main/BPM/SU/README.md), у нее Business Server и Publisher Server совмещенный.
+
+[deepseek](https://chat.deepseek.com/a/chat/s/9c3953d4-3a9e-42cb-9557-aa1e0ab65a90) назвал похожую цену на
+3 ARIS Architect & Designer:  
+Цена за лицензию может составлять от $3,000 до $7,000.  
+Подходит для архитекторов и дизайнеров, работающих с бизнес-процессами.

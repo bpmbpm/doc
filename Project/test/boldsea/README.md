@@ -1,12 +1,13 @@
-BboldSea
-
-[Термины](https://t.me/boldsea/10)
-
-Обсуждения после демонстрации boldsea 27.02.25:  
+### BboldSea
+#### 1 Base
+- [agirussia.github.io](https://github.com/agirussia/agirussia.github.io/blob/main/workshops/2025/28_February_2025_Boldsea_event_driven_semantic_modeling_Alexander.md)
+- [Термины](https://t.me/boldsea/10)
+- Обсуждения после демонстрации boldsea 27.02.25:  
 [27 февраля 2025 - boldsea - событийно-ориентированное семантическое моделирование - Александр Болдачев — Семинар AGI - аудио](https://github.com/agirussia/agirussia.github.io/blob/main/workshops/2025/28_February_2025_Boldsea_event_driven_semantic_modeling_Alexander.md)  
 https://t.me/boldsea/727  
 https://t.me/rusontology/9468
 
+#### Другое
 Не понял:  
 1. [BoldSea - это система автоматизации информационных процессов, сопровождающих производственные процессы.](https://t.me/boldsea/755)
 2. [Сравнение с 1С](https://t.me/rusontology/9565) отсюда: https://t.me/rusontology/9565  

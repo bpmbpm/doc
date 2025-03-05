@@ -4,8 +4,10 @@
 
 [Среда Описания Ресурса (RDF): Понятия и Абстрактный Синтаксис](https://www.w3.org/2007/03/rdf_concepts_ru)
 
-## LD-SVG 
-[SVGTiny12](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/metadata.html#MetadataAttributes) SVG documents contain RDF metadata (Dublin Core)
+## RDF_SVG 
+- [SVGTiny12](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/metadata.html#MetadataAttributes) SVG documents contain RDF metadata (Dublin Core)
+
+также: [SemanticBPM/wiki](https://github.com/bpmbpm/SemanticBPM/wiki/%D0%92%D1%8B%D0%B1%D0%BE%D1%80-%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA#rdf_svg)
 
 ## LD-projects
 - [ExcelRDF](https://github.com/RealEstateCore/ExcelRDF) а также DTDLOntologyViewer, [dotnetrdf](https://dotnetrdf.org/)

@@ -5,7 +5,8 @@
 [Среда Описания Ресурса (RDF): Понятия и Абстрактный Синтаксис](https://www.w3.org/2007/03/rdf_concepts_ru)
 
 ## LD-projects
-[ExcelRDF](https://github.com/RealEstateCore/ExcelRDF) а также DTDLOntologyViewer, [dotnetrdf](https://dotnetrdf.org/)
+- [ExcelRDF](https://github.com/RealEstateCore/ExcelRDF) а также DTDLOntologyViewer, [dotnetrdf](https://dotnetrdf.org/)
+- [semantic-machines/veda](https://github.com/semantic-machines/veda)
 
 
 ## RDF vs property graph

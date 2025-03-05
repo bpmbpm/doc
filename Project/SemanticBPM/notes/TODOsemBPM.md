@@ -22,10 +22,11 @@ https://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries
 Эксперименты:  
 [Связанная ссылка на Файл ttest5a.svg](https://github.com/bpmbpm/doc/blob/main/test/SVG/README.md)
 2. process https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/process.md  
-3. Выбор js библиотек: https://github.com/bpmbpm/SemanticBPM/wiki/%D0%92%D1%8B%D0%B1%D0%BE%D1%80-%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA
+3. Выбор js библиотек: https://github.com/bpmbpm/SemanticBPM/wiki/%D0%92%D1%8B%D0%B1%D0%BE%D1%80-%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA  
+ссылку на wiki 
 4. low-level process ontology https://github.com/bpmbpm/doc/blob/main/Project/SemanticBPM/method/onto_concept.md
-6. https://github.com/bpmbpm/doc/blob/main/BPM/graphic_editor/format.md
-7. Скопировать вопрос по онтологиям 
+5. https://github.com/bpmbpm/doc/blob/main/BPM/graphic_editor/format.md
+6. Скопировать вопрос по онтологиям 
 
 ## Завершено:
 [Archive](TODOsemBPMarc.md)

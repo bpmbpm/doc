@@ -1,4 +1,5 @@
-### Подборка ссылок про направление semantic BPM 
+### Подборка ссылок про направление semantic BPM
+Папка проекта [SemanticBPM](https://github.com/bpmbpm/doc/tree/main/Project/SemanticBPM)
 #### Иллюстрации
 Обсуждения, habr \ boldachev:  
 [Информация, как много в этом слове…](https://habr.com/ru/articles/713376/#comment_25205654):  

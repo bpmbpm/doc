@@ -51,3 +51,5 @@ N-Quads [RDF 1.2 N-Quads]( https://www.w3.org/TR/rdf12-n-quads/) забрако�
 - [Примеры RDF-файлов из пособия "Основы языка RDF"](https://data.mendeley.com/datasets/fychx3rp6t/1)
 - [Named Graph]( https://patterns.dataincubator.org/book/named-graphs.html)
 - [RDF Quads, вкл. Сравнительную табличку](https://sphn-semantic-framework.readthedocs.io/en/latest/background_information/nquads.html)
+
+лежит в Project/SemanticBPM/semantic_tech

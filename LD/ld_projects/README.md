@@ -1,14 +1,13 @@
 Некторые проекты подробнее:
 
 ### ontodia
-- [github.com](https://github.com/metaphacts/ontodia/), info@metaphacts.com
+- [github.com](https://github.com/metaphacts/ontodia/), info @metaphacts.com
 - [npmjs](https://www.npmjs.com/package/ontodia/v/0.6.1-dev.20171013)
 
-ontodia http://ontodia.org/ перебразывает на [metaphacts.com](https://metaphacts.com/solutions/semantic-knowledge-modeling)
-
 https://github.com/metaphacts/ontodia/wiki  
-https://github.com/metaphacts/ontodia/wiki/Quick-start 
-
+https://github.com/metaphacts/ontodia/wiki/Quick-start  
+ontodia http://ontodia.org/ перебразывает на [metaphacts.com](https://metaphacts.com/solutions/semantic-knowledge-modeling)
+ 
 Публикации:
 - [Engaging with Knowledge Graphs](https://virtualtreasury.ie/archive-fever/mining-for-connections-in-the-records-knowledge-graphs)
 - https://sciencejournals.ru/view-article/?j=program&y=2020&v=0&n=6&a=Program2006006Razdyakonov

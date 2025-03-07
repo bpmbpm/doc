@@ -1,6 +1,6 @@
 Некторые проекты подробнее:
 
-ontodia:
+### ontodia
 - [github.com](https://github.com/metaphacts/ontodia/), info@metaphacts.com
 - [npmjs](https://www.npmjs.com/package/ontodia/v/0.6.1-dev.20171013)
 

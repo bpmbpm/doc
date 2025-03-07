@@ -12,6 +12,7 @@
 ## LD-projects
 - [ExcelRDF](https://github.com/RealEstateCore/ExcelRDF) а также DTDLOntologyViewer, [dotnetrdf](https://dotnetrdf.org/)
 - [semantic-machines/veda](https://github.com/semantic-machines/veda) платформа разработки приложений на основе онтологии. Использует [jsplumbtoolkit](https://jsplumbtoolkit.com/)
+- некоторые см. подробнее [папку LD/ld_projects](https://github.com/bpmbpm/doc/tree/main/LD/ld_projects): ontodia
 
 ## RDF vs property graph
 [5 отличий триплета от графа свойств](https://bigdataschool.ru/blog/what-is-triplets-rdf-in-neo4j-with-neosemantics.html)

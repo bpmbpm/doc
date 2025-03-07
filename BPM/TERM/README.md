@@ -15,3 +15,7 @@
 - [gartner](https://www.gartner.com/en/information-technology/glossary/enterprise-information-architecture#:~:text=Enterprise%20information%20architecture%20(EIA)%20is,to%20achieve%20effective%20enterprise%20change.):
 **Корпоративная информационная архитектура (EIA)** — это часть процесса корпоративной архитектуры (?), которая посредством набора требований, принципов и моделей описывает текущее состояние, будущее состояние и рекомендации, необходимые для гибкого совместного использования и обмена информационными активами с целью достижения эффективных изменений на предприятии.
 
+К этому:
+EAM = хотя параллельно переводят: [Enterprise Asset Management](https://www.tadviser.ru/index.php/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D1%8F:EAM-c%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0)
+[EAM house (structure, processes and organization), opengroup](https://www.opengroup.org/architecture/0404brus/presents/niemann/og_team02.pdf)  
+[EA, opengroup](https://www.opengroup.org/architecture-forum)

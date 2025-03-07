@@ -13,7 +13,7 @@ mxGraph:
 - [mxGraph User Manual](https://jgraph.github.io/mxgraph/docs/manual.html)   
 - [mxGraphModel-js](https://jgraph.github.io/mxgraph/docs/js-api/files/model/mxGraphModel-js.html)  
 
-примеры:  
-https://stackoverflow.com/questions/59315321/how-to-readjust-mxgraph-edges-while-moving-vertices-to-not-look-weird
-[Orgchart example for mxGraph](https://git.miem.hse.ru/aaovchinnikov/alg_vis/-/blob/60c41567363af5d21420916dca5bfd46efcb9dc8/mxgraph-4.0.6/javascript/examples/orgchart.html)
+Примеры:  
+- [edges](https://stackoverflow.com/questions/59315321/how-to-readjust-mxgraph-edges-while-moving-vertices-to-not-look-weird)
+- [Orgchart example for mxGraph](https://git.miem.hse.ru/aaovchinnikov/alg_vis/-/blob/60c41567363af5d21420916dca5bfd46efcb9dc8/mxgraph-4.0.6/javascript/examples/orgchart.html)
  

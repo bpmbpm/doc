@@ -6,7 +6,7 @@ ontodia:
 
 ontodia http://ontodia.org/ перебразывает на [metaphacts.com](https://metaphacts.com/solutions/semantic-knowledge-modeling)
 
-https://github.com/metaphacts/ontodia/wiki 
+https://github.com/metaphacts/ontodia/wiki  
 https://github.com/metaphacts/ontodia/wiki/Quick-start 
 
 Публикации:

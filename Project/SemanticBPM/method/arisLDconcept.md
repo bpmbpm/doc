@@ -22,7 +22,7 @@
 Нарисовать VAD схему (drawio, yEd) по заранее созданному Корпоративному семантическиому шаблону. 
 RDF-импорт парсит эти файлы и на выходе дает аналогичный набор TriG-файлов, которые загружаются в triple store. Элементы TreeView (левый верхний элемент основного GUI) оболочки RDF-Dia (базовый модуль приложения, пусть будет такое условное название) создаются на основе triple store (все элементы распределяются по дереву). В итоге мы получаем **привычный ARIS-интерфейс с семантическим движком**.  
 **Другими словами**: Мы закачиваем информацию из разных источников: yEd, drawio и т.п.   
-Закачиваем с трансляцией через свою онтологию (пока [VAD](https://github.com/bpmbpm/SemanticBPM/blob/main/docs/VAD/README.md)) в формате trig, далее из них формируем triple store (для начала жостаточно in-memory), далее любые к нему запросы (для начала SPARQL). 
+Закачиваем с трансляцией через свою онтологию (для начала [VAD](https://github.com/bpmbpm/SemanticBPM/blob/main/docs/VAD/README.md)) в формате trig, далее из них формируем triple store (для начала достаточно in-memory), далее любые к нему запросы (для начала SPARQL). 
 И все это aris-образное (ARIS-based), см. [mainGUI.md](https://github.com/bpmbpm/doc/blob/main/Project/SemanticBPM/design/mainGUI.md) \ [ARIS Publisher](http://www.bpm.processoffice.ru/).
 ### Корпоративный семантический шаблон
 Фрагмент трафарета Visio показан на рис. 3 [Repo MetaModel, TriG](https://github.com/bpmbpm/SemanticBPM/wiki/%D0%9C%D0%B5%D1%82%D0%B0%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D0%B2)  

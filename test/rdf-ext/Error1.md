@@ -25,7 +25,7 @@ javascript
 
 Переключиться на ESM: Если вы хотите использовать синтаксис import, вам нужно изменить расширение вашего файла на .mjs или добавить "type": "module" в ваш package.json. После этого вы сможете использовать import вместо require():
 javascript
-
+{
 
 import rdf from 'rdf-ext';
 
@@ -38,6 +38,6 @@ let quad = rdf.quad(subject, predicate, object);
 // log the triples to console with toString()
 console.log(quad.toString());
 
-
+}  
 Заключение
 Выберите один из предложенных способов, чтобы исправить ошибку. Если вы планируете использовать современные возможности JavaScript, рекомендуется перейти на ESM.

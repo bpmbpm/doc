@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Создано Microsoft Visio, экспорт SVG wiki_LLM_sBPM.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="11.6929in" height="8.26772in"
+		viewBox="0 0 841.89 595.276" xml:space="preserve" color-interpolation-filters="sRGB" class="st21">
+	<v:documentProperties v:langID="1049" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvSubprocessMaster" v:prompt="" v:val="VT4(Rectangle)"/>
+			<v:ud v:nameU="msvNoAutoConnect" v:val="VT0(1):26"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:none;stroke:#000000;stroke-width:0.25}
+		.st2 {fill:#000000;font-family:Calibri;font-size:0.833336em;font-weight:bold}
+		.st3 {font-size:1em;font-weight:normal}
+		.st4 {fill:none;stroke:none;stroke-width:0.25}
+		.st5 {fill:#5b9bd5;font-family:Calibri;font-size:1.00001em}
+		.st6 {fill:#000000;font-family:Calibri;font-size:0.833336em}
+		.st7 {font-size:1em}
+		.st8 {fill:#5b9bd5;font-family:Calibri;font-size:2.50001em}
+		.st9 {fill:#5b9bd5;font-family:Calibri;font-size:1.00001em;font-weight:bold}
+		.st10 {font-size:1em;text-decoration:underline}
+		.st11 {fill:#000000;font-family:Calibri;font-size:0.833336em;font-style:italic;font-weight:bold}
+		.st12 {fill:none;stroke:#000000;stroke-dasharray:1.75,1.25;stroke-width:0.25}
+		.st13 {fill:none;stroke:#000000;stroke-width:1}
+		.st14 {fill:#000000;font-family:Calibri;font-size:0.916672em}
+		.st15 {marker-end:url(#mrkr4-215);stroke:#5b9bd5;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st16 {fill:#5b9bd5;fill-opacity:1;stroke:#5b9bd5;stroke-opacity:1;stroke-width:0.28409090909091}
+		.st17 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
+		.st18 {fill:#4f87bb;font-family:Calibri;font-size:0.833336em}
+		.st19 {font-size:1em;font-weight:bold}
+		.st20 {font-size:1em;font-weight:bold;text-decoration:underline}
+		.st21 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend4">
+			<path d="M 2 1 L 0 0 L 2 -1 L 2 1 " style="stroke:none"/>
+		</g>
+		<marker id="mrkr4-215" class="st16" v:arrowType="4" v:arrowSize="2" v:setback="7.04" refX="-7.04" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-3.52,-3.52) "/>
+		</marker>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<v:userDefs>
+			<v:ud v:nameU="msvThemeOrder" v:val="VT0(0):26"/>
+		</v:userDefs>
+		<title>Страница-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="Соединительная линия" v:index="0"/>
+		<g id="shape1-1" v:mID="1" v:groupContext="shape" transform="translate(62.3622,-430.866)">
+			<title>Прямоугольник</title>
+			<desc>Нормативная база компании: Текстовые регламенты компании, кар...</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="562.677" width="113.39" height="65.1969"/>
+			<rect x="0" y="530.079" width="113.386" height="65.1969" class="st1"/>
+			<text x="16.38" y="540.18" class="st2" v:langID="1049"><v:paragraph v:spLine="-1" v:horizAlign="1"/><v:tabList/>Нормативная база <tspan
+						x="33.94" dy="1em" class="st3">компании</tspan><tspan class="st3">:<v:newlineChar/></tspan><tspan x="7.82"
+						dy="1em" class="st3">Текстовые регламенты </tspan><tspan x="13.62" dy="1em" class="st3">компании</tspan><tspan
+						class="st3">, </tspan><tspan class="st3">карточки </tspan><tspan x="11.66" dy="1em" class="st3">документов</tspan><tspan
+						class="st3">, </tspan><tspan class="st3">система </tspan><tspan x="25.53" dy="1em" class="st3">учета и поиска</tspan></text>		</g>
+		<g id="shape2-14" v:mID="2" v:groupContext="shape" transform="translate(62.3622,-507.402)">
+			<title>Лист.2</title>
+			<desc>Классический</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="581.102" width="113.39" height="28.3465"/>
+			<rect x="0" y="566.929" width="113.386" height="28.3465" class="st4"/>
+			<text x="21.58" y="584.7" class="st5" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Классический  </text>		</g>
+		<g id="shape4-17" v:mID="4" v:groupContext="shape" transform="translate(215.433,-430.866)">
+			<title>Прямоугольник.4</title>
+			<desc>Известный LLM + до-обучение регламентами компании</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="562.677" width="113.39" height="65.1969"/>
+			<rect x="0" y="530.079" width="113.386" height="65.1969" class="st1"/>
+			<text x="20.5" y="547.68" class="st6" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Известный <tspan
+						class="st7" v:langID="1033">LLM </tspan><tspan class="st7" v:langID="1033">+ <v:lf/></tspan><tspan
+						x="29.48" dy="1.2em" class="st7">до</tspan>-обучение <tspan x="25.95" dy="1.2em" class="st7">регламентами </tspan><tspan
+						x="35.28" dy="1.2em" class="st7">компании</tspan> </text>		</g>
+		<g id="shape5-25" v:mID="5" v:groupContext="shape" transform="translate(182.835,-449.291)">
+			<title>Лист.5</title>
+			<desc>+</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="12.7559" cy="581.102" width="25.52" height="28.3465"/>
+			<rect x="0" y="566.929" width="25.5118" height="28.3465" class="st4"/>
+			<text x="5.29" y="590.1" class="st8" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>+</text>		</g>
+		<g id="shape6-28" v:mID="6" v:groupContext="shape" transform="translate(335.906,-449.291)">
+			<title>Лист.6</title>
+			<desc>=</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="12.7559" cy="581.102" width="25.52" height="28.3465"/>
+			<rect x="0" y="566.929" width="25.5118" height="28.3465" class="st4"/>
+			<text x="5.29" y="590.1" class="st8" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>=</text>		</g>
+		<g id="shape7-31" v:mID="7" v:groupContext="shape" transform="translate(368.504,-430.866)">
+			<title>Прямоугольник.7</title>
+			<desc>AI как генератор ответов (ответчик) по текстовым регламентам ...</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="562.677" width="113.39" height="65.1969"/>
+			<rect x="0" y="530.079" width="113.386" height="65.1969" class="st1"/>
+			<text x="4.09" y="553.68" class="st6" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>AI как генератор ответов <tspan
+						x="4.87" dy="1.2em" class="st7">(</tspan>ответчик) по текстовым <tspan x="6.1" dy="1.2em" class="st7">регламентам компании</tspan></text>		</g>
+		<g id="shape8-36" v:mID="8" v:groupContext="shape" transform="translate(510.236,-467.717)">
+			<title>Лист.8</title>
+			<desc>Например, Перечисли всех участников процесса хх. В чем процес...</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="148.819" cy="581.102" width="297.64" height="28.3465"/>
+			<rect x="0" y="566.929" width="297.638" height="28.3465" class="st4"/>
+			<text x="4" y="581.73" class="st5" v:langID="1049"><v:paragraph/><v:tabList/>Например, Перечисли всех участников процесса хх. <v:newlineChar/><tspan
+						x="4" dy="1.2em" class="st7">В чем процесс хх не соответствует какому</tspan>-либо <tspan x="4" dy="1.2em"
+						class="st7">указанию ЦБ</tspan>? <v:newlineChar/><tspan x="4" dy="1.2em" class="st7">Нарисуй схему процесса хх в нотации </tspan>VAD, EPC, BPMN</text>		</g>
+		<g id="shape9-42" v:mID="9" v:groupContext="shape" transform="translate(215.433,-507.402)">
+			<title>Лист.9</title>
+			<desc>Новая технология</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="581.102" width="113.39" height="28.3465"/>
+			<rect x="0" y="566.929" width="113.386" height="28.3465" class="st4"/>
+			<text x="11.17" y="584.7" class="st5" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Новая технология</text>		</g>
+		<g id="shape10-45" v:mID="10" v:groupContext="shape" transform="translate(368.504,-507.402)">
+			<title>Лист.10</title>
+			<desc>Новая возможность</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="581.102" width="113.39" height="28.3465"/>
+			<rect x="0" y="566.929" width="113.386" height="28.3465" class="st4"/>
+			<text x="5.86" y="584.7" class="st5" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Новая возможность</text>		</g>
+		<g id="shape11-48" v:mID="11" v:groupContext="shape" transform="translate(-532.913,164.409) rotate(-90)">
+			<title>Лист.11</title>
+			<desc>AI \ LLM</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="32.5984" cy="581.102" width="65.2" height="28.3465"/>
+			<rect x="0" y="566.929" width="65.1969" height="28.3465" class="st4"/>
+			<text x="11.75" y="584.7" class="st9" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>AI \ LLM</text>		</g>
+		<g id="shape12-51" v:mID="12" v:groupContext="shape" transform="translate(62.3622,-325.984)">
+			<title>Прямоугольник.12</title>
+			<desc>WikiPedia = MediaWiki + Краудсорсинг (User-generated content)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="562.677" width="113.39" height="65.1969"/>
+			<rect x="0" y="530.079" width="113.386" height="65.1969" class="st1"/>
+			<text x="5.43" y="553.68" class="st2" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>WikiPedia<tspan
+						class="st7" v:langID="1033"> </tspan><tspan class="st3" v:langID="1033">= </tspan><tspan class="st3"
+						v:langID="1033">MediaWiki </tspan><tspan class="st3" v:langID="1033">+ <v:newlineChar/></tspan><tspan
+						x="13.73" dy="1.2em" class="st3">Краудсорсинг </tspan><tspan class="st3">(</tspan><tspan class="st3">User</tspan><tspan
+						class="st3">-</tspan><tspan x="17.32" dy="1.2em" class="st3">generated content</tspan><tspan class="st3">) </tspan> </text>		</g>
+		<a xlink:href="https://en.wikipedia.org/wiki/Linked_data">
+			<g id="shape13-64" v:mID="13" v:groupContext="shape" transform="translate(215.433,-325.984)">
+				<title>Прямоугольник.13</title>
+				<desc>Linked Data, ссылка на wiki</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="56.6929" cy="562.677" width="113.39" height="65.1969"/>
+				<rect x="0" y="530.079" width="113.386" height="65.1969" class="st1"/>
+				<text x="31.51" y="559.68" class="st6" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Linked Data<tspan
+							class="st7" v:langID="1049">, <v:newlineChar/></tspan><tspan x="26.4" dy="1.2em" class="st10"
+							v:langID="1049">ссылка на </tspan><tspan class="st10">wiki</tspan></text>			</g>
+		</a>
+		<g id="shape14-70" v:mID="14" v:groupContext="shape" transform="translate(182.835,-344.409)">
+			<title>Лист.14</title>
+			<desc>+</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="12.7559" cy="581.102" width="25.52" height="28.3465"/>
+			<rect x="0" y="566.929" width="25.5118" height="28.3465" class="st4"/>
+			<text x="5.29" y="590.1" class="st8" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>+</text>		</g>
+		<g id="shape15-73" v:mID="15" v:groupContext="shape" transform="translate(335.906,-344.409)">
+			<title>Лист.15</title>
+			<desc>=</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="12.7559" cy="581.102" width="25.52" height="28.3465"/>
+			<rect x="0" y="566.929" width="25.5118" height="28.3465" class="st4"/>
+			<text x="5.29" y="590.1" class="st8" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>=</text>		</g>
+		<g id="shape16-76" v:mID="16" v:groupContext="shape" transform="translate(368.504,-325.984)">
+			<title>Прямоугольник.16</title>
+			<desc>Wikidata, DBpedia, Freebase (Google Knowledge Graph) и т.п.</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="562.677" width="113.39" height="65.1969"/>
+			<rect x="0" y="530.079" width="113.386" height="65.1969" class="st1"/>
+			<text x="17.88" y="553.68" class="st6" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Wikidata<tspan
+						class="st7" v:langID="1033">, </tspan><tspan class="st7" v:langID="1033">DBpedia</tspan><tspan class="st7"
+						v:langID="1033">, </tspan><tspan x="21.15" dy="1.2em" class="st7" v:langID="1033">Freebase </tspan><tspan
+						class="st7" v:langID="1033">(</tspan><tspan class="st7" v:langID="1033">Google </tspan><tspan x="6.93"
+						dy="1.2em" class="st7" v:langID="1033">Knowledge Graph</tspan><tspan class="st7" v:langID="1033">) </tspan>и т.п.</text>		</g>
+		<g id="shape17-87" v:mID="17" v:groupContext="shape" transform="translate(510.236,-362.835)">
+			<title>Лист.17</title>
+			<desc>«Объект – ссылка (href) - Объект» vs Объект – типизированная ...</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="148.819" cy="581.102" width="297.64" height="28.3465"/>
+			<rect x="0" y="566.929" width="297.638" height="28.3465" class="st4"/>
+			<text x="4" y="581.73" class="st5" v:langID="1049"><v:paragraph/><v:tabList/>«Объект – ссылка (<tspan class="st7"
+						v:langID="1033">href</tspan>) - Объект» <tspan class="st7" v:langID="1033">vs<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st7">Объект </tspan>– типизированная ссылка – Объект<v:newlineChar/><tspan x="4"
+						dy="1.2em" class="st7">Онтологии </tspan>(редакторы онтологий), семантическая <tspan x="4" dy="1.2em"
+						class="st7">машина формирования рассуждений  и т</tspan>.п. </text>		</g>
+		<g id="shape18-95" v:mID="18" v:groupContext="shape" transform="translate(-532.913,269.291) rotate(-90)">
+			<title>Лист.18</title>
+			<desc>Global wiki</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="32.5984" cy="581.102" width="65.2" height="28.3465"/>
+			<rect x="0" y="566.929" width="65.1969" height="28.3465" class="st4"/>
+			<text x="4.77" y="584.7" class="st9" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Global wiki</text>		</g>
+		<g id="shape20-98" v:mID="20" v:groupContext="shape" transform="translate(-532.913,377.008) rotate(-90)">
+			<title>Лист.20</title>
+			<desc>Local wiki</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="32.5984" cy="581.102" width="65.2" height="28.3465"/>
+			<rect x="0" y="566.929" width="65.1969" height="28.3465" class="st4"/>
+			<text x="8.23" y="584.7" class="st9" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Local wiki</text>		</g>
+		<g id="shape22-101" v:mID="22" v:groupContext="shape" transform="translate(62.3622,-297.638)">
+			<title>Лист.22</title>
+			<desc>Информация об объектах с не типизированными wiki-ссылками (url)</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="63.7795" cy="581.102" width="127.56" height="28.3465"/>
+			<rect x="0" y="566.929" width="127.559" height="28.3465" class="st4"/>
+			<text x="4" y="578.43" class="st11" v:langID="1049"><v:paragraph v:spLine="-1"/><v:tabList/>Информация<tspan
+						class="st3"> </tspan><tspan class="st3">об объектах </tspan><tspan x="4" dy="1em" class="st3">с не типизированными </tspan><tspan
+						x="4" dy="1em" class="st3" v:langID="1033">wiki</tspan><tspan class="st3" v:langID="1033">-</tspan><tspan
+						class="st3">ссылками </tspan><tspan class="st3">(</tspan><tspan class="st3" v:langID="1033">url</tspan><tspan
+						class="st3">) </tspan> </text>		</g>
+		<g id="shape23-113" v:mID="23" v:groupContext="shape" transform="translate(62.3622,-218.268)">
+			<title>Прямоугольник.23</title>
+			<desc>Локальная wiki</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="562.677" width="113.39" height="65.1969"/>
+			<rect x="0" y="530.079" width="113.386" height="65.1969" class="st1"/>
+			<text x="24.68" y="565.68" class="st6" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Локальная <tspan
+						class="st7" v:langID="1033">wiki</tspan></text>		</g>
+		<g id="shape24-117" v:mID="24" v:groupContext="shape" transform="translate(215.433,-218.268)">
+			<title>Прямоугольник.24</title>
+			<desc>Linked Data</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="562.677" width="113.39" height="65.1969"/>
+			<rect x="0" y="530.079" width="113.386" height="65.1969" class="st1"/>
+			<text x="32.76" y="565.68" class="st6" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Linked Data</text>		</g>
+		<g id="shape25-120" v:mID="25" v:groupContext="shape" transform="translate(182.835,-236.693)">
+			<title>Лист.25</title>
+			<desc>+</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="12.7559" cy="581.102" width="25.52" height="28.3465"/>
+			<rect x="0" y="566.929" width="25.5118" height="28.3465" class="st4"/>
+			<text x="5.29" y="590.1" class="st8" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>+</text>		</g>
+		<g id="shape26-123" v:mID="26" v:groupContext="shape" transform="translate(335.906,-236.693)">
+			<title>Лист.26</title>
+			<desc>=</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="12.7559" cy="581.102" width="25.52" height="28.3465"/>
+			<rect x="0" y="566.929" width="25.5118" height="28.3465" class="st4"/>
+			<text x="5.29" y="590.1" class="st8" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>=</text>		</g>
+		<g id="shape27-126" v:mID="27" v:groupContext="shape" transform="translate(368.504,-218.268)">
+			<title>Прямоугольник.27</title>
+			<desc>Semantic MediaWiki (SMW)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="562.677" width="113.39" height="65.1969"/>
+			<rect x="0" y="530.079" width="113.386" height="65.1969" class="st1"/>
+			<text x="14.88" y="559.68" class="st6" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Semantic MediaWiki <tspan
+						x="42.64" dy="1.2em" class="st7">(</tspan>SMW)</text>		</g>
+		<g id="shape29-130" v:mID="29" v:groupContext="shape" transform="translate(62.3622,-42.5197)">
+			<title>Прямоугольник.29</title>
+			<desc>BPM – система (BPMS) ARIS (ARIS-based)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="562.677" width="113.39" height="65.1969"/>
+			<rect x="0" y="530.079" width="113.386" height="65.1969" class="st1"/>
+			<text x="9.2" y="559.68" class="st6" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>BPM – <tspan
+						class="st7" v:langID="1049">система </tspan><tspan class="st7" v:langID="1049">(</tspan>BPMS)<v:newlineChar/><tspan
+						x="20.58" dy="1.2em" class="st7">ARIS </tspan>(ARIS-based)</text>		</g>
+		<g id="shape32-136" v:mID="32" v:groupContext="shape" transform="translate(62.3622,-138.898)">
+			<title>Прямоугольник.32</title>
+			<desc>Классическая корпоративная wiki (MediaWiki, Confluence)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="562.677" width="113.39" height="65.1969"/>
+			<rect x="0" y="530.079" width="113.386" height="65.1969" class="st1"/>
+			<text x="28.07" y="553.68" class="st6" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Классическая <tspan
+						x="15.1" dy="1.2em" class="st7">корпоративная </tspan><tspan class="st7" v:langID="1033">wiki </tspan><tspan
+						x="6.39" dy="1.2em" class="st7" v:langID="1033">(</tspan><tspan class="st7" v:langID="1033">MediaWiki</tspan><tspan
+						class="st7" v:langID="1033">, </tspan><tspan class="st7" v:langID="1033">Confluence</tspan><tspan
+						class="st7" v:langID="1033">)</tspan></text>		</g>
+		<g id="shape33-146" v:mID="33" v:groupContext="shape" transform="translate(215.433,-138.898)">
+			<title>Прямоугольник.33</title>
+			<desc>Linked Data, вкл. онтологии предприятия</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="562.677" width="113.39" height="65.1969"/>
+			<rect x="0" y="530.079" width="113.386" height="65.1969" class="st1"/>
+			<text x="31.51" y="553.68" class="st6" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Linked Data<tspan
+						class="st7" v:langID="1049">, <v:newlineChar/></tspan><tspan x="24.83" dy="1.2em" class="st7"
+						v:langID="1049">вкл</tspan><tspan class="st7" v:langID="1049">. </tspan><tspan class="st7" v:langID="1049">онтологии</tspan> <tspan
+						x="28.87" dy="1.2em" class="st7" v:langID="1049">предприятия</tspan></text>		</g>
+		<g id="shape34-154" v:mID="34" v:groupContext="shape" transform="translate(182.835,-157.323)">
+			<title>Лист.34</title>
+			<desc>+</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="12.7559" cy="581.102" width="25.52" height="28.3465"/>
+			<rect x="0" y="566.929" width="25.5118" height="28.3465" class="st4"/>
+			<text x="5.29" y="590.1" class="st8" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>+</text>		</g>
+		<g id="shape35-157" v:mID="35" v:groupContext="shape" transform="translate(335.906,-157.323)">
+			<title>Лист.35</title>
+			<desc>=</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="12.7559" cy="581.102" width="25.52" height="28.3465"/>
+			<rect x="0" y="566.929" width="25.5118" height="28.3465" class="st4"/>
+			<text x="5.29" y="590.1" class="st8" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>=</text>		</g>
+		<g id="shape36-160" v:mID="36" v:groupContext="shape" transform="translate(368.504,-138.898)">
+			<title>Прямоугольник.36</title>
+			<desc>SMW – как граф знаний предприятия, Семантическая корпоративна...</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="562.677" width="113.39" height="65.1969"/>
+			<rect x="0" y="530.079" width="113.386" height="65.1969" class="st1"/>
+			<text x="6.5" y="541.68" class="st6" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>SMW<tspan class="st7"
+						v:langID="1049"> </tspan><tspan class="st7" v:langID="1049">–</tspan><tspan class="st7" v:langID="1049"> </tspan><tspan
+						class="st7" v:langID="1049">как граф знаний </tspan><tspan x="27.63" dy="1.2em" class="st7" v:langID="1049">предприятия</tspan><tspan
+						class="st7" v:langID="1049">, </tspan><tspan x="24.42" dy="1.2em" class="st7" v:langID="1049">Семантическая </tspan><tspan
+						x="15.1" dy="1.2em" class="st7" v:langID="1049">корпоративная </tspan>wiki<tspan class="st7"
+						v:langID="1049"> </tspan><tspan x="31.95" dy="1.2em" class="st7" v:langID="1049">(</tspan>RDF-based<tspan
+						class="st7" v:langID="1049">)</tspan></text>		</g>
+		<g id="shape37-174" v:mID="37" v:groupContext="shape" transform="translate(-532.913,470.551) rotate(-90)">
+			<title>Лист.37</title>
+			<desc>Enterprise wiki</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="46.7717" cy="581.102" width="93.55" height="28.3465"/>
+			<rect x="0" y="566.929" width="93.5433" height="28.3465" class="st4"/>
+			<text x="9.5" y="584.7" class="st9" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Enterprise wiki</text>		</g>
+		<g id="shape38-177" v:mID="38" v:groupContext="shape" transform="translate(368.504,-297.638)">
+			<title>Лист.38</title>
+			<desc>Знания об объектах с типизированными ссылками (предикатами)</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="63.7795" cy="581.102" width="127.56" height="28.3465"/>
+			<rect x="0" y="566.929" width="127.559" height="28.3465" class="st4"/>
+			<text x="4" y="578.43" class="st11" v:langID="1049"><v:paragraph v:spLine="-1"/><v:tabList/>Знания <tspan class="st3">об объектах с </tspan><tspan
+						x="4" dy="1em" class="st3">типизированными </tspan><tspan x="4" dy="1em" class="st3">ссылками </tspan><tspan
+						class="st3">(</tspan><tspan class="st3">предикатами</tspan><tspan class="st3">) </tspan> </text>		</g>
+		<g id="shape46-186" v:mID="46" v:groupContext="shape" transform="translate(215.433,-42.5197)">
+			<title>Прямоугольник.46</title>
+			<desc>Process \ Task Mining, RPA и т.п.</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="574.016" width="113.39" height="42.5197"/>
+			<path d="M0 595.28 L113.39 595.28 L113.39 552.76 L0 552.76 L0 595.28 Z" class="st12"/>
+			<text x="11.41" y="571.02" class="st6" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Process \ Task Mining, <tspan
+						x="36.48" dy="1.2em" class="st7">RPA </tspan><tspan class="st7" v:langID="1049">и т</tspan><tspan
+						class="st7" v:langID="1049">.</tspan><tspan class="st7" v:langID="1049">п</tspan><tspan class="st7"
+						v:langID="1049">.</tspan></text>		</g>
+		<g id="shape47-194" v:mID="47" v:groupContext="shape" transform="translate(368.504,-42.5197)">
+			<title>Прямоугольник.47</title>
+			<desc>Граф знаний предприятия в классических BPM-нотациях (ARIS-bas...</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="77.9528" cy="562.677" width="155.91" height="65.1969"/>
+			<rect x="0" y="530.079" width="155.906" height="65.1969" class="st13"/>
+			<text x="12.88" y="539.58" class="st14" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Граф знаний предприятия в <tspan
+						x="11.78" dy="1.2em" class="st7">классических </tspan><tspan class="st7" v:langID="1033">BPM</tspan><tspan
+						class="st7" v:langID="1033">-</tspan>нотациях <tspan x="8.39" dy="1.2em" class="st7">(</tspan><tspan
+						class="st7" v:langID="1033">ARIS</tspan><tspan class="st7" v:langID="1033">-</tspan><tspan class="st7"
+						v:langID="1033">based</tspan>) с семантическим <tspan x="14.96" dy="1.2em" class="st7">(</tspan><tspan
+						class="st7" v:langID="1033">RDF</tspan><tspan class="st7" v:langID="1033">-</tspan><tspan class="st7"
+						v:langID="1033">based</tspan>) движком<tspan class="st7" v:langID="1033"> </tspan>«под <tspan x="55.44"
+						dy="1.2em" class="st7">капотом</tspan>»</text>		</g>
+		<g id="shape48-210" v:mID="48" v:groupContext="shape" v:layerMember="0" transform="translate(175.748,-75.1181)">
+			<title>Динамическая соединительная линия</title>
+			<desc>классические подходы BPM, вкл. ARIS Method, нотации BPM \ EA</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="119.055" cy="550.529" width="211.23" height="32.0037"/>
+			<path d="M0 595.28 L13.77 595.28 L13.77 550.53 L270.71 550.53 L270.71 555.64" class="st15"/>
+			<rect v:rectContext="textBkgnd" x="19.7039" y="538.529" width="198.702" height="24.0002" class="st17"/>
+			<text x="19.7" y="547.53" class="st18" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>классические подходы <tspan
+						class="st7" v:langID="1033">BPM</tspan>, вкл. <tspan class="st7" v:langID="1033">ARIS Method</tspan><tspan
+						class="st7" v:langID="1033">, <v:lf/></tspan><tspan x="81.07" dy="1.2em" class="st7">нотации </tspan><tspan
+						class="st7" v:langID="1033">BPM </tspan><tspan class="st7" v:langID="1033">\ </tspan><tspan class="st7"
+						v:langID="1033">EA</tspan></text>		</g>
+		<g id="shape49-225" v:mID="49" v:groupContext="shape" v:layerMember="0" transform="translate(481.89,-171.496)">
+			<title>Динамическая соединительная линия.49</title>
+			<desc>Trig\RDF, SPARQL, triple store</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="59.9325" cy="622.205" width="84.83" height="32.0037"/>
+			<path d="M0 595.28 L59.93 595.28 L59.93 691.65 L49.56 691.65" class="st15"/>
+			<rect v:rectContext="textBkgnd" x="22.6523" y="610.205" width="74.5606" height="24.0002" class="st17"/>
+			<text x="22.65" y="619.2" class="st18" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Trig\RDF, SPARQL,<v:lf/><tspan
+						x="36.35" dy="1.2em" class="st7"> </tspan>triple store    </text>		</g>
+		<g id="shape51-233" v:mID="51" v:groupContext="shape" transform="translate(-221.102,564.803) rotate(-90)">
+			<title>Лист.51</title>
+			<desc>Semantic ARIS</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="40.3937" cy="581.102" width="80.79" height="28.3465"/>
+			<rect x="0" y="566.929" width="80.7874" height="28.3465" class="st4"/>
+			<text x="4" y="584.7" class="st9" v:langID="1033"><v:paragraph/><v:tabList/>Semantic ARIS  </text>		</g>
+		<g id="shape52-236" v:mID="52" v:groupContext="shape" transform="translate(-532.913,564.094) rotate(-90)">
+			<title>Лист.52</title>
+			<desc>Semantic BPM</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="46.7717" cy="581.102" width="93.55" height="28.3465"/>
+			<rect x="0" y="566.929" width="93.5433" height="28.3465" class="st4"/>
+			<text x="10.63" y="584.7" class="st9" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Semantic BPM  </text>		</g>
+		<g id="shape56-239" v:mID="56" v:groupContext="shape" transform="translate(503.15,-209.764)">
+			<title>Лист.56</title>
+			<desc>On-Premise корпоративные системы управления информацией (корп...</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="148.819" cy="581.102" width="297.64" height="28.3465"/>
+			<rect x="0" y="566.929" width="297.638" height="28.3465" class="st4"/>
+			<text x="4" y="581.73" class="st5" v:langID="1033"><v:paragraph/><v:tabList/>On-Premise<tspan class="st7"
+						v:langID="1049"> </tspan><tspan class="st7" v:langID="1049">корпоративные</tspan> <tspan class="st7"
+						v:langID="1049">системы управления </tspan><tspan x="4" dy="1.2em" class="st7" v:langID="1049">информацией </tspan><tspan
+						class="st7" v:langID="1049">(</tspan><tspan class="st7" v:langID="1049">корпоративные </tspan>wiki) <tspan
+						class="st7" v:langID="1049">и знаниями </tspan><tspan x="4" dy="1.2em" class="st7" v:langID="1049">(</tspan><tspan
+						class="st19">Semantic </tspan>wiki<tspan class="st7" v:langID="1049">, </tspan><tspan class="st7"
+						v:langID="1049">базы знаний</tspan><tspan class="st7" v:langID="1049">)</tspan></text>		</g>
+		<a xlink:href="https://github.com/bpmbpm/doc/blob/main/BPM/AI/LLM_wikipedia.md">
+			<g id="shape59-254" v:mID="59" v:groupContext="shape" transform="translate(423.78,-396.85)">
+				<title>Лист.59</title>
+				<desc>Сравнение LLM vs WikiPedia см. Wikipedia vs. LLM</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+				<v:textRect cx="148.819" cy="581.102" width="297.64" height="28.3465"/>
+				<rect x="0" y="566.929" width="297.638" height="28.3465" class="st4"/>
+				<text x="4" y="581.73" class="st5" v:langID="1049"><v:paragraph/><v:tabList/><tspan class="st10">Сравнение </tspan><tspan
+							class="st10">LLM vs WikiPedia </tspan><tspan class="st10">см</tspan><tspan class="st10">. </tspan><tspan
+							class="st10" v:langID="1033">Wikipedia vs</tspan><tspan class="st10" v:langID="1033">. </tspan><tspan
+							class="st10" v:langID="1033">LLM</tspan></text>			</g>
+		</a>
+		<g id="shape60-264" v:mID="60" v:groupContext="shape" transform="translate(68.0315,-547.087)">
+			<title>Лист.60</title>
+			<desc>Направления модернизации системы знаний предприятия и развити...</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="354.331" cy="581.102" width="708.67" height="28.3465"/>
+			<rect x="0" y="566.929" width="708.661" height="28.3465" class="st4"/>
+			<text x="52.37" y="584.7" class="st9" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>Направления модернизации системы знаний предприятия<tspan
+						class="st7" v:langID="1033"> </tspan>и развития <tspan class="st7" v:langID="1033">BPM</tspan> \ <tspan
+						class="st7" v:langID="1033">EA </tspan><tspan class="st7" v:langID="1033">(</tspan><tspan class="st7"
+						v:langID="1033">LLM</tspan><tspan class="st7" v:langID="1033">, </tspan><tspan class="st7" v:langID="1033">semantic Wiki</tspan><tspan
+						class="st7" v:langID="1033">, </tspan><tspan class="st7" v:langID="1033">semantic BPM</tspan><tspan
+						class="st7" v:langID="1033">)</tspan></text>		</g>
+		<a xlink:href="https://github.com/bpmbpm/SemanticBPM">
+			<g id="shape61-277" v:mID="61" v:groupContext="shape" transform="translate(561.26,-60.9449)">
+				<title>Лист.61</title>
+				<desc>Подробнее: проект Семантическое предприятие, Semantic BPM, Se...</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="94.9606" cy="581.102" width="189.93" height="28.3465"/>
+				<rect x="0" y="566.929" width="189.921" height="28.3465" class="st4"/>
+				<text x="4" y="555.9" class="st5" v:langID="1049"><v:paragraph/><v:tabList/>Подробнее: проект <v:newlineChar/><tspan
+							x="4" dy="1.2em" class="st7">Семантическое предприятие</tspan>,   <tspan x="4" dy="1.2em" class="st7">Semantic BPM</tspan>, <tspan
+							class="st7" v:langID="1033">S</tspan>emantic ARIS.<v:newlineChar/><tspan x="4" dy="1.2em" class="st10"
+							v:langID="1033">https</tspan><tspan class="st10" v:langID="1033">://</tspan><tspan class="st10"
+							v:langID="1033">github</tspan><tspan class="st10" v:langID="1033">.</tspan><tspan class="st10"
+							v:langID="1033">com</tspan><tspan class="st10" v:langID="1033">/</tspan><tspan class="st10"
+							v:langID="1033">bpmbpm</tspan><tspan class="st10" v:langID="1033">/</tspan><tspan x="4" dy="1.2em"
+							class="st20" v:langID="1033">SemanticBPM</tspan></text>			</g>
+		</a>
+	</g>
+</svg>

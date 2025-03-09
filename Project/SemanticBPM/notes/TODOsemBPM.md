@@ -15,7 +15,10 @@ https://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries
 3. test для [gse и onto](https://github.com/bpmbpm/doc/tree/main/Project/test)
 
 
-Можно добавлять свои To-Do List ...
+Можно добавлять свои To-Do List ...  
+bpmbpm 
+1 ontodia, bpm ess, почитать matt
+
 ## Недавно
 1. SVG_createConnector  
 [SVG_createConnector](https://github.com/bpmbpm/SemanticBPM/tree/main/implementations/SVG/connector#svg_createconnector)  

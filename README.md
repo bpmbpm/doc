@@ -134,7 +134,7 @@ Opengroup case-study-models:
 - W3C (LD, LOD, Semantic Web)
 - BOK: eabok, bizbok, babok, BPM cbok, dmbok, [IASA - BTABoK](https://iasa-global.github.io/btabok). См. папки [IT/BOK](IT/BOK) ; [PM_BA](PM_BA)
 ## К проекту [Semantic BPM](https://github.com/bpmbpm/SemanticBPM)
-- Семантическое предприятие или [проект Semantic BPM](https://github.com/bpmbpm/SemanticBPM) - "он же" semantic EA, semantic ARIS.
+- Семантическое предприятие, [проект Semantic BPM](https://github.com/bpmbpm/SemanticBPM), Semantic EA, Semantic ARIS и т.п.
 - DOC-раздел на [bpmbpm/DOC](https://github.com/bpmbpm/doc/tree/main/Project/SemanticBPM) к проекту Semantic BPM
 - К общему представлению семантики, понятию "знание" и семантики в бизнес-процессах [см. Иллюстрации](https://github.com/bpmbpm/doc/blob/main/BPM/semantic/README.md) и в целом папка [doc/BPM/semantic](https://github.com/bpmbpm/doc/tree/main/BPM/semantic)
 - test [bpmbpm.github.io/doc](https://bpmbpm.github.io/doc/)

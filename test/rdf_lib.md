@@ -130,9 +130,8 @@ async function main() {
     console.log(`Число загруженных TriG элементов: ${store.size}`);
 }
 
-main().catch(console.error);
-Сравнение библиотек
-
+main().catch(console.error);  
+**Сравнение библиотек**
 |Библиотека	|Поддержка TriG	|SPARQL-запросы	|Простота использования	|Производительность|  
 |---|---|---|---|---|
 |Comunica	|Да	|Да	|Средняя	|Высокая|

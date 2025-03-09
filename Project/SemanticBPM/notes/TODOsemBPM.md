@@ -16,7 +16,7 @@ https://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries
 
 
 Можно добавлять свои To-Do List ...  
-bpmbpm 
+bpmbpm  
 1 ontodia, bpm ess, почитать matt
 
 ## Недавно

@@ -1,4 +1,4 @@
-###
+###  require vs import
 Зупуск: https://github.com/rdf-ext/documentation?tab=readme-ov-file#create-a-triplequad
 
 Решение:

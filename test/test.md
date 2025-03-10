@@ -3,4 +3,4 @@ test
 https://bpmbpm.github.io/doc/test/ttest1.svg
 
 ### js
-Проблема [см. Error1.md](rdf-ext/Error1.md)
+Решение проблемы require vs import через mjs [см. Error1.md](rdf-ext/Error1.md)

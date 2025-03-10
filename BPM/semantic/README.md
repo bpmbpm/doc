@@ -1,4 +1,4 @@
-### Подборка ссылок про направление semantic BPM
+### Подборка ссылок про "BPM+Семантика", т.е. направление semantic BPM
 Папка проекта [SemanticBPM](https://github.com/bpmbpm/doc/tree/main/Project/SemanticBPM)
 #### Иллюстрации
 Обсуждения, habr \ boldachev:  

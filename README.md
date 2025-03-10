@@ -59,7 +59,7 @@ ARIS ; [fujitsu i-Flow](https://www.fujitsu.com/downloads/SG/fapl/workflow/iflow
 - code to dia: 1 plantUML / [UML sequence-диаграмма](https://habr.com/ru/articles/814769/) ;
 - Обзоры нотаций: [1](https://infostart.ru/pm/1435952/)
 - Редкие: [turtle](https://www.surajmech.com/2020/03/turtle-diagram-in-iatf-169492016.html)
-- Страничка по нотациям
+- Страничка по [нотациям BPM \ EA](https://github.com/bpmbpm/doc/tree/main/BPM/notation), пока пустая
 ## Закладки EA
 ### Классификация Архитектуры (Enterprise Architecture)
 Обзоры:

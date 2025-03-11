@@ -15,4 +15,4 @@ https://www.npmjs.com/package/@comunica/query-sparql-file
 *продолжение*    
 
 test  
-comunica-sparql-file https://ruben.verborgh.org/profile/#me "CONSTRUCT WHERE { ?s ?p ?o } LIMIT 100"
+`comunica-sparql-file https://ruben.verborgh.org/profile/#me "CONSTRUCT WHERE { ?s ?p ?o } LIMIT 100"` \

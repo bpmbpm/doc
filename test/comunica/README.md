@@ -25,5 +25,8 @@ test local file
 
 #### test, server file (problem) 
 Что-то не то:  
-`comunica-sparql-file https://github.com/bpmbpm/SemanticBPM/blob/main/samples/vad_1/vad_1.ttl "CONSTRUCT WHERE { ?s ?p ?o } LIMIT 100"` \ 
-`comunica-sparql-file https://github.com/bpmbpm/SemanticBPM/blob/main/samples/vad_1#vad_1.ttl "CONSTRUCT WHERE { ?s ?p ?o } LIMIT 100"` \
+`comunica-sparql-file https://github.com/bpmbpm/SemanticBPM/blob/main/samples/vad_1/vad_1.ttl "CONSTRUCT WHERE { ?s ?p ?o } LIMIT 100"`\ 
+`comunica-sparql-file https://github.com/bpmbpm/SemanticBPM/blob/main/samples/vad_1#vad_1.ttl "CONSTRUCT WHERE { ?s ?p ?o } LIMIT 100"`\
+(node:18208) MaxListenersExceededWarning: обнаружена возможная утечка памяти EventEmitter.  
+Как задать файл на сервере? 
+

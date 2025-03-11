@@ -15,7 +15,7 @@
 
 
 ## RDF vs property graph
-[5 отличий триплета от графа свойств](https://bigdataschool.ru/blog/what-is-triplets-rdf-in-neo4j-with-neosemantics.html)
+[5 отличий триплета от графа свойств, neosemantics](https://bigdataschool.ru/blog/what-is-triplets-rdf-in-neo4j-with-neosemantics.html)
 
 ## RDF_SVG 
 - [SVGTiny12](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/metadata.html#MetadataAttributes) SVG documents contain RDF metadata (Dublin Core)

@@ -9,9 +9,9 @@ https://www.npmjs.com/package/@comunica/query-sparql-file
 *отступление*  
 вообще, `npm install -g`  можно из любой папки (global).  
 Т.е. установить пакет в глобальную общую папку node_modules (там, где находится node). Это позволит получить доступ к модулю из командной строки, поскольку папка bin имеет ссылку в PATH:   
-`Users\user\AppData\Roaming\npm` \  
-`C:\Users\ user \AppData\Roaming\npm\comunica-sparql-file-http.cmd` \  
-`C:\Users\ user \AppData\Roaming\npm\node_modules\@comunica\query-sparql-file\` \  
+`Users\user\AppData\Roaming\npm`\  
+`C:\Users\user\AppData\Roaming\npm\comunica-sparql-file-http.cmd`\  
+`C:\Users\user\AppData\Roaming\npm\node_modules\@comunica\query-sparql-file\` \  
 Сам node `C:\Program Files\nodejs\node.exe` \
 *продолжение*    
 

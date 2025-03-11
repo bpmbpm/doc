@@ -16,3 +16,4 @@ https://www.npmjs.com/package/@comunica/query-sparql-file
 
 test  
 `comunica-sparql-file https://ruben.verborgh.org/profile/#me "CONSTRUCT WHERE { ?s ?p ?o } LIMIT 100"` \
+(из любой папки) 

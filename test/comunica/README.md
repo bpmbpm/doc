@@ -11,7 +11,7 @@ https://www.npmjs.com/package/@comunica/query-sparql-file
 Т.е. установить пакет в глобальную общую папку node_modules (там, где находится node). Это позволит получить доступ к модулю из командной строки, поскольку папка bin имеет ссылку в PATH: `Users\user\AppData\Roaming\npm` \ 
 `C:\Users\ user \AppData\Roaming\npm\comunica-sparql-file-http.cmd` \
 `C:\Users\ user \AppData\Roaming\npm\node_modules\@comunica\query-sparql-file\` \
-(сам node `C:\Program Files\nodejs\node.exe`)
+Сам node `C:\Program Files\nodejs\node.exe` \
 *продолжение*    
 
 test  

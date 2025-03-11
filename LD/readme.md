@@ -7,7 +7,7 @@
 ## LD-projects
 - [ExcelRDF](https://github.com/RealEstateCore/ExcelRDF) а также DTDLOntologyViewer, [dotnetrdf](https://dotnetrdf.org/)
 - [semantic-machines/veda](https://github.com/semantic-machines/veda) платформа разработки приложений на основе онтологии. Использует [jsplumbtoolkit](https://jsplumbtoolkit.com/)
-- некоторые см. подробнее [папку LD/ld_projects](https://github.com/bpmbpm/doc/tree/main/LD/ld_projects): ontodia
+- некоторые см. подробнее папку [LD/ld_projects](https://github.com/bpmbpm/doc/tree/main/LD/ld_projects): ontodia и др.
 
 ## LD-tool
 - [Семантический веб: краткий обзор технологий и инструментов](https://habr.com/ru/articles/857652/) + [awesome-semantic-web](https://github.com/semantalytics/awesome-semantic-web)

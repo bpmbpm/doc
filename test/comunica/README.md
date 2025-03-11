@@ -17,3 +17,12 @@ https://www.npmjs.com/package/@comunica/query-sparql-file
 test  
 `comunica-sparql-file https://ruben.verborgh.org/profile/#me "CONSTRUCT WHERE { ?s ?p ?o } LIMIT 100"` \
 (из любой папки) 
+test local file 
+сохраняем файл vad_1.ttl в локальную папку:  
+`comunica-sparql-file vad_1.ttl "CONSTRUCT WHERE { ?s ?p ?o } LIMIT 100"` \ 
+Верно
+
+#### test, server file (problem) 
+Что-то не то:  
+`comunica-sparql-file https://github.com/bpmbpm/SemanticBPM/blob/main/samples/vad_1/vad_1.ttl "CONSTRUCT WHERE { ?s ?p ?o } LIMIT 100"` \ 
+`comunica-sparql-file https://github.com/bpmbpm/SemanticBPM/blob/main/samples/vad_1#vad_1.ttl "CONSTRUCT WHERE { ?s ?p ?o } LIMIT 100"` \

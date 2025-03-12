@@ -6,7 +6,7 @@
 - [LD-Концепты Semantic-BPM](https://github.com/bpmbpm/SemanticBPM/wiki/%D0%9A%D0%BE%D0%BD%D1%86%D0%B5%D0%BF%D1%82%D1%8B-%D1%80%D0%B5%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8-Semantic-BPM)
 
 ### Semantic BPM (LD и окружение)
-Место Semantic BPM [картинкой, svg](https://github.com/bpmbpm/doc/tree/main/BPM/AI)
+Место Semantic BPM [картинкой, svg](https://github.com/bpmbpm/doc/tree/main/BPM/AI), а также [BPM/AI](https://github.com/bpmbpm/doc/blob/main/BPM/AI/README.md)
 
 ## www.w3.org (ru)
 [RDF 1.1 Учебник для начинающих](https://www.w3.org/TR/rdf11-primer/)

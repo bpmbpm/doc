@@ -25,7 +25,7 @@ https://www.npmjs.com/package/@comunica/query-sparql-file
 `C:\Users\user\AppData\Roaming\npm\node_modules\@comunica\query-sparql-file\`\  
 Сам node `C:\Program Files\nodejs\node.exe` \
 *продолжение*    
-
+Для использования  --query ;  --file см.: `comunica-sparql-file --help`\  
 test 
 1. remote FOAF profile   
 `comunica-sparql-file https://ruben.verborgh.org/profile/#me "CONSTRUCT WHERE { ?s ?p ?o } LIMIT 100"`\

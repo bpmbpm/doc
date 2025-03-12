@@ -2,7 +2,7 @@
 [сравнения rdfLib](https://github.com/bpmbpm/doc/blob/main/test/rdf_lib.md)
 ### @comunica/query-sparql-file
 https://comunica.dev/docs/query/getting_started/query_cli_file/  
-https://www.npmjs.com/package/@comunica/query-sparql-file
+https://www.npmjs.com/package/@comunica/query-sparql-file 
 
 `cd C:\Temp1\comunica\` \
 `npm install -g @comunica/query-sparql-file` \
@@ -27,6 +27,7 @@ test
 3. local RDF file, тот же, но сохраняем файл vad_1.ttl в локальную папку:  
 `comunica-sparql-file vad_1.ttl "CONSTRUCT WHERE { ?s ?p ?o } LIMIT 100"`  
 
-
+### JS query-sparql-file
+https://www.npmjs.com/package/@comunica/query-sparql-file (Usage within application)  
 
 

@@ -1,4 +1,7 @@
 # Ссылки на некоторые LD-документы и материалы (Linked Data)
+## doc/
+- [стартовая bpmbpm/DOC](https://github.com/bpmbpm/doc/tree/main?tab=readme-ov-file#linked-data)
+- [DOC/BPM/semantic](https://github.com/bpmbpm/doc/tree/main/BPM/semantic)
 ## www.w3.org (ru)
 [RDF 1.1 Учебник для начинающих](https://www.w3.org/TR/rdf11-primer/)
 

@@ -24,7 +24,7 @@ javascript
 })();
 
 2. Переключиться на ESM: Если вы хотите использовать синтаксис import, вам нужно изменить расширение вашего файла на .mjs или
-3. добавить "type": "module" в ваш package.json. После этого вы сможете использовать import вместо require():  
+3. добавить "type": "module" (с запятой) в ваш package.json. После этого вы сможете использовать import вместо require():  
 javascript  
 
 import rdf from 'rdf-ext';

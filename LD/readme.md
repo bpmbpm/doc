@@ -19,6 +19,7 @@
 ## LD-party
 - [KnowledgeConf, 2/06/25](https://knowledgeconf.ru/)
 - [ontograph, блог](https://ontograph.ru/)
+- [trinidata.ru/publications](https://trinidata.ru/publications.htm)
 
 ## RDF vs property graph
 - [5 отличий триплета от графа свойств, neosemantics](https://bigdataschool.ru/blog/what-is-triplets-rdf-in-neo4j-with-neosemantics.html)  

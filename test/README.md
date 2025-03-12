@@ -1,0 +1,8 @@
+Места с тестами / примерами:
+
+- [DOC/test](https://github.com/bpmbpm/doc/tree/main/test)  Глобальные стандарты \ проекты: SVG, comunica и др.
+- [DOC/Project/test](https://github.com/bpmbpm/doc/tree/main/Project/test) Специализированные и небольшие проекты: gse, onto и др.
+- [SemanticBPM/samples](https://github.com/bpmbpm/SemanticBPM/tree/main/samples) vad_1_rdflib, vad_2_rdf-ext
+
+Некоторые проблемы
+- js [require vs import](https://github.com/bpmbpm/doc/blob/main/test/rdf-ext/Error1.md)

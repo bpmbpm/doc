@@ -42,5 +42,12 @@ test
 An RDF Serialize actor that handles Turtle, TriG, N-Quads, N-Triples and N3 using N3.js.
 https://www.npmjs.com/package/@comunica/actor-rdf-serialize-n3?activeTab=readme
 
+### local file system
+https://comunica.dev/docs/query/faq/
+Как выполнить запрос к RDF-файлу в локальной файловой системе?  
+Вместо использования Comunica SPARQL вы можете использовать Comunica SPARQL File для запроса файлов в локальной файловой системе.  
+Comunica SPARQL по умолчанию не позволяет выполнять запросы к локальному файлу из соображений безопасности.
 
+### Другое
+[Data Flow схема](https://comunica.readthedocs.io/en/latest/tutorials/sparql/)
 

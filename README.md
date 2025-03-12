@@ -23,8 +23,9 @@ pdf [Исходный:](https://docs.aris.com/10.0.27.0/yaa-method-guide/en/Meth
 https://github.com/bpmbpm/doc/blob/main/BPM/ARIS/SCHEER/BASE/10-0sr6_Method_Manual.pdf#page=32
 
 а соответсвующую страницу Github Pages (bpmbpm.github.io):  
-https://bpmbpm.github.io/doc/BPM/ARIS/SCHEER/BASE/10-0sr6_Method_Manual.pdf#page=32
+https://bpmbpm.github.io/doc/BPM/ARIS/SCHEER/BASE/10-0sr6_Method_Manual.pdf#page=32  
 Будет показана: "4.1.1.1 Function tree"  
+Таже помнимм, что в браузере есть "Copy link to highlight": Выделяем текст на странице, щелчок правой кнопкой мыши и в контекстном меню выбираем "Копировать ссылку на выделенный текст"  
 ### Номера страниц со знаком  
 Часто нумерация страниц в pdf-файле отличается от источника, чаще на 1. Поэтому часто пишу так:  
 Бернерс-Ли [EnterpriseModeling.pdf c23+1] (https://bpmbpm.github.io/doc/LD/trinidata/EnterpriseModeling.pdf#page=24)  

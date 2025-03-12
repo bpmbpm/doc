@@ -39,4 +39,11 @@ en:
 также: [SemanticBPM/wiki](https://github.com/bpmbpm/SemanticBPM/wiki/%D0%92%D1%8B%D0%B1%D0%BE%D1%80-%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA#rdf_svg)
 
 ### Другое
-- [doc/tree/main/Project/SemanticBPM/semantic_tech](https://github.com/bpmbpm/doc/tree/main/Project/SemanticBPM/semantic_tech)
+- [doc/Project/SemanticBPM/semantic_tech](https://github.com/bpmbpm/doc/tree/main/Project/SemanticBPM/semantic_tech)
+
+### Неразобранное
+https://meganorm.ru/Data/642/64200.pdf
+https://npalib.ru/2016/12/06/gost-r-57323-2016-iso-ts-15926-11-2015-id273275/p12/ 
+https://docs.godotengine.org/ru/4.x/tutorials/scripting/gdscript/gdscript_basics.html
+
+

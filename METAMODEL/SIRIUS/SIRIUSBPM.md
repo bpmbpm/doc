@@ -61,3 +61,5 @@ https://habr.com/ru/users/Ares_ekb/articles/
 
 ## Продолжение
 [MOFvsRDF.docx](https://github.com/bpmbpm/doc/blob/main/METAMODEL/SIRIUS/MOFvsRDF.docx)
+Сравнение RDF \ MOF \ LEAN
+![ris](MOF_RDF_LEAN.jpg)

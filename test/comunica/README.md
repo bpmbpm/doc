@@ -49,6 +49,9 @@ https://www.npmjs.com/package/@comunica/actor-rdf-serialize-n3?activeTab=readme
 Comunica SPARQL по умолчанию не позволяет выполнять запросы к локальному файлу из соображений безопасности.
 #### bindingsStreamи quadStream
 const quadStream = await myEngine.queryQuads(`CONSTRUCT ...`, {...});
+#### Подробнее
+- [Объекты Bindings](https://comunica.dev/docs/query/advanced/bindings/)
+- [5.1 quadStream](https://comunica.dev/docs/query/getting_started/query_app/)  
 ### Другое
 [Data Flow схема](https://comunica.readthedocs.io/en/latest/tutorials/sparql/)
 

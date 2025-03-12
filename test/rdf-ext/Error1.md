@@ -41,6 +41,6 @@ console.log(quad.toString());
 Заключение
 Выберите один из предложенных способов, чтобы исправить ошибку. Если вы планируете использовать современные возможности JavaScript, рекомендуется перейти на ESM.
 
-Другими словами: Добавьте "type": "module"в package.json и замените все const x = require('x') на import x from 'x'. Если у вас нет/не может быть package.json (например, скрипт в /usr/bin/), измените расширение файла с .js на .mjs.
+**Другими словами:** Добавьте "type": "module"в package.json и замените все const x = require('x') на import x from 'x'. Если у вас нет/не может быть package.json (например, скрипт в /usr/bin/), измените расширение файла с .js на .mjs.
 
 Другие проблемы см. [test](https://github.com/bpmbpm/doc/blob/main/test/README.md#%D0%BD%D0%B5%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC%D1%8B)

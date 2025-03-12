@@ -1,6 +1,6 @@
 ## TEST comunica 
 [сравнения rdfLib](https://github.com/bpmbpm/doc/blob/main/test/rdf_lib.md)  
-https://github.com/comunica/comunica/  
+https://github.com/comunica/comunica/ github.io: https://comunica.github.io/comunica/
 ### @comunica/query-sparql-file
 #### JS query-sparql-file
 https://www.npmjs.com/package/@comunica/query-sparql-file (Usage within application)   

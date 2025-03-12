@@ -28,4 +28,4 @@ BPM + Gen AI:
 ### В целом про AI  
 статьи:
 - [ChatGPT и все-все-все. Недорого](https://habr.com/ru/articles/889660/) OpenWebUI, RAG
-- [Как я сделал RAG для своей компании (часть 2). И как начал делать AI Агента](https://habr.com/ru/articles/889376/)  подход к RAG для нашей небольшой компании с большим кол-вом документов на wiki, и множеством переписок в Slack.
+- [Как я сделал RAG для своей компании (часть 2). И как начал делать AI Агента](https://habr.com/ru/articles/889376/)  подход к RAG для нашей небольшой компании с большим кол-вом документов на wiki, и множеством переписок в Slack. Стек технологий: Python, ChromaDB, простой SentenceTransformer("all-MiniLM-L6-v2"), Slack API, OpenAI API, Google Gemini API, YandexGPT API, Sber Gigachat API.

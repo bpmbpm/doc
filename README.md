@@ -24,7 +24,7 @@ https://github.com/bpmbpm/doc/blob/main/BPM/ARIS/SCHEER/BASE/10-0sr6_Method_Manu
 
 а соответсвующую страницу Github Pages (bpmbpm.github.io):  
 https://bpmbpm.github.io/doc/BPM/ARIS/SCHEER/BASE/10-0sr6_Method_Manual.pdf#page=32  
-Будет показана: "4.1.1.1 Function tree"  
+Будет показана: **"4.1.1.1 Function tree"**  
 Таже помнимм, что в браузере есть "Copy link to highlight": Выделяем текст на странице, щелчок правой кнопкой мыши и в контекстном меню выбираем "Копировать ссылку на выделенный текст"  
 ### Номера страниц со знаком  
 Часто нумерация страниц в pdf-файле отличается от источника, чаще на 1. Поэтому часто пишу так:  

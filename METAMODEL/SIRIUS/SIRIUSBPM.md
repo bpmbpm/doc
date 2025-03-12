@@ -60,6 +60,7 @@ https://habr.com/ru/users/Ares_ekb/articles/
 Упражнение по формированию [TreeView по VAD диаграммам]( https://github.com/bpmbpm/doc/blob/main/METAMODEL/SIRIUS/Case1_VADtoTreeView.md)
 
 ## Продолжение
-[MOFvsRDF.docx](https://github.com/bpmbpm/doc/blob/main/METAMODEL/SIRIUS/MOFvsRDF.docx)
-Сравнение RDF \ MOF \ LEAN
-![ris](MOF_RDF_LEAN.jpg)
+- [MOFvsRDF.docx](https://github.com/bpmbpm/doc/blob/main/METAMODEL/SIRIUS/MOFvsRDF.docx)
+- Сравнение RDF \ MOF \ LEAN
+![ris](MOF_RDF_LEAN.jpg)  
+https://t.me/semanticengine/2087

@@ -24,3 +24,7 @@ BPM + Gen AI:
 
 
 Сравнение LLM vs WikiPedia см. [Wikipedia vs. LLM](LLM_wikipedia.md)
+
+#### в целом про AI  
+статьи:
+-[ChatGPT и все-все-все. Недорого](https://habr.com/ru/articles/889660/) OpenWebUI, RAG

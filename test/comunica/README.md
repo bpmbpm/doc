@@ -8,7 +8,7 @@ https://github.com/comunica/comunica/issues/1223		!! graph
 https://rdf.js.org/comunica-browser/
 
 #### 3) JS query-sparql-file (local file)
-sparql-file_local.mjs делает SPARQL запрос к file.ttl (file2.ttl и т.д.) и выводит результат:  
+`sparql-file_local.mjs` делает SPARQL запрос к `file.ttl` (file2.ttl и т.д.) и выводит результат:  
 `{  
   "s": "http://example.org/subject3",
   "p": "http://example.org/predicate3",

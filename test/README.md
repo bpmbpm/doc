@@ -15,3 +15,5 @@ https://github.com/rdfjs/N3.js
 - Разбор троек/четверок из Turtle , TriG , N-Triples , N-Quads , RDF-star и Notation3 (N3)
 - Запись троек/четверок в Turtle , TriG , N-Triples , N-Quads и RDF-star
 - Хранение троек/четверок в памяти
+
+https://rdf.js.org/N3.js/docs/N3Writer.html

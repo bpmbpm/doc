@@ -33,6 +33,9 @@
 en:
 - Форум Онтологов [ontologforum com](https://ontologforum.com/index.php/WikiHomePage) & [ontologforum org](https://ontologforum.org/index.php/OntologySummit)
 
+## Журналы
+- https://www.semantic-web-journal.net/
+# Разное
 ## RDF vs property graph
 - [5 отличий триплета от графа свойств, neosemantics](https://bigdataschool.ru/blog/what-is-triplets-rdf-in-neo4j-with-neosemantics.html)  
 - doc/Project/SemanticBPM/semantic_tech **Triple-Quad-Star** [Quads_vs_named_graph.md](https://github.com/bpmbpm/doc/blob/main/Project/SemanticBPM/semantic_tech/Quads_vs_named_graph.md)

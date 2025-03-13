@@ -49,15 +49,15 @@ Cама [wiki пишет](https://en.wikipedia.org/wiki/Named_graph):
 - TriG — именованные графы в Turtle
 - N-Quads - Именованные графы в N-Triples
 
-N-Quads [RDF 1.2 N-Quads]( https://www.w3.org/TR/rdf12-n-quads/) забраковали в пользу TriG [RDF 1.2 TriG](https://www.w3.org/TR/rdf12-trig/). Чем он лучше N-Quads нам LD-знатоки пояснят, но как минимум в [N-Quads](https://www.w3.org/TR/rdf12-n-triples/#sec-iri) видимо нет префиксов.
+N-Quads [RDF 1.2 N-Quads]( https://www.w3.org/TR/rdf12-n-quads/) забраковали в пользу TriG [RDF 1.2 TriG](https://www.w3.org/TR/rdf12-trig/). Чем он лучше N-Quads нам LD-знатоки пояснят, но как минимум в [N-Quads](https://www.w3.org/TR/rdf12-n-triples/#sec-iri) видимо нет префиксов.  
 Дополнительные ссылки:
 - [RDF 1.2 Concepts and Abstract Syntax](https://www.w3.org/TR/rdf12-concepts/#dfn-blank-node)
 - [Примеры RDF-файлов из пособия "Основы языка RDF"](https://data.mendeley.com/datasets/fychx3rp6t/1)
 - [Named Graph]( https://patterns.dataincubator.org/book/named-graphs.html)  
-Популярно преимущества Trig \ Quad показаны в [SPHN RDF Quads](https://sphn-semantic-framework.readthedocs.io/en/latest/background_information/nquads.html), где RDF Quads используются для кластеризации данных (триплетов), относящихся к конкретному пациенту.
+Преимущества Trig \ Quad показаны в [SPHN RDF Quads](https://sphn-semantic-framework.readthedocs.io/en/latest/background_information/nquads.html), где RDF Quads используются для кластеризации данных (триплетов), относящихся к конкретному пациенту.
 Пример (SPHN) RDF-Triple vs DRF-Quad:  
 ![ris](https://sphn-semantic-framework.readthedocs.io/en/latest/_images/quads_rdf.png)  
-[Сравнительная табличка (SPHN)](https://sphn-semantic-framework.readthedocs.io/en/latest/background_information/nquads.html#id1)
+[Сравнительная табличка Trig vs Quad (SPHN)](https://sphn-semantic-framework.readthedocs.io/en/latest/background_information/nquads.html#id1)
 ## 3 Triple-Quad-Star
 С триплетом - все понятно: тройка "атом знания" (атомарная единица знания): субьект + отношение (предикат) + объект или литерал. Наприме, `:болт :затянуть :гайка`\
 **Quad** (квад, квадр) - дополняет триплет источником знания, т.е. откуда взяли это утверждение. Например, на чертеже изделия или схеме процесса есть много троек, а имя графа \ номер черетежа или схемы однозначно идентифицирует источник каждого утверждения.  

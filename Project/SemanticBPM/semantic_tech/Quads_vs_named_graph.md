@@ -73,8 +73,17 @@ Cама [wiki пишет](https://en.wikipedia.org/wiki/Named_graph):
 Однако даже на одном чертеже могут быть разные узлы с разным значением Момента усилия затяжки, что можно выразить:  
 `<<:болт :затянуть :гайка>> :Момент_затяжки "200"`
 
+**RDF-Star*:
+- [RDF-star Test](https://w3c.github.io/rdf-star/tests/)
+- [RDF-star and SPARQL-star](https://w3c.github.io/rdf-star/cg-spec/editors_draft.html)
+- [What Is RDF-star?](https://www.ontotext.com/knowledgehub/fundamentals/what-is-rdf-star/)
+- [Turtle* syntax tests](https://github.com/w3c/rdf-star/blob/main/tests/turtle/syntax/turtle-star-annotation-2.ttl)
+- [Преобразование RDF-star в графы свойств](https://relweb.cs.aau.dk/rdfstar/)
+- [stackoverflow](https://stackoverflow.com/questions/76955936/in-rdf-star-is-there-any-formal-relationship-between-a-quoted-triple-and-a-reif)
 
-
+Разное:
+- [RDF-Test-Suite.js](https://www.npmjs.com/package/rdf-test-suite)
+- 
 
 
 

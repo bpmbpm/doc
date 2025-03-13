@@ -2,9 +2,10 @@
 [сравнения rdfLib](https://github.com/bpmbpm/doc/blob/main/test/rdf_lib.md)  
 https://github.com/comunica/comunica/ github.io: https://comunica.github.io/comunica/
 ### @comunica/query-sparql-file
-#### JS query-sparql-file (local file)
+обратный отсчет
+#### 3) JS query-sparql-file (local file)
 
-#### JS query-sparql-file (SPARQL endpoint)
+#### 2) JS query-sparql-file (SPARQL endpoint)
 https://www.npmjs.com/package/@comunica/query-sparql-file (Usage within application)   
 Не заработал, см. исходный файл `/sparql_file/sparql-file1_no.js`\
 Поправил:  
@@ -14,7 +15,7 @@ https://www.npmjs.com/package/@comunica/query-sparql-file (Usage within applicat
 3. Весь нижний блок `// Consume results as an array (easier)` закоментировал, т.к. на `bindings[0].get` тоже ошибка.  
 В итоге  `/sparql_file/sparql-file1.mjs` ошибок не выдает, но и результата тоже (нужно далее разбираться). 
 
-#### CLI query-sparql-file
+#### 1) CLI query-sparql-file
 https://github.com/comunica/comunica/tree/master/engines/query-sparql-file#readme  
 https://comunica.dev/docs/query/getting_started/query_cli_file/  
 https://www.npmjs.com/package/@comunica/query-sparql-file 

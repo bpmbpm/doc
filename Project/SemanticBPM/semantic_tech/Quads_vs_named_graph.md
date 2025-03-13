@@ -87,7 +87,6 @@ RDF-Star: `<<<< :Alice :knows :Bob >> :since "2025" >> :source :Ipatyevskaya_let
 
 Разное:
 - [RDF-Test-Suite.js](https://www.npmjs.com/package/rdf-test-suite)
-- 
 
 
 

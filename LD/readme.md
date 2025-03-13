@@ -29,7 +29,7 @@
 - [KnowledgeConf, 2/06/25](https://knowledgeconf.ru/)
 - [ontograph, блог](https://ontograph.ru/)
 - [trinidata.ru/publications](https://trinidata.ru/publications.htm)
-- [Форк Sirius Web: OpenMetamodel.org](https://forum.openmetamodel.org/)    
+- Форк Sirius Web: OpenMetamodel.org [forum](https://forum.openmetamodel.org/) и метамодель [metamodel.dev](https://metamodel.dev/)   
 en:
 - Форум Онтологов [ontologforum com](https://ontologforum.com/index.php/WikiHomePage) & [ontologforum org](https://ontologforum.org/index.php/OntologySummit)
 

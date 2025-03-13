@@ -7,9 +7,9 @@ https://t.me/semanticengine/1792
 1. Ссылки Sirius Web (eclipse):
 https://eclipse.dev/sirius/sirius-web.html  
 Не путать с https://sirius-web.org/ 
-2. Форк Sirius Web: OpenMetamodel.org
-- Форум проекта, например [Как связаны MOF и RDF](https://forum.openmetamodel.org/d/56-kak-svyazany-mof-i-rdf) ; [Есть два основных подхода к моделированию](https://t.me/semanticengine/1862)
-- Метамодель на [примере С4](https://metamodel.dev/metamodel/c4/dev/c4) 
+2. Форк Sirius Web: **OpenMetamodel.org**
+- Форум проекта, например, [Как связаны MOF и RDF](https://forum.openmetamodel.org/d/56-kak-svyazany-mof-i-rdf) ; [Есть два основных подхода к моделированию](https://t.me/semanticengine/1862)
+- Метамодель [metamodel.dev](https://metamodel.dev/), пример [С4](https://metamodel.dev/metamodel/c4/dev/c4) 
 3. На Sirius Web собраны:
 [Smart ЕА](https://www.obeosoft.com/en/products/smartea)  
 Тоже инструмент EA, как и разрабатываемый semantic ARIS 

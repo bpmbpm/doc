@@ -53,15 +53,14 @@ N-Quads [RDF 1.2 N-Quads]( https://www.w3.org/TR/rdf12-n-quads/) забрако�
 Дополнительные ссылки:
 - [RDF 1.2 Concepts and Abstract Syntax](https://www.w3.org/TR/rdf12-concepts/#dfn-blank-node)
 - [Примеры RDF-файлов из пособия "Основы языка RDF"](https://data.mendeley.com/datasets/fychx3rp6t/1)
-- [Named Graph]( https://patterns.dataincubator.org/book/named-graphs.html)
-- [RDF Quads, вкл. Сравнительную табличку](https://sphn-semantic-framework.readthedocs.io/en/latest/background_information/nquads.html)
-
+- [Named Graph]( https://patterns.dataincubator.org/book/named-graphs.html)  
+Популярно преимущества Trig \ Quad показаны в [SPHN RDF Quads](https://sphn-semantic-framework.readthedocs.io/en/latest/background_information/nquads.html), где RDF Quads используются для кластеризации данных (триплетов), относящихся к конкретному пациенту.
+Пример (SPHN) RDF-Triple vs DRF-Quad:  
+![ris](https://sphn-semantic-framework.readthedocs.io/en/latest/_images/quads_rdf.png)  
+[Сравнительная табличка (SPHN)](https://sphn-semantic-framework.readthedocs.io/en/latest/background_information/nquads.html#id1)
 ## 3 Triple-Quad-Star
 С триплетом - все понятно: тройка "атом знания" (атомарная единица знания): субьект + отношение (предикат) + объект или литерал. Наприме, `:болт :затянуть :гайка`\
 **Quad** (квад, квадр) - дополняет триплет источником знания, т.е. откуда взяли это утверждение. Например, на чертеже изделия или схеме процесса есть много троек, а имя графа \ номер черетежа или схемы однозначно идентифицирует источник каждого утверждения.  
-Пример RDF-Triple vs DRF-Quad:  
-![ris](https://sphn-semantic-framework.readthedocs.io/en/latest/_images/quads_rdf.png)
-
 Децимальные номера упоминали [в схеме деления](https://github.com/bpmbpm/SemanticBPM/wiki/%D0%9C%D0%B5%D1%82%D0%B0%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D0%B2#3-%D0%BE%D1%82%D0%BA%D1%83%D0%B4%D0%B0-%D0%BD%D0%BE%D0%B3%D0%B8--%D1%83%D1%88%D0%B8-%D1%80%D0%B0%D1%81%D1%82%D1%83%D1%82-%D1%81%D0%B2%D0%BE%D0%B9--%D1%87%D1%83%D0%B6%D0%BE%D0%B9-%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C-%D0%BE%D0%BF%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE-%D0%B8%D0%BC%D0%B5%D0%B5%D1%82-%D0%BE%D0%B1%D0%B7%D0%BE%D1%80%D0%BD%D0%BE%D0%B5-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5)    
 См. также [Магия чисел в децимальных номерах](https://habr.com/ru/articles/452376/). В программной документации (ЕСПД, ГОСТ 19.ххх) тоже каждая схема имеет номер (имя графа).
 #### RDF-Star или RDF*  

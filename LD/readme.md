@@ -35,7 +35,7 @@ en:
 
 ## RDF vs property graph
 - [5 отличий триплета от графа свойств, neosemantics](https://bigdataschool.ru/blog/what-is-triplets-rdf-in-neo4j-with-neosemantics.html)  
-- doc/Project/SemanticBPM/semantic_tech [Quads_vs_named_graph.md](https://github.com/bpmbpm/doc/blob/main/Project/SemanticBPM/semantic_tech/Quads_vs_named_graph.md)
+- doc/Project/SemanticBPM/semantic_tech **Triple-Quad-Star** [Quads_vs_named_graph.md](https://github.com/bpmbpm/doc/blob/main/Project/SemanticBPM/semantic_tech/Quads_vs_named_graph.md)
 
 ## RDF_SVG 
 - [SVGTiny12](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/metadata.html#MetadataAttributes) SVG documents contain RDF metadata (Dublin Core)

@@ -63,6 +63,7 @@ test
 3. local RDF file, тот же, но сохраняем файл vad_1.ttl в локальную папку:  
 `comunica-sparql-file vad_1.ttl "CONSTRUCT WHERE { ?s ?p ?o } LIMIT 100"`  
 
+**Дополнительно:**
 ### Comunica N3 RDF Serialize Actor
 An RDF Serialize actor that handles Turtle, TriG, N-Quads, N-Triples and N3 using N3.js.
 https://www.npmjs.com/package/@comunica/actor-rdf-serialize-n3?activeTab=readme

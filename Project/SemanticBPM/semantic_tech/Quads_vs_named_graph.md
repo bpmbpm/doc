@@ -48,6 +48,7 @@
 Cама [wiki пишет](https://en.wikipedia.org/wiki/Named_graph):
 - TriG — именованные графы в Turtle
 - N-Quads - Именованные графы в N-Triples  
+
 N-Quads [RDF 1.2 N-Quads]( https://www.w3.org/TR/rdf12-n-quads/) забраковали в пользу TriG [RDF 1.2 TriG](https://www.w3.org/TR/rdf12-trig/). Чем он лучше N-Quads нам LD-знатоки пояснят, но как минимум в [N-Quads](https://www.w3.org/TR/rdf12-n-triples/#sec-iri) видимо нет префиксов.  
 Дополнительные ссылки:
 - [RDF 1.2 Concepts and Abstract Syntax](https://www.w3.org/TR/rdf12-concepts/#dfn-blank-node)

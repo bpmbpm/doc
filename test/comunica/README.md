@@ -4,8 +4,8 @@ https://github.com/comunica/comunica/ github.io: https://comunica.github.io/comu
 ### @comunica/query-sparql-file
 #### JS query-sparql-file
 https://www.npmjs.com/package/@comunica/query-sparql-file (Usage within application)   
-Не заработал, см. исходный файл `sparql-file1_no.js`\
-Попправил:  
+Не заработал, см. исходный файл `/sparql_file/sparql-file1_no.js`\
+Поправил:  
 1. Ругается на await , пишут, что нужно переписать в ESM. Переписал см. [require-vs-import](https://github.com/bpmbpm/doc/blob/main/test/rdf-ext/Error1.md#require-vs-import-js-vs-mjs)
 2. Хоть @comunica/query-sparql-file был установлен глобально (см. Установку CLI query-sparql-file), но заработало только росле:  
 `npm install @comunica/query-sparql-file`

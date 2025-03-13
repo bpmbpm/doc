@@ -10,4 +10,8 @@
 - js [require vs import](https://github.com/bpmbpm/doc/blob/main/test/rdf-ext/Error1.md)
 
 Посмотреть
-https://github.com/rdfjs/N3.js
+https://github.com/rdfjs/N3.js  
+Библиотека N3.js — это реализация спецификации RDF.js низкого уровня , которая позволяет легко работать с RDF в JavaScript. Она предлагает:
+- Разбор троек/четверок из Turtle , TriG , N-Triples , N-Quads , RDF-star и Notation3 (N3)
+- Запись троек/четверок в Turtle , TriG , N-Triples , N-Quads и RDF-star
+- Хранение троек/четверок в памяти

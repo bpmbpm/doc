@@ -35,6 +35,8 @@ en:
 
 ## Журналы
 - https://www.semantic-web-journal.net/
+## Лекции
+- [Лекция 3, migalkin](https://migalkin.github.io/kgcourse2021/lectures/lecture3)
 # Разное
 ## RDF vs property graph
 - [5 отличий триплета от графа свойств, neosemantics](https://bigdataschool.ru/blog/what-is-triplets-rdf-in-neo4j-with-neosemantics.html)  

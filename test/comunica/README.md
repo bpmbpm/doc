@@ -4,7 +4,18 @@ https://github.com/comunica/comunica/ github.io: https://comunica.github.io/comu
 ### @comunica/query-sparql-file
 обратный отсчет
 #### 3) JS query-sparql-file (local file)
-
+sparql-file_local.mjs делает SPARQL запрос к file.ttl (file2.ttl и т.д.) и выводит результат:
+`{
+  "s": "http://example.org/subject3",
+  "p": "http://example.org/predicate3",
+  "o": "http://example.org/object3"
+}
+true
+http://example.org/subject3
+NamedNode
+http://example.org/predicate3
+http://example.org/object3`
+ 
 #### 2) JS query-sparql-file (SPARQL endpoint)
 https://www.npmjs.com/package/@comunica/query-sparql-file (Usage within application)   
 Не заработал, см. исходный файл `/sparql_file/sparql-file1_no.js`\

@@ -47,13 +47,13 @@
 ## 2 TriG vs N-Quads
 Cама [wiki пишет](https://en.wikipedia.org/wiki/Named_graph):
 - TriG — именованные графы в Turtle
-- N-Quads - Именованные графы в N-Triples
-
+- N-Quads - Именованные графы в N-Triples  
 N-Quads [RDF 1.2 N-Quads]( https://www.w3.org/TR/rdf12-n-quads/) забраковали в пользу TriG [RDF 1.2 TriG](https://www.w3.org/TR/rdf12-trig/). Чем он лучше N-Quads нам LD-знатоки пояснят, но как минимум в [N-Quads](https://www.w3.org/TR/rdf12-n-triples/#sec-iri) видимо нет префиксов.  
 Дополнительные ссылки:
 - [RDF 1.2 Concepts and Abstract Syntax](https://www.w3.org/TR/rdf12-concepts/#dfn-blank-node)
 - [Примеры RDF-файлов из пособия "Основы языка RDF"](https://data.mendeley.com/datasets/fychx3rp6t/1)
-- [Named Graph]( https://patterns.dataincubator.org/book/named-graphs.html)  
+- [Named Graph]( https://patterns.dataincubator.org/book/named-graphs.html)
+- [Тесты N-Quads](https://w3c.github.io/rdf-tests/rdf/rdf11/rdf-n-quads/)
 Преимущества Trig \ Quad показаны в [SPHN RDF Quads](https://sphn-semantic-framework.readthedocs.io/en/latest/background_information/nquads.html), где RDF Quads используются для кластеризации данных (триплетов), относящихся к конкретному пациенту.
 Пример (SPHN) RDF-Triple vs DRF-Quad:  
 ![ris](https://sphn-semantic-framework.readthedocs.io/en/latest/_images/quads_rdf.png)  

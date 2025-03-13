@@ -1,0 +1,6 @@
+@prefix ex: <http://example.org/> .
+
+ex:subject5 ex:predicate5 ex:object5 .
+ex:subject6 ex:predicate6 ex:object6 .
+ex:subject7 ex:predicate7 ex:object7 .
+ex:subject8 ex:predicate8 ex:object8 .

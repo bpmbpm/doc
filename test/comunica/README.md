@@ -7,8 +7,9 @@ https://www.npmjs.com/package/@comunica/query-sparql-file (Usage within applicat
 Не заработал, см. исходный файл `/sparql_file/sparql-file1_no.js`\
 Поправил:  
 1. Ругается на await , пишут, что нужно переписать в ESM. Переписал см. [require-vs-import](https://github.com/bpmbpm/doc/blob/main/test/rdf-ext/Error1.md#require-vs-import-js-vs-mjs)
-2. Хоть @comunica/query-sparql-file был установлен глобально (см. Установку **CLI query-sparql-file** ниже), но заработало только росле:  
+2. Хоть @comunica/query-sparql-file был установлен глобально (см. Установку **CLI query-sparql-file** ниже), но заработало только после:  
 `npm install @comunica/query-sparql-file`
+3. Весь нижний блок `// Consume results as an array (easier)` закоментировал, т.к. на `bindings[0].get` тоже ошибка.
 
 #### CLI query-sparql-file
 https://github.com/comunica/comunica/tree/master/engines/query-sparql-file#readme  

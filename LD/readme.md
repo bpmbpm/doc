@@ -18,6 +18,9 @@
 - [semantic-machines/veda](https://github.com/semantic-machines/veda) платформа разработки приложений на основе онтологии. Использует [jsplumbtoolkit](https://jsplumbtoolkit.com/)
 - некоторые см. подробнее папку [LD/ld_projects](https://github.com/bpmbpm/doc/tree/main/LD/ld_projects): ontodia и др.
 
+## Industry applied projects
+- [sphn-semantic-framework, SPHN RDF](https://sphn-semantic-framework.readthedocs.io/en/latest/sphn_framework/sphnrdfschema.html), RDF vs [QUAD](https://sphn-semantic-framework.readthedocs.io/en/latest/background_information/nquads.html)
+
 ## LD-tool
 - [Семантический веб: краткий обзор технологий и инструментов](https://habr.com/ru/articles/857652/) + [awesome-semantic-web](https://github.com/semantalytics/awesome-semantic-web) !!
 - [SemanticBPM/wiki js-trigsparql](https://github.com/bpmbpm/SemanticBPM/wiki/%D0%92%D1%8B%D0%B1%D0%BE%D1%80-%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA#js-trigsparql)

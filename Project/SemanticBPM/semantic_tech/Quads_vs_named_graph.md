@@ -83,7 +83,7 @@ Cама [wiki пишет](https://en.wikipedia.org/wiki/Named_graph):
 
 #### hexagon
 Добавим шестое измерение. Как выразить утверждение: Алиса знает Боба с  25 года согласно источника хх?  
-RDF-Star: `<<<< :Alice :knows :Bob >> :since "2025" >> :source :Ipatyevskaya_letopis`\
+RDF-Star: `<<<< :Alice :knows :Bob >> :since "2025" >> :source :Ipatyevskaya_letopis`
 
 Разное:
 - [RDF-Test-Suite.js](https://www.npmjs.com/package/rdf-test-suite)

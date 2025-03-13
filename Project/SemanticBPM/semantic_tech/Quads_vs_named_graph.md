@@ -81,6 +81,10 @@ Cама [wiki пишет](https://en.wikipedia.org/wiki/Named_graph):
 - [Преобразование RDF-star в графы свойств](https://relweb.cs.aau.dk/rdfstar/)
 - [stackoverflow](https://stackoverflow.com/questions/76955936/in-rdf-star-is-there-any-formal-relationship-between-a-quoted-triple-and-a-reif)
 
+#### hexagon
+Добавим шестое измерение. Как выразить утверждение: Алиса знает Боба с  25 года согласно источника хх?  
+RDF-Star: `<<<< :Alice :knows :Bob >> :since "2025" >> :source :Ipatyevskaya_letopis`\
+
 Разное:
 - [RDF-Test-Suite.js](https://www.npmjs.com/package/rdf-test-suite)
 - 

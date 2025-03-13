@@ -10,7 +10,7 @@ BPMN2
 - [stormbpmn](https://stormbpmn.com/bpmn/elements/)
 - [camunda.com](https://camunda.com/bpmn/reference/)
 ### en spec
-- omg, v2.0.2 December 2013 [PDF](https://www.omg.org/spec/BPMN/2.0.2/PDF), ссылка на 13 BPMN Execution Semantics [стр. 455](https://www.omg.org/spec/BPMN/2.0.2/PDF#page=455) в папке лежит вырезка, через https://bigpdf.11zon.com/en/split-pdf/
+- omg, v2.0.2 December 2013 [PDF](https://www.omg.org/spec/BPMN/2.0.2/PDF), ссылка на 13 BPMN Execution Semantics [стр. 455](https://www.omg.org/spec/BPMN/2.0.2/PDF#page=455). В папке лежит вырезка, через https://bigpdf.11zon.com/en/split-pdf/
 - [стартовая](https://www.omg.org/spec/BPMN/2.0.2/)
 
 ### BPMN Semantic

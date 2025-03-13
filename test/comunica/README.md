@@ -3,6 +3,10 @@
 https://github.com/comunica/comunica/ github.io: https://comunica.github.io/comunica/
 ### @comunica/query-sparql-file
 обратный отсчет
+#### 4) Trig
+https://github.com/comunica/comunica/issues/1223		!! graph
+https://rdf.js.org/comunica-browser/
+
 #### 3) JS query-sparql-file (local file)
 sparql-file_local.mjs делает SPARQL запрос к file.ttl (file2.ttl и т.д.) и выводит результат:  
 `{  
@@ -14,8 +18,13 @@ true
 http://example.org/subject3
 NamedNode
 http://example.org/predicate3
-http://example.org/object3`
- 
+http://example.org/object3`  
+Без `FILTER(?o = <http://example.org/object3>)` не работало (ошибку выдавало), потому что:  
+- В SPARQL-запросе вы ищете триплеты, где объект (?o) равен <http://example.org/object3>. Однако в коде вы пытаетесь вывести значение ?o с помощью binding.get('o').value, хотя ?o в данном случае является константой (не переменной) и не будет присутствовать в результирующих привязках (bindings).
+SPARQL-запрос возвращает только переменные, указанные в SELECT. В вашем случае это ?s и ?p, так как ?o заменён на конкретное значение <http://example.org/object3>.
+- Когда вы вызываете binding.get('o'), вы пытаетесь получить значение переменной ?o, которой нет в результатах, потому что она была заменена на константу. Это приводит к ошибке, так как binding.get('o') возвращает undefined, и попытка обратиться к свойству value у undefined вызывает ошибку.
+- Если вы хотите вывести значение объекта, которое вы ищете (в данном случае <http://example.org/object3>), вам нужно либо явно указать его в коде, либо изменить запрос, чтобы ?o оставался переменной.  
+Естественно выбор за вторым вариантом. 
 #### 2) JS query-sparql-file (SPARQL endpoint)
 https://www.npmjs.com/package/@comunica/query-sparql-file (Usage within application)   
 Не заработал, см. исходный файл `/sparql_file/sparql-file1_no.js`\

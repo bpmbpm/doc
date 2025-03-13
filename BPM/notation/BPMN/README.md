@@ -13,4 +13,8 @@ BPMN2
 - [стартовая](https://www.omg.org/spec/BPMN/2.0.2/)
 
 ### BPMN Semantic
-
+- [BPMN 2.0 Execution Semantics Formalized as Graph Rewrite Rules, 2010](https://www.researchgate.net/publication/221448537_BPMN_20_Execution_Semantics_Formalized_as_Graph_Rewrite_Rules)
+- [Formal Semantics and Implementation of BPMN 2.0 Inclusive Gateways, 2010](https://davidchristiansen.dk/pubs/wsfm2010.pdf)
+- [Quantifying the Parallelism in BPMN Processes using Model Checking, 2014](https://www.researchgate.net/publication/266658806_Quantifying_the_Parallelism_in_BPMN_Processes_using_Model_Checking)
+- [A Direct Formal Semantics for BPMN Time-Related Constructs, 2021](https://hal.science/hal-03170814/document)
+- [A Precise Execution Semantics for BPMN, 2012](https://www.iaeng.org/IJCS/issues_v39/issue_1/IJCS_39_1_03.pdf)

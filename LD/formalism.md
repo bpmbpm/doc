@@ -13,8 +13,9 @@
 
 ### Execution Semantics
 - [Execution Semantics Baker](https://ing-bank.github.io/baker/sections/reference/execution-semantics/)
+- [YAKINDU Statechart Tools](https://www.itemis.com/en/products/itemis-create/documentation/user-guide/modeling_execution)
 - BPMN, глава 13
 
 ### Term
-- [Semantics, computer science](https://en.wikipedia.org/wiki/Semantics_(computer_science))
-
+- [Semantics, computer science](https://en.wikipedia.org/wiki/Semantics_(computer_science))  
+Есть ли более подробная классификация и с конкретными примерами? 

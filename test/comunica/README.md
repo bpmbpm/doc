@@ -8,14 +8,16 @@ https://github.com/comunica/comunica/ github.io: https://comunica.github.io/comu
 ### @comunica/query-sparql-file
 обратный отсчет
 #### 4) Trig
-То же самое, что в п.3 только не turtle, а TriG (файл proc1.trig), т.е. фактически меняем запрос `sparql-file_local_trig.mjs`:  
+То же самое, что в п.3 только не turtle, а TriG (файл proc1.trig), т.е. фактически меняем запрос `sparql-file_local_trig.mjs`: 
+```
  SELECT ?s ?p ?o ?g  
     WHERE {  
     GRAPH ?g {         
       ?s ?p <http://example.org/p1.3>.  
       ?s ?p ?o  
     }  
-  }  
+  }
+```  
 В `sparql-file_local_trig_all.mjs` вывод всего содержимого TriG.  
 Также см. приемер с graph (quad): https://github.com/comunica/comunica/issues/1223		
 #### 3) JS query-sparql-file (local file)

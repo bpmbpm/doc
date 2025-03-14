@@ -1,13 +1,13 @@
 **Формализмы**
 ### Семантический формализм некоторых BPM-нотаций
-показывает отношения между элементами  
+Показывает отношения между элементами. Источники см. https://github.com/bpmbpm/doc/tree/main/BPM/ARIS/SCHEER/BASE
 - [EPC](https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494769/en/1) субькт \ предикат (обратный предикат) \ объект
 - [VAD](https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494393/en/1)
 - BPMN \ YAWL ??   
-источники см. https://github.com/bpmbpm/doc/tree/main/BPM/ARIS/SCHEER/BASE
+
 
 ### Математический формализм workflow
-точно опредляет следующий шаг выполнения алгоритма (workflow), логику движения маркера по схеме процесса
+Вычисляет следующий шаг выполнения алгоритма (workflow), логику движения маркера по схеме процесса
 - [WF2M сеть. Формализм и математика workflow](https://habr.com/ru/articles/781124/)  
 - BPMN \ YAWL ??  
 

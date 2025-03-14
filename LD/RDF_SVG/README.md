@@ -41,5 +41,6 @@ https://www.npmjs.com/package/rdf-parse [TriG](https://www.w3.org/TR/trig/)
 https://semanticweb.narod.ru/2.html
 
 еще:
+- [Jekyll RDF — это плагин для Jekyll, поддерживающий рендеринг RDF-данных на основе заданных шаблонов](https://kbss.felk.cvut.cz/web/open-mic-jekyll-rdf), [Template-Based Linked Data Publication](https://arxiv.org/pdf/2201.00618), [aksw.org](https://aksw.org/Projects/JekyllRDF.html), [github.com/AKSW](https://github.com/AKSW/jekyll-rdf), [Tutorial](https://github.com/white-gecko/JekyllRDF-Tutorial/blob/master/README.md)
 - [Лучшие библиотеки JS для создания компонентов визуализации RDF (с использованием Sveltejs)](https://forum.solidproject.org/t/best-js-libraries-to-help-build-visualisation-components-of-rdf-using-sveltejs/2548)
 - 

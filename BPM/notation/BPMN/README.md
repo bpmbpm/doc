@@ -16,8 +16,8 @@ BPMN2
 
 ### BPMN Semantic
 Best:
-- [A higher-order transformation approach to the formalization and analysis of BPMN using graph transformation systems](https://arxiv.org/abs/2311.05243v7), pdf, html
-
+- [A higher-order transformation approach to the formalization and analysis of BPMN using graph transformation systems](https://arxiv.org/abs/2311.05243v7), pdf, html  
+  Остальное:
 - [BPMN 2.0 Execution Semantics Formalized as Graph Rewrite Rules, 2010](https://www.researchgate.net/publication/221448537_BPMN_20_Execution_Semantics_Formalized_as_Graph_Rewrite_Rules)
 - [Formal Semantics and Implementation of BPMN 2.0 Inclusive Gateways, 2010](https://davidchristiansen.dk/pubs/wsfm2010.pdf)
 - [A Precise Execution Semantics for BPMN, 2012](https://www.iaeng.org/IJCS/issues_v39/issue_1/IJCS_39_1_03.pdf)

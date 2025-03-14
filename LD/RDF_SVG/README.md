@@ -1,6 +1,6 @@
 
 ### Base
-metadata SVG element, SVG2RDF \ RDF2SVG 
+metadata SVG element, SVG2RDF \ RDF2SVG   
 **metadata SVG element**
 - [w3.org, 18 Metadata](https://www.w3.org/TR/SVGTiny12/metadata.html): Популярный инструмент для разработки SVG с открытым исходным кодом Inkscape ...
 - [mozilla](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/metadata)

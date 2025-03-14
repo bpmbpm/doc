@@ -1,5 +1,5 @@
 test
-### Текущий вариант 
+### SVGconnector_5a 
 Вариант "SVG/connector 5a" (условно)  
 Связанная ссылка [SVG/connector](https://github.com/bpmbpm/SemanticBPM/tree/main/implementations/SVG/connector#svg_createconnector)  
 

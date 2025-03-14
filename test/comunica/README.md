@@ -99,4 +99,4 @@ const quadStream = await myEngine.queryQuads(`CONSTRUCT ...`, {...});
 - [5.1 quadStream](https://comunica.dev/docs/query/getting_started/query_app/)  
 ### Другое
 [Data Flow схема](https://comunica.readthedocs.io/en/latest/tutorials/sparql/)
-
+### [Продолжение](https://github.com/bpmbpm/SemanticBPM/blob/main/samples/vad_3_comunica/) 

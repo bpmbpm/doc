@@ -1,0 +1,7 @@
+@prefix : <http://example.org/> .
+
+:gp1 {
+    :p1.1 :hasNext :p1.2 .
+    :p1.2 :hasNext :p1.3 .
+    :p1.3 :hasNext :p1.4 .
+}

@@ -5,6 +5,6 @@
 - BPMN \ YAWL ??   
 источники см. https://github.com/bpmbpm/doc/tree/main/BPM/ARIS/SCHEER/BASE
 
-### Математичсекие формализмы workflow
+### Математические формализмы workflow
 - [WF2M сеть. Формализм и математика workflow](https://habr.com/ru/articles/781124/)  
 они точно опредляют следующий шаг выполнения алгоритма (workflow)

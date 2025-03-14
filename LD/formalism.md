@@ -12,9 +12,10 @@
 - [algebraic Petri net](https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D1%81%D0%B5%D1%82%D1%8C_%D0%9F%D0%B5%D1%82%D1%80%D0%B8)
 - BPMN \ YAWL ??  
 
-### Execution Semantics (условный формализм)
+### Execution Semantics (не строгий формализм)
 - [Execution Semantics Baker](https://ing-bank.github.io/baker/sections/reference/execution-semantics/)
 - [YAKINDU Statechart Tools](https://www.itemis.com/en/products/itemis-create/documentation/user-guide/modeling_execution)
+- [workflowpatterns, общий алгоритм](http://www.workflowpatterns.com/patterns/control/basic/wcp1.php)
 - BPMN, глава 13
 
 ### Term

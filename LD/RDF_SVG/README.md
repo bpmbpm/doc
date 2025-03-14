@@ -6,7 +6,8 @@
 - [mozilla](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/metadata)
 
 ### RDF SVG github
-- [OntoSVG](https://github.com/floresbakker/OntoSVG)  SVG2RDF, RDF2SVG (Rdflib Python)
+- [OntoSVG, floresbakker](https://github.com/floresbakker/OntoSVG)  SVG2RDF, RDF2SVG (Rdflib Python)
+![ris](https://github.com/floresbakker/OntoSVG/raw/main/Examples/Playground.png) нам бы что-то подобное, но с картинкой VAD.
 ### Ранее RDF_SVG:
 1. RDF_SVG из BPM/LD/  
 [SVGTiny12](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/metadata.html#MetadataAttributes) SVG documents contain RDF metadata (Dublin Core)  

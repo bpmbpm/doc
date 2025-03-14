@@ -1,15 +1,15 @@
 
 ### Base
-
+metadata SVG element, SVG2RDF \ RDF2SVG 
 **metadata SVG element**
 - [w3.org, 18 Metadata](https://www.w3.org/TR/SVGTiny12/metadata.html): Популярный инструмент для разработки SVG с открытым исходным кодом Inkscape ...
 - [mozilla](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/metadata)
 
 ### RDF SVG github
 #### OntoSVG
-[OntoSVG, floresbakker](https://github.com/floresbakker/OntoSVG)  SVG2RDF, RDF2SVG (Rdflib Python)
+[OntoSVG, floresbakker](https://github.com/floresbakker/OntoSVG) SVG2RDF, RDF2SVG (Rdflib Python)
 ![ris](https://github.com/floresbakker/OntoSVG/raw/main/Examples/Playground.png) 
-Нам бы что-то подобное, но с картинкой VAD.  
+Нам бы что-то подобное, но с картинкой (в центре) VAD.  
 В идеале SVG формировать в "графо-орентированной структуре", как показано в нашем "самодельном" [Вариант "SVG/connector 5a"](https://github.com/bpmbpm/doc/blob/main/test/SVG/README.md#svgconnector_5a). 
 Будут сложности с координатами. Видимо придется использовать два варианты: один с координатами (в RDF задавать и координаты), второй без. В любом случае, все стили и шаблоны (начертание VAD-корабликов) нужно выносить в одтельный файл.
 

@@ -13,6 +13,6 @@
 - [Execution Semantics Baker](https://ing-bank.github.io/baker/sections/reference/execution-semantics/)
 - BPMN, глава 13
 
-### Termin
+### Term
 - [Semantics, computer science](https://en.wikipedia.org/wiki/Semantics_(computer_science))
-- 
+

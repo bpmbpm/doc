@@ -1,6 +1,6 @@
 test
 ### Текущий вариант 
-SVG/connector 5a (условно)  
+Вариант "SVG/connector 5a" (условно)  
 Связанная ссылка [SVG/connector](https://github.com/bpmbpm/SemanticBPM/tree/main/implementations/SVG/connector#svg_createconnector)  
 
 Файл ttest5a.svg показывает, как легко можно вводить данные по VAD - процессу. См. конец файла:  

@@ -8,3 +8,11 @@
 ### Математические формализмы workflow
 - [WF2M сеть. Формализм и математика workflow](https://habr.com/ru/articles/781124/)  
 они точно опредляют следующий шаг выполнения алгоритма (workflow)
+
+### Execution Semantics
+- [Execution Semantics Baker](https://ing-bank.github.io/baker/sections/reference/execution-semantics/)
+- BPMN, глава 13
+
+### Termin
+- [Semantics, computer science](https://en.wikipedia.org/wiki/Semantics_(computer_science))
+- 

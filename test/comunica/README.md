@@ -1,6 +1,8 @@
 ## TEST comunica 
 [сравнения rdfLib](https://github.com/bpmbpm/doc/blob/main/test/rdf_lib.md)  
 https://github.com/comunica/comunica/ github.io: https://comunica.github.io/comunica/
+Базовые (docs):
+- [DOC /query_app](https://comunica.dev/docs/query/getting_started/query_app/)
 ### @comunica/query-sparql-file
 обратный отсчет
 #### 4) Trig

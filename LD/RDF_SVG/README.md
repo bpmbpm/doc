@@ -2,11 +2,11 @@
 ### Base
 
 **metadata SVG element**
-- [w3.org, 18 Metadata:](https://www.w3.org/TR/SVGTiny12/metadata.html)
+- [w3.org, 18 Metadata](https://www.w3.org/TR/SVGTiny12/metadata.html): Популярный инструмент для разработки SVG с открытым исходным кодом Inkscape ...
 - [mozilla](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/metadata)
 
 ### RDF SVG github
-
+- [OntoSVG](https://github.com/floresbakker/OntoSVG)
 ### Ранее RDF_SVG:
 1. RDF_SVG из BPM/LD/  
 [SVGTiny12](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/metadata.html#MetadataAttributes) SVG documents contain RDF metadata (Dublin Core)  

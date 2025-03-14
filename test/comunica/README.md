@@ -4,12 +4,21 @@ https://github.com/comunica/comunica/ github.io: https://comunica.github.io/comu
 ### Base docs
 Базовые из comunica.dev:
 - [DOC /query_app](https://comunica.dev/docs/query/getting_started/query_app/)
+- [Comunica Browser](https://rdf.js.org/comunica-browser/)
 ### @comunica/query-sparql-file
 обратный отсчет
 #### 4) Trig
-https://github.com/comunica/comunica/issues/1223		!! graph
-https://rdf.js.org/comunica-browser/
+То же самое, что в п.3 только не turtle, а TriG (файл proc1.trig), т.е. фактически меняем запрос на
+ `SELECT ?s ?p ?o ?g
+    WHERE {
+    GRAPH ?g {        
+      ?s ?p <http://example.org/p1.3>.
+      ?s ?p ?o
+      
+    } 
+  }`
 
+см. приемер с graph (quad): https://github.com/comunica/comunica/issues/1223		
 #### 3) JS query-sparql-file (local file)
 `sparql-file_local.mjs` делает SPARQL запрос к `file.ttl` (file2.ttl и т.д.) и выводит результат:  
 `{  

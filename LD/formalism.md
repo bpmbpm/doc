@@ -1,6 +1,6 @@
 **Формализмы**
 ### Семантический формализм некоторых BPM-нотаций
-- [EPC](https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494769/en/1)
+- [EPC](https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494769/en/1) субькт \ предикат (обратный предикат) \ объект
 - [VAD](https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494393/en/1)
 - BPMN \ YAWL ??   
 источники см. https://github.com/bpmbpm/doc/tree/main/BPM/ARIS/SCHEER/BASE

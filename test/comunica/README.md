@@ -16,8 +16,8 @@ https://github.com/comunica/comunica/ github.io: https://comunica.github.io/comu
       ?s ?p ?o  
     }  
   }  
-
-см. приемер с graph (quad): https://github.com/comunica/comunica/issues/1223		
+В `sparql-file_local_trig_all.mjs` вывод всего содержимого TriG.  
+Также см. приемер с graph (quad): https://github.com/comunica/comunica/issues/1223		
 #### 3) JS query-sparql-file (local file)
 `sparql-file_local.mjs` делает SPARQL запрос к `file.ttl` (file2.ttl и т.д.) и выводит результат:  
 `{  

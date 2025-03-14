@@ -33,7 +33,7 @@ Best:
 - [Mapping of YAWL onto BPMN and vice versa](https://stackoverflow.com/questions/59579663/mapping-of-yawl-onto-bpmn-and-vice-versa)
 - [YAWL-CCS](https://ideas.repec.org/a/spr/grdene/v16y2007i3d10.1007_s10726-006-9064-4.html)
 
-  YAWL formal semantic ?
+? YAWL formal semantic ; owl "Yet another workflow language" ; ...
 ### Разное
 [Standard Evaluations](http://www.workflowpatterns.com/evaluations/standard/index.php)
 

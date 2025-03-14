@@ -13,7 +13,7 @@
 - BPMN \ YAWL ??  
 
 ### Execution Semantics (не строгий формализм)
-Воспроизводима через имитационное моделирование 
+Воспроизводима через имитационное моделирование. Однако ввиду отсутсвия строгого формализма поведение (логика вычисления) будет зависить от реализации конкретной системы имитационного моделирования (или BPMN-engine).  
 - [Execution Semantics Baker](https://ing-bank.github.io/baker/sections/reference/execution-semantics/)
 - [YAKINDU Statechart Tools](https://www.itemis.com/en/products/itemis-create/documentation/user-guide/modeling_execution)
 - [workflowpatterns, общий алгоритм](http://www.workflowpatterns.com/patterns/control/basic/wcp1.php)

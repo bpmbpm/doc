@@ -7,7 +7,7 @@
 
 ### RDF SVG github
 - [OntoSVG, floresbakker](https://github.com/floresbakker/OntoSVG)  SVG2RDF, RDF2SVG (Rdflib Python)
-![ris](https://github.com/floresbakker/OntoSVG/raw/main/Examples/Playground.png) нам бы что-то подобное, но с картинкой VAD.
+![ris](https://github.com/floresbakker/OntoSVG/raw/main/Examples/Playground.png) нам бы что-то подобное, но с картинкой VAD. В идеале SVG формировать в "графо-орентированной структуре", как показано в нашем "самодельном" [Вариант "SVG/connector 5a"](https://github.com/bpmbpm/doc/blob/main/test/SVG/README.md#svgconnector_5a)
 ### Ранее RDF_SVG:
 1. RDF_SVG из BPM/LD/  
 [SVGTiny12](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/metadata.html#MetadataAttributes) SVG documents contain RDF metadata (Dublin Core)  

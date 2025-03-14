@@ -16,6 +16,14 @@
 см. также HTML2RDF \ RDF2HTML, floresbakker
 #### Другие:  
 - [rhizomik/redefer-rdf2svg](https://github.com/rhizomik/redefer-rdf2svg)
+Еще:
+- [экспорт чертежей в формате SVG с метаданными RDF/Dublin Core/CC](https://gist.github.com/nfreear/ca0decd2c14e2bbdaf70)
+- [Created with Inkscape](https://gist.github.com/emmanuelgeoffray/2986983)
+
+На тему SVG:
+- [rdf-logos](https://github.com/cygri/rdf-logos/blob/master/index.html)
+- [Графическое представление различных спецификаций RDF, rdf-genealogy](https://github.com/pchampin/rdf-genealogy)
+
 ### Ранее RDF_SVG:
 1. RDF_SVG из BPM/LD/  
 [SVGTiny12](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/metadata.html#MetadataAttributes) SVG documents contain RDF metadata (Dublin Core)  

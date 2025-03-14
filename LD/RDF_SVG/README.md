@@ -1,7 +1,7 @@
 
 ### Base
 
-**<metadata> SVG element**
+** metadata SVG element**
 - [w3.org, 18 Metadata:](https://www.w3.org/TR/SVGTiny12/metadata.html)
 - [mozilla](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/metadata)
 

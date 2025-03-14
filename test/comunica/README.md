@@ -22,7 +22,8 @@ https://github.com/comunica/comunica/ github.io: https://comunica.github.io/comu
 Также см. приемер с graph (quad): https://github.com/comunica/comunica/issues/1223		
 #### 3) JS query-sparql-file (local file)
 `sparql-file_local.mjs` делает SPARQL запрос к `file.ttl` (file2.ttl и т.д.) и выводит результат:  
-`{  
+```
+{  
   "s": "http://example.org/subject3",
   "p": "http://example.org/predicate3",
   "o": "http://example.org/object3"
@@ -31,7 +32,8 @@ true
 http://example.org/subject3
 NamedNode
 http://example.org/predicate3
-http://example.org/object3`  
+http://example.org/object3
+``` 
 Без `FILTER(?o = <http://example.org/object3>)` выдавало ошибку: TypeError: Cannot read properties of undefined (reading 'value'), потому что (ИИ):  
 - В SPARQL-запросе вы ищете триплеты, где объект (?o) равен <h ttp://example.org/object3>. Однако в коде вы пытаетесь вывести значение ?o с помощью binding.get('o').value, хотя ?o в данном случае является константой (не переменной) и не будет присутствовать в результирующих привязках (bindings).
 SPARQL-запрос возвращает только переменные, указанные в SELECT. В вашем случае это ?s и ?p, так как ?o заменён на конкретное значение <h ttp://example.org/object3>.

@@ -20,6 +20,9 @@
 - [экспорт чертежей в формате SVG с метаданными RDF/Dublin Core/CC](https://gist.github.com/nfreear/ca0decd2c14e2bbdaf70)
 - [Created with Inkscape](https://gist.github.com/emmanuelgeoffray/2986983)
 
+Примеры RDF metadata в
+- [FreeCAD](https://forum.freecad.org/viewtopic.php?style=8&t=88097)
+
 На тему SVG:
 - [rdf-logos](https://github.com/cygri/rdf-logos/blob/master/index.html)
 - [Графическое представление различных спецификаций RDF, rdf-genealogy](https://github.com/pchampin/rdf-genealogy)
@@ -36,3 +39,7 @@ https://www.npmjs.com/package/rdf-parse [TriG](https://www.w3.org/TR/trig/)
 
 ### Также
 https://semanticweb.narod.ru/2.html
+
+еще:
+- [Лучшие библиотеки JS для создания компонентов визуализации RDF (с использованием Sveltejs)](https://forum.solidproject.org/t/best-js-libraries-to-help-build-visualisation-components-of-rdf-using-sveltejs/2548)
+- 

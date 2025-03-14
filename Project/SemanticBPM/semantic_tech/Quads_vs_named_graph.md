@@ -81,11 +81,18 @@ Cама [wiki пишет](https://en.wikipedia.org/wiki/Named_graph):
 - [Преобразование RDF-star в графы свойств](https://relweb.cs.aau.dk/rdfstar/)
 - [stackoverflow](https://stackoverflow.com/questions/76955936/in-rdf-star-is-there-any-formal-relationship-between-a-quoted-triple-and-a-reif)
 
+RDF-Star не путать с [RDF-STaX](https://rdf-stax.github.io/dev/nanopubs/) - taxonomy of RDF stream types.
 #### hexagon
 Добавим шестое измерение. Как выразить утверждение: Алиса знает Боба с  25 года согласно источника хх?  
 RDF-Star: `<<<< :Alice :knows :Bob >> :since "2025" >> :source :Ipatyevskaya_letopis`
-
-RDF-Star не путать с [RDF-STaX](https://rdf-stax.github.io/dev/nanopubs/) - taxonomy of RDF stream types.
+В гексагоне фактически начальный триплет становится субъектом в мета триплете, а затем этот мета триплет целиком снова ставится в позицию субъекта и образует "мета-мета-триплет".  
+Можно иметь триплеты в позиции не только субъекта, но и объекта:
+`<<:Alice :meets :Bob>> :before << :Bob :meets :Charlie >>`
+#### Размышления
+На будущее. Если есть процесс "ремонт трубы" и снизу мы пишем: исполнитель Бригада.
+В случае, если логика такая: по будням исполнитель - бригада 1, а по выходным дежурная бригада.
+Плохой вариант: `<< :Бригада_1 :исполняет :Ремонт_трубы >> :период_работы [ а :ПериодРаботы ; :рабочий_день :Понедельник, :Вторник, :Среда, :Четверг, :Пятница ]`
+На картинке должен быть нарисован один квадратик "ремонт трубы", а под ним исполнитель (и). Но тут исполнитель разветвляется и их будет два в зависимости от условия. Как это показать графически в VAD и сответсвующим триплетом? 
 
 Разное:
 - [RDF-Test-Suite.js](https://www.npmjs.com/package/rdf-test-suite)

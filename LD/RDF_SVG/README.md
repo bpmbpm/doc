@@ -11,6 +11,9 @@
 ![ris](https://github.com/floresbakker/OntoSVG/raw/main/Examples/Playground.png) 
 Нам бы что-то подобное, но с картинкой VAD. В идеале SVG формировать в "графо-орентированной структуре", как показано в нашем "самодельном" [Вариант "SVG/connector 5a"](https://github.com/bpmbpm/doc/blob/main/test/SVG/README.md#svgconnector_5a). 
 Будут сложности с координатами. Видимо придется использовать два варианты: один с координатами (в RDF задавать и координаты), второй без. В любом случае, все стили и шаблоны (начертание VAD-корабликов) нужно выносить в одтельный файл.
+
+Другие:  
+- [rhizomik/redefer-rdf2svg](https://github.com/rhizomik/redefer-rdf2svg)
 ### Ранее RDF_SVG:
 1. RDF_SVG из BPM/LD/  
 [SVGTiny12](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/metadata.html#MetadataAttributes) SVG documents contain RDF metadata (Dublin Core)  
@@ -20,3 +23,6 @@ https://www.npmjs.com/package/rdf-parse [TriG](https://www.w3.org/TR/trig/)
 
 ### SVG
 Папка DOC/../SVG: https://github.com/bpmbpm/doc/tree/main/BPM/graphic_editor/SVG
+
+### Также
+https://semanticweb.narod.ru/2.html

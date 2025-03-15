@@ -51,6 +51,7 @@ en:
 
 ### Другое
 - [doc/Project/SemanticBPM/semantic_tech](https://github.com/bpmbpm/doc/tree/main/Project/SemanticBPM/semantic_tech)
+- [про формализм, formalism.md](formalism.md)
 
 ### Неразобранное
 https://meganorm.ru/Data/642/64200.pdf

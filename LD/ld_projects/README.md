@@ -1,12 +1,15 @@
 Некторые проекты подробнее:
 
+### Test
+- boldsea, gse, ontonet [папка doc/Project/test](https://github.com/bpmbpm/doc/tree/main/Project/test)
+- папка doc/test
 ### ontodia
 - [github.com](https://github.com/metaphacts/ontodia/), info @metaphacts.com
 - [npmjs](https://www.npmjs.com/package/ontodia/v/0.6.1-dev.20171013)
 
 https://github.com/metaphacts/ontodia/wiki  
 https://github.com/metaphacts/ontodia/wiki/Quick-start  
-ontodia http://ontodia.org/ перебразывает на [metaphacts.com](https://metaphacts.com/solutions/semantic-knowledge-modeling)
+ontodia http://ontodia.org/ перебраcывает на [metaphacts.com](https://metaphacts.com/solutions/semantic-knowledge-modeling)
  
 Публикации:
 - [Engaging with Knowledge Graphs](https://virtualtreasury.ie/archive-fever/mining-for-connections-in-the-records-knowledge-graphs)

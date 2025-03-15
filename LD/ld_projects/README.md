@@ -3,7 +3,7 @@
 ### Test
 - папка doc/test
 - boldsea, gse, ontonet [папка doc/Project/test](https://github.com/bpmbpm/doc/tree/main/Project/test)
-- [LD/ld_projects/wikidata](/wikidata)
+- [LD/ld_projects/wikidata](wikidata)
 ### 1 ontodia
 - [github.com](https://github.com/metaphacts/ontodia/), info @metaphacts.com
 - [npmjs](https://www.npmjs.com/package/ontodia/v/0.6.1-dev.20171013)

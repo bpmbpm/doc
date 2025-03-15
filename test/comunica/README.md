@@ -53,7 +53,7 @@ bindingsStream.on('data', (binding) => {
     console.log('http://example.org/object3'); // Выводим объект вручную
 });
 ```  
-Второй вариант - ИИ предложил через FILTER.  
+Второй вариант - ИИ предложил через FILTER, см `sparql-file_local.mjs`    
 Третий вариант, см. `sparql-file_local1.mjs`\
 В исходном примере comunica добавляет вниз запроса `?s ?p ?o` видимо чтобы как раз и дать значение перемененой:  
       `?s ?p <http://example.org/object3>.`\

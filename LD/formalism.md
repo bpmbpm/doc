@@ -22,3 +22,6 @@
 ### Term
 - [Semantics, computer science](https://en.wikipedia.org/wiki/Semantics_(computer_science))  
 Есть ли более подробная классификация и с конкретными примерами? 
+
+### Разное
+- [BPM/notation/BPMN](https://github.com/bpmbpm/doc/tree/main/BPM/notation/BPMN)

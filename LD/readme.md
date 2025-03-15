@@ -10,9 +10,8 @@
 Место Semantic BPM [картинкой, svg](https://github.com/bpmbpm/doc/tree/main/BPM/AI), а также [BPM/AI](https://github.com/bpmbpm/doc/blob/main/BPM/AI/README.md)
 
 ## www.w3.org (ru)
-[RDF 1.1 Учебник для начинающих](https://www.w3.org/TR/rdf11-primer/)
-
-[Среда Описания Ресурса (RDF): Понятия и Абстрактный Синтаксис](https://www.w3.org/2007/03/rdf_concepts_ru)
+- [RDF 1.1 Учебник для начинающих](https://www.w3.org/TR/rdf11-primer/)
+- [Среда Описания Ресурса (RDF): Понятия и Абстрактный Синтаксис](https://www.w3.org/2007/03/rdf_concepts_ru)
 
 ## LD-projects
 - [ExcelRDF](https://github.com/RealEstateCore/ExcelRDF) а также DTDLOntologyViewer, [dotnetrdf](https://dotnetrdf.org/)
@@ -38,6 +37,9 @@ en:
 - https://www.semantic-web-journal.net/
 ## Лекции
 - [Лекция 3, migalkin](https://migalkin.github.io/kgcourse2021/lectures/lecture3)
+## Материалы
+- [narod.ru, SPARQL](https://semanticweb.narod.ru/3.html)
+- [хабр, Семантические базы данных: RDF, SPARQL и Linked Data](https://habr.com/ru/companies/otus/articles/755440/)
 # Разное
 ## RDF vs property graph
 - [5 отличий триплета от графа свойств, neosemantics](https://bigdataschool.ru/blog/what-is-triplets-rdf-in-neo4j-with-neosemantics.html)  

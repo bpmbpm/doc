@@ -38,8 +38,22 @@ http://example.org/object3
 - В SPARQL-запросе вы ищете триплеты, где объект (?o) равен <h ttp://example.org/object3>. Однако в коде вы пытаетесь вывести значение ?o с помощью binding.get('o').value, хотя ?o в данном случае является константой (не переменной) и не будет присутствовать в результирующих привязках (bindings).
 SPARQL-запрос возвращает только переменные, указанные в SELECT. В вашем случае это ?s и ?p, так как ?o заменён на конкретное значение <h ttp://example.org/object3>.
 - Когда вы вызываете binding.get('o'), вы пытаетесь получить значение переменной ?o, которой нет в результатах, потому что она была заменена на константу. Это приводит к ошибке, так как binding.get('o') возвращает undefined, и попытка обратиться к свойству value у undefined вызывает ошибку.
-- Если вы хотите вывести значение объекта, которое вы ищете (в данном случае <h ttp://example.org/object3>), вам нужно либо явно указать его в коде, либо изменить запрос, чтобы ?o оставался переменной.  
-Второй вариант - как раз FILTER.  
+- Если вы хотите вывести значение объекта, которое вы ищете (в данном случае <h ttp://example.org/object3>), вам нужно либо явно указать его в коде (вывести вручную), либо изменить запрос, чтобы ?o оставался переменной.
+Вручную, это так:
+```
+bindingsStream.on('data', (binding) => {
+    console.log(binding.toString()); // Quick way to print bindings for testing
+
+    console.log(binding.has('s')); // Will be true
+
+    // Obtaining values
+    console.log(binding.get('s').value);
+    console.log(binding.get('s').termType);
+    console.log(binding.get('p').value);
+    console.log('http://example.org/object3'); // Выводим объект вручную
+});
+```  
+Второй вариант - ИИ предложил через FILTER.  
 Третий вариант, см. `sparql-file_local1.mjs`\
 В исходном примере comunica добавляет вниз запроса `?s ?p ?o` видимо чтобы как раз и дать значение перемененой:  
       `?s ?p <http://example.org/object3>.`\

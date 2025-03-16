@@ -3,6 +3,7 @@ W3C RDFJS
 - [rdfjs.github.io](https://github.com/rdfjs/rdfjs.github.io) Группа сообщества W3C RDFJS (RDF/JavaScript) обсуждает реализации библиотек для работы с RDF и связанными данными на платформах ECMAScript (JavaScript), таких как веб-браузеры и Node.js. 
 - [rdf.js.org](https://rdf.js.org/) RDF JavaScript Libraries
 - [rdfjs.dev](https://rdfjs.dev/) Обзор библиотек, personal project by Arne Hassel
+- [/rdfjs-base](https://github.com/rdfjs-base) including "ESM vs. CommonJS"
 
 ### Model
 - [RDF/JS: спецификация модели данных](https://rdf.js.org/data-model-spec/#quad-interface) ; github [data-model](https://github.com/rdfjs-base/data-model)

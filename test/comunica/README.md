@@ -5,6 +5,7 @@ https://github.com/comunica/comunica/ github.io: https://comunica.github.io/comu
 Базовые из comunica.dev:
 - [DOC /query_app](https://comunica.dev/docs/query/getting_started/query_app/)
 - [Comunica Browser](https://rdf.js.org/comunica-browser/)
+- [Версия 2.0.0](https://comunica.dev/blog/2022-03-03-release_2_0/) , отличия от 1.0 
 ### @comunica/query-sparql-file
 обратный отсчет
 #### 4) Trig

@@ -6,6 +6,7 @@ W3C RDFJS
 
 ### Model
 - [RDF/JS: спецификация модели данных](https://rdf.js.org/data-model-spec/#quad-interface) ; github [data-model](https://github.com/rdfjs-base/data-model)
+- 
 Также:  
 Разное:  
 - [ld-tool](https://github.com/bpmbpm/doc/tree/main/LD#ld-tool), особенно [Awesome Semantic Web](https://github.com/semantalytics/awesome-semantic-web)

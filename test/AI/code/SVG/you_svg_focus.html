@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Focus Example</title>
+    <style>
+        #left, #right {
+            width: 45%;
+            height: 200px;
+            float: left;
+            border: 1px solid #ccc;
+            margin: 5px;
+            overflow: auto;
+        }
+        #left {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div id="left">
+        <h3>Элементы SVG</h3>
+        <ul id="svg-elements-list"></ul>
+    </div>
+    <div id="right">
+        <h3>SVG Изображение</h3>
+        <object id="svg-object" data="image.svg" type="image/svg+xml" width="200" height="200"></object>
+    </div>
+
+    <script>
+        const svgObject = document.getElementById('svg-object');
+        const svgElementsList = document.getElementById('svg-elements-list');
+
+        svgObject.addEventListener('load', function() {
+            const svgDoc = svgObject.contentDocument;
+            if (!svgDoc) {
+                console.error("Не удалось загрузить SVG документ.");
+                return;
+            }
+
+            const elements = svgDoc.querySelectorAll('[id]');
+            if (elements.length === 0) {
+                console.warn("SVG не содержит элементов с id.");
+                return;
+            }
+
+            elements.forEach(element => {
+                const li = document.createElement('li');
+                li.textContent = element.id;
+                li.style.cursor = 'pointer';
+                li.addEventListener('click', () => {
+                    element.focus();
+                    console.log(`Элемент с id "${element.id}" выделен.`);
+                });
+                svgElementsList.appendChild(li);
+            });
+        });
+
+        svgObject.addEventListener('error', function() {
+            console.error("Не удалось загрузить SVG документ.");
+        });
+    </script>
+</body>
+</html>

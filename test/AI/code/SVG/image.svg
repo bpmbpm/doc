@@ -1,0 +1,10 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <rect id="one" x="10" y="10" width="80" height="30" fill="lightblue" />
+    <text x="20" y="30" font-family="Verdana" font-size="15">Один</text>
+    
+    <rect id="two" x="10" y="50" width="80" height="30" fill="lightgreen" />
+    <text x="20" y="70" font-family="Verdana" font-size="15">Два</text>
+    
+    <rect id="three" x="10" y="90" width="80" height="30" fill="lightcoral" />
+    <text x="20" y="110" font-family="Verdana" font-size="15">Три</text>
+</svg>

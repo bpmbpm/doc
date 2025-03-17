@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG и Список</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        #svgContainer {
+            border: 1px solid #ccc;
+            width: 45%;
+            height: 300px;
+        }
+        #listContainer {
+            border: 1px solid #ccc;
+            width: 45%;
+            height: 300px;
+            overflow-y: auto;
+        }
+        .list-item {
+            padding: 5px;
+            cursor: pointer;
+        }
+        .list-item:hover {
+            background-color: #f0f0f0;
+        }
+        .selected {
+            background-color: #d0e0ff;
+        }
+    </style>
+</head>
+<body>
+
+<div id="svgContainer">
+    <svg width="100%" height="100%">
+        <rect id="rect1" x="10" y="10" width="100" height="50" fill="lightblue" />
+        <text x="20" y="40" fill="black">Один</text>
+        <rect id="rect2" x="10" y="70" width="100" height="50" fill="lightgreen" />
+        <text x="20" y="100" fill="black">Два</text>
+        <rect id="rect3" x="10" y="130" width="100" height="50" fill="lightcoral" />
+        <text x="20" y="160" fill="black">Три</text>
+    </svg>
+</div>
+
+<div id="listContainer">
+    <div class="list-item" data-target="rect1">Один</div>
+    <div class="list-item" data-target="rect2">Два</div>
+    <div class="list-item" data-target="rect3">Три</div>
+</div>
+
+<script>
+    const listItems = document.querySelectorAll('.list-item');
+    const svgElements = document.querySelectorAll('rect');
+
+    listItems.forEach(item => {
+        item.addEventListener('click', () => {
+            // Удаляем выделение со всех элементов списка
+            listItems.forEach(i => i.classList.remove('selected'));
+            // Добавляем выделение к текущему элементу
+            item.classList.add('selected');
+
+            // Получаем id целевого элемента SVG
+            const targetId = item.getAttribute('data-target');
+            const targetElement = document.getElementById(targetId);
+
+            // Удаляем выделение со всех SVG элементов
+            svgElements.forEach(el => el.setAttribute('stroke', 'none'));
+            // Добавляем выделение к целевому элементу
+            targetElement.setAttribute('stroke', 'black');
+            targetElement.setAttribute('stroke-width', '2');
+        });
+    });
+</script>
+
+</body>
+</html>

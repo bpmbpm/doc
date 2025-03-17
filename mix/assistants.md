@@ -1,6 +1,7 @@
-https://you.com
-
-https://chat.deepseek.com/
+ИИ - програмеры:
+- https://you.com не хочет работать с более 190 строк кода (js)
+- https://chat.deepseek.com/ проблема с безопасностью
+- https://www.phind.com/
 
 Dia:  
 https://www.mermaidchart.com/  

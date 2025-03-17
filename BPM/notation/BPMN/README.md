@@ -33,7 +33,8 @@ Best:
 - [Mapping of YAWL onto BPMN and vice versa](https://stackoverflow.com/questions/59579663/mapping-of-yawl-onto-bpmn-and-vice-versa)
 - [YAWL-CCS](https://ideas.repec.org/a/spr/grdene/v16y2007i3d10.1007_s10726-006-9064-4.html)
 
-? YAWL formal semantic ; owl "Yet another workflow language" ; ...
+? (search) YAWL formal semantic ; owl "Yet another workflow language" ; ...
+BPMN \ YAWL ?? Semantic formalism, [LD/formalism.md](https://github.com/bpmbpm/doc/blob/main/LD/formalism.md)
 ### Разное
 [Standard Evaluations, workflowpatterns](http://www.workflowpatterns.com/evaluations/standard/index.php)  
 [An Ontology-Enabled Approach for Modelling Business Processes](https://inria.hal.science/hal-01018376/document)

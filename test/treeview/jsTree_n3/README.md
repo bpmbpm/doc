@@ -25,7 +25,7 @@ fetch('root.svg')
 ```  
 Вместо <object> используется <img> для загрузки SVG-файлов. <img> поддерживает событие onerror, которое срабатывает, если файл отсутствует.
 `tr5v_тоя_img_onerror_OK_noArr.html` - не отображает стрелки в `ttest5a.svg`, поэтому бракуем.\ 
-- Итого: `tr4v_obj_onerror_OK.html`  
+- Итого (Варинат 3)): `tr4v_obj_onerror_OK.html`  
 
 
 Исходный запрос:  

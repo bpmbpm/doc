@@ -2,7 +2,7 @@
 #### 
 
 #### first edition
-см. \first
+см. \first  
 ИИ объединил jsTree (jquery) и n3 для формирования TreeView из RDF. Библиотеки вызываются из CDN.    
 Полуфабоикаты см. `tr3с_n3v3svg4you2b.html` и `tr3с_n3v3svg4you2b_con.html`\
 Для обображения SVG он пердложил варианты:

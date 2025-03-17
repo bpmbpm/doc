@@ -5,7 +5,7 @@
 см. \first  
 ИИ объединил [jsTree](https://www.jstree.com/) (jquery) и n3 для формирования TreeView из RDF. Метод hasParent [Alternative JSON format](https://www.jstree.com/docs/json/), т.е. для формирования дерева указывается единственный Родитель, а не множество Child.
 Библиотеки вызываются из CDN.    
-Полуфабоикаты см. `tr3с_n3v3svg4you2b.html` и `tr3с_n3v3svg4you2b_con.html`\
+Полуфабрикаты см. `tr3с_n3v3svg4you2b.html` и `tr3с_n3v3svg4you2b_con.html`\
 Для отображения SVG он пердложил варианты:
 - Вариант 3: Использовать <object> или <iframe> для загрузки SVG.  
 Этот подход позволяет загружать SVG-файлы как внешние ресурсы, используя теги <object> или <iframe>.

@@ -1,0 +1,22 @@
+      @prefix ex: <http://example.org/> .
+      @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+      @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+      ex:pRoot a ex:Process ;
+              ex:svg_file_link "pRoot.svg" .
+
+      ex:p1 a ex:Process ;
+                ex:hasParent ex:pRoot ;
+                ex:svg_file_link "p1.svg" .
+
+      ex:p2 a ex:SubProcess ;
+                ex:hasParent ex:pRoot ;
+                ex:svg_file_link "p2.svg" .
+
+      ex:p1.1 a ex:SubProcess ;
+                     ex:hasParent ex:p1 ;
+                     ex:svg_file_link "p1.1.svg" .
+
+      ex:p1.2 a ex:Process ;
+                     ex:hasParent ex:p2 ;
+                     ex:svg_file_link "p1.2.svg" .

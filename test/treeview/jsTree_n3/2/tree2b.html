@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive TreeView with Turtle RDF</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    #tree-container {
+      width: 300px;
+      height: 50vh;
+      overflow-y: auto;
+      border-right: 1px solid #ccc;
+      background-color: #f9f9f9;
+      padding: 10px;
+    }
+    
+    #attributes-container {
+      width: 300px;
+      height: 50vh;
+      overflow-y: auto;
+      background-color: #f9f9f9;
+      padding: 10px;
+    }
+    
+    #image-container {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    #image-container object {
+      max-width: 100%;
+      max-height: 90vh;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .bold-node {
+      font-weight: bold;
+    }
+    
+    .attribute-item {
+      margin-bottom: 10px;
+      padding: 5px;
+      border-bottom: 1px dashed #ccc;
+    }
+    
+    .attribute-key {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    
+    #node-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #ccc;
+    }
+  </style>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/themes/default/style.min.css" />
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/n3/browser/n3.min.js"></script>
+</head>
+<body>
+  <div style="display: flex;">
+    <div style="display: flex; flex-direction: column;">
+      <div id="tree-container">
+        <div id="tree"></div>
+      </div>
+      
+      <div id="attributes-container">
+        <div id="node-title"></div>
+        <div id="attributes"></div>
+      </div>
+    </div>
+    
+    <div id="image-container">
+      <p>Выберите узел для отображения изображения.</p>
+      <object data="start.svg" type="image/svg+xml"></object>
+    </div>
+  </div>
+
+  <script>
+    const parser = new N3.Parser();
+    const ttlData = `
+      @prefix ex: <http://example.org/> .
+      @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+      @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+      ex:pRoot a ex:Process ;
+              ex:svg_file_link "pRoot.svg" .
+
+      ex:p1 a ex:Process ;
+                ex:hasParent ex:pRoot ;
+                ex:svg_file_link "p1.svg" .
+
+      ex:p2 a ex:SubProcess ;
+                ex:hasParent ex:pRoot ;
+                ex:svg_file_link "p2.svg" .
+
+      ex:p1.1 a ex:SubProcess ;
+                     ex:hasParent ex:p1 ;
+                     ex:svg_file_link "p1.1.svg" .
+
+      ex:p1.2 a ex:Process ;
+                     ex:hasParent ex:p2 ;
+                     ex:svg_file_link "p1.2.svg" .
+    `;
+
+    const triples = parser.parse(ttlData);
+
+    function buildTree(triples) {
+      const treeMap = {};
+      const rootNodes = [];
+
+      triples.forEach(triple => {
+        if (triple.predicate.value === 'http://example.org/hasParent') {
+          const child = triple.subject.value;
+          const parent = triple.object.value;
+
+          if (!treeMap[child]) {
+            treeMap[child] = { 
+              id: child, 
+              text: child.split('/').pop(), 
+              children: [], 
+              a_attr: {} 
+            };
+          }
+          if (!treeMap[parent]) {
+            treeMap[parent] = { 
+              id: parent, 
+              text: parent.split('/').pop(), 
+              children: [], 
+              a_attr: {} 
+            };
+          }
+        }
+      });
+
+      triples.forEach(triple => {
+        if (triple.predicate.value === 'http://example.org/hasParent') {
+          const child = triple.subject.value;
+          const parent = triple.object.value;
+
+          if (treeMap[parent] && treeMap[child]) {
+            treeMap[parent].children.push(treeMap[child]);
+          }
+        }
+      });
+
+      triples.forEach(triple => {
+        const node = triple.subject.value;
+
+        if (triple.predicate.value === 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type') {
+          const type = triple.object.value;
+          if (type === 'http://example.org/Process') {
+            treeMap[node].a_attr.class = 'bold-node';
+          }
+        }
+
+        if (triple.predicate.value === 'http://example.org/svg_file_link') {
+          treeMap[node].svg_file_link = triple.object.value;
+        }
+      });
+
+      Object.values(treeMap).forEach(node => {
+        const isRoot = !triples.some(triple => 
+          triple.predicate.value === 'http://example.org/hasParent' && 
+          triple.subject.value === node.id);
+        if (isRoot) {
+          rootNodes.push(node);
+        }
+      });
+
+      return rootNodes;
+    }
+
+    function getNodeAttributes(nodeUri) {
+      const query = `
+        PREFIX ex: <http://example.org/>
+        SELECT ?predicate ?value 
+        WHERE {
+          BIND(<${nodeUri}> AS ?subject)
+          ?subject ?predicate ?value .
+        }`;
+      
+      const results = [];
+      triples.forEach(triple => {
+        if (triple.subject.value === nodeUri) {
+          results.push({
+            predicate: triple.predicate.value,
+            value: triple.object.value
+          });
+        }
+      });
+
+      return results;
+    }
+
+    function displayAttributes(attributes) {
+      const container = document.getElementById('attributes');
+      container.innerHTML = '<h3>Атрибуты узла:</h3>';
+      
+      if (attributes.length === 0) {
+        container.innerHTML += '<p>Нет атрибутов.</p>';
+        return;
+      }
+
+      const fragment = document.createDocumentFragment();
+      
+      attributes.forEach(attr => {
+        const div = document.createElement('div');
+        div.className = 'attribute-item';
+        div.innerHTML = `<span class="attribute-key">${attr.predicate.split('/').pop()}</span>: ${attr.value}`;
+        fragment.appendChild(div);
+      });
+      
+      container.appendChild(fragment);
+    }
+
+    function initTree() {
+      const treeData = buildTree(triples);
+
+      $('#tree').jstree({
+        core: {
+          data: treeData,
+          themes: {
+            name: 'default',
+            dots: true,
+            icons: true,
+          },
+        },
+        plugins: ['wholerow'],
+      });
+
+      $('#tree').on('select_node.jstree', function(e, data) {
+        const node = data.node;
+        const svgFile = node.original.svg_file_link;
+
+        $('#image-container').html(`<p>Файл: ${svgFile}</p>`);
+
+        if (svgFile) {
+          const imagePath = `${svgFile}`;
+          const objectElement = document.createElement('object');
+          objectElement.data = imagePath;
+          objectElement.type = 'image/svg+xml';
+          objectElement.style.maxWidth = '100%';
+          objectElement.style.maxHeight = '90vh';
+          objectElement.style.border = '1px solid #ccc';
+          objectElement.style.borderRadius = '5px';
+
+          objectElement.onerror = () => {
+            $('#image-container').html('<p>Изображение отсутствует.</p>');
+          };
+
+          objectElement.onload = () => {
+            console.log('Файл успешно загружен:', svgFile);
+          };
+
+          $('#image-container').append(objectElement);
+        } else {
+          $('#image-container').html('<p>Изображение отсутствует.</p>');
+        }
+
+        const nodeUri = node.original.id;
+        const attributes = getNodeAttributes(nodeUri);
+        
+        document.getElementById('node-title').textContent = node.text;
+        
+        displayAttributes(attributes);
+      });
+    }
+
+    initTree();
+  </script>
+</body>
+</html>

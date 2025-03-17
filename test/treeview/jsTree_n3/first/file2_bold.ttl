@@ -1,0 +1,13 @@
+ex:Root a ex:Process .
+
+ex:Child1 a ex:Process ;
+          ex:hasParent ex:Root .
+
+ex:Child2 a ex:SubProcess ;
+          ex:hasParent ex:Root .
+
+ex:Grandchild1 a ex:SubProcess ;
+               ex:hasParent ex:Child1 .
+
+ex:Grandchild2 a ex:Process ;
+               ex:hasParent ex:Child2 .

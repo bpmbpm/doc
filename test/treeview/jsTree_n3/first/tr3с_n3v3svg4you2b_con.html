@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive TreeView with Turtle RDF</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+    #tree-container {
+      width: 300px;
+      height: 100vh;
+      overflow-y: auto;
+      border-right: 1px solid #ccc;
+      background-color: #f9f9f9;
+      padding: 10px;
+    }
+    #image-container {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+    #image-container object {
+      max-width: 100%;
+      max-height: 90vh;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .bold-node {
+      font-weight: bold;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/themes/default/style.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/n3/browser/n3.min.js"></script>
+</head>
+<body>
+  <div id="tree-container">
+    <div id="tree"></div>
+  </div>
+  <div id="image-container">
+    <p>Выберите узел для отображения изображения.</p>
+    <object data="start.svg" type="image/svg+xml"></object> <!-- Отображение start.svg по умолчанию -->
+  </div>
+
+  <script>
+    const parser = new N3.Parser();
+    const ttlData = `
+      @prefix ex: <http://example.org/> .
+      @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+      @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+      ex:Root a ex:Process ;
+              ex:svg_file_link "root.svg" .
+
+      ex:Child1 a ex:Process ;
+                ex:hasParent ex:Root ;
+                ex:svg_file_link "child1.svg" .
+
+      ex:Child2 a ex:SubProcess ;
+                ex:hasParent ex:Root ;
+                ex:svg_file_link "child2.svg" .
+
+      ex:Grandchild1 a ex:SubProcess ;
+                     ex:hasParent ex:Child1 ;
+                     ex:svg_file_link "grandchild1.svg" .
+
+      ex:Grandchild2 a ex:Process ;
+                     ex:hasParent ex:Child2 ;
+                     ex:svg_file_link "grandchild2.svg" .
+    `;
+
+    const triples = parser.parse(ttlData);
+
+    function buildTree(triples) {
+      const treeMap = {};
+      const rootNodes = [];
+
+      triples.forEach(triple => {
+        if (triple.predicate.value === 'http://example.org/hasParent') {
+          const child = triple.subject.value;
+          const parent = triple.object.value;
+
+          if (!treeMap[child]) {
+            treeMap[child] = { id: child, text: child.split('/').pop(), children: [], a_attr: {} };
+          }
+          if (!treeMap[parent]) {
+            treeMap[parent] = { id: parent, text: parent.split('/').pop(), children: [], a_attr: {} };
+          }
+        }
+      });
+
+      triples.forEach(triple => {
+        if (triple.predicate.value === 'http://example.org/hasParent') {
+          const child = triple.subject.value;
+          const parent = triple.object.value;
+
+          if (treeMap[parent] && treeMap[child]) {
+            treeMap[parent].children.push(treeMap[child]);
+          }
+        }
+      });
+
+      triples.forEach(triple => {
+        const node = triple.subject.value;
+
+        if (triple.predicate.value === 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type') {
+          const type = triple.object.value;
+          if (type === 'http://example.org/Process') {
+            treeMap[node].a_attr.class = 'bold-node';
+          }
+        }
+
+        if (triple.predicate.value === 'http://example.org/svg_file_link') {
+          treeMap[node].svg_file_link = triple.object.value;
+    // Dia
+    console.log('Отобразить triple.object.value:', triple.object.value);
+        }
+      });
+
+      Object.values(treeMap).forEach(node => {
+        const isRoot = !triples.some(triple => triple.predicate.value === 'http://example.org/hasParent' && triple.subject.value === node.id);
+        if (isRoot) {
+          rootNodes.push(node);
+        }
+      });
+
+      return rootNodes;
+    }
+
+    function initTree() {
+      const treeData = buildTree(triples);
+
+      $('#tree').jstree({
+        core: {
+          data: treeData,
+          themes: {
+            name: 'default',
+            dots: true,
+            icons: true,
+          },
+        },
+        plugins: ['wholerow'],
+      });
+
+      $('#tree').on('select_node.jstree', function (e, data) {
+        const node = data.node;
+        const svgFile = node.svg_file_link;
+
+        // Имя файла
+        console.log('Отобразить файл:', svgFile);
+        
+        // Отображаем имя файла перед загрузкой
+        $('#image-container').html(`<p>Файл: ${svgFile}</p>`);
+
+        // Задержка в 1 секунду перед загрузкой изображения
+        setTimeout(() => {
+          if (svgFile) {
+            const imagePath = `${svgFile}`;
+            const objectElement = `<object data="${imagePath}" type="image/svg+xml"></object>`;
+            $('#image-container').append(objectElement);
+          } else {
+            $('#image-container').html('<p>Изображение отсутствует.</p>');
+          }
+        }, 1000);
+      });
+    }
+
+    initTree();
+  </script>
+</body>
+</html>

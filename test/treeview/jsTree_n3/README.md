@@ -1,7 +1,8 @@
 ### jsTree & n3
-#### 
+обратный отсчет
+#### 2 second edition
 
-#### first edition
+#### 1 first edition
 см. \first  
 ИИ объединил [jsTree](https://www.jstree.com/) (jquery) и n3 для формирования TreeView из RDF. Метод hasParent [Alternative JSON format](https://www.jstree.com/docs/json/), т.е. для формирования дерева указывается единственный Родитель, а не множество Child.
 Библиотеки вызываются из CDN.    

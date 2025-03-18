@@ -11,7 +11,7 @@ serialization formats
 - [RDF-star and SPARQL-star](https://w3c.github.io/rdf-star/cg-spec/2021-12-17.html)
 
 #### Example
-- [N3.js](https://github.com/rdfjs/N3.js)
+- [N3.js, Ruben Verborgh](https://github.com/rdfjs/N3.js)
 - [ruby-rdf](https://github.com/ruby-rdf/rdf-trig/blob/develop/examples/example-1.trig)
 
 #### 2

@@ -14,6 +14,9 @@ serialization formats
 - [N3.js](https://github.com/rdfjs/N3.js)
 - [ruby-rdf](https://github.com/ruby-rdf/rdf-trig/blob/develop/examples/example-1.trig)
 
+#### 2
+- [3.3 TriG-star](https://paulallen.ca/graphs-and-trig-star/)
+
 #### Также
 - [RDF Schema 1.1](https://www.w3.org/TR/rdf-schema/)
 - 

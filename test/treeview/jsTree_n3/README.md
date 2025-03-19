@@ -1,7 +1,8 @@
 ### jsTree & n3
 обратный отсчет
 #### 2 second edition
-[2](2)
+[версия 2](2), turtle 
+https://bpmbpm.github.io/doc/test/treeview/jsTree_n3/2/tree2b.html
 #### 1 first edition
 см. \first  
 ИИ объединил [jsTree](https://www.jstree.com/) (jquery) и n3 для формирования TreeView из RDF. Метод hasParent [Alternative JSON format](https://www.jstree.com/docs/json/), т.е. для формирования дерева указывается единственный Родитель, а не множество Child.

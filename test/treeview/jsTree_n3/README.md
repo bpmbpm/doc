@@ -1,7 +1,7 @@
 ### jsTree & n3
 обратный отсчет
 #### 2 second edition
-[версия 2](2), turtle  
+[версия 2](2), turtle и окно "Атрибуты узла"  
 Пример на Pages:
 https://bpmbpm.github.io/doc/test/treeview/jsTree_n3/2/tree2b.html
 #### 1 first edition

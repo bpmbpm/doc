@@ -4,5 +4,5 @@
   ![ris](https://habrastorage.org/r/w1560/getpro/habr/upload_files/00a/78c/ea1/00a78cea1ea035790534caa8a30c26d5.png)
 - [Обзор популярных методологий для аналитики и для архитектуры](https://habr.com/ru/articles/892068/) таблица, сравнивающая аналитические методологии по ключевым характеристикам, Сравнительный анализ архитектурных методологий
 
-DDD, Event-Driven Architecture и т.п.
-- [Связывая Контексты: Руководство по Эффективному Взаимодействиюъ(https://habr.com/ru/articles/892250/)
+### DDD, Event-Driven Architecture etc
+- [Связывая Контексты: Руководство по Эффективному Взаимодействию](https://habr.com/ru/articles/892250/)

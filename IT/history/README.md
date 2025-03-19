@@ -2,6 +2,8 @@ IBM PS/2
 
 PS/2 Model 30 (8530-021)
 - [IBM Personal System/2 Model 30](http://ps-2.kev009.com/pcpartnerinfo/ctstips/7492.htm)
+  `8530-002 - System unit 640kb, two diskette drives, keyboard`\
+  `8530-021 - System unit 640kb, one diskette drive, one 20MB fixed disk, keyboard`
 - [wiki](https://en.wikipedia.org/wiki/IBM_PS/2_Model_30)
 - [dosdays.co.uk](https://www.dosdays.co.uk/computers/IBM%20PS2%20Model%2030/ibm_ps2_model_30.php)
 
@@ -17,3 +19,5 @@ list IBM PC
 
  
 https://www.ardent-tool.com/docs/scans/PCMag_1987_05_Personal_System_2.pdf
+https://theretroweb.com/motherboards/s/ibm-ps-2-model-30-8530-greenock-planar
+

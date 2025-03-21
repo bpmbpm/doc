@@ -1,2 +1,2 @@
 
-https://reactflow.dev/showcase
+https://reactflow.dev/showcase в т.ч. https://github.com/chaiNNer-org/chaiNNer

@@ -13,7 +13,8 @@ metadata SVG element, SVG2RDF \ RDF2SVG
 В идеале SVG формировать в "графо-орентированной структуре", как показано в нашем "самодельном" [Вариант "SVG/connector 5a"](https://github.com/bpmbpm/doc/blob/main/test/SVG/README.md#svgconnector_5a). 
 Будут сложности с координатами. Видимо придется использовать два варианты: один с координатами (в RDF задавать и координаты), второй без. В любом случае, все стили и шаблоны (начертание VAD-корабликов) нужно выносить в одтельный файл.
 
-см. также HTML2RDF \ RDF2HTML, floresbakker
+см. также github [floresbakker](https://github.com/floresbakker) : [HTML2RDF \ RDF2HTML](https://github.com/floresbakker/htmlvoc) ; [OntoArchimate](https://github.com/floresbakker/OntoArchimate)
+
 #### Другие:  
 - [rhizomik/redefer-rdf2svg](https://github.com/rhizomik/redefer-rdf2svg)
 Еще:

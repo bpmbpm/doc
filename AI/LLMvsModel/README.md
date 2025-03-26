@@ -8,7 +8,11 @@ LLM vs (General) World Model
 Ветров: LLM можно представить теоремой Байеса  
 
 ### Выступления профессора Манциводы и профессора Витяева
-https://t.me/XAITALKS/1983  
-
+https://t.me/XAITALKS/1983   
+![ris1](bsystem.png)
+Geoffrey Hilton: ИИ - моделирование суждений, LLM - моделирование человеческой интуиции.  
+Кроме Интуиции (LMM), добавляем Рассуждения (Reasoning) и Воображение (Imagination), см. 46;00  
+Слайд 55;00:  
+![ris1](SM_LLM.png)
 ### Также
 - [/LD/cognition](https://github.com/bpmbpm/doc/tree/main/LD/cognition)

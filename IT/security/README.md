@@ -5,3 +5,5 @@
 - AmneziaVPN 
 ### ViRUS
 - [История вирусов](https://habr.com/ru/companies/timeweb/articles/894768/)
+### TOR
+- [TOR поиск мостов](https://t.me/GetBridgesBot)

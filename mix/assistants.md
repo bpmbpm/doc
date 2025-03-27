@@ -14,4 +14,5 @@ https://github.blog/developer-skills/github/include-diagrams-markdown-files-merm
 
  https://formsflow.ai/
  
-
+### VPN
+https://grok.com ; https://chatgpt.com/ ; ru: https://trychatgpt.ru/

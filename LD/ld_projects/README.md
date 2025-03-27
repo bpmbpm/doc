@@ -1,7 +1,7 @@
-Некторые проекты подробнее:
+LD-проекты (обобщение)
 
 ### Test
-- папка doc/test
+- папка [doc/test](https://github.com/bpmbpm/doc/tree/main/test)
 - boldsea, gse, ontonet [папка doc/Project/test](https://github.com/bpmbpm/doc/tree/main/Project/test)
 - [LD/ld_projects/wikidata](wikidata)
 

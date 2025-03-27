@@ -6,8 +6,8 @@ LD-проекты (обобщение)
 - [LD/ld_projects/wikidata](wikidata)
 
 ### Другие местные ссылки
-- [папка doc/LD](https://github.com/bpmbpm/doc/tree/main/LD#ld-projects)
-- [папка doc/](https://github.com/bpmbpm/doc/tree/main?tab=readme-ov-file#ld-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B)
+- папка [doc/LD](https://github.com/bpmbpm/doc/tree/main/LD#ld-projects)
+- папка [doc/](https://github.com/bpmbpm/doc/tree/main?tab=readme-ov-file#ld-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B)
 - папка [онтологии](https://github.com/bpmbpm/doc/blob/main/LD/ontology/README.md)
 ### 1 ontodia
 - [github.com](https://github.com/metaphacts/ontodia/), info @metaphacts.com

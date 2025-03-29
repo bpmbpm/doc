@@ -25,3 +25,5 @@
 
 ### Разное
 - [BPM/notation/BPMN](https://github.com/bpmbpm/doc/tree/main/BPM/notation/BPMN)
+### Формализмы
+- [Математические формализации, github](https://github.com/ivashkev/math-formalizations)

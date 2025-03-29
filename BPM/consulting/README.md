@@ -5,6 +5,9 @@
 #### BPA, Magic Quadrant for Business Process Analysis Tools
 - [bpa2008mq](http://expertise.com.br/eventos/cafe/Gartner_BPA.pdf)
 - [bpa2010mq](https://public.dhe.ibm.com/software/uk/itsolutions/dynamic-bpm/gartner_magic_quadrant_for_business_process_analysis_tools.pdf)
+
+Обзоры:
+- [Enterprise Business Process Analysis Tools, Gartner](https://www.gartner.com/reviews/market/enterprise-business-process-analysis-tools)
 #### BPMS
 - [bpms2007mq](https://bpmfundamentals.wordpress.com/wp-content/uploads/2009/01/gartner_mq_business_process_management_suites-20071.pdf)
 - [bpms2010mq](https://agileelements.wordpress.com/wp-content/uploads/2010/10/gartner-2010-bpms_-magic_-quadrant.pdf)

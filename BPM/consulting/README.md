@@ -1,15 +1,19 @@
 ### Gartner Magic Quadrant
+- Magic Quadrant for Pure-Play BPM, 2Q03
+- Magic Quadrant for Business Process Management Suites, 2006  
 BPMS
 - [bpms2010mq](https://agileelements.wordpress.com/wp-content/uploads/2010/10/gartner-2010-bpms_-magic_-quadrant.pdf)
+
+Обзоры:
+- [bpms2010mq, bpms.ru](http://old.bpms.ru/library/reviews/15/mq-ibpm/index.html)
 
 iBPMS, Intelligent Business Process Management Suites
 - [ibpms2012mq](https://bpmredux.wordpress.com/wp-content/uploads/2012/10/ibpms2012mq.pdf) ; [copy](https://ninja.typepad.com/files/gartner-magic-quadrant-for-intelligent-business-process-management-software.pdf)  
 Обзоры:
-- [bpms2010mq, bpms.ru](http://old.bpms.ru/library/reviews/15/mq-ibpm/index.html)
 - [2017, koptelov.info](https://koptelov.info/ibpms/)
 
-"Magic Quadrant for Pure-Play BPM, 2Q03" "Magic Quadrant for Business Process Management Suites, 2006" 
-iBPMS 2010
+
+
 
 
 ### Forrester Wave

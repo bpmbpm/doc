@@ -1,6 +1,7 @@
 ### Gartner Magic Quadrant
 - Magic Quadrant for Pure-Play BPM, 2Q03
-- Magic Quadrant for Business Process Management Suites, 2006  
+- Magic Quadrant for Business Process Management Suites, 2006
+
 BPMS
 - [bpms2010mq](https://agileelements.wordpress.com/wp-content/uploads/2010/10/gartner-2010-bpms_-magic_-quadrant.pdf)
 

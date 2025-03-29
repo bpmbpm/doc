@@ -1,4 +1,7 @@
 ### Gartner Magic Quadrant
+BPMS
+- [bpms2010mq](https://agileelements.wordpress.com/wp-content/uploads/2010/10/gartner-2010-bpms_-magic_-quadrant.pdf)
+
 iBPMS, Intelligent Business Process Management Suites
 - [ibpms2012mq](https://bpmredux.wordpress.com/wp-content/uploads/2012/10/ibpms2012mq.pdf) ; [copy](https://ninja.typepad.com/files/gartner-magic-quadrant-for-intelligent-business-process-management-software.pdf)  
 Обзоры:

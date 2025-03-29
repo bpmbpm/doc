@@ -11,7 +11,7 @@
 #### iBPMS, Intelligent Business Process Management Suites
 - [ibpms2012mq](https://bpmredux.wordpress.com/wp-content/uploads/2012/10/ibpms2012mq.pdf) ; [copy](https://ninja.typepad.com/files/gartner-magic-quadrant-for-intelligent-business-process-management-software.pdf)  
 Обзоры:
-- [2017 + 2016, koptelov.info](https://koptelov.info/ibpms/)
+- [2017 + 2016, koptelov](https://koptelov.info/ibpms/)
 
 
 ### Forrester Wave

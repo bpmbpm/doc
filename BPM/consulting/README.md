@@ -2,6 +2,8 @@
 - Magic Quadrant for Pure-Play BPM, 2Q03
 - Magic Quadrant for Business Process Management Suites, 2006
 
+#### BPA, Magic Quadrant for Business Process Analysis Tools
+- [pba2010](https://public.dhe.ibm.com/software/uk/itsolutions/dynamic-bpm/gartner_magic_quadrant_for_business_process_analysis_tools.pdf)
 #### BPMS
 - [bpms2010mq](https://agileelements.wordpress.com/wp-content/uploads/2010/10/gartner-2010-bpms_-magic_-quadrant.pdf)
 

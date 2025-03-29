@@ -1,3 +1,7 @@
+### Gartner Magic Quadrant
+iBPMS, Intelligent Business Process Management Suites
+- [ibpms2012mq](https://bpmredux.wordpress.com/wp-content/uploads/2012/10/ibpms2012mq.pdf) ; [copy](https://ninja.typepad.com/files/gartner-magic-quadrant-for-intelligent-business-process-management-software.pdf)
+- [koptelov.info](https://koptelov.info/ibpms/)
 
 ### Forrester Wave
 DPA, Digital Process Automation:

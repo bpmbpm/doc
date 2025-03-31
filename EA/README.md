@@ -6,3 +6,9 @@
 
 ### DDD, Event-Driven Architecture etc
 - [Связывая Контексты: Руководство по Эффективному Взаимодействию](https://habr.com/ru/articles/892250/)
+
+### Site
+- Enterprise Architecture Transformation: A Practical Guide https://www.eatransformation.com/
+
+
+

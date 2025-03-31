@@ -9,6 +9,6 @@
 
 ### Site
 - Enterprise Architecture Transformation: A Practical Guide https://www.eatransformation.com/
-
+- Architecture Diagramming Tools, and the AI Gap https://generativeprogrammer.com/p/architecture-diagramming-tools-and
 
 

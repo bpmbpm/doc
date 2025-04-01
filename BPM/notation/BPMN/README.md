@@ -14,7 +14,7 @@ BPMN2
 - [стартовая omg BPMN](https://www.omg.org/spec/BPMN/2.0.2/)
 - omg, v2.0.2 December 2013 [PDF](https://www.omg.org/spec/BPMN/2.0.2/PDF), ссылка на 13 BPMN Execution Semantics [стр. 455](https://www.omg.org/spec/BPMN/2.0.2/PDF#page=455). В папке лежит вырезка, через https://bigpdf.11zon.com/en/split-pdf/
 - [on-line, studfile.net, раздел  Semantics](https://studfile.net/preview/16431197/page:117/)
-- [BPMN Working Draft, 2.1 BPMN Scope](https://web.archive.org/web/20180524224103/http://www.omg.org/bpmn/Documents/BPMN_Sections_1_and%202CMP.pdf#page=5)
+- [BPMN Working Draft, 2.1 BPMN Scope](https://web.archive.org/web/20180524224103/http://www.omg.org/bpmn/Documents/BPMN_Sections_1_and%202CMP.pdf#page=5) ; BPMN_Sections_1_and 2CMP.pdf bpmi.org
 
 ### BPMN Semantic
 Best:

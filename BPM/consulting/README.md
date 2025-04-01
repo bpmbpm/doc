@@ -8,6 +8,7 @@
 
 Обзоры:
 - [Enterprise Business Process Analysis Tools, Gartner](https://www.gartner.com/reviews/market/enterprise-business-process-analysis-tools)
+- [The BPA Market Catches Another Major Updraft](https://web.archive.org/web/20171205151918/http://web.tiscali.it/listonint/gartner.pdf)
 #### BPMS
 - [bpms2007mq](https://bpmfundamentals.wordpress.com/wp-content/uploads/2009/01/gartner_mq_business_process_management_suites-20071.pdf)
 - [bpms2010mq](https://agileelements.wordpress.com/wp-content/uploads/2010/10/gartner-2010-bpms_-magic_-quadrant.pdf)

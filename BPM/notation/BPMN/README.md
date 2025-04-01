@@ -17,7 +17,7 @@ BPMN2
 - [BPMN Working Draft, 2.1 BPMN Scope](https://web.archive.org/web/20180524224103/http://www.omg.org/bpmn/Documents/BPMN_Sections_1_and%202CMP.pdf#page=5) ; BPMN_Sections_1_and 2CMP.pdf bpmi.org
 
 ### BPMN Concepts
-- [igrafx.com](https://client.igrafx.com/client/16/en/Content/igrafx/concepts_bpmn/BPMN_Concepts.htm)
+- [igrafx.com](https://client.igrafx.com/client/16/en/Content/igrafx/concepts_bpmn/BPMN_Concepts.htm) ; [bpmn-diagrams](https://doc.igrafx.com/doc/bpmn-diagrams-v16-3)
 
 ### BPMN Semantic
 Best:

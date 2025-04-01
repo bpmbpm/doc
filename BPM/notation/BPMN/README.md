@@ -16,6 +16,9 @@ BPMN2
 - [on-line, studfile.net, раздел  Semantics](https://studfile.net/preview/16431197/page:117/)
 - [BPMN Working Draft, 2.1 BPMN Scope](https://web.archive.org/web/20180524224103/http://www.omg.org/bpmn/Documents/BPMN_Sections_1_and%202CMP.pdf#page=5) ; BPMN_Sections_1_and 2CMP.pdf bpmi.org
 
+### BPMN Concepts
+- [igrafx.com](https://client.igrafx.com/client/16/en/Content/igrafx/concepts_bpmn/BPMN_Concepts.htm)
+
 ### BPMN Semantic
 Best:
 - [A higher-order transformation approach to the formalization and analysis of BPMN using graph transformation systems](https://arxiv.org/abs/2311.05243v7), pdf, html
@@ -38,9 +41,10 @@ Best:
 ? (search) YAWL formal semantic ; owl "Yet another workflow language" ; ...
 BPMN \ YAWL ?? Semantic formalism, [LD/formalism.md](https://github.com/bpmbpm/doc/blob/main/LD/formalism.md)
 ### Разное
-[Standard Evaluations, workflowpatterns](http://www.workflowpatterns.com/evaluations/standard/index.php)  
-[An Ontology-Enabled Approach for Modelling Business Processes](https://inria.hal.science/hal-01018376/document)
+- [Standard Evaluations, workflowpatterns](http://www.workflowpatterns.com/evaluations/standard/index.php)  
+- [An Ontology-Enabled Approach for Modelling Business Processes](https://inria.hal.science/hal-01018376/document)
 ### Data
 - [Data Object, Data Store](https://ya.ru/neurum/c/nauka-i-obrazovanie/q/v_chem_raznica_mezhdu_bpmn_10_i_bpmn_20_a39ad2bf)
-
-
+### Tool selection
+- https://bpmn-miwg.github.io/bpmn-miwg-tools/visual-test-result-comparison.html?tool=Modelio%203.5
+- 

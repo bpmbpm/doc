@@ -6,3 +6,5 @@ BOK  (Body of Knowledge, свод знаний)
 [Как использовать японские подходы в IT. Часть 3: защита от дурака](https://habr.com/ru/companies/selectel/articles/888486/)
 
 
+[BPM CBOK VERSION 3.0](https://archive.org/stream/ABPMPCBOKGuideEnglish/ABPMP_CBOK_Guide_English_djvu.txt)
+

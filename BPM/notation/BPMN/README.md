@@ -9,6 +9,7 @@ BPMN2
 - [comindware](https://www.comindware.ru/blog/%D0%BD%D0%BE%D1%82%D0%B0%D1%86%D0%B8%D1%8F-bpmn-2-0-%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-%D0%B8-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5/)
 - [stormbpmn](https://stormbpmn.com/bpmn/elements/)
 - [camunda.com](https://camunda.com/bpmn/reference/)
+- [sparxsystems](https://sparxsystems.com/resources/user-guides/17.0/model-domains/bpmn-models.pdf)
 ### en spec
 - [стартовая omg BPMN](https://www.omg.org/spec/BPMN/2.0.2/)
 - omg, v2.0.2 December 2013 [PDF](https://www.omg.org/spec/BPMN/2.0.2/PDF), ссылка на 13 BPMN Execution Semantics [стр. 455](https://www.omg.org/spec/BPMN/2.0.2/PDF#page=455). В папке лежит вырезка, через https://bigpdf.11zon.com/en/split-pdf/

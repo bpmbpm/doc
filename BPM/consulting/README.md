@@ -30,7 +30,7 @@
 Обзоры:
 - [2017, koptelov](https://koptelov.info/digital-process-automation/)
 ### Comprehensive Integration Solutions
-- [Forrester Wave: CIS Q4 2010](https://www.progress-tech.ru/pdf/Forrester_Wave_CIS_q4_2010.pdf). В 2006 and 2008 Forrester Wave эти продукты именовал как “integration-centric business process management suites”
+- [Forrester Wave: CIS Q4 2010](https://www.progress-tech.ru/pdf/Forrester_Wave_CIS_q4_2010.pdf). В 2006 and 2008 Forrester Wave эти продукты именовал как “integration-centric business process management suites”. Software AG: webMethods v8 & ARIS product suite v7.1
 
 ### Другое
 - [Magic Quadrant for BI Platforms, 1Q06](https://www.umsl.edu/~sauterv/DSS4BI/links/pdf/BI/magic_quadrant_for_business__136660.pdf)

@@ -1,4 +1,4 @@
-### Gartner Magic Quadrant
+### 1 Gartner Magic Quadrant
 - Magic Quadrant for Pure-Play BPM, 2Q03
 - Magic Quadrant for Business Process Management Suites, 2006
 
@@ -22,7 +22,7 @@
 - [2017 + 2016, koptelov](https://koptelov.info/ibpms/)
 - [2019, Bizagi](https://www.b-k.ru/news/gartner-ibpms-mq-2019/)
 
-### Forrester Wave
+### 2 Forrester Wave
 #### DPA, Digital Process Automation:
 - [Q3 2017](https://dudodiprj2sv7.cloudfront.net/product-downloadables/R3/HC/DL7IWL5GCZW6.pdf) ; [web.archive](https://web.archive.org/web/20180712181429/http://www.oracle.com/us/corporate/analystreports/forrester-digital-process-3813423.pdf)
 - [Q3 2018](https://www.infosys.com/services/digital-process-automation/documents/digital-process-automation-q3-2018.pdf)  

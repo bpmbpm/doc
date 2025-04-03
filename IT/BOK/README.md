@@ -8,3 +8,5 @@ BOK  (Body of Knowledge, свод знаний)
 
 [BPM CBOK VERSION 3.0](https://archive.org/stream/ABPMPCBOKGuideEnglish/ABPMP_CBOK_Guide_English_djvu.txt)
 
+### CyBOK Cybersecurity Body of Knowledge
+[CyBOK. Глава 2. Риск-менеджмент и управление ИБ. Часть 1](https://habr.com/ru/companies/securityvison/articles/897124/)

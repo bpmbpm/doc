@@ -90,3 +90,7 @@ Business Process Magazine \ WorkFlowManagement/BPM:
 
 Обзор систем:
 - [2009 Абис Софт](https://www.cfin.ru/software/kis/b-model.shtml)
+
+Разное:
+- Презентация [www.ids-scheer.com Будущее BPM начинается сегодня](http://www.myshared.ru/slide/317942/) 
+

@@ -93,4 +93,4 @@ Business Process Magazine \ WorkFlowManagement/BPM:
 
 Разное:
 - Презентация [www.ids-scheer.com Будущее BPM начинается сегодня](http://www.myshared.ru/slide/317942/) ![ris](aris_his08.png)
-
+- [tags/aris](https://12news.ru/tags/aris)

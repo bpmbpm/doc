@@ -92,5 +92,5 @@ Business Process Magazine \ WorkFlowManagement/BPM:
 - [2009 Абис Софт](https://www.cfin.ru/software/kis/b-model.shtml)
 
 Разное:
-- Презентация [www.ids-scheer.com Будущее BPM начинается сегодня](http://www.myshared.ru/slide/317942/) 
+- Презентация [www.ids-scheer.com Будущее BPM начинается сегодня](http://www.myshared.ru/slide/317942/) ![ris](aris_his08.png)
 

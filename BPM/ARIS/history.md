@@ -32,7 +32,7 @@ https://download.oracle.com/opndocs/emea/Oracle_BPM_Training-03_Oracle_BPM_Suite
 - 2007 ARIS IT Architect – основа ARIS Enterprise Architecture Solution (DoDAF, C4ISR, Zachman, TOGAF, TEAF, FEAF, ArchiMate и IT City Planning), ARIS SOA Architect [BPEL](https://www.cnews.ru/news/line/ids_scheer_predstavila_novye_resheniya_aris)
 - 2008 7.1 ARIS [Business Performance Edition](https://www.cnews.ru/news/line/ids_scheer_vypustila_novuyu_versiyu_aris), BPMN
 - 2008 интеграции ARIS Platform и Microsoft BizTalk Server 2006 R2 [исполнение](https://www.cnews.ru/news/line/aris_platform_integrirovana_s_microsoft)
-- 2009 ARIS Express ; [CeBIT ’09](https://ariscommunity.com/users/irpl/2009-03-16-impressions-cebit-2009) : [PPM 5](https://12news.ru/doc4252.html) ; [Governance Engine \ ARIS Process Governance](https://12news.ru/doc3800.html) ; [Improve Business Performance](https://www.press-release.ru/branches/consalt/49ae6b744228c/)
+- 2009 ARIS Express ; [CeBIT ’09](https://ariscommunity.com/users/irpl/2009-03-16-impressions-cebit-2009) : [PPM 5](https://12news.ru/doc4252.html) ; [Governance Engine](https://12news.ru/doc3800.html) & [ARIS Process Governance](https://compress.ru/article.aspx?id=21779&ysclid=m9la3e31c8266654216) ; [Improve Business Performance](https://www.press-release.ru/branches/consalt/49ae6b744228c/)
 - 2010 «дорожная карта» интеграции ARIS и webMethods (Model-to-Execution) [CeBIT 2010](https://www.cnews.ru/news/line/software_ag_i_ids_scheer_predstavili) ; BPE
 - 2011 Enterprise BPM = ARIS + webMethods [CeBIT 2011](https://www.cnews.ru/news/line/software_ag_predstavila_enterprise)
 - 2011 7.2 (?)

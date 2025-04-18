@@ -1,4 +1,5 @@
 Опрос Дипсика
+https://chat.deepseek.com/a/chat/s/a5093e8b-7141-4500-b15e-bbfc0d70d0a9 
 
 ## 1 Перескажи смысл статьи Burlton, Roger T. Business Process Management: Profiting From Process. SAMS, Indianapolis, IN, 2001.
 

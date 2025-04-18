@@ -14,4 +14,4 @@ drawio поддерживает mermaid
 
 Основная проблема в том, что все равно придется работать с форматом файлов самого графического редактора (yEd, drawio), т.к. любое изменение в схему уже наст расхождение исходного mermaid или dot (graphviz).
 
-
+см. также: https://github.com/bpmbpm/doc/blob/main/visualization/diagramascode/README.md

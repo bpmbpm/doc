@@ -25,6 +25,9 @@
 - ERP
 - HRM
 
+### price
+[Прайс-лист-СПЖЦ-Процессы.pdf](https://xn--b1aecabnea2cbmcffd7av8a5o.xn--p1ai/bpms-files/%D0%9F%D1%80%D0%B0%D0%B9%D1%81-%D0%BB%D0%B8%D1%81%D1%82-%D0%A1%D0%9F%D0%96%D0%A6-%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B.pdf)
+
 ## ARUS 
 АРУС - упрощенная версия СПЖЦ, предлагаемая компанией ООО "Лабс" / Advalange.  
 [reestr](https://reestr.digital.gov.ru/reestr/2993098/?sphrase_id=5710114), ООО "ЛАБОРАТОРИЯ БЕЗОПАСНЫХ СИСТЕМ", ООО "Лабс"  

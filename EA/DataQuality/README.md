@@ -4,4 +4,4 @@
 
 Разное
 - [Data Pipeline](https://habr.com/ru/articles/900640/)
-
+- [Data Mesh](https://habr.com/ru/articles/903822/)

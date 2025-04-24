@@ -5,6 +5,7 @@
 задача сравнения и актуализации документов
 ### RAG
 - [Архитектура RAG: полный гайд](https://habr.com/ru/companies/raft/articles/791034/)
+- [Обзор техник RAG: Retrieval Augmented Generation](https://habr.com/ru/articles/904032/)
 - [Что такое RAG?](https://aws.amazon.com/ru/what-is/retrieval-augmented-generation/)
 - Основная проблема RAG-подхода, на которой многие спотыкаются - это сегментация [(чанкинг)](https://towardsdatascience.com/rag-101-chunking-strategies-fdc6f6c2aaec/).
 - [Создание решения RAG - Azure AI Search](https://learn.microsoft.com/ru-ru/azure/search/tutorial-rag-build-solution)

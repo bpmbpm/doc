@@ -1,5 +1,6 @@
 Использование AI в BPM  
-Направления в "BPM + Gen AI"
+Направления в "BPM + Gen AI"  
+см. также DOC/AI
 
 Некоторые источники  
 - BPM + Gen AI  [t.me/bpm_ai](https://t.me/bpm_ai)

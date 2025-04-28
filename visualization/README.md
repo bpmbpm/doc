@@ -1,3 +1,5 @@
 Технологии визуализации
 - [Помощник читателя: визуализируем сюжет](https://habr.com/ru/articles/900870/) , Граф связей между персонажами
 - 
+Инструменты:
+- «TikZ ist kein Zeichenprogramm» («TikZ не программа для рисования») [PGF / TikZ wike](https://ru.wikipedia.org/wiki/PGF/Tikz) ; [1.2 Comparison with Other Graphics Packages](https://tikz.dev/) ; [64 Petri-Net Drawing Library](https://tikz.dev/library-petri) ;  

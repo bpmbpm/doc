@@ -16,4 +16,4 @@ https://habr.com/ru/articles/905028/#comment_28235886
 Разное
 - [ARIS - моделирование бизнес-процессов, studopedia](https://studopedia.ru/11_241383_A-ARIS---modelirovanie-biznes-protsessov.html)
 - [слайды Методология aris](https://fotoblur.ru/metodologiya/aris/)
-- 
+

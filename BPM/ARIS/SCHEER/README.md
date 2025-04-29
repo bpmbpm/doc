@@ -11,6 +11,8 @@ https://habr.com/ru/articles/905028/#comment_28235886
 
 Другие
 - [18 Business Process Frameworks](https://fourweekmba.com/business-process-frameworks/)
-
+- [Handbook on Business Process Management](https://ebrary.net/18126/management/business_process_frameworks?ysclid=ma29q1udrw680027321)
 Разное
 - [ARIS - моделирование бизнес-процессов, studopedia](https://studopedia.ru/11_241383_A-ARIS---modelirovanie-biznes-protsessov.html)
+- [слайды](https://fotoblur.ru/metodologiya/aris/)
+- 

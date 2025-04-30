@@ -21,4 +21,8 @@
 - [Как мы челленджим бизнес в GenAI: от простых Naive RAG до workflow-агентских систем](https://habr.com/ru/companies/redmadrobot/articles/905628/)
 - [Часть 3. Обзор технологий RAG для LLM: оптимизация извлеченных данных](https://habr.com/ru/articles/904232/)
 - [RAG (Retrieval Augmented Generation) — простое и понятное объяснение](https://habr.com/ru/articles/779526/)
-- 
+ 
+еще
+- [Retrieval-Augmented Generation (RAG): Виды, Типы и Примеры](https://nerdit.ru/retrieval-augmented-generation-rag-vidy-tipy-i-primiery/)
+- [6.4 Продвинутые техники RAG](https://courses.sberuniversity.ru/llm-gigachat/2/6/4)
+- [Graph RAG: как RAG, только c графом знаний](https://blogs.epsilonmetrics.ru/graph-rag-kak-rag-tolko-c-grafom-znanij/)

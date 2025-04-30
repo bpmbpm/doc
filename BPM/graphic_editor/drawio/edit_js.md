@@ -7,9 +7,10 @@
 
 [Use Mermaid syntax to create diagrams](https://www.drawio.com/blog/mermaid-diagrams)
 
-### 2
-[Выберите «Дополнительно» > «Редактировать диаграмму» в меню draw.io,](https://www.drawio.com/doc/faq/diagram-source-edit)  
+### 2 
+- [Выберите «Дополнительно» > «Редактировать диаграмму» в меню draw.io,](https://www.drawio.com/doc/faq/diagram-source-edit)  
 Закончив, выберите из раскрывающегося списка способ сохранения изменений: «Заменить существующий чертеж» , « Открыть в новом окне» или «Добавить к существующему чертежу » (аналогично импорту диаграммы ).
+- [Мой поиск аналога Microsoft Visio](https://habr.com/ru/articles/731028/comments/)
 
 ### 3 Добавление элемента к существующей диаграмме Draw.io с помощью JavaScript
 

@@ -1,14 +1,10 @@
-Как вставить диаграмму Mermaid в draw.io:  
+### 1 Как вставить диаграмму Mermaid в draw.io:  
 Откройте draw.io и выберите опцию для вставки диаграммы.  
 Перейдите в меню: Arrange > Insert > Advanced > Mermaid. Либо нажмите на иконку + в панели инструментов и выберите Advanced > Mermaid.  
 Вставьте ваш текст с описанием диаграммы в открывшееся текстовое поле и нажмите Insert.  
 Вы также можете редактировать Mermaid-код для внесения изменений в диаграмму, выбрав элемент и нажав Enter  
 
-#### You've hit your free quota for the Smart Mode with Sources Agent. For more usage of the Smart Mode with Sources Agent, learn more at: https://you.com/plans.
-
-Answering your question without the Smart Mode with Sources Agent:
-
-#### Добавление элемента к существующей диаграмме Draw.io с помощью JavaScript
+### 2 Добавление элемента к существующей диаграмме Draw.io с помощью JavaScript
 
 Чтобы добавить элемент к существующей диаграмме в Draw.io с помощью JavaScript, вы можете использовать встроенные функции API Draw.io. Вот шаги, которые помогут вам это сделать:
 

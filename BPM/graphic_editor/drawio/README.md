@@ -17,3 +17,7 @@ mxGraph:
 - [edges](https://stackoverflow.com/questions/59315321/how-to-readjust-mxgraph-edges-while-moving-vertices-to-not-look-weird)
 - [Orgchart example for mxGraph](https://git.miem.hse.ru/aaovchinnikov/alg_vis/-/blob/60c41567363af5d21420916dca5bfd46efcb9dc8/mxgraph-4.0.6/javascript/examples/orgchart.html)
  
+[Русификатор](https://github.com/jgraph/drawio/blob/dev/src/main/webapp/resources/dia_ru.txt)
+https://github.com/jgraph/drawio/tree/dev
+For this try either Tldraw or Excalidraw.
+https://itlogia.ru/article/poleznye_vozmozhnosti_servisa_drawio_dlya_itspecialistov

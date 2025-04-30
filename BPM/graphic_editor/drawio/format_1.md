@@ -1,3 +1,4 @@
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <mxfile host="Electron" modified="2025-04-30T17:34:16.644Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.7.4 Chrome/106.0.5249.199 Electron/21.3.3 Safari/537.36" etag="-x75WuX34FlAKsySl98P" version="20.7.4" type="device">
   <diagram name="Page-1" id="8ce9d11a-91a2-4d17-14d8-a56ed91bf033">
@@ -12,10 +13,7 @@
     </mxGraphModel>
   </diagram>
 </mxfile>
-
-#### You've hit your free quota for the Smart Mode with Sources Agent. For more usage of the Smart Mode with Sources Agent, learn more at: https://you.com/plans.
-
-Answering your question without the Smart Mode with Sources Agent:
+```
 
 Вот подробный комментарий к каждой строке вашего XML-файла:
 

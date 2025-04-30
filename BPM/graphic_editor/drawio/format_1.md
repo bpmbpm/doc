@@ -1,4 +1,4 @@
-### Структура файла
+### 1 Структура файла
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <mxfile host="Electron" modified="2025-04-30T17:34:16.644Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.7.4 Chrome/106.0.5249.199 Electron/21.3.3 Safari/537.36" etag="-x75WuX34FlAKsySl98P" version="20.7.4" type="device">

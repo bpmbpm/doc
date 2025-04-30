@@ -1,3 +1,4 @@
+### Структура файла
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <mxfile host="Electron" modified="2025-04-30T17:34:16.644Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.7.4 Chrome/106.0.5249.199 Electron/21.3.3 Safari/537.36" etag="-x75WuX34FlAKsySl98P" version="20.7.4" type="device">
@@ -117,6 +118,6 @@
 
 Таким образом, этот XML-файл описывает диаграмму, созданную в Draw.io, включая ее структуру, элементы и их свойства.
 
-## mxGraph
+## 2 mxGraph
 [наконец-то я нашел способ, как открыть файл draw io xml в mxGraph](https://stackoverflow.com/questions/49376973/open-drawio-file-in-mxgraph-editor)
 используется функция декодирования для преобразования файла draw io xml в файл mxgraph xml. 

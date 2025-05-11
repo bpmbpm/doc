@@ -13,6 +13,7 @@ https://www.mermaidchart.com/
 https://github.blog/developer-skills/github/include-diagrams-markdown-files-mermaid/
 
  https://formsflow.ai/
- 
+### translate
+[Проводим слепой тест переводов прямо на Хабре](https://habr.com/ru/articles/908280/)
 ### VPN
 https://grok.com ; https://chatgpt.com/ ; ru: https://trychatgpt.ru/

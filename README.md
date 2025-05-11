@@ -144,3 +144,4 @@ Opengroup case-study-models:
 - [ontonet.ru](https://github.com/bpmbpm/doc/tree/main/Project/test/ontonet)
 #### Разное
 - [assistants.md](https://github.com/bpmbpm/doc/blob/main/mix/assistants.md)
+- [arxiv.org](https://arxiv.org/)

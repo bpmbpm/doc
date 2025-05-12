@@ -1,4 +1,6 @@
-BPMN2
+BPMN2  
+BPMN = ["Business People May Not Undestand"](https://habr.com/ru/articles/907584/#comment_28294732)
+
 ### ru 
 - [ELMA pdf](https://e-learning.bmstu.ru/iu6/pluginfile.php/22476/mod_resource/content/1/BPMN_2.pdf), последний разел: 10.11. Представление XML-схемы для пакета Процесса
 -  [ELMA online](https://elma365.com/ru/bpmn2/)

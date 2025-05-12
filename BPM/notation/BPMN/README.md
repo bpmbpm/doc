@@ -49,4 +49,6 @@ BPMN \ YAWL ?? Semantic formalism, [LD/formalism.md](https://github.com/bpmbpm/d
 - [Data Object, Data Store](https://ya.ru/neurum/c/nauka-i-obrazovanie/q/v_chem_raznica_mezhdu_bpmn_10_i_bpmn_20_a39ad2bf)
 ### Tool selection
 - https://bpmn-miwg.github.io/bpmn-miwg-tools/visual-test-result-comparison.html?tool=Modelio%203.5
-- 
+### Intro
+- [Легкий путь к BPMN: просто, быстро и без заморочек](https://habr.com/ru/articles/905894/)
+  

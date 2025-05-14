@@ -27,3 +27,5 @@ ontodia http://ontodia.org/ перебраcывает на [metaphacts.com](http
 - https://datafabric.su/ CIM-модели [РосСети](https://github.com/bpmbpm/doc/blob/main/Project/SemanticBPM/similar/PC-20.md)
 ### Семантические проекты
 - [Системный Геном, low code, ERP](https://www.genome-it.ru/) ; [habr](https://habr.com/ru/articles/780954/)
+- [Семантические технологии просто и доступно на примере родословных](https://habr.com/ru/articles/270857/)
+- [reactodia - опенсорсный форк Ontodia, использует React](https://reactodia.github.io/) ; [ТГ](https://t.me/LinkedDataRussia/6926)

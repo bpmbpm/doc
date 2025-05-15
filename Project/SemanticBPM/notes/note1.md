@@ -9,3 +9,7 @@
 Иногда предлагаемый концепт семантического ядра повторяют в 
 - ООП (проектирование \ подход \ програмирование): CoreStream Methodological Guide: Объектно-ориентированный подход в применении к проектированию бизнес-процессов [магаз](https://digital.wildberries.ru/offer/473343) ; [16.Объектно-ориентированный подход к моделированию бизнес-процессов](https://studfile.net/preview/9568053/page:4/) ; [2.2 Объектно-ориентированная методология построения моделей бизнес-процессов](https://studfile.net/preview/16875843/page:3/)
 - DDD Предметно-ориентированное проектирование (реже проблемно-ориентированное): [Domain-Driven Design: зачем он нужен аналитику и как его применять на практике](https://habr.com/ru/articles/908782/) ; [doc/EA/](https://github.com/bpmbpm/doc/tree/main/EA)
+
+### Object-oriented programming
+[ООП для кота – моделируем кота через классы](https://habr.com/ru/companies/beget/articles/906716/)
+[ООП в картинках](https://habr.com/ru/articles/463125/)

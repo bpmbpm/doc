@@ -1,7 +1,8 @@
 habr
 - [Человекоцентричность: прогресс через помещение человека в центр цивилизации](https://habr.com/ru/companies/ruvds/articles/902514/)
 - [Справедливость 2035](https://habr.com/ru/articles/896622/)
-
+- [Концепция Человек-Род-Государство](https://habr.com/ru/articles/909850/)
+  
 Моделеориентированное право https://t.me/rusontology/2485
 https://t.me/rusontology/2479
 

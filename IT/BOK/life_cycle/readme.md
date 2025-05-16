@@ -1,6 +1,6 @@
 ### life cycle SEBOK \ SWEBOK
 #### ISO/IEC 12207
-- ISO/IEC 12207-99 ПРОЦЕССЫ ЖИЗНЕННОГО ЦИКЛА ПРОГРАММНЫХ СРЕДСТВ / Information technology. Software life cycle processes
+- ISO/IEC 12207-99 ПРОЦЕССЫ ЖИЗНЕННОГО ЦИКЛА ПРОГРАММНЫХ СРЕДСТВ / Information technology. Software life cycle processes [/meganorm](https://meganorm.ru/Data2/1/4294818/4294818281.pdf)
 - ISO/IEC 12207:2008 Systems and software engineering -- Software life cycle processes [sewiki](http://sewiki.ru/ISO/IEC_12207)
 - [en 12207:2008](https://wildart.github.io/MISG5020/standards/IEEE-12207-2008.pdf)
 - [ISO/IEC/IEEE 12207:2017 wiki](https://en.wikipedia.org/wiki/ISO/IEC_12207)
@@ -11,6 +11,9 @@ txt ГОСТ Р ИСО/МЭК 12207-2010
 
 #### Этап "2 Процесс поставки" (6.1.2 Supply Process)
 Из текста ГОСТ может создаться впечатление, что этап Поставки предшедствует этапу Разработки. Какой поставки? Поставка ПО до ее разработки? 
+Путает [схема из ГОСТ Р ИСО/МЭК 12207-99](https://intuit.ru/studies/courses/2298/598/lecture/12852)
+![схемаъ(https://intuit.ru/EDI/31_08_18_3/1535667510-22110/tutorial/689/objects/3/files/03_01.jpg)
+
 Нужно говорить: [2 предложение (Supply) - составление плана управления проектом](https://eopearhiiv.edu.ee/e-kursused/eucip/arendus_vk/1612_iso_12207.html)  
 Лучше назвать "Процесс определения Образа планируемой Поставки"  
 ИИ: Этап "Предложение" включает в себя формулирование идеи нового продукта на основе анализа потребностей рынка и существующих решений. На этом этапе команда определяет целевую аудиторию, проводит SWOT-анализ и формирует концепцию продукта. Это критически важный шаг, так как он закладывает основу для дальнейшей разработки, обеспечивая понимание того, что именно нужно создать и как продукт будет отличаться от конкурентов.  

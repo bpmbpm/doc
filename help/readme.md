@@ -1,5 +1,6 @@
 ### github
-#### изменить имя папки в github
+- https://docs.github.com/ru
+- изменить имя папки в github
 https://stackoverflow.com/questions/53467217/how-to-change-a-folder-name-in-github  
 Перейдите в свой репозиторий, содержащий папку, которую вы хотите переименовать.
 Затем нажмите клавишу «.».

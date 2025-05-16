@@ -19,3 +19,4 @@
 - [Сравнительный анализ стандартов ISO/IEC 12207-95 и ISO/IEC 12207-2008](https://www.bibliofond.ru/view.aspx?id=724961)
 - [Software Development Life Cycle (SDLC)](https://babok-school.ru/blog/sdlc-and-software-development-models-for-business-analyst/)
 - [Процесс разработки продукта](https://asana.com/ru/resources/product-development-process)
+- [pqm-online.com](https://pqm-online.com/assets/files/lib/std/gost_r_iso_iec_12207-2010.pdf)

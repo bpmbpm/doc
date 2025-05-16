@@ -12,7 +12,7 @@ https://t.me/hyperonym/88
 К поиску консенсуса в мировом знании.
 
 ### Книги
-Б.В. Кузьмин Социальное прогнозирование развития России в ХХI веке [INDUSTRY/economy/kuzmin.pdf]|(https://github.com/bpmbpm/doc/blob/main/INDUSTRY/economy/kuzmin.pdf)
+Б.В. Кузьмин Социальное прогнозирование развития России в ХХI веке [INDUSTRY/economy/kuzmin.pdf](https://github.com/bpmbpm/doc/blob/main/INDUSTRY/economy/kuzmin.pdf)
 
 ### Разное
 - семантический треугольник https://t.me/hyperonym/89

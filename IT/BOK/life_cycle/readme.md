@@ -5,6 +5,10 @@
 - [en 12207:2008](https://wildart.github.io/MISG5020/standards/IEEE-12207-2008.pdf)
 - [ISO/IEC/IEEE 12207:2017 wiki](https://en.wikipedia.org/wiki/ISO/IEC_12207)
 
+txt ГОСТ Р ИСО/МЭК 12207-2010
+- [meganorm](https://meganorm.ru/Index2/1/4293804/4293804988.htm)
+- [pqm-online.com](https://pqm-online.com/assets/files/lib/std/gost_r_iso_iec_12207-2010.pdf)
+
 #### Этап "2 Процесс поставки" (6.1.2 Supply Process)
 Какой поставки? Поставка ПО до ее разработки? 
 Нужно говорить: [2 предложение (Supply) - составление плана управления проектом](https://eopearhiiv.edu.ee/e-kursused/eucip/arendus_vk/1612_iso_12207.html)  
@@ -22,4 +26,4 @@
 - [Сравнительный анализ стандартов ISO/IEC 12207-95 и ISO/IEC 12207-2008](https://www.bibliofond.ru/view.aspx?id=724961)
 - [Software Development Life Cycle (SDLC)](https://babok-school.ru/blog/sdlc-and-software-development-models-for-business-analyst/)
 - [Процесс разработки продукта](https://asana.com/ru/resources/product-development-process)
-- [pqm-online.com](https://pqm-online.com/assets/files/lib/std/gost_r_iso_iec_12207-2010.pdf)
+

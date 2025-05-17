@@ -1,8 +1,13 @@
 ### diagram as code DaC
 
 - [Network diagram as code / Схема сети как код](https://habr.com/ru/articles/491814/)
-- [diagrams.mingrammer](https://diagrams.mingrammer.com/)
+- https://habr.com/ru/companies/rostelecom/articles/701970/
+- https://mxsmirnov.com/2022/12/03/diagrams-as-code-2-5/
+- https://icepanel.medium.com/top-7-diagrams-as-code-tools-for-software-architecture-1a9dd0df1815
 
+### tool
+- [diagrams-as-code git](https://github.com/topics/diagrams-as-code) 
+- [diagrams.mingrammer](https://diagrams.mingrammer.com/) 
 
 см. также: https://github.com/bpmbpm/doc/tree/main/BPM/graphic_editor/mermaid
 

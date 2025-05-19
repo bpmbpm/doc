@@ -11,5 +11,9 @@
 - Enterprise Architecture Transformation: A Practical Guide https://www.eatransformation.com/
 - Architecture Diagramming Tools, and the AI Gap https://generativeprogrammer.com/p/architecture-diagramming-tools-and
 
+### notation
+EA нотации см. https://github.com/bpmbpm/doc/tree/main/BPM/notation
+
 ### miscellaneous
 [Корпоративный архитектор и Корпоративная архитектура BS](https://www.businessstudio.ru/articles/article/korporativnyy_arkhitektor_i_korporativnaya_arkhite/)
+

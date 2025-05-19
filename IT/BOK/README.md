@@ -16,5 +16,5 @@ Enterprise Architecture Body of Knowledge. Найти текст EABOK не уд
 - EAM можно рассматривать как разновидность TOGAF ADM, а EABOK — как TOGAF Enterprise Continuum [eapj.org](https://eapj.org/enterprise-architecture-management-a-theory-of-constraints-formal-trade-off-analysis-methods-and-game-theory/)
 - Различные сводки и руководства по своду знаний. Mitre выпустил руководство по (развивающемуся) своду знаний EA около 2004 года (известному как EABOK), и в настоящее время группа людей пытается создать новую версию EABOK. BCS опубликовала Reference Model for Enterprise and Solution Architecture , которую она использует в качестве основы для своей сертификации архитектуры [blogspot](https://rvsoapbox.blogspot.com/2012/10/on-enterprise-architecture-body-of.html)
 
-Enterprise Architecture Frameworks
+#### Enterprise Architecture Frameworks
 - [itsm4u.ru](https://itsm4u.ru/enterprise-architecture-frameworks)

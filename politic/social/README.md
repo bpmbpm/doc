@@ -23,3 +23,7 @@ https://t.me/rusontology/2479
 
 ### Разное
 - семантический треугольник https://t.me/hyperonym/89
+
+### Отдельные проекты
+- Проект Венера, Жак Фреско, проект «Социокиберинженерия» (англ. Sociocyberneering, Inc.) [wiki](https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82_%D0%92%D0%B5%D0%BD%D0%B5%D1%80%D0%B0) ; [до 2018г](https://designing-the-future.org/the-venus-project/)
+- General Semantics, Альфред Коржибски [wiki](https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D1%89%D0%B0%D1%8F_%D1%81%D0%B5%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D0%BA%D0%B0)

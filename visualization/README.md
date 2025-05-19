@@ -3,3 +3,7 @@
 - 
 Инструменты:
 - «TikZ ist kein Zeichenprogramm» («TikZ не программа для рисования») [PGF / TikZ wike](https://ru.wikipedia.org/wiki/PGF/Tikz) ; [1.2 Comparison with Other Graphics Packages](https://tikz.dev/) ; [64 Petri-Net Drawing Library](https://tikz.dev/library-petri) ;  
+
+см. также:
+- https://github.com/bpmbpm/doc/blob/main/BPM/graphic_editor
+  

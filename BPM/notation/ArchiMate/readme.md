@@ -15,7 +15,7 @@
 - [businessstudio](https://www.businessstudio.ru/help/docs/current/doku.php/ru/manual/archimate) ; [видео](https://rutube.ru/video/dd36ecd17c9c7b22dee52cfe9db1094e/) ; [пример](https://www.businessstudio.ru/upload/iblock/77b/Mizgulin.pdf)
 
 ### ArchiMate_Ontology
-- [yasenstar](https://github.com/yasenstar/ArchiMate_Ontology)
+- [yasenstar](https://github.com/yasenstar/ArchiMate_Ontology) ; [yasenstar.github.io](https://yasenstar.github.io/ArchiMate_Ontology/archi_report/index.html)
 
 ### Также
 - [/EA/GOST/domen_EA.md](https://github.com/bpmbpm/doc/blob/main/EA/GOST/domen_EA.md)

@@ -1,6 +1,6 @@
 Подходы к декомпозиции: 
 - Модель 4+1 [kuznetsov](https://m-i-kuznetsov.livejournal.com/60725.html) ; [sewiki](http://sewiki.ru/4%2B1)
-- C4
+- C4 [c4model.com](https://c4model.com/diagrams/component)
 - ArchiMate \ TOGAF
 - 18-МР
 

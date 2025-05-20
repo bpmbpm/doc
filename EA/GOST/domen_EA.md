@@ -13,7 +13,7 @@
 
 ### domenEA
 Архитектурные декомпозиции (слои ЕА):  
-- What is IT Architecture & Types of Architectures [itarch.info](https://www.itarch.info/2020/05/what-is-it-architecture-and-different.html)
+- What is IT Architecture & Types of Architectures [itarch.info](https://www.itarch.info/2020/05/what-is-it-architecture-and-different.html) ![dia](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg86WC93GrNXJZR4NOaxTb-v_CcKggw2MKtjGfRh-Rr1i7qt-ynMXoC6pzyrC_4i9eMErAMPYf3juoz86pfF5O3dJkIGiCYNr51dIvDzSXaHsEXJYMcnvldmu_dwR4eyGKMsU5LAq-p9DYF/s2048/architecturetypes+%25281%2529.png)
 - Рисунок 1. Слоеная модель [FEAF](https://bit.samag.ru/archive/article/1835)  
 ![dia](https://bit.samag.ru/uploads/articles/2017/03/40_44_IT_Processes_Architecture/image001.gif)
 - [Единый центр управления ИТ‑архитектурой организации](https://www.businessstudio.ru/articles/article/edinyy_tsentr_upravleniya_it_arkhitekturoy_organizacii/)

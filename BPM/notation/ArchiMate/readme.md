@@ -7,3 +7,5 @@
 ### Другие
 - bizzdesign.com [Импорт диаграмм Visio в модели ArchiMate](https://help.bizzdesign.com/articles/#!horizzon-help/importing-visio-diagrams-into-archimate-models)
 
+### ArchiMate_info
+- [Коптелов](https://www.businessstudio.ru/upload/iblock/65c/%D0%9A%D0%BE%D0%BF%D1%82%D0%B5%D0%BB%D0%BE%D0%B2.pdf)

@@ -10,8 +10,10 @@
 
 Некоторые элементы
 - [it architectures and middleware Chris Britton Peter Bye pdf](https://www.utwente.nl/en/ces/sal/exams/architecture-of-Information-systems/britton-peter-2004-it-architectures-and-middleware.pdf)
+
 ### domenEA
 Архитектурные декомпозиции (слои ЕА):  
+- What is IT Architecture & Types of Architectures [itarch.info](https://www.itarch.info/2020/05/what-is-it-architecture-and-different.html)
 - Рисунок 1. Слоеная модель [FEAF](https://bit.samag.ru/archive/article/1835)  
 ![dia](https://bit.samag.ru/uploads/articles/2017/03/40_44_IT_Processes_Architecture/image001.gif)
 - [Единый центр управления ИТ‑архитектурой организации](https://www.businessstudio.ru/articles/article/edinyy_tsentr_upravleniya_it_arkhitekturoy_organizacii/)

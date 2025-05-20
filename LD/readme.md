@@ -35,6 +35,7 @@ en:
 
 ## Журналы
 - https://www.semantic-web-journal.net/
+- Ontology of Designing [Онтология проектирования](https://www.ontology-of-designing.ru/issues/) ; [том 7 № 2(24)/2017](https://agora.guru.ru/scientific_journal/files/Ontology_Of_Designing_2_2017opt.pdf)
 ## Лекции
 - [Лекция 3, migalkin](https://migalkin.github.io/kgcourse2021/lectures/lecture3)
 ## Материалы

@@ -23,3 +23,6 @@
 - [Слои корпоративной архитектуры, marcus](https://marcus-aurelius.ru/articles/layers.html) ![dia](https://marcus-aurelius.ru/netcat_files/userfiles/Article_Layers/Pic2.jpg)
 - [Стратегия и архитектура организации,  marcus](https://strategy.cdto.ranepa.ru/5-1-chto-takoe-arhitektura-organizacii)
 - [babok-school](https://babok-school.ru/blog/what-is-togaf-enterprise-architecture-basics/) ![dia](https://babok-school.ru/wp-content/uploads/2020/11/arh_1.png)
+
+### Также
+- [BPM/notation/ArchiMate](https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/readme.md)

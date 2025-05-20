@@ -17,3 +17,6 @@ EA нотации см. https://github.com/bpmbpm/doc/tree/main/BPM/notation
 ### miscellaneous
 - [Корпоративный архитектор и Корпоративная архитектура BS](https://www.businessstudio.ru/articles/article/korporativnyy_arkhitektor_i_korporativnaya_arkhite/)
 - [Архитектура предприятия в быту](https://aeshnik.livejournal.com/48400.html)
+
+### см также
+- [life cycle IT/BOK/life_cycle](https://github.com/bpmbpm/doc/tree/main/IT/BOK/life_cycle)

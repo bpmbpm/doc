@@ -10,6 +10,7 @@
 ### ArchiMate_info
 - [Коптелов](https://www.businessstudio.ru/upload/iblock/65c/%D0%9A%D0%BE%D0%BF%D1%82%D0%B5%D0%BB%D0%BE%D0%B2.pdf)
 - [Андрей Рубенчик](https://www.cfin.ru/itm/standards/ArchiMate.shtml)
+- [+ ссвлки на ГОСТ](https://habr.com/ru/companies/otus/articles/840214/#comment_27236998)
 
 ### Подробно
 - [businessstudio](https://www.businessstudio.ru/help/docs/current/doku.php/ru/manual/archimate) ; [видео](https://rutube.ru/video/dd36ecd17c9c7b22dee52cfe9db1094e/) ; [пример](https://www.businessstudio.ru/upload/iblock/77b/Mizgulin.pdf)

@@ -1,4 +1,13 @@
-Подходы к декомпозиции: Модель 4+1
+Подходы к декомпозиции: 
+- Модель 4+1 [kuznetsov](https://m-i-kuznetsov.livejournal.com/60725.html) ; [sewiki](http://sewiki.ru/4%2B1)
+- C4
+- ArchiMate \ TOGAF
+- 18-МР
+
+Обзоры:
+- [C4, ArchiMate, 4+1, SysML (Systems Modeling Language), AADL (Architecture Analysis & Design Language)](https://getanalyst.ru/database/system-analysts-architect-notations)
+- [Захман, Microsoft и др.](https://intuit.ru/studies/professional_skill_improvements/19513/courses/751/lecture/29038?page=2)
+  
 Архитектурные декомпозиции (слои ЕА):  
 - Рисунок 1. Слоеная модель [FEAF](https://bit.samag.ru/archive/article/1835)  
 ![dia](https://bit.samag.ru/uploads/articles/2017/03/40_44_IT_Processes_Architecture/image001.gif)

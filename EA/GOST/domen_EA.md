@@ -7,7 +7,9 @@
 Обзоры:
 - [C4, ArchiMate, 4+1, SysML (Systems Modeling Language), AADL (Architecture Analysis & Design Language)](https://getanalyst.ru/database/system-analysts-architect-notations)
 - [Захман, Microsoft и др.](https://intuit.ru/studies/professional_skill_improvements/19513/courses/751/lecture/29038?page=2)
-  
+
+Некоторые элементы
+- [it architectures and middleware Chris Britton Peter Bye pdf](https://www.utwente.nl/en/ces/sal/exams/architecture-of-Information-systems/britton-peter-2004-it-architectures-and-middleware.pdf)
 ### domenEA
 Архитектурные декомпозиции (слои ЕА):  
 - Рисунок 1. Слоеная модель [FEAF](https://bit.samag.ru/archive/article/1835)  

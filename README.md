@@ -65,7 +65,7 @@ ARIS ; [fujitsu i-Flow](https://www.fujitsu.com/downloads/SG/fapl/workflow/iflow
 ### Классификация Архитектуры (Enterprise Architecture)
 Обзоры:
 - [Tinkoff](https://tellmeabout.tech/architecture-decisions-6cff1a6bac1a)
-### Примеры EA
+### EA examples
 Opengroup case-study-models:
 - [Общая](https://pubs.opengroup.org/architecture/case-study-models/)
 - [ArchiSurance opengroup](https://pubs.opengroup.org/architecture/case-study-models/archisurance-html/)

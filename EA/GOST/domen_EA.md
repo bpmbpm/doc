@@ -15,7 +15,7 @@
 - [wiki](https://en.wikipedia.org/wiki/Enterprise_architecture_framework)
 - [FDIC Enterprise Architecture Framework](https://en.wikipedia.org/wiki/FDIC_Enterprise_Architecture_Framework)
 - [https://www.researchgate.net/](https://www.researchgate.net/figure/Enterprise-Architecture-Framework-BULLET_fig1_317721453) Layer
-### domenEA
+### EAdomen
 Архитектурные декомпозиции (слои ЕА):
 - [Process,System,Tech](https://www.edrawmax.com/enterprise-architecture/) ![dia](https://images.edrawmax.com/images/knowledge/enterprise-architecture-1.jpg)
 - [cfin](https://www.cfin.ru/itm/standards/ArchiMate.shtml) ![dia](https://www.cfin.ru/itm/standards/ArchiMate-07.png) + Термины ArchiMate

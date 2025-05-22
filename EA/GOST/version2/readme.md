@@ -17,5 +17,5 @@
 #### Enterprise architecture framework version 2
 ввв рис. 1
 #### fff
-Идея "EA framework -> EA конкретной компании -> Детальный дизайн" поеказана на рис. 2 
+Идея *EA framework -> EA конкретной компании -> Детальный дизайн* поеказана на рис. 2 
 

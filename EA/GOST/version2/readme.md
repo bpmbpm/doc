@@ -17,7 +17,7 @@
 [Business architecture](https://github.com/bpmbpm/doc/tree/main/EA/BizArch).
 #### Enterprise architecture framework version 2
 ввв рис. 1
-Ключевым инструментом бизнес-процесса является ИТ-система (ИТ-подсистемы). Логика бизнес-процесса "руками" ИТ-системы "перемалывает" входные данные (Data Architecture, Data Catalog, Documents, etc) в выходные: в конечном счете в содержание Продуктового каталога компании (Company Products Catalog).
+Ключевым инструментом бизнес-процесса является ИТ-система (ИТ-подсистемы). Логика бизнес-процесса "руками" ИТ-системы "перемалывает" входные данные (Data Architecture, Data Catalog, Documents, etc) в выходные: в целевом случае в содержание Продуктового каталога компании (Company Products Catalog).
 it2it = IT для IT: мониторинг (Zabbix), архивирование, отказоустойчивость и т.п. 
 
 #### fff

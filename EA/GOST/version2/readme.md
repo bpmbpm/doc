@@ -17,7 +17,7 @@
 За основу возьмем [схему](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg86WC93GrNXJZR4NOaxTb-v_CcKggw2MKtjGfRh-Rr1i7qt-ynMXoC6pzyrC_4i9eMErAMPYf3juoz86pfF5O3dJkIGiCYNr51dIvDzSXaHsEXJYMcnvldmu_dwR4eyGKMsU5LAq-p9DYF/s16000/architecturetypes+%25281%2529.png) из [itarch.info](https://www.itarch.info/2020/05/what-is-it-architecture-and-different.html), но схему EAF сделаем процесс-центричной, т.е. в центре "Бизнес-процесс" (базис). Выше него надстройка (superstructure), скорее "идеологическая надстройка". Для реализации бизнес-процессов (целевой выход целевого процесса - продукт компании) требуются ресурсы: исполнители (роли, реализуемые через HR) и инструменты (инструментальные ресурсы процесса): от ИТ-системы до дырокола. Три указанных сущности образуют 
 [Business architecture](https://github.com/bpmbpm/doc/tree/main/EA/BizArch).
 В том же TOGAG "Бизнес-процесс" "размыт", см. [30. Content Metamodel](https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap30.html).  
-[Метамодель Процесса](https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/process.md) можно интерпретировать как математическую функцию, для вычисления которой (для исполнения процесса, где результат - выход процесса) требуются аргументы: HR (role), it-system (или дырокол), входные данные и события.
+[Метамодель Процесса](https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/process.md) можно интерпретировать как математическую функцию, для вычисления которой (для исполнения процесса, где результат - выход процесса) требуются аргументы: HR (role), it-system (или дырокол), входные данные и события. Классический BPM (Scheer, ARIS 1992) определял process & function как синонимы. 
 
 #### Enterprise architecture framework, version 2
 ввв  

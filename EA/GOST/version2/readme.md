@@ -33,7 +33,8 @@ it2it = IT для IT: мониторинг (Zabbix), архивирование,
 Указанный в примере подход к формализации "Состав ИС / АС" уже требует регулятор, например, ЦБ как в формате 0409072 формы (пример "кракозябры GRC\CMDB" см. 18-МР Приложение 1), так и в формате [ФТК](https://naufor.ru/download/conference/online_10122024/pres/6.pdf#page=8) , [Папка по ФТК](https://github.com/bpmbpm/doc/tree/main/EA/GOST/FTK). Для этого сделаны справочники, см. 18-МР, 787-П / 779-П (точнее их новые номера), Приказ Минцифры  от 22.09.20 № 486 [Классификатор программ для электронных вычислительных машин и баз данных](https://adm.digital.gov.ru/app/uploads/2023/09/prikaz-%E2%84%96-486.pdf).  
 EAF - это тоже своего рода классификатор (таксономия / онтология), основная проблема в его качестве (логичности), детальности (подробности) и практичности: применимости и полезности для реальной работы по формализации архитектуры ("леса") и детальных элементов ("деревьев") комапнии и ее ИТ-системы.
 
-#### Enterprise architecture vs Enterprise engineering
+#### notes
+##### Enterprise architecture vs Enterprise engineering
 - «Архитектура предприятия» - часть инжиниринга предприятия, НАЦИОНАЛЬНАЯ АССОЦИАЦИЯ АРХИТЕКТОРОВ ПРЕДПРИЯТИЯ [Е.З. Зиндер](https://enterprisearchitect.ru/data/documents/ZINDER-Rasshiryayushchayasya-Paradigma-Inzhiniringa-Predpriyatiya.pdf) 
 - [Архитектура предприятия в контексте бизнес-реинжиниринга](https://www.iemag.ru/analitics/detail.php?ID=18024)
 - [GERAM](http://sewiki.ru/GERAM)

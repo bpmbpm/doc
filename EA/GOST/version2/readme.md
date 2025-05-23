@@ -1,4 +1,4 @@
-### Enterprise architecture framework 2
+### Enterprise architecture framework-2
 #### Intro
 Взгладов на Enterprise architecture framework (EAF) много, см. [wiki](https://en.wikipedia.org/wiki/Enterprise_architecture_framework) и [top10](https://terrafirma.com.au/architecture/top-10-enterprise-architecture-frameworks/)   
 Ниже показан еще один EAF с кодовым названием **version 2**.  
@@ -19,7 +19,7 @@
 В том же TOGAG "Бизнес-процесс" "размыт", см. [30. Content Metamodel, chap30](https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap30.html), включая [B.capabilities, B.Service, Function, value stream](https://pubs.opengroup.org/architecture/togaf9-doc/arch/Figures/34_contentfwk6.png).  
 [Метамодель Процесса](https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/process.md) можно интерпретировать как математическую функцию, для вычисления которой (для исполнения процесса, где результат - выход процесса) требуются аргументы: HR (role), it-system (или дырокол), входные данные и события. Классический BPM (Scheer, ARIS 1992) определял process = function, т.е. [как синонимы](https://habr.com/ru/articles/763910/). 
 
-#### Enterprise architecture framework, version 2
+#### EAF version 2
 ввв  
 Рис. 1  
 Ключевым инструментом бизнес-процесса является ИТ-система (ИТ-подсистемы). Логика бизнес-процесса "руками" ИТ-системы "перемалывает" входные данные (Data Architecture, Data Catalog, Documents, etc) в выходные: в целевом случае в содержание Продуктового каталога компании (Company Products Catalog).  

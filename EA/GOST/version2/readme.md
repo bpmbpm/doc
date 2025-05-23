@@ -16,7 +16,7 @@
 Подборкка примеров Frameworks собрана в [domen_EA.md](https://github.com/bpmbpm/doc/blob/main/EA/GOST/domen_EA.md).   
 За основу возьмем из [itarch.info](https://www.itarch.info/2020/05/what-is-it-architecture-and-different.html), но выполним схему более процесс-центричной, т.е. в центре "Бизнес-процесс" (базис). Выше него надстройка (superstructure), скорее   "идеологическая надстройка". Для реализации бизнес-процессов (целевой выход целевого процесса - продукт компании) требуются ресурсы: исполнители (роли, реализуемые через HR) и инструменты: от ИТ-системы до дырокола. Три указанных сущности образуют 
 [Business architecture](https://github.com/bpmbpm/doc/tree/main/EA/BizArch).
-#### Enterprise architecture framework version 2
+#### Enterprise architecture framework, version 2
 ввв  
 Рис. 1  
 Ключевым инструментом бизнес-процесса является ИТ-система (ИТ-подсистемы). Логика бизнес-процесса "руками" ИТ-системы "перемалывает" входные данные (Data Architecture, Data Catalog, Documents, etc) в выходные: в целевом случае в содержание Продуктового каталога компании (Company Products Catalog).  

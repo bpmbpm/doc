@@ -49,6 +49,4 @@ EAF - это тоже своего рода классификатор (такс
 
 #### notes
 ##### Enterprise architecture vs Enterprise engineering
-- «Архитектура предприятия» - часть инжиниринга предприятия, НАЦИОНАЛЬНАЯ АССОЦИАЦИЯ АРХИТЕКТОРОВ ПРЕДПРИЯТИЯ [Е.З. Зиндер](https://enterprisearchitect.ru/data/documents/ZINDER-Rasshiryayushchayasya-Paradigma-Inzhiniringa-Predpriyatiya.pdf) 
-- [Архитектура предприятия в контексте бизнес-реинжиниринга](https://www.iemag.ru/analitics/detail.php?ID=18024)
-- [GERAM](http://sewiki.ru/GERAM)
+- «Архитектура предприятия» - часть инжиниринга предприятия, НАЦИОНАЛЬНАЯ АССОЦИАЦИЯ АРХИТЕКТОРОВ ПРЕДПРИЯТИЯ [Е.З. Зиндер](https://enterprisearchitect.ru/data/documents/ZINDER-Rasshiryayushchayasya-Paradigma-Inzhiniringa-Predpriyatiya.pdf) ; [Архитектура предприятия в контексте бизнес-реинжиниринга](https://www.iemag.ru/analitics/detail.php?ID=18024) ; [GERAM](http://sewiki.ru/GERAM)

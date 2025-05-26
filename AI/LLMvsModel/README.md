@@ -16,3 +16,4 @@ Geoffrey Hilton: ИИ - моделирование суждений, LLM - мо�
 ![ris1](SM_LLM.png)
 ### Также
 - [/LD/cognition](https://github.com/bpmbpm/doc/tree/main/LD/cognition)
+- [Семантический веб и AutoML: великие обещания и горькая реальность](https://habr.com/ru/companies/selectel/articles/912738/)

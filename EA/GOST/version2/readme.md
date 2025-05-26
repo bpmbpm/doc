@@ -1,6 +1,6 @@
 ### Enterprise architecture framework-2
 #### Intro
-Взгладов на Enterprise architecture framework (EAF) много, см. [wiki](https://en.wikipedia.org/wiki/Enterprise_architecture_framework) ; [sewiki](http://sewiki.ru/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%BD%D1%8B%D0%B5_%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D1%8B) ; [top10 EAF](https://terrafirma.com.au/architecture/top-10-enterprise-architecture-frameworks/). Одних только xxAF (Architecture Framework) сколько: IAF, FEAF, TEAF, DoDAF, MODAF, NAF, HEAF ...  
+Взгладов на Enterprise architecture framework (EAF) много, см. [wiki](https://en.wikipedia.org/wiki/Enterprise_architecture_framework) ; [sewiki](http://sewiki.ru/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%BD%D1%8B%D0%B5_%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D1%8B) ; [top10 EAF](https://terrafirma.com.au/architecture/top-10-enterprise-architecture-frameworks/). Одних только xxAF (Architecture Framework) сколько: IAF, E2AF, FEAF, TEAF, DoDAF, MODAF, NAF, TOGAF и другие [HEAF](https://scialert.net/fulltext/?doi=tasr.2016.33.43) 
 Есть схожие термины, например, [Инженерия предприятия](http://sewiki.ru/%D0%98%D0%BD%D0%B6%D0%B5%D0%BD%D0%B5%D1%80%D0%B8%D1%8F_%D0%BF%D1%80%D0%B5%D0%B4%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F), но в целом это про моделирование Предприятия и его составных частей, прежде всего информационных.    
 Ниже показан еще один EAF с кодовым названием **version 2**.  
 **Терминологичское введение**  
@@ -37,7 +37,10 @@ it2it = IT для IT: мониторинг (Zabbix), архивирование,
 Рис. 2  
 
 Указанный в примере подход к формализации "Состав ИС / АС" уже требует регулятор, например, ЦБ как в формате 0409072 формы (пример "кракозябры GRC\CMDB" см. 18-МР Приложение 1), так и в формате [ФТК](https://naufor.ru/download/conference/online_10122024/pres/6.pdf#page=8) , [Папка по ФТК](https://github.com/bpmbpm/doc/tree/main/EA/GOST/FTK). Для этого сделаны справочники, см. 18-МР, 787-П / 779-П (точнее их новые номера), Приказ Минцифры  от 22.09.20 № 486 [Классификатор программ для электронных вычислительных машин и баз данных](https://adm.digital.gov.ru/app/uploads/2023/09/prikaz-%E2%84%96-486.pdf).  
-EAF - это тоже своего рода классификатор (таксономия / онтология), основная проблема в его качестве (логичности), детальности (подробности) и практичности: применимости и полезности для реальной работы по формализации архитектуры ("леса") и детальных элементов ("деревьев") комапнии и ее ИТ-системы.
+EAF - это тоже своего рода классификатор (таксономия / онтология), основная проблема в его качестве (логичности), детальности (подробности) и практичности: применимости и полезности для реальной работы по формализации архитектуры ("леса") и детальных элементов ("деревьев", Detailed design) комапнии и ее ИТ-системы. Картинки типа [Иерархия описаний архитектур](https://intuit.ru/studies/mini_mba/944/courses/152/lecture/4236?page=8) я бы изобразил иначе, см. рис. 3.
+
+Рис. 3  
+Смысл в том, что процессы определяют прикладной уровень (ППО), а сами процессы (процесс = бизнес-процесс) могут быть универсальными или специфичными (специальное ПО). Специфичные процессы для отрасли требуют специфичного ПО (например, Автоматизириванная банковская система вместо, ДБО), а универсальные процессы (сross Industry) реализуются "Общим" ПО (CRM, HR, СЭД), см. [ГОСТ 34.003-90 ОПО vs СПО](https://dokipedia.ru/paragraph/5150744/49)  
 
 ### Отдельные уточнения
 #### Process Framework
@@ -51,3 +54,5 @@ EAF - это тоже своего рода классификатор (такс
 #### notes
 ##### Enterprise architecture vs Enterprise engineering
 - «Архитектура предприятия» - часть инжиниринга предприятия, НАЦИОНАЛЬНАЯ АССОЦИАЦИЯ АРХИТЕКТОРОВ ПРЕДПРИЯТИЯ [Е.З. Зиндер](https://enterprisearchitect.ru/data/documents/ZINDER-Rasshiryayushchayasya-Paradigma-Inzhiniringa-Predpriyatiya.pdf) ; [Архитектура предприятия в контексте бизнес-реинжиниринга](https://www.iemag.ru/analitics/detail.php?ID=18024) ; [GERAM](http://sewiki.ru/GERAM)
+- [A Pattern-based Approach to Enterprise Architecture Management](https://mediatum.ub.tum.de/doc/808722/808722.pdf)
+

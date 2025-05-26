@@ -1,4 +1,4 @@
-### BboldSea
+### boldSea
 #### 1 Base
 - [agirussia.github.io](https://github.com/agirussia/agirussia.github.io/blob/main/workshops/2025/28_February_2025_Boldsea_event_driven_semantic_modeling_Alexander.md)
 - [Термины](https://t.me/boldsea/10)

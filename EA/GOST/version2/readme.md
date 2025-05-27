@@ -78,3 +78,4 @@ EAF - это тоже своего рода классификатор (такс
 - [Список стилей и шаблонов архитектуры программного обеспечения](https://en.wikipedia.org/wiki/List_of_software_architecture_styles_and_patterns) ; [Многоуровневая архитектура](https://en.wikipedia.org/wiki/Multitier_architecture) ; [Архитектурное решение](https://en.wikipedia.org/wiki/Architectural_decision)
 - Лекции [Лекция 2: Построение архитектуры организации](https://intuit.ru/studies/courses/532/388/lecture/9003?page=1) ; [Лекция 7: Бизнес-архитектура](http://bodrenko.org/ap/ap-l7.htm)
 - [Расширенный язык моделирования предприятий ( EEML )](https://en.wikipedia.org/wiki/Extended_Enterprise_Modeling_Language)
+- [Ecosystems Enterprise Architecture Atlas Demo](https://www.dragon1.com/demo/enterprise-architecture-atlas-template)

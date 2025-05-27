@@ -18,3 +18,8 @@ Enterprise Architecture Body of Knowledge. Найти текст EABOK не уд
 
 #### Enterprise Architecture Frameworks
 - [itsm4u.ru](https://itsm4u.ru/enterprise-architecture-frameworks)
+#### BIZBOK
+- [businessarchitectureguild](https://www.businessarchitectureguild.org/page/002)
+- [Пинаева](https://www.hse.ru/data/2015/11/26/1080295948/%D0%9F%D0%B8%D0%BD%D0%B0%D0%B5%D0%B2%D0%B0.pdf)
+
+см. также [EA/BizArch](https://github.com/bpmbpm/doc/tree/main/EA/BizArch)

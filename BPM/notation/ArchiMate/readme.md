@@ -9,7 +9,7 @@
 
 ### ArchiMate_info
 - [Коптелов](https://www.businessstudio.ru/upload/iblock/65c/%D0%9A%D0%BE%D0%BF%D1%82%D0%B5%D0%BB%D0%BE%D0%B2.pdf)
-- [Андрей Рубенчик](https://www.cfin.ru/itm/standards/ArchiMate.shtml)
+- [Андрей Рубенчик](https://www.cfin.ru/itm/standards/ArchiMate.shtml) ;  [cfin.ru Лекции](https://www.cfin.ru/itm/EA_ArchiMate.shtml)
 - [Потенциал точек зрения ArchiMate: От обычного EA-моделирования до PLM + ссылки на ГОСТ](https://habr.com/ru/companies/otus/articles/840214/#comment_27236998)
 
 ### Подробно
@@ -33,7 +33,6 @@
 
 - [ArchiMate 3.2 Specification 8. Business Layer](https://pubs.opengroup.org/architecture/archimate3-doc/ch-Business-Layer.html)  
 - [sewiki.ru/ArchiMate](http://sewiki.ru/ArchiMate)
-- [cfin.ru Рубенчик Лекции](https://www.cfin.ru/itm/EA_ArchiMate.shtml)
 - [Коннекторы языка ArchiMate](https://habr.com/ru/companies/otus/articles/744278/)
 ![ris](https://habrastorage.org/r/w1560/getpro/habr/upload_files/416/71d/984/41671d9844595d651ddd3f0b63027453.png)
 ### Onto

@@ -21,3 +21,7 @@
 ### Также
 - [/EA/GOST/domen_EA.md](https://github.com/bpmbpm/doc/blob/main/EA/GOST/domen_EA.md)
 - [EA/GOST/version2](https://github.com/bpmbpm/doc/blob/main/EA/GOST/version2/readme.md#archimate)
+
+### Intro
+[koptelov](https://koptelov.info/archimate_3_0/)  
+![ris](https://koptelov.info/wp-content/uploads/2017/07/ArchiMate3-1024x674.png)

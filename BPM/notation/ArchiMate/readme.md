@@ -37,5 +37,5 @@
 ![ris](https://habrastorage.org/r/w1560/getpro/habr/upload_files/416/71d/984/41671d9844595d651ddd3f0b63027453.png)
 ### Onto
 [30. Content Metamodel](https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap30.html)  
-Рассмотрим рисунок Figure 30-5: Entities and Relationships Present within the Core Content Metamodel
-![ris](/Figure 30-5.png)
+Рассмотрим рисунок Figure 30-5: Entities and Relationships Present within the Core Content Metamodel  
+![ris](//Figure 30-5.png)

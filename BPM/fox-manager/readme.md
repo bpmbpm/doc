@@ -1,1 +1,2 @@
-[4.1. Дерево процессов](https://fox-manager.com/wiki/doku.php?id=fox-manager-2.0-bpa:4.-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B:%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D0%B2)
+[4.1. Дерево процессов](https://fox-manager.com/wiki/doku.php?id=fox-manager-2.0-bpa:4.-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B:%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D0%B2)  
+[автоматически формировать схемы процессов верхнего уровня](https://fox-manager.com/wiki/doku.php?id=fox-manager-2.0-bpa:4.-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B:%D1%81%D1%85%D0%B5%D0%BC%D1%8B-%D0%B2%D0%B7%D0%B0%D0%B8%D0%BC%D0%BE%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D0%B9)

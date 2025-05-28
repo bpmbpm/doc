@@ -39,3 +39,6 @@
 [30. Content Metamodel togaf9](https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap30.html)  
 Рассмотрим рисунок Figure 30-5: Entities and Relationships Present within the Core Content Metamodel  
 ![ris](https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/Figure%2030-5.png)
+
+
+https://www.hosiaisluoma.fi/blog/strategy-modelling-archimate/

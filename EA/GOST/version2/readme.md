@@ -120,6 +120,6 @@ How (process) – как делать (табуретку) – это уже д�
 - [Ecosystems Enterprise Architecture Atlas Demo](https://www.dragon1.com/demo/enterprise-architecture-atlas-template)
 
 #### Archimate
-- с семантикой: 
+- Таблицы: [cfin](https://www.cfin.ru/itm/standards/ArchiMate.shtml) ; [bs help](https://www.businessstudio.ru/help/docs/current/doku.php/ru/manual/archimate) / [bs wiki](https://www.businessstudio.ru/wiki/docs/current/doku.php/ru/manual/archimate) ; 
 - [Архимейт по-русски: метод описания информационной структуры](https://ailev.livejournal.com/955954.html)
 - выше упомянутые: [слой мотивации](https://habr.com/ru/companies/otus/articles/722134/)

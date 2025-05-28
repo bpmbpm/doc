@@ -20,3 +20,4 @@
 
 ### Также
 - [/EA/GOST/domen_EA.md](https://github.com/bpmbpm/doc/blob/main/EA/GOST/domen_EA.md)
+- [EA/GOST/version2](https://github.com/bpmbpm/doc/blob/main/EA/GOST/version2/readme.md#archimate)

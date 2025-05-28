@@ -29,7 +29,10 @@
 - [Слои корпоративной архитектуры, marcus](https://marcus-aurelius.ru/articles/layers.html) ![dia](https://marcus-aurelius.ru/netcat_files/userfiles/Article_Layers/Pic2.jpg)
 - [Стратегия и архитектура организации,  marcus](https://strategy.cdto.ranepa.ru/5-1-chto-takoe-arhitektura-organizacii)
 - [babok-school](https://babok-school.ru/blog/what-is-togaf-enterprise-architecture-basics/) ![dia](https://babok-school.ru/wp-content/uploads/2020/11/arh_1.png)
-
+#### Dop
+- [Toolbox for Architecture Framework](https://blog.opengroup.org/wp-content/uploads/2018/03/blog_architecture_toolbox.pdf#page=2)
+- [ArchiMate Cookbook](https://www.hosiaisluoma.fi/blog/archimate/)
+- [Full ArchiMate Viewpoints Guide](https://www.visual-paradigm.com/guide/archimate/full-archimate-viewpoints-guide/)
 ### TOGAF opengroup.org
 - [30. Content Metamodel](https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap30.html)
 ### Также

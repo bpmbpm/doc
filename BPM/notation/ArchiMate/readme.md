@@ -31,9 +31,10 @@
 - Пассивная структура (passive structure) – объекты данных, носители информации, соглашения, …
 ![ris](https://koptelov.info/wp-content/uploads/2017/07/ArchiMate3-1024x674.png)
 
-[ArchiMate 3.2 Specification 8. Business Layer](https://pubs.opengroup.org/architecture/archimate3-doc/ch-Business-Layer.html)  
-[sewiki.ru/ArchiMate](http://sewiki.ru/ArchiMate)
-[Коннекторы языка ArchiMate](https://habr.com/ru/companies/otus/articles/744278/)
+- [ArchiMate 3.2 Specification 8. Business Layer](https://pubs.opengroup.org/architecture/archimate3-doc/ch-Business-Layer.html)  
+- [sewiki.ru/ArchiMate](http://sewiki.ru/ArchiMate)
+- [.cfin.ru](https://www.cfin.ru/itm/EA_ArchiMate.shtml)
+- [Коннекторы языка ArchiMate](https://habr.com/ru/companies/otus/articles/744278/)
 ![ris](https://habrastorage.org/r/w1560/getpro/habr/upload_files/416/71d/984/41671d9844595d651ddd3f0b63027453.png)
 ### Onto
 [30. Content Metamodel](https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap30.html)  

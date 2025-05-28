@@ -38,4 +38,4 @@
 ### Onto
 [30. Content Metamodel](https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap30.html)  
 Рассмотрим рисунок Figure 30-5: Entities and Relationships Present within the Core Content Metamodel
-![ris](Figure 30-5.png)
+![ris](/Figure 30-5.png)

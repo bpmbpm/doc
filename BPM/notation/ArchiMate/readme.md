@@ -36,6 +36,6 @@
 - [Коннекторы языка ArchiMate](https://habr.com/ru/companies/otus/articles/744278/)
 ![ris](https://habrastorage.org/r/w1560/getpro/habr/upload_files/416/71d/984/41671d9844595d651ddd3f0b63027453.png)
 ### Onto
-[30. Content Metamodel](https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap30.html)  
+[30. Content Metamodel togaf9](https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap30.html)  
 Рассмотрим рисунок Figure 30-5: Entities and Relationships Present within the Core Content Metamodel  
 ![ris](https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/Figure%2030-5.png)

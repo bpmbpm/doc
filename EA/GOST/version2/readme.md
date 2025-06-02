@@ -85,6 +85,13 @@ How (process) – как делать (табуретку) – это уже д�
     - Как устроена бизнес-архитектура [видео]( https://www.youtube.com/watch?v=o01OfitHMnM) ; [презентация](https://squidex.jugru.team/api/assets/srm/5ab05aca-8427-46f8-9492-3328a6b44ec8/kak-ustroena-biznes-arhitekturamaksim-smirnov.pdf)
 - [Чуен Сит](https://www.jibility.com/blog/business-capability-definition), «Бизнес-возможности — это материальные и нематериальные строительные блоки бизнеса, которые дают ему возможность делать то, что он делает».
 
+#### 2.5 Link
+- внутренние: https://github.com/bpmbpm/doc/tree/main/BPM/notation/ArchiMate
+- https://help.bizzdesign.com/articles/#!horizzon-help/archimate-strategy-elements
+- https://www.hosiaisluoma.fi/blog/strategy-modelling-archimate/
+- https://www.cfin.ru/itm/standards/ArchiMate.shtml ; https://www.cfin.ru/itm/EA_ArchiMate-lecture_3.pdf
+  
+
 ### 3 Отдельные уточнения
 #### Process Framework
 Архитектура процессов:

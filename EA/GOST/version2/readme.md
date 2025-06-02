@@ -89,7 +89,8 @@ How (process) – как делать (табуретку) – это уже д�
 - внутренние: https://github.com/bpmbpm/doc/tree/main/BPM/notation/ArchiMate
 - https://help.bizzdesign.com/articles/#!horizzon-help/archimate-strategy-elements
 - https://www.hosiaisluoma.fi/blog/strategy-modelling-archimate/
-- https://www.cfin.ru/itm/standards/ArchiMate.shtml ; https://www.cfin.ru/itm/EA_ArchiMate-lecture_3.pdf
+- ArchiMate https://www.cfin.ru/itm/standards/ArchiMate.shtml ; https://www.cfin.ru/itm/EA_ArchiMate-lecture_3.pdf
+- togaf9 https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap30.html
   
 
 ### 3 Отдельные уточнения

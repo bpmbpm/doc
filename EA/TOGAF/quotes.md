@@ -1,5 +1,5 @@
 ### Content Metamodel 
- 
+#### core metamodel entities
 [v9.2: 30.2 Content Metamodel Vision and Concepts](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap30.html) 
 
 Некоторые из ключевых концепций отношений, связанных с основными сущностями метамодели, описаны ниже:  

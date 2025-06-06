@@ -4,6 +4,7 @@ opengroup
 - [4. Generic Metamodel](https://pubs.opengroup.org/architecture/archimate3-doc/ch-Generic-Metamodel.html)
 - https://www.opengroup.org/sites/default/files/docs/downloads/n221p.pdf
 
+иное:
 - [Understanding the ArchiMate 3.2 Metamodel: A Guide to Behavior and Structure Elements](https://www.archimetric.com/understanding-the-archimate-3-2-metamodel-a-guide-to-behavior-and-structure-elements/)
 - [On the Use of Colours in ArchiMate](https://ea.rna.nl/2011/06/05/on-the-use-of-colours-in-archimate/)
 

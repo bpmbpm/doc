@@ -1,4 +1,4 @@
-METAMODEL также см. 
+
 opengroup
 - [34. Метамодель контента chap34](https://pubs.opengroup.org/architecture/togaf91-doc/arch/chap34.html)
 - [4. Generic Metamodel](https://pubs.opengroup.org/architecture/archimate3-doc/ch-Generic-Metamodel.html)
@@ -12,3 +12,5 @@ File:
 - [RU Ядро метамодели ArchiMate 3.2](https://ea.rna.nl/wp-content/uploads/2023/08/archimate-sheets-ru-20230805-s.pdf)
 https://www.nato.int/nato_static_fl2014/assets/pdf/2025/4/pdf/2504-NAFv4-ArchiMate.pdf 
 - [ArchiMate Modeling Guide For the NATO Architecture Framework Version 4, ArchitectureCapabilityTeam Digital Policy Committee 30/04/2025](https://www.nato.int/nato_static_fl2014/assets/pdf/2025/4/pdf/2504-NAFv4-ArchiMate.pdf)
+
+METAMODEL также см. 

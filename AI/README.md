@@ -8,3 +8,5 @@ https://github.com/bpmbpm/doc/tree/main/BPM/AI
 
 ### Benchmark
 - [Трафик языковых нейронок](https://habr.com/ru/articles/908486/)
+- https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard
+- 

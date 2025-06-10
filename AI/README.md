@@ -13,6 +13,7 @@ https://github.com/bpmbpm/doc/tree/main/BPM/AI
 
 ### Агрегаторы
 - https://bothub.chat/
+- https://chat.gogpt.ru/
 ### Hardware
 - [Локальный DeepSeek-R1: Когда скорость улитки – не приговор, а точка старта](https://habr.com/ru/articles/916966/)
 

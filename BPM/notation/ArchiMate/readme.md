@@ -42,3 +42,8 @@
 
 
 https://www.hosiaisluoma.fi/blog/strategy-modelling-archimate/
+
+### Spec 2
+- [ARCHIMATE_v3_1_specifikacia.](https://university.sk/wp-content/uploads/2020/01/ARCHIMATE_v3_1_specifikacia.pdf) стр 40
+- [Cookbook](https://www.hosiaisluoma.fi/ArchiMate-Cookbook.pdf)
+- hosiaisluoma.fi1 [ArchiMate Core Meta-model](https://www.hosiaisluoma.fi/blog/archimate-metamodel/) ; [eamples](https://www.hosiaisluoma.fi/blog/archimate-examples/)

@@ -16,3 +16,5 @@ https://github.com/bpmbpm/doc/tree/main/BPM/AI
 ### Hardware
 - [Локальный DeepSeek-R1: Когда скорость улитки – не приговор, а точка старта](https://habr.com/ru/articles/916966/)
 
+### DeepSeek
+- [Аномалии DeepSeek-v3 и DeepSeek-r1: глюкнутые токены и чат, теряющий идентичность](https://habr.com/ru/companies/bothub/articles/877326/)

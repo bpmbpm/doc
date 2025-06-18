@@ -22,4 +22,4 @@ EA нотации см. https://github.com/bpmbpm/doc/tree/main/BPM/notation
 - [life cycle IT/BOK/life_cycle](https://github.com/bpmbpm/doc/tree/main/IT/BOK/life_cycle)
 
 ### монолит vs микросервис
--[Галопом по архитектуре. Часть 2. Архитектура с нуля](https://habr.com/ru/articles/919368/)
+- [Галопом по архитектуре. Часть 2. Архитектура с нуля](https://habr.com/ru/articles/919368/)

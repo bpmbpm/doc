@@ -1,3 +1,5 @@
+### AI
+chatgpt.com 
 ### Achievements
 - [ИИ впервые официально прошел строгий тест Тьюринга](https://habr.com/ru/news/896938/)
 ### Applications  

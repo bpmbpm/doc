@@ -1,7 +1,7 @@
 ### PDD
 https://aistudio.google.com/  
 Сравни правила дорожного движения (ПДД) в обоих файлах. В чем различаются правила ПДД?  
-Приложил pdd-2025.pdf и pdd-rf-2023-v46.1.pdf  
+Приложил [pdd-2025.pdf](https://pddmaster.ru/pdd/skachat-pdd-besplatno.html?ysclid=mc3n685aw2839567526) и [pdd-rf-2023-v46.1.pdf](https://xn----8sbfshmwb0aq0k.xn--p1ai/wp-content/uploads/literatura/pdd-rf-2023-v46.1.pdf?ysclid=mc3n7dfbhu657379568)  
 
 Отлично, вы предоставили два файла с Правилами дорожного движения. Сравнив их, можно выявить несколько ключевых различий.
 

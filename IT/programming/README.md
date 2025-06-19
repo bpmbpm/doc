@@ -9,3 +9,5 @@
 ### Классификация
 - [Классификация парадигм программирования](https://habr.com/ru/articles/905292/)
   
+### git
+https://gitverse.ru/features/gigacode/

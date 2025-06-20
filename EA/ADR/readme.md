@@ -4,7 +4,13 @@ ADR
 - ADL Architecture description language [wiki](https://en.wikipedia.org/wiki/Architecture_description_language) ; Architecture vs Design
 - ADD Attribute-driven design [Architecture Based Design Method, ABD](https://en.wikipedia.org/wiki/Attribute-driven_design)
 - MDA Model-Driven Architecture, Архитектура на основе моделей [wiki](https://ru.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0,_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D0%BC%D0%B0%D1%8F_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%D1%8E):  Создание метамодели определяется технологией моделирования MOF (Meta Object Facility), являющейся частью концепции MDA. Название концепции не совсем удачно, так как она определяет вовсе не архитектуру, а именно метод разработки программного обеспечения. Для конструирования программного приложения должна быть построена подробная, формально точная модель, из которой потом может быть автоматически генерирован исполняемый программный код приложения.  
-- 
+
+CIM - Вычислительно-независимая модель (Computation Independent Model, CIM)  
+PIM — Платформо-независимая модель (Platform Independent Model, PIM)  
+PSM — Платформо-зависимая модель (Platform Specific Model, PSM)  
+DSL - предметно-ориентированный язык (Domain-Specific Language, DSL)  
+PDM - модели определения платформы (Platform Definition Model, PDM)  
+
 ### ADR template
 - [Architecture decision record (ADR) / Architecture decision log (ADL)](https://pragmatic-km.guide/practices/knowledge-registration/registration/architecture.html)
 - [mediawiki.org](https://www.mediawiki.org/wiki/Architecture_decision_record_template)

@@ -4,3 +4,4 @@ Docs as Code
 
 см. также
 - https://github.com/bpmbpm/doc/edit/main/visualization/diagramascode/README.md
+- https://github.com/bpmbpm/doc/tree/main/visualization/diagramascode

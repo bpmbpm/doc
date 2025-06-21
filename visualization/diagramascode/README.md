@@ -18,4 +18,6 @@
 - [structurizr git](https://github.com/structurizr/dsl) ; https://structurizr.com/ ; https://habr.com/ru/articles/855434/ ; https://habr.com/ru/articles/786250/
 
 см. также
-- visualization/diagramascode
+- https://github.com/bpmbpm/doc/tree/main/BPM/graphic_editor/mermaid_etc  
+- https://github.com/bpmbpm/doc/blob/main/BPM/notation/DaC.md
+

@@ -16,3 +16,4 @@ drawio поддерживает mermaid
 
 см. также 
 - diagram as code: https://github.com/bpmbpm/doc/blob/main/visualization/diagramascode/README.md
+- https://github.com/bpmbpm/doc/blob/main/BPM/notation/DaC.md

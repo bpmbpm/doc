@@ -6,5 +6,5 @@
 
 см. также:
 - Графические редакторы схем https://github.com/bpmbpm/doc/blob/main/BPM/graphic_editor
-
+- - visualization/diagramascode
   

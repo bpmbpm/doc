@@ -16,3 +16,6 @@
 - [C4InterFlow](https://github.com/SlavaVedernikov/C4InterFlow) Architecture as Code framework / Architecture as Code (AaC) / Business Processes as Code (BPaC) / Inspired by the C4 Model, C4-PlantUML project, and c4sharp project.
 - [Для архитекторов и аналитиков: шаблон описания архитектуры приложения (34 страницы пользы)](https://habr.com/ru/articles/907154/)
 - [structurizr git](https://github.com/structurizr/dsl) ; https://structurizr.com/ ; https://habr.com/ru/articles/855434/ ; https://habr.com/ru/articles/786250/
+
+см. также
+- https://github.com/bpmbpm/doc/blob/main/BPM/notation/DaC.md

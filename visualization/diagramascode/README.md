@@ -26,3 +26,7 @@
 
 ### Разное
 - [Мета-акторы, готовый скелет микросервиса](https://habr.com/ru/articles/920684/)
+
+### LD
+- https://github.com/bpmbpm/doc/tree/main/LD/RDF_viewer
+  

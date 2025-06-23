@@ -81,3 +81,9 @@ flowchart LR
     B --> C[Конечный процесс]
     note below B: Дополнительная информация
 ``` 
+
+note  
+https://mermaid.live/edit#pako:eNpFj8FuhCAQhl-FzFmNICrLoZf22lNvDReyjq6JwgbHZrfGdy9q7HLiY74Z5l_g6hsEDRNZwo_edsGO6Y8wzrgpZ2n6xia-gfOELPTdjZhv2ZQbx-IhfJBx6Bq21f-9AdtD44c2-oAvDRLoQt-ApjBjAiOG0W4Iy2YboBuOaEDHa4OtnQcyYNwa2-7WfXs_np3Bz90NdGuHKdJ8b14RTsXO5L-e7noyNj358Hlk3qPHMXExDO9-dgRayP0b0As8IhVFVgolZS2KsuaVSuAZX_Mq45Wsqlypi6hzIdcEfvfF8qzkXFzKUkglY1EV6x-hs3BT
+
+ Note только в sequenceDiagram? https://mermaid.js.org/syntax/flowchart.html 
+ 

@@ -43,6 +43,7 @@ drawio поддерживает mermaid
 - https://gist.github.com/RickStrahl/b45f0f3d540b63b6f44a482f0bcc9b3d
 - https://github.com/rudolfolah/mermaid-diagram-examples?tab=readme-ov-file
 - https://gist.github.com/ChristopherA/bffddfdf7b1502215e44cec9fb766dfd Примеры Mermaid на Github
+- https://github.com/Diversus23/reborn/blob/main/Mermaid.md
 
 ### mermaid plantuml graphviz
 - https://swimm.io/learn/mermaid-js/top-6-mermaid-js-alternatives

@@ -19,7 +19,7 @@ drawio поддерживает mermaid
 - https://github.com/bpmbpm/doc/blob/main/BPM/notation/DaC.md
 
 ### mermaid online
-- [mermaid.live](https://mermaid.live/edit#pako:eNpFkEFLxTAQhP9K2HMpTZq0TQ5e9KgX8STxEF-2baBNHnkJVkv_u7Eiwh5m4JtZmB0uwSIoGJfwcZlNTOTxWXviLL17md2NlEszkoRbIs6f-j1s7E17qGCKzoJKMWMFK8bV_FjYS55oKOiKGlSRFkeTl6RB-6PErsa_hrD-JWPI0wxqNMutuHy1JuGDM1M0_wh6i_E-ZJ9A0UacHaB22EBxKWsuOt51TPC-G4YKPgs08JqxQfSslULwoRdHBV_n16YWlLK2paKRQjaUywrQuhTi0-8W5yTHNyUaV1I) ; [doc](https://mermaid.js.org/syntax/flowchart.html)
+- [mermaid.live](https://mermaid.live/edit#pako:eNpFkEFLxTAQhP9K2HMpTZq0TQ5e9KgX8STxEF-2baBNHnkJVkv_u7Eiwh5m4JtZmB0uwSIoGJfwcZlNTOTxWXviLL17md2NlEszkoRbIs6f-j1s7E17qGCKzoJKMWMFK8bV_FjYS55oKOiKGlSRFkeTl6RB-6PErsa_hrD-JWPI0wxqNMutuHy1JuGDM1M0_wh6i_E-ZJ9A0UacHaB22EBxKWsuOt51TPC-G4YKPgs08JqxQfSslULwoRdHBV_n16YWlLK2paKRQjaUywrQuhTi0-8W5yTHNyUaV1I) ; [doc](https://mermaid.js.org/syntax/flowchart.html) ; [doc2](https://mermaid.js.org/syntax/flowchart.html#chaining-of-links)
 - https://www.mermaidflow.app/
 
 ### js

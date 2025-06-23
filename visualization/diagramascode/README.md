@@ -29,4 +29,8 @@
 
 ### LD
 - https://github.com/bpmbpm/doc/tree/main/LD/RDF_viewer
+
+### loc
+- https://github.com/bpmbpm/doc/blob/main/BPM/notation/DaC.md
+- https://github.com/bpmbpm/doc/tree/main/BPM/graphic_editor/mermaid_etc
   

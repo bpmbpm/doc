@@ -53,4 +53,6 @@ BPMN \ YAWL ?? Semantic formalism, [LD/formalism.md](https://github.com/bpmbpm/d
 - https://bpmn-miwg.github.io/bpmn-miwg-tools/visual-test-result-comparison.html?tool=Modelio%203.5
 ### Intro
 - [Легкий путь к BPMN: просто, быстро и без заморочек](https://habr.com/ru/articles/905894/)
-  
+
+### Semantic
+Семантика событий https://elma365.com/ru/bpmn2/10_4_5/

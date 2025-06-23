@@ -23,3 +23,6 @@
 
 ### discussion
 - https://t.me/rusontology/11039
+
+### Разное
+- [Мета-акторы, готовый скелет микросервиса](https://habr.com/ru/articles/920684/)

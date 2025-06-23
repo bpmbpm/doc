@@ -17,7 +17,7 @@ https://medium.com/singularitynet/graphs-part-1-how-singularitynet-will-leverage
 [URL](https://aigents.com/graphs.html?slicing=0&layout_threshold=1&layout_balance=50&layout_directions=3&text=:Turkey%20a%20sdo:Country%3B:CentralAnatolia%20a%20sdo:AdministrativeArea%3B:AnkaraProvince%20a%20sdo:AdministrativeArea%3B:AnkaraCity%20a%20sdo:City)
 
 ### local
-Для локального запуска меняем в файле graphs.html пути на 
+Для локального запуска меняем в файле graphs.html пути на (см. graphs2.html)
 ``` <link rel="stylesheet" href=".\ui\jquery-ui-1.11.4.custom\jquery-ui.css">
   <script src=".\ui\jquery-1.11.1.js"></script>
   <script src=".\ui\jquery-ui-1.11.4.custom\jquery-ui.js"></script>

@@ -41,7 +41,7 @@ drawio поддерживает mermaid
 - Когда мы сталкиваемся с блоками кода, отмеченными как mermaid, мы генерируем iframe, который берет необработанный синтаксис Mermaid и передает его в Mermaid.js, превращая этот код в диаграмму в вашем локальном браузере. https://github.blog/developer-skills/github/include-diagrams-markdown-files-mermaid/
 - https://gist.github.com/RickStrahl/b45f0f3d540b63b6f44a482f0bcc9b3d
 - https://github.com/rudolfolah/mermaid-diagram-examples?tab=readme-ov-file
-- https://gist.github.com/ChristopherA/bffddfdf7b1502215e44cec9fb766dfd
+- https://gist.github.com/ChristopherA/bffddfdf7b1502215e44cec9fb766dfd Примеры Mermaid на Github
 
 ### mermaid plantuml graphviz
 - https://swimm.io/learn/mermaid-js/top-6-mermaid-js-alternatives

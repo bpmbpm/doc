@@ -8,7 +8,7 @@
 https://medium.com/singularitynet/graphs-part-1-how-singularitynet-will-leverage-opencog-aigents-b21e581cf9f8
 
 #### example dot
-Нужно убрать в конце точку ...
+Нужно убрать в конце точку ...  
 :Turkey a sdo:Country  
 :CentralAnatolia a sdo:AdministrativeArea  
 :AnkaraProvince a sdo:AdministrativeArea  

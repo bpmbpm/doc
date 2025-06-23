@@ -25,3 +25,18 @@ drawio поддерживает mermaid
 ### js
 - https://mermaid.js.org/
 - 
+
+### search
+- mermaid "Value-Added Chain Diagram"
+
+### news
+- 14 февраля 2022 года GitHub объявила о старте нативной поддержки диаграмм Mermaid.js в README-файлах GitHub. Помимо GitHub, Mermaid.js нативно интегрирована в GitLab, Gitea, Joplin и Notion.  https://habr.com/ru/articles/652867/
+
+### info
+- https://docs.github.com/ru/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams
+- https://testitquickly.com/2024/08/12/mermaid-uml-uzor-tsaranesc/
+- https://ov7a.github.io/2023/12/28/mermaid.html
+
+### mermaid plantuml graphviz
+- https://swimm.io/learn/mermaid-js/top-6-mermaid-js-alternatives
+- https://kroki.io/

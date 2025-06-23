@@ -46,3 +46,6 @@ drawio поддерживает mermaid
 ### mermaid plantuml graphviz
 - https://swimm.io/learn/mermaid-js/top-6-mermaid-js-alternatives
 - https://kroki.io/
+
+### stl, geojson
+- stl etc https://docs.github.com/ru/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams

@@ -55,4 +55,5 @@ BPMN \ YAWL ?? Semantic formalism, [LD/formalism.md](https://github.com/bpmbpm/d
 - [Легкий путь к BPMN: просто, быстро и без заморочек](https://habr.com/ru/articles/905894/)
 
 ### Semantic
-Семантика событий https://elma365.com/ru/bpmn2/10_4_5/
+Семантика событий https://elma365.com/ru/bpmn2/10_4_5/  
+В BPMN Объекты данных и Свойства указываются посредством элемента ItemDefinition. 

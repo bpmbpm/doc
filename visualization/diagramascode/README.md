@@ -1,6 +1,6 @@
 ### diagram as code DaC
 - [Graphviz](https://graphviz.org/) , [PlantUML](https://plantuml.com/ru/) , [Mermaid](https://mermaid.js.org/) и [D2](https://d2lang.com/) 
-
+- online: [PlantUML](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000)
 ### info
 - [Network diagram as code / Схема сети как код](https://habr.com/ru/articles/491814/)
 - https://habr.com/ru/companies/rostelecom/articles/701970/

@@ -21,3 +21,11 @@
 - https://tikzcd.yichuanshen.de/
 ### owl
 https://github.com/costezki/owl4latex
+
+### example
+- https://gist.github.com/NIA/99cdca614cb8546d737b
+- https://tikz.net/product-architecture/
+
+### разное
+- https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams
+  

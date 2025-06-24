@@ -64,3 +64,9 @@
 
 ### drawio
 - https://svgtodraw.io/
+
+### lib
+- https://github.com/svgdotjs
+
+### code
+- https://www.w3schools.com/graphics/svg_scripting.asp

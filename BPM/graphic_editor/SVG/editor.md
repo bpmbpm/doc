@@ -70,3 +70,6 @@
 - https://bestofjs.org/projects?tags=svg
 ### code
 - https://www.w3schools.com/graphics/svg_scripting.asp
+
+### также
+- 

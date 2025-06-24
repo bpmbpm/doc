@@ -41,3 +41,7 @@
  - https://habr.com/ru/articles/683592/ ; https://habr.com/ru/articles/208094/
  - https://sites.google.com/site/inkscapemanual/glava19
  - https://inkscape-manuals.readthedocs.io/en/latest/import-other-formats.html
+
+### SVG as Code
+- https://github.com/codedstructure/svgdx
+- 

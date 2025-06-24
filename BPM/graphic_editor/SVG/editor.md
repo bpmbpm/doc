@@ -43,17 +43,17 @@
  - https://inkscape-manuals.readthedocs.io/en/latest/import-other-formats.html
 
 ### SVG as Code 
-- my https://github.com/bpmbpm/SemanticBPM/tree/main/implementations/SVG/connector ; https://github.com/bpmbpm/doc/blob/main/test/SVG/README.md
+- my: https://github.com/bpmbpm/SemanticBPM/tree/main/implementations/SVG/connector ; https://github.com/bpmbpm/doc/blob/main/test/SVG/README.md
 - https://github.com/codedstructure/svgdx ; [examples](https://github.com/codedstructure/svgdx/blob/main/examples/README.md) ; [online](https://svgdx.net/)
 - [diagrams-svg, Haskell](https://github.com/diagrams/diagrams-svg) ; [quickstart](https://archives.haskell.org/projects.haskell.org/diagrams/doc/quickstart.html)
 - https://svg-tutorial.com/svg/data-driven-diagram
-
+- https://bestofjs.org/projects/gojs ; [learn](https://gojs.net/latest/learn/)
+  
 ### AI
 - https://docsbot.ai/prompts/education/svg-code-generation-for-diagrams
 
 ### Data \ ODBC
 - https://www.drawio.com/blog/data-driven-diagrams ; [grafana](https://play.grafana.org/d/7p7JkqWVz/panel-tests-canvas-examples?orgId=1&from=now-6h&to=now&timezone=utc)
-- 
 
 ### Обработчики
 - https://github.com/bumbu/svg-pan-zoom
@@ -67,6 +67,6 @@
 
 ### lib
 - https://github.com/svgdotjs
-
+- https://bestofjs.org/projects?tags=svg
 ### code
 - https://www.w3schools.com/graphics/svg_scripting.asp

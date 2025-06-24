@@ -47,6 +47,7 @@ BPMN \ YAWL ?? Semantic formalism, [LD/formalism.md](https://github.com/bpmbpm/d
 - [Standard Evaluations, workflowpatterns](http://www.workflowpatterns.com/evaluations/standard/index.php)  
 - [An Ontology-Enabled Approach for Modelling Business Processes](https://inria.hal.science/hal-01018376/document)
 - [BPMN и оркестрация микросервисов. Часть 1: Языки потоков, движки и вневременные паттерны, Camunda](https://habr.com/ru/articles/888972/)
+- https://habr.com/ru/articles/838976/ EPC
 ### Data
 - [Data Object, Data Store](https://ya.ru/neurum/c/nauka-i-obrazovanie/q/v_chem_raznica_mezhdu_bpmn_10_i_bpmn_20_a39ad2bf)
 ### Tool selection

@@ -118,7 +118,7 @@ Opengroup case-study-models:
 - prozion [semanter](https://codeberg.org/prozion/semanter) ; [github](https://github.com/prozion)
 - smer44 [Графовый семантический движок](https://github.com/smer44/graph-semantical-engine)
 - Surrogate-TM [MS Visio](https://github.com/Surrogate-TM/surrogate-tm.github.io/tree/master)
-- nbelyh [github](https://github.com/nbelyh) ; [unmanagedvisio.com](https://unmanagedvisio.com/about/)
+- nbelyh [github](https://github.com/nbelyh) ; [unmanagedvisio.com](https://unmanagedvisio.com/about/) ; https://editsvgcode.com/
 - bzinchenko [bpmnview](https://github.com/bzinchenko/bpmnview)  
 еще (локальные сслылки):
 - OpenMetamodel.org / Sirius (eclipse) [обсуждение применимости к Semantic BPM](METAMODEL/SIRIUS/SIRIUSBPM.md)

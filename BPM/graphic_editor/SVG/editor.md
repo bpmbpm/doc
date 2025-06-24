@@ -6,7 +6,11 @@
 ### SVG Editor 2
 - https://boxy-svg.com/app Metadata https://boxy-svg.com/
 - https://editor.method.ac/
-  
+- https://vectorink.io/app/canvas
+
+### Viewer
+- https://www.svgviewer.dev/
+    
 ### Graphyte etc
 - https://ciscodevnet.github.io/graphyte/
   

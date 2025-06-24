@@ -1,5 +1,5 @@
 ### info
-- https://habr.com/ru/articles/865140/
+- [Управление вёрсткой в PlantUML](https://habr.com/ru/articles/865140/)
 
 ### doc
 - https://pdf.plantuml.net/PlantUML_Language_Reference_Guide_ru.pdf

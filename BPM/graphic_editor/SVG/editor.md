@@ -27,7 +27,7 @@
 - https://www.w3.org/WAI/ER/ASVG/
 - https://github.com/floresbakker/OntoSVG OntoSVG
 
-### diagram Semantization rdf
+### diagram Semantization rdf (diagram Semantization SVG)
 - SVG-to-RDF Image Semantization https://soe.lau.edu.lb/files/tekli_Conf_5.pdf ; https://hal.science/hal-01082168v1/document
 - 
 ### Semantic Repository 
@@ -42,6 +42,6 @@
  - https://sites.google.com/site/inkscapemanual/glava19
  - https://inkscape-manuals.readthedocs.io/en/latest/import-other-formats.html
 
-### SVG as Code
+### SVG as Code 
 - https://github.com/codedstructure/svgdx
 - 

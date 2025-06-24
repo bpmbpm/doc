@@ -50,3 +50,7 @@
 
 ### AI
 - https://docsbot.ai/prompts/education/svg-code-generation-for-diagrams
+
+### Data \ ODBC
+- https://www.drawio.com/blog/data-driven-diagrams ; [grafana](https://play.grafana.org/d/7p7JkqWVz/panel-tests-canvas-examples?orgId=1&from=now-6h&to=now&timezone=utc)
+- 

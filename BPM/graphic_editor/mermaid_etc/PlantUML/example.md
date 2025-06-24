@@ -7,7 +7,7 @@
 
 ? в md-файле можно написать:
 
-```plantuml
+``` plantuml
 @startuml
 Bob -> Alice : hello
 @enduml

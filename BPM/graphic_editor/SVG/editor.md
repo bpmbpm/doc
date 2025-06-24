@@ -4,3 +4,9 @@
 
 
 ### SVG Editor 2
+- https://boxy-svg.com/app Metadata https://boxy-svg.com/
+- https://editor.method.ac/
+  
+### Graphyte etc
+- https://ciscodevnet.github.io/graphyte/
+  

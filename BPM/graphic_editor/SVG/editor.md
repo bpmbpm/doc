@@ -75,4 +75,5 @@
 - https://www.w3schools.com/graphics/svg_scripting.asp
 
 ### также
+- https://github.com/bpmbpm/doc/blob/main/test/SVG/README.md
 - 

@@ -50,3 +50,6 @@ Best:
 - https://ru.hexlet.io/blog/posts/kak-rabotat-s-formatom-svg-rukovodstvo-dlya-nachinayuschih-veb-razrabotchikov
 - https://serganbus.github.io/d3tutorials/svg_primer.html
 - https://serganbus.github.io/d3tutorials/index.html
+
+также
+- https://github.com/bpmbpm/doc/tree/main/BPM/graphic_editor/SVG

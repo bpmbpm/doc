@@ -48,5 +48,5 @@
 - [diagrams-svg, Haskell](https://github.com/diagrams/diagrams-svg) ; [quickstart](https://archives.haskell.org/projects.haskell.org/diagrams/doc/quickstart.html)
 - https://svg-tutorial.com/svg/data-driven-diagram
 
-## AI
+### AI
 - https://docsbot.ai/prompts/education/svg-code-generation-for-diagrams

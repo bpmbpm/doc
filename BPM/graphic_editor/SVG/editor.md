@@ -54,3 +54,13 @@
 ### Data \ ODBC
 - https://www.drawio.com/blog/data-driven-diagrams ; [grafana](https://play.grafana.org/d/7p7JkqWVz/panel-tests-canvas-examples?orgId=1&from=now-6h&to=now&timezone=utc)
 - 
+
+### Обработчики
+- https://github.com/bumbu/svg-pan-zoom
+- https://tomhazledine.com/improving-svg-chart-interactivity-with-voronoi-diagrams/
+
+### codepen.io
+- https://codepen.io/TheAncientTwo/pen/avJOYj
+
+### drawio
+- https://svgtodraw.io/

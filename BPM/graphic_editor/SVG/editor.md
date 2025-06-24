@@ -27,6 +27,13 @@
 - https://www.w3.org/WAI/ER/ASVG/
 - https://github.com/floresbakker/OntoSVG OntoSVG
 
+### diagram Semantization rdf
+- SVG-to-RDF Image Semantization https://soe.lau.edu.lb/files/tekli_Conf_5.pdf ; https://hal.science/hal-01082168v1/document
+- 
+### Semantic Repository 
+- https://www.ontotext.com/knowledgehub/fundamentals/what-is-rdf/
+- https://www.obitko.com/tutorials/ontologies-semantic-web/rdf-graph-and-syntax.html
+- https://graphwise.ai/blog/semantization-of-regulatory-documents-in-aeco/
 
  ### Inkscape
  - https://ru.wikipedia.org/wiki/Inkscape ; https://inkscape.org/

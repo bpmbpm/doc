@@ -47,3 +47,6 @@
 - https://github.com/codedstructure/svgdx ; [examples](https://github.com/codedstructure/svgdx/blob/main/examples/README.md) ; [online](https://svgdx.net/)
 - [diagrams-svg, Haskell](https://github.com/diagrams/diagrams-svg) ; [quickstart](https://archives.haskell.org/projects.haskell.org/diagrams/doc/quickstart.html)
 - https://svg-tutorial.com/svg/data-driven-diagram
+
+## AI
+- https://docsbot.ai/prompts/education/svg-code-generation-for-diagrams

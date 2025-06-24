@@ -21,3 +21,6 @@ https://github.com/plantuml/plantuml
 
 ### example 
 https://github.com/okunev-e/plantuml_examples
+
+### C4
+- https://habr.com/ru/companies/usetech/news/676196/

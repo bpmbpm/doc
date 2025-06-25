@@ -320,6 +320,6 @@ Value streams в TOGAF и ArchiMate представляют собой важн
 Таким образом, различие в расположении элемента Value Stream в TOGAF и ArchiMate подчеркивает важность контекста и уровня абстракции при обсуждении бизнес-архитектуры. Это различие должно быть учтено при анализе и интерпретации концепций, связанных с созданием ценности в организациях.
 
 ## 7 дополнения
-- togaf92, Figure 30-7: Relationships between Entities in the Full Metamodel (9.2) https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap30.html
-- https://pubs.opengroup.org/architecture/archimate3-doc/ch-Strategy-Layer.html#sec-Value-Stream
+- togaf92, Figure 30-7: Relationships between Entities in the Full Metamodel (9.2), https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap30.html
+- ArchiMate 3.2 Specification 7. Strategy Layer, https://pubs.opengroup.org/architecture/archimate3-doc/ch-Strategy-Layer.html#sec-Value-Stream
 - BPM-VAD, lean-VSM, SAFe(DVS\OVS), etc

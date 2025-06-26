@@ -22,3 +22,6 @@ https://github.com/bpmbpm/doc/tree/main/BPM/AI
 
 ### DeepSeek
 - [Аномалии DeepSeek-v3 и DeepSeek-r1: глюкнутые токены и чат, теряющий идентичность](https://habr.com/ru/companies/bothub/articles/877326/)
+
+### local LLM
+- [LM Studio и др](https://xakep.ru/2025/06/19/local-llm/)

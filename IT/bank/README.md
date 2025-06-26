@@ -5,3 +5,6 @@ OpenAPI
 
 Криптовалюта
 - [Как создать свою криптовалюту, токен или мемкоин](https://habr.com/ru/articles/890370/)
+
+## Направления
+- [Зачем банку ещё одна ALM-система](https://habr.com/ru/companies/vtb/articles/919270/)

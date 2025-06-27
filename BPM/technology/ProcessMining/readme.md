@@ -7,6 +7,7 @@
 ### Статьи
 - https://habr.com/ru/companies/mvideo/articles/564770/
 ### ??
+- ProM https://github.com/promworkbench
 - celonis https://docs.celonis.com/en/object-centric-process-mining-overview.html
 - cortado https://github.com/cortado-tool/cortado
 ### посмотреть

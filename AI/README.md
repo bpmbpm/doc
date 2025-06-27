@@ -25,3 +25,4 @@ https://github.com/bpmbpm/doc/tree/main/BPM/AI
 
 ### local LLM
 - [LM Studio и др](https://xakep.ru/2025/06/19/local-llm/)
+- [15 минут — и у тебя бесплатная ИИ-модель для генерации кода, текста, чтения иллюстраций](https://habr.com/ru/companies/minerva_media/articles/920946/)

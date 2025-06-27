@@ -20,6 +20,6 @@
 examples input data, Dataset for Process Mining
 - https://www.kaggle.com/datasets/carlosalvite/car-insurance-claims-event-log-for-process-mining
 - https://data.4tu.nl/articles/dataset/Production_Analysis_with_Process_Mining_Technology/12697997/1
-- https://www.processmining.org/event-data.html форматы
+- https://www.processmining.org/event-data.html форматы, Журнал событий процесса подачи заявки на кредит 
 - https://www.tf-pm.org/resources/logs
 - https://github.com/IBM/processmining/blob/main/Datasets_usecases/README.md

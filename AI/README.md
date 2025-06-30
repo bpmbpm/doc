@@ -32,5 +32,5 @@ https://github.com/bpmbpm/doc/tree/main/BPM/AI
 - [15 минут — и у тебя бесплатная ИИ-модель для генерации кода, текста, чтения иллюстраций](https://habr.com/ru/companies/minerva_media/articles/920946/)
 ### File
 Число вкладываемых в промт файлов в бесплатной версии
-- > 1 https://aistudio.google.com
+- более 1 https://aistudio.google.com
 - 1 https://www.deepseek.com/en

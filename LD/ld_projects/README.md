@@ -32,4 +32,4 @@ ontodia http://ontodia.org/ перебраcывает на [metaphacts.com](http
 - [Семантические технологии просто и доступно на примере родословных](https://habr.com/ru/articles/270857/) ; [git](https://github.com/blokhin/genealogical-trees) ; [.io](https://blokhin.github.io/genealogical-trees/#ru)
 
 ### EA
-- https://github.com/bpmbpm/doc/tree/main/BPM/enEA/Essential [doc/BPM/enEA/Essential/](https://github.com/bpmbpm/doc/tree/main/BPM/enEA/Essential)
+- https://github.com/bpmbpm/doc/tree/main/BPM/enEA/Essential ; [doc/BPM/enEA/Essential/](https://github.com/bpmbpm/doc/tree/main/BPM/enEA/Essential)

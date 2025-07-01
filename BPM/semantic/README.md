@@ -18,3 +18,8 @@ Model-Driven Development/Engineering/Architecture (MDD/MDE/MDA) или CASE/UML 
 
 В MDD различают модели: Platform-Independent (PIM, бизнес-логика системы), Platform-Specific (PSM, конкретная реализация PIM для данной OS, данного языка программирования, заданного UI renderer и с учетом др. ограничений) и Code model (сгенеренный по PSM код). Весь сгенеренный код еще называют implementation artifacts, т.к. кроме executable кода могут генериться XML/Database Schema/XSD с данными/стилями. Ключевое понятие MDD - MetaObject Facility (MOF) - спецификация для meta modeling languages, кот. гарантирует сохранение семантики UML structural/behavioral models, CWM data models при импорте/экспорте через XMI и обработке разными генераторами кода. 
 
+Желаемый тип редактора и особенности задачи уже диктуют выбор тула. Редактор диаграмм имеет смысл когда множество данных модели конечно - манипулировать тысячами элементов в Visio будет неудобно. В этом случае скорее подойдет treeview/forms редактор, но, поскольку все данные модели редактор хранит в XML, нативная работа с большой database в виде XML скорее будет медленной и неэффективной.
+
+Преимущества MDD:
+
+multi-platform, multi-language - нет привязки модели к конкретному языку/платформе/IDE. Модели реализуют спецификацию UML2/BPNM, данные хранятся в XML формате XMI, кот. поддерживается многими modeling tools. Весь код под нужную платформу генерит platform-specific renderer MDD tool.

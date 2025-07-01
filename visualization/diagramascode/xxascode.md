@@ -7,7 +7,8 @@
 
 ### vs
 - [MBE против MDE против MDD против MDA](https://modeling-languages.com/clarifying-concepts-mbe-vs-mde-vs-mdd-vs-mda/) но затем эти модели напрямую передаются программистам для ручного написания кода (без автоматической генерации кода и явного определения какой-либо платформенно-специфической модели).
-
+- https://www.analogictips.com/what-acronyms-relate-to-mbse-faq/
+- 
 
 ### Также
 - https://github.com/bpmbpm/doc/tree/main/BPM/semantic#eclipse

@@ -9,4 +9,6 @@
 <img src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/67d/a0e/052/67da0e0528da47729c53664448d66709.png" width="500" /> 
 
 #### Моделирование данных в "сторону" семантики
-[Разработка метамодели с помощью Eclipse Modeling Framework (и немного про моделирование данных)](https://habr.com/ru/companies/cit/articles/266433/)
+- [Разработка метамодели с помощью Eclipse Modeling Framework (и немного про моделирование данных)](https://habr.com/ru/companies/cit/articles/266433/)
+- [Введение в моделирование MDD-UML-EMF в Eclipse](https://docs.google.com/document/d/1JRmE-auqJO8zb-skbooUOW1_GLdzNzne0zsUfFwShjc/edit?tab=t.0#heading=h.3rdcrjn) Introduction to Model-Driven Development, UML-EMF Modeling in Eclipse IDE , см. Сводная таблица функциональности
+- 

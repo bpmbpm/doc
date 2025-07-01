@@ -1,6 +1,6 @@
 ### dochub.info
 - https://dochub.info/
-- основной проект https://github.com/DocHubTeam/DocHub
+- основной проект https://github.com/DocHubTeam/DocHub ; [DocHubExamples](https://github.com/rpiontik/DocHubExamples)
 - https://github.com/DocHubTeam/DocHubIDE-beta  
 - https://rutube.ru/video/5f5a1112888b3a9762a15a94304c8e42/
 

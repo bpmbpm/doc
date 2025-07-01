@@ -12,6 +12,7 @@
 ### Eclipse
 - [Разработка метамодели с помощью Eclipse Modeling Framework (и немного про моделирование данных)](https://habr.com/ru/companies/cit/articles/266433/)
 - [Введение в моделирование MDD-UML-EMF в Eclipse](https://docs.google.com/document/d/1JRmE-auqJO8zb-skbooUOW1_GLdzNzne0zsUfFwShjc/edit?tab=t.0#heading=h.3rdcrjn) Introduction to Model-Driven Development, UML-EMF Modeling in Eclipse IDE , см. Сводная таблица функциональности
+
 Eclipse - популярная free open source IDE для разработки софта на Java. Альтернативы: IntelliJ IDEA, Android Studio (based on IntelliJ IDEA), Oracle NetBeans. В этой статье рассказывается об особенностях Model-Driven Development в Eclipse.
 Model-Driven Development/Engineering/Architecture (MDD/MDE/MDA) или CASE/UML - все эти термины относятся к Rapid/Agile Development (быстрая разработка кода) и обозначают процесс разработки софта, при кот. программист-архитектор в специальном CASE/UML tool/framework сначала создает архитектуру системы, описывает ее структуру (модель данных из классов с основными атрибутами и методами, взаимосвязи между ними) и поведение / behavior (process flow, activity, sequence, use cases сценарии работы пользователей). Затем генерится код на указанном языке и под нужную платформу уже с UI, auto-validation и шаблонами методов. После этого в код и исходную модель можно продолжать вносить изменения и генерить новый код с их сохранением после каждой итерации. 
 

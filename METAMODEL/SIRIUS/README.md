@@ -3,3 +3,5 @@
 - Денис Никифоров. Модельно-ориентированный подход. Архипелаг 2024, Сахалин
 
 [obeodesigner \ Eclipse Sirius](https://www.obeodesigner.com/en/product/sirius)
+
+https://github.com/bpmbpm/doc/tree/main/BPM/semantic#eclipse

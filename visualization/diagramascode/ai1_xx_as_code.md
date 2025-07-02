@@ -226,10 +226,6 @@ package "To-Do List Application" {
 
 ### 3 Для указанного примера автоматически сгенерируй максимальное число документов (Documentation as Code). Визуализацию архитектуры (Diagram as Code) выполни в mermaid, точнее кодом github markdown  с использованием тега ``` mermaid.
 
-#### You've hit your free quota for the Smart Agent. For more usage of the Smart Agent, learn more at: https://you.com/plans.
-
-Answering your question without the Smart Agent:
-
 #### Документация как код (Documentation as Code)
 
 Для создания документации в формате "Документация как код" можно использовать различные инструменты и подходы. Вот пример структуры документации для проекта, который включает в себя описание архитектуры, API и тестов.

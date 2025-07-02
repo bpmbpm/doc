@@ -292,3 +292,4 @@ graph TD;
 ### 4 Дополнения
 - Diagram as Code =  text-to-diagram, например, https://text-to-diagram.com
 - [D2](https://www.reddit.com/r/golang/comments/zq8f9h/d2_a_texttodiagram_tool_and_library_written_in_go/?tl=ru)
+- [Structurizr, описание, перевод (часть 1/3)](https://habr.com/ru/articles/786250/)

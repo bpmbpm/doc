@@ -8,3 +8,6 @@ OpenAPI
 
 ## Направления
 - [Зачем банку ещё одна ALM-система](https://habr.com/ru/companies/vtb/articles/919270/)
+
+### risk
+- https://github.com/bpmbpm/doc/tree/main/IT/reliability_risk/risk/850P

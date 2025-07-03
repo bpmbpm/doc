@@ -63,7 +63,7 @@ en:
 
 ### Связанное
 - Lean — это формальный язык: [wiki](https://ru.wikipedia.org/wiki/Lean) ; [Hello World](https://yakovlev.me/lean-intro/) ; [материалы](https://github.com/VArtem/lean-itmo)
-- OSLC - Open Services for Lifecycle Collaboration (спецификации для интеграции) https://open-services.net/specifications/ ; https://github.com/oslc-op/oslc-specs#oslc-open-project-specifications ; 
+- OSLC - Open Services for Lifecycle Collaboration (спецификации для интеграции) https://open-services.net/specifications/ ; https://github.com/oslc-op/oslc-specs#oslc-open-project-specifications ; [wiki](https://en.wikipedia.org/wiki/Open_Services_for_Lifecycle_Collaboration?ysclid=mcn9c6h2yg246290412) ; 
 ### Неразобранное
 https://meganorm.ru/Data/642/64200.pdf
 https://npalib.ru/2016/12/06/gost-r-57323-2016-iso-ts-15926-11-2015-id273275/p12/ 

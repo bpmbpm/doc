@@ -7,6 +7,7 @@
 ### DDD, Event-Driven Architecture, event-driven architecture etc
 - [Связывая Контексты: Руководство по Эффективному Взаимодействию](https://habr.com/ru/articles/892250/)
 - [Фронтенд — новый легаси: Как мы проспали event-driven революцию](https://habr.com/ru/articles/906800/) :  «Объекты должны общаться через сообщения, а не вызовы методов». Это был первый вздох Pub/Sub
+- [Domain-Driven Design: чистый подход к проектированию бизнес-логики](https://habr.com/ru/companies/vktech/articles/913886/)
 ### Site
 - Enterprise Architecture Transformation: A Practical Guide https://www.eatransformation.com/
 - Architecture Diagramming Tools, and the AI Gap https://generativeprogrammer.com/p/architecture-diagramming-tools-and

@@ -100,7 +100,7 @@
 ---
 
 **Источники:**  
-, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+
 1. https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957622#:~:text=Digital%20Twins%2C%20Standards%2C
 2. https://www.iso.org/standard/75066.html#:~:text=%E2%80%94%20requirements%20of%20the,digital%20twin%20framework%20for
 3. http://ap238.org/iso23247/#:~:text=The%20digital%20twin%20framework,a%20product%2C%20process%20or
@@ -139,5 +139,70 @@
 36. https://www.mdpi.com/1424-8220/24/9/2940#:~:text=By%20integrating%20sensors%20directly,posture%20without%20the%20need
 37. https://www.researchgate.net/publication/390008923_IOT_Driven_Smart_Chair_for_Posture_and_Health_Monitoring#:~:text=monitoring%20and%20long%2Dterm%20health%20monitoring.%20A
 
-    
+#### 2 Рисунок 2. Метамодель цифрового двойника табуретки (UML-стиль) - не читаемый. Составь его в нотации mermaid для mardown.
+диаграмма классов UML:
+```
+classDiagram
+    class PhysicalEntity {
+        +geometry: Geometry
+        +material: Material
+        +state: State
+    }
+
+    class SensorArray {
+        +pressureData: Data[]
+        +loadData: Data
+        +motionData: Data
+        +temperatureData: Data
+    }
+
+    class IoTGateway {
+        +aggregateData()
+        +sendData()
+    }
+
+    class DigitalTwin {
+        +virtualModel: Model
+        +syncWithPhysical()
+        +simulate()
+        +analyze()
+    }
+
+    class DataStorage {
+        +storeHistoricalData()
+        +retrieveData()
+    }
+
+    class AnalyticsEngine {
+        +performAnalysis()
+        +predict()
+        +optimize()
+    }
+
+    class UserInterface {
+        +visualize()
+        +control()
+        +notifyUser()
+    }
+
+    %% Отношения
+    PhysicalEntity "1" <--> "1" SensorArray : "снабжается данными"
+    SensorArray "1" --> "1" IoTGateway : "передает данные"
+    IoTGateway "1" --> "1" DigitalTwin : "синхронизирует"
+    DigitalTwin "1" --> "1" DataStorage : "сохраняет данные"
+    DigitalTwin "1" --> "1" AnalyticsEngine : "использует для анализа"
+    AnalyticsEngine "1" --> "1" DigitalTwin : "возвращает результаты"
+    DigitalTwin "1" --> "1" UserInterface : "предоставляет данные"
+    UserInterface "1" --> "1" DigitalTwin : "управляет"
+```
+Краткое пояснение:
+PhysicalEntity — физическая табуретка с геометрией, материалами и состоянием.
+SensorArray — набор сенсоров, собирающих данные с табуретки.
+IoTGateway — агрегирует и передает данные в цифровой двойник.
+DigitalTwin — виртуальная модель, синхронизированная с физическим объектом.
+DataStorage — хранит исторические и текущие данные.
+AnalyticsEngine — анализирует данные, прогнозирует и оптимизирует.
+UserInterface — визуализация, управление и обратная связь с пользователем.
+Связи показывают поток данных и взаимодействия между компонентами.
+
 

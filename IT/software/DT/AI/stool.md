@@ -196,13 +196,66 @@ classDiagram
     UserInterface "1" --> "1" DigitalTwin : "управляет"
 ```
 Краткое пояснение:
-PhysicalEntity — физическая табуретка с геометрией, материалами и состоянием.
-SensorArray — набор сенсоров, собирающих данные с табуретки.
-IoTGateway — агрегирует и передает данные в цифровой двойник.
-DigitalTwin — виртуальная модель, синхронизированная с физическим объектом.
-DataStorage — хранит исторические и текущие данные.
-AnalyticsEngine — анализирует данные, прогнозирует и оптимизирует.
-UserInterface — визуализация, управление и обратная связь с пользователем.
-Связи показывают поток данных и взаимодействия между компонентами.
+PhysicalEntity — физическая табуретка с геометрией, материалами и состоянием.  
+SensorArray — набор сенсоров, собирающих данные с табуретки.  
+IoTGateway — агрегирует и передает данные в цифровой двойник.  
+DigitalTwin — виртуальная модель, синхронизированная с физическим объектом.  
+DataStorage — хранит исторические и текущие данные.  
+AnalyticsEngine — анализирует данные, прогнозирует и оптимизирует.  
+UserInterface — визуализация, управление и обратная связь с пользователем.  
+Связи показывают поток данных и взаимодействия между компонентами.  
 
+``` mermaid
+classDiagram
+    class PhysicalEntity {
+        +geometry: Geometry
+        +material: Material
+        +state: State
+    }
 
+    class SensorArray {
+        +pressureData: Data[]
+        +loadData: Data
+        +motionData: Data
+        +temperatureData: Data
+    }
+
+    class IoTGateway {
+        +aggregateData()
+        +sendData()
+    }
+
+    class DigitalTwin {
+        +virtualModel: Model
+        +syncWithPhysical()
+        +simulate()
+        +analyze()
+    }
+
+    class DataStorage {
+        +storeHistoricalData()
+        +retrieveData()
+    }
+
+    class AnalyticsEngine {
+        +performAnalysis()
+        +predict()
+        +optimize()
+    }
+
+    class UserInterface {
+        +visualize()
+        +control()
+        +notifyUser()
+    }
+
+    %% Отношения
+    PhysicalEntity "1" <--> "1" SensorArray : "снабжается данными"
+    SensorArray "1" --> "1" IoTGateway : "передает данные"
+    IoTGateway "1" --> "1" DigitalTwin : "синхронизирует"
+    DigitalTwin "1" --> "1" DataStorage : "сохраняет данные"
+    DigitalTwin "1" --> "1" AnalyticsEngine : "использует для анализа"
+    AnalyticsEngine "1" --> "1" DigitalTwin : "возвращает результаты"
+    DigitalTwin "1" --> "1" UserInterface : "предоставляет данные"
+    UserInterface "1" --> "1" DigitalTwin : "управляет"
+```

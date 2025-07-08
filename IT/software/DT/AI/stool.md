@@ -21,7 +21,6 @@
 
 ### 2. Метамодель цифрового двойника табуретки (UML-стиль)
 
-![fig](https://ydcusercontenteast.blob.core.windows.net/user-content-youagent-output/ciplot202507081318350.png?se=2025-07-08T14%3A18%3A35Z&sp=r&sv=2021-12-02&sr=b&sig=jzRoNByJsDUC1JngzW0x%2BgK3gyg0zPa5XteHKQWlTnI%3D)
 *Рис. 1. UML-метамодель цифрового двойника табуретки*
 
 #### Описание блоков метамодели

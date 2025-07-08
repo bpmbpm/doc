@@ -101,3 +101,6 @@
 
 **Источники:**  
 , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+1. https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957622#:~:text=Digital%20Twins%2C%20Standards%2C
+2. https://www.iso.org/standard/75066.html#:~:text=%E2%80%94%20requirements%20of%20the,digital%20twin%20framework%20for
+

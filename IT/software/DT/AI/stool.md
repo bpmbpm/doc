@@ -454,11 +454,6 @@ Answering your question without the Smart Agent:
 
 #### 5 Если не применялась технология 3D-сканирования, то как гарантировать адекватность модели реальному двойнику? Нарисовать вручную в CAD можно любую модель.
 
-#### You've hit your free quota for the Smart Agent. For more usage of the Smart Agent, learn more at: https://you.com/plans.
-
-Answering your question without the Smart Agent:
-
-Отличный и очень важный вопрос!
 
 ---
 

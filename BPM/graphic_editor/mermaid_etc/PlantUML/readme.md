@@ -19,7 +19,7 @@
 - https://plantuml-editor.kkeisuke.com/
 - https://plantuml.github.io/plantuml.js/ примеры работают, но 
 
-code
+code from https://github.com/plantuml-stdlib/Archimate-PlantUML
 ```
 @startuml
 !includeurl https://raw.githubusercontent.com/plantuml-stdlib/Archimate-PlantUML/master/Archimate.puml  

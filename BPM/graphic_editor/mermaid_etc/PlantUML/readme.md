@@ -9,3 +9,6 @@
 - https://plantuml.com/ru/stdlib
 - https://github.com/plantuml/plantuml-stdlib ; https://github.com/plantuml-stdlib/Archimate-PlantUML
 - https://crashedmind.github.io/PlantUMLHitchhikersGuide/Stdlib/StdLibOverview.html 
+
+#### example
+- https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000

@@ -1,7 +1,7 @@
 ### info
 - [Управление вёрсткой в PlantUML](https://habr.com/ru/articles/865140/)
 - [Построение диаграмм UML с использованием PlantUML](https://pdf.plantuml.net/PlantUML_Language_Reference_Guide_ru.pdf)
-- [Architecture as Code: моделируем архитектуру предприятия в ArchiMate](https://habr.com/ru/companies/otus/articles/885594/)
+- [Architecture as Code: моделируем архитектуру предприятия в ArchiMate](https://habr.com/ru/companies/otus/articles/885594/) ; Связи между элементами создаются по шаблону:
 
 ### doc
 - https://pdf.plantuml.net/PlantUML_Language_Reference_Guide_ru.pdf

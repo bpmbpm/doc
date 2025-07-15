@@ -48,7 +48,6 @@ flowchart TD
     S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7
 ```
 
----
 
 ### 3. Структура блоков подписи CAdES-XLT1 (mermaid markdown)
 
@@ -72,8 +71,6 @@ graph TD
     G --> G6[CAdES-X Type 1 time-stamp]
 ```
 
----
-
 ### 4. Ключевые моменты и пояснения
 
 - **OCSP-ответы** обязательно включаются в атрибут `revocation-values`, что позволяет проверять подпись даже без доступа к внешним сервисам . https://yazilim.kamusm.gov.tr/eit-wiki/doku.php?id=en:cades_x-long#:~:text=The%20following%20table%20specifies,for%20CAdES%2DX%20LONG%20signature
@@ -90,10 +87,10 @@ graph TD
 ---
 
 **Источники:**  
- [RFC 5126, ETSI TS 101 733, техническая документация по CAdES](https://datatracker.ietf.org/doc/html/rfc5126#:~:text=e%20Validation%20Data%20References)
- [ETSI TS 101 733 V2.2.1](https://www.etsi.org/deliver/etsi_ts/101700_101799/101733/02.02.01_60/ts_101733v020201p.pdf#:~:text=EXtended%20Long%20Electronic%20Signature,Type%202%20format%20is)  
- [Стандарты CAdES и спецификации ASN.1](  
- [Роль OCSP в CAdES-XLT1](  
- [Требования к включению OCSP-ответов](
+-[RFC 5126, ETSI TS 101 733, техническая документация по CAdES](https://datatracker.ietf.org/doc/html/rfc5126#:~:text=e%20Validation%20Data%20References)
+-[ETSI TS 101 733 V2.2.1](https://www.etsi.org/deliver/etsi_ts/101700_101799/101733/02.02.01_60/ts_101733v020201p.pdf#:~:text=EXtended%20Long%20Electronic%20Signature,Type%202%20format%20is)  
+-[Стандарты CAdES и спецификации ASN.1](https://nsoftware.com/kb/articles/legacy/sbb/8-cades#:~:text=CAdES%2DX%20Long%20adds%20the,whole%20certificate%20path%20required)  
+-[Роль OCSP в CAdES-XLT1](https://yazilim.kamusm.gov.tr/eit-wiki/doku.php?id=en:cades_x-long#:~:text=The%20following%20table%20specifies,for%20CAdES%2DX%20LONG%20signature)  
+-[Требования к включению OCSP-ответов](https://yazilim.kamusm.gov.tr/eit-wiki/doku.php?id=en:cades_x-long#:~:text=and%20OCSP%20responses%20for,a%20long%20period%20of)
 
 ---

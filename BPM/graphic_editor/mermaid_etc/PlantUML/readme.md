@@ -19,5 +19,35 @@
 - https://plantuml-editor.kkeisuke.com/
 - https://plantuml.github.io/plantuml.js/ примеры работают, но 
 
+code
+'''
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/Archimate-PlantUML/master/Archimate.puml
+!theme archimate-standard from https://raw.githubusercontent.com/plantuml-stdlib/Archimate-PlantUML/master/themes
+
+title Archimate Sample - Requirement & Application Services
+
+'Elements'
+Motivation_Requirement(ReqPayrollStandard, "Do Payroll with a standard system")
+Motivation_Requirement(ReqBudgetPlanning, "Do budget planning within the ERP system")
+
+Application_Service(ASPayroll,"Payroll Service")
+Application_Service(ASBudgetPlanning,"Budget Planning Service")
+Application_Component(ACSAPFinanceAccRec, "SAP Finance - Accounts Recievables")
+Application_Component(ACSAPHR, "SAP Human Resources")
+Application_Component(ACSAPFin, "SAP Finance")
+Application_Component(ACSAP,"SAP") 
+
+'Relationships'
+Rel_Realization_Up(ASPayroll, ReqPayrollStandard)
+Rel_Realization_Up(ASBudgetPlanning, ReqBudgetPlanning)
+Rel_Realization_Up(ACSAPFinanceAccRec, ASBudgetPlanning)
+Rel_Realization_Up(ACSAPHR, ASPayroll)
+
+Rel_Composition_Up(ACSAPFin, ACSAPFinanceAccRec)
+Rel_Composition_Up(ACSAP, ACSAPHR)
+Rel_Composition_Up(ACSAP, ACSAPFin)
+@enduml
+'''
 ### markdown
 - [Как использовать PlantUML с Markdown svg](https://gist.github.com/noamtamim/f11982b28602bd7e604c233fbe9d910f) : plantuml -tsvg FILENAME

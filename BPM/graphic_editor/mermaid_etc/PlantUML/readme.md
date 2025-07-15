@@ -1,3 +1,5 @@
+### tech
+- https://plantuml.com/en/vizjs
 ### info
 - [Управление вёрсткой в PlantUML](https://habr.com/ru/articles/865140/)
 - [Построение диаграмм UML с использованием PlantUML](https://pdf.plantuml.net/PlantUML_Language_Reference_Guide_ru.pdf)

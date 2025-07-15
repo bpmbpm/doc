@@ -12,3 +12,5 @@
 
 #### example
 - https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000
+- https://www.planttext.com/
+- https://plantuml-editor.kkeisuke.com/

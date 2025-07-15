@@ -8,9 +8,10 @@
 - https://plantuml.com/ru-dark/sequence-diagram
 
 ### plantuml-stdlib
-- https://plantuml.com/ru/stdlib ; 
+- https://plantuml.com/ru/stdlib ; spec: https://plantuml.com/ru/archimate-diagram
 - https://github.com/plantuml/plantuml-stdlib ; https://github.com/plantuml-stdlib
-- https://github.com/plantuml-stdlib/Archimate-PlantUML ; https://github.com/plantuml-stdlib/C4-PlantUML ; https://github.com/plantuml-stdlib/Azure-PlantUML
+- https://github.com/plantuml-stdlib/Archimate-PlantUML ; 
+- https://github.com/plantuml-stdlib/C4-PlantUML ; https://github.com/plantuml-stdlib/Azure-PlantUML
 - https://crashedmind.github.io/PlantUMLHitchhikersGuide/Stdlib/StdLibOverview.html 
 
 #### example

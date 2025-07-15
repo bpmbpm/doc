@@ -9,7 +9,8 @@
 
 ### plantuml-stdlib
 - https://plantuml.com/ru/stdlib
-- https://github.com/plantuml/plantuml-stdlib ; https://github.com/plantuml-stdlib/Archimate-PlantUML
+- https://github.com/plantuml/plantuml-stdlib ;
+- https://github.com/plantuml-stdlib/Archimate-PlantUML ; https://github.com/plantuml-stdlib/C4-PlantUML
 - https://crashedmind.github.io/PlantUMLHitchhikersGuide/Stdlib/StdLibOverview.html 
 
 #### example

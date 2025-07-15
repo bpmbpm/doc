@@ -78,7 +78,7 @@ graph TD
     G --> G5["revocation-values (CAdES-X Long, включает OCSP)"]
     G --> G6["CAdES-X Type 1 time-stamp"]
 ```
-
+```
 graph TD
     A[CMS SignedData]
     A --> B[EncapsulatedContentInfo (Подписываемый контент)]
@@ -96,7 +96,7 @@ graph TD
     G --> G4[certificate-values (CAdES-X Long)]
     G --> G5[revocation-values (CAdES-X Long, включает OCSP)]
     G --> G6[CAdES-X Type 1 time-stamp]
-
+```
 
 ### 4. Ключевые моменты и пояснения
 

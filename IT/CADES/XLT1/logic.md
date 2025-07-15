@@ -47,7 +47,7 @@ flowchart TD
 
     S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7
 ```    
-
+```
 flowchart TD
     S1[Start: Подготовка данных для подписи]
     S2[Создание CMS SignedData (CAdES-BES/EPES)]
@@ -57,9 +57,7 @@ flowchart TD
     S6[Запрос временной метки TSA на все валидационные данные (CAdES-X Type 1)]
     S7[Результат: Подпись CAdES-XLT1]
     S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7
-
-
-
+```
 ### 3. Структура блоков подписи CAdES-XLT1 (mermaid markdown)
 ```mermaid
 graph TD

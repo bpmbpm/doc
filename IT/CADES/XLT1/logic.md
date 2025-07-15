@@ -35,8 +35,19 @@ algorithm
 ---
 
 ### 2. Алгоритм формирования (mermaid markdown)
-
 ```mermaid
+flowchart TD
+    S1["Start: Подготовка данных для подписи"]
+    S2["Создание CMS SignedData (CAdES-BES/EPES)"]
+    S3["Запрос временной метки TSA на подпись (CAdES-T)"]
+    S4["Сбор ссылок на сертификаты и OCSP (CAdES-C)"]
+    S5["Встраивание сертификатов и OCSP-ответов (CAdES-X Long)"]
+    S6["Запрос временной метки TSA на все валидационные данные (CAdES-X Type 1)"]
+    S7["Результат: Подпись CAdES-XLT1"]
+
+    S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7
+```    
+
 flowchart TD
     S1[Start: Подготовка данных для подписи]
     S2[Создание CMS SignedData (CAdES-BES/EPES)]
@@ -46,12 +57,30 @@ flowchart TD
     S6[Запрос временной метки TSA на все валидационные данные (CAdES-X Type 1)]
     S7[Результат: Подпись CAdES-XLT1]
     S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7
-```
+
 
 
 ### 3. Структура блоков подписи CAdES-XLT1 (mermaid markdown)
-
 ```mermaid
+graph TD
+    A["CMS SignedData"]
+    A --> B["EncapsulatedContentInfo (Подписываемый контент)"]
+    A --> C["Certificates"]
+    A --> D["SignerInfos"]
+    D --> E["SignerInfo"]
+    E --> F["Signed Attributes"]
+    F --> F1["content-type"]
+    F --> F2["message-digest"]
+    F --> F3["signing-certificate"]
+    E --> G["Unsigned Attributes"]
+    G --> G1["signature-time-stamp (CAdES-T)"]
+    G --> G2["complete-certificate-references (CAdES-C)"]
+    G --> G3["complete-revocation-references (CAdES-C)"]
+    G --> G4["certificate-values (CAdES-X Long)"]
+    G --> G5["revocation-values (CAdES-X Long, включает OCSP)"]
+    G --> G6["CAdES-X Type 1 time-stamp"]
+```
+
 graph TD
     A[CMS SignedData]
     A --> B[EncapsulatedContentInfo (Подписываемый контент)]
@@ -69,7 +98,7 @@ graph TD
     G --> G4[certificate-values (CAdES-X Long)]
     G --> G5[revocation-values (CAdES-X Long, включает OCSP)]
     G --> G6[CAdES-X Type 1 time-stamp]
-```
+
 
 ### 4. Ключевые моменты и пояснения
 

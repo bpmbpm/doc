@@ -56,3 +56,7 @@ Rel_Composition_Up(ACSAP, ACSAPFin)
 ### plantuml.js
 - https://gitlab.com/gitlab-org/gitlab/-/issues/399611 plantuml.js  позволит нам отображать plantuml в веб-интерфейсе полностью на стороне клиента в браузере, вместо использования сервера PlantUML или kroki.
 - https://www.npmjs.com/package/plantuml
+- Javascript API Client Code https://plantuml.com/ru/code-javascript-synchronous
+- https://www.jsdelivr.com/package/npm/node-plantuml
+- https://npms.io/search?q=plantuml-js
+- https://feedback.js.wiki/wiki/p/plantuml-c4-diagrams

@@ -8,12 +8,16 @@
 - https://plantuml.com/ru-dark/sequence-diagram
 
 ### plantuml-stdlib
-- https://plantuml.com/ru/stdlib
-- https://github.com/plantuml/plantuml-stdlib ;
-- https://github.com/plantuml-stdlib/Archimate-PlantUML ; https://github.com/plantuml-stdlib/C4-PlantUML
+- https://plantuml.com/ru/stdlib ; 
+- https://github.com/plantuml/plantuml-stdlib ; https://github.com/plantuml-stdlib
+- https://github.com/plantuml-stdlib/Archimate-PlantUML ; https://github.com/plantuml-stdlib/C4-PlantUML ; https://github.com/plantuml-stdlib/Azure-PlantUML
 - https://crashedmind.github.io/PlantUMLHitchhikersGuide/Stdlib/StdLibOverview.html 
 
 #### example
 - https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000
 - https://www.planttext.com/
 - https://plantuml-editor.kkeisuke.com/
+- https://plantuml.github.io/plantuml.js/ примеры работают, но 
+
+### markdown
+- [Как использовать PlantUML с Markdown svg](https://gist.github.com/noamtamim/f11982b28602bd7e604c233fbe9d910f) : plantuml -tsvg FILENAME

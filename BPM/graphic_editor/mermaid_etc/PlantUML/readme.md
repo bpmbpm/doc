@@ -52,3 +52,7 @@ Rel_Composition_Up(ACSAP, ACSAPFin)
 ```
 ### markdown
 - [Как использовать PlantUML с Markdown svg](https://gist.github.com/noamtamim/f11982b28602bd7e604c233fbe9d910f) : plantuml -tsvg FILENAME
+
+### plantuml.js
+- https://gitlab.com/gitlab-org/gitlab/-/issues/399611 plantuml.js  позволит нам отображать plantuml в веб-интерфейсе полностью на стороне клиента в браузере, вместо использования сервера PlantUML или kroki.
+- https://www.npmjs.com/package/plantuml

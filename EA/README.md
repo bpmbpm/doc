@@ -21,7 +21,7 @@ EA нотации см. https://github.com/bpmbpm/doc/tree/main/BPM/notation
 
 ### см также
 - [life cycle IT/BOK/life_cycle](https://github.com/bpmbpm/doc/tree/main/IT/BOK/life_cycle)
-
+- https://github.com/bpmbpm/doc/blob/main/visualization/diagramascode/README.md#xx-as-code
 ### монолит vs микросервис
 - [Галопом по архитектуре. Часть 2. Архитектура с нуля](https://habr.com/ru/articles/919368/)
 ### tools

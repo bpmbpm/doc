@@ -5,7 +5,8 @@
 - [ITIL и ITSM — история большого обмана. Есть ли польза? Сколько это стоит и кому точно НЕ стоит «внедрять ITIL»?](https://habr.com/ru/companies/okdesk/articles/468945/)
 
 ### alt
-- 20 000 ;
+- 20 000 ; [ISO/IEC 20000-1:2018](https://en.wikipedia.org/wiki/ISO/IEC_20000) ;  ГОСТ Р ИСО/МЭК 20000-1-2021
+- IT4IT
 
 ### IT-skeptic 
 Роб Ингланд (И Т-Скептик) Овладевая ITIL  

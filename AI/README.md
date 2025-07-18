@@ -34,3 +34,6 @@ https://github.com/bpmbpm/doc/tree/main/BPM/AI
 Число вкладываемых в промт файлов в бесплатной версии
 - более 1 https://aistudio.google.com
 - 1 https://www.deepseek.com/en
+
+### term
+- [Ключевые понятия LLM](https://habr.com/ru/companies/bothub/articles/928752/)

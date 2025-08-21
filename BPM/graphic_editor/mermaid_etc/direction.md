@@ -1,4 +1,7 @@
-### Как ориентировать два элемента сверху вниз, а два следующих слева направо? В mermaid, PlantUML и graphviz?
+## 1 graphviz 
+- [port, см p3 -> p2 [label=no tailport=e headport=e] ](https://habr.com/ru/articles/781124/comments/#comment_26283088)
+
+## 2 Как ориентировать два элемента сверху вниз, а два следующих слева направо? В mermaid, PlantUML и graphviz?
 Вот как можно реализовать требуемую компоновку в Mermaid, PlantUML и Graphviz:
 
 ### 1. Mermaid

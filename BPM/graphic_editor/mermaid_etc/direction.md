@@ -1,5 +1,12 @@
-## 1 graphviz 
+## 1 graphviz port & rank
 - [port, см p3 -> p2 [label=no tailport=e headport=e] ](https://habr.com/ru/articles/781124/comments/#comment_26283088)
+- [rank](https://stackoverflow.com/questions/25734244/how-do-i-place-nodes-on-the-same-level-in-dot)
+` graph {
+  rankdir=LR;
+  a -- b -- c;
+  d -- e -- f;
+  b -- d; {rank = same; b; d;};
+} `
 
 ## 2 Как ориентировать два элемента сверху вниз, а два следующих слева направо? В mermaid, PlantUML и graphviz?
 Вот как можно реализовать требуемую компоновку в Mermaid, PlantUML и Graphviz:

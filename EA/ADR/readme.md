@@ -15,7 +15,7 @@ PDM - модели определения платформы (Platform Definitio
 - [Architecture decision record (ADR) / Architecture decision log (ADL)](https://pragmatic-km.guide/practices/knowledge-registration/registration/architecture.html)
 - [mediawiki.org](https://www.mediawiki.org/wiki/Architecture_decision_record_template)
 
-### 
+### Rational Rose
 - [Prem Chandrasekaran, Neal Ford, Mark Richards](https://www.thoughtworks.com/insights/podcasts/technology-podcasts/architecture-as-code):  
 Я хорошо помню MDA. На самом деле, вокруг MDA все еще ведется огромное количество академической работы, просто потому что против нее можно направить массу бесполезных усилий. Большая проблема с архитектурой на основе моделей в том, что у них были эти очень формальные языки, иногда языки диаграмм, иногда языки спецификаций, и они пытались сгенерировать программные системы, которые были бы просто кашей, и заставляли людей собираться в комнате и месяцами усиленно думать над своими диаграммами, нажимать кнопку, и получалось работающее программное обеспечение.  
 Мы поняли, что это не работает, потому что мир меняется гораздо быстрее, чем вы можете изменить модели, лежащие в основе этих вещей.  
@@ -30,3 +30,6 @@ PDM - модели определения платформы (Platform Definitio
 - [Архитектурный комитет: настраиваем работу с нуля. Часть 2. Приемка архитектурного документа и концепция ADR](https://habr.com/ru/companies/agima/articles/939412/)
 
 https://doc.wikimedia.org/Wikibase/master/php/docs_adr_index.html
+
+### example 
+- [nats-io](https://github.com/nats-io/nats-architecture-and-design)

@@ -20,6 +20,7 @@
     - Alexander Chertilin https://disk.yandex.ru/i/g0aC2tt6C8LPJw
     - ‎Roman Tsirulnikov https://disk.yandex.ru/i/enNNR_r32ZQm2w
     - Artem Varkulevich https://www.canva.com/design/DAGvHUc-W2g/tNIt1Fmb3kwLaXnZGEYapQ/view?utm_content=DAGvHUc-W2g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he42c4e8409
+
 #### habr
 - [dochub \ rpiontik](https://habr.com/ru/users/rpiontik/articles/)
 - [architeezy Текстовый редактор моделей?](https://habr.com/ru/companies/architeezy/articles/938340/)

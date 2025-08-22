@@ -1,6 +1,7 @@
 ### Управление качеством данных
 - [Управление качеством данных: роли, процессы, инструменты](https://habr.com/ru/articles/694690/)
-- [Критерии качества данных](https://loginom.ru/blog/data-quality-criteria) 
+- [Критерии качества данных](https://loginom.ru/blog/data-quality-criteria)
+- [Важность качества данных при внедрении ERP](https://habr.com/ru/companies/rdv-it/articles/939832/)
 
 ### Разное
 - [Data Pipeline](https://habr.com/ru/articles/900640/)
@@ -12,3 +13,9 @@
 - [it-academy](https://www.it-academy.by/media/stati/data-science/)
 
 Точнее выделить Data-аналитик ("глубокий" анализ данных) и архитектор данных (бизнес-архитектор данных) - реест данных, MDM и т.п.
+
+### ЦБ
+- [Управление данными на финансовом рынке](https://cbr.ru/develop/data_management_fm/)
+
+### tools
+OpenMetaData

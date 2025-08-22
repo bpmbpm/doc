@@ -23,3 +23,6 @@
 #### habr
 - [dochub \ rpiontik](https://habr.com/ru/users/rpiontik/articles/)
 - [architeezy Текстовый редактор моделей?](https://habr.com/ru/companies/architeezy/articles/938340/)
+
+### link
+- https://github.com/bpmbpm/doc/tree/main/BPM/notation/ArchiMate

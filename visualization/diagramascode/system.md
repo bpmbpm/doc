@@ -2,7 +2,7 @@
 - [C4 Model](https://c4model.com/) ; [Structurizr DSL](https://github.com/structurizr/dsl) ; [LikeC4](https://github.com/likec4/likec4)
 - [ArcH₂O](https://hd-tech.ru/ru/product/5) 
 - [dochub](https://dochub.info/main)
-- [architeezy]((https://architeezy.com/metamodel/vad/dev/sample)
+- [architeezy](https://architeezy.com/metamodel/vad/dev/sample)
 - [AutoVAD from rdf, Генерация VAD по RDF - как функция в составе SemanticBPM](https://github.com/bpmbpm/SemanticBPM/tree/main)
 
 ### Обсуждения

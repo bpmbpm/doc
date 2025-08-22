@@ -6,6 +6,9 @@
 - [architeezy](https://architeezy.com/metamodel/vad/dev/sample)
 - [AutoVAD from rdf, Генерация VAD по RDF - как функция в составе SemanticBPM](https://github.com/bpmbpm/SemanticBPM/tree/main)
 
+### local
+- https://github.com/bpmbpm/doc/tree/main/BPM/ruEA
+  
 ### Обсуждения
 #### [ТГ М. Смирнова, Archimate - 5 историй 2025](https://t.me/s/it_arch):
 - [запись](https://t.me/it_arch/1729)

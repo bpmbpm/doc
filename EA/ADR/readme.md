@@ -27,5 +27,6 @@ PDM - модели определения платформы (Platform Definitio
 
 ### ADR
 - [Немного о подходе Architecture Decision Records](https://habr.com/ru/companies/otus/articles/840412/)
+- [Архитектурный комитет: настраиваем работу с нуля. Часть 2. Приемка архитектурного документа и концепция ADR](https://habr.com/ru/companies/agima/articles/939412/)
 
 https://doc.wikimedia.org/Wikibase/master/php/docs_adr_index.html

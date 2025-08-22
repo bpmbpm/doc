@@ -17,5 +17,5 @@
     - ‎Roman Tsirulnikov https://disk.yandex.ru/i/enNNR_r32ZQm2w
     - Artem Varkulevich https://www.canva.com/design/DAGvHUc-W2g/tNIt1Fmb3kwLaXnZGEYapQ/view?utm_content=DAGvHUc-W2g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he42c4e8409
 #### habr
-- [rpiontik](https://habr.com/ru/users/rpiontik/articles/)
+- [dochub \ rpiontik](https://habr.com/ru/users/rpiontik/articles/)
 - [architeezy Текстовый редактор моделей?](https://habr.com/ru/companies/architeezy/articles/938340/)

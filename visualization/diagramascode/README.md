@@ -44,4 +44,5 @@
 - https://github.com/RaoulMeyer/diagram-as-code
 - [Network diagram as code](https://github.com/Thomaash/me)
 - [Network diagram as code / Схема сети как код](https://habr.com/ru/articles/491814/) ; [git](https://github.com/antirek/network-diagram) ; [online](https://antirek.github.io/network-diagram-editor/) ; Для отрисовки схемы используется cytoscape.js. Схема отрисовывается в двух режимах: auto и grid. Для grid режима необходимо указать positions. Positions - это список элементов с указанием строки и колонки их расположения. Явное указание positions позволяет точно зафиксировать вид схемы.
-- [ Architecture As A Code in the C4 model from tech-beeline](https://github.com/tech-beeline) ; https://t.me/archdays/20 ; плагин к Visual Studio Code для работы с архитектурой в нотации Structurizr DSL 
+- [ Architecture As A Code in the C4 model from tech-beeline](https://github.com/tech-beeline) ; https://t.me/archdays/20 ; плагин к Visual Studio Code для работы с архитектурой в нотации Structurizr DSL
+- [Почему я использую doc-as-a-code](https://habr.com/ru/articles/895202/)

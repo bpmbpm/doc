@@ -1,3 +1,8 @@
+### News
+ArchiMate® NEXT Specification [habr](https://habr.com/ru/posts/932602/) ; [opengroup](https://publications.opengroup.org/s250)
+
+### info
+- [ArchiMate 101: A Practical Introduction](https://archimate-community.pages.opengroup.org/workgroups/archimate-101/)
 ### ArchiMate_Visio
 #### Orbus
 - книжка [ArchiMate 3.1 Tool](https://certification.opengroup.org/register/archimate/orbus_archimate3_tool_se2.pdf)

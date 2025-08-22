@@ -1,5 +1,6 @@
 ### DAC / AAC - tool projects
 - [C4 Model](https://c4model.com/) ; [Structurizr DSL](https://github.com/structurizr/dsl) ; [LikeC4](https://github.com/likec4/likec4)
+- [linkml](https://linkml.io/)
 - [ArcH₂O](https://hd-tech.ru/ru/product/5) 
 - [dochub](https://dochub.info/main)
 - [architeezy](https://architeezy.com/metamodel/vad/dev/sample)

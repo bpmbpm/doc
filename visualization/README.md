@@ -7,4 +7,4 @@
 см. также:
 - Графические редакторы схем https://github.com/bpmbpm/doc/blob/main/BPM/graphic_editor
 - visualization/diagramascode
-  
+- [Использование диаграмм в ИТ-документации: лучшие практики](https://clickhelp.com/clickhelp-technical-writing-blog/using-diagrams-in-it-documentation-best-practices/) ; [Встроенные диаграммы](https://clickhelp.com/software-documentation-tool/user-manual/embed-diagrams.html)  

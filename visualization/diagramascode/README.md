@@ -6,7 +6,8 @@
 - https://habr.com/ru/companies/rostelecom/articles/701970/
 - https://mxsmirnov.com/2022/12/03/diagrams-as-code-2-5/
 - https://icepanel.medium.com/top-7-diagrams-as-code-tools-for-software-architecture-1a9dd0df1815
-
+### top
+- [Top 5 diagrams for documenting software architecture](https://softwarearchitectureweekly.substack.com/p/top-5-diagrams-for-documenting-software)
 ### tool
 - [diagrams-as-code git](https://github.com/topics/diagrams-as-code) 
 - [diagrams.mingrammer](https://diagrams.mingrammer.com/) 

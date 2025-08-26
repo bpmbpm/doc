@@ -3,8 +3,9 @@ ArchiMate® NEXT Specification [habr](https://habr.com/ru/posts/932602/) ; [open
 
 ### info
 - [ArchiMate 101: A Practical Introduction](https://archimate-community.pages.opengroup.org/workgroups/archimate-101/)
-### ArchiMate_Visio
+### ArchiMate Visio Stencils
 #### Orbus
+- [bhdicaire](https://github.com/bhdicaire/visioStencils/tree/main/Stencils/Methodologies) !!
 - книжка [ArchiMate 3.1 Tool](https://certification.opengroup.org/register/archimate/orbus_archimate3_tool_se2.pdf)
 - [Бесплатные трафареты ArchiMate® 2.0 Visio](https://www.orbussoftware.com/resources/research-library/detail/archimate-visio-stencil-and-template#rd-archimate-visio-stencil-template), скачано ?
 - [Стартовый пакет ArchiMate](https://www.orbussoftware.com/resources/research-library/archimate-starter-pack)

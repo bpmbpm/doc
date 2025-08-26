@@ -4,6 +4,7 @@
 - https://github.com/plantuml-stdlib/Archimate-PlantUML
 - https://www.linkedin.com/pulse/archimate-diagram-code-1-anil-tegginahalli
 - https://github.com/plantuml-stdlib/Archimate-PlantUML
+- [Architecture as Code: моделируем архитектуру предприятия в ArchiMate](https://habr.com/ru/companies/otus/articles/885594/)
 
 ### Cookbook
 - https://github.com/yasenstar/ArchiMate-Cookbook ; https://github.com/yasenstar/ArchiMate_ArchiSurance

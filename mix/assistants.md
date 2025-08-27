@@ -7,13 +7,15 @@
 
 Обзоры: https://www.getguru.com/ru/reference/ai-search-engine
 
-
-Dia:  
+### search
+- [Секретные фишки поиска, о которых вы не знали: Яндекс, Google и Perplexity](https://habr.com/ru/companies/minerva_media/articles/940862/)
+### Dia:  
 https://www.mermaidchart.com/  
 https://github.blog/developer-skills/github/include-diagrams-markdown-files-mermaid/
 
  https://formsflow.ai/
 ### translate
 [Проводим слепой тест переводов прямо на Хабре](https://habr.com/ru/articles/908280/)
-### VPN
-https://grok.com ; https://chatgpt.com/ ; ru: https://trychatgpt.ru/
+### AI (VPN)
+- https://grok.com ; https://chatgpt.com/ ;
+- ru: https://trychatgpt.ru/

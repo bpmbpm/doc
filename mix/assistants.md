@@ -8,7 +8,7 @@
 Обзоры: https://www.getguru.com/ru/reference/ai-search-engine
 
 ### search
-- [Секретные фишки поиска, о которых вы не знали: Яндекс, Google и Perplexity](https://habr.com/ru/companies/minerva_media/articles/940862/)
+- [Секретные фишки поиска, о которых вы не знали: Яндекс, Google и Perplexity](https://habr.com/ru/companies/minerva_media/articles/940862/) site: и т.п.
 ### Dia:  
 https://www.mermaidchart.com/  
 https://github.blog/developer-skills/github/include-diagrams-markdown-files-mermaid/

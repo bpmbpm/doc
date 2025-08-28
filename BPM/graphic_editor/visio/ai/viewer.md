@@ -172,12 +172,6 @@ document.getElementById("svg-container").appendChild(svg);
 
 ### 3 Сгенерируй простой vsdx файл, содержащий прямоугольник и овал. Переведи его в XML-содержимое и сгененируй SVG. Добавь подробное пояснение кода.
 
-#### You've hit your free quota for the Auto Agent.
-
-#### For more usage of the Auto Agent, learn more at: https://you.com/plans.
-
-Answering your question with the Express Agent:
-
 #### Создание простого VSDX-файла с прямоугольником и овалом, его XML-содержимое и генерация SVG на JS
 
 ---

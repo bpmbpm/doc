@@ -7,3 +7,6 @@
 
 Отдаленно:
 - [React и графики: 8 библиотек для визуализации данных](https://habr.com/ru/companies/ru_mts/articles/885650/#comment_28010470)
+
+### SVG-Edit
+https://github.com/SVG-Edit/ ; https://github.com/SVG-Edit/svg-edit-react ; https://svg-edit.github.io/svg-edit-react/dist/index.html

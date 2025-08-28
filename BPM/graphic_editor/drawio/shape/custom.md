@@ -1,3 +1,7 @@
+### help
+- https://www.drawio.com/doc/faq/shape-complex-create-edit
+
+  
 ### 1 Как изменить элемент step, чтобы его левая сторона была ровной?
 #### You've hit your free quota for the Auto Agent.
 

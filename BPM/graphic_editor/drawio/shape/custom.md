@@ -236,3 +236,115 @@ text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;paren
 
 ---
 
+### 3 Сгенерируй XML, где к shape=step (первая подпись Подпись1) будет добавлена вторая подпись (Подпись2) снизу фигуры.
+
+Вот пример XML для draw.io, где к фигуре `shape=step` добавлены две подписи: первая — внутри фигуры, вторая — отдельным текстовым элементом под фигурой, связанная с фигурой через атрибут `parent`. Вторая подпись будет позиционироваться под фигурой и двигаться вместе с ней.
+
+```xml
+<mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+
+    <!-- Основная фигура step -->
+    <mxCell id="step1" value="Подпись1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+      <mxGeometry x="100" y="100" width="160" height="80" as="geometry"/>
+    </mxCell>
+
+    <!-- Вторая подпись под фигурой, дочерний элемент -->
+    <mxCell id="label2" value="Подпись2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;" vertex="1" parent="step1">
+      <mxGeometry x="0" y="1" width="160" height="20" as="geometry" relative="1"/>
+    </mxCell>
+
+  </root>
+</mxGraphModel>
+```
+
+---
+
+### Объяснение:
+
+- `<mxCell id="step1" ...>` — основная фигура `step` с текстом "Подпись1" внутри.
+- `<mxCell id="label2" ... parent="step1">` — текстовый элемент с текстом "Подпись2", у которого в стиле `parent=step1` (через атрибут `parent="step1"`), то есть он вложен в фигуру.
+- Вторая подпись позиционируется с помощью `<mxGeometry x="0" y="1" width="160" height="20" relative="1"/>`, где `y="1"` и `relative="1"` означает, что элемент расположен **снизу** относительно родителя (на 100% высоты фигуры).
+- `width="160"` совпадает с шириной фигуры, чтобы текст был по центру под фигурой.
+- `strokeColor=none;fillColor=none` — чтобы у текста не было рамок и заливки.
+
+---
+
+### Как использовать
+
+- Скопируйте этот XML.
+- В draw.io выберите **File → Import From → Device** и вставьте этот XML (или через **Arrange → Insert → Advanced → XML...**).
+- Вы увидите фигуру step с двумя подписями: одна внутри, другая под фигурой.
+- При перемещении фигуры вторая подпись будет двигаться вместе с ней.
+
+---
+
+### 4 Сохрани полученную фигуру (пусть будет имя step1) как шаблон (отдельный файл) и покажи как подключить этот внешний файл - шаблон для использования в другой схеме.  
+
+#### You've hit your free quota for the Auto Agent.
+
+#### For more usage of the Auto Agent, learn more at: https://you.com/plans.
+
+Answering your question with the Express Agent:
+
+#### Как сохранить фигуру (step1) как шаблон в draw.io и подключить её в другой схеме
+
+---
+
+### 1. Сохранение фигуры как отдельного файла-шаблона
+
+1. **Выделите фигуру step1** на холсте.
+2. В меню выберите **Arrange → Edit Diagram...** (или **File → Export as → XML...**).
+3. В открывшемся XML-редакторе скопируйте XML, относящийся только к вашей фигуре (например, `<mxCell id="step1" ...>` и связанные с ней элементы).
+4. Создайте новый файл с расширением `.drawio` или `.xml` и вставьте туда этот XML, обернув в минимальную структуру:
+
+```xml
+<mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <!-- Вставьте сюда вашу фигуру step1 и связанные элементы -->
+    <mxCell id="step1" value="Подпись1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+      <mxGeometry x="0" y="0" width="160" height="80" as="geometry"/>
+    </mxCell>
+    <mxCell id="label2" value="Подпись2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;" vertex="1" parent="step1">
+      <mxGeometry x="0" y="1" width="160" height="20" as="geometry" relative="1"/>
+    </mxCell>
+  </root>
+</mxGraphModel>
+```
+
+5. Сохраните этот файл, например, как `step1_template.drawio`.
+
+---
+
+### 2. Подключение шаблона (внешнего файла) в другую схему
+
+draw.io **не поддерживает прямое "включение" внешних файлов-шаблонов в XML** как, например, импорт в коде. Но есть несколько способов использовать сохранённый шаблон:
+
+#### Вариант А: Импорт шаблона в текущий документ
+
+- В открытом основном файле выберите **File → Import From → Device** и выберите файл `step1_template.drawio`.
+- Импортированный шаблон появится на холсте, откуда вы можете скопировать фигуру и использовать её.
+
+#### Вариант Б: Создать библиотеку фигур (Custom Library)
+
+1. Откройте файл с шаблоном.
+2. Выделите фигуру и нажмите **Arrange → Add to Library**.
+3. Создайте новую библиотеку или добавьте в существующую.
+4. В другом файле откройте эту библиотеку через боковую панель (Libraries → Open Library).
+5. Перетаскивайте фигуры из библиотеки на холст.
+
+---
+
+### 3. Итог
+
+- **draw.io не поддерживает прямое подключение внешних XML-шаблонов как include.**
+- Для повторного использования фигур лучше создавать **пользовательские библиотеки** или импортировать шаблон и копировать фигуры.
+- Сохраняйте фигуры в отдельном файле `.drawio` с минимальной структурой XML.
+- Используйте меню **Add to Library** для удобного повторного использования.
+
+---
+

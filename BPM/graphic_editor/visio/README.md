@@ -4,6 +4,8 @@
 - [Free Online Visio Viewer](https://doconut.app/products/visio/)
 - chrome (обзоры) https://tinygrab.com/how-to-open-visio-files-in-chrome/ ; https://www.cisdem.com/resource/open-visio-files-without-visio.html
 
+#### 2
+- https://blog.aspose.com/ru/diagram/visio-viewer-online/
 
 #### было
 - https://chromewebstore.google.com/detail/free-visio-viewer-mac-win/mcpmofnlkemfkhgngcdppgbhncoflmpe?/&pli=1
@@ -11,4 +13,8 @@
   
 см. также: Visio Stencil and Template for ArchiMate: https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/readme.md#archimate_visio  
 
+### alt
+- https://edrawmax.wondershare.com/visio-alternative/open-source-visio-alternative.html
 
+### также
+- https://github.com/bpmbpm/doc/tree/main/Project/miniARIS#dia-editor

@@ -3,6 +3,7 @@
 - https://chat.deepseek.com/ проблема с безопасностью [«чрезмерный» сбор ПД](https://www.securitylab.ru/news/556499.php)
 - https://www.phind.com/
 - https://chat.qwen.ai/
+- [pdd aistudio.google.com](https://github.com/bpmbpm/doc/blob/main/AI/RAG2/test2/pdd.md)
 
 Тестирование: https://github.com/bpmbpm/doc/blob/main/test/AI/code/SVG/SVG_focus.md
 

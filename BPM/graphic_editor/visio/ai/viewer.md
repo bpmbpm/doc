@@ -170,4 +170,123 @@ document.getElementById("svg-container").appendChild(svg);
 Для реального Visio потребуется более сложный парсер, но принцип тот же:  
 **Парсим XML → Извлекаем параметры → Рисуем SVG**.
 
-Если у тебя есть конкретный XML-фрагмент из Visio — пришли, и я помогу адаптировать код!
+### 3 Сгенерируй простой vsdx файл, содержащий прямоугольник и овал. Переведи его в XML-содержимое и сгененируй SVG. Добавь подробное пояснение кода.
+
+#### You've hit your free quota for the Auto Agent.
+
+#### For more usage of the Auto Agent, learn more at: https://you.com/plans.
+
+Answering your question with the Express Agent:
+
+#### Создание простого VSDX-файла с прямоугольником и овалом, его XML-содержимое и генерация SVG на JS
+
+---
+
+### 1. Что такое VSDX и почему сложно сгенерировать вручную?
+
+- **VSDX** — это формат Microsoft Visio, основанный на ZIP-архиве с множеством XML-файлов внутри.
+- Вручную писать полноценный VSDX сложно, т.к. это пакет с несколькими взаимосвязанными XML.
+- Но можно создать **упрощённый XML**, который описывает фигуры, и на его основе сгенерировать SVG.
+
+---
+
+### 2. Упрощённый пример XML, имитирующий содержимое VSDX с двумя фигурами
+
+```xml
+<Shapes>
+  <Shape id="1" type="rect" x="10" y="10" width="120" height="80" fill="#3498db"/>
+  <Shape id="2" type="ellipse" x="180" y="50" rx="60" ry="40" fill="#e74c3c"/>
+</Shapes>
+```
+
+- Здесь:
+  - Прямоугольник с координатами (10,10), шириной 120, высотой 80, с синим цветом.
+  - Овал с центром (180,50), радиусами 60 и 40, красного цвета.
+
+---
+
+### 3. JS-код для парсинга этого XML и генерации SVG
+
+```html
+<div id="svg-container"></div>
+
+<script>
+// 1. XML-строка с фигурами
+const xmlString = `
+<Shapes>
+  <Shape id="1" type="rect" x="10" y="10" width="120" height="80" fill="#3498db"/>
+  <Shape id="2" type="ellipse" x="180" y="50" rx="60" ry="40" fill="#e74c3c"/>
+</Shapes>
+`;
+
+// 2. Парсим XML в DOM-объект
+const parser = new DOMParser();
+const xmlDoc = parser.parseFromString(xmlString, "application/xml");
+
+// 3. Создаём SVG-элемент с нужными размерами
+const svgNS = "http://www.w3.org/2000/svg";
+const svg = document.createElementNS(svgNS, "svg");
+svg.setAttribute("width", 300);
+svg.setAttribute("height", 150);
+svg.style.border = "1px solid #ccc"; // для наглядности
+
+// 4. Извлекаем все фигуры из XML
+const shapes = xmlDoc.getElementsByTagName("Shape");
+
+// 5. Проходим по каждой фигуре и создаём соответствующий SVG-элемент
+for (let shape of shapes) {
+  const type = shape.getAttribute("type");
+  let svgShape;
+
+  if (type === "rect") {
+    // Создаём прямоугольник
+    svgShape = document.createElementNS(svgNS, "rect");
+    svgShape.setAttribute("x", shape.getAttribute("x"));
+    svgShape.setAttribute("y", shape.getAttribute("y"));
+    svgShape.setAttribute("width", shape.getAttribute("width"));
+    svgShape.setAttribute("height", shape.getAttribute("height"));
+    svgShape.setAttribute("fill", shape.getAttribute("fill"));
+  } else if (type === "ellipse") {
+    // Создаём овал
+    svgShape = document.createElementNS(svgNS, "ellipse");
+    svgShape.setAttribute("cx", shape.getAttribute("x"));
+    svgShape.setAttribute("cy", shape.getAttribute("y"));
+    svgShape.setAttribute("rx", shape.getAttribute("rx"));
+    svgShape.setAttribute("ry", shape.getAttribute("ry"));
+    svgShape.setAttribute("fill", shape.getAttribute("fill"));
+  }
+
+  // Добавляем фигуру в SVG
+  if (svgShape) {
+    svg.appendChild(svgShape);
+  }
+}
+
+// 6. Вставляем SVG в контейнер на странице
+document.getElementById("svg-container").appendChild(svg);
+</script>
+```
+
+---
+
+### 4. Подробное пояснение кода
+
+- **Шаг 1:** В переменной `xmlString` хранится упрощённый XML с двумя фигурами — прямоугольником и овалом.
+- **Шаг 2:** С помощью `DOMParser` мы превращаем строку XML в объект DOM, чтобы можно было работать с элементами как с узлами.
+- **Шаг 3:** Создаём SVG-элемент с пространством имён SVG (`http://www.w3.org/2000/svg`), задаём размеры и рамку для наглядности.
+- **Шаг 4:** Получаем список всех `<Shape>` из XML.
+- **Шаг 5:** Для каждой фигуры смотрим атрибут `type`:
+  - Если `rect` — создаём SVG `<rect>`, задаём координаты, размеры и цвет.
+  - Если `ellipse` — создаём SVG `<ellipse>`, задаём центр, радиусы и цвет.
+- **Шаг 6:** Добавляем созданные SVG-элементы внутрь SVG.
+- **Шаг 7:** Вставляем SVG в контейнер на странице, чтобы отобразить результат.
+
+---
+
+### 5. Итог
+
+- Мы **сгенерировали упрощённый XML**, который можно считать аналогом содержимого VSDX с двумя фигурами.
+- Затем **спарсили этот XML и создали SVG-элементы** на его основе.
+- Такой подход можно расширять, добавляя линии, тексты, сложные фигуры и трансформации.
+
+Если хочешь, могу помочь с более сложным примером или с реальным парсингом VSDX-файлов!

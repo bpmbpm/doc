@@ -2,7 +2,7 @@
  - obsidian \ logseq \ joplin
  -  Evernote,  OneNote
 
-Обсидиану уже давно есть средства улучшенного поиска, включая RAG с использованием любых LLM. Это плагины Copilot, Omnisearch 
+Обсидиан: средства улучшенного поиска, включая RAG с использованием любых LLM. Это плагины Copilot, Omnisearch 
    
 Простые:
 - [MidnightCommander](https://habr.com/ru/articles/903346/#comment_28208760)

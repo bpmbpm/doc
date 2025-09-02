@@ -13,6 +13,9 @@
   
 см. также: Visio Stencil and Template for ArchiMate: https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/readme.md#archimate_visio  
 
+### Visio Stencil 
+- https://www.visiocafe.com/ ; 
+
 ### Alternatives
 - https://edrawmax.wondershare.com/visio-alternative/open-source-visio-alternative.html
 - https://edrawmax.wondershare.com/visio-alternative/open-source-visio-alternative.html

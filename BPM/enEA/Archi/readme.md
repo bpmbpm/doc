@@ -6,3 +6,6 @@
 & jArchi_1.7.0.archiplugin ??
 
 - [Автоматизируем работу с ArchiMate в CI пайплайнах](https://habr.com/ru/articles/583314/)
+
+### Docs
+- [User Guide 5.6.0](https://www.archimatetool.com/downloads/archi/Archi%20User%20Guide.pdf)

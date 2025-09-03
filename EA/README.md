@@ -31,7 +31,7 @@ EA нотации см. https://github.com/bpmbpm/doc/tree/main/BPM/notation
 ### монолит vs микросервис
 - [Галопом по архитектуре. Часть 2. Архитектура с нуля](https://habr.com/ru/articles/919368/)
 ### tools
-см. в BPM
+см. в BPM: https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/interest1.md ; https://github.com/bpmbpm/doc/tree/main/BPM/enEA/Archi
 
 ### посмотреть
 - likeC4

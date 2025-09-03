@@ -6,6 +6,7 @@
 
 ### Отдельные фишки 
 #### Nesting
+вложение элементов друг в друга
 - [visual-paradigm](https://www.visual-paradigm.com/support/documents/vpuserguide/4455/4409/86501_useofnesting.html)
 - [sparx](https://sparxsystems.com/enterprise_architect_user_guide/17.1/modeling_languages/nesting.html)
 - Archi (вроде есть)

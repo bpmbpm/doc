@@ -2,3 +2,5 @@
 - [Семантическое моделирование. Проектирование БД с помощью ER-модели](https://habr.com/ru/companies/timeweb/articles/916824/)
 - [Проектирование Информационных систем. Часть 8. Разработка логической структуры данных. 8.2. Шаблонный подход](https://habr.com/ru/articles/918450/)
   
+### database
+- [alasql](https://alasql-wiki.readthedocs.io/en/latest/readme.html)

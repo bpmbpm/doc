@@ -8,6 +8,7 @@
 - [Автоматизируем работу с ArchiMate в CI пайплайнах](https://habr.com/ru/articles/583314/)
 
 ### Docs
+- [wiki](https://github.com/archimatetool/archi/wiki)
 - [User Guide 5.6.0](https://www.archimatetool.com/downloads/archi/Archi%20User%20Guide.pdf)
 
 ### Доступ к объектам

@@ -26,3 +26,19 @@
 
 ### ArchiMate® NEXT Specification
 - https://publications.opengroup.org/s250
+
+### Разное
+ArchiMate по русски http://sewiki.ru/ArchiMate  
+https://ailev.livejournal.com/955954.html Серия предыдущих постингов "Архимейт по-русски" с глоссарием и прочими полезными материалами:  
+- http://ailev.livejournal.com/964544.html -- слайдомент семинара (семинар проводился еще по версии 1, а на слайдах остался старый перевод -- тем не менее, вдруг кому-то будет полезно),
+- [рельсы для мышления])(http://ailev.livejournal.com/963548.html)
+- [ошибки начинающих](http://ailev.livejournal.com/963190.html)
+- [словарик ядра (уровни людей, программ, оборудования)](http://ailev.livejournal.com/956829.html)
+- [пример архитектурной диаграммы для реализации метода "ISO 15926 Outside"](http://ailev.livejournal.com/956191.html)
+- [метод описания информационной структуры](http://ailev.livejournal.com/955954.html)
+- [о выборе Архимейта среди прочих архитектурных языков](http://ailev.livejournal.com/940819.html)
+- [дополнения второй версии](http://ailev.livejournal.com/978200.html)
+- [рассказ (видео)](http://incose-ru.livejournal.com/33568.html)
+
+https://www.cfin.ru/itm/standards/ArchiMate.shtml Моделирование архитектуры предприятия. Обзор языка ArchiMate
+

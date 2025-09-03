@@ -3,7 +3,8 @@
 - t.me/ArchitectureWeekly
 - [softwarearchitectureweekly](https://softwarearchitectureweekly.substack.com/p/architecture-weekly-163?utm_source=substack&utm_medium=email&utm_content=share)
 - https://www.architecture-weekly.com/ ; https://github.com/oskardudycz/ArchitectureWeekly
-
+### Conf
+- https://modelsward.scitevents.org/
 ### Отдельные фишки 
 #### Nesting
 вложение элементов друг в друга
@@ -14,3 +15,5 @@
 
 ### См. также
 - https://github.com/bpmbpm/doc/tree/main/BPM/enBPM/ADOxx
+- https://modeling-languages.com/
+- https://t.me/c/1304614627/29075 Архитектурный Вавилон, в поисках общего языка

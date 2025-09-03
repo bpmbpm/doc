@@ -11,7 +11,7 @@
 - [User Guide 5.6.0](https://www.archimatetool.com/downloads/archi/Archi%20User%20Guide.pdf)
 
 ### Доступ к объектам
-- [SQL-запросы в HTML-отчете](https://github.com/archimatetool/archi/wiki/SQL-queries-in-the-HTML-report)
+- [SQL-запросы в HTML-отчете](https://github.com/archimatetool/archi/wiki/SQL-queries-in-the-HTML-report) ; https://fightingcomputers.nl/Guides/Analysis-of-Archimate-model-using-SQL-queries
 
 ### ArchiMate
 - https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/interest1.md

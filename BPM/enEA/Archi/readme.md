@@ -13,7 +13,7 @@
 
 ### Доступ к объектам
 - [SQL-запросы в HTML-отчете](https://github.com/archimatetool/archi/wiki/SQL-queries-in-the-HTML-report) ; https://fightingcomputers.nl/Guides/Analysis-of-Archimate-model-using-SQL-queries
-- https://gevaertw.wordpress.com/2018/12/10/querying-the-archi-db-to-get-relations/ ; https://gevaertw.wordpress.com/2019/08/09/generating-sql-queries-for-the-archi-database/
+- примеры к database-plugin с gevaertw.wordpress.com, [2018](https://gevaertw.wordpress.com/2018/12/10/querying-the-archi-db-to-get-relations/) ; [2019](https://gevaertw.wordpress.com/2019/08/09/generating-sql-queries-for-the-archi-database/)
 
 ### ArchiMate
 - https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/interest1.md

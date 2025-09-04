@@ -10,3 +10,6 @@
 - [TOR поиск мостов](https://t.me/GetBridgesBot)
 
 https://geti2p.net/en/
+
+### Concept
+- [Концепции информационной безопасности](https://habr.com/ru/articles/943798/)

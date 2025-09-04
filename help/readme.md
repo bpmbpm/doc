@@ -12,3 +12,8 @@ Git оперирует только файлами, а не папками (он
 - github pages и имена репозитариев с нижним подчеркиванием: Не работает
 ### GitHub Actions
 - [Автоматизация аналитических процессов с помощью GitHub Actions: практический гайд](https://habr.com/ru/articles/941444/)
+
+### GitHub vs GitLab
+- https://itlogia.ru/article/gitlab_i_github_v_chem_razlichiya
+- https://softlist.kz/ru/news/gitlab-vs-github--zachem-ispolzovat-git-repozitoriy-i-chto-luchshe-ispolzova
+  

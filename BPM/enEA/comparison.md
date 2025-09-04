@@ -1,9 +1,8 @@
 # 1 Archi vs ADOxx
-
+- https://github.com/bpmbpm/doc/blob/main/BPM/enEA/Archi
+- https://github.com/bpmbpm/doc/tree/main/BPM/enBPM/ADOxx
 ## 1.1 Подробный сравнительный обзор Archi и ADOxx
 В этом обзоре проводится детальное сравнение двух инструментов для моделирования — **Archi** (www.archimatetool.com) и **ADOxx** (www.adoxx.org). Особое внимание уделяется возможностям развертывания web publisher server и редактированию метамодели.
-
----
 
 ## 1. Общая характеристика и назначение
 

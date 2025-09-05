@@ -5,6 +5,7 @@
 - [DOC/BPM/semantic](https://github.com/bpmbpm/doc/tree/main/BPM/semantic)
 - [LD-Концепты Semantic-BPM](https://github.com/bpmbpm/SemanticBPM/wiki/%D0%9A%D0%BE%D0%BD%D1%86%D0%B5%D0%BF%D1%82%D1%8B-%D1%80%D0%B5%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8-Semantic-BPM)
 - myTEST: [doc/test](https://github.com/bpmbpm/doc/tree/main/test) , [doc/Project/test](https://github.com/bpmbpm/doc/tree/main/Project/test) , [SemanticBPM/samples](https://github.com/bpmbpm/SemanticBPM/tree/main/samples)
+- https://www.w3.org/TR/2002/WD-rdf-schema-20020430/
 
 ### Semantic BPM (LD и окружение)
 Место Semantic BPM [картинкой, svg](https://github.com/bpmbpm/doc/tree/main/BPM/AI), а также [BPM/AI](https://github.com/bpmbpm/doc/blob/main/BPM/AI/README.md)
@@ -69,4 +70,6 @@ https://meganorm.ru/Data/642/64200.pdf
 https://npalib.ru/2016/12/06/gost-r-57323-2016-iso-ts-15926-11-2015-id273275/p12/ 
 https://docs.godotengine.org/ru/4.x/tutorials/scripting/gdscript/gdscript_basics.html
 
+- [CodeOntology: RDF-ization of Source Code](https://iswc2017.semanticweb.org/wp-content/uploads/papers/MainProceedings/271.pdf)
+- [Validating RDF data](https://book.validatingrdf.com/bookHtml011.html)
 

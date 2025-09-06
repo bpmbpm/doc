@@ -1,4 +1,4 @@
-## RDFtoDiagram 
+## RDFtoDiagram
 (не graph)
 ### RDF2DOT
 - https://github.com/giacomociti/rdf2dot

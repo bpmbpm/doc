@@ -1,0 +1,2 @@
+### Enterprise/Corporate Performance Management
+- [Обзор корпоративных систем планирования: 7 российских и западных решений для среднего и крупного бизнеса](https://habr.com/ru/articles/944828/) ; Oracle Hyperion Planning / IBM Planning Analytics, в чем разница между Cognos, который в 2008 году приобрела компания IBM и который теперь называется IBM Planning Analytics, и Oracle Hyperion Planning (OLAP-база от Arbor – продукт Essbase), появившемся на рынке чуть позже?

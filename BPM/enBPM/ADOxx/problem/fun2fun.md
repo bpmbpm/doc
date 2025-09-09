@@ -20,7 +20,7 @@ https://habr.com/ru/articles/810851/#comment_28783706
 Добавил:  
 ![ris](https://github.com/bpmbpm/doc/blob/main/BPM/enBPM/ADOxx/problem/pic/new_rel_1.png)
 
-Полагаю, что как то нужно редлактировать subSequent (его source \ target) или ссовить отдельную "стрелку" (отношение). 
+Полагаю, что как то нужно редактировать subSequent (его source \ target) или добавлять отдельную "стрелку" (отношение). 
 #### Смотрел
 - https://www.adoxx.org/documentation/01_getting_started/05_hello_world.html
 - https://www.adoxx.at/documentation/70_adoxx_components/20_Library_Management/Settings.html

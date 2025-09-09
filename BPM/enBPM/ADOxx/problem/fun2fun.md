@@ -15,10 +15,10 @@ https://habr.com/ru/articles/810851/#comment_28783706
 
 #### Делал
 Общий экран Library Management:  
-![ris](![ris](https://github.com/bpmbpm/doc/blob/main/BPM/enBPM/ADOxx/problem/pic/Function-Function_3.png)
+![ris](https://github.com/bpmbpm/doc/blob/main/BPM/enBPM/ADOxx/problem/pic/Function-Function_3.png)
 
 Добавил:  
-![ris](![ris](https://github.com/bpmbpm/doc/blob/main/BPM/enBPM/ADOxx/problem/pic/new_rel_1.png)
+![ris](https://github.com/bpmbpm/doc/blob/main/BPM/enBPM/ADOxx/problem/pic/new_rel_1.png)
 
 #### Смотрел
 - https://www.adoxx.org/documentation/01_getting_started/05_hello_world.html

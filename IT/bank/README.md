@@ -11,3 +11,4 @@ OpenAPI
 
 ### risk
 - https://github.com/bpmbpm/doc/tree/main/IT/reliability_risk/risk/850P
+- https://github.com/bpmbpm/doc/tree/main/EA/GOST/FTK

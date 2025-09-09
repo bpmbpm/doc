@@ -1,8 +1,8 @@
 ### fun2fun problem 
 3.2.2 Проблема ADOxx-EPC. Печально, что такое же непонимание ЕРС и у разработчиков ADOxx - одной из немногих BPM систем на open source.   
 У них нотация «как бы ЕРС» не позволяет рисовать два последовательных блока «function».  
-При попытке fun-fun соединения: 
-![ris](https://github.com/bpmbpm/doc/blob/)main/BPM/enBPM/ADOxx/problem/pic/ToolKit_v1.png)
+При попытке fun-fun соединения:  
+![ris](https://github.com/bpmbpm/doc/blob/main/BPM/enBPM/ADOxx/problem/pic/ToolKit_v1.png)
 
 
 Выводит ошибку:  

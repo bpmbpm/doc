@@ -21,6 +21,12 @@
 ``` :Х :имеетВсоставе :Y ``` или альтернатовно ``` :Y :входитВсостав :X ```  
     то например в VAD+ (специфичнсый VAD проекта draw-vad) на схеме процесса указываем объекти типа "Предваряющий процесс" и "Последующий процесс", которые входят в состав схемы процесса, но не входят в состав процесса (отображаемого этой схемой). Это пример Исключительного Заголовочного Nesting.  
 
+#### Итого
+4 варианта. Первые два: [без явного указания - кластерный и с явным указанием пита свзяи \ предиката:](https://help.bizzdesign.com/articles/#!horizzon-help/nested-objects-and-relations-in-archimate-models)
+![ris]](https://help.bizzdesign.com/resources/Storage/horizzon-help/nested-objects-and-relations-in-archimate-models/nested_objects_view_with%28out%29_relation.png)
+
+Плюс еще два: заголовочный и в составе струкнурной (иерархической) схемы 
+
 ### См. также
 - https://github.com/bpmbpm/doc/tree/main/BPM/enBPM/ADOxx
 - https://modeling-languages.com/

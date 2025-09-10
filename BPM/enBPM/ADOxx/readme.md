@@ -24,3 +24,4 @@ https://bee-up.omilab.org/home/docs/Bee-Up_Handbook_1.6.pdf
 
 ### Meta-model Concepts in ADOxx
 - https://adoxx.org/documentation/10_modelling_language/#meta-model-concepts-in-adoxx
+- [ADOxx meta-modelling Platform](https://model-engineering.info/publications/papers/BorkSinz2010_GraBaTs.pdf)

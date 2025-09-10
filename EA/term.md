@@ -14,3 +14,6 @@ Rational над ROSE: (с. 413) Так я узнал, что великие ар
 
 ### Enterprise Connectivity
 - [оркестрованное предприятие будущего](https://habr.com/ru/articles/943054/)
+
+### multi-tenancy 
+- [Мультитенантность SaaS](https://habr.com/ru/companies/ssp-soft/articles/944538/)

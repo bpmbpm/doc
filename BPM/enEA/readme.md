@@ -25,7 +25,7 @@
 4 варианта. Первые два: [без явного указания - кластерный и с явным указанием пита свзяи \ предиката:](https://help.bizzdesign.com/articles/#!horizzon-help/nested-objects-and-relations-in-archimate-models)
 ![ris](https://help.bizzdesign.com/resources/Storage/horizzon-help/nested-objects-and-relations-in-archimate-models/nested_objects_view_with%28out%29_relation.png)
 
-Плюс еще два: заголовочный и в составе струкнурной (иерархической) схемы 
+Плюс еще два: заголовочный и в составе структурной (иерархической) схемы. 
 
 ### См. также
 - https://github.com/bpmbpm/doc/tree/main/BPM/enBPM/ADOxx

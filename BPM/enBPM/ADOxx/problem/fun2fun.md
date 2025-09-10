@@ -24,4 +24,5 @@ https://habr.com/ru/articles/810851/#comment_28783706
 #### Смотрел
 - https://www.adoxx.org/documentation/01_getting_started/05_hello_world.html
 - https://www.adoxx.at/documentation/70_adoxx_components/20_Library_Management/Settings.html
-
+- https://adoxx.org/documentation/10_modelling_language/#meta-model-concepts-in-adoxx
+- https://bee-up.omilab.org/home/docs/Bee-Up_Handbook_1.6.pdf

@@ -37,7 +37,7 @@ https://habr.com/ru/articles/810851/#comment_28783706
 https://www.adoxx.org/documentation/10_modelling_language/23_special_attributes.html#class-cardinality
  
 Если у вас возникли проблемы с ADOxx, пожалуйста, свяжитесь с нами info@adoxx.org  
-adoxx_libraries:  https://www.adoxx.org/documentation/80_special_cases/adoxx_libraries.html
+EPC adoxx_libraries: https://www.adoxx.org/documentation/80_special_cases/adoxx_libraries.html#event-driven-process-chains-starting-library
 
 #### Использовать библиотеку Bee-Up
 В Bee-Up 1.7 вы можете подключить две функции в EPC с последующим подключением:

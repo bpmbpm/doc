@@ -184,8 +184,8 @@ GitHub рендерит такой код автоматически.
 https://www.astelica.ru/ru_online_bpmn_editor
 
 xml open:   
-- https://demo.bpmn.io/
-- https://www.astelica.ru/ru_online_bpmn_editor
+- https://demo.bpmn.io/  хорошо
+- https://www.astelica.ru/ru_online_bpmn_editor  плохо
   
 txt
 - https://habr.com/ru/articles/113658/

@@ -6,7 +6,7 @@ xml open:
 - https://www.astelica.ru/ru_online_bpmn_editor  плохо
   
 txt
-- https://habr.com/ru/articles/113658/
+- https://habr.com/ru/articles/113658/ https://habr.com/ru/articles/849948/ 
 - Импорт моделей в нотации BPMN https://www.bpsimulator.com/ru/help/bpmn.html
 - https://amspur.ru/openbpmn
 

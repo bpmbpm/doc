@@ -7,8 +7,8 @@
 #### blocking operation
 Формализация в workflow прерывания операции  
 https://habr.com/ru/articles/940152/comments/#comment_28819032  
-https://habr.com/ru/articles/940152/comments/#comment_28802142  
-
+https://habr.com/ru/articles/940152/comments/#comment_28802142 Это Шаблон 28 (Блокирующий дискриминатор)  
+https://habr.com/ru/articles/940152/comments/#comment_28816780 BPMN
 #### ai
 
 

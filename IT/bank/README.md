@@ -12,3 +12,6 @@ OpenAPI
 ### risk
 - https://github.com/bpmbpm/doc/tree/main/IT/reliability_risk/risk/850P
 - https://github.com/bpmbpm/doc/tree/main/EA/GOST/FTK
+
+### History
+- [Как брали в долг в дореволюционной России](https://habr.com/ru/companies/sberbank/articles/946112/#comment_28825850)

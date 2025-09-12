@@ -179,3 +179,16 @@ GitHub рендерит такой код автоматически.
 ---
 
 Если хотите, могу помочь с генерацией более сложной BPMN-схемы или с экспортом в изображение!
+
+#### tools
+https://www.astelica.ru/ru_online_bpmn_editor
+
+xml open:   
+- https://demo.bpmn.io/
+- https://www.astelica.ru/ru_online_bpmn_editor
+  
+txt
+- https://habr.com/ru/articles/113658/
+- Импорт моделей в нотации BPMN https://www.bpsimulator.com/ru/help/bpmn.html
+- https://amspur.ru/openbpmn
+

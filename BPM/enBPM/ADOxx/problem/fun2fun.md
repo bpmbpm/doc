@@ -32,6 +32,7 @@ https://habr.com/ru/articles/810851/#comment_28783706
 
 Если используете не Bee-Up, а какую-то другую библиотеку, то классы связей могут быть настроены таким образом, чтобы предотвратить такое соединение, например, указав разные исходные и целевые классы или указав мощность классов и применяя их после каждого действия моделирования в атрибуте библиотеки "Настройки по умолчанию":
 ![ris](https://github.com/bpmbpm/doc/blob/main/BPM/enBPM/ADOxx/problem/pic/ado2.png)
+
 Вы можете найти более подробную информацию об атрибутах библиотеки и мощности классов в документации ADOxx: https://www.adoxx.org/documentation/10_modelling_language/01_application_library.html#library-attributes
 https://www.adoxx.org/documentation/10_modelling_language/23_special_attributes.html#class-cardinality
  
@@ -40,6 +41,6 @@ https://www.adoxx.org/documentation/10_modelling_language/23_special_attributes.
 #### Использовать библиотеку Bee-Up
 В Bee-Up 1.7 вы можете подключить две функции в EPC с последующим подключением:
 ![ris](https://github.com/bpmbpm/doc/blob/main/BPM/enBPM/ADOxx/problem/pic/be1.png)
-Типа купите библиотеку Bee-Up 1.7 (10 евро) и там уже будет "все хорошо" (исправлена грубость по запрету в EPC соединения fun-fun).
 
+Типа: купите библиотеку Bee-Up 1.7 (10 евро) и там уже будет "все хорошо" (исправлена грубость по запрету в EPC соединения fun-fun).  
 Страница загрузки Bee-Up: https://bee-up.omilab.org/activities/bee-up/#download

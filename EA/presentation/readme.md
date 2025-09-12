@@ -1,3 +1,3 @@
 ### BS
-- «Что такое ArchiMate и зачем он нужен бизнес-архитектору? Часть 1» 5.09.2025 https://www.businessstudio.ru/upload/files/archimate%20_business_arch%201.pdf
-- «Корпоративная архитектура и ее частные проекции» 10.09.2025
+- про Capability. «Что такое ArchiMate и зачем он нужен бизнес-архитектору? Часть 1» 5.09.2025 https://www.businessstudio.ru/upload/files/archimate%20_business_arch%201.pdf
+- про орг-развитие и общий концепт. «Корпоративная архитектура и ее частные проекции» 10.09.2025 [Rutube](https://rutube.ru/video/c369c8d77d5867fcc951b89189124def/) ; [Youtube](https://youtu.be/0XrRyTWPfpY) ; [Презентация](https://www.businessstudio.ru/upload/files/Korporativnaya%20arhitektura%20i%20ee%20chastnye%20proekcii.pdf)

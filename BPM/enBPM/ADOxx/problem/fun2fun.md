@@ -43,5 +43,5 @@ EPC adoxx_libraries: https://www.adoxx.org/documentation/80_special_cases/adoxx_
 В Bee-Up 1.7 вы можете подключить две функции в EPC с последующим подключением:
 ![ris](https://github.com/bpmbpm/doc/blob/main/BPM/enBPM/ADOxx/problem/pic/be1.png)
 
-Типа: купите библиотеку Bee-Up 1.7 (10 евро) и там уже будет "все хорошо" (исправлена грубость по запрету в EPC соединения fun-fun).  
+Типа: купите библиотеку Bee-Up 1.7 (10 евро) и там уже будет "все хорошо" (исправлена глупость по запрету в EPC соединения fun-fun).  
 Страница загрузки Bee-Up: https://bee-up.omilab.org/activities/bee-up/#download

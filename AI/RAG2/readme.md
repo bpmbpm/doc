@@ -4,4 +4,4 @@
 
 ### RAG
 - [RAG (Retrieval Augmented Generation) — простое и понятное объяснение](https://habr.com/ru/articles/779526/)
-- 
+- [Прокачиваем RAG: тестируем техники и считаем их эффективность. Часть 1](https://habr.com/ru/articles/946888/)

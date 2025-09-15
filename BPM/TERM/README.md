@@ -1,6 +1,6 @@
 ## Business Process
-[Что такое процесс?](https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/process.md)
-
+- [Что такое процесс?](https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/process.md)
+- свойства: есть результат (понятный, измеримый) - он же цель; повторяемость (vs proect) ; показатели ; формализация, т.е. на "черный ящик" (vs capability)   
 ## Статьи эпохи Ренесанса BPM (ru)
 Это к истории возникновения термина BPM
 [И одно только слово твердит Айболит - BPM, BPM, BPM](https://www.itweek.ru/themes/detail.php?ID=71243)
@@ -21,3 +21,6 @@ semantics-based / semantics-driven enterprise information architecture
 - EAM = Enterprise Architecture Management, хотя параллельно переводят: [Enterprise Asset Management](https://www.tadviser.ru/index.php/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D1%8F:EAM-c%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0)  
 - [EAM house (structure, processes and organization), opengroup](https://www.opengroup.org/architecture/0404brus/presents/niemann/og_team02.pdf), см. домен "Process" Архитектуры предприятия.   
 - [EA, opengroup](https://www.opengroup.org/architecture-forum) ; [Lean IX](https://www.leanix.net/en/wiki/ea/enterprise-architecture) ; [ArchiMate 3.2 elements and relationships poster](https://bizzdesign.com/wiki/eam/what-is-enterprise-architecture-management/)
+
+### Model
+- это упрощение в виде формализма чего-либо (обычно из реальности) на каком - либо языке, обычно графическом (нотации).

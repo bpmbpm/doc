@@ -1,2 +1,2 @@
 ### Спор
-- [Цифровой вытрезвитель](https://habr.com/ru/articles/654699/](https://habr.com/ru/articles/654699/)
+- [Цифровой вытрезвитель](https://habr.com/ru/articles/654699/)

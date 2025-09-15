@@ -3,3 +3,4 @@
 
 ### также
 - [BPM/workflow/math](https://github.com/bpmbpm/doc/tree/main/BPM/workflow/math)
+- [Математика креативности](https://habr.com/ru/articles/946764/)

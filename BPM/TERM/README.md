@@ -3,7 +3,7 @@
 - свойства: есть результат (понятный, измеримый) - он же цель; повторяемость (vs proect) ; показатели ; формализация, т.е. на "черный ящик" (vs capability)   
 ## Статьи эпохи Ренесанса BPM (ru)
 Это к истории возникновения термина BPM
-[И одно только слово твердит Айболит - BPM, BPM, BPM](https://www.itweek.ru/themes/detail.php?ID=71243)
+[И одно только слово твердит Айболит - BPM, BPM, BPM](https://www.itweek.ru/themes/detail.php?ID=71243) ; см. также https://github.com/bpmbpm/doc/tree/main/BPM/BPMvsBPM
 
 ## Semantic Enterprise
 semantics-based / semantics-driven enterprise information architecture  

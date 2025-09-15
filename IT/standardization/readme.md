@@ -1,2 +1,10 @@
-
+### статьи
 - [Стандартизация информационных технологий внутри организации](https://habr.com/ru/articles/669346/) С момента выхода блестящей книги Николаса Карра «Блеск и нищета информационных технологий: Почему ИТ не являются конкурентным преимуществом» прошло 16 лет, но за это время мало что изменилось. Затраты на программное обеспечение (ПО) по-прежнему являются настоящей чёрной дырой для бюджетов компаний и государственных органов управления, ведь зачастую их конечный результат практически невозможно увидеть.
+- «Does IT Matter? Information Technology and the Corrosion of Competitive Advantage»  \ «ИТ не имеет значения» \ Блеск и нищета ИТ [1](https://www.klex.ru/a0q) ; [2](https://royallib.com/read/karr_nikolas/blesk_i_nishcheta_informatsionnih_tehnologiy_pochemu_it_ne_yavlyayutsya_konkurentnim_preimushchestvom.html#20480) ; [3](https://libking.ru/books/sci-/sci-business/92542-28-nikolas-karr-blesk-i-nishcheta-informatsionnyh-tehnologiy-pochemu-it-ne-yavlyayutsya-konkurentnym-preimushchestvom.html)  
+- обсуждения https://www.kommersant.ru/doc/862099
+
+#### term
+- [crowdsourcing](https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B0%D1%83%D0%B4%D1%81%D0%BE%D1%80%D1%81%D0%B8%D0%BD%D0%B3)
+
+- [Учебник CIO](https://4cio.ru/content/uchebnik_all_2.pdf)
+- [Сенаторов](https://www.cnews.ru/reviews/free/gov2007/int/cbr/)

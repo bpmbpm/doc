@@ -39,6 +39,7 @@ https://ailev.livejournal.com/955954.html Серия предыдущих пос
 - [о выборе Архимейта среди прочих архитектурных языков](http://ailev.livejournal.com/940819.html)
 - [дополнения второй версии](http://ailev.livejournal.com/978200.html)
 - [рассказ (видео)](http://incose-ru.livejournal.com/33568.html)
+- [ArchiMate & ISO 42010](https://habr.com/ru/companies/otus/articles/840214/)
 
-https://www.cfin.ru/itm/standards/ArchiMate.shtml Моделирование архитектуры предприятия. Обзор языка ArchiMate
+- https://www.cfin.ru/itm/standards/ArchiMate.shtml Моделирование архитектуры предприятия. Обзор языка ArchiMate
 

@@ -6,7 +6,8 @@
 
 ### статьи
 - [Автоматизируем работу с ArchiMate в CI пайплайнах](https://habr.com/ru/articles/583314/)
-
+- [Architecture as Code: моделируем архитектуру предприятия в ArchiMate](https://habr.com/ru/companies/otus/articles/885594/)
+- 
 ### Docs
 - [wiki](https://github.com/archimatetool/archi/wiki)
 - [User Guide 5.6.0](https://www.archimatetool.com/downloads/archi/Archi%20User%20Guide.pdf)
@@ -32,4 +33,9 @@
 ### Сравнение
 - https://github.com/bpmbpm/doc/blob/main/BPM/enEA/comparison.md
 ### Разное
-- [Architecture as Code: моделируем архитектуру предприятия в ArchiMate](https://habr.com/ru/companies/otus/articles/885594/)
+
+### coArchi
+- https://github.com/archimatetool/archi-modelrepository-plugin
+- https://github.com/archimatetool/archi-modelrepository-plugin2 ; [wiki/Concepts](https://github.com/archimatetool/archi-modelrepository-plugin2/wiki/Concepts)
+- https://github.com/archimatetool/archi-modelrepository-plugin2/wiki/Configuring-a-Remote-Repository
+- https://pkg.go.dev/github.com/dmazilov/archi-git-hooks

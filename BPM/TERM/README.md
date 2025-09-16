@@ -39,6 +39,10 @@ semantics-based / semantics-driven enterprise information architecture
 - [EAM house (structure, processes and organization), opengroup](https://www.opengroup.org/architecture/0404brus/presents/niemann/og_team02.pdf), см. домен "Process" Архитектуры предприятия.   
 - [EA, opengroup](https://www.opengroup.org/architecture-forum) ; [Lean IX](https://www.leanix.net/en/wiki/ea/enterprise-architecture) ; [ArchiMate 3.2 elements and relationships poster](https://bizzdesign.com/wiki/eam/what-is-enterprise-architecture-management/)
 
+## EAS
+- ERP [EAS (Enterprise Application Software)](https://compress.ru/article.aspx?id=22180) ; [wiki](https://en.wikipedia.org/wiki/Enterprise_software)
+- EAS = EA Tools, [Essential](https://enterprise-architecture.org/about-eas/)
+
 # 3 Model, Blueprint 
 ## Model
 - это упрощение в виде формализма чего-либо (обычно из реальности) на каком - либо языке, обычно графическом (нотации).

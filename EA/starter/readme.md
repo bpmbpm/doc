@@ -13,7 +13,7 @@
 - наличие хоть какого-то архитектурно репозитария, хотя бы в представлении archi (coArchi) или в виде excel (например, штатная в MS связка visio-excel).
 ##### Варианты free EA tools:  
 - FOSS: archi, [ADOxx](https://vienna.omilab.org/repo/files/WS2010/08_adoxx-as-metamodelling-platform_kuehn.pdf) \ [Team](https://austria.omilab.org/psm/content/team/download?view=download#) \ [ADOit](https://www.adoit-community.com/en/), Essential: https://enterprise-architecture.org/
-- граф-редакторы в связке с репозитарием, например, visio-excel. Может быть есть подобный плагин к drawio?
+- граф-редакторы в связке с репозитарием, например, visio-excel. Может быть есть подобный (excel или иные таблицы, ODBC и т.п.) плагин к drawio? Видел "большие" проекты по описанию архитектуры (и процессов компании и складского учета с планами этажей и других репозитариев с визуализацийе в visio), но не открытом доступе. 
 - community edition платных систем (PRO)  
 
 Речь про ИТ-архитектуру \ ИТ-архитекторов – как противопоставление Корпоративной архитектуре \ корпоративным архитекторам (бизнес-архитекторам), которые ближе к «миру BPM», см. [презентации](https://github.com/bpmbpm/doc/tree/main/EA/presentation#bs).     

@@ -1,7 +1,7 @@
 ### FOSS Tools
 - archi
 - ADOxx
-- Essential https://enterprise-architecture.org/
+- Essential https://enterprise-architecture.org/ ; [Essential Project](https://www.reddit.com/r/EnterpriseArchitect/comments/1h5z04c/essential_project_open_source_ea_tool/)
 
 ### Resource
 #### Architecture Weekly

@@ -1,7 +1,7 @@
 # 1 Process, function, capability
 ## Business Process
+- Основная: Что такое процесс? https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/process.md
 - [В толковый словарь Business Process Management: Бизнес-функция vs Бизнес-процесс](https://habr.com/ru/articles/763910/)
-- Что такое процесс? https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/process.md
 - [из SemanticBPM](https://github.com/bpmbpm/SemanticBPM/wiki/%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%B2#12-upd1-bpmbpm)
 - свойства: есть результат (понятный, измеримый) - он же цель; повторяемость (vs proect) ; показатели ; формализация, т.е. на "черный ящик" (vs capability)   
 

@@ -24,9 +24,6 @@
 - https://hd-tech.ru/ru/product/5?ysclid=mebpb3w5ec430666572
 - https://t.me/c/1304614627/28809
 
-### ArchiMate NEXT Specification
-- https://publications.opengroup.org/s250
-
 ### Разное
 ArchiMate по русски http://sewiki.ru/ArchiMate  
 https://ailev.livejournal.com/955954.html Серия предыдущих постингов "Архимейт по-русски" с глоссарием и прочими полезными материалами:  

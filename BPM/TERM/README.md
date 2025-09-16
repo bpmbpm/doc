@@ -1,16 +1,22 @@
+# 1 Process, function, capability
 ## Business Process
+- [В толковый словарь Business Process Management: Бизнес-функция vs Бизнес-процесс](https://habr.com/ru/articles/763910/)
 - Что такое процесс? https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/process.md
 - [из SemanticBPM](https://github.com/bpmbpm/SemanticBPM/wiki/%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%B2#12-upd1-bpmbpm)
 - свойства: есть результат (понятный, измеримый) - он же цель; повторяемость (vs proect) ; показатели ; формализация, т.е. на "черный ящик" (vs capability)   
-## Статьи эпохи Ренесанса BPM (ru)
-Это к истории возникновения термина BPM
-[И одно только слово твердит Айболит - BPM, BPM, BPM](https://www.itweek.ru/themes/detail.php?ID=71243) ; см. также https://github.com/bpmbpm/doc/tree/main/BPM/BPMvsBPM
+
+# 2 BPM, Enterprise, Architecture
+## BPM 
+Статьи эпохи Ренесанса BPM (ru). Это к истории возникновения термина BPM  
+- [И одно только слово твердит Айболит - BPM, BPM, BPM](https://www.itweek.ru/themes/detail.php?ID=71243) ;
+- см. также https://github.com/bpmbpm/doc/tree/main/BPM/BPMvsBPM
 
 ## Semantic Enterprise
 semantics-based / semantics-driven enterprise information architecture  
 К вопросу семантизации Предприятия: Семантизация предприятия - как одно из направлений Цифровой трансформации  
 [Почему информационной архитектуре вашего предприятия нужна семантическая модель, metaphacts](https://blog.metaphacts.com/how-a-semantic-model-can-elevate-your-enterprise-information-architecture), фрагменты см. ниже.
-### Enterprise information architecture (EIA)
+
+## Enterprise information architecture (EIA)
 Что такое информационная архитектура предприятия? 
 - metaphacts: в основе корпоративной информационной архитектуры лежит цифровой актив (digital asset), называемый семантическим слоем (или моделью), который содержит все необходимые метаданные от всех задействованных корпоративных систем и заинтересованных сторон для облегчения коммуникации, планирования и координации. Он позволяет вам моделировать, оценивать, структурировать, анализировать, организовывать, управлять и визуализировать данные и информационные активы организации в различных системах, технологиях, отделах, процессах и у заинтересованных сторон — все в формате, интерпретируемом человеком и машиной.  
 В основе EIA лежит семантическая модель знаний. EIA, основанная на семантической модели, преобразует это отображение корпоративных метаданных связанных ИТ-систем и процессов в мощный инструмент, который эффективно помогает вам принимать обоснованные бизнес-решения и проводить изменения на всем предприятии, от уровня высшего руководства до ИТ-команды.  
@@ -23,5 +29,6 @@ semantics-based / semantics-driven enterprise information architecture
 - [EAM house (structure, processes and organization), opengroup](https://www.opengroup.org/architecture/0404brus/presents/niemann/og_team02.pdf), см. домен "Process" Архитектуры предприятия.   
 - [EA, opengroup](https://www.opengroup.org/architecture-forum) ; [Lean IX](https://www.leanix.net/en/wiki/ea/enterprise-architecture) ; [ArchiMate 3.2 elements and relationships poster](https://bizzdesign.com/wiki/eam/what-is-enterprise-architecture-management/)
 
-### Model
+# 3 Model, Blueprint 
+## Model
 - это упрощение в виде формализма чего-либо (обычно из реальности) на каком - либо языке, обычно графическом (нотации).

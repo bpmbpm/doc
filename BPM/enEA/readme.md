@@ -2,7 +2,7 @@
 - archi
 - ADOxx
 - Essential https://enterprise-architecture.org/
-- 
+
 ### Resource
 #### Architecture Weekly
 - t.me/ArchitectureWeekly

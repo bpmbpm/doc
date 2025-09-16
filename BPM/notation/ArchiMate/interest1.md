@@ -24,7 +24,7 @@
 - https://hd-tech.ru/ru/product/5?ysclid=mebpb3w5ec430666572
 - https://t.me/c/1304614627/28809
 
-### ArchiMate® NEXT Specification
+### ArchiMate NEXT Specification
 - https://publications.opengroup.org/s250
 
 ### Разное

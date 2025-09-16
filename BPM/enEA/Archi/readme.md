@@ -19,7 +19,10 @@
 - [В Archi настройка языка невозможна, но есть несколько способов добиться чего-то похожего.](https://github.com/archimatetool/archi/wiki/ArchiMate-language-customization-in-Archi)
 - специализация:  в целом, можно строить теоретически собственные нотации с применением Archi - правда немножко заморечено:  
 нужно использовать элемент "группа" и навешивать на него специализации с привязкой соответствующего оформления (иконок)...   
-при этом для групп разрешены все типы связей. [ТГ, нужно вначале вступить](https://t.me/c/1304614627/29136)
+при этом для групп разрешены все типы связей. [ТГ, нужно вначале вступить](https://t.me/c/1304614627/29136)  
+Вроде как в 2021 (4.9) это исправили: 
+  - [Главной особенностью Archi 4.9 является поддержка специализаций концепций](https://www.archimatetool.com/blog/2021/10/12/archi-4-9/)
+  - [guide, Specializations Manager, c95](https://www.archimatetool.com/downloads/archi/Archi%20User%20Guide.pdf#page=95)
 
 ### ArchiMate
 - https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/interest1.md
@@ -28,3 +31,5 @@
 
 ### Сравнение
 - https://github.com/bpmbpm/doc/blob/main/BPM/enEA/comparison.md
+### Разное
+- [Architecture as Code: моделируем архитектуру предприятия в ArchiMate](https://habr.com/ru/companies/otus/articles/885594/)

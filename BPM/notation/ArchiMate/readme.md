@@ -1,5 +1,5 @@
 ### News
-ArchiMate® NEXT Specification [habr](https://habr.com/ru/posts/932602/) ; [opengroup](https://publications.opengroup.org/s250)
+ArchiMate NEXT Specification [habr](https://habr.com/ru/posts/932602/) ; [opengroup](https://publications.opengroup.org/s250)
 
 ### info
 - [ArchiMate 101: A Practical Introduction](https://archimate-community.pages.opengroup.org/workgroups/archimate-101/)

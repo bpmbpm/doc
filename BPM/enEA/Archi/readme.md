@@ -16,8 +16,8 @@
 - примеры к database-plugin с gevaertw.wordpress.com, [2018](https://gevaertw.wordpress.com/2018/12/10/querying-the-archi-db-to-get-relations/) ; [2019](https://gevaertw.wordpress.com/2019/08/09/generating-sql-queries-for-the-archi-database/)
 
 ### MetaModel
-- [В Archi настройка языка невозможна, но есть несколько способов добиться чего-то похожего.](https://github.com/archimatetool/archi/wiki/ArchiMate-language-customization-in-Archi)
-- специализация:  в целом, можно строить теоретически собственные нотации с применением Archi - правда немножко заморечено:  
+- [2019: В Archi настройка языка невозможна, но есть несколько способов добиться чего-то похожего.](https://github.com/archimatetool/archi/wiki/ArchiMate-language-customization-in-Archi)  
+специализация:  в целом, можно строить теоретически собственные нотации с применением Archi - правда немножко заморечено:  
 нужно использовать элемент "группа" и навешивать на него специализации с привязкой соответствующего оформления (иконок)...   
 при этом для групп разрешены все типы связей. [ТГ, нужно вначале вступить](https://t.me/c/1304614627/29136)  
 Вроде как в 2021 (4.9) это исправили: 

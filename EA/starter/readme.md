@@ -12,7 +12,7 @@
 - поддержка облегченного archimate, формализованного в Соглашении о моделировании;
 - наличие хоть какого-то архитектурно репозитария, хотя бы в представлении archi (coArchi) или в виде excel (например, штатная в MS связка visio-excel).
 ##### Варианты free EA tools:  
-- FOSS: archi, ADOxx, Essential: https://enterprise-architecture.org/
+- FOSS: archi, [ADOxx](https://vienna.omilab.org/repo/files/WS2010/08_adoxx-as-metamodelling-platform_kuehn.pdf) \ [Team](https://austria.omilab.org/psm/content/team/download?view=download#) \ [ADOit](https://www.adoit-community.com/en/), Essential: https://enterprise-architecture.org/
 - граф-редакторы в связке с репозитарием, например, visio-excel. Может быть есть подобный плагин к drawio?
 - community edition платных систем (PRO)  
 

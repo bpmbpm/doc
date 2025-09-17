@@ -4,7 +4,6 @@
 
 Ссылки:  
 - [SemanticBPM](https://habr.com/ru/articles/795883/) Раздел Ссылки: [1] Философия информации (не путать с теорией информации): Знания и (vs) информация. Знания об информации (Информация об информации, Знания о знаниях).
-https://habr.com/ru/articles/795883/  
 - https://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning
 
 ### 2 knowledge

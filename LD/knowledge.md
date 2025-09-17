@@ -1,4 +1,12 @@
-### knowledge
+### 1 knowledge representation
+Представление знаний (knowledge representation, см. [wiki](https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9)) возможно через формализмы представления знаний. Мы про точное и однозначное представление знаний, а не про «богатый русский язык» или набор табличек (от excel до реляционных баз).
+Наиболее популярным таким формализмом является стек Linked Data, включая RDF / OWL -  языки представления знаний, в основе которых семантический триплет.
+
+Ссылки:
+1 [SemanticBPM](https://habr.com/ru/articles/795883/) Раздел Ссылки: [1] Философия информации (не путать с теорией информации): Знания и (vs) информация. Знания об информации (Информация об информации, Знания о знаниях).
+https://habr.com/ru/articles/795883/
+
+### 2 knowledge
 Есть много статей типа: [Что такое информация?](https://habr.com/ru/articles/456276/) ; [Что такое информация?](https://habr.com/ru/companies/habr/articles/861576/) ; [Информация, как много в этом слове…](https://habr.com/ru/articles/713376/) ; 
 пирамид типа DIKW [data, information, knowledge, wisdom](https://ru.wikipedia.org/wiki/DIKW) или [DAIKI (Insight)](https://aimod2.com/docs/03-data-semantics/daiki-the-semantic-chain/), но ясности так и нет.
 Есть свод знаний по управлению данными DAMA-DMBOK (Data Administration Management Association - Data Management Body of Knowledge), но вот свода знаний по управлению знаниями - нет (а надо бы). 

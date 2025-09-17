@@ -3,9 +3,9 @@
 Наиболее популярным таким формализмом является стек Linked Data, включая RDF / OWL -  языки представления знаний, в основе которых семантический триплет.
 
 Ссылки:  
-1 [SemanticBPM](https://habr.com/ru/articles/795883/) Раздел Ссылки: [1] Философия информации (не путать с теорией информации): Знания и (vs) информация. Знания об информации (Информация об информации, Знания о знаниях).
-https://habr.com/ru/articles/795883/
-2 https://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning
+- [SemanticBPM](https://habr.com/ru/articles/795883/) Раздел Ссылки: [1] Философия информации (не путать с теорией информации): Знания и (vs) информация. Знания об информации (Информация об информации, Знания о знаниях).
+https://habr.com/ru/articles/795883/  
+- https://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning
 
 ### 2 knowledge
 Есть много статей типа: [Что такое информация?](https://habr.com/ru/articles/456276/) ; [Что такое информация?](https://habr.com/ru/companies/habr/articles/861576/) ; [Информация, как много в этом слове…](https://habr.com/ru/articles/713376/) ; 

@@ -21,3 +21,5 @@ mxGraph:
 https://github.com/jgraph/drawio/tree/dev
 For this try either Tldraw or Excalidraw.  
 https://itlogia.ru/article/poleznye_vozmozhnosti_servisa_drawio_dlya_itspecialistov
+
+https://github.com/bpmbpm/draw-vad

@@ -7,4 +7,4 @@ DOC
 
 Вопросы
 - [mxGraphModel.prototype.createId](https://stackoverflow.com/questions/47010800/mxgraph-javascript-function-for-id-value-for-the-cell)
-- [vHow to validate for un-connected edges to cell in mxgraph](https://stackoverflow.com/questions/56405363/how-to-validate-for-un-connected-edges-to-cell-in-mxgraph/56695556)
+- [How to validate for un-connected edges to cell in mxgraph](https://stackoverflow.com/questions/56405363/how-to-validate-for-un-connected-edges-to-cell-in-mxgraph/56695556)

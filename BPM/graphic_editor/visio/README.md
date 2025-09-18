@@ -20,7 +20,6 @@
 
 ### Alternatives
 - https://edrawmax.wondershare.com/visio-alternative/open-source-visio-alternative.html
-- https://edrawmax.wondershare.com/visio-alternative/open-source-visio-alternative.html
 - https://github.com/freegroup/draw2d
 - 
 ### также

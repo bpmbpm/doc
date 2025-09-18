@@ -24,3 +24,10 @@
   
 ### также
 - https://github.com/bpmbpm/doc/tree/main/Project/miniARIS#dia-editor
+
+### forum
+- https://visguy.com/vgforum/index.php
+
+### svg publish
+- https://visio.getbb.ru/viewtopic.php?f=30&t=1680
+- https://github.com/nbelyh/svgpublish-releases/releases ; https://unmanagedvisio.com/products/svg-publish/

@@ -80,6 +80,9 @@ MS сознательно не открывает visio viewer чтобы все
 Проект [draw-vad](https://github.com/bpmbpm/draw-vad)  
 Пример [интерфейса](https://bpmbpm.github.io/draw-vad/test/index13_v4.html) 
 
+#### 3 Другие варианты (в работе ...)
+Может быть какой то Archi Express (по аналогии с Aris Express) для MiniArc notation? 
+
 ### III MiniArc notation
 Подходы к созданию нотации miniArchiMate
 #### 1 Принципы

@@ -33,7 +33,7 @@
 ### Сравнение
 - https://github.com/bpmbpm/doc/blob/main/BPM/enEA/comparison.md
 ### Разное
-
+- [Export an Archimate view to be imported into draw.io #jarchi #drawio](https://gist.github.com/pmduque/68a6fd0f23112fe27392833f4de0b6e5)
 ### coArchi
 - https://github.com/archimatetool/archi-modelrepository-plugin
 - https://github.com/archimatetool/archi-modelrepository-plugin2 ; [wiki/Concepts](https://github.com/archimatetool/archi-modelrepository-plugin2/wiki/Concepts)

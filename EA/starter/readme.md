@@ -1,5 +1,5 @@
 ## starter kit
-### Concept
+### I Concept
 Сценарий: **Архитектор не с пустыми руками**  
 Допустим компания с нулевым уровнем зрелости описания ИТ-архитектуры нанимает себе архитектора.  
 Вариант 1. Если Архитектор с "пустыми руками", то первые полгода – год он будет заниматься методологией, выбором \ согласованием инструмента моделирования, а в оставшееся время вырабатывать архитектурные решения и их зарисовывать (где-то и как-то). Процесс закупки ЕА tool в крупных компаниях может составлять годы.   
@@ -15,6 +15,13 @@
 - FOSS: archi, [ADOxx](https://vienna.omilab.org/repo/files/WS2010/08_adoxx-as-metamodelling-platform_kuehn.pdf) \ [Team](https://austria.omilab.org/psm/content/team/download?view=download#) \ [ADOit](https://www.adoit-community.com/en/), Essential: https://enterprise-architecture.org/
 - граф-редакторы в связке с репозитарием, например, visio-excel. Может быть есть подобный (excel или иные таблицы, ODBC и т.п.) плагин к drawio? Видел "большие" проекты на штатной связке visio-excel по описанию архитектуры компании "в одном флаконе": от схем интеграций (с описанием потоков бизнес-данных) до схем размещения оборудования в стойках, но не открытом доступе. Таrже есть проекты visio-excel с процессами компании, складского учета (с планами этажей группы зданий, причем ткнув в excel на табуретку - попадаем на планировку комнаты с этой табуреткой) и других репозитариев на excel с визуализацией в visio 
 - community edition платных систем (PRO)  
+
+Отдельно можно отметить:
+- нечто устаревшее (иметь ввиду, и надеяться на "воскрешение проекта") https://marketplace.eclipse.org/content/archimate-papyrus
+- Free online
+  - https://online.visual-paradigm.com/ru/diagrams/features/archimate-tool/
+  - https://creately.com/lp/archimate-tool/
+  - https://plantuml.com/ru/archimate-diagram
 
 Речь про ИТ-архитектуру \ ИТ-архитекторов – как противопоставление Корпоративной архитектуре \ корпоративным архитекторам (бизнес-архитекторам), которые ближе к «миру BPM», см. [презентации](https://github.com/bpmbpm/doc/tree/main/EA/presentation#bs).     
 

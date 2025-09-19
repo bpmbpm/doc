@@ -79,6 +79,7 @@ MS сознательно не открывает visio viewer чтобы все
 #### 2 Drawio
 Проект [draw-vad](https://github.com/bpmbpm/draw-vad)  
 Пример [интерфейса](https://bpmbpm.github.io/draw-vad/test/index13_v4.html) 
+Как вариант, сделать мульти viewer который читает (или даже ведет репозитарий) файлы разных форматов: часть схем в drawio, часть в arch, часть еще в каком-либо. 
 
 #### 3 Другие варианты (в работе ...)
 Может быть какой то Archi Express (по аналогии с Aris Express) для MiniArc notation? 

@@ -17,7 +17,7 @@
 - community edition платных систем (PRO)  
 
 Отдельно можно отметить:
-- нечто устаревшее (иметь ввиду, и надеяться на "воскрешение проекта") https://marketplace.eclipse.org/content/archimate-papyrus
+- нечто устаревшее (иметь ввиду для сравнительно анализа) https://marketplace.eclipse.org/content/archimate-papyrus
 - Free online
   - https://online.visual-paradigm.com/ru/diagrams/features/archimate-tool/
   - https://creately.com/lp/archimate-tool/

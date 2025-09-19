@@ -12,8 +12,8 @@
 - поддержка облегченного archimate, формализованного в Соглашении о моделировании;
 - наличие хоть какого-то архитектурно репозитария, хотя бы в представлении archi (coArchi) или в виде excel (например, штатная в MS связка visio-excel).
 ##### Варианты free EA tools:  
-- FOSS: archi, [ADOxx](https://vienna.omilab.org/repo/files/WS2010/08_adoxx-as-metamodelling-platform_kuehn.pdf) \ [Team](https://austria.omilab.org/psm/content/team/download?view=download#) \ [ADOit](https://www.adoit-community.com/en/), Essential: https://enterprise-architecture.org/
-- граф-редакторы в связке с репозитарием, например, visio-excel. Может быть есть подобный (excel или иные таблицы, ODBC и т.п.) плагин к drawio? Видел "большие" проекты на штатной связке visio-excel по описанию архитектуры компании "в одном флаконе": от схем интеграций (с описанием потоков бизнес-данных) до схем размещения оборудования в стойках, но не открытом доступе. Таrже есть проекты visio-excel с процессами компании, складского учета (с планами этажей группы зданий, причем ткнув в excel на табуретку - попадаем на планировку комнаты с этой табуреткой) и других репозитариев на excel с визуализацией в visio 
+- FOSS: archi, [ADOxx](https://vienna.omilab.org/repo/files/WS2010/08_adoxx-as-metamodelling-platform_kuehn.pdf) \ [Team](https://austria.omilab.org/psm/content/team/download?view=download#) \ [ADOit](https://www.adoit-community.com/en/), [Essential](https://enterprise-architecture.org/)  
+- граф-редакторы в связке с репозитарием, например, visio-excel. Может быть есть подобный (excel или иные таблицы, ODBC и т.п.) плагин к drawio? Видел "большие" проекты на штатной связке visio-excel по описанию архитектуры компании "в одном флаконе": от схем интеграций (с описанием потоков бизнес-данных) до схем размещения оборудования в стойках, но не открытом доступе. Также есть проекты visio-excel с процессами компании (BPM), складского учета (с планами этажей группы зданий, причем ткнув в excel на табуретку - попадаем на планировку комнаты с этой табуреткой) и других репозитариев на excel с визуализацией в visio 
 - community edition платных систем (PRO)  
 
 Отдельно можно отметить:

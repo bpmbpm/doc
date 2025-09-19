@@ -77,7 +77,6 @@ MS сознательно не открывает visio viewer чтобы все
 
 #### 2 Drawio
 Проект [draw-vad](https://github.com/bpmbpm/draw-vad)
-…   
 
 ### III MiniArc notation
 Подходы к созданию нотации miniArchiMate

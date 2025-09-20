@@ -86,7 +86,7 @@ MS сознательно не открывает visio viewer чтобы все
 - интерактивные доски типа миро и даже семантические доски. Нужны системы, которые поддерживают нотации EA \ BPM
 
 ##### Проблемно  
-- нечто устаревшее (иметь ввиду для сравнительно анализа) https://marketplace.eclipse.org/content/archimate-papyrus
+- нечто устаревшее (лишь, чтобы иметь ввиду для сравнительно анализа) типа https://marketplace.eclipse.org/content/archimate-papyrus
 - Free online (обычно "серьезной" компании нужен On-premise, т.к. SAAS / on-cloud не гарантирует конфеденциальности, тем более на free тарифе)  
   - https://online.visual-paradigm.com/ru/diagrams/features/archimate-tool/
   - https://creately.com/lp/archimate-tool/

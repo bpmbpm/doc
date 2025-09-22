@@ -15,6 +15,8 @@
 
 Когда говорят про "черный ящик" в части процессов \ функций, то часто используют термин capability - типа результат понятен, а как получен - скрыто (неважно). См. https://github.com/bpmbpm/doc/tree/main/EA/GOST/version2#2-business-capabilities
 
+см. также https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/process.md
+
 # 2 BPM, Enterprise, Architecture
 ## BPM 
 Статьи эпохи Ренесанса BPM (ru). Это к истории возникновения термина BPM  

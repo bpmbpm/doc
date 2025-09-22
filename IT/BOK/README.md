@@ -25,4 +25,4 @@ Enterprise Architecture Body of Knowledge. Найти текст EABOK не уд
 
 ### см. также 
 - EA/BizArch https://github.com/bpmbpm/doc/tree/main/EA/BizArch
-- ITIL https://github.com/bpmbpm/doc/tree/main/IT/CIO
+- ITIL https://github.com/bpmbpm/doc/tree/main/IT/CIO/ITIL

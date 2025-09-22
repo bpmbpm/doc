@@ -1,9 +1,11 @@
 ## Что такое процесс?
-см. также:
+### см. также:
 - [Этот файл process.md](https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/process.md)
-- https://github.com/bpmbpm/doc/blob/main/BPM/TERM/README.md#1-process-function-capability 
-- Обсуждение тероминов [1.2 upd1 bpmbpm](https://github.com/bpmbpm/SemanticBPM/wiki/%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%B2#12-upd1-bpmbpm)
+- 1 Process, function, capability: https://github.com/bpmbpm/doc/blob/main/BPM/TERM/README.md#1-process-function-capability 
+- Обсуждение тероминов [1.2 upd1 bpmbpm для smev44](https://github.com/bpmbpm/SemanticBPM/wiki/%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%BE%D0%B2#12-upd1-bpmbpm)
+- [Repo MetaModel (TriG) из wiki SemanticBPM](https://github.com/bpmbpm/SemanticBPM/wiki/%D0%9C%D0%B5%D1%82%D0%B0%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D0%B2)
 ### 1 Процесс – функция – операция
+Действие - сининимы: процесс, функция, операция, задача и т.п. Activity (BPMN), function (EPC) и т.п.     
 Читаем Шеера:  
 **п. 4.1.1.1 Дерево функций (Function tree):**
 Функции могут быть описаны на разных уровнях агрегации. Объединение (прим: Accumulations - аккумуляция, агрегация) функций в виде бизнес-процессов или цепочек процессов образуют верхний уровень агрегации. Примером может служить обработка заказа клиента, от запроса клиента до доставки. Бизнес-процесс таким образом, представляет собой сложную функцию, которую можно разбить на подфункции, чтобы уменьшить ее сложность. Термин «функция» может использоваться на всех уровнях иерархии. Однако другие термины, такие как процедура, процесс, подфункция или элементарная функция также используются для обозначения уровня иерархии.

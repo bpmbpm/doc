@@ -2,7 +2,8 @@
 ## Data Obejct Example 
 - https://blog.visual-paradigm.com/ru/archimate-examples/ см. Представление интеграции приложений (динамические отношения) - “Data Object” показан в разных вариантах
 - https://help.bizzdesign.com/articles/#!horizzon-help/archimate-relationships/a/h1__2021255400
-- 
+**Ассоциативные отношения** Ассоциация представляет собой неопределённую связь или связь, не представленную другой связью ArchiMate. Связь ассоциации допускается между двумя элементами или **между связью и элементом**.
+
 ## type of scheme
 - [Функциональная архитектура](https://habr.com/ru/articles/818547/)
 - Схема интеграции. Flow - Связь, обозначающая передачу объекта (например, информации, товаров или денег) от одного элемента другому.
@@ -183,3 +184,7 @@
 - https://www.hosiaisluoma.fi/blog/useful-archimate-diagram-types/ ; https://www.hosiaisluoma.fi/blog/archimate-examples/
 - https://sparxsystems.com/resources/tutorials/archimate/
 - https://help.bizzdesign.com/articles/#!horizzon-help/archimate-relationships
+
+### example
+- https://smileham.co.uk/2019/04/03/archimate-example-figshare-implementation/
+- 

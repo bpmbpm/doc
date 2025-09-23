@@ -12,3 +12,6 @@
 - [storm](https://old.stormbpmn.com/marketing/pma/)
 - online
   - https://gdragomirov.ru/cmbp/
+
+### Подходы
+- [ВТБ](https://ppt-online.org/1513072)

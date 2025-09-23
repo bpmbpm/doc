@@ -1,7 +1,7 @@
-### MiniArc notation
+## MiniArc notation
 Начало см. https://github.com/bpmbpm/doc/blob/main/EA/starter/readme.md#iii-miniarc-notation
 
-#### 1 color element
+### 1 color element
 В archimate цвет опредляет layer \ domen - и это не очень хорошо. В [archimate NEXT](https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/readme.md#archimate-next-specification) "элементы поведения на всех уровнях объединили в общие элементы "сервис", "процесс", "функция" и "событие";" - и это правильно, т.е. цвет теперь один.    
 Хорошим шагом будет объединение **"процесс" и "функция"**, см. [process.md](https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/process.md)  
 Как выбрать цвет?  Генри Форд: "Цвет автомобиля может быть любым, при условии, что он черный"  

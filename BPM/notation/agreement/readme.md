@@ -1,6 +1,6 @@
 ### Подборка согласшений о Моделировании
 #### multi
-- [IDEF0/BPMN Репин](https://repin.guru/products/soglashenie-po-modelirovaniyu-biznes-protsessov/)
+- [IDEF0/BPMN В.Репин](https://repin.guru/products/soglashenie-po-modelirovaniyu-biznes-protsessov/)
 #### aris
 - Soglashenie_po_modelirovaniu_v_ARIS.pdf
 - EU Customs BPM in ARIS, User Guide: eu-customs-bpm-userguide.pdf

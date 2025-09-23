@@ -1,6 +1,6 @@
 ## ArchiMate
 ## Example
-- https://blog.visual-paradigm.com/ru/archimate-examples/ см. Представление интеграции приложений (динамические отношения)
+- https://blog.visual-paradigm.com/ru/archimate-examples/ см. Представление интеграции приложений (динамические отношения) - “Data Object” показан в разных вариантах
 
 ## Type
 - [Функциональная архитектура](https://habr.com/ru/articles/818547/)
@@ -177,3 +177,7 @@
 5. **Схема безопасности**
 * Используемые связи: доступ, зависимость, ассоциация
 * Основное назначение: моделирование политик безопасности
+
+### 3 relationship Type
+- https://www.hosiaisluoma.fi/blog/useful-archimate-diagram-types/
+- https://sparxsystems.com/resources/tutorials/archimate/

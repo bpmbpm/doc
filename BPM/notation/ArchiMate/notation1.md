@@ -187,4 +187,5 @@
 
 ### example
 - https://smileham.co.uk/2019/04/03/archimate-example-figshare-implementation/
-- 
+- https://hyperonomy.com/category/automated-enterprise-architecture-modeling/
+- https://www.researchgate.net/publication/331478330_Testing_the_definition_of_the_Gap_of_Changes_visualized_in_ArchiMate

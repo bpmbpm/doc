@@ -9,7 +9,7 @@
 ### info
 - https://www.businessstudio.ru/help/docs/current/doku.php/ru/manual/archimate
 - [Потенциал точек зрения ArchiMate: От обычного EA-моделирования до PLM](https://habr.com/ru/companies/otus/articles/840214/)
-- https://www.cfin.ru/itm/standards/ArchiMate.shtml
+- https://www.cfin.ru/itm/standards/ArchiMate.shtml динамические отношения - их два поток (передача) и триггер (запуск)
 
 ## 1 Типы схем в ArchiMate и их особенности
 
@@ -179,5 +179,6 @@
 * Основное назначение: моделирование политик безопасности
 
 ### 3 relationship Type
-- https://www.hosiaisluoma.fi/blog/useful-archimate-diagram-types/
+- https://www.hosiaisluoma.fi/blog/useful-archimate-diagram-types/ ; https://www.hosiaisluoma.fi/blog/archimate-examples/
 - https://sparxsystems.com/resources/tutorials/archimate/
+- https://help.bizzdesign.com/articles/#!horizzon-help/archimate-relationships

@@ -8,3 +8,7 @@ https://github.com/bpmbpm/doc/tree/main/BPM/APQC/PCF
 ### ЦБ
 - https://github.com/bpmbpm/doc/tree/main/IT/reliability_risk/risk/850P
 - https://github.com/bpmbpm/doc/tree/main/EA/GOST/FTK
+
+### Примеры
+- [Р.Исаев](https://www.businessstudio.ru/articles/article/kompleksnaya_biznes_model_banka_novye_resheniya_i_/)
+  

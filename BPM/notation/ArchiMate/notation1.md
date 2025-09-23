@@ -3,7 +3,7 @@
 - https://blog.visual-paradigm.com/ru/archimate-examples/ см. Представление интеграции приложений (динамические отношения) - “Data Object” показан в разных вариантах
 - https://help.bizzdesign.com/articles/#!horizzon-help/archimate-relationships/a/h1__2021255400
 - 
-## Type
+## type of scheme
 - [Функциональная архитектура](https://habr.com/ru/articles/818547/)
 - Схема интеграции. Flow - Связь, обозначающая передачу объекта (например, информации, товаров или денег) от одного элемента другому.
   https://www.businessstudio.ru/help/docs/current/doku.php/ru/manual/archimate/junctions

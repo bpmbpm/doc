@@ -1,7 +1,8 @@
 ### Подборка согласшение о Моделировании
 #### multi
 - [IDEF0/BPMN Репин](https://repin.guru/products/soglashenie-po-modelirovaniyu-biznes-protsessov/)
-- 
+### aris
+- [Моделирование документов в ARIS 7.2 / Modeling of documents in ARIS 7.2, В.Царев](https://vtsarev.ru/load/aris/generacija_dokumentov_s_pomoshhju_skriptov_v_aris/modelirovanie_dokumentov_v_aris_7_2/2-1-0-10)
 
 #### mono
 #### Archimate

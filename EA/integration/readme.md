@@ -9,7 +9,7 @@ IBM ACE, ранее известный как IBM Integration Bus (IIB), WebSphe
 - После версии 2.1 номера версий стали более синхронизированы с остальным семейством WebSphere и перешли на версию 5.0. Название было изменено на «WebSphere Business Integration Message Broker» (WBIMB). В этой версии среда разработки была переработана с использованием Eclipse
 - С версии 6.0 продукт известен как «WebSphere Message Broker». 2009 - WMB 7.0 ; 2011 - WMB 8.0
 - 2013 ребрендинг. С 9 версии IBM Message Broker становится IBM Integration Bus (IIB)
-- с выпуском IBM Integration Bus прекращен продукт IBM WebSphere Enterprise Service Bus
+- с выпуском IBM Integration Bus прекращен продукт **IBM WebSphere Enterprise Service Bus**
 - В 2018 году был выпущен IBM App Connect Enterprise V11, который позволил развернуть интеграционные сервисы на основе микросервисов-контейнеров, а также продолжил поддержку развёртываний Enterprise Service Bus (ESB).
 -  2021 - IBM ACE V12 
 

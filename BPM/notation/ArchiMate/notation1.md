@@ -1,6 +1,6 @@
 ## ArchiMate
 ## Example
-- https://blog.visual-paradigm.com/ru/archimate-examples/
+- https://blog.visual-paradigm.com/ru/archimate-examples/ см. Представление интеграции приложений (динамические отношения)
 
 ## Type
 - [Функциональная архитектура](https://habr.com/ru/articles/818547/)

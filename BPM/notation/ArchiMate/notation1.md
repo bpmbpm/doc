@@ -1,4 +1,10 @@
 ## ArchiMate
+## Example
+- https://blog.visual-paradigm.com/ru/archimate-examples/
+
+## Type
+- [Функциональная архитектура](https://habr.com/ru/articles/818547/)
+  
 ## 1 Типы схем в ArchiMate и их особенности
 
 ### Основные типы диаграмм

@@ -8,7 +8,7 @@
   https://www.businessstudio.ru/help/docs/current/doku.php/ru/manual/archimate/junctions
 ### info
 - https://www.businessstudio.ru/help/docs/current/doku.php/ru/manual/archimate
-- https://habr.com/ru/companies/otus/articles/840214/
+- [Потенциал точек зрения ArchiMate: От обычного EA-моделирования до PLM](https://habr.com/ru/companies/otus/articles/840214/)
 - https://www.cfin.ru/itm/standards/ArchiMate.shtml
 
 ## 1 Типы схем в ArchiMate и их особенности

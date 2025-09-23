@@ -9,4 +9,4 @@
 Это позволит в зоопарке нотаций (процессных из BPM и архитектурных из EA с элементами поведения Behavior Elements, отражающими динамику) сразу понимать "природу" элемента.  
 
 ### 2 types of scheme
-Какие типы схем (номенклатура) можно отрисовывать в archimate? 
+Какие типы схем (номенклатура) можно отрисовывать в archimate? См. [notation1.md](https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/notation1.md)

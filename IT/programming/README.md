@@ -14,3 +14,6 @@ https://gitverse.ru/features/gigacode/
 
 ### UTF-8
 - [Как же прекрасна структура UTF-8](https://habr.com/ru/companies/ruvds/articles/947644/)
+
+### SQL
+- [SAP Hana Calculation View](https://habr.com/ru/articles/948888/) Тебе не надо будет писать SQL.

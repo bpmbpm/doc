@@ -4,7 +4,8 @@
 
 ## Type
 - [Функциональная архитектура](https://habr.com/ru/articles/818547/)
-  
+- Схема интеграции. Flow - Связь, обозначающая передачу объекта (например, информации, товаров или денег) от одного элемента другому.
+  https://www.businessstudio.ru/help/docs/current/doku.php/ru/manual/archimate/junctions
 ### info
 - https://www.businessstudio.ru/help/docs/current/doku.php/ru/manual/archimate
 - https://habr.com/ru/companies/otus/articles/840214/

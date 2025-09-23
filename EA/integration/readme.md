@@ -1,6 +1,6 @@
 ### integration
 ### IBM
-### Основные различия продуктов IBM
+### 1 Основные различия продуктов IBM
 IBM MQ / WESB (IBM WebSphere ESB) / IIB = IBM Integration Bus (ранее WebSphere Message Broker)
 #### IBM MQ
 **Основное назначение**: система очередей сообщений для асинхронного обмена данными между приложениями
@@ -61,3 +61,8 @@ IBM MQ / WESB (IBM WebSphere ESB) / IIB = IBM Integration Bus (ранее WebSph
   * Требований к расширенной обработке данных
   * Крупномасштабных проектов
   * Необходимости в гибких настройках
+
+### 2 info
+#### IIB
+- [IBM Integration Bus и с чем его едят](https://habr.com/ru/articles/445138/) Data Mapping
+- [Построение простого flow в IBM App Connect (Integration Bus)](https://habr.com/ru/articles/578234/)

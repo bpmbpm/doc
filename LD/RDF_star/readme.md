@@ -87,3 +87,8 @@ select distinct ?protocol {
 - https://mermaid.js.org/syntax/flowchart.html
 - https://habr.com/ru/articles/652867/
 
+#### RDF
+- https://www.vvsu.ru/files/71C1ABA2-F84E-40EB-88B1-1D5DE0BA3FB1.pdf
+- https://www.w3.org/2007/03/rdf_concepts_ru/Overview.html#ref-rdf-primer
+- https://trinidata.ru/tech_properties.htm
+- 

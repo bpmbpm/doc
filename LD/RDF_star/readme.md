@@ -9,8 +9,7 @@
 ##### mermaid
 ```mermaid
 graph TD;
-    system1-->system2 : Cool;
-
+    system1 -- JDBC -->system2;
 ```
 
 ##### Необъектная связь
@@ -43,4 +42,6 @@ graph TD;
 
 
 https://github.com/mermaid-js/mermaid
+https://mermaid.js.org/syntax/flowchart.html
+https://habr.com/ru/articles/652867/
 

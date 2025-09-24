@@ -1,4 +1,4 @@
-serialization formats
+## serialization formats
 ### TriG
 #### Base
 - wiki https://en.wikipedia.org/wiki/TriG_(syntax) 
@@ -19,4 +19,11 @@ serialization formats
 
 #### Также
 - [RDF Schema 1.1](https://www.w3.org/TR/rdf-schema/)
-- 
+
+## reification
+Знания о свойствах. RDF Reification  
+1) Изначально заложена в RDF в виде класса rdf:Statement и его свойств.
+2) RDF*
+В настоящее время RDF* практически стандарт.
+``` :bob :married :alice .
+ <<:bob :married :alice>> :marriageDate "2021-01-01"^^xsd:date . ```

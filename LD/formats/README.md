@@ -26,7 +26,9 @@
 2) RDF*
 В настоящее время RDF* практически стандарт.
 ``` :bob :married :alice .
- <<:bob :married :alice>> :marriageDate "2021-01-01"^^xsd:date . ```
+ <<:bob :married :alice>> :marriageDate "2021-01-01"^^xsd:date .
+```
+
 - https://www.w3.org/wiki/RdfReification
 - [migalkin Лекция 4. Реификация, Wikidata, Валидация](https://migalkin.github.io/kgcourse2021/lectures/lecture4)
 

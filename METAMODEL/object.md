@@ -20,5 +20,6 @@ vs
 ``` 
 
  #### info
- - https://trinidata.ru/tech_properties.htm
- - https://habr.com/ru/companies/otus/articles/755440/ ; https://habr.com/ru/articles/49769/
+- https://trinidata.ru/tech_properties.htm
+- https://habr.com/ru/companies/otus/articles/755440/ ; https://habr.com/ru/articles/49769/
+- https://github.com/bpmbpm/doc/blob/main/LD/formats/README.md#reification

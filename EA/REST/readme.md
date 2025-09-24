@@ -1,6 +1,6 @@
 ### REST API
 - Передача подходящего состояния, Representational State Transfer — «передача репрезентативного состояния» или «передача состояния представления» [wiki](https://ru.wikipedia.org/wiki/REST)
-
+- [Секреты создания эффективного REST API: гайд для системных аналитиков ПСБ](https://habr.com/ru/companies/psb/articles/949246/)
 #### framework
 - [Разработка RESTful API: как использовать ExpressJS и другие фреймворки для создания RESTful API](https://habr.com/ru/articles/768976/)
   - REST (Representational State Transfer) — это архитектурный стиль, разработанный Роем Филдингом в диссертации 2000 года.

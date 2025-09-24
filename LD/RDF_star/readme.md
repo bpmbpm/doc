@@ -9,7 +9,7 @@
 ##### mermaid
 ```mermaid
 graph TD;
-    A-->B;
+    system1-->system2 : Cool;
 
 ```
 

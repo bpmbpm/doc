@@ -14,7 +14,8 @@
 :system1 :link :system2 .
 ```
 vs
-``` :system1 :link12 :system2 .
+```
+:system1 :link12 :system2 .
 :link12 rdf:subPropertyOf :link .
 ``` 
 

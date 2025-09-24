@@ -20,7 +20,6 @@ graph TD;
 
 :system1 rdf:type :system .
 :system2 rdf:type :system .
-
 ```
 ##### Объектная связь
 Связь имеет свой id, свойства и т.п.  
@@ -57,11 +56,10 @@ select distinct ?protocol {
     :protocol ?protocol ;
   .
 }
-
-
 ```
 
 #### RDF star
+```
 @prefix : <https://foo#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -81,7 +79,7 @@ select distinct ?protocol {
 :link a rdf:Property .
 :jdbc a :Protocol .
 :soap a :Protocol .
-
+```
 
  
 #### mermaid

@@ -6,9 +6,21 @@
 ### example
 #### link
 Допустим есть две системы (database), соединенные линком, например, JDBC. Как показать эту связь на "языке знаний" (linked data)?  
+##### mermaid
+``` mermaid
+graph TD;
+    A-->B;
+
+```
+
 ##### Необъектная связь
+```
+@prefix : <foo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
+:system1 :link :system2 .
 
+```
 ##### Объектная связь
 Связь имеет свой id, свойства и т.п.
 

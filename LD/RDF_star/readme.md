@@ -7,7 +7,7 @@
 #### link
 Допустим есть две системы (database), соединенные линком, например, JDBC. Как показать эту связь на "языке знаний" (linked data)?  
 ##### mermaid
-``` mermaid
+```mermaid
 graph TD;
     A-->B;
 
@@ -40,3 +40,7 @@ graph TD;
 :link a rdf:Property .
 :jdbc a :Protocol .
 ```
+
+
+https://github.com/mermaid-js/mermaid
+

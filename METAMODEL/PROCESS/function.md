@@ -1,3 +1,3 @@
 ### Function
 
-![ris](/pic/photo_function.jpg)
+![ris](//pic/photo_function.jpg)

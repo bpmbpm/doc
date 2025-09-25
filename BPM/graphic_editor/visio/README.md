@@ -17,8 +17,8 @@
 - https://www.visiocafe.com/ ;
 - https://habr.com/ru/articles/51332/ ; https://kdemon.github.io/pages/stencil.html ; https://visioport.ru/sklad/ ; https://premiumline-cabling.com/ru/news-new-visio-power-distribution-unit-stencils-are-available/ ;
 - https://www.visiocafe.com/
-- Archimate: 
-- BPMN: BPM/notation/BPMN/visio.md
+- Archimate: https://github.com/bpmbpm/doc/tree/main/BPM/notation/ArchiMate#archimate-visio-stencils
+- BPMN: https://github.com/bpmbpm/doc/blob/main/BPM/notation/BPMN/visio.md
 
 ### Alternatives
 - https://edrawmax.wondershare.com/visio-alternative/open-source-visio-alternative.html

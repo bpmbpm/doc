@@ -16,6 +16,7 @@
 - [visual-paradigm](https://www.visual-paradigm.com/support/documents/vpuserguide/4455/4409/86501_useofnesting.html)
   - https://online.visual-paradigm.com/ru/diagrams/templates/archimate-diagram/infrastructure-view-nesting/
 - [sparx](https://sparxsystems.com/enterprise_architect_user_guide/17.1/modeling_languages/nesting.html)
+  - forum https://sparxsystems.com/forums/smf/index.php?topic=41087.0 
 - [Horizzon \ bizzdesign](https://help.bizzdesign.com/articles/#!horizzon-help/nested-objects-and-relations-in-archimate-models/a/h1__1594387577) Semantical nesting (однотипные объекты во вложении) & Graphical nesting
    - https://help.bizzdesign.com/articles/#!horizzon-help/modeling-a-nested-view
 - Archi (вроде есть), какой раздел ? [pdf](https://www.archimatetool.com/downloads/archi/Archi%20User%20Guide.pdf)
@@ -39,3 +40,5 @@
 - https://github.com/bpmbpm/doc/tree/main/BPM/enBPM/ADOxx
 - https://modeling-languages.com/
 - https://t.me/c/1304614627/29075 Архитектурный Вавилон, в поисках общего языка
+- «Архитектура предприятия в действии» Марка Ланкхорста 
+- https://sparxsystems.com/resources/user-guides/16.1/model-domains/languages/archimate.pdf Create and Visualize Enterprise Architecture Models, Views and Viewpoints

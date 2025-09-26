@@ -34,3 +34,9 @@ https://studfile.net/preview/6354105/page:11/
 
 https://www.orbussoftware.com/docs/default-source/blogs/wp0070.pdf?sfvrsn=99656985_0 стр.10 Figure 18: Data Flow, represented with Data Associations and data objects  
 https://www.bpmnquickguide.com/quickguide/bpmn-quick-guide/association
+
+Удивляет, что одно и тоже:  передача документа / сообщения показано тремя разными способами:
+- ассоциация (ненаправленная) к потоку сообщений
+- ассоциация (ненаправленная) к потоку управления
+- ассоциация направленная
+В ерс все проще.

@@ -16,7 +16,8 @@
 Назначение: Используется для связи артефактов (например, объектов данных) с элементами потока управления. Показывает, что объект данных используется, изменяется или передается в рамках процесса.
 Обозначение: Пунктирная линия без стрелки.
 
-https://studfile.net/preview/6354105/page:11/  
+https://elma365.com/ru/bpmn2/7_2/  
+https://studfile.net/preview/6354105/page:11/    
 Данные на диаграмме могут быть представлены любыми из следующих четырех элементов:
 1. Объект данных (Data Objects)
 2. Входные данные (Data Inputs)
@@ -30,3 +31,6 @@ https://studfile.net/preview/6354105/page:11/
 4. Ассоциация данных (Data Associations).
 
 Графический язык моделирования бизнес-процессов BPMN. Спецификация https://plansys.ru/download/BPMN_notation.pdf стр.83
+
+https://www.orbussoftware.com/docs/default-source/blogs/wp0070.pdf?sfvrsn=99656985_0 стр.10 Figure 18: Data Flow, represented with Data Associations and data objects  
+https://www.bpmnquickguide.com/quickguide/bpmn-quick-guide/association

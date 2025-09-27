@@ -39,4 +39,5 @@ https://www.bpmnquickguide.com/quickguide/bpmn-quick-guide/association
 - ассоциация (ненаправленная) к потоку сообщений
 - ассоциация (ненаправленная) к потоку управления
 - ассоциация направленная
+  [ris1](pic/BPMN_data_object.jpg)  
 В ерс все проще.

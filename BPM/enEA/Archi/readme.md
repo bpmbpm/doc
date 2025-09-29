@@ -29,7 +29,6 @@
 
 ### ArchiMate
 - https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/interest1.md
-- https://github.com/bpmbpm/doc/tree/main/BPM/enEA/Archi
 - [Data accuracy assessment using enterprise architecture](https://www.researchgate.net/publication/220478871_Data_accuracy_assessment_using_enterprise_architecture)  
 
 ### Сравнение

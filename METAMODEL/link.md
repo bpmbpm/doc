@@ -6,3 +6,6 @@ MoScript (2011) - текстовый DSL для написания скрипт�
 ## Business Process Definition Metamodel (BPDM)
 - [wiki](https://en.wikipedia.org/wiki/Business_Process_Definition_Metamodel)
 - [omg](https://www.omg.org/spec/BPDM/1.0/About-BPDM)
+
+### Eclipse Modeling Framework
+- [Разработка метамодели с помощью Eclipse Modeling Framework (и немного про моделирование данных)](https://habr.com/ru/companies/cit/articles/266433/)

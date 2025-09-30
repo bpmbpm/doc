@@ -14,4 +14,4 @@ File:
 https://www.nato.int/nato_static_fl2014/assets/pdf/2025/4/pdf/2504-NAFv4-ArchiMate.pdf 
 - [ArchiMate Modeling Guide For the NATO Architecture Framework Version 4, ArchitectureCapabilityTeam Digital Policy Committee 30/04/2025](https://www.nato.int/nato_static_fl2014/assets/pdf/2025/4/pdf/2504-NAFv4-ArchiMate.pdf)
 
-METAMODEL также см. 
+METAMODEL также см. https://github.com/bpmbpm/doc/tree/main/METAMODEL

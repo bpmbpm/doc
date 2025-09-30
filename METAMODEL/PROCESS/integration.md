@@ -3,7 +3,7 @@
 
 ### Как показывают в EPC и ArchiMate
 - [Understanding Dynamic Relationships in ArchiMate: Triggering and Flow](https://www.archimetric.com/understanding-dynamic-relationships-in-archimate-triggering-and-flow/)
-- EPC-fun: function.md
+- EPC-fun: /function.md
 
 ![ris1](fff)
 

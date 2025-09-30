@@ -5,10 +5,10 @@
 - [Understanding Dynamic Relationships in ArchiMate: Triggering and Flow](https://www.archimetric.com/understanding-dynamic-relationships-in-archimate-triggering-and-flow/)
 - EPC-fun: [function.md](https://github.com/bpmbpm/doc/edit/main/METAMODEL/PROCESS/function.md)
 
-![ris1](fff)
+![ris1](pic/INT_relation_1.svg)
 
 ### Онтологическая картинка
 
-![ris1](fff)
+![ris1](INT_fun_link_1c.svg)
 
 

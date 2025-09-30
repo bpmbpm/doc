@@ -1,6 +1,7 @@
 ### MetaModel
 - https://github.com/archimatetool/archi/tree/master/com.archimatetool.model/model
 - [Understanding the ArchiMate 3.2 Metamodel: A Guide to Behavior and Structure Elements](https://www.archimetric.com/understanding-the-archimate-3-2-metamodel-a-guide-to-behavior-and-structure-elements/) 
+- pdf, Коптелов https://www.businessstudio.ru/upload/iblock/65c/%D0%9A%D0%BE%D0%BF%D1%82%D0%B5%D0%BB%D0%BE%D0%B2.pdf
 
 ### Пояснения по нотации
 - [Understanding Dynamic Relationships in ArchiMate: Triggering and Flow](https://www.archimetric.com/understanding-dynamic-relationships-in-archimate-triggering-and-flow/)

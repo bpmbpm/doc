@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Создано Microsoft Visio, экспорт SVG fun_link_1c.svg hi -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="11.6929in" height="8.26772in"
+		viewBox="0 0 841.89 595.276" xml:space="preserve" color-interpolation-filters="sRGB" class="st29">
+	<v:documentProperties v:langID="1049" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvConvertTheme"/>
+			<v:ud v:nameU="msvLastAppliedDataGraphic" v:val="VT4()"/>
+			<v:ud v:nameU="msvNoApplyDataGraphicAfterLink" v:val="VT0(1):5"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#80ff80;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st2 {fill:#000000;font-family:Calibri;font-size:1.00001em}
+		.st3 {marker-end:url(#mrkr4-12);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st4 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.08695652173913}
+		.st5 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
+		.st6 {fill:#000000;font-family:Calibri;font-size:0.666664em}
+		.st7 {fill:#f2f2f2;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st8 {marker-end:url(#mrkr1-23);stroke:#548bd4;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st9 {fill:#548bd4;fill-opacity:1;stroke:#548bd4;stroke-opacity:1;stroke-width:0.08695652173913}
+		.st10 {fill:#000000;font-family:Arial Narrow;font-size:0.833336em}
+		.st11 {fill:#c6d8f0}
+		.st12 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st13 {stroke:#00b050;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st14 {font-size:1em}
+		.st15 {fill:#ffff80}
+		.st16 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st17 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st18 {fill:#000000;font-family:Calibri;font-size:1.00001em;font-weight:bold}
+		.st19 {font-size:1em;font-weight:normal}
+		.st20 {font-size:0.916665em;font-weight:normal}
+		.st21 {font-size:1em;font-weight:bold}
+		.st22 {fill:#ffffff;stroke:#a5a5a5;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st23 {fill:#000000;font-family:Calibri;font-size:0.833336em}
+		.st24 {stroke:#a5a5a5;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st25 {marker-end:url(#mrkr5-351);stroke:#000000;stroke-dasharray:5.25,3.75;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st26 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.22935779816514}
+		.st27 {fill:#000000;font-family:Calibri;font-size:0.833336em;font-style:italic}
+		.st28 {stroke:#000000;stroke-dasharray:0,6;stroke-linecap:round;stroke-linejoin:round;stroke-width:2}
+		.st29 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend4">
+			<path d="M 2 1 L 0 0 L 2 -1 L 2 1 " style="stroke:none"/>
+		</g>
+		<marker id="mrkr4-12" class="st4" v:arrowType="4" v:arrowSize="2" v:setback="23" refX="-23" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-11.5,-11.5) "/>
+		</marker>
+		<g id="lend1">
+			<path d="M 1 -1 L 0 0 L 1 1 " style="stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+		</g>
+		<marker id="mrkr1-23" class="st9" v:arrowType="1" v:arrowSize="2" orient="auto" markerUnits="strokeWidth"
+				overflow="visible">
+			<use xlink:href="#lend1" transform="scale(-11.5,-11.5) "/>
+		</marker>
+		<g id="lend5">
+			<path d="M 2 1 L 0 0 L 1.98117 -0.993387 C 1.67173 -0.364515 1.67301 0.372641 1.98465 1.00043 " style="stroke:none"/>
+		</g>
+		<marker id="mrkr5-351" class="st26" v:arrowType="5" v:arrowSize="2" v:setback="7.15" refX="-7.15" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend5" transform="scale(-4.36,-4.36) "/>
+		</marker>
+	</defs>
+	<g v:mID="6" v:index="1" v:groupContext="foregroundPage">
+		<v:userDefs>
+			<v:ud v:nameU="msvDGCalloutGap" v:val="VT0(0.0625):26"/>
+		</v:userDefs>
+		<title>1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="Блок-схема" v:index="0"/>
+		<v:layer v:name="Соединительная линия" v:index="1"/>
+		<v:layer v:name="Рисунок, связанный с данными" v:index="2"/>
+		<v:layer v:name="Connector" v:index="3"/>
+		<g id="shape1-1" v:mID="1" v:groupContext="shape" transform="translate(110.608,-135.049)">
+			<title>Функция</title>
+			<desc>funX</desc>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="36.822" cy="570.674" width="73.65" height="49.2034"/>
+			<path d="M73.25 579.76 L73.25 561.17 a0.39685 0.39685 -180 1 0 0 -0.793701 L73.25 555.18 A9.11173 9.11173 -180 0 0 64.14
+						 546.07 L9.47 546.07 A9.11173 9.11173 -180 0 0 0.35 555.18 L0.35 560.37 a0.39685 0.39685 -180 0 0 -4.82947E-15
+						 0.788926 L0.35 579.65 a0.39685 0.39685 -180 0 0 -2.94209E-15 0.788926 L0.35 586.16 A9.11173 9.11173 -180
+						 0 0 9.47 595.28 L64.14 595.28 A9.11173 9.11173 -180 0 0 73.25 586.16 L73.25 580.55 a0.39685 0.39685 -180
+						 1 0 0 -0.793701 Z" class="st1"/>
+			<text x="25.57" y="574.27" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>funX</text>		</g>
+		<g id="shape2-4" v:mID="2" v:groupContext="shape" transform="translate(110.608,-50.0092)">
+			<title>Функция.2</title>
+			<desc>funY</desc>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="36.822" cy="570.674" width="73.65" height="49.2034"/>
+			<path d="M73.25 579.76 L73.25 561.17 a0.39685 0.39685 -180 1 0 0 -0.793701 L73.25 555.18 A9.11173 9.11173 -180 0 0 64.14
+						 546.07 L9.47 546.07 A9.11173 9.11173 -180 0 0 0.35 555.18 L0.35 560.37 a0.39685 0.39685 -180 0 0 -4.82947E-15
+						 0.788926 L0.35 579.65 a0.39685 0.39685 -180 0 0 -2.94209E-15 0.788926 L0.35 586.16 A9.11173 9.11173 -180
+						 0 0 9.47 595.28 L64.14 595.28 A9.11173 9.11173 -180 0 0 73.25 586.16 L73.25 580.55 a0.39685 0.39685 -180
+						 1 0 0 -0.793701 Z" class="st1"/>
+			<text x="25.76" y="574.27" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>funY</text>		</g>
+		<g id="shape3-7" v:mID="3" v:groupContext="shape" v:layerMember="1" transform="translate(140.485,-135.049)">
+			<title>Динамическая соединительная линия</title>
+			<desc>WF-link</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="7.08661" cy="613.194" width="40" height="17.6036"/>
+			<path d="M7.09 595.28 L7.09 625.59" class="st3"/>
+			<rect v:rectContext="textBkgnd" x="-5.29025" y="608.394" width="24.7536" height="9.59985" class="st5"/>
+			<text x="-5.29" y="615.59" class="st6" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>WF-link</text>		</g>
+		<g id="shape4-15" v:mID="4" v:groupContext="shape" transform="translate(28.3465,-99.2126)">
+			<title>Документ электронный (файл)</title>
+			<desc>doc1</desc>
+			<v:userDefs>
+				<v:ud v:nameU="Corner" v:prompt="" v:val="VT0(0.19685039370079):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="28.3465" cy="576.378" width="56.7" height="37.7953"/>
+			<path d="M0 595.28 L56.69 595.28 L56.69 557.48 L14.17 557.48 L0 571.65 L0 595.28 Z" class="st7"/>
+			<text x="16.45" y="579.98" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>doc1</text>		</g>
+		<g id="shape5-18" v:mID="5" v:groupContext="shape" v:layerMember="3" transform="translate(110.961,-160.484)">
+			<title>Соединитель направленный</title>
+			<desc>fun-doc</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="-35.5514" cy="595.276" width="50" height="20.0036"/>
+			<path d="M0 595.28 L-42.93 595.28 A11.3386 11.3386 -180 0 0 -54.27 606.61 L-54.27 618.75" class="st8"/>
+			<text x="-49.23" y="598.28" class="st10" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>fun-doc</text>		</g>
+		<g id="shape6-25" v:mID="6" v:groupContext="shape" v:layerMember="3" transform="translate(56.6929,-99.2126)">
+			<title>Соединитель направленный.6</title>
+			<desc>doc-fun</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="18.5714" cy="619.043" width="50" height="20.0036"/>
+			<path d="M0 595.28 L0 607.7 A11.3386 11.3386 -180 0 0 11.34 619.04 L54.27 619.04" class="st8"/>
+			<text x="4.89" y="622.04" class="st10" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>doc-fun</text>		</g>
+		<g id="shape7-31" v:mID="7" v:groupContext="shape" transform="translate(209.876,-135.765)">
+			<title>Информационная система</title>
+			<desc>sysA</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="37.0742" cy="585.205" width="74.15" height="20.1409"/>
+			<path d="M0 595.28 L74.15 595.28 L74.15 575.13 L0 575.13 L0 595.28 Z" class="st11"/>
+			<path d="M0 595.28 L74.15 595.28 L74.15 575.13 L0 575.13 L0 595.28" class="st12"/>
+			<path d="M2.97 595.28 L2.97 575.13" class="st12"/>
+			<path d="M5.93 595.28 L5.93 575.13" class="st12"/>
+			<path d="M68.22 595.28 L68.22 575.13" class="st12"/>
+			<path d="M71.18 595.28 L71.18 575.13" class="st12"/>
+			<text x="26.19" y="588.81" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>sysA</text>		</g>
+		<g id="shape9-39" v:mID="9" v:groupContext="shape" v:layerMember="3" transform="translate(209.876,-140.888)">
+			<title>Соединитель направленный.9</title>
+			<desc>fun- sys</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="-12.174" cy="586.645" width="50" height="32.0037"/>
+			<path d="M0 590.33 L-8.49 590.33 A2.13939 2.13939 0 0 1 -10.63 588.19 L-10.63 588.19 A2.13939 2.13939 -180 0 0 -12.77
+						 586.05 L-25.63 586.05" class="st13"/>
+			<text x="-19.24" y="583.65" class="st10" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>fun-<v:newlineChar/><tspan
+						x="-18.33" dy="1.2em" class="st14">sys</tspan></text>		</g>
+		<g id="shape10-44" v:mID="10" v:groupContext="shape" transform="translate(209.876,-50.7252)">
+			<title>Информационная система.10</title>
+			<desc>sysB</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="37.0742" cy="585.205" width="74.15" height="20.1409"/>
+			<path d="M0 595.28 L74.15 595.28 L74.15 575.13 L0 575.13 L0 595.28 Z" class="st11"/>
+			<path d="M0 595.28 L74.15 595.28 L74.15 575.13 L0 575.13 L0 595.28" class="st12"/>
+			<path d="M2.97 595.28 L2.97 575.13" class="st12"/>
+			<path d="M5.93 595.28 L5.93 575.13" class="st12"/>
+			<path d="M68.22 595.28 L68.22 575.13" class="st12"/>
+			<path d="M71.18 595.28 L71.18 575.13" class="st12"/>
+			<text x="26.4" y="588.81" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>sysB</text>		</g>
+		<g id="shape11-52" v:mID="11" v:groupContext="shape" v:layerMember="3" transform="translate(209.876,-55.8485)">
+			<title>Соединитель направленный.11</title>
+			<desc>fun- sys</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="-12.174" cy="586.645" width="50" height="32.0037"/>
+			<path d="M0 590.33 L-8.49 590.33 A2.13939 2.13939 0 0 1 -10.63 588.19 L-10.63 588.19 A2.13939 2.13939 -180 0 0 -12.77
+						 586.05 L-25.63 586.05" class="st13"/>
+			<text x="-19.24" y="583.65" class="st10" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>fun-<v:newlineChar/><tspan
+						x="-18.33" dy="1.2em" class="st14">sys</tspan></text>		</g>
+		<g id="shape12-57" v:mID="12" v:groupContext="shape" transform="translate(111.941,-499.286)">
+			<title>Функция.12</title>
+			<desc>fun</desc>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="36.822" cy="570.674" width="73.65" height="49.2034"/>
+			<path d="M73.25 579.76 L73.25 561.17 a0.39685 0.39685 -180 1 0 0 -0.793701 L73.25 555.18 A9.11173 9.11173 -180 0 0 64.14
+						 546.07 L9.47 546.07 A9.11173 9.11173 -180 0 0 0.35 555.18 L0.35 560.37 a0.39685 0.39685 -180 0 0 -4.82947E-15
+						 0.788926 L0.35 579.65 a0.39685 0.39685 -180 0 0 -2.94209E-15 0.788926 L0.35 586.16 A9.11173 9.11173 -180
+						 0 0 9.47 595.28 L64.14 595.28 A9.11173 9.11173 -180 0 0 73.25 586.16 L73.25 580.55 a0.39685 0.39685 -180
+						 1 0 0 -0.793701 Z" class="st1"/>
+			<text x="28.69" y="574.27" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>fun</text>		</g>
+		<g id="shape13-60" v:mID="13" v:groupContext="shape" transform="translate(205.456,-499.286)">
+			<title>Информационная система.13</title>
+			<desc>sys</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="37.0742" cy="585.205" width="74.15" height="20.1409"/>
+			<path d="M0 595.28 L74.15 595.28 L74.15 575.13 L0 575.13 L0 595.28 Z" class="st11"/>
+			<path d="M0 595.28 L74.15 595.28 L74.15 575.13 L0 575.13 L0 595.28" class="st12"/>
+			<path d="M2.97 595.28 L2.97 575.13" class="st12"/>
+			<path d="M5.93 595.28 L5.93 575.13" class="st12"/>
+			<path d="M68.22 595.28 L68.22 575.13" class="st12"/>
+			<path d="M71.18 595.28 L71.18 575.13" class="st12"/>
+			<text x="29.67" y="588.81" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>sys</text>		</g>
+		<g id="shape14-68" v:mID="14" v:groupContext="shape" v:layerMember="3" transform="translate(205.456,-504.767)">
+			<title>Соединитель направленный.14</title>
+			<path d="M0 590.69 L-8.13 590.69 A2.49739 2.49739 0 0 1 -10.63 588.19 L-10.63 588.19 A2.49739 2.49739 -180 0 0 -13.13
+						 585.69 L-19.87 585.69" class="st13"/>
+		</g>
+		<g id="shape15-71" v:mID="15" v:groupContext="shape" transform="translate(29.4094,-504.01)">
+			<title>Документ электронный (файл).15</title>
+			<desc>doc</desc>
+			<v:userDefs>
+				<v:ud v:nameU="Corner" v:prompt="" v:val="VT0(0.19685039370079):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="28.3465" cy="576.378" width="56.7" height="37.7953"/>
+			<path d="M0 595.28 L56.69 595.28 L56.69 557.48 L14.17 557.48 L0 571.65 L0 595.28 Z" class="st7"/>
+			<text x="19.49" y="579.98" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>doc</text>		</g>
+		<g id="shape16-74" v:mID="16" v:groupContext="shape" v:layerMember="3" transform="translate(111.983,-502.627)">
+			<title>Соединитель направленный.16</title>
+			<desc>out</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="-12.9402" cy="588.189" width="50" height="20.0036"/>
+			<path d="M0 588.19 L-25.88 588.19" class="st8"/>
+			<text x="-18.64" y="591.19" class="st10" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>out</text>		</g>
+		<g id="shape17-80" v:mID="17" v:groupContext="shape" v:layerMember="3" transform="translate(86.1024,-526.193)">
+			<title>Соединитель направленный.17</title>
+			<desc>in</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="12.4547" cy="587.282" width="50" height="20.0036"/>
+			<path d="M0 589.1 L0 588.19 a0.906874 0.906874 0 0 1 0.906874 -0.906874 L26.19 587.28" class="st8"/>
+			<text x="9.26" y="590.28" class="st10" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>in</text>		</g>
+		<g id="shape19-86" v:mID="19" v:groupContext="shape" v:layerMember="0" transform="translate(205.866,-527.076)">
+			<title>Подразделение</title>
+			<desc>role</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="24.7146" cy="584.291" width="38.45" height="21.9685"/>
+			<path d="M43.94 584.29 A21.9685 10.9843 -180 1 0 0 584.29 A21.9685 10.9843 -180 1 0 43.94 584.29 Z" class="st15"/>
+			<path d="M43.94 584.29 A21.9685 10.9843 -180 1 0 0 584.29 A21.9685 10.9843 -180 1 0 43.94 584.29" class="st16"/>
+			<path d="M5.49 577.1 L5.49 591.5" class="st16"/>
+			<text x="15.1" y="587.89" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>role</text>		</g>
+		<g id="shape20-91" v:mID="20" v:groupContext="shape" v:layerMember="1" transform="translate(141.818,-573.121)">
+			<title>Динамическая соединительная линия.20</title>
+			<desc>WF-link</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="7.08661" cy="607.591" width="40" height="17.6036"/>
+			<path d="M7.09 595.28 L7.09 614.39" class="st3"/>
+			<rect v:rectContext="textBkgnd" x="-5.29025" y="602.792" width="24.7536" height="9.59985" class="st5"/>
+			<text x="-5.29" y="609.99" class="st6" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>WF-link</text>		</g>
+		<g id="shape21-98" v:mID="21" v:groupContext="shape" v:layerMember="1" transform="translate(141.818,-499.286)">
+			<title>Динамическая соединительная линия.21</title>
+			<desc>WF-link</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="7.08661" cy="607.591" width="40" height="17.6036"/>
+			<path d="M7.09 595.28 L7.09 614.39" class="st3"/>
+			<rect v:rectContext="textBkgnd" x="-5.29025" y="602.792" width="24.7536" height="9.59985" class="st5"/>
+			<text x="-5.29" y="609.99" class="st6" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>WF-link</text>		</g>
+		<g id="shape22-105" v:mID="22" v:groupContext="shape" v:layerMember="3" transform="translate(205.867,-543.065)">
+			<title>Соединитель направленный.22</title>
+			<path d="M0 600.28 L-8.55 600.28 A2.08191 2.08191 -180 0 0 -10.63 602.36 L-10.63 602.36 A2.08191 2.08191 0 0 1 -12.71
+						 604.44 L-20.3 604.44" class="st13"/>
+		</g>
+		<g id="shape23-108" v:mID="23" v:groupContext="shape" transform="translate(16.2992,-396.85)">
+			<title>Лист.23</title>
+			<desc>fun = function, operation, activity, task etc doc = document,...</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="140.669" cy="557.008" width="281.34" height="76.5354"/>
+			<rect x="0" y="518.74" width="281.339" height="76.5354" class="st17"/>
+			<text x="4" y="533.54" class="st2" v:langID="1033"><v:paragraph/><v:tabList/>fun = function<tspan class="st14"
+						v:langID="1049">, </tspan>operation, activity, task etc <v:newlineChar/><tspan x="4" dy="1.2em"
+						class="st14">doc </tspan>= document, Data Object, Information etc<v:newlineChar/><tspan x="4" dy="1.2em"
+						class="st14">sys </tspan>= system (it-system), tool etc<v:newlineChar/><tspan x="4" dy="1.2em" class="st14">role </tspan>= actor<v:newlineChar/><tspan
+						x="4" dy="1.2em" class="st14">WF </tspan>= workflow</text>		</g>
+		<g id="shape26-116" v:mID="26" v:groupContext="shape" transform="translate(64.8985,-368.504)">
+			<title>Лист.26</title>
+			<desc>a) Function &#38; base links</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="95.1098" cy="581.102" width="190.22" height="28.3465"/>
+			<rect x="0" y="566.929" width="190.22" height="28.3465" class="st17"/>
+			<text x="4" y="581.73" class="st18" v:langID="1033"><v:paragraph/><v:tabList/>a) Function &#38; base links  </text>		</g>
+		<g id="shape27-119" v:mID="27" v:groupContext="shape" transform="translate(297.638,-552.756)">
+			<title>Лист.27</title>
+			<desc>base links (основные предикаты): :doc-fun = doc поступаетВФун...</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="139.606" cy="581.102" width="279.22" height="28.3465"/>
+			<rect x="0" y="566.929" width="279.213" height="28.3465" class="st17"/>
+			<text x="4" y="581.73" class="st18" v:langID="1033"><v:paragraph/><v:tabList/>base links<tspan class="st19"> </tspan><tspan
+						class="st19">(</tspan><tspan class="st19" v:langID="1049">основные предикаты</tspan><tspan class="st19">)</tspan><tspan
+						class="st19" v:langID="1049">:<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st14" v:langID="1049">:</tspan>doc-fun<tspan
+						class="st19"> </tspan><tspan class="st19">= </tspan><tspan class="st19">doc </tspan><tspan class="st19"
+						v:langID="1049">поступаетВФункцию </tspan><tspan class="st19">fun <v:lf/></tspan><tspan x="4" dy="1.2em"
+						class="st19">Alt </tspan>:fun&#60;doc<tspan class="st19"> </tspan><tspan class="st19">= </tspan><tspan
+						class="st19">fun </tspan><tspan class="st19" v:langID="1049">имеетНаВходе</tspan><tspan class="st19"> </tspan><tspan
+						class="st19">doc<v:newlineChar/></tspan><tspan x="4" dy="1.227em" class="st20" v:langID="1049">Примечание</tspan><tspan
+						class="st20" v:langID="1049">: </tspan><tspan class="st20" v:langID="1049">обычно первым указывается </tspan><tspan
+						class="st20">source</tspan><tspan class="st20" v:langID="1049"> </tspan><tspan class="st20" v:langID="1049">или </tspan><tspan
+						x="4" dy="1.2em" class="st20" v:langID="1049">&#34;</tspan><tspan class="st20" v:langID="1049">главный элемент</tspan><tspan
+						class="st20" v:langID="1049">&#34;</tspan><tspan class="st20" v:langID="1049">, </tspan><tspan class="st20"
+						v:langID="1049">но </tspan><tspan class="st20" v:langID="1049">&#34;</tspan><tspan class="st20">&#60;</tspan><tspan
+						class="st20" v:langID="1049">&#34;</tspan><tspan class="st20"> </tspan><tspan class="st20" v:langID="1049">уточняет направление </tspan><tspan
+						x="4" dy="1.2em" class="st20" v:langID="1049">связывания </tspan><tspan class="st20" v:langID="1049">(</tspan><tspan
+						class="st20" v:langID="1049">для направленных связей</tspan><tspan class="st20" v:langID="1049">)</tspan><tspan
+						class="st20"> </tspan><tspan x="4" dy="1.175em" class="st14">:</tspan>fun-doc <tspan class="st19"
+						v:langID="1049">(</tspan><tspan class="st19">fun</tspan><tspan class="st19">2</tspan><tspan class="st19">doc</tspan><tspan
+						class="st19">) = </tspan><tspan class="st19">fun </tspan><tspan class="st19" v:langID="1049">ИмеетНаВыходе </tspan><tspan
+						class="st19">doc<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st19">Alt </tspan>:doc&#60;fun <tspan
+						class="st19">= </tspan><tspan class="st19">doc </tspan><tspan class="st19" v:langID="1049">поступаетСВыхода </tspan><tspan
+						class="st19">fun<v:newlineChar/><v:newlineChar/></tspan><tspan x="4" dy="2.4em" class="st14"
+						v:langID="1049">:</tspan>fun-role <tspan class="st19">= </tspan><tspan class="st19">fun </tspan><tspan
+						class="st19" v:langID="1049">исполняется </tspan><tspan class="st19">role <v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st19">Alt </tspan><tspan class="st19" v:langID="1049">:</tspan>role-fun<tspan
+						class="st19"> </tspan><tspan class="st19">= </tspan><tspan class="st19">role </tspan><tspan class="st19"
+						v:langID="1049">исполняет </tspan><tspan class="st19">fun<v:newlineChar/><v:newlineChar/></tspan><tspan
+						x="4" dy="2.4em" class="st14" v:langID="1049">:</tspan>fun-sys<tspan class="st19"> </tspan><tspan
+						class="st19">= </tspan><tspan class="st19">fun </tspan><tspan class="st19" v:langID="1049">использует </tspan><tspan
+						class="st19">sys<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st19">Alt</tspan> :sys-fun<tspan
+						class="st19"> </tspan><tspan class="st19">= </tspan><tspan class="st19">sys </tspan><tspan class="st19"
+						v:langID="1049">реализует </tspan><tspan class="st19">fun</tspan></text>		</g>
+		<g id="shape34-199" v:mID="34" v:groupContext="shape" transform="translate(294.915,-155.906)">
+			<title>Лист.34</title>
+			<desc>Три домена: doc (docflow), fun (workflow), system (it-system)...</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="132.594" cy="581.102" width="265.19" height="28.3465"/>
+			<rect x="0" y="566.929" width="265.189" height="28.3465" class="st17"/>
+			<text x="4" y="581.73" class="st2" v:langID="1049"><v:paragraph/><v:tabList/>Три домена: <tspan class="st14"
+						v:langID="1033">doc </tspan><tspan class="st14" v:langID="1033">(</tspan><tspan class="st14"
+						v:langID="1033">docflow</tspan><tspan class="st14" v:langID="1033">)</tspan><tspan class="st14"
+						v:langID="1033">, </tspan><tspan class="st14" v:langID="1033">fun </tspan><tspan class="st14"
+						v:langID="1033">(</tspan><tspan class="st14" v:langID="1033">workflow</tspan><tspan class="st14"
+						v:langID="1033">)</tspan><tspan class="st14" v:langID="1033">, </tspan><tspan class="st14" v:langID="1033">system </tspan><tspan
+						x="4" dy="1.2em" class="st14" v:langID="1033">(</tspan><tspan class="st14" v:langID="1033">it</tspan><tspan
+						class="st14" v:langID="1033">-</tspan><tspan class="st14" v:langID="1033">system</tspan><tspan class="st14"
+						v:langID="1033">)<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st14">Все связи </tspan><tspan
+						class="st21">междоменные</tspan>, только <tspan class="st14" v:langID="1033">WF</tspan><tspan class="st14"
+						v:langID="1033">-</tspan><tspan class="st14" v:langID="1033">link </tspan><tspan class="st14"
+						v:langID="1033">(</tspan><tspan class="st14" v:langID="1033">fun</tspan><tspan class="st14" v:langID="1033">-</tspan><tspan
+						class="st14" v:langID="1033">fun</tspan><tspan class="st14" v:langID="1033">) </tspan><tspan x="4"
+						dy="1.2em" class="st14">внутридоменный<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st14">Связи интеграций </tspan>(тип связей с схемах <tspan
+						x="4" dy="1.2em" class="st14">интеграций систем</tspan>): <v:newlineChar/><tspan x="4" dy="1.2em"
+						class="st14">Экспресс</tspan>:<tspan class="st14" v:langID="1033"> </tspan><tspan class="st14"
+						v:langID="1033">sys</tspan><tspan class="st14" v:langID="1033">-</tspan><tspan class="st14" v:langID="1033">sys c </tspan>указанием <tspan
+						class="st14" v:langID="1033">doc </tspan>и его атрибутов<v:newlineChar/><tspan x="4" dy="1.2em"
+						class="st14" v:langID="1033">sys</tspan><tspan class="st14" v:langID="1033">-</tspan><tspan class="st14"
+						v:langID="1033">(</tspan><tspan class="st14" v:langID="1033">doc</tspan><tspan class="st14" v:langID="1033">)</tspan><tspan
+						class="st14" v:langID="1033">-</tspan><tspan class="st14" v:langID="1033">sys<v:newlineChar/></tspan><tspan
+						x="4" dy="1.2em" class="st14">на основе</tspan>: <tspan class="st14" v:langID="1033">sysA</tspan><tspan
+						class="st14" v:langID="1033">-</tspan><tspan class="st14" v:langID="1033">funX</tspan><tspan class="st14"
+						v:langID="1033">-</tspan><tspan class="st14" v:langID="1033">doc</tspan><tspan class="st14" v:langID="1033">1</tspan><tspan
+						class="st14" v:langID="1033">-</tspan><tspan class="st14" v:langID="1033">funY</tspan><tspan class="st14"
+						v:langID="1033">-</tspan><tspan class="st14" v:langID="1033">sysB </tspan> </text>		</g>
+		<g id="shape36-255" v:mID="36" v:groupContext="shape" transform="translate(110.878,-273.036)">
+			<title>Функция.36</title>
+			<desc>fun</desc>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="36.822" cy="570.674" width="73.65" height="49.2034"/>
+			<path d="M73.25 579.76 L73.25 561.17 a0.39685 0.39685 -180 1 0 0 -0.793701 L73.25 555.18 A9.11173 9.11173 -180 0 0 64.14
+						 546.07 L9.47 546.07 A9.11173 9.11173 -180 0 0 0.35 555.18 L0.35 560.37 a0.39685 0.39685 -180 0 0 -4.82947E-15
+						 0.788926 L0.35 579.65 a0.39685 0.39685 -180 0 0 -2.94209E-15 0.788926 L0.35 586.16 A9.11173 9.11173 -180
+						 0 0 9.47 595.28 L64.14 595.28 A9.11173 9.11173 -180 0 0 73.25 586.16 L73.25 580.55 a0.39685 0.39685 -180
+						 1 0 0 -0.793701 Z" class="st1"/>
+			<text x="28.69" y="574.27" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>fun</text>		</g>
+		<g id="shape37-258" v:mID="37" v:groupContext="shape" transform="translate(204.393,-273.036)">
+			<title>Информационная система.37</title>
+			<desc>sys</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="37.0742" cy="585.205" width="74.15" height="20.1409"/>
+			<path d="M0 595.28 L74.15 595.28 L74.15 575.13 L0 575.13 L0 595.28 Z" class="st11"/>
+			<path d="M0 595.28 L74.15 595.28 L74.15 575.13 L0 575.13 L0 595.28" class="st12"/>
+			<path d="M2.97 595.28 L2.97 575.13" class="st12"/>
+			<path d="M5.93 595.28 L5.93 575.13" class="st12"/>
+			<path d="M68.22 595.28 L68.22 575.13" class="st12"/>
+			<path d="M71.18 595.28 L71.18 575.13" class="st12"/>
+			<text x="29.67" y="588.81" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>sys</text>		</g>
+		<g id="shape38-266" v:mID="38" v:groupContext="shape" v:layerMember="3" transform="translate(204.393,-278.517)">
+			<title>Соединитель направленный.38</title>
+			<path d="M0 590.69 L-8.13 590.69 A2.49739 2.49739 0 0 1 -10.63 588.19 L-10.63 588.19 A2.49739 2.49739 -180 0 0 -13.13
+						 585.69 L-19.87 585.69" class="st13"/>
+		</g>
+		<g id="shape39-269" v:mID="39" v:groupContext="shape" transform="translate(28.3465,-277.761)">
+			<title>Документ электронный (файл).39</title>
+			<desc>doc</desc>
+			<v:userDefs>
+				<v:ud v:nameU="Corner" v:prompt="" v:val="VT0(0.19685039370079):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="28.3465" cy="576.378" width="56.7" height="37.7953"/>
+			<path d="M0 595.28 L56.69 595.28 L56.69 557.48 L14.17 557.48 L0 571.65 L0 595.28 Z" class="st7"/>
+			<text x="19.49" y="579.98" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>doc</text>		</g>
+		<g id="shape40-272" v:mID="40" v:groupContext="shape" v:layerMember="3" transform="translate(110.92,-276.378)">
+			<title>Соединитель направленный.40</title>
+			<desc>out</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="-12.9402" cy="588.189" width="50" height="20.0036"/>
+			<path d="M0 588.19 L-25.88 588.19" class="st8"/>
+			<text x="-18.64" y="591.19" class="st10" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>out</text>		</g>
+		<g id="shape41-278" v:mID="41" v:groupContext="shape" v:layerMember="3" transform="translate(85.0394,-299.944)">
+			<title>Соединитель направленный.41</title>
+			<desc>in</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="12.4547" cy="587.282" width="50" height="20.0036"/>
+			<path d="M0 589.1 L0 588.19 a0.906874 0.906874 0 0 1 0.906874 -0.906874 L26.19 587.28" class="st8"/>
+			<text x="9.26" y="590.28" class="st10" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>in</text>		</g>
+		<g id="shape42-284" v:mID="42" v:groupContext="shape" v:layerMember="0" transform="translate(204.803,-300.827)">
+			<title>Подразделение.42</title>
+			<desc>role</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="24.7146" cy="584.291" width="38.45" height="21.9685"/>
+			<path d="M43.94 584.29 A21.9685 10.9843 -180 1 0 0 584.29 A21.9685 10.9843 -180 1 0 43.94 584.29 Z" class="st15"/>
+			<path d="M43.94 584.29 A21.9685 10.9843 -180 1 0 0 584.29 A21.9685 10.9843 -180 1 0 43.94 584.29" class="st16"/>
+			<path d="M5.49 577.1 L5.49 591.5" class="st16"/>
+			<text x="15.1" y="587.89" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>role</text>		</g>
+		<g id="shape43-289" v:mID="43" v:groupContext="shape" v:layerMember="1" transform="translate(140.755,-346.871)">
+			<title>Динамическая соединительная линия.43</title>
+			<desc>WF-link</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="7.08661" cy="607.591" width="40" height="17.6036"/>
+			<path d="M7.09 595.28 L7.09 614.39" class="st3"/>
+			<rect v:rectContext="textBkgnd" x="-5.29025" y="602.792" width="24.7536" height="9.59985" class="st5"/>
+			<text x="-5.29" y="609.99" class="st6" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>WF-link</text>		</g>
+		<g id="shape44-296" v:mID="44" v:groupContext="shape" v:layerMember="1" transform="translate(140.755,-273.036)">
+			<title>Динамическая соединительная линия.44</title>
+			<desc>WF-link</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="7.08661" cy="607.591" width="40" height="17.6036"/>
+			<path d="M7.09 595.28 L7.09 614.39" class="st3"/>
+			<rect v:rectContext="textBkgnd" x="-5.29025" y="602.792" width="24.7536" height="9.59985" class="st5"/>
+			<text x="-5.29" y="609.99" class="st6" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>WF-link</text>		</g>
+		<g id="shape45-303" v:mID="45" v:groupContext="shape" v:layerMember="3" transform="translate(204.804,-316.816)">
+			<title>Соединитель направленный.45</title>
+			<path d="M0 600.28 L-8.55 600.28 A2.08191 2.08191 -180 0 0 -10.63 602.36 L-10.63 602.36 A2.08191 2.08191 0 0 1 -12.71
+						 604.44 L-20.3 604.44" class="st13"/>
+		</g>
+		<g id="shape46-306" v:mID="46" v:groupContext="shape" transform="translate(202.677,-335.906)">
+			<title>Лист.46</title>
+			<desc>набор свойств</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="33.3071" cy="586.063" width="66.62" height="18.4252"/>
+			<ellipse cx="33.3071" cy="586.063" rx="33.3071" ry="9.2126" class="st22"/>
+			<text x="20.31" y="584.06" class="st23" v:langID="1049"><v:paragraph v:spLine="-0.8" v:horizAlign="1"/><v:tabList/>набор <tspan
+						x="17.01" dy="0.8em" class="st14">свойств</tspan></text>		</g>
+		<g id="shape47-310" v:mID="47" v:groupContext="shape" transform="translate(475.716,788.228) rotate(153.442)">
+			<title>Лист.47</title>
+			<path d="M0 595.28 L38.62 595.28" class="st24"/>
+		</g>
+		<g id="shape48-313" v:mID="48" v:groupContext="shape" transform="translate(273.543,-316.772)">
+			<title>Лист.48</title>
+			<desc>набор свойств</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="33.3071" cy="586.063" width="66.62" height="18.4252"/>
+			<ellipse cx="33.3071" cy="586.063" rx="33.3071" ry="9.2126" class="st22"/>
+			<text x="20.31" y="584.06" class="st23" v:langID="1049"><v:paragraph v:spLine="-0.8" v:horizAlign="1"/><v:tabList/>набор <tspan
+						x="17.01" dy="0.8em" class="st14">свойств</tspan></text>		</g>
+		<g id="shape49-317" v:mID="49" v:groupContext="shape" transform="translate(540.166,803.294) rotate(153.442)">
+			<title>Лист.49</title>
+			<path d="M0 595.28 L28.25 595.28" class="st24"/>
+		</g>
+		<g id="shape50-320" v:mID="50" v:groupContext="shape" transform="translate(579.244,827.361) rotate(153.442)">
+			<title>Лист.50</title>
+			<path d="M0 595.28 L38.62 595.28" class="st24"/>
+		</g>
+		<g id="shape51-323" v:mID="51" v:groupContext="shape" transform="translate(287.717,-288.425)">
+			<title>Лист.51</title>
+			<desc>набор свойств</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="33.3071" cy="586.063" width="66.62" height="18.4252"/>
+			<ellipse cx="33.3071" cy="586.063" rx="33.3071" ry="9.2126" class="st22"/>
+			<text x="20.31" y="584.06" class="st23" v:langID="1049"><v:paragraph v:spLine="-0.8" v:horizAlign="1"/><v:tabList/>набор <tspan
+						x="17.01" dy="0.8em" class="st14">свойств</tspan></text>		</g>
+		<g id="shape52-327" v:mID="52" v:groupContext="shape" transform="translate(-519.466,395.265) rotate(-96.198)">
+			<title>Лист.52</title>
+			<path d="M0 595.28 L13.56 595.28" class="st24"/>
+		</g>
+		<g id="shape53-330" v:mID="53" v:groupContext="shape" transform="translate(42.5197,-245.906)">
+			<title>Лист.53</title>
+			<desc>набор свойств</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="33.3071" cy="586.063" width="66.62" height="18.4252"/>
+			<ellipse cx="33.3071" cy="586.063" rx="33.3071" ry="9.2126" class="st22"/>
+			<text x="20.31" y="584.06" class="st23" v:langID="1049"><v:paragraph v:spLine="-0.8" v:horizAlign="1"/><v:tabList/>набор <tspan
+						x="17.01" dy="0.8em" class="st14">свойств</tspan></text>		</g>
+		<g id="shape54-334" v:mID="54" v:groupContext="shape" transform="translate(37.4845,-205.512)">
+			<title>Лист.54</title>
+			<desc>- суть - кодировка данных (UTF-8 etc) - протокол передачи (JD...</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="132.594" cy="574.016" width="265.19" height="42.5197"/>
+			<rect x="0" y="552.756" width="265.189" height="42.5197" class="st17"/>
+			<text x="4" y="565.76" class="st23" v:langID="1033"><v:paragraph/><v:tabList/>-<tspan class="st14" v:langID="1049"> </tspan><tspan
+						class="st14" v:langID="1049">суть </tspan> <tspan x="4" dy="1.2em" class="st14" v:langID="1049">-</tspan><tspan
+						class="st14" v:langID="1049"> </tspan><tspan class="st14" v:langID="1049">кодировка данных </tspan><tspan
+						class="st14" v:langID="1049">(</tspan>UTF-8 etc)<v:newlineChar/><tspan x="4" dy="1.2em" class="st14"
+						v:langID="1049">-</tspan><tspan class="st14" v:langID="1049"> </tspan><tspan class="st14" v:langID="1049">протокол передачи </tspan>(JDBC, email)</text>		</g>
+		<g id="shape55-346" v:mID="55" v:groupContext="shape" transform="translate(668.443,460.227) rotate(90)">
+			<title>Лист.55</title>
+			<path d="M0 421.49 C9.87 420.45 9.36 423.97 9.24 427.43 C8.59 446.63 20.14 464.15 16.24 478.62 C13.07 490.34 -0.23 500.06
+						 -8.75 512.12 C-16.52 523.14 -20.31 536.11 -20.17 550.16 C-19.99 569.39 -12.46 590.66 2.43 594.59 C14.2 597.69
+						 30.56 589.98 40.58 578.37 C51.14 566.13 54.65 549.57 52.13 536.08 C48.99 519.26 36.47 507.22 31.28 490.28
+						 C23.8 465.82 31.6 431.14 58.61 422.79 L58.96 422.71" class="st25"/>
+		</g>
+		<g id="shape56-352" v:mID="56" v:groupContext="shape" v:layerMember="1" transform="translate(239.863,-63.7795)">
+			<title>Динамическая соединительная линия.56</title>
+			<path d="M7.09 588.19 L7.09 581.1 L7.09 588.19" class="st16"/>
+		</g>
+		<g id="shape57-355" v:mID="57" v:groupContext="shape" transform="translate(287.567,-248.031)">
+			<title>Лист.57</title>
+			<desc>- ИС, ППО, СПО, ПАК, &#34;железо&#34; - звено (клиент-сервер) - инстанс</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="132.594" cy="574.016" width="265.19" height="42.5197"/>
+			<rect x="0" y="552.756" width="265.189" height="42.5197" class="st17"/>
+			<text x="4" y="565.76" class="st23" v:langID="1033"><v:paragraph/><v:tabList/>-<tspan class="st14" v:langID="1049"> </tspan><tspan
+						class="st14" v:langID="1049">ИС</tspan><tspan class="st14" v:langID="1049">, </tspan><tspan class="st14"
+						v:langID="1049">ППО</tspan><tspan class="st14" v:langID="1049">, </tspan><tspan class="st14"
+						v:langID="1049">СПО</tspan><tspan class="st14" v:langID="1049">, </tspan><tspan class="st14"
+						v:langID="1049">ПАК</tspan><tspan class="st14" v:langID="1049">, </tspan><tspan class="st14"
+						v:langID="1049">&#34;</tspan><tspan class="st14" v:langID="1049">железо</tspan><tspan class="st14"
+						v:langID="1049">&#34; </tspan> <tspan x="4" dy="1.2em" class="st14" v:langID="1049">-</tspan><tspan
+						class="st14" v:langID="1049"> </tspan><tspan class="st14" v:langID="1049">звено </tspan><tspan class="st14"
+						v:langID="1049">(</tspan><tspan class="st14" v:langID="1049">клиент</tspan><tspan class="st14"
+						v:langID="1049">-</tspan><tspan class="st14" v:langID="1049">сервер</tspan><tspan class="st14"
+						v:langID="1049">)<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st14" v:langID="1049">-</tspan><tspan
+						class="st14" v:langID="1049"> </tspan><tspan class="st14" v:langID="1049">инстанс</tspan></text>		</g>
+		<g id="shape58-381" v:mID="58" v:groupContext="shape" transform="translate(206.631,-198.425)">
+			<title>Лист.58</title>
+			<desc>b) Function &#38; Properties</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="95.1098" cy="581.102" width="190.22" height="28.3465"/>
+			<rect x="0" y="566.929" width="190.22" height="28.3465" class="st17"/>
+			<text x="4" y="581.73" class="st18" v:langID="1033"><v:paragraph/><v:tabList/>b) Function &#38;<tspan class="st14"
+						v:langID="1049"> </tspan><tspan class="st14" v:langID="1049">Properties</tspan></text>		</g>
+		<g id="shape59-386" v:mID="59" v:groupContext="shape" transform="translate(74.9689,-14.1732)">
+			<title>Лист.59</title>
+			<desc>c) Function &#38; express link</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="95.1098" cy="581.102" width="190.22" height="28.3465"/>
+			<rect x="0" y="566.929" width="190.22" height="28.3465" class="st17"/>
+			<text x="4" y="581.73" class="st18" v:langID="1033"><v:paragraph/><v:tabList/>c) Function &#38; <tspan class="st14"
+						v:langID="1049">express</tspan> link  </text>		</g>
+		<g id="shape60-390" v:mID="60" v:groupContext="shape" transform="translate(226.772,-85.0394)">
+			<title>Лист.60</title>
+			<desc>Передача doc1 из sysA в sysB</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="33.1486" cy="574.016" width="66.3" height="42.5197"/>
+			<rect x="0" y="552.756" width="66.2971" height="42.5197" class="st17"/>
+			<text x="4" y="564.26" class="st27" v:langID="1049"><v:paragraph v:spLine="-1"/><v:tabList/>Передача <tspan x="4"
+						dy="1em" class="st14" v:langID="1033">doc</tspan><tspan class="st14" v:langID="1033">1 </tspan>из <tspan
+						class="st14" v:langID="1033">sysA </tspan><tspan x="4" dy="1em" class="st14">в </tspan><tspan class="st14"
+						v:langID="1033">sysB</tspan></text>		</g>
+		<g id="shape61-398" v:mID="61" v:groupContext="shape" transform="translate(586.846,-433.402)">
+			<title>Информационная система.61</title>
+			<desc>sysA</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="37.0742" cy="585.205" width="74.15" height="20.1409"/>
+			<path d="M0 595.28 L74.15 595.28 L74.15 575.13 L0 575.13 L0 595.28 Z" class="st11"/>
+			<path d="M0 595.28 L74.15 595.28 L74.15 575.13 L0 575.13 L0 595.28" class="st12"/>
+			<path d="M2.97 595.28 L2.97 575.13" class="st12"/>
+			<path d="M5.93 595.28 L5.93 575.13" class="st12"/>
+			<path d="M68.22 595.28 L68.22 575.13" class="st12"/>
+			<path d="M71.18 595.28 L71.18 575.13" class="st12"/>
+			<text x="26.19" y="588.81" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>sysA</text>		</g>
+		<g id="shape62-406" v:mID="62" v:groupContext="shape" transform="translate(586.846,-358.433)">
+			<title>Информационная система.62</title>
+			<desc>sysB</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="37.0742" cy="585.205" width="74.15" height="20.1409"/>
+			<path d="M0 595.28 L74.15 595.28 L74.15 575.13 L0 575.13 L0 595.28 Z" class="st11"/>
+			<path d="M0 595.28 L74.15 595.28 L74.15 575.13 L0 575.13 L0 595.28" class="st12"/>
+			<path d="M2.97 595.28 L2.97 575.13" class="st12"/>
+			<path d="M5.93 595.28 L5.93 575.13" class="st12"/>
+			<path d="M68.22 595.28 L68.22 575.13" class="st12"/>
+			<path d="M71.18 595.28 L71.18 575.13" class="st12"/>
+			<text x="26.4" y="588.81" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>sysB</text>		</g>
+		<g id="shape63-414" v:mID="63" v:groupContext="shape" transform="translate(595.574,-386.78)">
+			<title>Документ электронный (файл).63</title>
+			<desc>doc1</desc>
+			<v:userDefs>
+				<v:ud v:nameU="Corner" v:prompt="" v:val="VT0(0.19685039370079):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="28.3465" cy="576.378" width="56.7" height="37.7953"/>
+			<path d="M0 595.28 L56.69 595.28 L56.69 557.48 L14.17 557.48 L0 571.65 L0 595.28 Z" class="st7"/>
+			<text x="16.45" y="579.98" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>doc1</text>		</g>
+		<g id="shape64-417" v:mID="64" v:groupContext="shape" v:layerMember="3" transform="translate(616.834,-436.075)">
+			<title>Соединитель направленный.64</title>
+			<path d="M7.09 597.95 L7.09 606.78" class="st8"/>
+		</g>
+		<g id="shape65-422" v:mID="65" v:groupContext="shape" v:layerMember="3" transform="translate(616.834,-389.764)">
+			<title>Соединитель направленный.65</title>
+			<path d="M7.09 598.26 L7.09 606.46" class="st8"/>
+		</g>
+		<g id="shape66-427" v:mID="66" v:groupContext="shape" transform="translate(581.102,-320.39)">
+			<title>Лист.66</title>
+			<desc>c1) «sys-doc-sys» link</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="68.7402" cy="581.102" width="137.49" height="28.3465"/>
+			<rect x="0" y="566.929" width="137.48" height="28.3465" class="st17"/>
+			<text x="4" y="581.73" class="st18" v:langID="1033"><v:paragraph/><v:tabList/>c1) <tspan class="st14" v:langID="1049">«</tspan>sys-doc-sys<tspan
+						class="st14" v:langID="1049">»</tspan> link</text>		</g>
+		<g id="shape67-432" v:mID="67" v:groupContext="shape" transform="translate(670.394,-389.764)">
+			<title>Лист.67</title>
+			<desc>Минусы: Мы хотели показать один объект типа «link», но показы...</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="66.6142" cy="574.016" width="133.23" height="42.5197"/>
+			<rect x="0" y="552.756" width="133.228" height="42.5197" class="st17"/>
+			<text x="4" y="565.76" class="st23" v:langID="1049"><v:paragraph/><v:tabList/>Минусы: Мы хотели <tspan x="4" dy="1.2em"
+						class="st14">показать один объект типа </tspan><tspan x="4" dy="1.2em" class="st14">«</tspan><tspan
+						class="st14" v:langID="1033">link</tspan>», но показываем две <tspan x="4" dy="1.2em" class="st14">отдельные связи </tspan>(как в <tspan
+						class="st14" v:langID="1033">epc</tspan><tspan class="st14" v:langID="1033">)</tspan></text>		</g>
+		<g id="shape68-441" v:mID="68" v:groupContext="shape" transform="translate(591.993,-291.67)">
+			<title>Информационная система.68</title>
+			<desc>sysA</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="37.0742" cy="585.205" width="74.15" height="20.1409"/>
+			<path d="M0 595.28 L74.15 595.28 L74.15 575.13 L0 575.13 L0 595.28 Z" class="st11"/>
+			<path d="M0 595.28 L74.15 595.28 L74.15 575.13 L0 575.13 L0 595.28" class="st12"/>
+			<path d="M2.97 595.28 L2.97 575.13" class="st12"/>
+			<path d="M5.93 595.28 L5.93 575.13" class="st12"/>
+			<path d="M68.22 595.28 L68.22 575.13" class="st12"/>
+			<path d="M71.18 595.28 L71.18 575.13" class="st12"/>
+			<text x="26.19" y="588.81" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>sysA</text>		</g>
+		<g id="shape69-449" v:mID="69" v:groupContext="shape" transform="translate(591.993,-216.701)">
+			<title>Информационная система.69</title>
+			<desc>sysB</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="37.0742" cy="585.205" width="74.15" height="20.1409"/>
+			<path d="M0 595.28 L74.15 595.28 L74.15 575.13 L0 575.13 L0 595.28 Z" class="st11"/>
+			<path d="M0 595.28 L74.15 595.28 L74.15 575.13 L0 575.13 L0 595.28" class="st12"/>
+			<path d="M2.97 595.28 L2.97 575.13" class="st12"/>
+			<path d="M5.93 595.28 L5.93 575.13" class="st12"/>
+			<path d="M68.22 595.28 L68.22 575.13" class="st12"/>
+			<path d="M71.18 595.28 L71.18 575.13" class="st12"/>
+			<text x="26.4" y="588.81" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>sysB</text>		</g>
+		<g id="shape70-457" v:mID="70" v:groupContext="shape" transform="translate(661.666,-108.661)">
+			<title>Документ электронный (файл).70</title>
+			<desc>doc1, doc2</desc>
+			<v:userDefs>
+				<v:ud v:nameU="Corner" v:prompt="" v:val="VT0(0.19685039370079):24"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
+			<v:textRect cx="28.3465" cy="576.378" width="56.7" height="37.7953"/>
+			<path d="M0 595.28 L56.69 595.28 L56.69 557.48 L14.17 557.48 L0 571.65 L0 595.28 Z" class="st7"/>
+			<text x="14.95" y="572.78" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>doc1, <tspan
+						x="16.45" dy="1.2em" class="st14">doc</tspan>2</text>		</g>
+		<g id="shape71-461" v:mID="71" v:groupContext="shape" v:layerMember="3" transform="translate(621.981,-291.67)">
+			<title>Соединитель направленный.71</title>
+			<desc>JDBC, doc1, doc2</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="7.08661" cy="622.69" width="76.38" height="20.0036"/>
+			<path d="M7.09 595.28 L7.09 650.1" class="st8"/>
+			<text x="-25.96" y="625.69" class="st10" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>JDBC, doc1, doc2</text>		</g>
+		<g id="shape73-467" v:mID="73" v:groupContext="shape" transform="translate(673.601,-248.031)">
+			<title>Лист.73</title>
+			<desc>Минусы: Показан один объект типа «link», но все его свойства ...</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="70.8661" cy="574.016" width="141.74" height="42.5197"/>
+			<rect x="0" y="552.756" width="141.732" height="42.5197" class="st17"/>
+			<text x="4" y="565.76" class="st23" v:langID="1049"><v:paragraph/><v:tabList/>Минусы: Показан один объект <tspan x="4"
+						dy="1.2em" class="st14">типа </tspan>«<tspan class="st14" v:langID="1033">link</tspan>», но все его свойства <tspan
+						x="4" dy="1.2em" class="st14">(</tspan>протокол, набор данных) <tspan x="4" dy="1.2em" class="st14">указаны подписью к стрелке  </tspan><tspan
+						x="4" dy="1.2em" class="st14">(</tspan>объектно не выделены)</text>		</g>
+		<g id="shape74-475" v:mID="74" v:groupContext="shape" transform="translate(581.102,-179.03)">
+			<title>Лист.74</title>
+			<desc>c2) sys-sys link</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="56.8421" cy="581.102" width="113.69" height="28.3465"/>
+			<rect x="0" y="566.929" width="113.684" height="28.3465" class="st17"/>
+			<text x="4" y="581.73" class="st18" v:langID="1033"><v:paragraph/><v:tabList/>c<tspan class="st14" v:langID="1049">2</tspan>) sys-sys link</text>		</g>
+		<g id="shape75-479" v:mID="75" v:groupContext="shape" transform="translate(591.993,-145.462)">
+			<title>Информационная система.75</title>
+			<desc>sysA</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="37.0742" cy="585.205" width="74.15" height="20.1409"/>
+			<path d="M0 595.28 L74.15 595.28 L74.15 575.13 L0 575.13 L0 595.28 Z" class="st11"/>
+			<path d="M0 595.28 L74.15 595.28 L74.15 575.13 L0 575.13 L0 595.28" class="st12"/>
+			<path d="M2.97 595.28 L2.97 575.13" class="st12"/>
+			<path d="M5.93 595.28 L5.93 575.13" class="st12"/>
+			<path d="M68.22 595.28 L68.22 575.13" class="st12"/>
+			<path d="M71.18 595.28 L71.18 575.13" class="st12"/>
+			<text x="26.19" y="588.81" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>sysA</text>		</g>
+		<g id="shape76-487" v:mID="76" v:groupContext="shape" transform="translate(591.993,-70.4932)">
+			<title>Информационная система.76</title>
+			<desc>sysB</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="37.0742" cy="585.205" width="74.15" height="20.1409"/>
+			<path d="M0 595.28 L74.15 595.28 L74.15 575.13 L0 575.13 L0 595.28 Z" class="st11"/>
+			<path d="M0 595.28 L74.15 595.28 L74.15 575.13 L0 575.13 L0 595.28" class="st12"/>
+			<path d="M2.97 595.28 L2.97 575.13" class="st12"/>
+			<path d="M5.93 595.28 L5.93 575.13" class="st12"/>
+			<path d="M68.22 595.28 L68.22 575.13" class="st12"/>
+			<path d="M71.18 595.28 L71.18 575.13" class="st12"/>
+			<text x="26.4" y="588.81" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>sysB</text>		</g>
+		<g id="shape77-495" v:mID="77" v:groupContext="shape" v:layerMember="3" transform="translate(621.981,-145.462)">
+			<title>Соединитель направленный.77</title>
+			<desc>JDBC</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="7.3104" cy="631.604" width="50" height="20.0036"/>
+			<path d="M7.09 595.28 L7.09 650.1" class="st8"/>
+			<text x="-3.39" y="634.6" class="st10" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>JDBC</text>		</g>
+		<g id="shape78-501" v:mID="78" v:groupContext="shape" transform="translate(572.151,-35.0601)">
+			<title>Лист.78</title>
+			<desc>c3) sys-(doc)-sys link</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="56.8421" cy="581.102" width="113.69" height="28.3465"/>
+			<rect x="0" y="566.929" width="113.684" height="28.3465" class="st17"/>
+			<text x="4" y="581.73" class="st18" v:langID="1033"><v:paragraph/><v:tabList/>c<tspan class="st14" v:langID="1049">3</tspan>) sys-<tspan
+						class="st14" v:langID="1049">(</tspan>doc)-sys link</text>		</g>
+		<g id="shape79-506" v:mID="79" v:groupContext="shape" transform="translate(629.068,-127.559)">
+			<title>Лист.79</title>
+			<path d="M0 595.28 L32.6 595.28" class="st28"/>
+		</g>
+		<g id="shape80-509" v:mID="80" v:groupContext="shape" transform="translate(680.315,-63.7795)">
+			<title>Лист.80</title>
+			<desc>Минусы: Объект, имеет связь не с объектами, а с отношением ме...</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="70.8661" cy="574.016" width="141.74" height="42.5197"/>
+			<rect x="0" y="552.756" width="141.732" height="42.5197" class="st17"/>
+			<text x="4" y="565.76" class="st23" v:langID="1049"><v:paragraph/><v:tabList/>Минусы: Объект, имеет связь <tspan x="4"
+						dy="1.2em" class="st14">не с объектами</tspan>, а с <tspan x="4" dy="1.2em" class="st14">отношением между </tspan><tspan
+						x="4" dy="1.2em" class="st14">объектами</tspan>. Это плохой тон <tspan x="4" dy="1.2em" class="st14">семантизации</tspan>, но пока <tspan
+						x="4" dy="1.2em" class="st14">единственный компромисс</tspan></text>		</g>
+		<g id="shape81-517" v:mID="81" v:groupContext="shape" transform="translate(-386.22,107.791) rotate(-90)">
+			<title>Лист.81</title>
+			<desc>fun-sys</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="22.7518" cy="584.646" width="45.51" height="21.2598"/>
+			<rect x="0" y="574.016" width="45.5035" height="21.2598" class="st17"/>
+			<text x="4" y="587.02" class="st27" v:langID="1033"><v:paragraph/><v:tabList/>fun-sys  </text>		</g>
+		<g id="shape83-520" v:mID="83" v:groupContext="shape" transform="translate(-99.428,-452.422) rotate(-30)">
+			<title>Лист.83</title>
+			<desc>fun-role</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="22.7518" cy="584.646" width="45.51" height="21.2598"/>
+			<rect x="0" y="574.016" width="45.5035" height="21.2598" class="st17"/>
+			<text x="4" y="587.02" class="st27" v:langID="1033"><v:paragraph/><v:tabList/>fun-role  </text>		</g>
+		<g id="shape84-523" v:mID="84" v:groupContext="shape" transform="translate(82.0555,-488.976)">
+			<title>Лист.84</title>
+			<desc>fun-doc</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="22.7518" cy="584.646" width="45.51" height="21.2598"/>
+			<rect x="0" y="574.016" width="45.5035" height="21.2598" class="st17"/>
+			<text x="4" y="587.02" class="st27" v:langID="1033"><v:paragraph/><v:tabList/>fun-doc</text>		</g>
+	</g>
+</svg>

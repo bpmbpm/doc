@@ -16,7 +16,7 @@
 
 Первичные связи опускаются и на рис. c1\c2\c3 показаны интеграции в популярных визуализациях. 
 
-Примеры (1–10) [Представление интеграции приложений (динамические отношения)](https://blog.visual-paradigm.com/ru/archimate-examples/) вызывают вопросы. 
+Примеры (1–10) [Представление интеграции приложений (динамические отношения)](https://blog.visual-paradigm.com/ru/archimate-examples/) вызывают вопрос - зачем такое разнообразие?   
 Отталкиваясь от модели (формулы) визуализации sys-(doc)-sys link  отметим, что подобный подход (data object – как элемент \ свойство линии), но где вместо system использован function (процесс) распространен в BPMN, см. 3х Data object Links
 https://github.com/bpmbpm/doc/blob/main/BPM/notation/BPMN/connections.md#3%D1%85-data-object-links
 

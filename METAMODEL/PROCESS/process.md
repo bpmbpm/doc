@@ -117,5 +117,6 @@
 - Машину Тьюринга «Процесс» или для начала «Workflow» (где-то был черновик)
 
 ### Отдельные обсуждения
+- Нулевой процесс https://github.com/bpmbpm/doc/blob/main/BPM/theory/company-wide-process.md
 - [Готовим HLD или «Каша из топора»](https://habr.com/ru/companies/megafon/articles/946942/)
 

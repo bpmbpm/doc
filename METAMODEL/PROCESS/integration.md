@@ -20,3 +20,6 @@
 Отталкиваясь от модели (формулы) визуализации sys-(doc)-sys link  отметим, что подобный подход (data object – как элемент \ свойство линии), но где вместо system использован function (процесс) распространен в BPMN, см. 3х Data object Links
 https://github.com/bpmbpm/doc/blob/main/BPM/notation/BPMN/connections.md#3%D1%85-data-object-links
 
+### example
+[database-link rdf-star](https://github.com/bpmbpm/doc/blob/main/LD/RDF_star/readme.md#database-link)
+

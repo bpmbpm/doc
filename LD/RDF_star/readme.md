@@ -4,7 +4,7 @@
 - https://github.com/semantic-systems/rdf-star-tutorial/blob/main/RDFstar-demo.md?ysclid=mfyb392six637812628
 - «a» — сокращение для rdf:type
 ### example
-#### link
+#### database link
 Допустим есть две системы (database), соединенные линком, например, JDBC. Как показать эту связь на "языке знаний" (linked data)?  
 ##### mermaid
 ```mermaid

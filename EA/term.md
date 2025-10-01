@@ -17,3 +17,8 @@ Rational над ROSE: (с. 413) Так я узнал, что великие ар
 
 ### multi-tenancy 
 - [Мультитенантность SaaS](https://habr.com/ru/companies/ssp-soft/articles/944538/)
+
+### term
+- https://github.com/bpmbpm/doc/tree/main/BPM/TERM
+- https://github.com/bpmbpm/doc/blob/main/EA/term.md
+- https://github.com/bpmbpm/doc/tree/main/IT/term.md

@@ -11,3 +11,4 @@ https://vkvideo.ru/video-210968399_456239215
 
 #### Также
 - [AI/LLMvsModel](https://github.com/bpmbpm/doc/tree/main/AI/LLMvsModel)
+- [возможного устройства мира в виде графа](https://habr.com/ru/sandbox/167179/?ysclid=mg8f88idbo151286371)

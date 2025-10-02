@@ -10,7 +10,7 @@
 ### Семантический слой Data Mesh
 - Семантический слой в контексте Data Mesh — это слой абстракции, который преобразует сложные технические данные в понятные бизнес-термины, предоставляя универсальный интерфейс для данных, который устраняет разрыв между техническими специалистами и бизнес-пользователями. Он обеспечивает единый источник достоверной информации (SSOT — Single Source of Truth) для извлечения ключевых наборов данных и метрик, стандартизируя их формат для различных бизнес-инструментов
 
-https://www.dvbi.ru/BI/glossary
-[star schema](https://ru.wikipedia.org/wiki/%D0%A1%D1%85%D0%B5%D0%BC%D0%B0_%D0%B7%D0%B2%D0%B5%D0%B7%D0%B4%D1%8B)
-https://bigdataschool.ru/blog/kimball-dwh-and-data-mesh/
+https://www.dvbi.ru/BI/glossary  
+[star schema](https://ru.wikipedia.org/wiki/%D0%A1%D1%85%D0%B5%D0%BC%D0%B0_%D0%B7%D0%B2%D0%B5%D0%B7%D0%B4%D1%8B)  
+https://bigdataschool.ru/blog/kimball-dwh-and-data-mesh/  
 https://www.osp.ru/os/2007/05/4265198

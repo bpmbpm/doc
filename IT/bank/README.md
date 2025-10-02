@@ -15,6 +15,6 @@ OpenAPI
 
 ### History
 - [Как брали в долг в дореволюционной России](https://habr.com/ru/companies/sberbank/articles/946112/#comment_28825850)
-
+- [Платежные системы — вчера, сегодня и… завтра?](https://habr.com/ru/companies/nspk/articles/952332/)
 ### bank
 - ПСБ Эволюция процессного управления в «ПСБ» - https://github.com/bpmbpm/doc/tree/main/BPM/example

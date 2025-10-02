@@ -51,8 +51,8 @@
 Рассмотрим рисунок Figure 30-5: Entities and Relationships Present within the Core Content Metamodel  
 ![ris](https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/Figure%2030-5.png)
 
-
-https://www.hosiaisluoma.fi/blog/strategy-modelling-archimate/
+- https://www.hosiaisluoma.fi/blog/strategy-modelling-archimate/
+- https://ppt-online.org/embed/39023 Relationships
 
 ### Spec 2
 - [ARCHIMATE_v3_1_specifikacia.](https://university.sk/wp-content/uploads/2020/01/ARCHIMATE_v3_1_specifikacia.pdf) стр 40

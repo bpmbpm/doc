@@ -38,6 +38,8 @@
 ### монолит vs микросервис
 - [Галопом по архитектуре. Часть 2. Архитектура с нуля](https://habr.com/ru/articles/919368/)
 
+### ontologies
+- https://github.com/bpmbpm/doc/blob/main/LD/ontology/README.md#ea-ontologies
 
 
 

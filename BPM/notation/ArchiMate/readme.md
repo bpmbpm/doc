@@ -46,13 +46,14 @@
 - [sewiki.ru/ArchiMate](http://sewiki.ru/ArchiMate)
 - [Коннекторы языка ArchiMate](https://habr.com/ru/companies/otus/articles/744278/)
 ![ris](https://habrastorage.org/r/w1560/getpro/habr/upload_files/416/71d/984/41671d9844595d651ddd3f0b63027453.png)
+- https://ppt-online.org/embed/39023 Relationships
 ### Onto
 [30. Content Metamodel togaf9](https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap30.html)  
 Рассмотрим рисунок Figure 30-5: Entities and Relationships Present within the Core Content Metamodel  
 ![ris](https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/Figure%2030-5.png)
 
 - https://www.hosiaisluoma.fi/blog/strategy-modelling-archimate/
-- https://ppt-online.org/embed/39023 Relationships
+
 
 ### Spec 2
 - [ARCHIMATE_v3_1_specifikacia.](https://university.sk/wp-content/uploads/2020/01/ARCHIMATE_v3_1_specifikacia.pdf) стр 40

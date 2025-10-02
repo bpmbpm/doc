@@ -8,3 +8,6 @@
 
 ### Задачи к собеседованию
 - [Как стажер набирал стажеров](https://habr.com/ru/articles/949602/)
+
+### link
+- https://blog.business-analyst.info/oauthor-i-soavt/ ; https://blog.grine.net/blog.grine.net/index.html

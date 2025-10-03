@@ -54,7 +54,8 @@ en:
 также: [SemanticBPM/wiki](https://github.com/bpmbpm/SemanticBPM/wiki/%D0%92%D1%8B%D0%B1%D0%BE%D1%80-%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA#rdf_svg)
 
 ## Semantic Web
-- [Awesome Semantic Web](https://github.com/semantalytics/awesome-semantic-web)
+- https://ru.wikipedia.org/wiki/Web_3.0 ; [Семантическая паутина](https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D0%B0) ; [Семантиическая сеть](https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D1%81%D0%B5%D1%82%D1%8C)
+- [Awesome Semantic Web](https://github.com/semantalytics/awesome-semantic-web) ; https://ru.wikipedia.org/wiki/Schema.org
 ## Другое
 - [doc/Project/SemanticBPM/semantic_tech](https://github.com/bpmbpm/doc/tree/main/Project/SemanticBPM/semantic_tech)
 - [про формализм, formalism.md](formalism.md)

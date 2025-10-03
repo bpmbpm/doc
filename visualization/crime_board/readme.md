@@ -8,3 +8,6 @@ Palantir Foundry: платформа данных на основе онтоло
 ##### Doc
 - [Онтология Foundry](https://www.palantir.com/docs/foundry/ontology/core-concepts/)
 - [Типы объектов](https://www.palantir.com/docs/foundry/object-link-types/object-types-overview)
+
+### также
+https://github.com/bpmbpm/doc/tree/main/LD/ontology

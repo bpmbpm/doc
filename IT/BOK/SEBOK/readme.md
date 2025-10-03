@@ -11,6 +11,7 @@
 - [фрагмент СИСТЕМНОЕ МЫШЛЕНИЕ 2022](https://balovstvo.me/static/proj/sys-book/sys-thinking_preview.pdf)
 - online https://homeread.net/book/sistemnoe-myshlenie-anatoliy-levenchuk 
 ##### обсуждения
+- Системное мышление 2022, введение понятий методологии https://ailev.livejournal.com/1592592.html
 - Об определения системного подхода и системность определений https://ailev.livejournal.com/1365963.html
 - [презентация BS](https://www.businessstudio.ru/upload/iblock/bfe/%D0%9B%D0%B5%D0%B2%D0%B5%D0%BD%D1%87%D1%83%D0%BA.pdf)
 ### Разное

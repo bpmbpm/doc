@@ -9,6 +9,8 @@ https://vkvideo.ru/video-17080528_456239022
 - [SPAR](http://www.sparontologies.net/)
   - [PWO, Publishing Workflow Ontology](http://www.sparontologies.net/ontologies/pwo) ; [github.io](https://sparontologies.github.io/pwo/current/pwo.html) 
 
+### ontologies
+- [BORO (Business Objects Reference Ontology)](http://sewiki.ru/BORO)
 ### EA ontologies
 - DEMO (Design and Engineering Methodology for Organisations) - методология проектирования и инжиниринга организаций. [praxos.ru](https://praxos.ru/index.php/DEMO.html) ; [ailev](https://ailev.livejournal.com/644440.html)
   - https://www.hse.ru/data/2011/09/08/1267014770/DEMO-Intro_rus.pdf

@@ -21,3 +21,5 @@ https://vkvideo.ru/video-17080528_456239022
 - [Цифровизация и бытие, книга](https://www.econ.msu.ru/sys/raw.php?o=79263&p=attachment)
 - https://techinvestlab.ru/techinvestlab/til_allmaterials.html
 - [ISO 29481-2](https://niccps.ru/images/materials/Standards/%D0%93%D0%9E%D0%A1%D0%A2%20%D0%A0%2010.0.04-2019.pdf)
+
+- DEVELOPING A BASIC FORMAL SUPPLY CHAIN ONTOLOGY TO IMPROVE COMMUNICATION AND INTEROPERABILITY https://t.me/rusontology/11932

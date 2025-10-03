@@ -11,6 +11,7 @@ https://vkvideo.ru/video-17080528_456239022
 
 ### ontologies
 - [BORO (Business Objects Reference Ontology)](http://sewiki.ru/BORO)
+- foundry.jpg palantir https://github.com/bpmbpm/doc/tree/main/visualization/crime_board#palantir
 ### EA ontologies
 - DEMO (Design and Engineering Methodology for Organisations) - методология проектирования и инжиниринга организаций. [praxos.ru](https://praxos.ru/index.php/DEMO.html) ; [ailev](https://ailev.livejournal.com/644440.html)
   - https://www.hse.ru/data/2011/09/08/1267014770/DEMO-Intro_rus.pdf

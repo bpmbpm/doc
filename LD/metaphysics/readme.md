@@ -11,6 +11,7 @@
 - Именно поэтому у Платона два мира — единичных вещей и идей, которые никак не соотносятся друг с другом. Дискуссии реализма, номинализма и концептуализма брали вопрос с очень странной и смешной стороны. [Заметки о понятиях «объект» и «предмет»](https://www.fondgp.ru/publications/%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8-%D0%BE-%D0%BF%D0%BE%D0%BD%D1%8F%D1%82%D0%B8%D1%8F%D1%85-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82-%D0%B8-%D0%BF%D1%80%D0%B5%D0%B4%D0%BC%D0%B5/) 
 - [«объект» и «предмет»](https://gtmarket.ru/library/basis/3344/3357#t99)  Итак, категория — это такое понятие (категориальное понятие), которое фиксирует в нашей мыследеятельности связи и соответствия между операциями, которые мы осуществляем, объектом, к которому эти операции применяются, языком, в котором всё это выражается, и нашими понятиями. Схема 22.
 - [СМД-методология, conflictmanagement.ru](https://conflictmanagement.ru/g-p-shhedrovitskiy-perspektivyi-i-programmyi-razvitiya-smd-metodologii/)
+- https://nbpublish.com/library_read_article.php?id=35836 ; https://cyberleninka.ru/article/n/filosofsko-antropologicheskiy-proekt-g-p-schedrovitskogo-istoriko-filosofskiy-analiz
 #####  universalis 
 - [wiki](https://ru.wikipedia.org/wiki/%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B0%D0%BB%D0%B8%D1%8F) Концептуализм, по сути, является формой номинализма. Отрицая онтологическое значение универсалий и считая, что общее существует после вещей (post res), концептуализм, тем не менее, утверждает, что они существуют как мысленные предметы, идеальные сущности в разуме человека.
   
@@ -19,3 +20,4 @@
 
 ### экземпляр vs 
 - термин экземпляр (maxstroy) https://habr.com/ru/articles/249165/
+

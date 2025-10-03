@@ -24,3 +24,6 @@ vs
 - https://trinidata.ru/tech_properties.htm
 - https://habr.com/ru/companies/otus/articles/755440/ ; https://habr.com/ru/articles/49769/
 - https://github.com/bpmbpm/doc/blob/main/LD/formats/README.md#reification
+
+### см. также
+- https://github.com/bpmbpm/doc/tree/main/LD/metaphysics#ideas-vs-things

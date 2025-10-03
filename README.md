@@ -108,6 +108,8 @@ Opengroup case-study-models:
 - [SOLID project](https://habr.com/ru/articles/539170/) EAV модель ;
 - другие [LD-проекты](https://github.com/bpmbpm/doc/blob/main/LD/readme.md#ld-projects), материалы [bpmbpm/doc/LD/](LD/)
 #### Онтологии
+#### metaphysics
+https://github.com/bpmbpm/doc/tree/main/LD/metaphysics#ideas-vs-things
 ## Закладки IT
 ### Закладки github
 [Руководство по оформлению Markdown файлов](https://gist.github.com/Jekins/2bf2d0638163f1294637)

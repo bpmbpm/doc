@@ -16,9 +16,12 @@ https://rutube.ru/video/51d2f8f4c9186f6be3335efbf63e1b72/
 audio https://t.me/agirussia/111023 
 
 #### также 
-РОТУ - ДОТУ https://github.com/bpmbpm/doc/blob/main/politic/social/README.md
+- РОТУ - ДОТУ https://github.com/bpmbpm/doc/blob/main/politic/social/README.md
 
 ### Книги
 - [ТЕОРИЯ УПРАВЛЕНИЯ (ДОПОЛНИТЕЛЬНЫЕ ГЛАВЫ)](https://api.nntu.ru/frontend/web/ngtu/files/ControlBook2.pdf)
 - [ОСНОВЫ ТЕОРИИ СЛОЖНЫХ СИСТЕМ](https://chaos.phys.msu.ru/loskutov/PDF/Loskutov.pdf)
 - [ТЕОРИЯ УПРАВЛЕНИЯ ОРГАНИЗАЦИОННЫМИ СИСТЕМАМИ](https://www.methodolog.ru/books/tyos2005.pdf)
+
+### formula
+- sys_formula.md

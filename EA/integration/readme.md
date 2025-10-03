@@ -76,6 +76,9 @@ IBM MQ / WESB (IBM WebSphere ESB) / IIB = IBM Integration Bus (ранее WebSph
   * Крупномасштабных проектов
   * Необходимости в гибких настройках
 
+### Kafka
+- Ключевое отличие KRaft в том, что теперь все метаданные хранятся непосредственно в Kafka, и брокеры могут читать эти метаданные напрямую, без необходимости обращаться к внешней системе. [Apache Kafka: ZooKeeper vs KRaft ](https://habr.com/ru/companies/otus/articles/952920/)
+
 ### 3 info
 #### IIB 
 - [IBM Integration Bus и с чем его едят](https://habr.com/ru/articles/445138/) Data Mapping

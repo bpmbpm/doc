@@ -58,6 +58,7 @@ select distinct ?protocol {
 }
 ```
 
+см. также: https://github.com/bpmbpm/doc/blob/main/METAMODEL/object.md
 #### RDF star
 ```
 @prefix : <https://foo#> .

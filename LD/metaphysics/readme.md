@@ -16,4 +16,6 @@
   
 ###  Ding an sich
 -  [wiki](https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D1%89%D1%8C_%D0%B2_%D1%81%D0%B5%D0%B1%D0%B5) Развитие ноуменов Платона - термин «вещь сама по себе (полностью: вещь, рассматриваемая сама по себе — нем. Ding an sich selbst betrachtet)
- 
+
+### экземпляр vs 
+- термин экземпляр (maxstroy) https://habr.com/ru/articles/249165/

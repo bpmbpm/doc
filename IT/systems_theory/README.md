@@ -10,12 +10,16 @@ https://rutube.ru/video/51d2f8f4c9186f6be3335efbf63e1b72/
 #### см. также:
 - https://github.com/bpmbpm/doc/tree/main/BPM/theory
 - https://github.com/bpmbpm/doc/tree/main/INDUSTRY/SYSTEM
-#### 
-Общая теория управления - Михаил Никольский Семинар русскоязычного сообщества AGI https://t.me/agirussia/111020  
+#### РОТУ
+- Общая теория управления - Михаил Никольский Семинар русскоязычного сообщества AGI https://t.me/agirussia/111020  
 https://rutube.ru/video/51d2f8f4c9186f6be3335efbf63e1b72/  
 audio https://t.me/agirussia/111023 
 
-#### также 
+https://t.me/upravdamen  
+https://www.litres.ru/book/mihail-nikolskiy-332/russkiy-put-v-upravlenie-zachem-kak-i-chto-ponimat-ru-71481805/chitat-onlayn/  
+Смотрим видео в ВК https://vk.com/video/@agirussia  
+на RUTUBE https://rutube.ru/channel/24279932/  
+и на YouTube https://www.youtube.com/siberai
 - РОТУ - ДОТУ https://github.com/bpmbpm/doc/blob/main/politic/social/README.md
 
 ### Книги

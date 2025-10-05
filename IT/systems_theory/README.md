@@ -33,3 +33,18 @@ https://www.litres.ru/book/mihail-nikolskiy-332/russkiy-put-v-upravlenie-zachem-
 - Математическая модель https://arxiv.org/abs/2509.07009 [pdf](https://arxiv.org/pdf/2509.07009)
   - Марковской модели процесса принятия решений
 - https://t.me/agirussia/111126 Вектор Physical AI: от перспективных исследований к практическому воплощению
+- https://t.me/agirussia/111152 схема. поведение сложной системы описывается не одним вектором состояния и направляется не одним мотивационным вектором, как в примитивной state-machine на этом слайде, а гетерархией машин конечных состояний ("агентов"), или иерархией соответствующих им функциональных подсистем в асинхронной мультиагентной среде
+### lino
+- Now new indented syntax supported - you can now write a single link (or sequence of references/links) as a list with items on each line.
+Теперь вы можете комбинировать нотации типа множеств и последовательности с разными уровнями отступа (indentation levels).
+github.com/linksplatform/Protocols.Lino  
+We also now have a website for Links Notation:  
+linksplatform.github.io/Protocols.Lino
+- Нет, он непопулярный и он уже почти совместим (кроме смайликов) с нотацией связей.
+Цель не сделать ещё один формат данных.
+Цель сделать формат данных описывающий связи из теории связей 1 в 1. И для этого требуется вводить ссылочность из коробки, которой нет в YAML, JSON, XML.  
+Кстати, с автором я знаком и формально он делал замену HTML разметки как я понял. Несколько другая цель.  
+Вообще в целом интересная статья и сравнение, у нас действительно очень простая грамматика. И много есть схожего с Tree  
+https://t.me/agirussia/111225
+- [Tree — убийца JSON, XML, YAML и иже с ними](https://habr.com/ru/articles/248147/) 
+- [The Links Theory 0.0.2](https://habr.com/ru/articles/895896/)

@@ -19,3 +19,6 @@
 
 ### tools
 OpenMetaData
+
+### video
+- https://vkvideo.ru/video-214144682_456239209 Сессия. Культура управления данными

@@ -26,7 +26,7 @@ https://www.litres.ru/book/mihail-nikolskiy-332/russkiy-put-v-upravlenie-zachem-
 - [ТЕОРИЯ УПРАВЛЕНИЯ (ДОПОЛНИТЕЛЬНЫЕ ГЛАВЫ)](https://api.nntu.ru/frontend/web/ngtu/files/ControlBook2.pdf)
 - [ОСНОВЫ ТЕОРИИ СЛОЖНЫХ СИСТЕМ](https://chaos.phys.msu.ru/loskutov/PDF/Loskutov.pdf)
 - [ТЕОРИЯ УПРАВЛЕНИЯ ОРГАНИЗАЦИОННЫМИ СИСТЕМАМИ](https://www.methodolog.ru/books/tyos2005.pdf)
-
+- теории оптимального управления
 ### formula
 - sys_formula.md
 ### ВЫЧИСЛИТЕЛЬНАЯ КОНЦЕПЦИЯ ПСИХИКИ

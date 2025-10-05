@@ -29,3 +29,7 @@ https://www.litres.ru/book/mihail-nikolskiy-332/russkiy-put-v-upravlenie-zachem-
 
 ### formula
 - sys_formula.md
+### ВЫЧИСЛИТЕЛЬНАЯ КОНЦЕПЦИЯ ПСИХИКИ
+- Математическая модель https://arxiv.org/abs/2509.07009 [pdf](https://arxiv.org/pdf/2509.07009)
+  - Марковской модели процесса принятия решений
+- https://t.me/agirussia/111126 Вектор Physical AI: от перспективных исследований к практическому воплощению

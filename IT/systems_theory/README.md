@@ -46,3 +46,7 @@ linksplatform.github.io/Protocols.Lino
 https://t.me/agirussia/111225
 - [Tree — убийца JSON, XML, YAML и иже с ними](https://habr.com/ru/articles/248147/) 
 - [The Links Theory 0.0.2](https://habr.com/ru/articles/895896/)
+
+### метатеории связей МТС
+- https://t.me/rusontology/12099
+- https://t.me/rusontology/12086

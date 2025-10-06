@@ -16,8 +16,10 @@ https://rutube.ru/video/51d2f8f4c9186f6be3335efbf63e1b72/
 audio https://t.me/agirussia/111023 
 https://t.me/upravdamen  
 https://www.litres.ru/book/mihail-nikolskiy-332/russkiy-put-v-upravlenie-zachem-kak-i-chto-ponimat-ru-71481805/chitat-onlayn/  
-- РОТУ - ДОТУ https://github.com/bpmbpm/doc/blob/main/politic/social/README.md
-
+- РОТУ - ДОТУ https://github.com/bpmbpm/doc/blob/main/politic/social/README.md  
+пересеклись обсуждения: Вычислительная концепция психики \ Предельная Теория Систем и Управления \ РОТУ. Что у них общего? 
+К РОТУ - с таким названием и без математики - странно смотрится
+https://t.me/agirussia/111314
 ### Книги
 - [ТЕОРИЯ УПРАВЛЕНИЯ (ДОПОЛНИТЕЛЬНЫЕ ГЛАВЫ)](https://api.nntu.ru/frontend/web/ngtu/files/ControlBook2.pdf)
 - [ОСНОВЫ ТЕОРИИ СЛОЖНЫХ СИСТЕМ](https://chaos.phys.msu.ru/loskutov/PDF/Loskutov.pdf)

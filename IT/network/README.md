@@ -3,3 +3,4 @@
 ### WiFi
 - [Кто мешает вашему Wi-Fi?](https://habr.com/ru/companies/ruvds/articles/939110/)
 - [Большой FAQ про Wi-Fi](https://habr.com/ru/articles/953622/#comment_28922186)
+- [Проклятие тринадцатого канала](https://habr.com/ru/articles/953732/)

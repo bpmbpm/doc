@@ -11,7 +11,8 @@ https://rutube.ru/video/51d2f8f4c9186f6be3335efbf63e1b72/
 - https://github.com/bpmbpm/doc/tree/main/BPM/theory
 - https://github.com/bpmbpm/doc/tree/main/INDUSTRY/SYSTEM
 #### РОТУ
-- Общая теория управления - Михаил Никольский Семинар русскоязычного сообщества AGI https://t.me/agirussia/111020  
+- Общая теория управления - Михаил Никольский Семинар русскоязычного сообщества AGI https://t.me/agirussia/111020
+- https://github.com/agirussia/agirussia.github.io/blob/main/workshops/2025/02_10_2025_General_Theory_of_Management_Mikhail_Nikolsky_AGI_seminar.md 
 https://rutube.ru/video/51d2f8f4c9186f6be3335efbf63e1b72/  
 audio https://t.me/agirussia/111023 
 

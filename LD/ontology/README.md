@@ -12,6 +12,10 @@ https://vkvideo.ru/video-17080528_456239022
 ### ontologies
 - [BORO (Business Objects Reference Ontology)](http://sewiki.ru/BORO)
 - foundry.jpg palantir https://github.com/bpmbpm/doc/tree/main/visualization/crime_board#palantir
+- list:  https://www.borosolutions.net/boro-foundation-enterprise-ontology  ;
+- DBpedia На страничке моего курса сравните по ссылкам описание Эйнштейна в витидате и дбпедии и поймете. А когда начнете качать данные по более обыденным сущностям, то такую кашу увидите, что может не захотеться с ней дела иметь...
+https://github.com/aigents/iai/blob/main/README.md
+
 ### EA ontologies
 - DEMO (Design and Engineering Methodology for Organisations) - методология проектирования и инжиниринга организаций. [praxos.ru](https://praxos.ru/index.php/DEMO.html) ; [ailev](https://ailev.livejournal.com/644440.html)
   - https://www.hse.ru/data/2011/09/08/1267014770/DEMO-Intro_rus.pdf

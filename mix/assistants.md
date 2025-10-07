@@ -1,3 +1,5 @@
+### converter
+- https://service-online.su/text/text-editor/ хабр, ctrl+C, поправить размер картинок, скачать как pdf, doc - не вставляет часть картинок
 #### ИИ - програмеры:
 - https://you.com не хочет работать уже с 190 строк кода (js)
 - https://chat.deepseek.com/ проблема с безопасностью [«чрезмерный» сбор ПД](https://www.securitylab.ru/news/556499.php)

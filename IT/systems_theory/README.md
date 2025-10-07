@@ -50,3 +50,4 @@ https://t.me/agirussia/111225
 ### метатеории связей МТС
 - https://t.me/rusontology/12099
 - https://t.me/rusontology/12086
+- https://github.com/bpmbpm/doc/tree/main/METAMODEL/LINK/doc

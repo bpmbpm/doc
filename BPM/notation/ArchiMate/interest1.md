@@ -8,7 +8,10 @@
 
 ### Cookbook
 - https://github.com/yasenstar/ArchiMate-Cookbook ; https://github.com/yasenstar/ArchiMate_ArchiSurance
-
+- https://www.hosiaisluoma.fi/blog/archimate/ ; https://www.hosiaisluoma.fi/ArchiMate-Cookbook.pdf
+### ArchiMate
+- https://sparxsystems.com/resources/tutorials/archimate/
+- https://models.govarch.kz/
 ### js
 - https://github.com/archimodel/archimate-js
 

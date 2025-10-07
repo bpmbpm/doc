@@ -4,3 +4,4 @@
   
 ### database
 - [alasql](https://alasql-wiki.readthedocs.io/en/latest/readme.html)
+- [Доступ к данным с помощью ODBC и JDBC](https://www.dialektika.com/PDF/978-5-907144-81-1/part.pdf)

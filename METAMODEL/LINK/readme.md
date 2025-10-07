@@ -18,4 +18,4 @@
 
 ### graph
 - [ДИСКРЕТНАЯ МАТЕМАТИКА. ТЕОРИЯ ГРАФОВ pdf](https://web-edu.rsreu.ru/res/programs-file-storage/d7eacb3cbe412c51.pdf)
-- [графы, хабръ(https://habr.com/ru/companies/otus/articles/568026/)
+- [Теория графов. Термины и определения в картинках, хабр](https://habr.com/ru/companies/otus/articles/568026/)

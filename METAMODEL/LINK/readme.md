@@ -11,10 +11,11 @@
 Не путать LINK METAMODEL (Links Theory) с [Математическая теория связи \ A Mathematical Theory of Communication](https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D1%81%D0%B2%D1%8F%D0%B7%D0%B8_(%D1%81%D1%82%D0%B0%D1%82%D1%8C%D1%8F)) ; [«Теория связи в секретных системах» / Communication Theory of Secrecy Systems](https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D1%81%D0%B2%D1%8F%D0%B7%D0%B8_%D0%B2_%D1%81%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D0%BD%D1%8B%D1%85_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%D1%85) ; Общая теория связи и т.п.
 ### Конкурс на формализм LINK
 
-
   
 ### Links
 - https://github.com/bpmbpm/doc/blob/main/LD/RDF_star/readme.md
 - https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/notation1.md#data-obejct-example
 
-
+### graph
+- [ДИСКРЕТНАЯ МАТЕМАТИКА. ТЕОРИЯ ГРАФОВ pdf](https://web-edu.rsreu.ru/res/programs-file-storage/d7eacb3cbe412c51.pdf)
+- [графы, хабръ(https://habr.com/ru/companies/otus/articles/568026/)

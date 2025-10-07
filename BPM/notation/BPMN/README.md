@@ -51,6 +51,7 @@ BPMN \ YAWL ?? Semantic formalism, [LD/formalism.md](https://github.com/bpmbpm/d
 - https://habr.com/ru/articles/838976/ EPC
 ### Data
 - [Data Object, Data Store](https://ya.ru/neurum/c/nauka-i-obrazovanie/q/v_chem_raznica_mezhdu_bpmn_10_i_bpmn_20_a39ad2bf)
+- [Объекты данных и хранилища данных](https://bpmtips.com/bpmn-miwg-demonstration-2018-nearly-everything-you-always-wanted-to-know-about-data-objects-but-were-afraid-to-ask/)
 ### Tool selection
 - https://bpmn-miwg.github.io/bpmn-miwg-tools/visual-test-result-comparison.html?tool=Modelio%203.5
 ### Intro

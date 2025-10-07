@@ -7,7 +7,7 @@
 - [ArchiMate 101: A Practical Introduction](https://archimate-community.pages.opengroup.org/workgroups/archimate-101/)
 - [https://www.businessstudio.ru/upload/iblock/77b/Mizgulin.pdf](https://www.businessstudio.ru/upload/iblock/77b/Mizgulin.pdf)
 - https://mellarius.ru/architecture#software
-- [Нам пришлось сделать инструмент моделирования, чтобы понять на сколько крут ArchiMate](https://habr.com/ru/companies/architeezy/articles/949896/) см. коменты
+- [Нам пришлось сделать инструмент моделирования, чтобы понять на сколько крут ArchiMate](https://habr.com/ru/companies/architeezy/articles/949896/) см. коменты и https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/integration.md (связи и EPC)
 ### ArchiMate Visio Stencils
 #### Orbus
 - [bhdicaire](https://github.com/bhdicaire/visioStencils/tree/main/Stencils/Methodologies) !!

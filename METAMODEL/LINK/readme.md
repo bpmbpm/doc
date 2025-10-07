@@ -10,8 +10,16 @@
 Когда связь между Система1 и Система2 стала объектом, то мы можем к объекту Линк1 добавлять различные свойства, включая id, label и др.  
 Не путать LINK METAMODEL (Links Theory) с [Математическая теория связи \ A Mathematical Theory of Communication](https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D1%81%D0%B2%D1%8F%D0%B7%D0%B8_(%D1%81%D1%82%D0%B0%D1%82%D1%8C%D1%8F)) ; [«Теория связи в секретных системах» / Communication Theory of Secrecy Systems](https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D1%81%D0%B2%D1%8F%D0%B7%D0%B8_%D0%B2_%D1%81%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D0%BD%D1%8B%D1%85_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%D1%85) ; Общая теория связи и т.п.
 ### Конкурс на формализм LINK
+Рассмотим на примере подходы: 
+- RDF
+  - указание предиката как объекта (с id, типом связи и т.п.)
+  - через реификацию
+  - RDF* 
+- Глубокая Теория Связей
+- Мета Теория Связей (МТС)
+#### Issue1
+Есть две ИТ-системы: Система1 и Система2, которые связаны через Линк1 и Линк2. Обе системы имеют тип "Система". Оба линка имеют тип "Линк". Линк1 имеет свойство protocol = JDBC. Линк2 имеет свойство protocol = ODBC.  
 
-  
 ### Links
 - https://github.com/bpmbpm/doc/blob/main/LD/RDF_star/readme.md
 - https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/notation1.md#data-obejct-example
@@ -19,3 +27,7 @@
 ### graph
 - [ДИСКРЕТНАЯ МАТЕМАТИКА. ТЕОРИЯ ГРАФОВ pdf](https://web-edu.rsreu.ru/res/programs-file-storage/d7eacb3cbe412c51.pdf)
 - [Теория графов. Термины и определения в картинках, хабр](https://habr.com/ru/companies/otus/articles/568026/)
+
+### ?
+- https://cyberleninka.ru/article/n/informatsionnye-vzaimodeystviya/viewer
+  

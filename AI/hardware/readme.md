@@ -119,3 +119,6 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 - [Обзор методов квантования языковых моделей: GPTQ, GGUF, QLoRA](https://matakov.com/obzor-metodov-kvantovaniya-yazykovyx-modelej-gptq-gguf-qlora/#:~:text=GGUF%20%E2%80%94%20%D1%8D%D1%82%D0%BE%20%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%2C%20%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9,MacBook%2C%20ARM%2C%20Raspberry%20Pi))
 - [llama.cpp - это все, что вам нужно](https://www.reddit.com/r/LocalLLaMA/comments/1j417qh/llamacpp_is_all_you_need/?tl=ru)
 - [Всё, что я узнал о запуске локальных языковых моделей](https://habr.com/ru/companies/ncloudtech/articles/878096/)
+
+### ТГ
+- https://t.me/agitopics/50983/53246 какой примерно вычислительный ресурс (параметры сервера : CPU, память и GPU) требуется, чтобы комфортно работала модель Qwen 3? Для начала версия  - 32B , а потом (в идеале) - 235B.

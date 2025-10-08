@@ -8,3 +8,6 @@
 ### Обзоры 
 - https://prabiz.by/business-studio/functionality/notations
 - [BS](https://www.businessstudio.ru/articles/article/modelirovanie_biznes_protsessov/)
+
+### Table
+- Сводная таблица символов https://habr.com/ru/articles/954280/#comment_28932090

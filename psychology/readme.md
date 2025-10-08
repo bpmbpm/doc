@@ -11,10 +11,14 @@
 
 Замечено, что, когда чел. очень много всего контролирует, тревожность как раз и возрастает, т.к. организм изношен от этого.
 Перегрузка
-Невесомость когнитивных искажений
+Невесомость когнитивных искажений, ловушки
 
 ### info
 - Теория U https://trends.rbc.ru/trends/innovation/5ffeb10a9a7947c36154bc6a
 - [Выбор в условиях неопределённости](https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D0%BF%D1%80%D0%B8%D0%BD%D1%8F%D1%82%D0%B8%D1%8F_%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B9)
+- https://education.yandex.ru/journal/kak-prinimat-resheniya-v-usloviyakh-neopredelennosti
+- https://sky.pro/wiki/profession/kak-prinyat-reshenie-pri-neopredelennosti/?ysclid=mghsj0y0bn646613367
+- Вывод: Принятие решений в незнакомой ситуации — это искусство баланса между разумом и интуицией, между анализом и действием. https://www.b17.ru/article/736324/?ysclid=mghsiyrcxh899378724
+- https://4brain.ru/blog/%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-%D0%BD%D0%B5%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8/?ysclid=mghsiws98t598180131
 ### также
 https://github.com/bpmbpm/doc/tree/main/EA/ORG

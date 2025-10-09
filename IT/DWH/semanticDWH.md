@@ -9,6 +9,7 @@ Enterprise Knowledge Management (EKM) \ Enterprise Knowledge Graph (EKG) – н�
 - https://en.wikipedia.org/wiki/Semantic_layer
 - https://www.atscale.com/glossary/semantic-layer/
 - https://www.oracle.com/technetwork/database/options/semantic-tech/whatsnew/oracle-6.pdf?ssSourceSiteId=otnjp
+- https://datafinder.ru/products/semanticheskiy-sloy-chto-eto-takoe-i-kakim-dolzhen-byt
 ### хабр 
 - [Единый семантический слой BI и что он дает на примере платформы Microstrategy](https://habr.com/ru/articles/650453/#comment_24110373)
 
@@ -19,4 +20,6 @@ Enterprise Knowledge Management (EKM) \ Enterprise Knowledge Graph (EKG) – н�
 
 SAP & Oracle взяли у Бира из его VSM - Viable System Model (Модель жизнеспособной системы)
 
-  
+### info  
+- Семантический слой — сердце любого BI инструмента, здесь происходит вся магия. Если по-простому, то семантический слой — прослойка между технически сложными вещами, такими как «база данных», «таблица», «соединение» и бизнес-объектами, с которыми будет работать пользователь.
+Бизнес-объекты — непосредственно сами показатели и атрибуты, для построения отчетности. https://smartia.me/article/bitools/

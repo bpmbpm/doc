@@ -17,6 +17,6 @@ https://www.dvbi.ru/BI/glossary
 https://bigdataschool.ru/blog/kimball-dwh-and-data-mesh/  
 https://www.osp.ru/os/2007/05/4265198
 
-### DHW - BI
+### DHW-BI
 - https://github.com/bpmbpm/doc/blob/main/IT/DWH/semanticDWH.md
 - https://github.com/bpmbpm/doc/blob/main/IT/BI/readme.md

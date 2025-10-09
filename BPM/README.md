@@ -6,3 +6,6 @@ lean лежит [IT/BOK/](https://github.com/bpmbpm/doc/blob/main/IT/BOK/README.
 
 ### JS diagrams
 - https://modeling-languages.com/javascript-drawing-libraries-diagrams/
+
+### Регламенты по Управлению БП
+- orgstudio.ru 

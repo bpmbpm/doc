@@ -8,3 +8,7 @@
 - https://datafinder.ru/products/vizualizaciya-dannyh-clickhouse-s-pomoshchyu-apache-superset-chast-2-dashbordy
 #### Superset
 - [Apache Superset — почему все топы рынка выбрали именно его?](https://habr.com/ru/articles/939876/)
+
+
+### also
+https://github.com/bpmbpm/doc/blob/main/IT/DWH/kit.md

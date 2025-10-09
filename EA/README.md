@@ -42,5 +42,8 @@
 - https://github.com/bpmbpm/doc/blob/main/LD/ontology/README.md#ea-ontologies
 
 
-
- 
+### 2
+- https://github.com/bpmbpm/doc/tree/main/EA/GOST/vnd УПРАВЛЕНИЕ ИТ-АРХИТЕКТУРОЙ 
+- начальный: https://habr.com/ru/companies/usetech/articles/954634/
+- М. Смирнов 
+- https://orgstudio.ru/solutions/

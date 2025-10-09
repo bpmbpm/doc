@@ -27,3 +27,4 @@ SAP & Oracle взяли у Бира из его VSM - Viable System Model (Мо�
 
 ### SQL - SPARQL
 - https://querio.ai/articles/from-sql-to-sparql-a-new-bridge-for-knowledge-driven-bi
+- https://docs.openlinksw.com/virtuoso/sparqlbi/

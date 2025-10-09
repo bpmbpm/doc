@@ -17,3 +17,6 @@ https://gitverse.ru/features/gigacode/
 
 ### SQL
 - [SAP Hana Calculation View](https://habr.com/ru/articles/948888/) Тебе не надо будет писать SQL.
+
+### flow2code
+- https://github.com/bpmbpm/doc/blob/main/visualization/code2flow/readme.md#flow2code

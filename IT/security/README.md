@@ -22,3 +22,6 @@ https://geti2p.net/en/
 
 ### tactic
 - [MITRE ATT&CK: Обзор тактик разведки (Reconnaissance)](https://habr.com/ru/articles/954656/)
+
+### RDP
+- [Чем опасен открытый RDP в интернет. «Home Edition» vs «Enterprise»](https://habr.com/ru/articles/954786/)

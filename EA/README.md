@@ -46,3 +46,4 @@
 - начальный: https://habr.com/ru/companies/usetech/articles/954634/
 - М. Смирнов 
 - https://orgstudio.ru/solutions/
+- [Компонентная модель бизнеса компании "ІВМ"](https://studme.org/87174/ekonomika/vosmiprotsessnaya_model_predpriyatiya)

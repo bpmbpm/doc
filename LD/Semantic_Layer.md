@@ -16,3 +16,7 @@ https://www.dvbi.ru/BI/glossary
 [star schema](https://ru.wikipedia.org/wiki/%D0%A1%D1%85%D0%B5%D0%BC%D0%B0_%D0%B7%D0%B2%D0%B5%D0%B7%D0%B4%D1%8B)  
 https://bigdataschool.ru/blog/kimball-dwh-and-data-mesh/  
 https://www.osp.ru/os/2007/05/4265198
+
+### DHW - BI
+- https://github.com/bpmbpm/doc/blob/main/IT/DWH/semanticDWH.md
+- https://github.com/bpmbpm/doc/blob/main/IT/BI/readme.md

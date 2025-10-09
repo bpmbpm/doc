@@ -42,7 +42,7 @@
 
 
 ### 2
-- https://github.com/bpmbpm/doc/tree/main/EA/GOST/vnd УПРАВЛЕНИЕ ИТ-АРХИТЕКТУРОЙ 
+- https://github.com/bpmbpm/doc/tree/main/EA/GOST/vnd УПРАВЛЕНИЕ ИТ-АРХИТЕКТУРОЙ и Корпоративная архитектура Исаева
 - начальный: https://habr.com/ru/companies/usetech/articles/954634/
 - М. Смирнов 
 - https://orgstudio.ru/solutions/

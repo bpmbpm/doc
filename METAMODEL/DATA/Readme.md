@@ -30,3 +30,4 @@ https://schema.org/docs/developers.html
 
 ### также
 - https://github.com/bpmbpm/doc/tree/main/EA/DataQuality
+- [Книга: «Грокаем структуры данных»](https://habr.com/ru/companies/piter/articles/954670/) 

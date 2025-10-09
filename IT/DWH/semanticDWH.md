@@ -10,7 +10,7 @@ Enterprise Knowledge Management (EKM) \ Enterprise Knowledge Graph (EKG) – н�
 - https://www.atscale.com/glossary/semantic-layer/
 - https://www.oracle.com/technetwork/database/options/semantic-tech/whatsnew/oracle-6.pdf?ssSourceSiteId=otnjp
 - https://datafinder.ru/products/semanticheskiy-sloy-chto-eto-takoe-i-kakim-dolzhen-byt
-### Microstrategy Enterprise Semantic Graph
+### BI Microstrategy Enterprise Semantic Graph
 - [Единый семантический слой BI и что он дает на примере платформы Microstrategy](https://habr.com/ru/articles/650453/#comment_24110373) 
 - https://ceo.ru.com/microstrategy-enterprise-semantic-graph
 

@@ -12,3 +12,4 @@
 
 ### also
 https://github.com/bpmbpm/doc/blob/main/IT/DWH/kit.md
+https://github.com/bpmbpm/doc/blob/main/LD/Semantic_Layer.md

@@ -9,3 +9,4 @@
 - https://www.researchgate.net/profile/August-Wilhelm-Scheer
 - https://www.thriftbooks.com/a/august-wilhelm-scheer/299944/
 - https://openlibrary.org/authors/OL218130A/August-Wilhelm_Scheer /openlibrary
+- https://github.com/bpmbpm/doc/blob/main/BPM/ARIS/history.md#scheer--aris

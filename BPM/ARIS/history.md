@@ -1,5 +1,9 @@
 **Architecture of Integrated Information Systems**
-## Scheer \ ARIS  
+## Scheer \ ARIS 
+- начало
+  - 1972 получил докторскую степень в Гамбургском университете, защитив диссертацию «Kosten- und kapazitätsorientierte Ersatzpolitik bei stochastisch ausfallenden Produktionsanlagen» \ Политика замены оборудования, ориентированная на затраты и мощности, для предприятий, выходящих из строя.
+  - 1974 получил степень [доктора философии](https://en.wikipedia.org/wiki/August-Wilhelm_Scheer) в Гамбурге, защитив диссертацию по управлению проектами.
+  - 1975 основал Институт информационных систем (IWi) в Saarland University, который он возглавлял до 2005 года.
 - 1980 Dr. August-Wilhelm Scheer разработал Y-модель (логотип IDS Scheer)  
 - 1984 основание IDS Scheer - разработчик Business Process Management (BPM) software. [wiki](https://en.wikipedia.org/wiki/IDS_Scheer): , Saarbrücken, Saarland, Germany. IDS = Integrated Data-processing Systems. Первое название компании: «IDS Prof. Scheer Gesellschaft für integrierte Datenverarbeitungssysteme mbH»  
 - 1992 - 1994 [ARIS](https://ru.wikipedia.org/wiki/ARIS)  

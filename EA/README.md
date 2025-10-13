@@ -8,7 +8,7 @@
   
 ### System Design
 - [Конспект по архитектуре ПО и System Design](https://habr.com/ru/articles/888202/) ; System Design Interview в [miro](https://miro.com/app/board/uXjVLw0JIYw=/)
-- [System Design для начинающих: всё, что вам нужно. Часть 1](https://habr.com/ru/articles/873388/) !
+- [System Design для начинающих: всё, что вам нужно. Часть 1](https://habr.com/ru/articles/873388/) ; [Часть 6](https://habr.com/ru/articles/919826/)
 ### Связанное
 - [Архитектура предприятия: Интеграционные паттерны](https://habr.com/ru/companies/otus/articles/891866/)
   ![ris](https://habrastorage.org/r/w1560/getpro/habr/upload_files/00a/78c/ea1/00a78cea1ea035790534caa8a30c26d5.png)

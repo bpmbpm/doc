@@ -18,3 +18,6 @@ OpenAPI
 - [Платежные системы — вчера, сегодня и… завтра?](https://habr.com/ru/companies/nspk/articles/952332/)
 ### bank
 - ПСБ Эволюция процессного управления в «ПСБ» - https://github.com/bpmbpm/doc/tree/main/BPM/example
+
+### card
+- [Лучшие виртуальные карты 2025 года для оплаты зарубежных сервисов или расчётов за границей](https://habr.com/ru/articles/955598/)

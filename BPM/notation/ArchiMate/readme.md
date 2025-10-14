@@ -58,10 +58,11 @@
 ### Spec 2
 - [ARCHIMATE_v3_1_specifikacia.](https://university.sk/wp-content/uploads/2020/01/ARCHIMATE_v3_1_specifikacia.pdf) стр 40
 - [Cookbook](https://www.hosiaisluoma.fi/ArchiMate-Cookbook.pdf)
-- hosiaisluoma.fi1 [ArchiMate Core Meta-model](https://www.hosiaisluoma.fi/blog/archimate-metamodel/) ; [eamples](https://www.hosiaisluoma.fi/blog/archimate-examples/)
+- hosiaisluoma.fi1 [ArchiMate Core Meta-model](https://www.hosiaisluoma.fi/blog/archimate-metamodel/) ; [eхamples](https://www.hosiaisluoma.fi/blog/archimate-examples/)
 
 ### Metamodel
 - [Бизнес-слой в ArchiMate. Часть 1 – Метамодель, visual-paradigm.com](https://archimate.visual-paradigm.com/2018/02/15/business-layer-metamodel-in-archimate/)
+- https://systems.education/archimate ?
 ### Разное 
 - nesting https://github.com/bpmbpm/doc/blob/main/BPM/enEA/readme.md#nesting
 - https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/notation1.md#data-obejct-example object + динамические связи

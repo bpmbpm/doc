@@ -13,6 +13,7 @@
 - [на Уральской Стали](https://up-pro.ru/library/production_management/lean/reshenie-problem-v-formate-a3/)
 - [А3 Мышление](https://lean-area.livejournal.com/1494.html)
 - [НЛМК](https://up-pro.ru/library/production_management/systems/a3-nlmk/)
-
+В широком смысле - просто отобразить всю проблему на одном листе.
+В узком смысле - на листе A3 отобразить проблему в концепте PDCA и с разделами, указанными в шаблоне A3 (описание проблемы, текуцщее состояние и др.)
 ### book
 - [карманный справочник pdf](https://umpgroup.ru/images/50_LEAN_visuals_2015.pdf)

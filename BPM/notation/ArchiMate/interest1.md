@@ -11,7 +11,7 @@
 - https://www.hosiaisluoma.fi/blog/archimate/ ; https://www.hosiaisluoma.fi/ArchiMate-Cookbook.pdf
 ### ArchiMate
 - https://sparxsystems.com/resources/tutorials/archimate/
-- https://models.govarch.kz/
+- https://models.govarch.kz/ Архитектура электронного правительства Казахстана
 ### js
 - https://github.com/archimodel/archimate-js
 

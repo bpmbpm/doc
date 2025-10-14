@@ -13,6 +13,7 @@ BPMN = ["Business People May Not Undestand"](https://habr.com/ru/articles/907584
 - [stormbpmn](https://stormbpmn.com/bpmn/elements/)
 - [businessstudio](https://www.businessstudio.ru/wiki/docs/v4/doku.php/ru/csdesign/bpmodeling/bpmn_notation)
 - [camunda.com](https://camunda.com/bpmn/reference/)
+- [camundarus.ru](https://camundarus.ru/bpmn/reference/?ysclid=mgq7jjmvk0238182911)
 - [sparxsystems](https://sparxsystems.com/resources/user-guides/17.0/model-domains/bpmn-models.pdf)
 ### en spec
 - [стартовая omg BPMN](https://www.omg.org/spec/BPMN/2.0.2/)

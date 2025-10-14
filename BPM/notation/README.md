@@ -11,3 +11,6 @@
 
 ### Table
 - Сводная таблица символов https://habr.com/ru/articles/954280/#comment_28932090
+
+### Сравнения
+- https://systems.education/bpmn_epc_dmn

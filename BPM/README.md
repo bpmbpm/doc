@@ -8,4 +8,4 @@ lean лежит [IT/BOK/](https://github.com/bpmbpm/doc/blob/main/IT/BOK/README.
 - https://modeling-languages.com/javascript-drawing-libraries-diagrams/
 
 ### Регламенты по Управлению БП
-- orgstudio.ru 
+- orgstudio.ru [Положение о бизнес-процессах организации](https://orgstudio.ru/files/process_management_normative_document.pdf)

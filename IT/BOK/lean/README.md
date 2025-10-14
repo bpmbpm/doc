@@ -20,3 +20,4 @@
 
 ### Разное
 - [Рисунок 1 - Схематичное изображение элементов процесса](https://docs.cntd.ru/document/1200124394) ГОСТ Р ИСО 9001-2015
+- [PDCA](https://expert-2014.ru/poleznaya-informaciya/pdca-v-standartax-iso) OHSAS 18001 ; ISO 14001

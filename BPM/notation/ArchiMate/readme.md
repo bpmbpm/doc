@@ -66,3 +66,4 @@
 ### Разное 
 - nesting https://github.com/bpmbpm/doc/blob/main/BPM/enEA/readme.md#nesting
 - https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/notation1.md#data-obejct-example object + динамические связи
+- https://github.com/nfigay/ArchiCG

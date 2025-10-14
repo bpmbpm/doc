@@ -4,4 +4,4 @@
 - ArchiSurance, 2012
   
 - Nepal
-- https://models.govarch.kz/ Архитектура электронного правительства Казахстана см.[notation/ArchiMate/interest1.md](https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/interest1.md#archimate)
+- https://models.govarch.kz/ Архитектура электронного правительства Казахстана см. [notation/ArchiMate/interest1.md](https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/interest1.md#archimate)

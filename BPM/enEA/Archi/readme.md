@@ -7,8 +7,9 @@
 - [.archiplugin](https://github.com/manusasi/web?ysclid=mc2vx9olpk844575136) ; & jArchi_1.7.0.archiplugin ??
 - [database](https://github.com/archi-contribs/database-plugin)  
 - [archi-contribs](https://github.com/orgs/archi-contribs/repositories?type=all)
-- [Как собрать плагин Archi самостоятельно](https://habr.com/ru/articles/956082/)
+
 ### статьи
+- [Как собрать плагин Archi самостоятельно](https://habr.com/ru/articles/956082/)
 - [Автоматизируем работу с ArchiMate в CI пайплайнах](https://habr.com/ru/articles/583314/)
 - [Architecture as Code: моделируем архитектуру предприятия в ArchiMate](https://habr.com/ru/companies/otus/articles/885594/)
 - 

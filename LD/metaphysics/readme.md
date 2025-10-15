@@ -22,7 +22,8 @@
 - термин экземпляр (maxstroy) https://habr.com/ru/articles/249165/
 
 ### Философия осознания
-- "философия осознания 71" kamil
+- "философия осознания 71" kamil / [Концептуальная архитектура сознания](https://docs.google.com/document/d/11LZl_Wxg8TfPYKHCdBjJFVzK2IbrqKDUJw8KIyFLxuU/edit?usp=drivesdk)
+https://t.me/agirussia/112287
 
 ### Темы Философия - нет 
 - https://github.com/bpmbpm/doc/blob/main/politic/social/README.md

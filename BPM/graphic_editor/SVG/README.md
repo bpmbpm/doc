@@ -11,3 +11,6 @@
 ### SVG-Edit
 - https://github.com/SVG-Edit/ ; https://github.com/SVG-Edit/svg-edit-react ; https://svg-edit.github.io/svg-edit-react/dist/index.html
 - https://github.com/madskristensen/SvgViewer
+
+### Metadata
+- https://www.w3.org/TR/SVG/struct.html#MetadataElement

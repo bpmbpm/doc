@@ -10,7 +10,7 @@
 
 ### статьи
 - [Как собрать плагин Archi самостоятельно](https://habr.com/ru/articles/956082/)
-- [Автоматизируем работу с ArchiMate в CI пайплайнах](https://habr.com/ru/articles/583314/)
+- [Автоматизируем работу с ArchiMate в CI пайплайнах](https://habr.com/ru/articles/583314/) ; [ci](https://habr.com/ru/companies/automacon/articles/862552/)
 - [Architecture as Code: моделируем архитектуру предприятия в ArchiMate](https://habr.com/ru/companies/otus/articles/885594/)
 - 
 ### Docs

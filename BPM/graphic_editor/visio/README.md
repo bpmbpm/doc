@@ -33,3 +33,5 @@
 ### svg publish
 - https://visio.getbb.ru/viewtopic.php?f=30&t=1680
 - https://github.com/nbelyh/svgpublish-releases/releases ; https://unmanagedvisio.com/products/svg-publish/
+### ZIP‑ archive
+- [Как я парсил схемы Visio](https://habr.com/ru/companies/T1Holding/articles/956438/)

@@ -25,3 +25,5 @@
 - "философия осознания 71" kamil
 
 ### Темы Философия - нет 
+- https://github.com/bpmbpm/doc/blob/main/politic/social/README.md
+- LD/metaphysics

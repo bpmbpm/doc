@@ -1,3 +1,5 @@
+### bash
+- [Система персональных шпаргалок прямо в терминале](https://habr.com/ru/articles/955674/)
 ### treepad 
 - [fox-base](https://habr.com/ru/articles/941316/comments/#comment_28762654)
 - https://treepad.en.softonic.com/?ex=RAMP-3507.1&rex=true

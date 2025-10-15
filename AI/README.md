@@ -45,3 +45,6 @@ https://github.com/bpmbpm/doc/tree/main/BPM/AI
 ### Mujoco 
 - Swimmer https://gymnasium.farama.org/environments/mujoco/swimmer/ Эта среда соответствует среде пловца, описанной в докторской диссертации Реми Кулома «Обучение с подкреплением с использованием нейронных сетей и его применение в управлении моторикой» .
 - https://gymnasium.farama.org/environments/mujoco/half_cheetah/
+
+### Code
+- [Топ-7 бесплатных нейросетей для генерации кода](https://habr.com/ru/companies/bothub/articles/955528/)

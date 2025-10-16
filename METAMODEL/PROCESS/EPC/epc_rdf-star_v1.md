@@ -381,145 +381,133 @@ graph TB
     
     Operation1["Операция1:<br/>Рассмотрение заявления"]
     
-    Document1[/"Документ1:<br/>Заявление составленное<br/>Статус: новый"/]
-    Document2[/"Документ2:<br/>Заявление согласованное<br/>Статус: утверждён"/]
-    Document3[/"Документ3:<br/>Заявление не согласованное<br/>Статус: отклонён"/]
-    
-    %% Основные связи процесса
-    Event1 --> Operation1
-    Document1 --> Operation1
-    
-    %% Два возможных исхода операции
-    Operation1 -->|утвердить| Event2
-    Operation1 -->|отклонить| Event3
-    
-    %% Связи создания документов (пунктирные)
-    Operation1 -.->|создает| Document2
-    Operation1 -.->|создает| Document3
-    
-    %% Специальные связи между событиями и документами (двойные с подписями)
-    Event2 ==>|"подтверждает<br/>status: утверждён"| Document2
-    Event3 ==>|"отклоняет<br/>status: отклонён"| Document3
-    
-    classDef event fill:#ffcccc,stroke:#d60000,stroke-width:2px
-    classDef function fill:#e1f5e1,stroke:#4caf50,stroke-width:2px
-    classDef document fill:#cccccc,stroke:#555,stroke-width:2px
-    classDef specialLink stroke:#ff9900,stroke-width:3px,stroke-dasharray: 5 5
-    
-    class Event1,Event2,Event3 event
-    class Operation1 function
-    class Document1,Document2,Document3 document
-```
-
-## Альтернативный вариант с более явным разделением типов связей
-
-```mermaid
-graph TB
-    Event1(("Событие1:<br/>Заявление подано"))
-    Event2(("Событие2:<br/>Согласование"))
-    Event3(("Событие3:<br/>Отказ"))
-    
-    Operation1["Операция1:<br/>Рассмотрение заявления"]
-    
     Document1[/"Документ1:<br/>Заявление составленное"/]
     Document2[/"Документ2:<br/>Заявление согласованное"/]
     Document3[/"Документ3:<br/>Заявление не согласованное"/]
     
-    %% Процессные связи (сплошные)
-    Event1 --> Operation1
-    Document1 --> Operation1
-    Operation1 --> Event2
-    Operation1 --> Event3
+    %% Основные связи процесса
+    Event1 -- "инициирует" --> Operation1
+    Document1 -- "входной документ" --> Operation1
     
-    %% Документные связи (пунктирные)
-    Operation1 -.->|создает| Document2
-    Operation1 -.->|создает| Document3
+    %% Два возможных исхода операции
+    Operation1 -- "утвердить" --> Event2
+    Operation1 -- "отклонить" --> Event3
     
-    %% Связи валидации (толстые с подписями)
-    Event2 == VALIDATES ==>|"изменяет статус на:<br/>УТВЕРЖДЁН"| Document2
-    Event3 == REJECTS ==>|"изменяет статус на:<br/>ОТКЛОНЁН"| Document3
+    %% Связи создания документов
+    Operation1 -. "создает" .-> Document2
+    Operation1 -. "создает" .-> Document3
+    
+    %% Специальные связи между событиями и документами
+    Event2 == "подтверждает" ==> Document2
+    Event3 == "отклоняет" ==> Document3
     
     %% Статусы документов
-    Document1 -.-|status: НОВЫЙ| S1[ ]
-    Document2 -.-|status: УТВЕРЖДЁН| S2[ ]
-    Document3 -.-|status: ОТКЛОНЁН| S3[ ]
+    Document1 -.- "status: НОВЫЙ"
+    Document2 -.- "status: УТВЕРЖДЁН"
+    Document3 -.- "status: ОТКЛОНЁН"
     
     classDef event fill:#ffcccc,stroke:#d60000,stroke-width:2px
     classDef function fill:#e1f5e1,stroke:#4caf50,stroke-width:2px
     classDef document fill:#cccccc,stroke:#555,stroke-width:2px
-    classDef validationLink stroke:#0066cc,stroke-width:3px
-    classDef status fill:#f9f9f9,stroke:#999,stroke-dasharray: 3 3
     
     class Event1,Event2,Event3 event
     class Operation1 function
     class Document1,Document2,Document3 document
-    class S1,S2,S3 status
 ```
 
-## Компактное описание на RDF-star с разными типами связей
+## Упрощенный вариант с корректным синтаксисом Mermaid
+
+```mermaid
+graph TB
+    A(("Событие1: Заявление подано"))
+    B["Операция1: Рассмотрение заявления"]
+    C(("Событие2: Согласование"))
+    D(("Событие3: Отказ"))
+    
+    E[/"Документ1: Заявление составленное"/]
+    F[/"Документ2: Заявление согласованное"/]
+    G[/"Документ3: Заявление не согласованное"/]
+    
+    %% Процессные связи
+    A --> B
+    B --> C
+    B --> D
+    
+    %% Документные связи
+    E --> B
+    B -.-> F
+    B -.-> G
+    
+    %% Связи валидации (толстые линии)
+    C ==> F
+    D ==> G
+    
+    %% Подписи для связей валидации
+    linkStyle 5 stroke:#0066cc,stroke-width:3px
+    linkStyle 6 stroke:#cc0000,stroke-width:3px
+    
+    classDef event fill:#ffcccc,stroke:#d60000,stroke-width:2px
+    classDef function fill:#e1f5e1,stroke:#4caf50,stroke-width:2px
+    classDef document fill:#cccccc,stroke:#555,stroke-width:2px
+    
+    class A,C,D event
+    class B function
+    class E,F,G document
+```
+
+## Текстовая легенда с пояснениями
+
+```
+ЛЕГЕНДА СВЯЗЕЙ:
+
+Тонкая сплошная стрелка (→)     - процессный поток
+Тонкая пунктирная стрелка (-.→) - создание документа
+Толстая сплошная стрелка (==>)  - связь валидации
+
+СВЯЗИ ВАЛИДАЦИИ:
+- Событие2 ==> Документ2: "Согласование подтверждает заявление"
+- Событие3 ==> Документ3: "Отказ отклоняет заявление"
+
+СТАТУСЫ ДОКУМЕНТОВ:
+- Документ1: НОВЫЙ (входной документ)
+- Документ2: УТВЕРЖДЁН (результат согласования)
+- Документ3: ОТКЛОНЁН (результат отказа)
+```
+
+## Компактное RDF-star описание с типами связей
 
 ```turtle
 @prefix epc: <http://example.org/epc#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix doc: <http://example.org/document#> .
 
 # Экземпляры
 epc:Event1 rdf:type epc:Event ; rdfs:label "Заявление подано" .
-epc:Event2 rdf:type epc:Event ; rdfs:label "Согласование заявления" .
-epc:Event3 rdf:type epc:Event ; rdfs:label "Отказ по заявлению" .
+epc:Event2 rdf:type epc:Event ; rdfs:label "Согласование" .
+epc:Event3 rdf:type epc:Event ; rdfs:label "Отказ" .
 epc:Operation1 rdf:type epc:Function ; rdfs:label "Рассмотрение заявления" .
 epc:Document1 rdf:type epc:Document ; rdfs:label "Заявление составленное" .
 epc:Document2 rdf:type epc:Document ; rdfs:label "Заявление согласованное" .
 epc:Document3 rdf:type epc:Document ; rdfs:label "Заявление не согласованное" .
 
-# Процессные связи (сплошные линии)
-<<epc:Event1 epc:triggers epc:Operation1>>
-    epc:linkType "process" .
+# Процессные связи
+<<epc:Event1 epc:triggers epc:Operation1>> epc:linkStyle "solid" .
+<<epc:Operation1 epc:produces epc:Event2>> epc:linkStyle "solid" .
+<<epc:Operation1 epc:produces epc:Event3>> epc:linkStyle "solid" .
 
-<<epc:Operation1 epc:produces epc:Event2>>
-    epc:linkType "process" ;
-    epc:condition "заявление соответствует требованиям" .
+# Документные связи
+<<epc:Document1 epc:inputs epc:Operation1>> epc:linkStyle "solid" .
+<<epc:Operation1 epc:creates epc:Document2>> epc:linkStyle "dashed" .
+<<epc:Operation1 epc:creates epc:Document3>> epc:linkStyle "dashed" .
 
-<<epc:Operation1 epc:produces epc:Event3>>
-    epc:linkType "process" ;
-    epc:condition "заявление не соответствует требованиям" .
+# Связи валидации
+<<epc:Event2 epc:validates epc:Document2>> 
+    epc:linkStyle "thick" ;
+    epc:label "подтверждает" .
 
-# Документные связи (пунктирные линии)
-<<epc:Document1 epc:inputs epc:Operation1>>
-    epc:linkType "data" .
-
-<<epc:Operation1 epc:creates epc:Document2>>
-    epc:linkType "data" .
-
-<<epc:Operation1 epc:creates epc:Document3>>
-    epc:linkType "data" .
-
-# Специальные связи валидации (толстые линии с подписями)
-<<epc:Event2 epc:validates epc:Document2>>
-    epc:linkType "validation" ;
-    epc:action "подтверждает" ;
-    doc:setsStatus "утверждён" .
-
-<<epc:Event3 epc:invalidates epc:Document3>>
-    epc:linkType "validation" ;
-    epc:action "отклоняет" ;
-    doc:setsStatus "отклонён" .
+<<epc:Event3 epc:invalidates epc:Document3>> 
+    epc:linkStyle "thick" ;
+    epc:label "отклоняет" .
 ```
 
-## Легенда связей
-
-```
-ТИПЫ СВЯЗЕЙ НА ДИАГРАММЕ:
-
-→    (сплошная)     - процессный поток
--.→  (пунктирная)   - создание/использование документа
-==⇒  (двойная)      - связь валидации/подтверждения
-
-ПОДПИСИ СВЯЗЕЙ:
-- "утвердить"/"отклонить"     - бизнес-решение
-- "создает"                   - генерация документа  
-- "подтверждает"/"отклоняет"  - изменение статуса документа
-```
-
-Такое визуальное разделение типов связей делает диаграмму более информативной и четко показывает разные аспекты взаимодействия между событиями и документами в бизнес-процессе.
+Этот вариант использует только поддерживаемый синтаксис Mermaid и четко разделяет три типа связей между объектами с помощью разных стилей линий.

@@ -24,7 +24,7 @@ graph TB
     class Document1,Document2 document
 ```
 
-## Компактное описание на RDF-star (без временных меток)
+## Компактное описание на RDF-star 
 
 ```turtle
 @prefix epc: <http://example.org/epc#> .

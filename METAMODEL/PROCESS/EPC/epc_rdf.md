@@ -3,7 +3,7 @@
 
 #### RDF online
 - https://rdfplayground.dcc.uchile.cl/ ; https://giacomociti.github.io/rdf2dot/ ; https://issemantic.net/rdf-visualizer ; https://www.leskoff.com/s02222-0
-- не нашел ни одного с поддержкой передачи кода в параметре, например, https://www.ldf.fi/service/rdf-grapher (требует VPN)
+- не нашел ни одного RDF grapher с поддержкой передачи кода в параметре, например, https://www.ldf.fi/service/rdf-grapher (требует VPN)
 
 ```
 @prefix epc: <http://example.org/epc#> .

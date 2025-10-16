@@ -2,6 +2,7 @@
 
 Исходное описание (словами и mermaid) см. https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/EPC/epc_mermaid.md
 
+## deepseek
 ## 1. **BPMN-подобный вариант (используем graph)**
 ```mermaid
 graph TD

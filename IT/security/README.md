@@ -4,6 +4,7 @@
 - Censor Tracker - прокси-расширение
 - AmneziaVPN [Ваш VPN перестал работать? Мы можем помочь](https://habr.com/ru/companies/amnezia/news/901110/) ; [copy](https://dimonvideo.ru/usernews/401234)
 - [Все о блокировках VPN за последние две недели](https://habr.com/ru/companies/amnezia/articles/928378/)
+- [Свой прокси DNS сервер для обхода санкций зарубежных сайтов(с использованием VPS)](https://habr.com/ru/articles/956916/)
 ### ViRUS
 - [История вирусов](https://habr.com/ru/companies/timeweb/articles/894768/)
 ### TOR

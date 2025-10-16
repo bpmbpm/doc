@@ -285,3 +285,85 @@ gantt
 5. **Процессные атрибуты** - order, duration, format
 
 RDF-star позволяет создавать более богатые и выразительные метаданные, сохраняя при этом совместимость с обычным RDF.
+
+# III Добавь Документ 3 и Событие 3. Они оба исходят из функции. 
+
+```mermaid
+graph TB
+    Event1(("Событие1"))
+    Event2(("Событие2"))
+    Event3(("Событие3"))
+    Operation1["Операция1"]
+    Document1[/"Документ1"/]
+    Document2[/"Документ2"/]
+    Document3[/"Документ3"/]
+    
+    Event1 --> Operation1
+    Operation1 --> Event2
+    Operation1 --> Event3
+    Document1 --> Operation1
+    Operation1 --> Document2
+    Operation1 --> Document3
+    
+    classDef event fill:#ffcccc,stroke:#d60000,stroke-width:2px
+    classDef function fill:#e1f5e1,stroke:#4caf50,stroke-width:2px
+    classDef document fill:#cccccc,stroke:#555,stroke-width:2px
+    
+    class Event1,Event2,Event3 event
+    class Operation1 function
+    class Document1,Document2,Document3 document
+```
+
+## Компактное описание на RDF-star с новыми элементами
+
+```turtle
+@prefix epc: <http://example.org/epc#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Базовые типы
+epc:Event rdf:type rdfs:Class .
+epc:Function rdf:type rdfs:Class .
+epc:Document rdf:type rdfs:Class .
+
+# Экземпляры
+epc:Event1 rdf:type epc:Event ; rdfs:label "Событие1" .
+epc:Event2 rdf:type epc:Event ; rdfs:label "Событие2" .
+epc:Event3 rdf:type epc:Event ; rdfs:label "Событие3" .
+epc:Operation1 rdf:type epc:Function ; rdfs:label "Операция1" .
+epc:Document1 rdf:type epc:Document ; rdfs:label "Документ1" .
+epc:Document2 rdf:type epc:Document ; rdfs:label "Документ2" .
+epc:Document3 rdf:type epc:Document ; rdfs:label "Документ3" .
+
+# Триплы с аннотациями
+<<epc:Operation1 epc:triggeredBy epc:Event1>> epc:priority "high" .
+<<epc:Operation1 epc:resultsIn epc:Event2>> epc:probability 1.0 .
+<<epc:Operation1 epc:resultsIn epc:Event3>> epc:probability 0.8 .
+<<epc:Operation1 epc:hasInput epc:Document1>> epc:mandatory true .
+<<epc:Operation1 epc:hasOutput epc:Document2>> epc:quality "high" .
+<<epc:Operation1 epc:hasOutput epc:Document3>> epc:quality "medium" .
+```
+
+## Текстовая диаграмма структуры
+
+```
+Структура процесса:
+
+Workflow:
+[Событие1] → [Операция1] → [Событие2]
+                       ↘→ [Событие3]
+
+Docflow:
+[Документ1] → [Операция1] → [Документ2]
+                          ↘→ [Документ3]
+
+Аннотации RDF*:
+- triggeredBy: priority = high
+- resultsIn (Event2): probability = 1.0
+- resultsIn (Event3): probability = 0.8
+- hasInput: mandatory = true
+- hasOutput (Document2): quality = high
+- hasOutput (Document3): quality = medium
+```
+
+На диаграмме показано, что из функции Операция1 исходят два документа (Документ2 и Документ3) и два события (Событие2 и Событие3). Все документы расположены слева от функции, как требовалось в исходном условии.

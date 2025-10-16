@@ -420,39 +420,6 @@ graph TB
     class Status1,Status2,Status3 status
 ```
 
-## Минималистичный рабочий вариант
-
-```mermaid
-graph TB
-    A(("Событие1"))
-    B[Операция1]
-    C(("Событие2"))
-    D(("Событие3"))
-    E[/Документ1/]
-    F[/Документ2/]
-    G[/Документ3/]
-    
-    A --> B
-    E --> B
-    B --> C
-    B --> D
-    B -.-> F
-    B -.-> G
-    C --> F
-    D --> G
-    
-    linkStyle 5 stroke:#0066cc,stroke-width:3px
-    linkStyle 6 stroke:#cc0000,stroke-width:3px
-    
-    classDef event fill:#ffcccc,stroke:#d60000
-    classDef function fill:#e1f5e1,stroke:#4caf50
-    classDef document fill:#cccccc,stroke:#555
-    
-    class A,C,D event
-    class B function
-    class E,F,G document
-```
-
 ## Текстовое описание с пояснениями
 
 ```
@@ -510,4 +477,3 @@ epc:Operation1 epc:creates epc:Document3 .
 <<epc:Event3 epc:invalidates epc:Document3>> epc:action "отклоняет" .
 ```
 
-Этот вариант должен работать корректно, так как использует только базовый синтаксис Mermaid без сложных конструкций. Все дополнительные пояснения вынесены в текстовое описание.

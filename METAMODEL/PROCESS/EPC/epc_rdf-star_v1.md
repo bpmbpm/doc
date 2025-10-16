@@ -1,4 +1,98 @@
-## epc_rdf-star_v1.md + временная метка
+# epc_rdf-star
+- см. https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/EPC/epc_rdf.md
+# I epc_rdf-star_v1.md 
+
+```mermaid
+graph TB
+    Event1(("Событие1"))
+    Event2(("Событие2"))
+    Operation1["Операция1"]
+    Document1[/"Документ1"/]
+    Document2[/"Документ2"/]
+    
+    Event1 --> Operation1
+    Operation1 --> Event2
+    Document1 --> Operation1
+    Operation1 --> Document2
+    
+    classDef event fill:#ffcccc,stroke:#d60000,stroke-width:2px
+    classDef function fill:#e1f5e1,stroke:#4caf50,stroke-width:2px
+    classDef document fill:#cccccc,stroke:#555,stroke-width:2px
+    
+    class Event1,Event2 event
+    class Operation1 function
+    class Document1,Document2 document
+```
+
+## Компактное описание на RDF-star (без временных меток)
+
+```turtle
+@prefix epc: <http://example.org/epc#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Базовые типы
+epc:Event rdf:type rdfs:Class .
+epc:Function rdf:type rdfs:Class .
+epc:Document rdf:type rdfs:Class .
+
+# Экземпляры
+epc:Event1 rdf:type epc:Event ; rdfs:label "Событие1" .
+epc:Event2 rdf:type epc:Event ; rdfs:label "Событие2" .
+epc:Operation1 rdf:type epc:Function ; rdfs:label "Операция1" .
+epc:Document1 rdf:type epc:Document ; rdfs:label "Документ1" .
+epc:Document2 rdf:type epc:Document ; rdfs:label "Документ2" .
+
+# Триплы с аннотациями
+<<epc:Operation1 epc:triggeredBy epc:Event1>> epc:priority "high" .
+<<epc:Operation1 epc:resultsIn epc:Event2>> epc:probability 1.0 .
+<<epc:Operation1 epc:hasInput epc:Document1>> epc:mandatory true .
+<<epc:Operation1 epc:hasOutput epc:Document2>> epc:quality "high" .
+```
+
+## Текстовая диаграмма структуры
+
+```
+Структура процесса:
+
+Workflow:
+[Событие1] → [Операция1] → [Событие2]
+
+Docflow:
+[Документ1] → [Операция1] → [Документ2]
+
+Аннотации RDF*:
+- triggeredBy: priority = high
+- resultsIn: probability = 1.0  
+- hasInput: mandatory = true
+- hasOutput: quality = high
+```
+
+## Альтернативная простая визуализация
+
+```
+┌───────────┐    ┌───────────┐    ┌───────────┐
+│ Событие1  │───▶│ Операция1 │───▶│ Событие2  │
+└───────────┘    └───────────┘    └───────────┘
+                   │    ▲
+                   │    │
+           ┌───────┘    └───────┐
+           ▼                    ▼
+     ┌───────────┐        ┌───────────┐
+     │ Документ1 │        │ Документ2 │
+     └───────────┘        └───────────┘
+
+Аннотации:
+• Событие1 → Операция1: priority = high
+• Операция1 → Событие2: probability = 1.0
+• Документ1 → Операция1: mandatory = true  
+• Операция1 → Документ2: quality = high
+```
+
+RDF-star в этой компактной форме позволяет выразить те же семантические отношения, что и обычный RDF, но с дополнительными метаданными непосредственно на уровнях связей, делая модель более выразительной при меньшем объеме кода.
+
+
+# II epc_rdf-star_v1.md + временная метка
 ## Описание на RDF-star (RDF*)
 
 ```turtle

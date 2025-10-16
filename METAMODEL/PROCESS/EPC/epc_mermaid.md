@@ -6,6 +6,18 @@
 - [Рисуем диаграммы Mermaid.js в README-файлах GitHub](https://habr.com/ru/articles/652867)
 - https://yamadharma.github.io/ru/post/2021/01/03/diagrams-mermaid/
 ### Пример
+#### Описание (словесное)
+Дано:
+- типы объектов:
+  - Событие1	имеет тип	Event. 
+  - Операция1	имеет тип	Function.
+  - Документ1	имеет тип	Document.
+  - Документ2	имеет тип	Document.
+  - Событие2	имеет тип	Event.
+- workflow: Событие1 -> Операция1 -> Событие2.
+- docflow: Документ1 является входящим для Операция1, а Документ2 – исходящим.
+
+#### mermaid diagram 
 ``` mermaid
 flowchart TB
     subgraph workflow [Workflow]

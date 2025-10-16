@@ -5,8 +5,8 @@
 ### mermaid
 - [Рисуем диаграммы Mermaid.js в README-файлах GitHub](https://habr.com/ru/articles/652867)
 - https://yamadharma.github.io/ru/post/2021/01/03/diagrams-mermaid/
-### Пример
-#### Описание (словесное)
+### Example1
+#### verbal description
 Дано:
 - типы объектов:
   - Событие1	имеет тип	Event. 

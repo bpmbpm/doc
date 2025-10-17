@@ -9,7 +9,7 @@
 [BPM CBOK VERSION 3.0](https://archive.org/stream/ABPMPCBOKGuideEnglish/ABPMP_CBOK_Guide_English_djvu.txt)
 
 ### CyBOK Cybersecurity Body of Knowledge
-[CyBOK. Глава 2. Риск-менеджмент и управление ИБ. Часть 1](https://habr.com/ru/companies/securityvison/articles/897124/) ; [часть 2](https://habr.com/ru/companies/securityvison/articles/909684/) [CyBОК. Глава 3. Законы и регуляторные нормы. Часть 3](https://habr.com/ru/companies/securityvison/articles/957132/)
+[CyBOK. Глава 2. Риск-менеджмент и управление ИБ. Часть 1](https://habr.com/ru/companies/securityvison/articles/897124/) ; [часть 2](https://habr.com/ru/companies/securityvison/articles/909684/) ; [CyBОК. Глава 3. Законы и регуляторные нормы. Часть 3](https://habr.com/ru/companies/securityvison/articles/957132/)
 ### EABOK
 Enterprise Architecture Body of Knowledge. Найти текст EABOK не удалось
 - Текущая печатная версия имеет пометку DRAFT, датирована 06-Feb-2004 и отредактирована доктором Полой Дж. Хаган. Она была одобрена для публичного выпуска; распространение неограниченно. С 2004 года не было сделано никаких обновлений ни в одной из публично выпущенных версий этого документа, и проект, по-видимому, был заброшен. [wiki](https://en.wikipedia.org/wiki/Enterprise_Architecture_Body_of_Knowledge)

@@ -48,3 +48,6 @@ https://github.com/bpmbpm/doc/tree/main/BPM/AI
 
 ### Code
 - [Топ-7 бесплатных нейросетей для генерации кода](https://habr.com/ru/companies/bothub/articles/955528/)
+
+### Дообучение
+- [H2O LLM Studio: как дообучить языковую модель под свои задачи, не привлекая внимания датасаентистов](https://habr.com/ru/companies/vktech/articles/957078/)

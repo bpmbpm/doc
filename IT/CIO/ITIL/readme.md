@@ -7,3 +7,9 @@
 
 ### soft
 - https://docs.simpleone.ru/ru/itsm/
+
+### skeptic
+- [ITIL и ITSM — история большого обмана. Есть ли польза? Сколько это стоит и кому точно НЕ стоит «внедрять ITIL»?](https://habr.com/ru/companies/okdesk/articles/468945/?ysclid=mgutpo14rf260769632)
+
+### info
+- https://dzen.ru/a/XPAWkoKAmyShznCq

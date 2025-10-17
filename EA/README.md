@@ -51,3 +51,4 @@
 - https://orgstudio.ru/solutions/
 - [Компонентная модель бизнеса компании "ІВМ"](https://studme.org/87174/ekonomika/vosmiprotsessnaya_model_predpriyatiya)
 - [Архитектура ИТ решений. Часть 1. Понятие «Архитектура»](https://habr.com/ru/articles/955218/) ARadzishevskiy
+- [Документирование архитектуры](https://habr.com/ru/articles/957348/)

@@ -51,3 +51,5 @@ https://github.com/bpmbpm/doc/tree/main/BPM/AI
 
 ### Дообучение
 - [H2O LLM Studio: как дообучить языковую модель под свои задачи, не привлекая внимания датасаентистов](https://habr.com/ru/companies/vktech/articles/957078/)
+### Синтетические миры
+- [HumanDynamics: как мы построили цифровой мир, жители которого пошли в банк и взяли кредит](https://habr.com/ru/companies/neoflex/articles/957104/)

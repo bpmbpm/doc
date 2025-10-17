@@ -9,10 +9,12 @@
 - https://chat.qwen.ai/
 - [pdd aistudio.google.com](https://github.com/bpmbpm/doc/blob/main/AI/RAG2/test2/pdd.md)
 
-Тестирование: https://github.com/bpmbpm/doc/blob/main/test/AI/code/SVG/SVG_focus.md
-
+Тестирование: https://github.com/bpmbpm/doc/blob/main/test/AI/code/SVG/SVG_focus.md  
 Обзоры: https://www.getguru.com/ru/reference/ai-search-engine
-
+### AI (VPN)
+- https://grok.com ; https://chatgpt.com/ ;
+- ru: https://trychatgpt.ru/
+- 
 ### search
 - [Секретные фишки поиска, о которых вы не знали: Яндекс, Google и Perplexity](https://habr.com/ru/companies/minerva_media/articles/940862/) site: и т.п.
 ### Dia:  
@@ -22,6 +24,8 @@ https://github.blog/developer-skills/github/include-diagrams-markdown-files-merm
  https://formsflow.ai/
 ### translate
 [Проводим слепой тест переводов прямо на Хабре](https://habr.com/ru/articles/908280/)
-### AI (VPN)
-- https://grok.com ; https://chatgpt.com/ ;
-- ru: https://trychatgpt.ru/
+
+### VPN 
+- см. sec
+- https://habr.com/ru/companies/amnezia/articles/957152/
+  

@@ -53,3 +53,6 @@ https://github.com/bpmbpm/doc/tree/main/BPM/AI
 - [H2O LLM Studio: как дообучить языковую модель под свои задачи, не привлекая внимания датасаентистов](https://habr.com/ru/companies/vktech/articles/957078/)
 ### Синтетические миры
 - [HumanDynamics: как мы построили цифровой мир, жители которого пошли в банк и взяли кредит](https://habr.com/ru/companies/neoflex/articles/957104/)
+### search
+- [Как включить ИИ-поиск Google по умолчанию в браузере Chrome](https://habr.com/ru/articles/957118/) ; site: https://habr.com/ru/articles/437618/ ; https://www.google.com/advanced_search ;
+- https://thecode.media/yandex-ops/

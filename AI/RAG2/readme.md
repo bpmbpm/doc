@@ -18,8 +18,7 @@
 - поиск по нормативным документам для РЖД:
   + постановка на github (https://github.com/airndlab/hackathon-hacks-ai-rzd-qna/blob/main/docs/case/rzd.pdf) 
   + разбор на youtube (https://youtu.be/9Xrz_tvTsnY?si=1QL19b9-hQkvo7RQ) 
-
 Причем мы начали участвовать пару лет назад и в первый раз наше решение было без RAG, дальше изучили решения конкурентов и познакомились с RAG)
-
+- [Как я построил RAG-систему за вечер с помощью 5 open source-инструментов](https://habr.com/ru/articles/955798/)
 ### tools
 - [От LangChain к LangGraph: детально разбираемся с фреймворками и всей Lang-экосистемой](https://habr.com/ru/articles/956940/)

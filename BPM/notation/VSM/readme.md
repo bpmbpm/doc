@@ -4,4 +4,6 @@
 https://t.me/abpmp/48743
 - https://m.vkvideo.ru/video-145052891_456247089
 - https://www.lean-consult.ru/blog/karta-potoka-sozdaniya-tsennosti-vsm/
+- http://sewiki.ru/VSM VSM — это статичный инструмент по своей природе, и он может отразить состояние предприятия только в какой-то определенный день.
+- см. G178e Value Streams.pdf **A Comparison of Alternative Value Analysis Techniques**
 

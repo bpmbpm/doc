@@ -564,8 +564,6 @@ flowchart TD
 
 Рисунок 2.2 иллюстрирует процесс автоматизированных evals. На этой блок-схеме вы можете видеть, как процесс инициируется всякий раз, когда вносятся изменения в чат-бот. Он начинается с запуска автоматизированных evals, затем переходит к тестированию ответов чат-бота против ожидаемых ответов. Если ошибки найдены, мы должны изменить промпты или код соответственно, и evals запускаются снова. Если все тесты проходят, обновленный чат-бот может быть развернут confidently. Это визуальное представление помогает вам понять циклическую природу тестирования и уточнения вашего чат-бота для поддержания оптимальной производительности.
 
-**Триггер Автоматизированных Eval**
-
 ``` mermaid
 flowchart TD
     A(Триггер Автоматизированных Eval) --> B{Запустить Evals}
@@ -576,8 +574,9 @@ flowchart TD
     C --> F[Изменить Промпты]
     F --> B
 ```
-**Рисунок 2.2** Использование evals в качестве тестовых случаев в пайплайнах CI/CD. Evals обеспечивают, чтобы чат-бот consistently соответствовал стандартам производительности, запуская, изменяя и перетестируя промпты в continuous цикле обратной связи.
+**Рисунок 2.2** Использование evals в качестве тестовых случаев в пайплайнах CI/CD. Evals обеспечивают, чтобы чат-бот consistently соответствовал стандартам производительности, запуская, изменяя и перетестируя промпты в continuous цикле обратной связи.  
 [online](https://mermaid.live/edit#pako:eNpNUctKw0AU_ZXhrizUMnnZNAvBtrpzpSsbF0MzfUCTSEx8lYJWBEFBcaMbFfwCX9WqVX_hzh95k1QxIUwm53kzfWiGngQHWr1wu9kRUcxW627A6FqYwTu1j2N8onuk9hme46Ma4hdO8J7WMb7imAhf-Ij3-Imf6kQdscUt0Suw2dl5Vu3jJQHf6lAdpHQ1VKcZvDnIA1i-VDN2vYEX6gBHDO8ojATqhOFtaq-OKOJZnanhei6oZ4LFmRzGZ3o-8CUPKPz3rDXwRh1T0Qd8xzHDa6rzRvxR2nVqVsuYSw28onEmKTRtOnWf0ADDP_ZSPhkUoR11PXDiKJFF8GXki3QL_ZTmQtyRvnTBoVdPtkTSi11wgwHJNkSwFob-rzIKk3YHnBb9FNolG56IZb0r2pHw_76KJA5XdoPmr0Z63TiMlvNjy06PfGTgyagWJkEMjsnLWRA4fdgBRzN5SZ_jhm1VbKts2Nwowi44llHSuWnq-lyZa4Rr5qAIe1k3XrI1bliGrlUsXtF00x78AE5s6V0)
+
 Автоматизированные evals catch несоответствия или ошибки immediately. Это раннее обнаружение позволяет вам решать проблемы до того, как они повлияют на ваших пользователей. Они также экономят ваше время, автоматизируя процесс тестирования. Вместо ручной проверки каждого ответа после каждой настройки, вы можете сосредоточиться на разработке, доверяя, что evals предупредят вас о любых проблемах. Дополнительно, evals могут тестировать, чтобы убедиться, что ваш RAG-чат-бот отвечает без предвзятости, фильтрует неподобающий контент и properly обрабатывает edge cases.
 
 Рисунок 2.3 показывает реализацию автоматизированных evals. Эта блок-схема демонстрирует, как разные компоненты взаимодействуют в процессе оценки. Она начинается с тестового скрипта, который отправляет eval вопросы чат-боту. Чат-бот генерирует ответы, которые затем передаются в Большую Языковую Модель (LLM) для оценки. LLM сравнивает ответы чат-бота с ожидаемыми ответами. На основе оценки система решает, пройти тесты или провалить их. Этот рисунок предоставляет четкую картину задействованных компонентов и того, как они работают вместе для автоматизации процесса тестирования.
@@ -587,26 +586,18 @@ flowchart TD
 
 28
 
-Результат: ПРОВАЛ
+``` mermaid
+flowchart LR
+    A(Тестовый Скрипт) -->|Eval Вопрос| B[Чат-бот]
+    A -->|Eval Ответ| C[LLM] 
+    B -->|Чат-бот Ответ| C
+    C --> D{Похожи ли эти 2 ответа?}
+    D -->|ДА| E(Результат: ПРОЙДЕНО)
+    D -->|НЕТ| F(Результат: ПРОВАЛ)
+```
 
-Eval Вопрос
-Чат-бот
-
-Тестовый Скрипт
-Ответ Чат-бота
-
-Eval Ответ
-LLM
-
-НЕТ
-
-Похожи ли эти 2 ответа?
-
-ДА
-
-Результат: ПРОЙДЕНО
-
-**Рисунок 2.3** Как работает процесс Автоматизированного Eval. Evals взаимодействуют с чат-ботом и большой языковой моделью (LLM) для оценки и обеспечения точности ответов, проходя или проваливаясь на основе схожести.
+**Рисунок 2.3** Как работает процесс Автоматизированного Eval. Evals взаимодействуют с чат-ботом и большой языковой моделью (LLM) для оценки и обеспечения точности ответов, проходя или проваливаясь на основе схожести.  
+[online](https://mermaid.live/edit#pako:eNp9kc9P2zAUx_8V652o1FZOmpbEh02jhVO5wG0NB6txf0hNgrJkA5pKkIkTm4TQdkCIjnHZlSGxdatU_oXn_2gvzZjWCz7Yfs-fz9eWPIZu6CkQ0BuF77oDGcWsveMGjMarNbzFB32iM1zgvT7DXwy_4m99jDN81FmJVSov0s23csTwgohHOljok5RtdPAb3umsgt-pke39TfsPn1LkPUVnKWt22u3tPVYwG0tmxV6FC6yZY6w1xi9EnNLVP3DGcE6T_kjwjJksVwsL715OCq1VpH_C85RtruENPuBP_R7n-kNO6UwwCrzBKV4S8xmvcVpaEa-peZuyrefUCzzHqxKUoR8NPRBxlKgy-CryZV7COA90IR4oX7kgaOupnkxGsQtuMCFtXwavw9B_MqMw6Q9A9OToDVXJvidj1RrKfiT9f12ZxOHuYdB9cpQ3jMNou_jV5edSjgo8FTXDJIhBNGxjeRGIMRyAsJ2q2eCWwS3OTd6or5fhEIRlVU1u1RzH5DY3aZ2U4Wj5Ml61DV6r10zDqXPHMC178gduIfiz)
 
 ### 2.4.1 Как использовать LLM в процессе eval
 

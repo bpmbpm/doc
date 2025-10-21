@@ -5,7 +5,7 @@
 ===== Страница 1 =====
 
 Масштабирование Retrieval Augmented Generation  
-Промышленный RAG 
+Промышленный RAG  
 ===== Страница 2 =====
 Промышленный RAG  
 Масштабирование Retrieval Augmented Generation

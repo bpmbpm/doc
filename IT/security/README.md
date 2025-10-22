@@ -9,6 +9,7 @@
 - [История вирусов](https://habr.com/ru/companies/timeweb/articles/894768/)
 ### TOR
 - [TOR поиск мостов](https://t.me/GetBridgesBot)
+- https://nasvyazi.org/zvezda-na-svyazi-luchshie-vpn-oktyabr-2024/ ; https://rutracker.org/forum/viewtopic.php?t=5204008&start=930 подборка не обновлялась уже год, но оставлю ресурс с рекомендациями в плане впн. Там указаны те, на которые стоит обратить внимание, и те, которые лучше обойти стороной. Кстати, Browsec один из тех, что не рекомендуется к использованию. Если впн хоть немного связан с рашкой - скажите ему "прощай". Рекомендаций не даю, но и уже давно ничего не тестирую и не ищу ввиду сформированного набора инструментов. Мой топ, это Psiphon, Launcher for zapret, GoodbyeDPI, Nekoray, Throne. Для мобилки обходчик по DPI от Романа и тот же Psiphon, Husi.
 
 https://geti2p.net/en/
 

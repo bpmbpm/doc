@@ -22,3 +22,6 @@ Rational над ROSE: (с. 413) Так я узнал, что великие ар
 - https://github.com/bpmbpm/doc/tree/main/BPM/TERM
 - https://github.com/bpmbpm/doc/blob/main/EA/term.md
 - https://github.com/bpmbpm/doc/tree/main/IT/term.md
+
+### level
+- [Треугольник Энтони](https://ru.wikipedia.org/wiki/%D0%A2%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%AD%D0%BD%D1%82%D0%BE%D0%BD%D0%B8)

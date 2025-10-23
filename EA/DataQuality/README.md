@@ -22,3 +22,6 @@ OpenMetaData
 
 ### video
 - https://vkvideo.ru/video-214144682_456239209 Сессия. Культура управления данными
+
+### 2
+- [Модель данных для успешного бизнеса: от простоты к компромиссам](https://habr.com/ru/companies/neoflex/articles/959066/)

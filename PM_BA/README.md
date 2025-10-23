@@ -11,3 +11,6 @@
 
 ### link
 - https://blog.business-analyst.info/oauthor-i-soavt/ ; https://blog.grine.net/blog.grine.net/index.html
+
+### 2
+- [Один раз увидеть. В помощь системному аналитику для диалогов с Бизнесом](https://habr.com/ru/companies/uralsib/articles/959484/)

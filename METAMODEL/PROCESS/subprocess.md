@@ -18,7 +18,7 @@ flowchart LR
     1.2.1>Процесс 1.2.1] --> 1.2.2>Процесс 1.2.2] --> 1.2.1.1>Процесс 1.2.2.1]--> 3.3.3>Процесс 3.3.3] --> 1.2.2_>Процесс 1.2.1]
 
 ```  
-Рис. 1. Схема процесса 1.2 (его подпроцессы, последовательно выполняемые)
+Рис. 1. Схема процесса 1.2 (его подпроцессы, последовательно выполняемые). [Online](https://mermaid.live/edit#pako:eNptUL1OwzAQfpXoJpDSyHaSknjoAiMssCEjZCVuUymxK-MIShQJFhYeoq_AAGt5BeeN6qQqFBTf4Lvvvu_-GshULoDCvFSPWcG18S6vmcQBObEbu7Wf9rt7sdvuzX51r87evb-A_fAc95RJzz3nBXhmN8eEPXjnTSazwSVjefKbx-MV-ho9JQyc_ScM4FGL-_EeTLoxmQQfFnqZAzW6Fj5UQle8D6Hpt2BgClEJBtS5uZjzujQMmGydbMXlrVLVQalVvSiAznn54KJ6lXMjLpZ8oXn1g_LaqJu1zA4akS-N0lf7mw-nd3WEzIU-V7U0QONpPDQC2sAT0CQNyBRFGEUIETSNz3xYA42igKAoTFOCEkTc3_rwPEyGggSjMA4JTmOUYhIl7Q5IMbPf)
 
 Процесс 1.2 имеет подпроцессы (детализацию), т.е. отношение типа "имеет вложения \ nesting" к подроцессам:  
 1.2.1, 1.2.2, 1.2.1.1, 3.3.3, 1.2.1 (они вложены в процесс 1.2)  

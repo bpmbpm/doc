@@ -17,3 +17,5 @@ Git оперирует только файлами, а не папками (он
 - https://itlogia.ru/article/gitlab_i_github_v_chem_razlichiya
 - https://softlist.kz/ru/news/gitlab-vs-github--zachem-ispolzovat-git-repozitoriy-i-chto-luchshe-ispolzova
   
+### Git
+- [Что такое Git и почему он стал стандартом разработки](https://habr.com/ru/articles/959760/)

@@ -10,3 +10,6 @@
 - [Какой была бы Всемирная паутина, если бы вместо WWW был Gopher](https://habr.com/ru/companies/ruvds/articles/955162/)
 ### URL
 - [Искусство проектирования URL: Роутинг, Query и Hash параметры](https://habr.com/ru/articles/943918/)
+
+### Also
+- CORS см. [JS](https://github.com/bpmbpm/doc/blob/main/IT/programming/JS/README.md#cors)

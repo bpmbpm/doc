@@ -74,3 +74,6 @@ https://docs.godotengine.org/ru/4.x/tutorials/scripting/gdscript/gdscript_basics
 - [CodeOntology: RDF-ization of Source Code](https://iswc2017.semanticweb.org/wp-content/uploads/papers/MainProceedings/271.pdf)
 - [Validating RDF data](https://book.validatingrdf.com/bookHtml011.html)
 
+### Каркас теории - концентратор знаний
+- [Каркас теории - концентратор знаний сообщение №1](https://www.researchgate.net/publication/374233866_Karkas_teorii_-_koncentrator_znanij_soobsenie_No1) ; [Alex Shkotin
+](https://www.researchgate.net/profile/Alex-Shkotin) ; https://synthesis.frccsc.ru/sigmod/seminar/s20240229.html

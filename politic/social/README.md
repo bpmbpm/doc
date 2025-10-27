@@ -37,3 +37,6 @@ https://t.me/rusontology/2479
 ### темы философия нет
 - https://github.com/bpmbpm/doc/blob/main/LD/metaphysics/readme.md
 - politic/social/
+
+### marginal
+- [А судьи кто?](https://habr.com/ru/articles/960220/)

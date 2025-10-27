@@ -4,3 +4,6 @@
 
 ### battery
 - [Почему батареи в некоторых телефонах живут так мало](https://habr.com/ru/companies/ruvds/articles/954762/)
+
+### YK85S
+- https://www.heradas.lt/controller-for-electric-bicycle-36v-48v-250w-350w-yk85s ; https://electrotransport.ru/index.php?topic=67120.4752 

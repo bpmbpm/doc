@@ -17,3 +17,5 @@
 - [ifmo](https://neerc.ifmo.ru/wiki/index.php?title=%D0%A4%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7)
 - [studfile](https://studfile.net/preview/9996436/page:5/) Функциональный анализ – это разновидность анализа, предполагающая рассмотрение объекта как комплекса выполняемых им функций, а не как материально-вещественных структур. Например, электрическая лампа накаливания рассматривается как носитель функции "излучать свет", а не только как совокупность конструктивных элементов (колба, цоколь, нить накаливания и др.).
 - [math.hse.ru](https://math.hse.ru/data/2011/09/05/1267101190/fa_lec_01.pdf)
+#### ZF
+- [wiki](https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%A6%D0%B5%D1%80%D0%BC%D0%B5%D0%BB%D0%BE_%E2%80%94_%D0%A4%D1%80%D0%B5%D0%BD%D0%BA%D0%B5%D0%BB%D1%8F) ZFC, англ. Zermelo—Fraenkel set theory with the axiom of Choice

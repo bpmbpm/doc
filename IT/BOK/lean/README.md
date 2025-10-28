@@ -28,3 +28,8 @@
 ### Разное
 - [Рисунок 1 - Схематичное изображение элементов процесса](https://docs.cntd.ru/document/1200124394) ГОСТ Р ИСО 9001-2015
 - [PDCA](https://expert-2014.ru/poleznaya-informaciya/pdca-v-standartax-iso) OHSAS 18001 ; ISO 14001
+
+### 4M 6M
+Заготовка Инструмент Исполнитель Метод (алгоритм) 
+- [Метод 4М](https://www.mindonmap.com/ru/blog/4m-method/) В контрольном списке 4 группы: man (сотрудник, человек); machine (оборудование); material (материалы); method (методы работы). Суть 4М-анализа – оценить, проконтролировать и улучшить качество до начала процесса.
+- https://www.mindonmap.com/ru/blog/4m-method/  

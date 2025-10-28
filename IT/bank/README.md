@@ -21,3 +21,6 @@ OpenAPI
 
 ### card
 - [Лучшие виртуальные карты 2025 года для оплаты зарубежных сервисов или расчётов за границей](https://habr.com/ru/articles/955598/)
+
+### KYC AML
+- [Банковский спектакль KYC и AML](https://habr.com/ru/companies/ruvds/articles/959336/)

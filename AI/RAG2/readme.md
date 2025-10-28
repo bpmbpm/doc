@@ -1,7 +1,9 @@
 ### RAG doc
 - [Как сделать RAG для своей компании](https://habr.com/ru/articles/905076/) 
 - [RAG на практике: чат-бот для корпоративной вики](https://habr.com/ru/companies/banki/articles/917642/)
-
+- [Что такое RAG](https://gitverse.ru/blog/articles/ai/216-chto-takoe-rag-retrieval-augmented-generation-prostymi-slovami-i-osnovnye-principy)
+### benchmarks
+- https://huggingface.co/spaces/mteb/leaderboard
 ### RAG
 - [RAG (Retrieval Augmented Generation) — простое и понятное объяснение](https://habr.com/ru/articles/779526/) 
 - [Прокачиваем RAG: тестируем техники и считаем их эффективность. Часть 1](https://habr.com/ru/articles/946888/)
@@ -36,9 +38,12 @@
 MCP-сервера для поиска метаданных 1С для программирования с LLM](https://infostart.ru/marketplace/2460659/?utm_source=telegram&utm_medium=bloger&utm_campaign=mp_vebinar_vibecoding_v_1C)
 
 ### Type
-- [СРАВНИТЕЛЬНЫЙ АНАЛИЗ МЕТОДОВ RAG](https://cyberleninka.ru/article/n/sravnitelnyy-analiz-metodov-rag-dlya-postroeniya-russkoyazychnyh-intellektualnyh-servisov) рассмотрены несколько базовых методов RAG, включая наивный RAG, HyDE и BM25. В RAG поиск осуществляется путем вычисления сходства между эмбеддингами запросов и фрагментов документов, при этом ключевую роль играет способность моделей эмбеддингов к семантическому представлению. Наиболее популярные модели эмбеддингов - BERT
+- [СРАВНИТЕЛЬНЫЙ АНАЛИЗ МЕТОДОВ RAG](https://cyberleninka.ru/article/n/sravnitelnyy-analiz-metodov-rag-dlya-postroeniya-russkoyazychnyh-intellektualnyh-servisov) рассмотрены несколько базовых методов RAG, включая наивный RAG, HyDE и BM25. В RAG поиск осуществляется путем вычисления сходства между эмбеддингами запросов и фрагментов документов, при этом ключевую роль играет способность моделей эмбеддингов к семантическому представлению. Наиболее популярные модели эмбеддингов - BERT  
 **Описание метрик оценки RAG-систем** Mean Average Precision (MAP) - это метрика, используемая для оценки качества систем поиска информации, таких как системы поиска текста.
 
 ### Eval RAG
 оценка качества ответов RAG
 - [Пример использования RAG](https://help.cleanlab.ai/tlm/use-cases/tlm_rag/) ваша система RAG получает запрос пользователя и извлекает соответствующий контекст из базы знаний, форматирует запрос LLM на основе запроса и контекста и генерирует ответ, используя этот запрос.
+- https://learn.microsoft.com/ru-ru/fabric/data-science/tutorial-evaluate-rag-performance
+- https://baguzin.ru/wp/glava-9-otsenka-rag-kolichestvenno-i-s-ispolzovaniem-vizualizatsij/
+- [Коротко об оценке RAG](https://habr.com/ru/articles/865420/)

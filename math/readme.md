@@ -20,8 +20,18 @@
 - [math.hse.ru](https://math.hse.ru/data/2011/09/05/1267101190/fa_lec_01.pdf) А. Ю. Пирковский, pdf
 #### ZF
 - [wiki](https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%A6%D0%B5%D1%80%D0%BC%D0%B5%D0%BB%D0%BE_%E2%80%94_%D0%A4%D1%80%D0%B5%D0%BD%D0%BA%D0%B5%D0%BB%D1%8F) ZFC, англ. Zermelo—Fraenkel set theory with the axiom of Choice
+### MTC
+- МТС это последовательность связей, всё есть связь, связи играют роли всё остальное, сорта, операции, предикаты есть роли связей https://t.me/rusontology/12682
+
+
 
 ### formalism list
 - https://www.reddit.com/r/math/wiki/everythingaboutx/
+- https://t.me/rusontology/12663 у меня в голове длинного списка нет. из технологий сем-веба вспоминается SHACL, формальные языки OMG это отдельная песня вокруг DOL, ну а как написали Coq-цы, которые теперь Rocq-цы пруф-ассистенты все здесь https://proofassistants.stackexchange.com/tags 
 ### Обзоры
 - [Сверхтьюринговые вычисления и гиперкомпьютеры. Тезис Чёрча-Тьюринга как универсальный предел познания](https://habr.com/ru/articles/961020/)
+
+### link
+- https://t.me/rusontology/12644 Таким образом, МТС — это «онтология», а TL — «логика + вычисления».
+- https://tensor-logic.org/
+- https://github.com/deep-foundation/deep-theory

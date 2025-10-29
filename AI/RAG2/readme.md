@@ -47,3 +47,6 @@ MCP-сервера для поиска метаданных 1С для прог�
 - https://learn.microsoft.com/ru-ru/fabric/data-science/tutorial-evaluate-rag-performance
 - https://baguzin.ru/wp/glava-9-otsenka-rag-kolichestvenno-i-s-ispolzovaniem-vizualizatsij/
 - [Коротко об оценке RAG](https://habr.com/ru/articles/865420/)
+
+### Векторная БД
+- [Выбираем векторную БД для AI-агентов и RAG: большой обзор баз данных и поиск смысла](https://habr.com/ru/articles/961088/)

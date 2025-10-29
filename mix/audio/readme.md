@@ -16,3 +16,7 @@
 
 ### doc
 - https://www.tubecad.com/2017/11/blog0403.htm
+
+### Calculator_filter
+- https://vpayaem.ru/information6.html
+- https://www.aie.spb.ru/Calculator_filter.html

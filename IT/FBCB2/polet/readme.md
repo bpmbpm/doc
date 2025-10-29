@@ -8,4 +8,6 @@
 
 ### ARM3
 - ToughTouch
-- https://github.com/bpmbpm/doc/tree/main/Project/pccar ; https://habr.com/ru/companies/x-com/articles/826126/comments/#comment_26997120
+- https://github.com/bpmbpm/doc/tree/main/Project/pccar ;
+- https://habr.com/ru/companies/x-com/articles/826126/comments/#comment_26997120
+- https://habr.com/ru/companies/gazprombank/articles/851112/comments/#comment_27427512

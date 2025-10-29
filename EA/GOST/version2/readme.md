@@ -84,7 +84,7 @@ How (process) – как делать (табуретку) – это уже д�
     - [Так ли уж близки корпоративная архитектура и бизнес-процессы?](https://mxsmirnov.com/2015/05/10/business-capability/)
     - Как устроена бизнес-архитектура [видео]( https://www.youtube.com/watch?v=o01OfitHMnM) ; [презентация](https://squidex.jugru.team/api/assets/srm/5ab05aca-8427-46f8-9492-3328a6b44ec8/kak-ustroena-biznes-arhitekturamaksim-smirnov.pdf)
 - [Чуен Сит](https://www.jibility.com/blog/business-capability-definition), «Бизнес-возможности — это материальные и нематериальные строительные блоки бизнеса, которые дают ему возможность делать то, что он делает».
-
+- Виктор Копченков про Capability https://github.com/bpmbpm/doc/blob/main/EA/presentation/readme.md#capability
 #### 2.5 Link
 - внутренние: https://github.com/bpmbpm/doc/tree/main/BPM/notation/ArchiMate
 - https://help.bizzdesign.com/articles/#!horizzon-help/archimate-strategy-elements

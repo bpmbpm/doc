@@ -11,3 +11,5 @@
 - [Браузеры и локальные файлы. #$%^&* CORS!](https://www.linux.org.ru/forum/web-development/16005217)
 ### Обход
 - [Как обойти CORS при запуске сайта не на сервере?](https://qna.habr.com/q/1318344)
+### ORM
+- [ORM в Node.js](https://habr.com/ru/articles/959518/)

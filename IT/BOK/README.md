@@ -23,6 +23,10 @@ Enterprise Architecture Body of Knowledge. Найти текст EABOK не уд
 - [businessarchitectureguild](https://www.businessarchitectureguild.org/page/002)
 - [Пинаева](https://www.hse.ru/data/2015/11/26/1080295948/%D0%9F%D0%B8%D0%BD%D0%B0%D0%B5%D0%B2%D0%B0.pdf)
 
+### btabok
+Business Technology Architecture Body of Knowledge
+- https://iasa-global.github.io/btabok/
+- SEI
 ### см. также 
 - EA/BizArch https://github.com/bpmbpm/doc/tree/main/EA/BizArch
 - ITIL https://github.com/bpmbpm/doc/tree/main/IT/CIO/ITIL

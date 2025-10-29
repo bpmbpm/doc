@@ -1,9 +1,9 @@
-### Capability MetaModel
+### 1 Capability MetaModel
 ... в работе
 
 
-### about the Capability
-#### 1 Eugene_Demochko
+### 2 about the Capability
+#### 2.1 Eugene_Demochko
 Комент к Карта бизнес-способностей. Просвечиваем корпоративные боли и лечим их архитектурно: эволюция бизнес-аналитика
 https://habr.com/ru/articles/959556/
 

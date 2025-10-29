@@ -9,6 +9,7 @@
 | --- | --- | --- |
 |1.1 |0-36 |0-18 |
 |2.2 |0 - 18|0-9 |
+|3.3 |0 - 12|0-6 |
 |4.4 |0 - 9|0-4,5 |
 
-- [Фильтр высоких частот пленочный 2,2 мкф-2 шт.](https://www.ozon.ru/product/filtr-vysokih-chastot-kondensator-2-2mkf-plenochnyy-2-sht-dlya-tvitera-rupora-1146300025/?__rr=1&abt_att=1&origin_referer=www.google.com) 
+- [Фильтр высоких частот пленочный 2,2 мкф-2 шт.](https://www.ozon.ru/product/filtr-vysokih-chastot-kondensator-2-2mkf-plenochnyy-2-sht-dlya-tvitera-rupora-1146300025/?__rr=1&abt_att=1&origin_referer=www.google.com) АК-47 твиттерах идут в комплекте кондеры 4.7 мкФ .Рекомендую именно 3.3

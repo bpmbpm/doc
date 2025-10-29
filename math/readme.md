@@ -23,3 +23,5 @@
 
 ### formalism list
 - https://www.reddit.com/r/math/wiki/everythingaboutx/
+### Обзоры
+- [Сверхтьюринговые вычисления и гиперкомпьютеры. Тезис Чёрча-Тьюринга как универсальный предел познания](https://habr.com/ru/articles/961020/)

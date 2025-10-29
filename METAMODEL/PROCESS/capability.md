@@ -38,5 +38,6 @@ Capability – возможность, способность и т.п. Это �
 - https://github.com/bpmbpm/doc/blob/main/EA/presentation/readme.md#capability
 - [process.md](https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/process.md) ; [subprocess.md](https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/subprocess.md) ; [function.md](https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/function.md) и др. METAMODEL/PROCESS
 
-
+### 3 Doc
+- [togaf/ Business Capabilities](https://governance.foundation/assets/frameworks/togaf/g189%20-%20Business%20Capbility.pdf)
 

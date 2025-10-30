@@ -1,4 +1,5 @@
 ### tools
+- https://github.com/bpmbpm/doc/blob/main/IT/BI/readme.md
 #### Apache Superset
 - [wiki](https://ru.wikipedia.org/wiki/Apache_Superset)
 - https://superset.apache.org/

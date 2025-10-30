@@ -1,5 +1,6 @@
 ### link=obj
 Если в нотации (теории) связей мы говорим: есть только связи и нечего более, но применительно к RDF мы можем сказать: есть только объекты и ничего более. Это видимо сделает равноценными эти формализмы. В случае с RDF мы можем ввести правило, что каждый предикат – это объект (именованная связь, с id и т.п.), например, 
+```
 @prefix : <http://example.org/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -16,7 +17,7 @@
 
 
 :Link a rdf:Property .
-
+```
 ### online 
 - https://www.leskoff.com/s02222-0
 - https://issemantic.net/rdf-visualizer

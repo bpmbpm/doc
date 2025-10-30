@@ -9,3 +9,4 @@
 
 ### DQ-BI
 - [Как мы превратили BI в полноценный корпоративный инструмент: дизайн-система, виджеты и self-service](https://habr.com/ru/companies/gazpromcps/articles/957672/)
+- [Больше, чем BI: 23 фичи Luxms BI, которыми мы гордимся. Часть 2: Функционал классической BI-системы](https://habr.com/ru/companies/luxms_bi/articles/961378/)

@@ -25,3 +25,4 @@ OpenMetaData
 
 ### 2
 - [Модель данных для успешного бизнеса: от простоты к компромиссам](https://habr.com/ru/companies/neoflex/articles/959066/)
+- https://github.com/bpmbpm/doc/blob/main/EA/DataQuality/bi.md#dq-bi

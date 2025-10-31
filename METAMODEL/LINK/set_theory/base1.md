@@ -105,4 +105,4 @@
 
 ### также
 - подлежащее–глагол–дополнение (SVO) https://en.wikipedia.org/wiki/Subject%E2%80%93verb%E2%80%93object_word_order
-- «подлежащее–дополнение–глагол» (SOV) https://en.wikipedia.org/wiki/Subject%E2%80%93object%E2%80%93verb_word_order
+- подлежащее–дополнение–глагол (SOV) https://en.wikipedia.org/wiki/Subject%E2%80%93object%E2%80%93verb_word_order

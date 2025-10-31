@@ -394,3 +394,5 @@ RDF turtle
 
 ## info
 - https://learnxinyminutes.com/rdf/
+- The Links Theory 0.0.2 https://habr.com/ru/articles/895896/ ; [ru 0.0.1](https://habr.com/ru/companies/deepfoundation/articles/804617/)
+- https://en.wikipedia.org/wiki/Subject%E2%80%93verb%E2%80%93object_word_order vs https://en.wikipedia.org/wiki/Subject%E2%80%93object%E2%80%93verb_word_order

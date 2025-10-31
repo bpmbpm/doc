@@ -96,7 +96,8 @@
 - 5,6 — Обозначение стрелки как множества функций
 
 - 1 [Конструируемая вселенная](https://en.wikipedia.org/wiki/Constructible_universe#:~:text=In%20mathematics%2C%20in%20set,in%20the%20first%20paragraph)
-- 2 
+- 2 битая
+- 3 https://runestone.academy/ns/books/published/ads/s-cartesian_Products_and_Power_Sets.html#:~:text=The%20Cartesian%20product%20of,cardinality%20of%20the%20cartesian
 ---
 
 > **Итого:**  

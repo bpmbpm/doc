@@ -1,2 +1,2 @@
 ### news.md
-- [Нейро-дайджест: ключевые события AI за 22-29 октября 2025](https://habr.com/ru/companies/timeweb/articles/961470/)
+- [Нейро-дайджест: ключевые события AI за 22-29 октября 2025](https://habr.com/ru/companies/timeweb/articles/961470/) В бенчмарках M2 (MiniMax-M2) обгоняет GLM-4.6, DeepSeek-V3.2 и Kimi K2, а по ряду метрик догоняет Claude 4 и Gemini 2.5 Pro. По тестам SWE-Bench, Terminal-Bench и ArtifactsBench модель показывает лучший результат среди открытых решений и почти догоняет GPT-5.

@@ -98,6 +98,11 @@
 - 1 [Конструируемая вселенная](https://en.wikipedia.org/wiki/Constructible_universe#:~:text=In%20mathematics%2C%20in%20set,in%20the%20first%20paragraph)
 - 2 битая
 - 3 https://runestone.academy/ns/books/published/ads/s-cartesian_Products_and_Power_Sets.html#:~:text=The%20Cartesian%20product%20of,cardinality%20of%20the%20cartesian
+- 4 https://www.cuemath.com/algebra/cartesian-product/
+- 5 https://en.wikipedia.org/wiki/Category_%28mathematics%29#:~:text=Two%20different%20categories%20may,be%20considered%20%22equivalent%22%20for
+- 6 https://abstractmath.org/MM/MMCategory%20theory.htm#:~:text=It%20uses%20the%20same,for%20every%20element%20%24a%5Cin
+- 7 https://encyclopediaofmath.org/wiki/G%C3%B6del_constructive_set#:~:text=A%20set%20%24%20z,non%2DLebesgue%2Dmeasurable%20set%20of%20real
+- 8 https://googology.fandom.com/wiki/Constructible_universe#:~:text=The%20constructible%20universe%20or,is%20a%20proper%20class
 ---
 
 > **Итого:**  

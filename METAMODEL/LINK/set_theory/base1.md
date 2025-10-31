@@ -102,3 +102,7 @@
 > **Итого:**  
 > **L → L²** — это множество всех функций из L в L² (L × L). Каждый такой f сопоставляет элементу x ∈ L пару (y, z) ∈ L².  
 >рафов и информатику.
+
+### также
+- подлежащее–глагол–дополнение (SVO) https://en.wikipedia.org/wiki/Subject%E2%80%93verb%E2%80%93object_word_order
+- «подлежащее–дополнение–глагол» (SOV) https://en.wikipedia.org/wiki/Subject%E2%80%93object%E2%80%93verb_word_order

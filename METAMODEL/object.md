@@ -27,3 +27,6 @@ vs
 
 ### см. также
 - https://github.com/bpmbpm/doc/tree/main/LD/metaphysics#ideas-vs-things
+- https://github.com/bpmbpm/doc/tree/main/LD/RDF_star
+- https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/integration.md
+  

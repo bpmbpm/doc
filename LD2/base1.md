@@ -1,12 +1,13 @@
 ## LD2
 
 ### Введение
-1 Классический web построен на гиперссылках (hyperlink).  
+Классический web (классический пример [wikipedia](https://ru.wikipedia.org/)) построен на гиперссылках (hyperlink).  
 [Hyperlink](https://ru.wikipedia.org/wiki/%D0%93%D0%B8%D0%BF%D0%B5%D1%80%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0) в общем случае выполняет переход по указанному адресу, который может быть файлом, UNC-адресом или URL-адресом.  
 Элемент (обычно подсвечиваемый) имеет свойство hyperlink со значением - адресом перехода
 ```
 :элемент :имеетHyperlink :значениеHyperlink(URL) .
 ```  
+[Web 3.0](https://ru.wikipedia.org/wiki/Web_3.0) из всемирной паутины делает семантическую паутину Semantic Web на базе Linked Data. 
 
 
 ### also

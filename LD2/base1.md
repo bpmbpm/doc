@@ -56,7 +56,7 @@ id1-predicateName-id2
 :id1-predicateName-id2 :isTarget :id2 . 
 
 ```
-получит теже знания. 
+получит те же знания. 
 
 ### also
 - https://github.com/bpmbpm/doc/blob/main/METAMODEL/object.md

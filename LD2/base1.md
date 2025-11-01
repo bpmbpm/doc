@@ -17,7 +17,22 @@ Linked Data 2 (LD2) - это Linked Data с дополнениями \ огра�
 См. [subject–verb–object SVO](https://en.wikipedia.org/wiki/Subject%E2%80%93verb%E2%80%93object_word_order). Вместо объекта \ дополнения может быть не объект (что-то с id, именованное, классифицированное и т.п.), а Литерал - безымянная константа (nameless constant).   
 Еще пример на [sky.pro/wiki/javascript](https://sky.pro/wiki/javascript/rdf-dlya-nachinayushih-chto-eto-osnovy-i-kak-ispolzovat/)  
 Это просто и понятно. Однако это иллюзия, точнее сильное упрощение. В реальности "под катопом" - самое главное, не попавшее в пример, и "триплет становится квинтет":    
+``` mermaid
+flowchart TB
+   subgraph baseTriple[triple = Миша Ест Рыбу]
+        direction LR
+        obj1_Id --> link12{{связь типа Ест}} --> obj2_Id
+    end
 
+        obj1_Name[/obj1 Имя = Миша/] --> obj1_Id[/obj1 Id = 123/] 
+        obj1_Other[/obj1 = ALL properties: ФИО, ИНН/] --> obj1_Id 
+
+
+       obj2_Id[/obj2 Id = 345/] --> obj2_Name[/obj2 Имя = Рыбу/]                
+       obj2_Id --> obj2_Other[/obj2 = ALL properties: вид, размер/]  
+
+```
+[mermaid.live](https://mermaid.live/edit#pako:eNptkstu1DAUhl_lyOt0OrFzYSINEpcN0gASdEVTIc_EMxNI7MjjCEoUqS0bJJC6QuqiRSx4gFKB2kUlXsF-I5zMJWWENzl2_v87v-xToYlIGIrQNBPvJnMqFew9jDkALMrxTNJiDmO6YHsyLTK2r9oPDEGf6xvzSV-C_mqOzQno7-az_mk-HrTWdiWpZBOVCg6jF92pGL9xXz9JYGfnPmQpf-viqjLH-sqc6mvzBcyJvtF_Nty6boXWhK1pSWHcFlvAZzRn-7tNCfpM35rTOxF3D9aMpvFKZRMMwcXE_txCPVdzJleqITwYjaCQomBSpWwRgf5h-d-cpsuFvvgXDU2sDW2VuSXhZT_i-Z0Dd6HxndCre7S6rbUN7jhdYvy_xFf2Rn85YI70pb7Wt_q3OWroy7AxRw6ayTRBkZIlc1DOZE6bLaqajjGy8JzFKLJlwqa0zFSMYl5bW0H5KyHytVOKcjZH0ZRmC7sri4Qq9jildobyzSktlXh5yCdrD0tSJeTT5QS2g2g59oGZfCRKrlDkumHbCEUVeo8iTLyeHwY4CEPi9QdkEDjo0Kp80gv9IPQ9955nX9X3agd9aLP1e_4gcHE4wCHpE-J6uP4LcfkISg)
 
 
 ### also

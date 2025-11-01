@@ -10,9 +10,8 @@ Linked Data 2 (LD2) - это Linked Data с дополнениями \ огра�
 [Web 3.0](https://ru.wikipedia.org/wiki/Web_3.0) из всемирной паутины делает семантическую паутину Semantic Web на базе Linked Data. 
 
 #### Triple RDF example
-Триплет - как атом знания - обычно вводится так:  
-**:Миша :Ест :Рыбу .**    
-Типа: Всегда на первом месте Субьект - в данном триплете - Миша, далее к нему привязанный (всегда к субъекту) предикат (отношение) - Ест и объект Рыбу.  
+Триплет - как атом знания - обычно вводится так:  **:Миша :Ест :Рыбу .**    
+Всегда на первом месте Субьект - в данном триплете - Миша, далее к нему привязанный (всегда к субъекту) предикат (отношение) - Ест и объект Рыбу.  
 Как в простом предложении: Подлежащее - Сказуемое - Дополнение. 
 См. [subject–verb–object SVO](https://en.wikipedia.org/wiki/Subject%E2%80%93verb%E2%80%93object_word_order). Вместо объекта \ дополнения может быть не объект (что-то с id, именованное, классифицированное и т.п.), а Литерал - безымянная константа (nameless constant).   
 Еще пример на [sky.pro/wiki/javascript](https://sky.pro/wiki/javascript/rdf-dlya-nachinayushih-chto-eto-osnovy-i-kak-ispolzovat/)  
@@ -23,20 +22,18 @@ flowchart TB
         direction LR
         obj1_Id --> link12{{связь типа Ест}} --> obj2_Id
     end
-
-        obj1_Name[/obj1 Имя = Миша/] --> obj1_Id[/obj1 Id = 123/] 
-        obj1_Other[/obj1 = ALL properties: ФИО, ИНН/] --> obj1_Id 
-
-
+       obj1_Name[/obj1 Имя = Миша/] --> obj1_Id[/obj1 Id = 123/] 
+       obj1_Other[/obj1 = ALL properties: ФИО, ИНН/] --> obj1_Id 
        obj2_Id[/obj2 Id = 345/] --> obj2_Name[/obj2 Имя = Рыбу/]                
        obj2_Id --> obj2_Other[/obj2 = ALL properties: вид, размер/]  
-
 ```
 [mermaid.live](https://mermaid.live/edit#pako:eNptkstu1DAUhl_lyOt0OrFzYSINEpcN0gASdEVTIc_EMxNI7MjjCEoUqS0bJJC6QuqiRSx4gFKB2kUlXsF-I5zMJWWENzl2_v87v-xToYlIGIrQNBPvJnMqFew9jDkALMrxTNJiDmO6YHsyLTK2r9oPDEGf6xvzSV-C_mqOzQno7-az_mk-HrTWdiWpZBOVCg6jF92pGL9xXz9JYGfnPmQpf-viqjLH-sqc6mvzBcyJvtF_Nty6boXWhK1pSWHcFlvAZzRn-7tNCfpM35rTOxF3D9aMpvFKZRMMwcXE_txCPVdzJleqITwYjaCQomBSpWwRgf5h-d-cpsuFvvgXDU2sDW2VuSXhZT_i-Z0Dd6HxndCre7S6rbUN7jhdYvy_xFf2Rn85YI70pb7Wt_q3OWroy7AxRw6ayTRBkZIlc1DOZE6bLaqajjGy8JzFKLJlwqa0zFSMYl5bW0H5KyHytVOKcjZH0ZRmC7sri4Qq9jildobyzSktlXh5yCdrD0tSJeTT5QS2g2g59oGZfCRKrlDkumHbCEUVeo8iTLyeHwY4CEPi9QdkEDjo0Kp80gv9IPQ9955nX9X3agd9aLP1e_4gcHE4wCHpE-J6uP4LcfkISg)
 
 В данном случае мы хотим сказать, что конкретный Миша (экземпляр) ест конкретную рыбу (экземпляр).  
 Экземпляр - это "Собственное существительное" - отдельный единичный предмет (мир вещей).  
 Образ - это "Нарицательное существительное" - обобщённые названия однородных предметов и явлений (мир идей). С ними похожая ситуация, но они не такая.  
+
+В отличие от "тривиальной связи" hyperlink (Web, mediaWiki и т.п.) в семантическом триплете (web 3.0 \ semantic Web, semantic mediaWiki и т.п.) имеем именнованные два объекта связи и типизированную связь.  
 
 ### also
 - https://github.com/bpmbpm/doc/blob/main/METAMODEL/object.md

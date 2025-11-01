@@ -77,4 +77,6 @@ https://docs.godotengine.org/ru/4.x/tutorials/scripting/gdscript/gdscript_basics
 ### Каркас теории - концентратор знаний
 - [Каркас теории - концентратор знаний сообщение №1](https://www.researchgate.net/publication/374233866_Karkas_teorii_-_koncentrator_znanij_soobsenie_No1) ; [Alex Shkotin
 ](https://www.researchgate.net/profile/Alex-Shkotin) ; https://synthesis.frccsc.ru/sigmod/seminar/s20240229.html
+### Разное
 - SVO / SOV / set_theory https://github.com/bpmbpm/doc/blob/main/METAMODEL/LINK/set_theory/base1.md
+- Структурная информатика https://graphmodel.com/

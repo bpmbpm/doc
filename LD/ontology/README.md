@@ -22,6 +22,9 @@ https://github.com/aigents/iai/blob/main/README.md
    - https://studme.org/138733/ekonomika/drugie_metodologii
 - [Б.Я. Шведин Онтология предприятияб книга](https://dunrose.ru/wp-content/uploads/2018/08/QuaSy-%D0%BE%D0%BD%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F-%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0-01.pdf)
 - https://controlengrussia.com/innovatsii/ontologija/?ysclid=mg9dyc2j3s635669548 MSDL, MASON, CDM-Core etc
+### Sec ontologies
+- https://github.com/dfrant/InformationSecurityOntology
+
 ### Разное
 - [Цифровизация и бытие, книга](https://www.econ.msu.ru/sys/raw.php?o=79263&p=attachment)
 - https://techinvestlab.ru/techinvestlab/til_allmaterials.html

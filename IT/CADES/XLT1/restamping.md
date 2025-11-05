@@ -127,7 +127,7 @@
 - **Требование к действительности:**  
   > "The validity of the OCSP response is determined by its own signature and the time it was issued, not by the current validity of the OCSP responder's certificate."  
   > *— ETSI TS 101 733, section 6.3.2* 
-
+Достоверность ответа OCSP определяется его собственной подписью и временем выдачи, а не текущей действительностью сертификата ответчика OCSP».  
 - **RFC 6960 (OCSP), секция 3.2:**  
   > "Prior to accepting a signed response for a particular certificate as valid, OCSP clients SHALL confirm that... The signature on the response is valid; ... The signer is currently authorized to provide a response for the certificate in question; ... The time at which the status being indicated is known to be correct (thisUpdate) is sufficiently recent" .
 

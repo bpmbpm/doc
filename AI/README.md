@@ -56,3 +56,5 @@ https://github.com/bpmbpm/doc/tree/main/BPM/AI
 ### search
 - [Как включить ИИ-поиск Google по умолчанию в браузере Chrome](https://habr.com/ru/articles/957118/) ; site: https://habr.com/ru/articles/437618/ ; https://www.google.com/advanced_search ;
 - https://thecode.media/yandex-ops/
+### Агрегаторы
+- lmarena.ai

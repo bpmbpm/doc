@@ -29,3 +29,5 @@ https://github.blog/developer-skills/github/include-diagrams-markdown-files-merm
 - см. sec
 - https://habr.com/ru/companies/amnezia/articles/957152/
   
+### Archive
+- [Google удалила 749 млн URL-адресов Anna's Archive из результатов поиска](https://habr.com/ru/news/963174/)

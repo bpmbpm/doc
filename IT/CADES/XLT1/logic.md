@@ -276,13 +276,8 @@ flowchart TD
 
 Если кратко, то **TST — это электронный "штамп времени", который гарантирует, что подпись была сделана не позднее указанного времени и защищён от подделки**.
 
-### 3 CAdES-X Long Type 1 vs A
+### 3 CAdES-X Long Type 1 vs CAdES-A
 3.1 CAdES-X Long Type 1 - какой статус имеет? Вместо него какой протокол рекомендуют?
-
-#### You've hit your free quota for the Smart Agent. For more usage of the Smart Agent, learn more at: https://you.com/plans.
-
-Answering your question without the Smart Agent:
-
 #### Статус CAdES-X Long Type 1 и рекомендации по протоколу
 
 **CAdES-X Long Type 1** — это расширенный формат электронной подписи, который включает в себя не только базовые данные подписи, но и полные данные для долгосрочной проверки: сертификаты, данные об отзыве (CRL, OCSP), а также метки времени (timestamps). Это позволяет проверять подпись даже спустя длительное время после её создания.

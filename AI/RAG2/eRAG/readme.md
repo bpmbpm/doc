@@ -8,8 +8,8 @@
 
 ### info
 - https://t.me/c/3082493669/862
-  -  1 Google NotebookLM (говорят лучший сейчас персональный RAG без настроек) - исправляю - Open Notebook (https://github.com/lfnovo/open-notebook)  
+    1. Google NotebookLM (говорят лучший сейчас персональный RAG без настроек) - исправляю - Open Notebook (https://github.com/lfnovo/open-notebook)  
 Проект интересный, тем кто пишет RAG на питоне для себя в каких-либо целях, думаю, будет хорошим подспорьем, там и архитектура хорошая (слойка, DDD) и документация отличная.
-  - 2. NotebookLM - отличный персональный инструмент (даже по сравнению с Obsidian + плагин + локальная LLM + сетап); на примере разбираемой нами книги, просто в пару кликов:  добаили книгу, кликнули создать майндмап, клик по Главе 3 на майндмапе.
-  - 3. к разговору по теме 3й главы: 11 RAG Strategies Explained (https://www.youtube.com/watch?v=tLMViADvSNE)
+   2. NotebookLM - отличный персональный инструмент (даже по сравнению с Obsidian + плагин + локальная LLM + сетап); на примере разбираемой нами книги, просто в пару кликов:  добаили книгу, кликнули создать майндмап, клик по Главе 3 на майндмапе.
+   3. к разговору по теме 3й главы: 11 RAG Strategies Explained (https://www.youtube.com/watch?v=tLMViADvSNE)
 с примерами кода и объяснениями - https://github.com/coleam00/ottomator-agents/blob/main/all-rag-strategies/README.md

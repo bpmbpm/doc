@@ -80,7 +80,16 @@ https://validation.cryptopro.ru/
 
 **Таким образом, сотруднику важно контролировать срок действия сертификата TSP и своевременно делать перештамповку, а срок действия сертификата OCSP не является критичным для сохранения юридической значимости подписи.**
 
-#### 1.2 OCSP & TSP
+## 1.2 restamping
+### Правовые аспекты и судебная практика
+- Перештамповка — единственный способ сохранить юридическую силу документов после истечения срока действия OCSP/TSP. Если пропустить этот срок, восстановить юридическую значимость невозможно. [1](https://astral.ru/aj/elem/elektronnaya-podpis-dlya-kadrovykh-dokumentov-kedo/#:~:text=%D0%A7%D1%82%D0%BE%D0%B1%D1%8B%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D1%83%2C%20%D0%BD%D1%83%D0%B6%D0%BD%D0%BE,%D1%81%20%D0%BA%D0%B2%D0%B0%D0%BB%D0%B8%D1%84%D0%B8%D1%86%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B9%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D1%8C%D1%8E.) ; [2](https://cryptopro.ru/products/cades#:~:text=%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%D1%82%20%D1%83%D1%81%D0%BE%D0%B2%D0%B5%D1%80%D1%88%D0%B5%D0%BD%D1%81%D1%82%D0%B2%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%B8%20%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD,CAdES%20%28ETSI%20TS%20101) ; [3](https://rubytech.ru/products/informatsionnaya-bezopasnost/napravleniya-informatsionnoy-bezopasnosti/elektronnyy-servis-proverki-formirovaniya-etsp/#:~:text=%D0%A1%D0%B5%D1%80%D0%B2%D0%B8%D1%81%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BD%D0%B0%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%20%D0%B4%D0%BB%D1%8F%20%D1%84%D0%BE%D1%80%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F,%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D0%B2%20%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B8%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9)
+- Электронный документ с КЭП (CAdES-XL) приравнивается к бумажному, если можно проверить подлинность подписи и действительность сертификатов на момент подписания. [4](https://base.garant.ru/12184522/#:~:text=%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD%20%D0%BE%D1%82%206,N%2063%2D%D0%A4%D0%97%20%27%D0%9E%D0%B1%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9)
+- После ликвидации работодателя сотрудник вправе хранить копии своих документов и использовать их для защиты прав, в том числе в суде.  
+Суд примет электронный документ как доказательство только при возможности проверки подписи и сертификатов. Без перештамповки после истечения срока OCSP/TSP документ теряет юридическую силу. [5](https://www.directum.ru/blog-post/juridicheskaja_sila_ehlektronnogo_dokumenta_i_kak_ee_sokhranit_na_dolgie_gody#:~:text=%D0%94%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D0%B5%20%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%B0%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%B8,%D0%BD%D0%B0%20%D0%BD%D0%B5%D0%B3%D0%BE%20%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%81%D1%8F%20%D1%88%D1%82%D0%B0%D0%BC%D0%BF)
+-
+  
+
+## 1.3 OCSP & TSP
 ## Корректировка по роли сертификатов OCSP и TSP в перештамповке и проверке подписи CAdES-XL
 
 ---

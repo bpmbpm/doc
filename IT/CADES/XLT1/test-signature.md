@@ -1,11 +1,24 @@
 ## test signature
 ## 1 Base
+1.1
+- https://e-trust.gosuslugi.ru/check/sign ; https://www.gosuslugi.ru/help/faq/esignature/212160 ; https://www.gosuslugi.ru/help/faq/esignature/103271
 - https://dss.cryptopro.ru/verify/#/signature
 - https://sign.kloud.one/
 - https://testca.gaz-is.ru/
+1.2
+- [Контур.Крипто](https://crypto.kontur.ru/verify)  ; [tariffs](https://crypto.kontur.ru/#tariffs) 29 любых операций на 90 дней
+- https://astral.ru/aj/elem/kak-proverit-elektronnuyu-podpis/
+- https://sign.me/promo/sign-check/
+- 
+### Обзоры:
+- https://tochka.com/knowledge/edo/proverka-elektronnoy-podpisi-ecp-kak-proverit-podlinnost-i-sertifikat-ep-v-dokumente/?utm_campaign=y_knowledge_edo_proverka-elektronnoy-podpisi-ecp-kak-proverit-podlinnost-i-sertifikat-ep-v-dokumente_#sravnenie-programm-dlya-proverki-elektronnoy-podpisi КриптоПро DSS ; КриптоПро ЭЦП Browser plug-in ; КриптоПро Office Signature ; КриптоПро PDF ; Госуслуги (проверка ЭЦП)
+- https://kvartira-bez-agenta.ru/proverka-elektronnoj-podpisi/?ysclid=mhnbv2daoi691953270 РосРеестр ; mos.ru
 
+## 2 Soft
+- [Яндекс Браузер с плагином КриптоПро — простой и безопасный способ работать с электронной подписью](https://browser.yandex.ru/corp/cryptopro?from=direct_serp&utm_source=yandex&utm_medium=search&utm_campaign=search_generic|104909040&utm_content=5535985168|16807897822&utm_term=%D1%8D%D1%86%D0%BF%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D1%83%D1%81%D0%BB%D1%83%D0%B3&banerid=0600000000&etext=2202.UZfME4XDRJBrXCo3sJDJxajqzHIYkS912AZMxmbSUVsENT1Wg6ANxZ1v_pGieB3LbtJVLrIjI-z0s6v1yjTxrndsZG9reGNwZXR6Z3BuaGk.3e3b2826a8a5acbc0527e69f0d21623dffef977b&yclid=2656185826662940671&ybaip=1)
+- https://cryptoarm.ru/
 
-## 2 Тестовые электронные подписи в файле sig стандарта CADES-XL. Где их можно скачать или создать? 
+## 3 Тестовые электронные подписи в файле sig стандарта CADES-XL. Где их можно скачать или создать? 
 
 ## 📝 Где взять или создать тестовые подписи CADES-XL в формате .sig
 

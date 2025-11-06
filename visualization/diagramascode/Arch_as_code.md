@@ -1,9 +1,5 @@
 ### Arch_as_code.md 
 
-#### Первые 10 лет Architecture as Code
-5 ноября М. Смирнов  
-📺 YouTube (https://youtu.be/ubxvfbTRi7k)  
-📽 VKVideo (https://vkvideo.ru/video-228508670_456239023)
+- М. Смирнов 5 ноября Первые 10 лет Architecture as Code https://github.com/bpmbpm/doc/blob/main/visualization/diagramascode/5_11/readme.md
 
-- https://t.me/c/1304614627/29528
-- https://api.matisse-kdt.eu/uploads/Architecture_as_Code_6c08bedca3.pdf
+

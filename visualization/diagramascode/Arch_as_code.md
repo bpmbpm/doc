@@ -1,7 +1,7 @@
 ### Arch_as_code.md 
 
 #### Первые 10 лет Architecture as Code
-5 ноября
+5 ноября  
 📺 YouTube (https://youtu.be/ubxvfbTRi7k) 
 📽 VKVideo (https://vkvideo.ru/video-228508670_456239023)
 

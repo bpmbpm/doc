@@ -5,3 +5,5 @@
 ### см. также: 
 - https://github.com/bpmbpm/doc/tree/main/EA/GOST/version2
 
+### strategy
+- [Создаем фейковую стратегию организации по инструкции](https://habr.com/ru/articles/963488/)

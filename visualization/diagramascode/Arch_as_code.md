@@ -2,7 +2,7 @@
 
 #### Первые 10 лет Architecture as Code
 5 ноября  
-📺 YouTube (https://youtu.be/ubxvfbTRi7k) 
+📺 YouTube (https://youtu.be/ubxvfbTRi7k)  
 📽 VKVideo (https://vkvideo.ru/video-228508670_456239023)
 
 - https://t.me/c/1304614627/29528

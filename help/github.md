@@ -21,4 +21,5 @@ Git оперирует только файлами, а не папками (он
 - [Что такое Git и почему он стал стандартом разработки](https://habr.com/ru/articles/959760/)
 
 ### Pull Request
+- https://docs.github.com/ru/pull-requests
 - https://stepik.org/lesson/1791641/step/1

@@ -27,3 +27,6 @@
 ### Calculator_filter
 - https://vpayaem.ru/information6.html
 - https://www.aie.spb.ru/Calculator_filter.html
+
+### Ampflifier
+- [XH-A232 8-26В](https://www.ozon.ru/product/audio-usilitel-moshchnosti-zvuka-dlya-kolonok-xh-a232-30-vt-30-vt-815933824/?tab=reviews)

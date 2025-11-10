@@ -1,4 +1,4 @@
-### Подборка согласшений о Моделировании
+### Подборка соглашений о Моделировании
 #### multi
 - [IDEF0/BPMN В.Репин](https://repin.guru/products/soglashenie-po-modelirovaniyu-biznes-protsessov/)
 #### aris

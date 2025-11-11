@@ -3,7 +3,8 @@
 - https://www.you.com
 - https://www.perplexity.ai/ ; [wiki](https://ru.wikipedia.org/wiki/Perplexity_AI)
 - https://www.deepseek.com/en ; https://chat.qwen.ai/ ; [wiki](https://ru.wikipedia.org/wiki/Qwen) AliBaba
-- https://alice.yandex.ru/ ; https://giga.chat/ 
+- https://alice.yandex.ru/ ; https://giga.chat/
+- [MTS](https://mws.ru/services/mws-gpt/) - платная
 ### Achievements
 - [ИИ впервые официально прошел строгий тест Тьюринга](https://habr.com/ru/news/896938/)
 ### Applications  

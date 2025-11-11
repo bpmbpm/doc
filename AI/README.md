@@ -3,8 +3,9 @@
 - https://www.you.com
 - https://www.perplexity.ai/ ; [wiki](https://ru.wikipedia.org/wiki/Perplexity_AI)
 - https://www.deepseek.com/en ; https://chat.qwen.ai/ ; [wiki](https://ru.wikipedia.org/wiki/Qwen) AliBaba
-- https://alice.yandex.ru/ ; https://giga.chat/
-- [MTS](https://mws.ru/services/mws-gpt/) - платная
+- https://alice.yandex.ru/ (Qwen); https://giga.chat/
+- [MTS](https://mws.ru/services/mws-gpt/) - платная ; T-Банк (T-Lite, T-Pro) = Qwen ;
+- [Топ-12 нейросетей на русском языке](https://giga.chat/help/articles/neural-networks-in-russian) 
 ### Achievements
 - [ИИ впервые официально прошел строгий тест Тьюринга](https://habr.com/ru/news/896938/)
 ### Applications  

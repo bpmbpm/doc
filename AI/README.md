@@ -1,6 +1,9 @@
 ### AI
-https://aistudio.google.com/ ; https://chatgpt.com ; https://www.deepseek.com/en ; https://www.you.com  
-https://alice.yandex.ru/ ; https://giga.chat/ 
+- https://aistudio.google.com/ ; https://chatgpt.com ;
+- https://www.you.com
+- https://www.perplexity.ai/ ; [wiki](https://ru.wikipedia.org/wiki/Perplexity_AI)
+- https://www.deepseek.com/en ; https://chat.qwen.ai/ ; [wiki](https://ru.wikipedia.org/wiki/Qwen) AliBaba
+- https://alice.yandex.ru/ ; https://giga.chat/ 
 ### Achievements
 - [ИИ впервые официально прошел строгий тест Тьюринга](https://habr.com/ru/news/896938/)
 ### Applications  

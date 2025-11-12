@@ -1,6 +1,7 @@
 ### DeepSeek Hardware
 
 - [Требования к GPU и VRAM](https://habr.com/ru/articles/876320/)
+- [Поднимаем DeepSeek llm локально](https://habr.com/ru/articles/878836)
 
 #### 1 Какую версию chat.deepseek (open source) можно запустить на CPU (без GPU) и какие требования к hardware?
 

@@ -198,6 +198,8 @@
 - [RFC 5126](https://datatracker.ietf.org/doc/html/rfc5126#:~:text=The%20contents%20of%20this,is%20technically%20equivalent%20to)
 - https://interoperable-europe.ec.europa.eu/  
 
+### cryptopro
+- https://cryptopro.ru/products/cades
 ## 1.4 Перештамповка подписи CADES-XL возможна при каких условиях и в какой выходной формат?
 
 **Перештамповка (обновление) подписи формата CAdES-XL** — это процесс преобразования подписи в более новый и долговечный формат (как правило, в **CAdES-A**) для обеспечения долгосрочной проверяемости, когда исходная подпись рискует утратить юридическую силу.

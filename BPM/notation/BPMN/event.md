@@ -1,8 +1,8 @@
-### End terminate event
+### 1 End terminate event
 - https://stormbpmn.com/bpmn/elements/end-terminate-throw-event
 - https://elma365.com/ru/bpmn2/10_4_3/
 
-### None End Event vs Terminate End Event 
+### 2 None End Event vs Terminate End Event 
 Спецификация BPMN 2.0 однозначно трактует завершение процесса через призму **жизненного цикла токенов**.
 
 #### Правило 1: Завершение Процесса (Process Completion)

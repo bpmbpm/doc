@@ -1,4 +1,6 @@
 install
+### link
+- [DeepSeek-LLM](https://github.com/deepseek-ai/DeepSeek-LLM)
 ### 1 Вопрос
 Есть сервер без GPU на который нужно поставить chat.deepseek (open source). 
 Какие модели требуют какой конфигурации сервера? Предложи варианты и дай ссылки на скачивание соответствующих версий LLM. 

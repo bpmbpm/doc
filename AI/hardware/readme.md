@@ -125,3 +125,7 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 
 ### ТГ
 - https://t.me/agitopics/50983/53246 какой примерно вычислительный ресурс (параметры сервера : CPU, память и GPU) требуется, чтобы комфортно работала модель Qwen 3? Для начала версия  - 32B , а потом (в идеале) - 235B.
+
+### nvidia
+#### rtx-3060
+- 12 Gb = 30 000: https://www.dns-shop.ru/catalog/recipe/312b2b5f7f5bafe0/rtx-3060/ ; https://www.ozon.ru/category/videokarty-geforce-rtx3060/

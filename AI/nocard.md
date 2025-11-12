@@ -3,6 +3,14 @@
 - [Собственный ИИ локально, бесплатно и без GPU](https://habr.com/ru/companies/ppr/articles/950226/)
 - https://www.reddit.com/r/LocalLLM/comments/1mnc61x/llm_for_nongpu_machine/?tl=ru
 
+#### 2
+- https://github.com/bpmbpm/doc/tree/main/AI/hardware
+- [Локальные GPT нейронный сети ](https://habr.com/ru/articles/780092/) Характеристики моего домашнего компьютера, на котором я задавал вопросы GPT нейросетям:
+  - 8 ядерный 16 поточный процессор AMD Ryzen 7 1700X
+  - 64 Гб оперативной памяти двумя планками по 32 Гб DDR4 2666 МГц
+    Видеокарту я не использовал, так как в ней мало видеопамяти, и большие нейронные сети в неё не влезут, а постоянно перекидывать данные через узкую PCI-e 3.0 шину не самое быстрое удовольствие.
+
+
 #### CPU stand
 - https://1dedic.ru/blog/articles/lokalnoe-ispolzovanie-yazykovoy-modeli-na-vydelennom-servere-chast-pervaya-deepseek-i-eyo
 - [Локальное использование языковой модели на выделенном сервере. Часть первая: DeepSeek и её дистилляты на сервере без GPU](https://1dedic.ru/blog/articles/lokalnoe-ispolzovanie-yazykovoy-modeli-na-vydelennom-servere-chast-pervaya-deepseek-i-eyo) Были протестированы следующие модели:

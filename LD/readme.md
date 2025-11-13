@@ -84,7 +84,7 @@ https://docs.godotengine.org/ru/4.x/tutorials/scripting/gdscript/gdscript_basics
 - Семантические примитивы это 65 слов, которые были найдены как те, для которых нет определений без использования циклической ссылки на себя.
 Причём они были найдены во всех языках. Все остальные слова композитные - то есть состоят из них. https://t.me/rusontology/13403
 
-### Разное
+### also
 - SVO / SOV / set_theory https://github.com/bpmbpm/doc/blob/main/METAMODEL/LINK/set_theory/base1.md
 - Структурная информатика https://graphmodel.com/
 - Data Formats https://github.com/bpmbpm/doc/tree/main/METAMODEL/DATA

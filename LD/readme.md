@@ -88,3 +88,4 @@ https://docs.godotengine.org/ru/4.x/tutorials/scripting/gdscript/gdscript_basics
 - SVO / SOV / set_theory https://github.com/bpmbpm/doc/blob/main/METAMODEL/LINK/set_theory/base1.md
 - Структурная информатика https://graphmodel.com/
 - Data Formats https://github.com/bpmbpm/doc/tree/main/METAMODEL/DATA
+- А.Тарский "Введение в логику и методологию дедуктивных наук" ; А. Мальцев "Алгебраические системы" ; Теория Категорий ; https://www.wolfram.com/language/core-areas/ ; https://phys.org/news/2025-11-ai-framework-uncover-space-physics.html ; FCA

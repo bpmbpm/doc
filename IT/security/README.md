@@ -30,3 +30,6 @@ https://geti2p.net/en/
 - [Чем опасен открытый RDP в интернет. «Home Edition» vs «Enterprise»](https://habr.com/ru/articles/954786/)
 ### Структурно
 - [Автоматизация без риска: как уберечь данные в АИС](https://habr.com/ru/companies/selectel/articles/951722/)
+
+### Also
+- https://github.com/bpmbpm/doc/tree/main/IT/CADES

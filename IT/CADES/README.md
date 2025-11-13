@@ -5,3 +5,6 @@
 
 ### СMS (Cryptographic Message Syntax) 
 - [Форматы электронной подписи](https://habr.com/ru/companies/aktiv-company/articles/191866/)
+
+### Also
+- https://github.com/bpmbpm/doc/tree/main/IT/security

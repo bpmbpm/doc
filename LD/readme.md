@@ -77,6 +77,13 @@ https://docs.godotengine.org/ru/4.x/tutorials/scripting/gdscript/gdscript_basics
 ### Каркас теории - концентратор знаний
 - [Каркас теории - концентратор знаний сообщение №1](https://www.researchgate.net/publication/374233866_Karkas_teorii_-_koncentrator_znanij_soobsenie_No1) ; [Alex Shkotin
 ](https://www.researchgate.net/profile/Alex-Shkotin) ; https://synthesis.frccsc.ru/sigmod/seminar/s20240229.html
+
+### Natural_semantic_metalanguage
+Естественный семантический метаязык
+- https://en.wikipedia.org/wiki/Natural_semantic_metalanguage Семантические простые понятия 
+- Семантические примитивы это 65 слов, которые были найдены как те, для которых нет определений без использования циклической ссылки на себя.
+Причём они были найдены во всех языках. Все остальные слова композитные - то есть состоят из них. https://t.me/rusontology/13403
+
 ### Разное
 - SVO / SOV / set_theory https://github.com/bpmbpm/doc/blob/main/METAMODEL/LINK/set_theory/base1.md
 - Структурная информатика https://graphmodel.com/

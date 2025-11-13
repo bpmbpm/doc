@@ -2,7 +2,7 @@
 - ARIS Method Manual
 - ARIS Method Reference
 
-- Семантика [VAD](https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494393/en/1) ; [EPC](https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494769/en/1)
+- Семантика online [VAD](https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494393/en/1) ; [EPC](https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494769/en/1)
 - [function.md](https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/function.md) 
 
 ### info 

@@ -1,10 +1,10 @@
 ## test signature
 ## 1 Base
 1.1
-- gosuslugi https://e-trust.gosuslugi.ru/check/sign : Отсоединенная \ Открепляемая (файл документа или только хеш документа), Присоединенная \ встроенная (cer, sig, p7s, pdf, tsp, xml). МЧД и др. Встроенной (pdf) нет.
+- gosuslugi https://e-trust.gosuslugi.ru/check/sign : Отсоединенная \ Открепляемая (файл документа или только хеш документа), Присоединенная \ встроенная (cer, sig, p7s, pdf, tsp, xml). Проверка файла cертификата, МЧД и др. 
   - [УНЭП по Постановлению № 2152](https://e-trust.gosuslugi.ru/check/sign-unep) 
   - [Как проверить](https://www.gosuslugi.ru/help/faq/esignature/212160) ; [faq](https://www.gosuslugi.ru/help/faq/esignature/103271)
-- https://dss.cryptopro.ru/verify/#/signature 
+- Тестовая служба проверки подписи и сертификатов «КриптоПро SVS» https://dss.cryptopro.ru/verify/#/signature Проверка подписи и файла cертификата
 - https://sign.kloud.one/
 - https://testca.gaz-is.ru/
    

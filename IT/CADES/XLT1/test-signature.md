@@ -1,7 +1,8 @@
 ## test signature
 ## 1 Base
 1.1
-- https://e-trust.gosuslugi.ru/check/sign ; https://www.gosuslugi.ru/help/faq/esignature/212160 ; https://www.gosuslugi.ru/help/faq/esignature/103271
+- gosuslugi https://e-trust.gosuslugi.ru/check/sign : Открепляемая (файл документа или только хеш документа), открепляемая. МЧД и др. Встроенной (pdf) нет.   
+  - [Как проверить](https://www.gosuslugi.ru/help/faq/esignature/212160) ; [faq](https://www.gosuslugi.ru/help/faq/esignature/103271)
 - https://dss.cryptopro.ru/verify/#/signature
 - https://sign.kloud.one/
 - https://testca.gaz-is.ru/
@@ -10,7 +11,7 @@
 - [Контур.Крипто](https://crypto.kontur.ru/verify)  ; [tariffs](https://crypto.kontur.ru/#tariffs) 29 любых операций на 90 дней
 - https://astral.ru/aj/elem/kak-proverit-elektronnuyu-podpis/
 - https://sign.me/promo/sign-check/
-- 
+  
 ### Обзоры:
 - https://tochka.com/knowledge/edo/proverka-elektronnoy-podpisi-ecp-kak-proverit-podlinnost-i-sertifikat-ep-v-dokumente/?utm_campaign=y_knowledge_edo_proverka-elektronnoy-podpisi-ecp-kak-proverit-podlinnost-i-sertifikat-ep-v-dokumente_#sravnenie-programm-dlya-proverki-elektronnoy-podpisi КриптоПро DSS ; КриптоПро ЭЦП Browser plug-in ; КриптоПро Office Signature ; КриптоПро PDF ; Госуслуги (проверка ЭЦП)
 - https://kvartira-bez-agenta.ru/proverka-elektronnoj-podpisi/?ysclid=mhnbv2daoi691953270 РосРеестр ; mos.ru

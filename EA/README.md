@@ -4,7 +4,8 @@
 - https://github.com/bpmbpm/doc/blob/main/EA/GOST/version2/readme.md
 ### notation
 - EA нотации см. https://github.com/bpmbpm/doc/tree/main/BPM/notation
-- также: https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/interest1.md 
+- также: https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/interest1.md
+- [Документирование архитектуры](https://habr.com/ru/articles/957348/) ; PlantUML с библиотеками ArchiMate и др.
   
 ### System Design
 - [Конспект по архитектуре ПО и System Design](https://habr.com/ru/articles/888202/) ; System Design Interview в [miro](https://miro.com/app/board/uXjVLw0JIYw=/)

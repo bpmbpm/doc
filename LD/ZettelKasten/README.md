@@ -2,8 +2,15 @@
  - obsidian \ logseq \ joplin
  -  Evernote,  OneNote
 
-Обсидиан: средства улучшенного поиска, включая RAG с использованием любых LLM. Это плагины Copilot, Omnisearch 
-   
+
+### obsidian
+- [Моя система хранилищ в Obsidian: Как я разделяю личное и рабочее](https://habr.com/ru/articles/965956/)
+
+### obsidian RAG
+- [Обсидиан: средства улучшенного поиска, включая RAG с использованием любых LLM. Это плагины Copilot, Omnisearch](https://habr.com/ru/articles/903346/comments/#comment_28213866)
+ - [Общение с LLM-моделью по собственной базе знаний в Obsidian](https://habr.com/ru/articles/901562/)
+ - [Я превратил свой Obsidian Vault в RAG-систему](https://www.reddit.com/r/ObsidianMD/comments/1oaxejh/i_turned_my_obsidian_vault_into_a_rag_system_to/?tl=ru)
+ - [Умный поиск по заметкам: как оживить «второй мозг» с помощью RAG](https://habr.com/ru/articles/929692/) 
 ### Простые:
 - [MidnightCommander](https://habr.com/ru/articles/903346/#comment_28208760)
 - [Телеграм-бот для заметок и не только](https://habr.com/ru/articles/903764/)

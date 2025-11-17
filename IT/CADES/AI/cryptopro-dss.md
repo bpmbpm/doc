@@ -1,6 +1,7 @@
 ### cryptopro
 - https://cryptopro.ru/products
-
+- 2015 [Решение по интеграции систем на базе 1С:Предприятие с сервером электронной подписи КриптоПро DSS](https://cryptopro.ru/partners/solutions/reshenie-po-integratsii-sistem-na-baze-1spredpriyatie-s-serverom-elektronnoi-podp)
+  
 ### Вопрос 1
 ты архитектор решения (Solution Architect). Есть СЭД, где подписание проводится электронной подписью. Параметры:
 Тип подписи: усиленная квалифицированная электронная подпись (УКЭП).

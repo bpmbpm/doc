@@ -16,4 +16,4 @@ https://t.me/abpmp/50986
 
 ##### Определения
 - https://abpmp.org.ru/resource/bpm-glossary/#process
-- Shceer https://github.com/bpmbpm/doc/edit/main/METAMODEL/PROCESS/function.md
+- Scheer https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/function.md

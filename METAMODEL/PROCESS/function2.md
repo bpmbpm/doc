@@ -17,3 +17,7 @@ https://t.me/abpmp/50986
 ##### Определения
 - https://abpmp.org.ru/resource/bpm-glossary/#process
 - Scheer https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/function.md
+
+"Набор функций" vs "состоит из функций". Полагаю, что нужно возвратиться к математике.  
+x^3 + x^2 + x = y   
+все в левой части - это функции (три разных), а y - это процесс

@@ -1,5 +1,6 @@
 ### cryptopro
 - https://cryptopro.ru/products
+- price [КриптоПро CSP cryptopro](https://cryptopro.ru/sites/default/files/docs/price.pdf#csp) ; [КриптоПро CSP xcom](https://www.xcom-shop.ru/kripto-pro_skzi_kriptopro_csp_versii_50_klass_ks3_na_odnom_rabochem_meste_astra_linux_special_edition_ili_alt_8_sp_956741.html?utm_source=admitad&utm_medium=cpa&utm_campaign=2101843&utm_content=2f03050f9295b5099174fc847b55366a&admitad_uid=2f03050f9295b5099174fc847b55366a&tagtag_uid=2f03050f9295b5099174fc847b55366a) 
 - [КриптоПРО версии 5.0](https://uc-itcom.ru/help/docs/podpisat-dokument-s-pomoshhyu-kriptopro-5-0/) ; [адреса штампов времени](https://wiki.itcomgk.ru/docs/adresa-shtampov-vremeni/)
 - 2015 [Решение по интеграции систем на базе 1С:Предприятие с сервером электронной подписи КриптоПро DSS](https://cryptopro.ru/partners/solutions/reshenie-po-integratsii-sistem-na-baze-1spredpriyatie-s-serverom-elektronnoi-podp)
   

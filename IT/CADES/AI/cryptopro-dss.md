@@ -1,5 +1,5 @@
 ### cryptopro
-- (https://cryptopro.ru/products)
+- https://cryptopro.ru/products
 
 ### Вопрос 1
 ты архитектор решения (Solution Architect). Есть СЭД, где подписание проводится электронной подписью. Параметры:

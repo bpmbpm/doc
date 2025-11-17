@@ -1,6 +1,6 @@
 ### cryptopro
 - https://cryptopro.ru/products
-- [КриптоПРО версии 5.0](https://uc-itcom.ru/help/docs/podpisat-dokument-s-pomoshhyu-kriptopro-5-0/)
+- [КриптоПРО версии 5.0](https://uc-itcom.ru/help/docs/podpisat-dokument-s-pomoshhyu-kriptopro-5-0/) ; [адреса штампов времени](https://wiki.itcomgk.ru/docs/adresa-shtampov-vremeni/)
 - 2015 [Решение по интеграции систем на базе 1С:Предприятие с сервером электронной подписи КриптоПро DSS](https://cryptopro.ru/partners/solutions/reshenie-po-integratsii-sistem-na-baze-1spredpriyatie-s-serverom-elektronnoi-podp)
   
 ### Вопрос 1

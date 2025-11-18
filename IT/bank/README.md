@@ -24,3 +24,6 @@ OpenAPI
 
 ### KYC AML
 - [Банковский спектакль KYC и AML](https://habr.com/ru/companies/ruvds/articles/959336/)
+
+### info
+- https://bankiram.blogspot.com/p/30.html

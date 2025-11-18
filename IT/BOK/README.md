@@ -30,3 +30,4 @@ Business Technology Architecture Body of Knowledge
 ### см. также 
 - EA/BizArch https://github.com/bpmbpm/doc/tree/main/EA/BizArch
 - ITIL https://github.com/bpmbpm/doc/tree/main/IT/CIO/ITIL
+- PM_BA https://github.com/bpmbpm/doc/blob/main/PM_BA/README.md

@@ -21,3 +21,4 @@
 
 ### разное
 - [Приложение 2 EPC, BPMN](http://storage.mstuca.ru/jspui/bitstream/123456789/8704/1/%21T_%D0%A1%D0%B8%D0%B4%D0%BE%D1%80%D0%BE%D0%B2_A5.pdf)
+- https://github.com/bpmbpm/doc/blob/main/BPM/ARIS/reglament/README.md

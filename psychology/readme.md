@@ -25,3 +25,6 @@ https://github.com/bpmbpm/doc/tree/main/EA/ORG
 
 ### discipline
 - [Почему дисциплина через силу не работает](https://habr.com/ru/articles/962920/)
+
+### polygraph
+- [Так ли страшен полиграф, как о нем говорят? Полиграф при трудоустройстве](https://habr.com/ru/articles/966136/)

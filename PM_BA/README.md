@@ -14,3 +14,7 @@
 
 ### 2
 - [Один раз увидеть. В помощь системному аналитику для диалогов с Бизнесом](https://habr.com/ru/companies/uralsib/articles/959484/)
+- [Что такое спринты в программировании и как их организовать](https://habr.com/ru/companies/kaiten/articles/964138/)
+
+### Also
+- https://github.com/bpmbpm/doc/tree/main/IT/BOK

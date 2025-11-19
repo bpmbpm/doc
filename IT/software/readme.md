@@ -1,5 +1,6 @@
 ### also
 - https://github.com/bpmbpm/doc/tree/main/EA/integration
+- WFE https://github.com/bpmbpm/doc/tree/main/BPM/workflow/WFE
 
 ### Docker
 ### Kubernetes

@@ -18,7 +18,7 @@ https://t.me/abpmp/50986
 - https://abpmp.org.ru/resource/bpm-glossary/#process
 - Scheer https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/function.md
 
-"Набор функций" vs "состоит из функций". Полагаю, что нужно возвратиться к математике.  
+"Набор функций" vs "состоит из функций". Полагаю, что нужно возвратиться к математике, к уравнению:  
 x^3 + x^2 + x = Y   
 все в левой части - это [функции](https://mathus.ru/math/function.pdf) (три разных), а Y - это "значение процесса \ функции" процесс.  
 В левой части - [выражение](https://ru.wikipedia.org/wiki/%D0%92%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_(%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0))   

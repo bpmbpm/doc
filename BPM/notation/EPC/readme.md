@@ -5,3 +5,6 @@
 
 ### MetaModel
 - https://github.com/bpmbpm/doc/tree/main/METAMODEL/PROCESS/EPC ontology
+
+### also
+- https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/EPC/epc_mermaid.md

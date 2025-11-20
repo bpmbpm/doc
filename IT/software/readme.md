@@ -1,7 +1,8 @@
 ### also
 - https://github.com/bpmbpm/doc/tree/main/EA/integration
 - WFE https://github.com/bpmbpm/doc/tree/main/BPM/workflow/WFE
-
+- Programming culture https://github.com/bpmbpm/doc/tree/main/EA/software
+  
 ### Docker
 ### Kubernetes
 - [Kubernetes на пальцах: самое простое объяснение, что это такое](https://habr.com/ru/companies/selectel/articles/956266/)

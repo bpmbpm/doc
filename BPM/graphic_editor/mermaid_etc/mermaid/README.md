@@ -52,3 +52,6 @@ drawio поддерживает mermaid
 
 ### stl, geojson
 - stl etc https://docs.github.com/ru/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams
+
+### also
+- https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/EPC/epc_mermaid.md

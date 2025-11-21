@@ -1,6 +1,7 @@
 ### docflow
 #### example Data Association + Association
 - https://mainthing.ru/ru/item/434/
+- https://www.businessstudio.ru/articles/article/business_studio_notatsiya_bpmn_granitsy_protsessov/ В.Репин
 - https://www.visual-paradigm.com/guide/bpmn/how-to-use-data-objects-in-bpmn/
 - https://www.edumax.pro/blog/how-to-model-data-in-bpmn
 

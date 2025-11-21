@@ -8,7 +8,7 @@
 ### doc Data Object 
 - BPEL Properties https://sparxsystems.com/resources/user-guides/15.1/model-domains/bpmn-models.pdf стр.38
 
-### Recomemnded example 
+### Recommended example 
 - https://orbus.blob.core.windows.net/media/2005304/wp0070.pdf стр.12, рис. 20.  
 дает ответ.  
 Типа: связью ассоциация (Association) не нужно показывать привязку к документам. Нужно только через Data Association.  

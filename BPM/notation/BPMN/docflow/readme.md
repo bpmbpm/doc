@@ -9,7 +9,12 @@
 - BPEL Properties https://sparxsystems.com/resources/user-guides/15.1/model-domains/bpmn-models.pdf стр.38
 
 ### Recomemnded example 
-- https://orbus.blob.core.windows.net/media/2005304/wp0070.pdf стр.12
+- https://orbus.blob.core.windows.net/media/2005304/wp0070.pdf стр.12, рис. 20.  
+дает ответ.  
+Типа: связью ассоциация (Association) не нужно показывать привязку к документам. Нужно только через Data Association.  
+Не понятно: мы можем Data Association прикрепить к стрелке Sequence Flow (как это часто делают Association)? Тогда чем это отличается от Association?  
+Вообще связь: Sequence Flow -> Data Association -> Data Object как семантически выражается? Поток управления Связан по данным с Объектом данных?  
+Как визуально отличаются направленный Association и Data Association (последний всегда направленный).  
 
 ### info
 Общие

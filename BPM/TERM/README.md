@@ -56,6 +56,5 @@ semantics-based / semantics-driven enterprise information architecture
 - Blueprint - не как артефакт, а как процесс тиражироания, т.е. копирование чего либо "под копирку".   
 
 ### см. также
-https://github.com/bpmbpm/doc/tree/main/BPM/TERM
-https://github.com/bpmbpm/doc/blob/main/EA/term.md
-https://github.com/bpmbpm/doc/tree/main/IT/term.md
+- https://github.com/bpmbpm/doc/tree/main/BPM/TERM ; https://github.com/bpmbpm/doc/blob/main/EA/term.md ; https://github.com/bpmbpm/doc/tree/main/IT/term.md
+- owner

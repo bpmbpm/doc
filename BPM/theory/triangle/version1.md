@@ -294,7 +294,7 @@ graph TD
 - https://www.sciencedirect.com/science/article/abs/pii/S0952197625021086#:~:text=RE%20characterizes%20systems%20through,pressure%2C%20and%20recover%20essential
 - https://www.sciencedirect.com/science/article/abs/pii/S0952197625021086#:~:text=managers%20should%20formally%20embed,upgrades%20and%20crisis%20training
 - https://www.learnleansigma.com/guides/error-proofing-poka-yoke/#:~:text=Foster%20a%20culture%20of,participate%20in%20the%20error%2Dproofing
--4
+- 4
 - https://www.sciencedirect.com/science/article/abs/pii/S0166361520300890#:~:text=risk%2Daware%20business%20process%20management,of%20an%20organization%27s%20business
 - https://www.sciencedirect.com/science/article/abs/pii/S0952197625021086#:~:text=embedding%20resilience%20metrics%E2%80%94such%20as%20system%20robustness%20and%20operational%20flexibility%E2%80%94directly%20into%20risk%20analyses
 - https://www.sciencedirect.com/science/article/abs/pii/S0166361520300890#:~:text=BPRIM%20%28Business%20Process%2DRisk%20Integrated,and%20including%20risk%20management

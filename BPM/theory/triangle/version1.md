@@ -271,13 +271,14 @@ graph TD
 - https://process-pattern.app/resources/bpm/process-performance#:~:text=Process%20flexibility%20refers%20to,to%20changes%20in%20process
 - https://process-pattern.app/resources/bpm/process-performance#:~:text=Process%20quality%20can%20be,of%20successfully%20executed%20process
 - https://www.ebsco.com/research-starters/business-and-management/process-management-quality#:~:text=Process%20Management%20for%20Quality,designed%20into%20products%20not
-
+- 2
 - https://www.mdpi.com/2079-8954/13/4/256#:~:text=Step%201%20%28Generate%20the,in%20China%2C%20the%20suggested
 - https://pmc.ncbi.nlm.nih.gov/articles/PMC8185488/#:~:text=The%20Five%20Diamond%20Method,and%20exploitation%20in%20process
 - https://www.bpminstitute.org/resources/articles/case-study-business-process-management-applying-best-practices-sales-and-operatio/#:~:text=There%20is%20a%2050%25,to%2020%25%20reduction%20in
 - https://www.emerald.com/insight/content/doi/10.1108/BPMJ-10-2021-0677/full/html#:~:text=In%20our%20example%2C%20students,tradeoff%2C%20we%20now%20draw
 - https://www.mdpi.com/2071-1050/13/4/1906#:~:text=We%20further%20defined%20the,despite%20those%20limitations%2C%20we
 - https://www.bpminstitute.org/resources/articles/case-study-business-process-excellence-building-culture-excellence/#:~:text=Coors%20Brewing%20Company%20started,company%E2%80%99s%20strategic%20goals%20and
+-3
 - https://www.researchgate.net/publication/313267328_A_Systematic_Literature_Review_on_the_Architecture_of_Business_Process_Management_Systems#:~:text=These%20are%20Pareto%20trade%2Doffs.,formulate%20practical%20recommendations.%20Their
 - https://www.emerald.com/bpmj/article/28/8/1/257175/The-influence-of-BPM-supportive-culture-and#:~:text=Typical%20interferences%20are%20through,employees%E2%80%99%20process%20conformance%20drawing
 - https://www.6sigma.us/lean-tools/poka-yoke-six-sigma/#:~:text=poka%2Dyoke%2C%20which%20translates%20from,errors%20nearly%20impossible%20to
@@ -293,7 +294,7 @@ graph TD
 - https://www.sciencedirect.com/science/article/abs/pii/S0952197625021086#:~:text=RE%20characterizes%20systems%20through,pressure%2C%20and%20recover%20essential
 - https://www.sciencedirect.com/science/article/abs/pii/S0952197625021086#:~:text=managers%20should%20formally%20embed,upgrades%20and%20crisis%20training
 - https://www.learnleansigma.com/guides/error-proofing-poka-yoke/#:~:text=Foster%20a%20culture%20of,participate%20in%20the%20error%2Dproofing
-
+-4
 - https://www.sciencedirect.com/science/article/abs/pii/S0166361520300890#:~:text=risk%2Daware%20business%20process%20management,of%20an%20organization%27s%20business
 - https://www.sciencedirect.com/science/article/abs/pii/S0952197625021086#:~:text=embedding%20resilience%20metrics%E2%80%94such%20as%20system%20robustness%20and%20operational%20flexibility%E2%80%94directly%20into%20risk%20analyses
 - https://www.sciencedirect.com/science/article/abs/pii/S0166361520300890#:~:text=BPRIM%20%28Business%20Process%2DRisk%20Integrated,and%20including%20risk%20management
@@ -304,7 +305,7 @@ graph TD
 - https://tikalacademy.com/what-is-poka-yoke#:~:text=Contact%20Method%3A%20This%20type,to%20fit%20in%20certain
 - https://kaizen.com/insights/poka-yoke-processes-error-proof/#:~:text=Examples%20of%20Poka%20Yoke%3A,Automatic%20validations%20in%20digital
 - https://www.learnleansigma.com/guides/error-proofing-poka-yoke/#:~:text=Measuring%20the%20effectiveness%20of,comparing%20before%20and%20after
-
+- 5
 - https://www.kpifire.com/blog/poka-yoke/#:~:text=This%20%27building%2Din%27%20of%20quality,waste%20and%20improving%20overall
 - https://www.6sigma.us/lean-tools/poka-yoke-six-sigma/#:~:text=Examples%20of%20Poka%2DYoke%20in,Orientation%2C%20Motion%20Sensors%2C%20Alert
 - https://www.sciencedirect.com/science/article/abs/pii/S0166361520300890#:~:text=R%2DBPM%20aims%20to%20improve,robustness%20of%20business%20process
@@ -315,7 +316,7 @@ graph TD
 - https://www.indeed.com/career-advice/career-development/process-metrics#:~:text=Quality%20rate%20%3D%20%28Total,of%20units%20produced%29%20x
 - https://www.clearpointstrategy.com/blog/18-key-performance-indicators#:~:text=the%20four%20categories%20of,Financial%2C%20Customer%2C%20Process%20and
 - https://www.heflo.com/blog/process-metrics#:~:text=Efficiency%20Metrics%20%E2%80%93%20Measure,money%2C%20or%20manpower%20are
-
+- 6
 - https://www.cflowapps.com/performance-metrics/#:~:text=Efficiency%20%7C%20Achieving%20maximum,well%20are%20resources%20being
 - https://www.processmaker.com/blog/how-to-effectively-use-process-metrics-in-business-process-analysis/#:~:text=Resource%20utilization%3A%20This%20measures,are%20used%20in%20a
 - https://blog.proactioninternational.com/en/process-improvement-metrics-boost-performance#:~:text=Resource%20utilization%20rate%3A%20Efficiency,machines%2C%20raw%20materials%29%20are
@@ -326,7 +327,7 @@ graph TD
 - https://blog.proactioninternational.com/en/process-improvement-metrics-boost-performance#:~:text=Cycle%20time%3A%20Total%20time,process%20from%20start%20to
 - https://www.indeed.com/career-advice/career-development/process-metrics#:~:text=Cycle%20time%20is%20the,process%20from%20beginning%20to
 - https://research.aimultiple.com/process-kpis/#:~:text=Takt%20time%3A%20Time%20to,the%20consistency%20in%20unit
-
+- 7
 - https://www.cflowapps.com/performance-metrics/#:~:text=Takt%20Time%20is%20the,unit%20while%20meeting%20customer
 - https://www.indeed.com/career-advice/career-development/process-metrics#:~:text=Takt%20time%20is%20the,unit%20before%20making%20the
 - https://www.cflowapps.com/performance-metrics/#:~:text=Changeover%20Time%20is%20the,process%20or%20task%20to
@@ -337,7 +338,7 @@ graph TD
 - https://blog.proactioninternational.com/en/process-improvement-metrics-boost-performance#:~:text=Defect%20rate%3A%20Percentage%20of,total%20number%20of%20parts
 - https://www.heflo.com/blog/process-metrics#:~:text=First%20Pass%20Yield%20%28FPY%29%3A,completed%20correctly%20without%20needing
 - https://www.cflowapps.com/performance-metrics/#:~:text=First%20Pass%20Yield%20%28FPY%29,first%20attempt%20without%20requiring
-
+- 8
 - https://www.6sigma.us/six-sigma-in-focus/process-indicators/#:~:text=First%20pass%20yield%3A%20The,a%20process%20without%20requiring
 - https://www.cflowapps.com/performance-metrics/#:~:text=Order%20Accuracy%20tracks%20the,percentage%20of%20correctly%20fulfilled
 - https://www.processmaker.com/blog/how-to-effectively-use-process-metrics-in-business-process-analysis/#:~:text=Standard%20deviation%3A%20This%20measures,in%20a%20set%20of
@@ -348,4 +349,3 @@ graph TD
 - https://www.6sigma.us/six-sigma-in-focus/process-indicators/#:~:text=Effective%20KPIs%20are%20closely,attainable%2C%20relevant%2C%20and%20time%2Dbound
 - https://www.cflowapps.com/performance-metrics/#:~:text=Mean%20Time%20Between%20Failures,between%20system%20or%20equipment
 - https://www.processmaker.com/blog/how-to-effectively-use-process-metrics-in-business-process-analysis/#:~:text=Compliance%20rate%3A%20This%20measures,of%20standard%20rules%20or
-, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 

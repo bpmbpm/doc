@@ -208,10 +208,10 @@
 
 ```mermaid
 graph TD
-    A[Результативность<br/>(Effectiveness)]
-    B[Эффективность<br/>(Efficiency)]
-    C[Гибкость<br/>(Flexibility)]
-    D[Качество процесса<br/>(Process Quality)]
+    A[Результативность<br/>_Effectiveness]
+    B[Эффективность<br/>_Efficiency]
+    C[Гибкость<br/>_Flexibility]
+    D[Качество процесса<br/>_Process Quality]
     subgraph Devil's Quadrangle
         A --- B
         B --- C
@@ -220,7 +220,7 @@ graph TD
         A --- C
         B --- D
     end
-    E[Надёжность процесса<br/>(Process Reliability)]
+    E[Надёжность процесса<br/>_Process Reliability]
     E -.-> D
     E -.-> A
 ```

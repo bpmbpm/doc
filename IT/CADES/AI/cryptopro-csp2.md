@@ -23,7 +23,8 @@
 
 Однако, note: в документации указано, что cryptcp.exe может выполнять подписание с усилением до CAdES-XL, но для этого нужно указать соответствующие параметры (например, -cadestype XL, -ocsp и -tsp).
 
-Пример команды для cryptcp.exe: ```
+Пример команды для cryptcp.exe: 
+```
 cryptcp -sign -dn "CN=Иванов Иван Иванович" -cadestype XL -ocsp "http://ocsp.kontur.ru" -tsp "http://tsp.kontur.ru" -detached document.pdf document.pdf.sig
 ```
 В этом примере:

@@ -141,7 +141,7 @@ cryptcp -sign -detached -cadestype XL -cert -pin N -ocsp "http://ocsp.kontur.ru"
 
 ### 2. **Толстый клиент СЭД:** Запуск cryptcp.exe
 ```python
-# Пример кода запуска
+# Пример кода запуска на python
 import subprocess
 
 command = [

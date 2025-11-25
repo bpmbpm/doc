@@ -607,7 +607,7 @@ def archival_verification(cades_xl_signature):
 
 ## Практическая реализация:
 
-### Для cryptcp.exe可能需要特殊ные параметры:
+### Для cryptcp.exe параметры:
 ```bash
 # Стандартная проверка (может не работать для архивных подписей)
 cryptcp -verify signature.sig document.pdf

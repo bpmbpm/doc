@@ -22,7 +22,7 @@
 
 ### 2. Визуализация: Процессный треугольник BPM
 
-![fig](https://ydcusercontenteast.blob.core.windows.net/user-content-youagent-output/ciplot20251125183022-0-d049c803489f.png?se=2025-11-25T19%3A30%3A22Z&sp=r&sv=2021-12-02&sr=b&sig=KfbySuPCS8RLeDPkTpdEYl0Bxx4h6Y%2BaGTId9nOunTQ%3D)
+![fig](pic/ris1.png)
 **Эффективность — Результативность — Гибкость**
 
 
@@ -38,7 +38,7 @@
 - **Эффективность** в BPM аналогична "времени" и "стоимости" в проектном треугольнике.
 - **Результативность** соответствует "качеству" и "объему".
 - **Гибкость** — уникальная сторона для процессов, отражающая способность быстро реагировать на изменения , , .
-
+[1](https://www.academia.edu/35467911/Fundamentals_of_Business_Process_Management#:~:text=The%20book%20%22Fundamentals%20of,for%20the%20alleged%20failure) ; [2](https://link.springer.com/book/10.1007/978-3-662-56509-4#:~:text=This%20textbook%20covers%20the,process%20identification%20to%20process) ; [3](https://link.springer.com/chapter/10.1007/978-3-031-16103-2_3#:~:text=Processes%20are%20complex%20phenomena,graph%20databases.%20J.%20Data)
 ---
 
 ### 4. Взаимосвязи и типовые trade-off'ы

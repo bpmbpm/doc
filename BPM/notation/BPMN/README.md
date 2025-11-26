@@ -1,5 +1,6 @@
 ### BPMN2  
-BPMN = ["Business People May Not Undestand"](https://habr.com/ru/articles/907584/#comment_28294732)
+- BPMN = ["Business People May Not Undestand"](https://habr.com/ru/articles/907584/#comment_28294732)
+- https://habr.com/ru/articles/970424/#comment_29168736
 ### start
 - [Первые шаги в BPMN. Типы диаграмм](https://habr.com/ru/articles/891104/)
 ### ru 

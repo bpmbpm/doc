@@ -56,6 +56,7 @@ BPMN \ YAWL ?? Semantic formalism, [LD/formalism.md](https://github.com/bpmbpm/d
 - [Объекты данных и хранилища данных](https://bpmtips.com/bpmn-miwg-demonstration-2018-nearly-everything-you-always-wanted-to-know-about-data-objects-but-were-afraid-to-ask/)
 ### Tool selection
 - https://bpmn-miwg.github.io/bpmn-miwg-tools/visual-test-result-comparison.html?tool=Modelio%203.5
+- [Рейтинг инструментов BPMN](https://habr.com/ru/articles/849948/)
 ### Intro
 - [Легкий путь к BPMN: просто, быстро и без заморочек](https://habr.com/ru/articles/905894/)
 

@@ -1,6 +1,6 @@
-Обзор форматов:
+### Обзор форматов:
 - [Unravelling Graph-Exchange File Formats](https://arxiv.org/pdf/1503.02781)
-
+- [SVG, Canvas, WebGL, WebGPU — кто здесь вообще главный? Большой тест 2D-графики в браузере](https://habr.com/ru/articles/970286/)
 
 
 ### Formats

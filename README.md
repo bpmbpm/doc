@@ -149,3 +149,6 @@ https://github.com/bpmbpm/doc/tree/main/LD/metaphysics#ideas-vs-things
 #### Разное
 - [assistants.md](https://github.com/bpmbpm/doc/blob/main/mix/assistants.md)
 - [arxiv.org](https://arxiv.org/)
+
+### search
+- economy/finance https://github.com/bpmbpm/doc/tree/main/INDUSTRY/economy/finance

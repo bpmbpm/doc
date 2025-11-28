@@ -20,3 +20,7 @@ https://gitverse.ru/features/gigacode/
 
 ### flow2code
 - https://github.com/bpmbpm/doc/blob/main/visualization/code2flow/readme.md#flow2code
+
+### SWITCH-технология
+- https://is.ifmo.ru/automata/
+- https://is.ifmo.ru/books/switch_pdf/_switch11.pdf

@@ -25,3 +25,5 @@ https://gitverse.ru/features/gigacode/
 А.А. Шалыто
 - https://is.ifmo.ru/automata/
 - https://is.ifmo.ru/books/switch_pdf/_switch11.pdf
+### 2
+- https://writings.stephenwolfram.com/

@@ -26,4 +26,4 @@ https://gitverse.ru/features/gigacode/
 - https://is.ifmo.ru/automata/
 - https://is.ifmo.ru/books/switch_pdf/_switch11.pdf
 ### 2
-- https://writings.stephenwolfram.com/
+- wolfram https://writings.stephenwolfram.com/ ; https://reference.wolfram.com/language/ref/Function.html

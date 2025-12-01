@@ -8,7 +8,7 @@
 - [Математика креативности](https://habr.com/ru/articles/946764/)
 - Теория связей https://github.com/bpmbpm/doc/tree/main/METAMODEL/LINK
 - https://github.com/bpmbpm/doc/tree/main/METAMODEL
-- [Единая теория информации: от стохастической метрики к непрерывному пространству и эффективной гравитации](https://habr.com/ru/articles/971362/)
+- [Единая теория информации: от стохастической метрики к непрерывному пространству и эффективной гравитации](https://habr.com/ru/articles/971362/) ; [Единый Принцип Организации (ЕПО)](https://github.com/Jobsbka/UPO)
 ### formalism
 #### Isabelle
 - [wiki](https://ru.wikipedia.org/wiki/Isabelle#:~:text=Isabelle%20%E2%80%94%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9%20%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%20%D0%B4%D0%BB%D1%8F%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B3%D0%BE,%D0%BD%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%20%D0%BD%D0%B0%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Standard%20ML.) серьёзные разработки в области теории множеств проводились с использованием Isabelle/ZF.

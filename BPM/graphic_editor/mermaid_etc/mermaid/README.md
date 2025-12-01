@@ -14,7 +14,8 @@ drawio поддерживает mermaid
 
 Основная проблема в том, что все равно придется работать с форматом файлов самого графического редактора (yEd, drawio), т.к. любое изменение в схему уже наст расхождение исходного mermaid или dot (graphviz).
 
-см. также 
+### also
+- https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/EPC/epc_mermaid.md
 - diagram as code: https://github.com/bpmbpm/doc/blob/main/visualization/diagramascode/README.md
 - https://github.com/bpmbpm/doc/blob/main/BPM/notation/DaC.md
 
@@ -55,5 +56,4 @@ drawio поддерживает mermaid
 ### stl, geojson
 - stl etc https://docs.github.com/ru/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams
 
-### also
-- https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/EPC/epc_mermaid.md
+

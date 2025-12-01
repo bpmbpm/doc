@@ -25,7 +25,9 @@ drawio поддерживает mermaid
 
 ### js
 - https://mermaid.js.org/
-- 
+
+### info
+- [Визуализация диаграмм в VS code](https://habr.com/ru/articles/971802/)
 
 ### search
 - mermaid "Value-Added Chain Diagram"

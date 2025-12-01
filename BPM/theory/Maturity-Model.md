@@ -194,7 +194,7 @@
 
 ### 4 pic
 
-![pic](/pic/mm_cbok.jpg)
+![pic](pic/mm_cbok.jpg)
 
 ![pic]()
 

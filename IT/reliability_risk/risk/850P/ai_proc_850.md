@@ -133,3 +133,9 @@
 - https://www.dialognauka.ru/upload/iblock/672/k85dcy0jxxm3hzlx7i3nwploa7d2xvzu/Zasetskaya_K_2025_05_20-METROPOL_GOST-57580.4_2022.pdf
 - https://service.securitm.ru/docs/polozhenie-banka-rossii-850-p
 - https://rtmtech.ru/articles/polozhenie-850-p-trebovaniya-zb/
+
+### 3 ТАБ GRC
+- https://infostart.ru/soft1c/tab-grc-uchet-riskovyh-sobytiy/
+- https://rutube.ru/video/6bdeb1095b02ebf031ac56884126931c
+
+- [Созвездие GRC 2024](https://data.tedo.ru/publications/GRC_2024.pdf)

@@ -27,3 +27,6 @@ https://gitverse.ru/features/gigacode/
 - https://is.ifmo.ru/books/switch_pdf/_switch11.pdf
 ### 2
 - wolfram https://writings.stephenwolfram.com/ ; https://reference.wolfram.com/language/ref/Function.html ; [Lambdas](https://writings.stephenwolfram.com/2025/09/the-ruliology-of-lambdas/)
+
+### Compile
+- [Что происходит, когда запускается код?](https://habr.com/ru/articles/971730/)

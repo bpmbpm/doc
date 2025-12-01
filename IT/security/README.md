@@ -35,4 +35,4 @@ https://geti2p.net/en/
 - https://github.com/bpmbpm/doc/tree/main/IT/CADES
 
 ### WhatsApp
-- [Альтернативы для общения вместо WhatsApp](https://habr.com/ru/news/971482/#comment_29181148)
+- [Альтернативы для общения вместо WhatsApp](https://habr.com/ru/news/971482/#comment_29181148) ; [Svyazist](https://habr.com/ru/news/971482/#comment_29180288)

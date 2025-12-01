@@ -221,6 +221,6 @@ Forrester
 - [elma](https://elma365.com/ru/articles/uroven-zrelosti-processov-kak-pokazatel-ih-effektivnosti/)
 - https://habr.com/ru/companies/simbirsoft/articles/760228/
 - https://fox-manager.com/uroven-zrelosti-organizacii/
-- [В. Репинъ(https://www.businessstudio.ru/articles/article/otsenka_zrelosti_sistemy_upravleniya_biznes_protsessami_repin/) ; [PEMM](https://bpm3.ru/articles/otsenka-urovnya-zrelosti-protsessa-po-metodike-pemm-majkla-hammera/)
-- [Рисунок 1. Соответствие уровня зрелости организации и ее потребностей в области информационной безопасности.](https://studfile.net/preview/6177197/)
+- [В. Репин](https://www.businessstudio.ru/articles/article/otsenka_zrelosti_sistemy_upravleniya_biznes_protsessami_repin/) ; [PEMM](https://bpm3.ru/articles/otsenka-urovnya-zrelosti-protsessa-po-metodike-pemm-majkla-hammera/)
+- [Рисунок 1. Соответствие уровня зрелости организации и ее потребностей в области информационной безопасности](https://studfile.net/preview/6177197/)
 - https://bstudy.net/767797/informatika/zrelost_biznes_protsessov

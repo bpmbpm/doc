@@ -208,14 +208,19 @@ Forrester
 
 ### 5 process vs BPM 
 Не путать зрелости процессов или зрелости процессного управления. https://t.me/abpmp/52470  
-Вообще слово "управление" - плохое (многозначное). Лучше использовать более конкретные термины. 
+Вообще слово "управление" - плохое - многозначное и непонятное. Лучше использовать более конкретные термины. 
 Зрелость процесса vs зрелость процесса Управления (? мониторинг, контроль, формализация, оценка - выбери нужное) этими процессами.  
 т.е. есть шкала оценки самого автомобиля (процесса), есть шкала оценки вождения \ тех-обслуживания
 Машина (процесс) может быть хорошая, а эксплуатация (вождение), обслуживание (вовремя менять масло, отслеживать пробег и т.п.) - плохое. И наоборот.   
 Или иная аналогия: бух.учет. В одном случае, компания в убытке, но бух-учет идеален и наоборот. BPM - это во многом "бух-учет процессов" (классификация, реестр, карточка процесса, [владелец](https://github.com/bpmbpm/doc/blob/main/BPM/TERM/owner.md) и другие учетные функции, вкл. RACI), регламент "обслуживания процесса", контроль за экземпляром процесса как за бух-проводкой и т.п.    
+А про мантры постоянного совершенствования (Continuous Process Improvement) - это сюда:   
+![pic](https://github.com/bpmbpm/doc/blob/main/IT/BOK/CIP/BIC25.jpg)
 
 ### 6 info
-- https://elma365.com/ru/articles/uroven-zrelosti-processov-kak-pokazatel-ih-effektivnosti/
+- [pic](https://ya.ru/images/search?from=tabbar&text=%D0%9E%D1%86%D0%B5%D0%BD%D0%BA%D0%B8%20%D0%B7%D1%80%D0%B5%D0%BB%D0%BE%D1%81%D1%82%D0%B8%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%B0%D0%BC%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8)
+- [elma](https://elma365.com/ru/articles/uroven-zrelosti-processov-kak-pokazatel-ih-effektivnosti/)
 - https://habr.com/ru/companies/simbirsoft/articles/760228/
 - https://fox-manager.com/uroven-zrelosti-organizacii/
-- https://www.businessstudio.ru/articles/article/otsenka_zrelosti_sistemy_upravleniya_biznes_protsessami_repin/
+- [В. Репинъ(https://www.businessstudio.ru/articles/article/otsenka_zrelosti_sistemy_upravleniya_biznes_protsessami_repin/) ; [PEMM](https://bpm3.ru/articles/otsenka-urovnya-zrelosti-protsessa-po-metodike-pemm-majkla-hammera/)
+- [Рисунок 1. Соответствие уровня зрелости организации и ее потребностей в области информационной безопасности.](https://studfile.net/preview/6177197/)
+- https://bstudy.net/767797/informatika/zrelost_biznes_protsessov

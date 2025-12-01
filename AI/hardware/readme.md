@@ -1,3 +1,6 @@
+### info
+- [Зачем вашему процессору нейронный блок, если есть RTX 4090?](https://habr.com/ru/articles/971820/)
+
 ### DeepSeek Hardware
 
 - [Требования к GPU и VRAM](https://habr.com/ru/articles/876320/)

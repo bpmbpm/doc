@@ -198,13 +198,13 @@
 BPM CBOK  
 
 ![pic](pic/mm_CMMI.jpg)  
-CMMI
+CMMI  
+
+![pic](pic/mm_Aleksa.jpg)
+CMMI  
 
 ![pic](pic/mm_Forrester.jpg)
 Forrester  
-![pic](pic/mm_Aleksa.jpg)
-Неизвестный  
-
 
 ### 5 process vs BPM 
 Не путать зрелости процессов или зрелости процессного управления. https://t.me/abpmp/52470  

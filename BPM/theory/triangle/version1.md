@@ -1,5 +1,5 @@
 ## Process triangle. V1
-### 1 Базовый вопрос
+## 1 Базовый вопрос
 Есть проектный треугольник. По аналогии построй процессный треугольник (в рамках теории BPM).
 
 ## 📐 Процессный треугольник в BPM: Аналог проектного треугольника
@@ -349,3 +349,7 @@ graph TD
 - https://www.6sigma.us/six-sigma-in-focus/process-indicators/#:~:text=Effective%20KPIs%20are%20closely,attainable%2C%20relevant%2C%20and%20time%2Dbound
 - https://www.cflowapps.com/performance-metrics/#:~:text=Mean%20Time%20Between%20Failures,between%20system%20or%20equipment
 - https://www.processmaker.com/blog/how-to-effectively-use-process-metrics-in-business-process-analysis/#:~:text=Compliance%20rate%3A%20This%20measures,of%20standard%20rules%20or
+
+## 2 Comment
+### Humor
+- Треугольник будет выпит! Будь он параллелепипед, Будь он круг, едрена вошь ...

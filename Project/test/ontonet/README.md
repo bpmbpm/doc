@@ -1,3 +1,6 @@
+## info
+- https://habr.com/ru/users/ArtemVarkulevich/articles/
+
 ## 1 Осмотр семантических возможностей "Семантической доски" ontonet.ru
 ### Проверка выгрузки схемы в owl
 Операции:

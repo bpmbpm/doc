@@ -124,3 +124,7 @@ flowchart TB
 - Role & Tool (resources)
   - :Операция :ИмеетИсполнителя :Роль .
   - :Операция :ИмеетИнструментарий :Система (инструмент) .
+
+### link
+- [ArchiMate на практике:](https://habr.com/ru/articles/971012/#comment_29193320)
+  

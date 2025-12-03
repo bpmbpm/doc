@@ -9,3 +9,6 @@
 #### armchair
 - [Днем я пишу код, вечером иду в гараж и продаю на Авито на 130 тысяч в месяц](https://habr.com/ru/articles/972020/)
 - [Ортопедический стул с упором в колени SmartStool KW02](https://www.i-sit.ru/products/smartstool-s-uporom-v-koleni-kw02/) ; Коленный стул Jetmama SmartStool ; [Балансирующий регулируемый коленный стул школьника JetMama](https://www.ozon.ru/category/kolennyy-stul-ortopedicheskiy-so-spinkoy/)
+
+### Разное 
+- [Стриралка для тела](https://habr.com/ru/articles/972636/) Биометрическая стиральная машина для человека. Японцы предлагают «ванну будущего»

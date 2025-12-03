@@ -26,3 +26,4 @@ OpenMetaData
 ### 2
 - [Модель данных для успешного бизнеса: от простоты к компромиссам](https://habr.com/ru/companies/neoflex/articles/959066/)
 - https://github.com/bpmbpm/doc/blob/main/EA/DataQuality/bi.md#dq-bi
+- [Magic Quadrant for Intelligent Document Processing Solutions](https://habr.com/ru/news/972734/) Intelligent Document Processing, IDP

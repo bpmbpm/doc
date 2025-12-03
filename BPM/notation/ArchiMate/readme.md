@@ -63,6 +63,7 @@
 ### Metamodel
 - [Бизнес-слой в ArchiMate. Часть 1 – Метамодель, visual-paradigm.com](https://archimate.visual-paradigm.com/2018/02/15/business-layer-metamodel-in-archimate/)
 - https://systems.education/archimate ?
+- [Архитектура ИТ решений. Часть 7. Графический язык моделирования ArchiMate. Начало](https://habr.com/ru/articles/972736/#comment_29198940)
 ### Разное 
 - nesting https://github.com/bpmbpm/doc/blob/main/BPM/enEA/readme.md#nesting
 - https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/notation1.md#data-obejct-example object + динамические связи

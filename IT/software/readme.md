@@ -11,3 +11,4 @@
 - [Не используйте Bitrix](https://habr.com/ru/articles/955618/)
 ### Excel
 - [Личный тайм-шит в Excel](https://habr.com/ru/articles/956872/)
+- https://github.com/bpmbpm/doc/tree/main/IT/programming/Excel

@@ -8,6 +8,8 @@
 - [Математика креативности](https://habr.com/ru/articles/946764/)
 - Теория связей https://github.com/bpmbpm/doc/tree/main/METAMODEL/LINK
 - https://github.com/bpmbpm/doc/tree/main/METAMODEL
+### Теория всего
+- [Теория всего или С(Х,Y) Парадигма](https://habr.com/ru/articles/973460/)
 - [Единая теория информации: от стохастической метрики к непрерывному пространству и эффективной гравитации](https://habr.com/ru/articles/971362/) ; [Единый Принцип Организации (ЕПО)](https://github.com/Jobsbka/UPO)
 ### formalism
 #### Isabelle

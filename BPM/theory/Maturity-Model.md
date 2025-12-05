@@ -198,7 +198,7 @@
 BPM CBOK  
 
 ![pic](pic/mm_CMMI.jpg)  
-CMMI  
+CMMI [ISO_9000](https://www.tadviser.ru/index.php/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D1%8F:ISO_9000)
 
 ![pic](pic/mm_Aleksa.jpg)
 CMMI  

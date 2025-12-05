@@ -8,3 +8,6 @@
 
 ### Also
 - https://github.com/bpmbpm/doc/tree/main/IT/security
+
+### SSH
+- [Использование SSH для подписи коммитов в git](https://habr.com/ru/companies/zyfra/articles/973296/)

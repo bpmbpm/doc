@@ -29,3 +29,4 @@ https://picclick.com/Vintage-IBM-Personal-System-2-PS-2-Model-30-Type-1869034079
 
 ### CPU
 - https://habr.com/ru/articles/973366/#comment_29208226
+- [НИИСИ РАН](https://www.itweek.ru/gover/it-independence/materials/13-bobkov.pdf)

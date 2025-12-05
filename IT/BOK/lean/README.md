@@ -36,3 +36,4 @@
 
 ### 2
 - [Выбираем архитектуру по кайдзен: на что обратить внимание](https://habr.com/ru/companies/digital_solutions/articles/973134/)
+- kaizen https://github.com/bpmbpm/doc/blob/main/IT/BOK/CIP/README.md#kaizen

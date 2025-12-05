@@ -26,3 +26,6 @@ https://picclick.com/Vintage-IBM-Personal-System-2-PS-2-Model-30-Type-1869034079
 ### history of automation
 - https://github.com/bpmbpm/doc/tree/main/BPM/BPMvsBPM
 - [История автоматизации процессов: сто лет смены ярлыков](https://habr.com/ru/articles/961218/#comment_29038386)
+
+### CPU
+- https://habr.com/ru/articles/973366/#comment_29208226

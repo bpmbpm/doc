@@ -28,5 +28,5 @@ https://picclick.com/Vintage-IBM-Personal-System-2-PS-2-Model-30-Type-1869034079
 - [История автоматизации процессов: сто лет смены ярлыков](https://habr.com/ru/articles/961218/#comment_29038386)
 
 ### CPU
-- https://habr.com/ru/articles/973366/#comment_29208226
+- https://habr.com/ru/articles/973366/#comment_29208226 ; https://3dnews.ru/973284/otechestvennie-mikroprotsessori-bili-est-budut
 - [НИИСИ РАН](https://www.itweek.ru/gover/it-independence/materials/13-bobkov.pdf)

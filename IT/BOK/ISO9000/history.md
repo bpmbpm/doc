@@ -1,5 +1,10 @@
 ### history
-Выпуски ISO 9001:
+- [wiki](https://ru.wikipedia.org/wiki/ISO_9000)
+- (https://www.icgrp.ru/docs/list/standards/iso9001/9001-tkb/)
+
+[Стандарт ISO 9001 и его история](https://dqs-russia.ru/text/standart-iso-9001-i-ego-istoriya/)
+- 1979 основан ISO/TC 176. Технический комитет Международной организации по стандартизации (ISO) должен разработать стандарт управления качеством. В основу лег уже существовавший (военный) британский стандарт BS 5750, который разрабатывался начиная с 1975 года. 
+
 - 1987: Первая версия стандарта, положившая начало серии ISO 9000.
 - 1994: Внесены улучшения, касающиеся проектирования и разработки, разъяснения требований.
 - 2000: Обновление всей серии, сокращение числа стандартов, объединение ISO 9001, 9002, 9003 в один, с акцентом на процессный подход.
@@ -11,3 +16,13 @@
 - ISO 9000: Основы и словарь.
 - ISO 9001: Требования к СМК (системы менеджмента качества).
 - ISO 9004: Руководство по улучшению деятельности, ориентированное на устойчивый успех. 
+
+
+### history link
+- [Краткая история ISO 9000. Где мы допустили ошибку?](https://1cert.ru/stati/kratkaya-istoriya-iso-9000-gde-my-dopustili-oshibku)
+- https://www.iso9001help.co.uk/ISO-9000-history.html
+- https://pubmed.ncbi.nlm.nih.gov/7617456/
+
+### info
+- [статьи icgrp.ruъ(https://icgrp.ru/docs/list/article/?action=assortment&parent=18)
+- [Двигаться дальше ISO 9000 deming.ru](https://www.deming.ru/TeorUpr/Quality_Collection/17_Dvigatsa_dalshe_ISO9000.htm)

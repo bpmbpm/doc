@@ -46,6 +46,7 @@
 
 
 ### history link
+- [Стандарт ISO 9001 и его история](https://dqs-russia.ru/text/standart-iso-9001-i-ego-istoriya/)
 - [Краткая история ISO 9000. Где мы допустили ошибку?](https://1cert.ru/stati/kratkaya-istoriya-iso-9000-gde-my-dopustili-oshibku)
 - https://www.iso9001help.co.uk/ISO-9000-history.html
 - https://pubmed.ncbi.nlm.nih.gov/7617456/

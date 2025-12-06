@@ -28,3 +28,6 @@ OpenMetaData
 - https://github.com/bpmbpm/doc/blob/main/EA/DataQuality/bi.md#dq-bi
 - [Magic Quadrant for Intelligent Document Processing Solutions](https://habr.com/ru/news/972734/) Intelligent Document Processing, IDP
 - data-oriented [ECS - Entity Component System (Сущность Компонент Система)](https://habr.com/ru/articles/972708/) ; https://habr.com/ru/articles/343778/ пример 
+
+### 3
+- [Капитализация данных osp.ru](https://www.osp.ru/os/2023/01/13056920)

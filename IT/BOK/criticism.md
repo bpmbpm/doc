@@ -2,7 +2,7 @@
 ## ITSM 
 - см. skeptic
 ## EA
-- TOGAF:  [см. ко](https://github.com/bpmbpm/doc/blob/main/EA/TOGAF/critic.md)
+- TOGAF: https://kotusev.com/ ; https://github.com/bpmbpm/doc/blob/main/EA/TOGAF/critic.md
 
 ## LEAN 
 

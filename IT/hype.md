@@ -1,5 +1,5 @@
 ### hype
-- [Технологический скепсис: как отличить настоящие научные открытия от хайпа в IT](https://habr.com/ru/articles/953082/)
+- [Технологический скепсис: как отличить настоящие научные открытия от хайпа в IT pvsm.ru](https://www.pvsm.ru/tehnologii/432462)
   - [Эффект Даннинга — Крюгера](https://ru.wikipedia.org/wiki/%D0%AD%D1%84%D1%84%D0%B5%D0%BA%D1%82_%D0%94%D0%B0%D0%BD%D0%BD%D0%B8%D0%BD%D0%B3%D0%B0_%E2%80%94_%D0%9A%D1%80%D1%8E%D0%B3%D0%B5%D1%80%D0%B0) ;
   - Всякая истина проходит в человеческом уме три стадии: сначала — какая чушь! - этого не может быть ; затем — в этом что-то есть; наконец — кто же этого не знает!
 https://ru.citaty.net/tsitaty/452531-aleksandr-gumboldt-vsiakaia-istina-prokhodit-v-chelovecheskom-ume-tri-stad/

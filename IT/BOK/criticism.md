@@ -12,3 +12,6 @@
 ## hype marketing
 - https://github.com/bpmbpm/doc/blob/main/IT/hype.md
 - https://github.com/bpmbpm/doc/blob/main/IT/marketing.md
+
+## mgmt
+- [Остерегайтесь Сирен лженаучного менеджмента](https://tocpeople.com/2013/10/sireny-lzhemenedzhmenta/)

@@ -8,3 +8,6 @@
 
 ## digital transformation
 - Цифровая трансформация: [Двенадцать причин провала цифровой трансформации](https://bpms.ru/post/20221007-12-reasons-dt-failure/)
+
+## hype
+- https://github.com/bpmbpm/doc/blob/main/IT/hype.md

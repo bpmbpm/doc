@@ -1,6 +1,7 @@
-IBM PS/2
-
-PS/2 Model 30 (8530-021)
+## IBM
+- [Конец эпохи паяльника или как гаражные энтузиасты случайно создали многомиллиардный бизнес](https://habr.com/ru/companies/selectel/articles/973878/) В 1977 году занавес поднялся, и на сцену, расталкивая локтями кустарные поделки энтузиастов, вышла знаменитая тройка микрокомпьютеров: Apple II, Commodore PET и TRS-80 от Tandy/Radio Shack. 
+## IBM PS/2
+### PS/2 Model 30 (8530-021)
 - [IBM Personal System/2 Model 30](http://ps-2.kev009.com/pcpartnerinfo/ctstips/7492.htm)  
   `8530-002 - System unit 640kb, two diskette drives, keyboard`\
   `8530-021 - System unit 640kb, one diskette drive, one 20MB fixed disk, keyboard`

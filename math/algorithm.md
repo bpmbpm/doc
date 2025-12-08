@@ -9,3 +9,6 @@
   - Последний затрёт первого (Last Win)  
 CSP Хоара (как и указанные в статье Go channels) относится к Стратегии 2.2 (Очередь/Single Writer).
 - [Введение в теорию взаимодействующих последовательных процессов (Communicating Sequential Processes — CSP)](https://habr.com/ru/articles/138700/)
+
+### теорВер
+- [Иллюзия 95%: гайд по самой частой элементарной ошибке в Data Science](https://habr.com/ru/articles/974186/)

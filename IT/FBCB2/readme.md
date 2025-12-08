@@ -6,4 +6,4 @@ Command, Control, Communications, Computers, Intelligence, Surveillance, Reconna
 - [Концепция построения кустов сетецентрической системы управления войсками](https://habr.com/ru/articles/805847/)
 
 ### Model
-- [Математика боя: ученый из МФТИ построил модель современных военных действий](https://habr.com/ru/articles/974014/#comment_29219318)
+- [Математика боя: ученый из МФТИ построил модель современных военных действий](https://habr.com/ru/articles/974014/#comment_29219318) ; [Development of Lanchester-Type Spatial Models with Obtaining Localized Solutions for the Interaction of Two Groups](https://www.scirp.org/journal/paperinformation?paperid=144310)

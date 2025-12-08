@@ -28,3 +28,4 @@ https://t.me/agirussia/112287
 ### Темы Философия - нет 
 - https://github.com/bpmbpm/doc/blob/main/politic/social/README.md
 - LD/metaphysics
+- [Метафизика, космопсихизм и перводвигатель: есть ли сознание у камней?](https://habr.com/ru/articles/973108/)

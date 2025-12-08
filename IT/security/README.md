@@ -37,3 +37,5 @@ https://geti2p.net/en/
 ### WhatsApp
 - [Альтернативы для общения вместо WhatsApp](https://habr.com/ru/news/971482/#comment_29181148) ; [Svyazist](https://habr.com/ru/news/971482/#comment_29180288)
 - [WhatsApp не работает: Блокировка 28 ноября, как починить?](https://habr.com/ru/articles/971480/)
+### Audio
+- [Радар для прослушки телефона с трёх метров](https://habr.com/ru/companies/globalsign/articles/974230/)

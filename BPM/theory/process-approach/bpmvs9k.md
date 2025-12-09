@@ -236,8 +236,9 @@
 
 Эта детализация обеспечивает академическую строгость и практическую применимость методологии BPM, подтверждая каждый шаг авторитетными источниками в области управления бизнес-процессами.
 
-## 3 round. Сравнение двух методик внедрения процессного подхода
-Сравни две методики внедрения процессного подхода: https://pqm-online.com/assets/files/pubs/translations/guides_iso/n1289.pdf 
+## 3 round. implementation methodology
+Сравнение двух методик внедрения процессного подхода  
+Вопрос: Сравни две методики внедрения процессного подхода: https://pqm-online.com/assets/files/pubs/translations/guides_iso/n1289.pdf 
 и
 https://www.businessstudio.ru/articles/article/protsessnyy_podkhod_prostaya_metodika_vnedreniya/
 Укажи все этапы (шаги) из обоих методик и сравни.

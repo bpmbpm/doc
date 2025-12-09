@@ -236,7 +236,7 @@
 
 Эта детализация обеспечивает академическую строгость и практическую применимость методологии BPM, подтверждая каждый шаг авторитетными источниками в области управления бизнес-процессами.
 
-## 3 round. implementation methodology
+## 3 round. Implementation methodology
 Сравнение двух методик внедрения процессного подхода  
 Вопрос: Сравни две методики внедрения процессного подхода: https://pqm-online.com/assets/files/pubs/translations/guides_iso/n1289.pdf 
 и
@@ -378,7 +378,7 @@ https://www.businessstudio.ru/articles/article/protsessnyy_podkhod_prostaya_meto
   - https://bpmaward.ru/2020/02/12/arosa/
   - https://www.businessstudio.ru/articles/article/vnedrenie_protsessnogo_podkhoda_v_kompanii_frontsa/ Нет сделай раз. Сделай два
  
-  ### 4 round ISO vs Arosa
+  ### 4 round. ISO vs Arosa
 - [Создание комплексной системы управления процессами компании. Внедрение процессного подхода (АРОСА)](https://bpmaward.ru/2020/02/12/arosa/) ; [pdf](https://bpmaward.ru/wp-content/uploads/2020/02/20022020_%D0%90%D1%80%D0%BE%D1%81%D0%B0.pdf) ; file ISO-TC176-SC2_ISO9001Process_Approach.docx
 - Прежний [Методика ISO/TC 176/SC 2/N 1289, но в оригинале ISO9001Process_Approach.docx](https://www.iso.org/committee/53896.html?t=kEIf8Ra_jTmCDLWo7ku57UZUvu942m754FkDGe8wsE5qAT-fBKpIHM9ANkCXo5Me&view=documents#section-isodocuments-top) ; 20022020_Ароса.pdf   
 Вопрос: Загрузил две методики внедрения Процессного подхода. Сделай их анализ по каждому шагу внедрения. Укажи преимущества и недостатки.

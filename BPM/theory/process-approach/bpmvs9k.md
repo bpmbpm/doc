@@ -392,7 +392,8 @@ https://www.businessstudio.ru/articles/article/protsessnyy_podkhod_prostaya_meto
  # 4th round. ISO vs Arosa
 - [Создание комплексной системы управления процессами компании. Внедрение процессного подхода (АРОСА)](https://bpmaward.ru/2020/02/12/arosa/) ; [pdf](https://bpmaward.ru/wp-content/uploads/2020/02/20022020_%D0%90%D1%80%D0%BE%D1%81%D0%B0.pdf) ; doc/20022020_Ароса.pdf
 - Прежний [Методика ISO/TC 176/SC 2/N 1289, но в оригинале ISO9001Process_Approach.docx](https://www.iso.org/committee/53896.html?t=kEIf8Ra_jTmCDLWo7ku57UZUvu942m754FkDGe8wsE5qAT-fBKpIHM9ANkCXo5Me&view=documents#section-isodocuments-top) ; doc/file ISO-TC176-SC2_ISO9001Process_Approach.docx
-Вопрос: Загрузил две методики внедрения Процессного подхода. Сделай их анализ по каждому шагу внедрения. Укажи преимущества и недостатки.
+
+### Вопрос к ИИ: Загрузил тебе две методики внедрения Процессного подхода. Сделай их анализ по каждому шагу внедрения. Укажи преимущества и недостатки.
 
 # Сравнительный анализ методик внедрения процессного подхода
 

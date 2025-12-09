@@ -28,7 +28,8 @@
 
 ### link
 #### iso
-- ["ГОСТ Р ИСО 9001-2015 pdf](https://cpp-nnov.nalog.ru/images/2020/ISO9001-2015.pdf)
+- ["ГОСТ Р ИСО 9001-2015 pdf](https://cpp-nnov.nalog.ru/images/2020/ISO9001-2015.pdf) ; [html stroyinf.ru](https://files.stroyinf.ru/Data2/1/4293759/4293759339.htm)
+- [ГОСТ ISO 9000-2011](https://protect.gost.ru/document.aspx?control=7&id=179807) gost.ru ссылка ; [pdf](https://rustestm.ru/wp-content/uploads/2021/10/gost-iso-9000-2011-sistemy-menedzhmenta-kachestva-osnovnye-polozheniya-i-slovar.pdf?ysclid=m6p0vfmhuf946415024)
 - [ISO 9001:2008(ru) Системы менеджмента качества. Требования Quality management systems — Requirements](https://www.iso.org/obp/ui/#iso:std:iso:9001:ed-4:v1:ru)
 - [Процессный подход из ISO 9001. Одна статья и вы все поймете](https://1cert.ru/stati/protsessnyy-podkhod-iz-iso-9001-odna-statya-i-vy-vse-poymete)
 - [Процессный подход в системе менеджмента качества](https://www.cfin.ru/management/iso9000/sertify/iso9001.shtml)

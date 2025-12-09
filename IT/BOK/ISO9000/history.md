@@ -1,7 +1,8 @@
 ### history
 - [wiki](https://ru.wikipedia.org/wiki/ISO_9000)
-- (https://www.icgrp.ru/docs/list/standards/iso9001/9001-tkb/)
+- [icgrp.ru](https://www.icgrp.ru/docs/list/standards/iso9001/9001-tkb/)
 
+## 1 Base
 [Стандарт ISO 9001 и его история](https://dqs-russia.ru/text/standart-iso-9001-i-ego-istoriya/)
 - **Предистория**
 - 1723: 22 января «Указ Петра I о качестве» - вроде как фейк, т.к. не нашли [Корнилу Белоглазова](https://aif.ru/society/history/god_bez_charki_ili_smertnoe_kaznenie_kakoy_byla_gospriyomka_pri_petre_i), но считается, что "Институт Военной приемки" Петром все же был основан. 
@@ -46,7 +47,6 @@
 - ISO 9001: Требования к СМК (системы менеджмента качества).
 - ISO 9004: Руководство по улучшению деятельности, ориентированное на устойчивый успех. 
 
-
 ### history link
 - [Стандарт ISO 9001 и его история](https://dqs-russia.ru/text/standart-iso-9001-i-ego-istoriya/)
 - [Краткая история ISO 9000. Где мы допустили ошибку?](https://1cert.ru/stati/kratkaya-istoriya-iso-9000-gde-my-dopustili-oshibku)
@@ -56,3 +56,8 @@
 ### info
 - [статьи icgrp.ru](https://icgrp.ru/docs/list/article/?action=assortment&parent=18)
 - [Двигаться дальше ISO 9000 deming.ru](https://www.deming.ru/TeorUpr/Quality_Collection/17_Dvigatsa_dalshe_ISO9000.htm)
+
+## 2 glava_1.pdf
+- [glava_1.pdf](https://www.mann-ivanov-ferber.ru/assets/files/bookparts/the-process-approach-to-management/glava_1.pdf)
+![ris](pic/ris_1_2.png)
+  

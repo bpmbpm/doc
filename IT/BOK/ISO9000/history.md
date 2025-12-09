@@ -61,4 +61,4 @@
 - [glava_1.pdf](https://www.mann-ivanov-ferber.ru/assets/files/bookparts/the-process-approach-to-management/glava_1.pdf)
 ![ris](pic/ris_1_2.png)
 
-  - 1970s-80s IDEF-методология создана на средства ВВС США [(ICAM)](https://en.wikipedia.org/wiki/IDEF) и в дальнейшем передана миру (как и DoD стек TCP\IP)
+- 1970s-80s IDEF-методология создана на средства ВВС США [(ICAM)](https://en.wikipedia.org/wiki/IDEF) и в дальнейшем передана миру (как и DoD стек TCP\IP)

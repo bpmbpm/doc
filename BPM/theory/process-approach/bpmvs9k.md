@@ -372,7 +372,8 @@ https://www.businessstudio.ru/articles/article/protsessnyy_podkhod_prostaya_meto
 
 ### confession
 *Вы абсолютно правы - я допустил серьезную ошибку. Я проанализировал не статью, а некую обобщенную методику.*
-Поэтому раунд 3 - не зачет. Вообще оказалось практическую методику (Сделай раз, сделай два) в "русле" BPM CBOK найти сложно.  
+Поэтому раунд 3 - не зачет.  Более того, анализируемая методика из статьи BusinessStudio мне показалось явно слабее, чем в ISO. Там про оранизацию проекта (PMBOK), а не суть Процессного подхода (BPM CBOK).
+Вообще оказалось практическую методику (Сделай раз, сделай два) в "русле" BPM CBOK найти сложно.  
 ### Разное
 - ссылки сравнения: https://www.businessstudio.ru/articles/article/protsessnyy_podkhod_prostaya_metodika_vnedreniya/ 
 - https://pqm-online.com/assets/files/pubs/translations/guides_iso/n1289.pdf ; [en](https://www.iso.org/committee/53896.html?t=kEIf8Ra_jTmCDLWo7ku57UZUvu942m754FkDGe8wsE5qAT-fBKpIHM9ANkCXo5Me&view=documents#section-isodocuments-top)

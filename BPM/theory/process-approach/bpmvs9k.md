@@ -32,5 +32,8 @@
 - [ISO 9001:2008(ru) Системы менеджмента качества. Требования Quality management systems — Requirements](https://www.iso.org/obp/ui/#iso:std:iso:9001:ed-4:v1:ru)
 - [Процессный подход из ISO 9001. Одна статья и вы все поймете](https://1cert.ru/stati/protsessnyy-podkhod-iz-iso-9001-odna-statya-i-vy-vse-poymete)
 - [Процессный подход в системе менеджмента качества](https://www.cfin.ru/management/iso9000/sertify/iso9001.shtml)
+#### also
+- https://github.com/bpmbpm/doc/tree/main/IT/BOK/ISO9000/process
+- [ПРОЦЕССНЫЙ ПОДХОД В ISO 9001:2015](https://pqm-online.com/assets/files/pubs/translations/guides_iso/n1289.pdf)
 ### 2
 - [glava_1.pdf](https://www.mann-ivanov-ferber.ru/assets/files/bookparts/the-process-approach-to-management/glava_1.pdf)

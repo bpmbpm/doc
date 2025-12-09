@@ -7,7 +7,7 @@
 Т.е. я утверждаю НЕ СХОДИМОСТЬ результатов при разработке процессного управления by BPM vs ISO. Для одной и той же организации получаться разные по составу процессы, подходы к управлению ими как системой и очень разные результаты такого управления (я считаю, что получаемые результаты by BPM неудовлетворительные)
 - ниже несколько раундов поиска смыслов. Справедливости ради: более точных и последовательных методик Внедрения Процессного подхода \ управления "из лагеря BPM" не нашел (с ходу). Если есть - дайте ссылку.
   
-## 1th round
+# 1th round
 1 раунд - это файл Владимира. ИИ перевел в md и добавил критерий сравнения (поле 3) и комемнтарий (поле 4)  
 ### Сравнение процессного подхода в BPM и ISO 9001
 
@@ -46,7 +46,7 @@
 - [glava_1.pdf](https://www.mann-ivanov-ferber.ru/assets/files/bookparts/the-process-approach-to-management/glava_1.pdf)
 
 ---
-## 2th round (deepseek)
+# 2th round (deepseek)
 
 # Сравнение процессного подхода в BPM CBOK v4 и ISO 9001:2015
 
@@ -244,7 +244,8 @@
 
 Эта детализация обеспечивает академическую строгость и практическую применимость методологии BPM, подтверждая каждый шаг авторитетными источниками в области управления бизнес-процессами.
 
-## 3th round. Implementation methodology
+---
+# 3th round. Implementation methodology
 Сравнение двух методик внедрения процессного подхода  
 Вопрос: Сравни две методики внедрения процессного подхода: https://pqm-online.com/assets/files/pubs/translations/guides_iso/n1289.pdf 
 и
@@ -386,8 +387,9 @@ https://www.businessstudio.ru/articles/article/protsessnyy_podkhod_prostaya_meto
   - https://www.1cbit.ru/blog/protsessnoe-upravlenie-bpm-etapy-metody-optimizatsiya-i-avtomatizatsiya-biznes-protsessov/?utm_referrer=https%3A%2F%2Fwww.google.com%2F
   - https://bpmaward.ru/2020/02/12/arosa/
   - https://www.businessstudio.ru/articles/article/vnedrenie_protsessnogo_podkhoda_v_kompanii_frontsa/ Нет сделай раз. Сделай два
- 
-  ### 4th round. ISO vs Arosa
+
+ ---
+ # 4th round. ISO vs Arosa
 - [Создание комплексной системы управления процессами компании. Внедрение процессного подхода (АРОСА)](https://bpmaward.ru/2020/02/12/arosa/) ; [pdf](https://bpmaward.ru/wp-content/uploads/2020/02/20022020_%D0%90%D1%80%D0%BE%D1%81%D0%B0.pdf) ; doc/20022020_Ароса.pdf
 - Прежний [Методика ISO/TC 176/SC 2/N 1289, но в оригинале ISO9001Process_Approach.docx](https://www.iso.org/committee/53896.html?t=kEIf8Ra_jTmCDLWo7ku57UZUvu942m754FkDGe8wsE5qAT-fBKpIHM9ANkCXo5Me&view=documents#section-isodocuments-top) ; doc/file ISO-TC176-SC2_ISO9001Process_Approach.docx
 Вопрос: Загрузил две методики внедрения Процессного подхода. Сделай их анализ по каждому шагу внедрения. Укажи преимущества и недостатки.
@@ -545,7 +547,8 @@ https://www.businessstudio.ru/articles/article/protsessnyy_podkhod_prostaya_meto
 
 Обе методики демонстрируют, что успешное внедрение процессного подхода — это не разовое мероприятие, а **непрерывный процесс организационного развития**, требующий системности, практичности и адаптации к конкретным условиям.
 
-### 4.1 Доп вопрос
+---
+# 4.1 Доп вопрос
 В чем обе методики противоречат друг другу? И что в методике "Ароса" не хватает из того, что требует к внедрению BPM CBOK?
 
 # Анализ противоречий между методиками и соответствия BPM CBOK

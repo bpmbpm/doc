@@ -363,3 +363,21 @@ https://www.businessstudio.ru/articles/article/protsessnyy_podkhod_prostaya_meto
 8. **Улучшение** (синтез): Анализ и постоянное совершенствование процессов
 
 **Вывод**: Обе методики имеют свои преимущества. Методика ISO обеспечивает системность и соответствие международным стандартам, в то время как методика BusinessStudio предлагает практические инструменты для быстрого начала работы. Для наиболее эффективного внедрения процессного подхода рекомендуется комбинировать системность первой методики с практичностью второй.
+
+### confession
+*Вы абсолютно правы - я допустил серьезную ошибку. Я проанализировал не статью, а некую обобщенную методику.*
+Поэтому раунд 3 - не зачет. Вообще оказалось практическую методику (Сделай раз, сделай два) в "русле" BPM CBOK найти сложно.  
+### Разное
+- ссылки сравнения: https://www.businessstudio.ru/articles/article/protsessnyy_podkhod_prostaya_metodika_vnedreniya/ 
+- https://pqm-online.com/assets/files/pubs/translations/guides_iso/n1289.pdf ; [en](https://www.iso.org/committee/53896.html?t=kEIf8Ra_jTmCDLWo7ku57UZUvu942m754FkDGe8wsE5qAT-fBKpIHM9ANkCXo5Me&view=documents#section-isodocuments-top)
+- другое:
+  - [Внедрение процессного управления: алгоритм обоснования ценности](https://stormbpmn.com/blog/bpm/vnedrenie-processnogo-upravlenya-algoritm-obosnovanya-cennosti) 
+  - https://lean.cdto.ranepa.ru/4-2-ehtapy-vnedreniya-processnogo-upravleniya-v-organizacii
+  - https://quality.eup.ru/MATERIALY3/evpp.html
+  - https://www.1cbit.ru/blog/protsessnoe-upravlenie-bpm-etapy-metody-optimizatsiya-i-avtomatizatsiya-biznes-protsessov/?utm_referrer=https%3A%2F%2Fwww.google.com%2F
+  - https://bpmaward.ru/2020/02/12/arosa/
+  - https://www.businessstudio.ru/articles/article/vnedrenie_protsessnogo_podkhoda_v_kompanii_frontsa/ Нет сделай раз. Сделай два
+ 
+  ### 4 round 
+- [Создание комплексной системы управления процессами компании. Внедрение процессного подхода (АРОСА)](https://bpmaward.ru/2020/02/12/arosa/) ; [pdf](https://bpmaward.ru/wp-content/uploads/2020/02/20022020_%D0%90%D1%80%D0%BE%D1%81%D0%B0.pdf)
+- Прежний [Методика ISO/TC 176/SC 2/N 1289, но в оригинале ISO9001Process_Approach.docx](https://www.iso.org/committee/53896.html?t=kEIf8Ra_jTmCDLWo7ku57UZUvu942m754FkDGe8wsE5qAT-fBKpIHM9ANkCXo5Me&view=documents#section-isodocuments-top)   

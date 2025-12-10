@@ -15,3 +15,7 @@ CSP Хоара (как и указанные в статье Go channels) отн
 
 ### задача о философах
 - [Два притопа, три прихлопа](https://habr.com/ru/articles/975032/)
+
+### 2
+- [Разворачиваем систему уравнений в граф](https://habr.com/ru/articles/788630/)
+- [newYAWL: Designing a WorkFow System using Coloured Petri Nets](https://www.vdaalst.com/publications/p463.pdf)

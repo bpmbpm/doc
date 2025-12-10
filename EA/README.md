@@ -20,6 +20,7 @@
 - [Domain-Driven Design: чистый подход к проектированию бизнес-логики](https://habr.com/ru/companies/vktech/articles/913886/)
 - [Разбираемся с DDD: как проектировать доменный агрегат, чтобы он не стал безразмерным](https://habr.com/ru/articles/954688/)
 ### EDA Event-Driven Architecture etc
+- mxsmirnov: В 2006 году Gartner закрыл аналитическую группу, которая занималась управляемой событиями архитектурой [Event-driven architecture, EDA](https://mxsmirnov.com/2011/07/10/event-driven-architecture/)
 - [Фронтенд — новый легаси: Как мы проспали event-driven революцию](https://habr.com/ru/articles/906800/) :  «Объекты должны общаться через сообщения, а не вызовы методов». Это был первый вздох Pub/Sub
 - [wiki](https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B9%D0%BD%D0%BE-%D0%BE%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F_%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0)
 - автоматное программирование [wiki](https://ru.wikipedia.org/wiki/%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%BD%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5) ;  Switch-технология, А. А. Шалыто

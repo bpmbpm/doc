@@ -19,3 +19,6 @@ CSP Хоара (как и указанные в статье Go channels) отн
 ### 2
 - [Разворачиваем систему уравнений в граф](https://habr.com/ru/articles/788630/)
 - [newYAWL: Designing a WorkFow System using Coloured Petri Nets](https://www.vdaalst.com/publications/p463.pdf)
+
+### Массивы
+- [Методы массивов. Часть 1](https://habr.com/ru/companies/selectel/articles/974322/)

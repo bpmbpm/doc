@@ -743,3 +743,4 @@ https://www.businessstudio.ru/articles/article/protsessnyy_podkhod_prostaya_meto
 
 **Ключевой инсайт**: Успешное внедрение процессного подхода требует баланса между **стандартизацией (ISO)**, **практичностью ("Ароса")** и **методологической полнотой (BPM CBOK)**. Ни один подход в отдельности не является достаточным для создания эффективной системы управления процессами.
 
+Имеется комментарий: https://github.com/bpmbpm/doc/blob/main/BPM/theory/process-approach/arosa.md

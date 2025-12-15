@@ -10,3 +10,4 @@ https://github.com/bpmbpm/doc/tree/main/AI/presentation
 
 ### habr
 - [Полит-электротехника. Моделирование социально-политических процессов электрическими цепями](https://habr.com/ru/articles/434824)
+- [Как всего лишь за неделю можно возненавидеть Apple](https://sohabr.net/habr/post/444084/)

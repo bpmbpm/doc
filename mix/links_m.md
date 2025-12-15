@@ -8,3 +8,5 @@ https://github.com/bpmbpm/doc/tree/main/AI/presentation
 ### git   
 [AverPablo](https://github.com/AverPablo)
 
+### habr
+- [Полит-электротехника. Моделирование социально-политических процессов электрическими цепями](https://habr.com/ru/articles/434824)

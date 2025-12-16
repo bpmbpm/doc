@@ -18,6 +18,6 @@ https://www.nato.int/nato_static_fl2014/assets/pdf/2025/4/pdf/2504-NAFv4-ArchiMa
 - см. https://github.com/bpmbpm/doc/tree/main/METAMODEL
 
 ### info
-- [Quantitative_Analysis_of_Enterprise_Architectures](https://www.researchgate.net/publication/226236887_Quantitative_Analysis_of_Enterprise_Architectures)
+- [Quantitative_Analysis_of_Enterprise_Architectures](https://www.researchgate.net/publication/226236887_Quantitative_Analysis_of_Enterprise_Architectures) fig 3 (function)
 - https://habr.com/ru/articles/976934/comments/#comment_29258376 (3 link)
   

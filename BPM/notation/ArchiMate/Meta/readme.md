@@ -20,4 +20,5 @@ https://www.nato.int/nato_static_fl2014/assets/pdf/2025/4/pdf/2504-NAFv4-ArchiMa
 ### info
 - [Quantitative_Analysis_of_Enterprise_Architectures](https://www.researchgate.net/publication/226236887_Quantitative_Analysis_of_Enterprise_Architectures) fig 3 (function)
 - https://habr.com/ru/articles/976934/comments/#comment_29258376 (3 link)
-  
+- https://www.modeliosoft.com/modelio-help/41/en/index.jsp?topic=%2Forg.modelio.documentation.metamodel.archimate%2Fhtml%2FMetamodel_HTML%2F3.html !  
+- https://sparxsystems.com/enterprise_architect_user_guide/17.1/modeling_languages/dynamic_relationships.html

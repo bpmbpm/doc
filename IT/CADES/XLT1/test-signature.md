@@ -12,7 +12,12 @@
 - [Контур.Крипто](https://crypto.kontur.ru/verify)  ; [tariffs](https://crypto.kontur.ru/#tariffs) 29 любых операций на 90 дней
 - https://astral.ru/aj/elem/kak-proverit-elektronnuyu-podpis/
 - https://sign.me/promo/sign-check/
-  
+
+1.3 asn1
+- https://pkitools.net/pages/ca/asn1.html
+- https://lapo.it/asn1js/
+- https://habr.com/ru/articles/150757/
+
 ### Обзоры:
 - https://tochka.com/knowledge/edo/proverka-elektronnoy-podpisi-ecp-kak-proverit-podlinnost-i-sertifikat-ep-v-dokumente/?utm_campaign=y_knowledge_edo_proverka-elektronnoy-podpisi-ecp-kak-proverit-podlinnost-i-sertifikat-ep-v-dokumente_#sravnenie-programm-dlya-proverki-elektronnoy-podpisi КриптоПро DSS ; КриптоПро ЭЦП Browser plug-in ; КриптоПро Office Signature ; КриптоПро PDF ; Госуслуги (проверка ЭЦП)
 - https://kvartira-bez-agenta.ru/proverka-elektronnoj-podpisi/?ysclid=mhnbv2daoi691953270 РосРеестр ; mos.ru

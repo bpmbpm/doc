@@ -12,7 +12,7 @@
 
 ## Problem
 -  https://dss.cryptopro.ru/verify/#/signature Тестовая служба проверки подписи и сертификатов «КриптоПро SVS». Проверка подписи и файла cертификата  
-   - "Проверка требований к квалифицированному сертификату" в [КриптоПро SVS](https://cryptopro.ru/forum2/default.aspx?g=posts&t=20255)  
+   - "Проверка требований к квалифицированному сертификату" в [КриптоПро SVS](https://cryptopro.ru/forum2/default.aspx?g=posts&t=20255) tsl.xml 
    - на сайте  
 - https://sign.kloud.one/
 - https://testca.gaz-is.ru/

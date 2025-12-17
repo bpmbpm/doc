@@ -120,3 +120,6 @@
 ---
 ## 4 Also
 - [Как я настраивал новые утилиты по работе с электронной подписью в Linux](https://habr.com/ru/companies/aktiv-company/articles/323170/?ysclid=mhnfqvy5qf741296172)
+
+## Архивное хранение
+- https://ca.gisca.ru/solutions/arkhivnoe-khranenie-elektronnykh-dokumentov/

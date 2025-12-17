@@ -3,26 +3,27 @@
 - https://sign.kloud.one/ см. https://trusted.ru/documentation/cryptoarm-server/v1.1/04-services/02-service-sign-verify/
 ## info
 - Параметры подписи документа https://dss.cryptopro.ru/docs/articles2/rest/signserver/structs/sigparams.html
-- 
+  
 ## 1 Base
-1.1
+### 1.1
 - https://e-trust.gosuslugi.ru/check/sign gosuslugi: Отсоединенная \ Открепляемая (файл документа или только хеш документа), Присоединенная \ встроенная (cer, sig, p7s, pdf, tsp, xml). Проверка файла cертификата, МЧД и др. 
   - [УНЭП по Постановлению № 2152](https://e-trust.gosuslugi.ru/check/sign-unep) 
   - [Как проверить](https://www.gosuslugi.ru/help/faq/esignature/212160) ; [faq](https://www.gosuslugi.ru/help/faq/esignature/103271)
 
-## Problem
--  https://dss.cryptopro.ru/verify/#/signature Тестовая служба проверки подписи и сертификатов «КриптоПро SVS». Проверка подписи и файла cертификата  
-   - "Проверка требований к квалифицированному сертификату" в [КриптоПро SVS](https://cryptopro.ru/forum2/default.aspx?g=posts&t=20255) tsl.xml 
-   - на сайте  
-- https://sign.kloud.one/
+- https://sign.kloud.one/ + перештамповка
 - https://testca.gaz-is.ru/
    
-1.2
+### 1.2
 - [Контур.Крипто](https://crypto.kontur.ru/verify)  ; [tariffs](https://crypto.kontur.ru/#tariffs) 29 любых операций на 90 дней
 - https://astral.ru/aj/elem/kak-proverit-elektronnuyu-podpis/
 - https://sign.me/promo/sign-check/
 
-1.3 asn1
+## 1.3 Problem
+-  https://dss.cryptopro.ru/verify/#/signature Тестовая служба проверки подписи и сертификатов «КриптоПро SVS». Проверка подписи и файла cертификата  
+   - "Проверка требований к квалифицированному сертификату" в [КриптоПро SVS](https://cryptopro.ru/forum2/default.aspx?g=posts&t=20255) tsl.xml 
+   - на сайте  
+
+### 1.4 asn1
 - https://pkitools.net/pages/ca/asn1.html
 - https://lapo.it/asn1js/
 - https://habr.com/ru/articles/150757/

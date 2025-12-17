@@ -1,5 +1,7 @@
 ## test signature
-info
+## перештамповка
+- https://sign.kloud.one/ см. https://trusted.ru/documentation/cryptoarm-server/v1.1/04-services/02-service-sign-verify/
+## info
 - Параметры подписи документа https://dss.cryptopro.ru/docs/articles2/rest/signserver/structs/sigparams.html
 - 
 ## 1 Base

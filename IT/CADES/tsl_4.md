@@ -1,4 +1,10 @@
 ## https://chat.deepseek.com/
+CRL
+- https://uc-em.ru/kornevye-sertifikaty/
+- https://support.kontur.ru/ca/38808-kornevye_sertifikaty_spisok_otozvannyx
+- http://crl.roskazna.ru/
+- https://cryptoarm.ru/documentation/oshibka-postroenia-puti-sertifikacii
+- https://www.cryptopro.ru/forum2/default.aspx?g=posts&t=23143
 ## 1 вопрос 
 Укажи подробный алгоритм подписания и проверки электронной подписи на разных узлах.  
 Операция 1. Подписание документа открепленной квалифицированной (УКЭП) подписью CADES-XL. На компьютере подписанта установлены:  корневой сертификат Минцифры России в хранилище «Доверенные корневые центры сертификации» и промежуточный сертификат аккредитованного Минцифры России УЦ «Контур» в хранилище «Промежуточные центры сертификации». Требуется ли при подписании скачивать файл tsl.xml Trust Service Status List (по адресу https://e-trust.gosuslugi.ru/app/scc/portal/api/v1/portal/ca/getxml)?   

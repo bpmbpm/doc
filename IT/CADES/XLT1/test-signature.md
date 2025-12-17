@@ -5,8 +5,8 @@
   - [УНЭП по Постановлению № 2152](https://e-trust.gosuslugi.ru/check/sign-unep) 
   - [Как проверить](https://www.gosuslugi.ru/help/faq/esignature/212160) ; [faq](https://www.gosuslugi.ru/help/faq/esignature/103271)
 -  https://dss.cryptopro.ru/verify/#/signature Тестовая служба проверки подписи и сертификатов «КриптоПро SVS». Проверка подписи и файла cертификата  
-  - "Проверка требований к квалифицированному сертификату" в [КриптоПро SVS](https://cryptopro.ru/forum2/default.aspx?g=posts&t=20255)  
-  - на сайте  
+   - "Проверка требований к квалифицированному сертификату" в [КриптоПро SVS](https://cryptopro.ru/forum2/default.aspx?g=posts&t=20255)  
+   - на сайте  
 - https://sign.kloud.one/
 - https://testca.gaz-is.ru/
    

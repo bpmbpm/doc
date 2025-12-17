@@ -1,4 +1,7 @@
 ## test signature
+info
+- Параметры подписи документа https://dss.cryptopro.ru/docs/articles2/rest/signserver/structs/sigparams.html
+- 
 ## 1 Base
 1.1
 - https://e-trust.gosuslugi.ru/check/sign gosuslugi: Отсоединенная \ Открепляемая (файл документа или только хеш документа), Присоединенная \ встроенная (cer, sig, p7s, pdf, tsp, xml). Проверка файла cертификата, МЧД и др. 

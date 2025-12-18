@@ -14,3 +14,6 @@
 - https://github.com/bpmbpm/doc/tree/main/IT/programming/Excel
 
 ### Open Source ??
+
+### ru
+- [Большой разворот: как изменился стек технологий в российском IT после 2022 года](https://habr.com/ru/companies/timeweb/articles/971778/)

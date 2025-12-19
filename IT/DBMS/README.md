@@ -1,7 +1,7 @@
 ### DB design
 - [Семантическое моделирование. Проектирование БД с помощью ER-модели](https://habr.com/ru/companies/timeweb/articles/916824/)
 - [Проектирование Информационных систем. Часть 8. Разработка логической структуры данных. 8.2. Шаблонный подход](https://habr.com/ru/articles/918450/)
-  
+- [Ключи в базах данных: больше чем просто идентификатор](https://habr.com/ru/articles/978212/)  
 ### database
 - [alasql](https://alasql-wiki.readthedocs.io/en/latest/readme.html)
 - [Доступ к данным с помощью ODBC и JDBC](https://www.dialektika.com/PDF/978-5-907144-81-1/part.pdf)

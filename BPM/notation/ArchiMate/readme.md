@@ -68,3 +68,12 @@
 - nesting https://github.com/bpmbpm/doc/blob/main/BPM/enEA/readme.md#nesting
 - https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/notation1.md#data-obejct-example object + динамические связи
 - https://github.com/nfigay/ArchiCG
+
+### Archimate Relationship Matrix
+- https://www.hosiaisluoma.fi/blog/archimate-metamodel/ нет тригера в событие https://habr.com/ru/articles/976934/
+- Cookbook.pdf https://www.hosiaisluoma.fi/ArchiMate-Cookbook.pdf
+- https://www.modeliosoft.com/modelio-help/41/en/index.jsp?topic=%2Fcom.modeliosoft.modelio.documentation.archimate%2Fhtml%2FUser_Documentation_en_ArchiMateMatrices.html
+- https://www.archimatetool.com/downloads/archi/Archi%20User%20Guide.pdf
+- https://www.businessstudio.ru/help/docs/current/doku.php/ru/manual/archimate/business_layer
+- ArchiMate 3.1 Specification https://university.sk/wp-content/uploads/2020/01/ARCHIMATE_v3_1_specifikacia.pdf
+- https://www.hostco.ru/news/otobrazhenie-metodologicheskikh-kontseptsiy-s-pomoshchyu-yazyka-archimate/?ysclid=mjcinjudpj490316652

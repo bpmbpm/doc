@@ -9,3 +9,6 @@
 - https://excalidraw.com/ ; https://pikabu.ru/story/excalidraw__servis_dlya_risovaniya_diagramm_9969710
 - visualization/diagramascode
 - [Использование диаграмм в ИТ-документации: лучшие практики](https://clickhelp.com/clickhelp-technical-writing-blog/using-diagrams-in-it-documentation-best-practices/) ; [Встроенные диаграммы](https://clickhelp.com/software-documentation-tool/user-manual/embed-diagrams.html)  
+
+### Tags
+- [DeepSeek + Unity: Как заставить ИИ рисовать схемы и не сойти с ума от веселья Part2](https://habr.com/ru/articles/978306/)

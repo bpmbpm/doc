@@ -29,6 +29,14 @@
 
 Рекомендации направлены на обеспечение единства подходов к описанию объектов информационной инфраструктуры, что важно для анализа операционной надёжности и управления рисками в финансовой сфере.
 
+### 072
+из Указания Банка России от 10 апреля 2023 г. N 6406-У:
+- garant https://ivo.garant.ru/#/document/406750235/paragraph/42202/doclist/1821/1/0/0/6406-%D0%A3:1
+- https://regulation.nprts.ru/ru/upload/231002-46_3.pdf
+- https://service.securitm.ru/help/assets#form-cb-72
+- https://regulation.nprts.ru/ru/upload/231002-46_3.pdf
+-  
+
 ### отдельные 
 - [779-П securitm](https://service.securitm.ru/docs/polozhenie-br-779p/p-1-2)
 - [851-П](https://rtmtech.ru/services/851-p/)

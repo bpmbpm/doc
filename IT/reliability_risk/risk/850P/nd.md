@@ -31,7 +31,7 @@
 
 ### f072
 **Форма 0409072** из Указания Банка России от 10 апреля 2023 г. N 6406-У:
-- garant https://ivo.garant.ru/#/document/406750235/paragraph/42202/doclist/1821/1/0/0/6406-%D0%A3:1
+- garant https://ivo.garant.ru/#/document/406750235/paragraph/42202/doclist/1821/1/0/0/6406-%D0%A3:1 ; [Порядок составления и представления отчетности по форме 0409072](https://ivo.garant.ru/#/document/406750235/entry/10006/doclist/1821/1/0/0/6406-%D0%A3:0)
 - https://regulation.nprts.ru/ru/upload/231002-46_3.pdf
 - https://service.securitm.ru/help/assets#form-cb-72
 - https://regulation.nprts.ru/ru/upload/231002-46_3.pdf

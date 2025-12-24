@@ -16,3 +16,5 @@ https://github.com/bpmbpm/doc/tree/main/LD/ontology
 
 ### graph
 - [Визуализация больших графов для самых маленьких](https://habr.com/ru/companies/ods/articles/464715/)
+- [Построение графов для чайников: пошаговый гайд](https://habr.com/ru/companies/leader-id/articles/488058/)
+- https://habr.com/ru/articles/148162/

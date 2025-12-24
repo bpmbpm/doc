@@ -13,3 +13,6 @@ Palantir Foundry: платформа данных на основе онтоло
 - [Генератор больших графов транзакций с паттернами преступной деятельности](https://habr.com/ru/articles/447626/)
 ### также
 https://github.com/bpmbpm/doc/tree/main/LD/ontology
+
+### graph
+- [Визуализация больших графов для самых маленьких](https://habr.com/ru/companies/ods/articles/464715/)

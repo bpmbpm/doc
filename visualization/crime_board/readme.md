@@ -9,5 +9,7 @@ Palantir Foundry: платформа данных на основе онтоло
 - [Онтология Foundry](https://www.palantir.com/docs/foundry/ontology/core-concepts/)
 - [Типы объектов](https://www.palantir.com/docs/foundry/object-link-types/object-types-overview)
 
+### info
+- [Генератор больших графов транзакций с паттернами преступной деятельности](https://habr.com/ru/articles/447626/)
 ### также
 https://github.com/bpmbpm/doc/tree/main/LD/ontology

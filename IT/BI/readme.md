@@ -14,3 +14,5 @@
 - https://github.com/bpmbpm/doc/blob/main/EA/DataQuality/bi.md#dq-bi
 - https://github.com/bpmbpm/doc/blob/main/IT/DWH/kit.md
 - https://github.com/bpmbpm/doc/blob/main/LD/Semantic_Layer.md
+### 2
+- [Онлайн-таблицы: как ИИ делает аналитику доступной каждому](https://habr.com/ru/articles/980086/)

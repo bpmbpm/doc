@@ -1,2 +1,2 @@
 ### religion
-- Деницкий t.me/desnitsky https://vagantes.net/
+- Андрей Деницкий t.me/desnitsky https://vagantes.net/

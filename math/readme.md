@@ -1,6 +1,6 @@
 ### mathematics
 - [Эти пугающие производные, градиенты, матрицы Якоби и Гессе](https://habr.com/ru/companies/ruvds/articles/938950/)
-
+- [Царский путь к пониманию комплексных чисел. Часть I](https://habr.com/ru/articles/981234/)
 ### programm
 - [Регулярная катастрофа и как её избежать. Подход к регулярным выражениям](https://habr.com/ru/companies/sberdevices/articles/954296/)
 ### также

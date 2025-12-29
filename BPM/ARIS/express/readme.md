@@ -9,6 +9,8 @@
 ### user guide
 - [Руководство по aris express](https://instrukciyar.top/rukovodstvo-po-aris-express/)
 - [Aris express инструкция](https://instruk.prprel.ru/aris-express-instruktsiya-ustanovki/)
+### Materials
+- [aris-express-retail-study](https://github.com/andriikopp/aris-express-retail-study)
 ## also
 - [Моделирование бизнес-процессов с использованием методологии ARIS](https://portal.tpu.ru/SHARED/h/haperskaya/Materials/IT/%D0%A3%D1%87-%D0%BC%D0%B5%D1%82.ARIS%20(1).pdf)
 - [Архитектура предприятия](https://arzumanyan.com.ru/files/documents/arzumanyan_2.pdf)

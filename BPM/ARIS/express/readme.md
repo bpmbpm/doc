@@ -1,5 +1,5 @@
 ## ARIS Express
-- [wiki](ARIS Express)
+- [wiki]([ARIS Express](https://en.wikipedia.org/wiki/ARIS_Express))
 - [обзор](https://koptelov.info/wp-content/uploads/2016/11/ARIS_Express.pdf?ysclid=mjr5ufsk6x544088420)
 
 ## also

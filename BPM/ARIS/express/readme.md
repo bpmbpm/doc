@@ -4,7 +4,7 @@
 
 ## Doc 
 ### https://ariscommunity.com/
-- poster https://s3-eu-west-1.amazonaws.com/arisexpress/media/poster/aris-express-poster-21-1.pdf
+- poster https://s3-eu-west-1.amazonaws.com/arisexpress/media/poster/aris-express-poster-21-1.pdf [copy](https://s3-eu-west-1.amazonaws.com/arisexpress/media/poster/aris-express-poster-21-1.pdf)
 
 ## also
 - [Моделирование бизнес-процессов с использованием методологии ARIS](https://portal.tpu.ru/SHARED/h/haperskaya/Materials/IT/%D0%A3%D1%87-%D0%BC%D0%B5%D1%82.ARIS%20(1).pdf)

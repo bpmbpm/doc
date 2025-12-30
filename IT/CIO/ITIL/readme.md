@@ -13,3 +13,5 @@
 
 ### info
 - https://dzen.ru/a/XPAWkoKAmyShznCq
+### also
+- https://github.com/bpmbpm/doc/blob/main/IT/reliability_risk/risk/readme.md

@@ -14,3 +14,5 @@
 - https://t.me/rusontology/11068
 - https://aigents.com/graphs.html без точек
 
+## my
+- https://github.com/bpmbpm/rdf-grapher/blob/main/ver1

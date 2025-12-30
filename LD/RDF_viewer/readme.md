@@ -6,7 +6,7 @@
 - https://www.w3.org/2018/09/rdf-data-viz/
 - https://giacomociti.github.io/rdf2dot/ ; https://github.com/giacomociti/rdf2dot
 ### URL parametr
-- https://www.ldf.fi/service/rdf-grapher
+- https://www.ldf.fi/service/rdf-grapher browsec
 
 ### ru
 - [ontodia](https://github.com/metaphacts/ontodia/)

@@ -35,6 +35,9 @@ https://picclick.com/Vintage-IBM-Personal-System-2-PS-2-Model-30-Type-1869034079
 Если говорить о чем-то, что отличается от АИЦ, то это механизация (предшедственник и идейный прототип) и реинжиниринг (Business Process Reengineering, BPR) с лозунгом: "Не автоматизируй это!".  
 
 Слово «автоматизированный» - уже не в моде, как и его "перепевы": [автоматизация - информатизации – цифровизация, коммент](https://habr.com/ru/articles/961218/comments/#comment_29038386).  Сейчас идет «пере-обувка» уже с ГиперАвтоматизации = low code + RPA + Process Mining на «ИИ-тошматизацию»: [LLM + RAG + BPM](https://www.vedomosti.ru/press_releases/2025/11/11/giperavtomatizatsiya-po-russki-kak-iskusstvennii-intellekt-formiruet-novuyu-arhitekturu-biznesa)
+Также "где-то рядом" - DT цифровые двойники.     
+Есть родственное с BPR: формализация процессов (обычно в рамках BPM) и оптимизация (если с кардинальной переделкой, то это BPR).
+Еще можно выделить: семантизация \ онтологизация процессов компании (семантизация организации). 
 
 #### parable
 Раз про консультантов. Притча, изначально про McKinsey

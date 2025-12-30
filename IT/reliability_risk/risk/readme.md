@@ -10,3 +10,6 @@
 
 ### FTK
 - https://github.com/bpmbpm/doc/tree/main/EA/GOST/FTK
+
+### 2
+- [Управление инцидентами и проблемами в бизнес-процессах](https://habr.com/ru/articles/981430/)

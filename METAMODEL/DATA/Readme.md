@@ -32,3 +32,9 @@ https://schema.org/docs/developers.html
 - https://github.com/bpmbpm/doc/tree/main/EA/DataQuality
 - [Книга: «Грокаем структуры данных»](https://habr.com/ru/companies/piter/articles/954670/) ; [to grok - понять в деталях](https://ru.wiktionary.org/wiki/grok)
 - habr [Сравнительная таблица структур данных](https://habr.com/ru/articles/955972/)
+
+### EAV
+повтор  
+Entity — Attribute — Value
+- [Предельная унификация: программируем на языке бизнеса](https://habr.com/ru/articles/982120/) Предельная унификация a.k.a. IDEAV — хранение вообще всего как список Entity — Attribute — Value с дополнительным полем ID.
+- [SQL HowTo: разные варианты работы с EAV](https://habr.com/ru/companies/tensor/articles/657895/)

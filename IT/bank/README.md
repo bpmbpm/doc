@@ -27,3 +27,4 @@ OpenAPI
 
 ### info
 - https://bankiram.blogspot.com/p/30.html
+- [Под капотом платежей: чем отличаются ПС «Мир» и СБП](https://habr.com/ru/specials/978610/)

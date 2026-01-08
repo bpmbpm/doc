@@ -57,4 +57,4 @@ semantics-based / semantics-driven enterprise information architecture
 
 ### см. также
 - https://github.com/bpmbpm/doc/tree/main/BPM/TERM ; https://github.com/bpmbpm/doc/blob/main/EA/term.md ; https://github.com/bpmbpm/doc/tree/main/IT/term.md
-- owner
+- owner https://github.com/bpmbpm/doc/blob/main/BPM/theory/triangle/version2.md

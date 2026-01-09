@@ -10,3 +10,6 @@
 
 ### info
 - https://dataforg.ru/articles/detail.php?ID=942 понятный semantic layer.
+
+### also
+- https://github.com/bpmbpm/doc/blob/main/IT/DWH/semanticDWH.md

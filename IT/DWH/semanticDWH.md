@@ -31,3 +31,6 @@ SAP & Oracle взяли у Бира из его VSM - Viable System Model (Мо�
 
 
   - SPARQL https://dbpedia.org/sparql https://habr.com/ru/companies/otus/articles/755440
+
+### also
+- https://github.com/bpmbpm/doc/tree/main/LD2/semDWH

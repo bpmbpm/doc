@@ -264,3 +264,177 @@ erDiagram
 *   **Архитектурный подход** управляет **взаимодействием и эволюцией** статики (функций) и динамики (процессов).
 *   **Ключевая неувязка** на практике: организационная структура (функции) и потоки работ (процессы) находятся в постоянном конфликте. Успешные компании строят матричное управление, где процессные владельцы отвечают за результат, а функциональные руководители — за развитие ресурсов и стандартов.
   
+---
+## 4.2
+
+Покажи более конкретно на Метамодели TOGAF \ ArchiMate (если есть отличия, то укажи), IDEFx, ARIS EPC, BPM CBOK. Предикаты укажи на обоих языках (русский \ английский) и используй штатные (дословно) предикаты конкретной методологии.  
+Таблицу "Субъект – Предикат – Обратный предикат – Объект" составить общую с группировкой по схожим отношениям, но из разных методологий. Схемы составить отдельные и связи укажи стрелкой.    
+## Сравнение метамоделей: TOGAF/ArchiMate, IDEFx, ARIS EPC, BPM CBOK
+
+### 1. Метамодели и их особенности
+
+**TOGAF/ArchiMate** (рассматриваем вместе, но есть нюансы):
+- **ArchiMate** - формальный язык описания архитектуры предприятия, часто используемый с TOGAF
+- **TOGAF** - фреймворк с менее формальной метамоделью, но схожими концепциями
+- В ArchiMate 3.1 Business Function и Business Process - оба подтипы Behavior Element
+- Ключевые отношения: Assignment, Realization, Serving, Aggregation
+
+**IDEFx** (IDEF0 и IDEF3):
+- **IDEF0** - функциональное моделирование: Activity (Функция) с входами/выходами/управлением/механизмами
+- **IDEF3** - процессное моделирование: Process (Процесс) как последовательность Activity
+- Организационные единицы = Mechanisms в IDEF0, Roles в IDEF3
+
+**ARIS EPC** (Event-driven Process Chain):
+- Центральная сущность - Function (Функция), связываемая событиями
+- Organizational Unit (организационная единица) назначается на Function
+- Information Object представляет данные/продукты
+
+**BPM CBOK** (Business Process Management Common Body of Knowledge):
+- Практико-ориентированный свод знаний, менее формальная метамодель
+- Business Function как организационная единица/область специализации
+- Business Process как сквозная цепочка создания ценности
+
+### 2. Схемы метамоделей (упрощенные)
+
+#### ArchiMate 3.1
+```mermaid
+graph TD
+    BF[Business Function] -- aggregates --> BP[Business Process]
+    BF -- assigned to --> BR[Business Role]
+    BP -- assigned to --> BR
+    BP -- serves --> BS[Business Service]
+    BF -- serves --> BS
+    BS -- serves --> BO[Business Object]
+    BO -- realized by --> P[Product]
+    BR -- part of --> OU[Organizational Unit]
+    
+    style BF fill:#e1f5fe
+    style BP fill:#f3e5f5
+    style BR fill:#e8f5e8
+    style P fill:#fff3e0
+```
+
+#### IDEFx (IDEF0 + IDEF3)
+```mermaid
+graph TD
+    A[Activity/Function] -- has output --> O[Output/Product]
+    A -- has mechanism --> M[Mechanism/Org Unit]
+    A -- decomposed into --> SA[Sub-Activity]
+    
+    P[Process] -- consists of --> A2[Activity]
+    P -- produces --> O2[Object/Product]
+    P -- performed by --> R[Role/Org Unit]
+    
+    style A fill:#e1f5fe
+    style P fill:#f3e5f5
+    style O fill:#fff3e0
+```
+
+#### ARIS EPC
+```mermaid
+graph LR
+    E1[Event] -- triggers --> F[Function]
+    F -- produces --> E2[Event]
+    F -- performed by --> OU[Organizational Unit]
+    F -- uses --> IO1[Information Object]
+    F -- creates --> IO2[Information Object]
+    F -- part of --> P[Process]
+    
+    style F fill:#e1f5fe
+    style P fill:#f3e5f5
+    style OU fill:#e8f5e8
+```
+
+#### BPM CBOK
+```mermaid
+graph TD
+    BF[Business Function] -- performs --> BP[Business Process]
+    BP -- delivers --> V[Value/Product]
+    BP -- decomposed into --> SP[Sub-Process]
+    BP -- measured by --> KPI[KPI/Metrics]
+    BP -- has --> R[Roles]
+    R -- assigned to --> OU[Organizational Unit]
+    
+    style BF fill:#e8f5e8
+    style BP fill:#f3e5f5
+    style V fill:#fff3e0
+```
+
+### 3. Таблица отношений между сущностями
+
+| Группа отношений | Субъект | Предикат (русский/английский) | Обратный предикат | Объект | Методология |
+|-----------------|---------|--------------------------------|-------------------|--------|-------------|
+| **Часть-целое (декомпозиция)** | Бизнес-функция | агрегирует / aggregates | является частью / part of | Бизнес-процесс | ArchiMate |
+| | Бизнес-функция | состоит из / consists of | входит в / included in | Подфункция | IDEF0 |
+| | Бизнес-процесс | включает / includes | включен в / included in | Функция | ARIS EPC |
+| | Бизнес-процесс | декомпозируется на / decomposes into | является частью / part of | Подпроцесс | IDEF3, BPM CBOK |
+| **Исполнение/назначение** | Бизнес-процесс | назначен на / assigned to | выполняет / performs | Бизнес-роль | ArchiMate |
+| | Бизнес-функция | назначен на / assigned to | владеет / owns | Бизнес-роль | ArchiMate |
+| | Функция | выполняется / performed by | выполняет / performs | Организационная единица | ARIS EPC, IDEF0 |
+| | Бизнес-процесс | выполняется / performed by | выполняет / performs | Организационная единица | IDEF3 |
+| | Бизнес-функция | выполняет / performs | выполняется / performed by | Бизнес-процесс | BPM CBOK |
+| **Создание/использование продукта** | Бизнес-процесс | обслуживает / serves | обслуживается / served by | Бизнес-сервис | ArchiMate |
+| | Бизнес-функция | обслуживает / serves | обслуживается / served by | Бизнес-сервис | ArchiMate |
+| | Бизнес-сервис | обслуживает / serves | обслуживается / served by | Продукт | ArchiMate |
+| | Функция | производит / produces | производится / produced by | Выход (продукт) | IDEF0 |
+| | Процесс | производит / produces | производится / produced by | Объект (продукт) | IDEF3 |
+| | Функция | создает / creates | создается / created by | Информационный объект | ARIS EPC |
+| | Бизнес-процесс | предоставляет / delivers | предоставляется / delivered by | Ценность (продукт) | BPM CBOK |
+| **Управление/контроль** | Бизнес-процесс | контролируется / controlled by | контролирует / controls | Событие | ARIS EPC |
+| | Функция | имеет управление / has control | управляет / controls | Вход управления | IDEF0 |
+| | Бизнес-процесс | измеряется / measured by | измеряет / measures | KPI | BPM CBOK |
+| **Поток/последовательность** | Функция | инициируется / triggered by | инициирует / triggers | Событие | ARIS EPC |
+| | Процесс | следует за / follows | предшествует / precedes | Действие | IDEF3 |
+| | Бизнес-процесс | вызывает / triggers | вызывается / triggered by | Бизнес-процесс | ArchiMate |
+
+### 4. Ключевые различия в иерархии "функция-процесс"
+
+**Функция входит в процесс:**
+- **ARIS EPC**: Process → consists of → Function
+- **IDEF3**: Process → consists of → Activity
+- **BPMN** (не рассмотрен, но релевантен): Process Pool → содержит → Activities/Tasks
+
+**Процесс входит в функцию:**
+- **ArchiMate**: Business Function → aggregates → Business Process
+- **TOGAF** (в некоторых интерпретациях): Business Function → realized by → Business Process
+
+**Отношение исполнения (отдельная категория):**
+- **BPM CBOK**: Business Function → performs → Business Process
+- **IDEF0**: Organizational Unit (Mechanism) → performs → Activity
+
+### 5. Анализ неувязок между методологиями
+
+1. **Разное понимание иерархии**: В ARIS процесс состоит из функций, в ArchiMate функция агрегирует процессы.
+
+2. **Разный статус организационной единицы**:
+   - В IDEF0: механизм (ресурс)
+   - В ARIS: исполнитель функции
+   - В ArchiMate: бизнес-роль/актор
+   - В BPM CBOK: владелец функции
+
+3. **Продукт как сущность**:
+   - В IDEF0: выход функции
+   - В ArchiMate: объект, обслуживаемый через сервис
+   - В ARIS: информационный объект
+   - В BPM CBOK: ценность/результат
+
+4. **События vs управление**:
+   - В ARIS: события управляют функциями
+   - В IDEF0: управление - отдельный тип связи
+   - В ArchiMate: триггеры как специальные отношения
+
+### 6. Практические рекомендации
+
+1. **Для целостной архитектуры предприятия** - использовать ArchiMate с TOGAF, так как это обеспечивает наиболее полную метамодель.
+
+2. **Для детального процессного моделирования** - ARIS EPC или BPMN 2.0 (не рассмотрен здесь, но широко используется).
+
+3. **Для функционального анализа и декомпозиции** - IDEF0.
+
+4. **Для внедрения процессного управления** - BPM CBOK как свод лучших практик.
+
+5. **Ключевой принцип**: выбрать одну методологию как основную и придерживаться ее терминов и отношений, чтобы избежать путаницы. При необходимости интеграции с другими методами - создавать таблицы соответствия терминов.
+
+**Вывод**: Различия в метамоделях отражают разные точки зрения на организацию. Функциональный взгляд (IDEF0, часть ArchiMate) акцентирует устойчивые способности, процессный (ARIS, BPM CBOK) - потоки создания ценности. Успешное моделирование требует понимания этих различий и сознательного выбора подхода, соответствующего целям моделирования.
+
+

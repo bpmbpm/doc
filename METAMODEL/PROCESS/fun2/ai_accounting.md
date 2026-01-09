@@ -451,4 +451,5 @@ IDEF Meta Model
 ### ArchiMate 3.2 Metamodel
 - https://www.archimetric.com/understanding-the-archimate-3-2-metamodel-a-guide-to-behavior-and-structure-elements/
 - https://systems.education/archimate
-- https://github.com/smileham/archimate-metamodel-patterns ; https://smileham.co.uk/2018/05/31/archimate-patterns-business-layer/ В этом примере бизнес-процесс «А) Архитектурное видение» разбит на этапы. Каждый из этих этапов смоделирован как функция, 
+- https://github.com/smileham/archimate-metamodel-patterns ; https://smileham.co.uk/2018/05/31/archimate-patterns-business-layer/ В этом примере бизнес-процесс «А) Архитектурное видение» разбит на этапы. Каждый из этих этапов смоделирован как функция,  
+Хотя (вроде бы): Business Function is aggregates  Business Process / Бизнес-функция — это совокупность бизнес-процессов

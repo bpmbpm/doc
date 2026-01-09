@@ -437,4 +437,13 @@ graph TD
 
 **Вывод**: Различия в метамоделях отражают разные точки зрения на организацию. Функциональный взгляд (IDEF0, часть ArchiMate) акцентирует устойчивые способности, процессный (ARIS, BPM CBOK) - потоки создания ценности. Успешное моделирование требует понимания этих различий и сознательного выбора подхода, соответствующего целям моделирования.
 
+---
+## 4.3 IDEF0
+IDEF0: "functions (activities, actions, processes, operations)"
+- https://www.interface.ru/home.asp?artId=2510
+- https://segoldmine.ppi-int.com/node/44669
+- https://en.wikipedia.org/wiki/Function_model
 
+IDEF Meta Model
+- https://re.public.polimi.it/retrieve/e0c31c0f-0b70-4599-e053-1705fe0aef77/PSAM12_Paper%20365_final.pdf
+- https://www.researchgate.net/publication/4223387_Integrating_role_activity_diagrams_and_hybrid_IDEF_for_business_process_modeling_using_MDA

@@ -443,7 +443,10 @@ graph TD
 IDEF0: "functions (activities, actions, processes, operations)"
 - https://www.interface.ru/home.asp?artId=2510
 - https://segoldmine.ppi-int.com/node/44669
-- https://en.wikipedia.org/wiki/Function_model
+- https://en.wikipedia.org/wiki/Function_model  
+v2
+- https://www.trinion.org/blog/idef0-znakomstvo-s-notaciey-i-primer-ispolzovaniya IDEF0 — методология функционального моделирования (англ. function modeling), предназначенная для формализации и описания бизнес-процессов. 
+- https://www.cfin.ru/vernikov/idef/idef0.shtml
 
 IDEF Meta Model
 - https://re.public.polimi.it/retrieve/e0c31c0f-0b70-4599-e053-1705fe0aef77/PSAM12_Paper%20365_final.pdf

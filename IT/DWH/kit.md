@@ -6,6 +6,7 @@
 - [Superset - Airflow - Clickhouse](https://beget.com/en/cloud/marketplace/supersetairflow)
 - [Airflow → PostgreSQL DWH → dbt → Superset](https://bi-data.ru/blog/2025/06/19/airflow-%E2%86%92-postgresql-dwh-%E2%86%92-dbt-%E2%86%92-superset/)
 - [DWH без иллюзий. Три реальных кейса внедрения корпоративного хранилища в ритейле, производстве и госсекторе](https://habr.com/ru/articles/925652/)
+- [DWH_Superset](https://github.com/AlexeyAnanchenko/DWH_Superset)
 
 ### also 
 - https://github.com/bpmbpm/doc/blob/main/IT/BI/readme.md

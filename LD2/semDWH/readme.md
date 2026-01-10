@@ -4,7 +4,7 @@ DWH "Linked Data"
 ### SPARQL-BI
 - https://docs.openlinksw.com/virtuoso/ch-rdfandsparql/ 
 Есть SPARQL-BI и вообще в Виртуозе прорва всякого для Linked Data Views, для импорта в RDF разных источников, плюс безопасность, чтоб пользователи не совали нос куда не следует
-- [Расширения для бизнес-аналитики на основе SPARQL](https://vos.openlinksw.com/owiki/wiki/VOS/VOSArticleBISPARQL2) С этой целью мы расширили SPARQL, добавив выражения в результаты, агрегаты, группировку и производные таблицы. Эти расширения позволяют легко преобразовывать произвольные SQL-запросы в SPARQL. Мы называем этот расширенный SPARQL «SPARQL BI».
+- [Расширения для бизнес-аналитики на основе SPARQL](https://vos.openlinksw.com/owiki/wiki/VOS/VOSArticleBISPARQL2) С этой целью мы расширили SPARQL, добавив выражения в результаты, агрегаты, группировку и производные таблицы. Эти расширения позволяют легко преобразовывать произвольные SQL-запросы в SPARQL. Мы называем этот расширенный SPARQL «SPARQL BI». Орри Эрлинг (руководитель программы, OpenLink Virtuoso) и Иван Михайлов (ведущий разработчик, OpenLink Virtuoso).
 - [Облако и куб: RDF в аналитической базе данных. Часть 1/2](https://iv-an-ru.livejournal.com/48017.html) RDB2RDF, RDF2RDF, RDF2RDB
 
 ### SQL to SPARQL

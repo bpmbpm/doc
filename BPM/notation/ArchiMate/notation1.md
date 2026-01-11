@@ -184,6 +184,7 @@
 - https://www.hosiaisluoma.fi/blog/useful-archimate-diagram-types/ ; https://www.hosiaisluoma.fi/blog/archimate-examples/
 - https://sparxsystems.com/resources/tutorials/archimate/
 - https://help.bizzdesign.com/articles/#!horizzon-help/archimate-relationships
+- nesting https://github.com/bpmbpm/doc/blob/main/BPM/enEA/readme.md#nesting
 
 ### example
 - https://smileham.co.uk/2019/04/03/archimate-example-figshare-implementation/

@@ -25,3 +25,6 @@ https://habr.com/ru/articles/905028/#comment_28235886
 
 #### glossary
 - https://studfile.net/preview/14281160/page:115/
+
+### 3
+- дерево функций https://studfile.net/preview/6354117/page:21/

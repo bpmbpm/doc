@@ -2,6 +2,8 @@
 - [Aris: Business Process Frameworks August-Wilhelm Scheer](https://archive.org/details/springer_10.1007-978-3-642-97738-1)
 - [Бизнес-процессы. Основные понятия. Теория. Методы](https://djvu.online/file/IFwHj7as8gsTj) djvu.online
 
+#### 2
+https://studfile.net/preview/7781710/page:12/
 #### Процесо-центричный подход
 - [Fig. 13 The general ARIS Business Process Model, 47](https://archive.org/details/springer_10.1007-978-3-642-97738-1/page/n47/mode/2up)
 - [Fig. 14a Function View, 49](https://archive.org/details/springer_10.1007-978-3-642-97738-1/page/n49/mode/2up)

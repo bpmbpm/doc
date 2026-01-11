@@ -16,9 +16,12 @@ https://habr.com/ru/articles/905028/#comment_28235886
 - [Handbook on Business Process Management](https://ebrary.net/18126/management/business_process_frameworks?ysclid=ma29q1udrw680027321)
 
 #### Разное
-- Моделирование бизнес-процессов https://www.klex.ru/1rlk стр. 41
+
 - [ARIS - моделирование бизнес-процессов, studopedia](https://studopedia.ru/11_241383_A-ARIS---modelirovanie-biznes-protsessov.html)
+- Моделирование бизнес-процессов https://www.klex.ru/1rlk стр. 41
 - [слайды Методология aris](https://fotoblur.ru/metodologiya/aris/)
+- Профессор Шеер. Бизнес-процессы. Основные понятия. Теория. Методы https://bpm.ucoz.ru/_ld/0/67_ARIS_Methods.pdf
+- Профессор Шеер. Бизнес-процессы. Основные понятия. Теория. Методы https://studfile.net/preview/7781710/
 
 #### glossary
 - https://studfile.net/preview/14281160/page:115/

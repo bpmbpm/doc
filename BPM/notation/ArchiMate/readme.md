@@ -65,7 +65,7 @@
 - https://systems.education/archimate ?
 - [Архитектура ИТ решений. Часть 7. Графический язык моделирования ArchiMate. Начало](https://habr.com/ru/articles/972736/#comment_29198940)
 ### Разное 
-- nesting https://github.com/bpmbpm/doc/blob/main/BPM/enEA/readme.md#nesting
+- **nesting** https://github.com/bpmbpm/doc/blob/main/BPM/enEA/readme.md#nesting
 - https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/notation1.md#data-obejct-example object + динамические связи
 - https://github.com/nfigay/ArchiCG
 

@@ -20,7 +20,7 @@ https://habr.com/ru/articles/905028/#comment_28235886
 - [ARIS - моделирование бизнес-процессов, studopedia](https://studopedia.ru/11_241383_A-ARIS---modelirovanie-biznes-protsessov.html)
 - Моделирование бизнес-процессов https://www.klex.ru/1rlk стр. 41
 - [слайды Методология aris](https://fotoblur.ru/metodologiya/aris/)
-- Профессор Шеер. Бизнес-процессы. Основные понятия. Теория. Методы https://bpm.ucoz.ru/_ld/0/67_ARIS_Methods.pdf
+- Инструментарий ARIS. Методы. Версия 4. Апрель 2000 https://bpm.ucoz.ru/_ld/0/67_ARIS_Methods.pdf
 - Профессор Шеер. Бизнес-процессы. Основные понятия. Теория. Методы https://studfile.net/preview/7781710/
 
 #### glossary

@@ -441,7 +441,11 @@ graph TD
 ## 4.3 
 ### IDEF0
 IDEF0: "functions (activities, actions, processes, operations)"
-- https://www.interface.ru/home.asp?artId=2510
+- https://www.interface.ru/home.asp?artId=2510 x This standard describes the IDEF0 modeling language (semantics and syntax), and associated rules and techniques, for developing structured graphical representations of a system or enterprise. Use of this standard permits the construction of models comprising system functions (activities, actions, processes, operations), functional relationships, and data (information or objects) that support systems integration. (см. раздел 3. Explanation стандарта)
+- https://www.idef.com/wp-content/uploads/2016/02/idef0.pdf
+  - раздел 3. Explanation стандарта (стр. 1): Настоящий стандарт описывает язык моделирования IDEF0 (семантику и синтаксис), а также связанные с ним правила и методы для разработки структурированных графических представлений системы или предприятия. Использование этого стандарта позволяет создавать модели, включающие функции системы (действия, операции, процессы, операции), функциональные связи и данные (информацию или объекты), которые поддерживают интеграцию систем.  
+  - 2. Definitions (стр. 16) 2.24 Function: An activity, process, or transformation (modeled by an IDEF0 box) identified by a verb or verb phrase that describes what must be accomplished / 2.24 Функция: Действие, процесс или преобразование (моделируемое блоком IDEF0), определяемое глаголом или глагольной фразой, описывающей то, что должно быть выполнено.
+  - 3.2.1.1 Boxes (стр. 20)
 - https://segoldmine.ppi-int.com/node/44669
 - https://en.wikipedia.org/wiki/Function_model
 - https://projecto.pro/blog/theory/idef0/

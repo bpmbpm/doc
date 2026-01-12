@@ -11,7 +11,7 @@
 - [История вирусов](https://habr.com/ru/companies/timeweb/articles/894768/)
 ### Hack
 - [Продам всё, что на фото. Недорого](https://habr.com/ru/companies/angarasecurity/articles/973630/) запуск apk
-- [USB-червь на VBScript: закрепление в системе, контроль процессов и автоматическое заражение флешек](https://habr.com/ru/articles/984274/)
+- [USB-червь на VBScript: закрепление в системе, контроль процессов и автоматическое заражение флешек](https://habr.com/ru/articles/984274/) @Vladislav_Podobed
 ### TOR
 - [TOR поиск мостов](https://t.me/GetBridgesBot)
 

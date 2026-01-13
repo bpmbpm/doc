@@ -16,7 +16,11 @@
 ### Также
 - https://github.com/bpmbpm/doc/tree/main/BPM/semantic#eclipse
 - плагин Rational Rose для инструмента Borland, Delphi впоследствии оказались анти-шаблоном: https://habr.com/ru/companies/haulmont/articles/918684/comments/#comment_28465832
+*плагин Rational Rose для инструмента Borland, Delphi впоследствии оказались анти-шаблоном:*
+*это идеальный пример анти-шаблона, потому что это кажется отличной идеей, а затем она приводит вас в лес, полный драконов и монстров, и вы больше никогда не захотите туда возвращаться.*
+https://www.thoughtworks.com/insights/podcasts/technology-podcasts/architecture-as-code
 
+Речь про Model Driven Architecture, которая является основной веткой low code / no code (программирование без программирования). Если ранее для этого использовали UML, то сейчас BPMN (исполняемый, BPMN-engine).
 ### ARIS Case 
 По-видимому, наиболее мощной и высокоуровневой практической реализацией идей MDA на сегодня является инструментарий ARIS Toolset
 https://blog.arbinada.com/ru/category/00028.html

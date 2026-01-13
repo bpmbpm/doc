@@ -6,7 +6,7 @@
 - [wiki](https://ru.wikipedia.org/wiki/Semantic_MediaWiki) Изначально Semantic MediaWiki задумывалась для использования в Википедии, но с появлением Викиданных, в значительной степени опирающихся на опыт Semantic MediaWiki, вопрос об использовании для Semantic MediaWiki для проектов Викимедиа утратил актуальность;
 - https://www.semantic-mediawiki.org/ ; https://github.com/SemanticMediaWiki
 - https://professional.wiki/en/semantic-mediawiki-services
-- https://habr.com/ru/articles/947566/#comment_28850324
+- https://habr.com/ru/articles/947566/#comment_28850324 Тыкаю палкой XWiki что лежат в сети
 
 ### hosting
 - https://www.pro.wiki/semantic-mediawiki-hosting

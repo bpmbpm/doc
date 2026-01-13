@@ -136,3 +136,6 @@ https://github.com/bpmbpm/doc/blob/main/BPM/theory/company-wide-process.md
     
 #### example of architecture
 ![ris1](pic/arc_2.jpg)
+
+### also
+- https://github.com/bpmbpm/doc/blob/main/BPM/technology/model-first/readme.md

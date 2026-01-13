@@ -1,6 +1,6 @@
 ### notation
 ### 1 best
-- essential-open-one-page-editor https://github.com/terryvel/essential-open-one-page-editor
+- essential-open-one-page-editor https://github.com/terryvel/essential-open-one-page-editor ; forum [Essential Open One Page Editor](https://enterprise-architecture.org/forums/viewtopic.php?t=3146)
 
 ai 
 ### 2 ArchiMate
@@ -35,13 +35,23 @@ ai
 
 **Рекомендация:** Зайдите на официальный сайт **enterprise-architecture.org**, перейдите в раздел **Downloads** и найдите там плагин "ArchiMate Model Importer". В его документации вы найдете все детали по установке и совместимости с версиями ArchiMate (2.x, 3.x).
 
-### 2.1
+### 2.2
 - EA Management Tool vs Drawing Tool https://enterprise-architecture.org/about/thought-leadership/ea-management-tool-vs-drawing-tool/
 - editor https://enterprise-architecture.org/university/editor-builder/
   - You can load Open Exchange XML  data into Essential, e.g. from ArchiMate®, using a visual data loader. https://enterprise-architecture.org/university/open-exchange-xml-data-loader-cloud-docker/
   - Essential Viewer https://enterprise-architecture.org/university/essential-viewer/ Он включает в себя большое количество представлений , каталогов , отчетов и моделей для просмотра информации о вашей организации, а для пользователей облачных сервисов/Docker — возможность легко управлять данными непосредственно из средства просмотра, используя различные методы, перетаскивание данных, редактор потоков BPMN, редакторы и т. д.  
 
-### 3 BMPN 
+### 2.3 TOGAF 
+- [TOGAF 9i to Essential Meta Model Concept Mapping](https://enterprise-architecture.org/wp-content/uploads/2023/12/togaf-to-essential-meta-model-mapping-v4.pdf)
+
+### 3 BPMN 
 - [forum](https://enterprise-architecture.org/forums/) ; [open source](https://enterprise-architecture.org/forums/viewforum.php?f=21&sid=7c8a8bae74e69c6e6860ab71e65c5332)
   - https://enterprise-architecture.org/forums/viewtopic.php?t=2451
   - https://enterprise-architecture.org/forums/viewtopic.php?p=32741#p32741 делюсь Essential Open One Page Editor — набором автономных HTML- редакторов, которые упрощают сбор данных для проекта Essential. Value Stream Editor https://github.com/terryvel/essential-open-one-page-editor
+- [forum](https://enterprise-architecture.org/forums/viewtopic.php?t=626)
+  - 2012: полезнее экспортировать такие вещи, как BPMN, в формате XML — и, конечно, мы можем использовать подобные инструменты для импорта определений бизнес-процессов и связей между ними из BPM-инструментов. Мы уже изучаем BPM-инструменты с открытым исходным кодом и то, как мы могли бы работать с ними, чтобы объединить возможности BPM с возможностями архитектурного подхода к процессам. 
+  - 2024: ответу Джона уже 12 лет, и с тех пор многое изменилось. **В коммерческом инструменте** теперь есть BPMN-моделировщик, который позволяет рисовать потоки.  
+Если вы используете OS, то для создания диаграмм вам нужно использовать классы Business_Process_Flow, но они не используют BPMN. Результат отображается в представлении потока бизнес-процесса, которое генерирует инструмент. Щелкните каталог процессов, найдите символ рядом с названием процесса, и вы увидите, что это именно тот процесс.
+### 4 NORA
+- Используя Essential Open Source, я пытаюсь внедрить NORA (Национальную общую эталонную модель), архитектурную структуру предприятия, разработанную Управлением цифрового правительства (DGA) в Саудовской Аравии. Я начинаю с сопоставления метамодели NORA и метамодели Essential. https://enterprise-architecture.org/forums/viewtopic.php?t=3158
+- 

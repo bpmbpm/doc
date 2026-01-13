@@ -54,4 +54,5 @@ ai
 Если вы используете OS, то для создания диаграмм вам нужно использовать классы Business_Process_Flow, но они не используют BPMN. Результат отображается в представлении потока бизнес-процесса, которое генерирует инструмент. Щелкните каталог процессов, найдите символ рядом с названием процесса, и вы увидите, что это именно тот процесс.
 ### 4 NORA
 - Используя Essential Open Source, я пытаюсь внедрить NORA (Национальную общую эталонную модель), архитектурную структуру предприятия, разработанную Управлением цифрового правительства (DGA) в Саудовской Аравии. Я начинаю с сопоставления метамодели NORA и метамодели Essential. https://enterprise-architecture.org/forums/viewtopic.php?t=3158
-- 
+### 5 IT Asset
+- [Business and Application Perspectives of the IT Asset Dashboard](https://enterprise-architecture.org/forums/viewtopic.php?t=2232) 

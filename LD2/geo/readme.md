@@ -12,3 +12,5 @@
 - https://se.moevm.info/lib/exe/fetch.php/courses:ml:swmantic_data_pptx_final.pdf
 - https://seminar.benran.ru/Sb_03/15.htm
 - https://vestnik-sut.ru/2024-1/C01.pdf
+- https://bigdataschool.ru/blog/rdf-analysis-in-serverless-neo4j-on-aura-with-rdflib-neo4j/
+- https://migalkin.github.io/kgcourse2021/lectures/lecture5

@@ -1,16 +1,14 @@
 ### notation
-### best
+### 1 best
 - essential-open-one-page-editor https://github.com/terryvel/essential-open-one-page-editor
 
 ai 
 ### 2 ArchiMate
 "essential ea" free (essential project enterprise-architecture.org) поддерживает нотацию archimate?
 
-Отличный вопрос! Это очень распространенный момент путаницы.
-
 **Короткий ответ: Да, проект Essential EA (от Essential Project) поддерживает нотацию ArchiMate, но не напрямую в своем ядре, а через дополнительный плагин.**
 
-Вот подробное разъяснение:
+Пподробное разъяснение:
 
 ### 1. Ядро Essential EA и его собственная метамодель
 *   Essential EA изначально построен вокруг **собственной, независимой от нотаций метамодели**. Эта метамодель описывает основные концепции архитектуры предприятия (процессы, приложения, данные, роли, технологии и т.д.) и их взаимосвязи.

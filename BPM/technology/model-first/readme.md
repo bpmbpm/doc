@@ -7,3 +7,7 @@ https://ncsa.ru/upload/iblock/d96/hgwl5jxciahzyqe3o37817xuoap52iqq.pdf?ysclid=mg
 
 ### MDD
 - [Introduction to Model-Driven Development, UML-EMF Modeling in Eclipse IDE](https://docs.google.com/document/d/1JRmE-auqJO8zb-skbooUOW1_GLdzNzne0zsUfFwShjc/edit?tab=t.0)
+
+### also
+- https://github.com/bpmbpm/doc/blob/main/EA/grail.md
+  

@@ -1,6 +1,9 @@
 ### notation
+### best
+- essential-open-one-page-editor https://github.com/terryvel/essential-open-one-page-editor
+
 ai 
-### 1 ArchiMate
+### 2 ArchiMate
 "essential ea" free (essential project enterprise-architecture.org) поддерживает нотацию archimate?
 
 Отличный вопрос! Это очень распространенный момент путаницы.
@@ -34,13 +37,13 @@ ai
 
 **Рекомендация:** Зайдите на официальный сайт **enterprise-architecture.org**, перейдите в раздел **Downloads** и найдите там плагин "ArchiMate Model Importer". В его документации вы найдете все детали по установке и совместимости с версиями ArchiMate (2.x, 3.x).
 
-### 1.1
+### 2.1
 - EA Management Tool vs Drawing Tool https://enterprise-architecture.org/about/thought-leadership/ea-management-tool-vs-drawing-tool/
 - editor https://enterprise-architecture.org/university/editor-builder/
   - You can load Open Exchange XML  data into Essential, e.g. from ArchiMate®, using a visual data loader. https://enterprise-architecture.org/university/open-exchange-xml-data-loader-cloud-docker/
   - Essential Viewer https://enterprise-architecture.org/university/essential-viewer/ Он включает в себя большое количество представлений , каталогов , отчетов и моделей для просмотра информации о вашей организации, а для пользователей облачных сервисов/Docker — возможность легко управлять данными непосредственно из средства просмотра, используя различные методы, перетаскивание данных, редактор потоков BPMN, редакторы и т. д.  
 
-### 2 BMPN 
+### 3 BMPN 
 - [forum](https://enterprise-architecture.org/forums/) ; [open source](https://enterprise-architecture.org/forums/viewforum.php?f=21&sid=7c8a8bae74e69c6e6860ab71e65c5332)
   - https://enterprise-architecture.org/forums/viewtopic.php?t=2451
-  - https://enterprise-architecture.org/forums/viewtopic.php?p=32741#p32741 делюсь Essential Open One Page Editor — набором автономных HTML- редакторов, которые упрощают сбор данных для проекта Essential. Value Stream Editor
+  - https://enterprise-architecture.org/forums/viewtopic.php?p=32741#p32741 делюсь Essential Open One Page Editor — набором автономных HTML- редакторов, которые упрощают сбор данных для проекта Essential. Value Stream Editor https://github.com/terryvel/essential-open-one-page-editor

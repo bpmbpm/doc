@@ -11,6 +11,10 @@
  - [Общение с LLM-моделью по собственной базе знаний в Obsidian](https://habr.com/ru/articles/901562/)
  - [Я превратил свой Obsidian Vault в RAG-систему](https://www.reddit.com/r/ObsidianMD/comments/1oaxejh/i_turned_my_obsidian_vault_into_a_rag_system_to/?tl=ru)
  - [Умный поиск по заметкам: как оживить «второй мозг» с помощью RAG](https://habr.com/ru/articles/929692/) 
+
+### obsidian LLM
+- [Я создал «второй мозг» на базе ИИ с помощью Obsidian + Claude Code. Вот как](https://habr.com/ru/companies/bothub/articles/985012/)
+
 ### Простые:
 - [MidnightCommander](https://habr.com/ru/articles/903346/#comment_28208760)
 - [Телеграм-бот для заметок и не только](https://habr.com/ru/articles/903764/)

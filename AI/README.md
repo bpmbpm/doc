@@ -65,3 +65,5 @@ https://github.com/bpmbpm/doc/tree/main/BPM/AI
 ### 2
 - [ТОП-10 малоизвестных AI-сервисов, которые удивляют возможностями](https://habr.com/ru/companies/bothub/articles/963132/)
 - [ChatGPT Atlas не нужен: Пишем свой AI-«браузер» который не стыдно запустить](https://habr.com/ru/articles/982058/)
+### art
+- [Нейрофилософия: как я автоматизировал философию с помощью ChatGPT и Open Code](https://habr.com/ru/articles/984816/)

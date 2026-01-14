@@ -62,7 +62,7 @@ https://github.com/bpmbpm/doc/tree/main/BPM/AI
   - Open Router — доступ к десяткам других моделей через единый интерфейс
   - Локальные решения (Ollama, LM Studio) — полный офлайн-контроль
   - Open-source (Together AI, Fireworks, Groq) — бесплатные и кастомизируемые варианты Таким образом, OpenCode — единственный CLI-ассистент, который реально позволяет собрать гибридный стек: от корпоративных облаков до локальных LLM на вашем ноутбуке.
-  
+- [OpenCode vs Claude Code](https://www.builder.io/blog/opencode-vs-claude-code)  
 ### Дообучение
 - [H2O LLM Studio: как дообучить языковую модель под свои задачи, не привлекая внимания датасаентистов](https://habr.com/ru/companies/vktech/articles/957078/)
 ### Синтетические миры

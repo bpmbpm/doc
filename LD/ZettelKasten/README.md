@@ -30,3 +30,5 @@
 
 #### Top
 - [Где вести базу знаний: 8 российских сервисов и их возможности](https://habr.com/ru/companies/kaiten/articles/984344/)
+#### easy
+- https://habr.com/ru/articles/936508/

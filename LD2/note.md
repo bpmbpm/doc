@@ -1,7 +1,6 @@
 ### note
 
-- https://ru.wikipedia.org/wiki/FOAF
-- https://habr.com/ru/companies/vktech/articles/948492/
+- https://habr.com/ru/companies/vktech/articles/948492/ Как онтология помогает представить структуру данных и семантику приложения
 
 - https://konstantinklepikov.github.io/myknowlegebase/notes/owl.html
 - https://github.com/camel-ai/owl
@@ -16,5 +15,6 @@
 ### example
 - https://habr.com/ru/articles/943476/ Pizza Shop
 - https://ru.ruwiki.ru/wiki/%D0%93%D0%B5%D0%BE%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%BD%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F
-  Геополитическая онтология
+  Геополитическая онтология (OWL онтология государства)
 - https://habr.com/ru/articles/984988/comments/#comment_29385678
+- https://ru.wikipedia.org/wiki/FOAF

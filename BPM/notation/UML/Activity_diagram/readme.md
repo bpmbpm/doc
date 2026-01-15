@@ -15,7 +15,7 @@ BPMN тоже можно рисовать вертикальные дорожк�
 - https://www.researchgate.net/publication/220428263_WIRES_A_Methodology_for_Developing_Workflow_Applications
 
 ### PlantUML
-- https://plantuml.com/ru-dark/activity-diagram-beta [old](https://plantuml.com/ru-dark/activity-diagram-legacy)
+- https://plantuml.com/ru/activity-diagram-beta ; [dark](https://plantuml.com/ru-dark/activity-diagram-beta) ; [old](https://plantuml.com/ru-dark/activity-diagram-legacy)
 
 ### also
 - https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/EPC/epc_mermaid.md

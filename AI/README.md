@@ -52,7 +52,8 @@ https://github.com/bpmbpm/doc/tree/main/BPM/AI
 - Swimmer https://gymnasium.farama.org/environments/mujoco/swimmer/ Эта среда соответствует среде пловца, описанной в докторской диссертации Реми Кулома «Обучение с подкреплением с использованием нейронных сетей и его применение в управлении моторикой» .
 - https://gymnasium.farama.org/environments/mujoco/half_cheetah/
 
-### Code
+### Code (dev)
+vibe coding ( vibe — «ощущение, атмосфера»)
 - [Топ-7 бесплатных нейросетей для генерации кода](https://habr.com/ru/companies/bothub/articles/955528/)
 - [OpenCode: Революция в мире AI-инструментов для разработки](https://habr.com/ru/articles/949924/) в OpenCode можно использовать любую модель под конкретную задачу:
   - OpenAI (GPT-5) — универсальные модели для кода и аналитики
@@ -63,6 +64,7 @@ https://github.com/bpmbpm/doc/tree/main/BPM/AI
   - Локальные решения (Ollama, LM Studio) — полный офлайн-контроль
   - Open-source (Together AI, Fireworks, Groq) — бесплатные и кастомизируемые варианты Таким образом, OpenCode — единственный CLI-ассистент, который реально позволяет собрать гибридный стек: от корпоративных облаков до локальных LLM на вашем ноутбуке.
 - [OpenCode vs Claude Code](https://www.builder.io/blog/opencode-vs-claude-code)  
+- https://github.com/bpmbpm/doc/tree/main/AI/dev
 ### Дообучение
 - [H2O LLM Studio: как дообучить языковую модель под свои задачи, не привлекая внимания датасаентистов](https://habr.com/ru/companies/vktech/articles/957078/)
 ### Синтетические миры

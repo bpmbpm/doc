@@ -10,6 +10,7 @@ LD-проекты (обобщение)
 - папка [doc/](https://github.com/bpmbpm/doc/tree/main?tab=readme-ov-file#ld-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B)
 - [doc, Некоторые проекты](https://github.com/bpmbpm/doc/tree/main#%D0%BD%D0%B5%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B)
 - папка [онтологии](https://github.com/bpmbpm/doc/blob/main/LD/ontology/README.md)
+- https://github.com/bpmbpm/doc/tree/main/Project/test/ontonet Project
 ### 1 ontodia
 - [github.com](https://github.com/metaphacts/ontodia/), info @metaphacts.com
 - [npmjs](https://www.npmjs.com/package/ontodia/v/0.6.1-dev.20171013)

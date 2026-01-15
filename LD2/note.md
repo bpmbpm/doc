@@ -10,7 +10,7 @@
 
 - https://ailev.livejournal.com/1305176.html
 ### gis
-- https://miigaik.ru/journal/archive/2018/2018_62_1_RU/Geodesy_2018_62_1_RU_09.pdf
+- https://miigaik.ru/journal/archive/2018/2018_62_1_RU/Geodesy_2018_62_1_RU_09.pdf ; https://habr.com/ru/articles/982556/#comment_29388696 За последние 20 лет было
 
 ### example
 - https://habr.com/ru/articles/943476/ Pizza Shop

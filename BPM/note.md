@@ -3,3 +3,5 @@
   - https://github.com/humam-kourani/ ; https://github.com/humam-kourani/ProMoAI
   - https://promoai.streamlit.app/
 - [Можно ли с помощью ИИ решать сложные и критичные задачи?](https://habr.com/ru/companies/architeezy/articles/953642/)
+
+

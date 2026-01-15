@@ -18,3 +18,15 @@
   Геополитическая онтология (OWL онтология государства)
 - https://habr.com/ru/articles/984988/comments/#comment_29385678
 - https://ru.wikipedia.org/wiki/FOAF
+- https://cyberleninka.ru/article/n/pravovye-ontologii-v-mashinochitaemom-formate-instrument-prodvizheniya-yuridicheskih-znaniy-v-semanticheskoy-seti правовые
+- 
+### 2
+- https://www.ontology-of-designing.ru/article/2021_2(40)/Ontology_Of_Designing_2_2021_6_A.V.Vidia,N.O.Dorodnykh,A.Yu.Yurin_212-226.pdf
+- https://scispace.com/pdf/ontology-development-of-open-government-data-on-example-of-3m5abeofd5.pdf
+- https://masters.donntu.ru/2020/fknt/chaika/library/article4.htm
+- https://sherdim.ru/pts/semantic_web/REC-owl-features-20040210_ru.html
+
+### base
+- https://www.reddit.com/r/semanticweb/comments/mg8s5i/cant_get_the_terms_difference_between_rdf_rdfs/?tl=ru
+- https://vestnik.astu.org/ru/nauka/article/32638/view
+- 

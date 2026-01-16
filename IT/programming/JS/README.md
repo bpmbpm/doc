@@ -13,3 +13,5 @@
 - [Как обойти CORS при запуске сайта не на сервере?](https://qna.habr.com/q/1318344)
 ### ORM
 - [ORM в Node.js](https://habr.com/ru/articles/959518/)
+### obj-class
+- [Функции-конструкторы и оператор new в JavaScript](https://habr.com/ru/companies/selectel/articles/976548/)

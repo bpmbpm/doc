@@ -8,3 +8,8 @@
 #### demo
 - https://essentialviewer.com/demo/report ; [form](https://essentialviewer.com/demo/report?XML=reportXML.xml&PMA=essential_baseline_v5_Class83&XSL=common/portal_template.xsl&LABEL=General%20Enterprise%20Architecture%20Portal&cl=en-gb)
 - screenshots https://enterprise-architecture.org/resources/screenshots/
+
+### general directions
+- https://github.com/bpmbpm/rdf-grapher/tree/main/ver6d#general-directions
+- Общее направление:
+  - https://github.com/terryvel/essential-open-one-page-editor Value Stream но в VAD [Value-Added Chain](https://studopedia.ru/9_24437_model-protsessa-dobavlennoy-stoimosti-VAD.html) 

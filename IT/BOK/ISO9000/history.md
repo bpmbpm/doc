@@ -64,5 +64,5 @@
 - 1970s-80s IDEF-методология создана на средства ВВС США [(ICAM)](https://en.wikipedia.org/wiki/IDEF) и в дальнейшем передана миру (как и DoD стек TCP\IP)
 
 ## 3 gost
-![ris](pic\iso_gost.jpg)
+![ris](pic/iso_gost.jpg)
 

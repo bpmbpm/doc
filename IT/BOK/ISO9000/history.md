@@ -56,9 +56,13 @@
 ### info
 - [статьи icgrp.ru](https://icgrp.ru/docs/list/article/?action=assortment&parent=18)
 - [Двигаться дальше ISO 9000 deming.ru](https://www.deming.ru/TeorUpr/Quality_Collection/17_Dvigatsa_dalshe_ISO9000.htm)
-
+- https://t.me/abpmp/58091
 ## 2 glava_1.pdf
 - [glava_1.pdf](https://www.mann-ivanov-ferber.ru/assets/files/bookparts/the-process-approach-to-management/glava_1.pdf)
 ![ris](pic/ris_1_2.png)
 
 - 1970s-80s IDEF-методология создана на средства ВВС США [(ICAM)](https://en.wikipedia.org/wiki/IDEF) и в дальнейшем передана миру (как и DoD стек TCP\IP)
+
+## 3 gost
+![ris](pic\iso_gost.jpg)
+

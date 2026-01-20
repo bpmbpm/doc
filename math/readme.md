@@ -50,3 +50,4 @@
 ### term
 - [Имитация, симуляция или эмуляция](https://habr.com/ru/articles/985040/)
 - дескриптивная теория множеств [Бесконечность, графы и Wi-Fi: неожиданный мост между теорией множеств и информатикой](https://habr.com/ru/companies/first/articles/984714/) 
+- tensor от  tensus, «напряжённый» [wiki](https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BD%D0%B7%D0%BE%D1%80) ; [Магия тензорной алгебры: Часть 1 — что такое тензор и для чего он нужен?](https://habr.com/ru/articles/261421/) ; [reddit](https://www.reddit.com/r/AskPhysics/comments/1hept68/can_someone_please_explain_tensors_to_me/?tl=ru)

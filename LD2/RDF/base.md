@@ -28,3 +28,4 @@
 ### link
 - https://cybernetics.fandom.com/ru/wiki/Turtle
 - https://w3c.github.io/rdf-turtle/spec/ ; https://www.w3.org/TR/rdf12-n-triples/#simple-triples ; https://book.validatingrdf.com/bookHtml008.html
+- ShorthandRDF https://www.w3.org/wiki/ShorthandRDF

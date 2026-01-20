@@ -24,3 +24,6 @@
 
 Общее название  
 Такие сокращения в спецификации RDF часто называют Abbreviations (сокращения) или Shorthand forms (краткие формы), которые делают формат Turtle «кратким» (Terse).
+
+### link
+- https://cybernetics.fandom.com/ru/wiki/Turtle

@@ -75,3 +75,4 @@ id1-predicateName-id2
 - rdf:type vs rdfs:Class vs owl:Class https://trinidata.ru/tech_tech.htm ; https://trinidata.ru/files/SemanticIntro.pdf
 - KG Course 2021 [Лекция 3](https://migalkin.github.io/kgcourse2021/lectures/lecture3) ; [Лекция 4](https://migalkin.github.io/kgcourse2021/lectures/lecture4)
 - https://intuit.ru/studies/courses/1996/215/lecture/5544
+- https://github.com/bpmbpm/doc/blob/main/LD2/RDF/base.md

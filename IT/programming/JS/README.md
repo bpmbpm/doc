@@ -15,3 +15,4 @@
 - [ORM в Node.js](https://habr.com/ru/articles/959518/)
 ### obj-class
 - [Функции-конструкторы и оператор new в JavaScript](https://habr.com/ru/companies/selectel/articles/976548/)
+- [Синтаксический сахар или технический деготь: классы в JavaScript](https://habr.com/ru/companies/selectel/articles/976550/)

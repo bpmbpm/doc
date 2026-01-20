@@ -55,3 +55,6 @@
 - [Компонентная модель бизнеса компании "ІВМ"](https://studme.org/87174/ekonomika/vosmiprotsessnaya_model_predpriyatiya)
 - [Архитектура ИТ решений. Часть 1. Понятие «Архитектура»](https://habr.com/ru/articles/955218/) ARadzishevskiy
 - [Документирование архитектуры](https://habr.com/ru/articles/957348/)
+
+### 3
+- [Что читать и смотреть в 2026. Эпичная подборка для разрабов, лидов, CTO и архитекторов](https://habr.com/ru/articles/986832/)

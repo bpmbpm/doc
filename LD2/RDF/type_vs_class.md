@@ -33,7 +33,7 @@ RDF \ RDFS \ OWL: типы (подтипы) и классы (подклассы)
 *   **Синтаксис:**
     ```turtle
     :Person rdf:type rdfs:Class .
-    # или короткая форма, если в префиксах объявлен rdfs
+    # или короткая форма
     :Person a rdfs:Class .
     ```
 *   **Рекомендации и ограничения:** Базовый конструктор для создания классов в RDFS. В OWL часто используют `owl:Class`, но они в значительной степени взаимозаменяемы (см. ниже).
@@ -145,7 +145,8 @@ vad:DetailedChild
 - https://ru.wikipedia.org/wiki/RDFS
 - https://semanticweb.narod.ru/2.html
 -  язык СИНТЕЗ https://synthesis.frccsc.ru/synthesis/publications/s20010911/s20010911.pdf
-
+- https://kb.comindware.ru/article/napisanie-vyrazhenij-na-yazyke-n3-2401.html
+- https://trinidata.ru/tech_classes.htm
 ### 2
 Сокращенная запись (QName) для rdf:type в RDF/Turtle — это просто буква a
 ```

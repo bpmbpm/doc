@@ -12,3 +12,5 @@ lean лежит [IT/BOK/](https://github.com/bpmbpm/doc/blob/main/IT/BOK/README.
 
 ### разное
 - Нулевой процесс (нулевая \ корневая архитектура) https://github.com/bpmbpm/doc/blob/main/BPM/theory/company-wide-process.md
+- https://edgenode.org/ru-RU/
+

@@ -23,5 +23,5 @@
 
 https://www.atlassian.com/ru/software/jira/comparison/jira-vs-github
 
-## info
+### info
 - [Jira без боли (часть 1)](https://habr.com/ru/companies/karuna/articles/695212/)

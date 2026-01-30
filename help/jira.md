@@ -21,3 +21,7 @@
 | Слияние pull request | Задача в Jira переходит из «Under Code Review» в «Ready for Testing» |
 | Закрытие issue в GitHub | Задача в Jira закрывается (например, устанавливается статус «Done») |
 
+https://www.atlassian.com/ru/software/jira/comparison/jira-vs-github
+
+## info
+- [Jira без боли (часть 1)](https://habr.com/ru/companies/karuna/articles/695212/)

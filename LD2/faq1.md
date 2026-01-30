@@ -13,8 +13,9 @@ SPARQL 1.1 Update предоставляет операции модификац
 3. SPIN (SPARQL Inferencing Notation)
 Наиболее близкий аналог к хранимым процедурам — позволяет определять правила и функции на SPARQL, которые хранятся в самом RDF графе.
 
-https://claude.ai/share/d1f75283-c39b-456a-879f-e80dd95dc0f6
-
+link
+- https://claude.ai/share/d1f75283-c39b-456a-879f-e80dd95dc0f6
+- SPARQL-driven Programming Guide https://github.com/bpmbpm/rdf-grapher/blob/main/ver8tree/doc/sparql-driven-programming.md
 ### sparql js-lib
 Обзор современных sparql js-библиотек (open source)
 

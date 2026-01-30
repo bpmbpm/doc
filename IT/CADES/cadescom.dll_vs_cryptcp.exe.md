@@ -1,4 +1,4 @@
-### cadescom.dll vs cryptcp.exe
+### cadescom.dll vs cryptcp.exe_.md
 
 Детальное сравнение функциональных возможностей **cadescom.dll** и **cryptcp.exe** с указанием *уникальных* функций каждого инструмента.
 

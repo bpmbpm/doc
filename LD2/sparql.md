@@ -1,4 +1,9 @@
 ### SPARQL
+### ver
+- SPARQL 1.2 Update
+  - W3C Working Draft 14 August 2025 https://www.w3.org/TR/sparql12-update/
+
+### modif 
 - https://en.wikipedia.org/wiki/SPARQL 
   - GeoSPARQL определяет функции фильтрации для запросов к географическим информационным системам (ГИС) с использованием общепризнанных стандартов OGC ( GML , WKT и др.).
   - SPARUL — это ещё одно расширение SPARQL. Оно позволяет обновлять хранилище RDF с помощью этого декларативного языка запросов, добавляя INSERTметоды DELETE.
@@ -17,3 +22,6 @@
 #### SparqlEndpoints
 - https://www.w3.org/wiki/SparqlEndpoints
 - [archive](https://web.archive.org/web/20110417013313/http://labs.mondeca.com/sparqlEndpointsStatus/endpoint/endpoint.html)
+
+### Protege
+- Выполнение SPARQL-запросов в Protégé https://sites.google.com/site/anisimovkhv/learning/iis/labrab/labrab1_6

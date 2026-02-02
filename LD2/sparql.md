@@ -8,3 +8,12 @@
 #### 2
 - https://cw.fel.cvut.cz/old/_media/courses/osw/semantic-data-persistence.pdf
 - https://github.com/bpmbpm/rdf-grapher/blob/main/ver8tree/requirements/SPARQL.md
+
+#### alternative
+- RDF query language [wiki](https://en.wikipedia.org/wiki/RDF_query_language)
+#### also 
+- SHACL https://en.wikipedia.org/wiki/SHACL ; [reddit](https://www.reddit.com/r/semanticweb/comments/127h3un/what_is_shacl_used_for_can_we_infer_new_knowledge/?tl=ru)
+
+#### SparqlEndpoints
+- https://www.w3.org/wiki/SparqlEndpoints
+- [archive](https://web.archive.org/web/20110417013313/http://labs.mondeca.com/sparqlEndpointsStatus/endpoint/endpoint.html)

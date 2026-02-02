@@ -1,5 +1,8 @@
 ## Hive Mind
-- https://habr.com/ru/articles/974924/comments/#comment_29338632
+### habr
+- https://habr.com/ru/articles/974924/comments/#comment_29338632 своим ботом-программистом использую 6 шаблонов для популярных языков программирования JavaScript/TypeScript, Rust, Python, Go, C#, Java. Это шаблоны репозиториев с заранее настроенным CI/CD, который включает проверки линтерами (что стиль кода соответствует настроенным правилам), форматтерами (что код отформатирован так, как это того ожидается в проекте, то есть в едином стиле), тесты (unit, integration, e2e и т.п.), есть настроенный флоу для changesets с возможностью мержа нескольких версий в одну, если вдруг CI/CD сфейлился.
+- https://habr.com/ru/articles/984026/comments/#comment_29370414 можно ставить в докере локально или у себя на сервере и использовать свою подписку на Claude MAX $200
+### hive-mind
 - https://github.com/link-assistant/hive-mind ; https://github.com/link-assistant/hive-mind/blob/main/docs/BEST-PRACTICES.md
 ## agent
 - https://github.com/link-assistant/agent -tool agent с бесплатной моделью Grok Code Fast 1 (OpenCode). [grok-4.1-fast](https://openrouter.ai/x-ai/grok-4.1-fast) - больше не работает, т.к. уже не бесплатный.

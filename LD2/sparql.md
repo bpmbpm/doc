@@ -4,3 +4,7 @@
   - SPARUL — это ещё одно расширение SPARQL. Оно позволяет обновлять хранилище RDF с помощью этого декларативного языка запросов, добавляя INSERTметоды DELETE.
   - XSPARQL — это интегрированный язык запросов, объединяющий XQuery и SPARQL для одновременного запроса данных из источников XML и RDF. [ 16 ]
 - https://ru.wikipedia.org/wiki/SPARQL
+
+#### 2
+- https://cw.fel.cvut.cz/old/_media/courses/osw/semantic-data-persistence.pdf
+- https://github.com/bpmbpm/rdf-grapher/blob/main/ver8tree/requirements/SPARQL.md

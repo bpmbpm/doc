@@ -2,7 +2,7 @@
 
 ### info
 #### SPARQL 
-- https://github.com/bpmbpm/rdf-grapher/blob/main/ver8tree/requirements/SPARQL.md
+- https://github.com/bpmbpm/rdf-grapher/blob/main/ver8tree/requirements/SPARQL.md 3.3 Table
 
 #### quadstore 
 

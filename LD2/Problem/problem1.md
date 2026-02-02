@@ -211,5 +211,11 @@ writer.end();
 
 ---  
 
+## 2 comunica
+### 2.1 engine.queryBindings
+- https://github.com/rdfjs/N3.js/issues/117
+- https://rdfjs.dev/quadstore
+- https://comunica.dev/docs/query/advanced/statistics_tracking/
+- https://www.npmjs.com/package/quadstore-comunica
 ### also
 - https://cs-courses.mines.edu/csci370/FS2022F/Proposals/CSMFierro.pdf

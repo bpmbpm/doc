@@ -20,6 +20,7 @@ quadstore — форма базы данных, которая позволяе�
 ## Quadstore \ TriG +SPARQL
 ### ver 1 (HM)
 - https://github.com/bpmbpm/rdf-grapher/blob/main/ver8tree/requirements/SPARQL.md ; [3.3 Table](https://github.com/bpmbpm/rdf-grapher/blob/main/ver8tree/requirements/SPARQL.md#33-browser-compatible-triplestore-options) Library: N3.js Store, Comunica, rdflib.js, Graphy.js, Oxigraph WASM, LevelGraph, Quadstore.
+- https://github.com/bpmbpm/rdf-grapher/tree/main/ver9b/design
 ### ver 2 (you.com)
 Задача: организовать quadstore для хранения TriG (Turtle with Named Graphs).  
 Далее к этому хранилищу TriG (quadstore) делать SPARQL 1.1 – запросы (включая INSERT и DELETE).  

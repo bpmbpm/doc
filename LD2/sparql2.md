@@ -1,5 +1,5 @@
 ## sparql2.md
-- https://migalkin.github.io/kgcourse2021/lectures/lecture3  
+- https://migalkin.github.io/kgcourse2021/lectures/lecture3  ; https://migalkin.github.io/kgcourse2021/assets/slides/Lecture3.pdf  
 Триплет - это путь Узел - связь - Узел:  
 ?s ?p ?o - все пути графа, т.е. все триплеты
   - reasoning  

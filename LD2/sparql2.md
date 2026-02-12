@@ -1,10 +1,13 @@
 ## sparql2.md
-- https://migalkin.github.io/kgcourse2021/lectures/lecture3  ; https://migalkin.github.io/kgcourse2021/assets/slides/Lecture3.pdf  
+### kgcourse2021
+https://migalkin.github.io/kgcourse2021/lectures/lecture3  ; https://migalkin.github.io/kgcourse2021/assets/slides/Lecture3.pdf  
 Триплет - это путь Узел - связь - Узел:  
 ?s ?p ?o - все пути графа, т.е. все триплеты
   - reasoning  
 Простейший пример - ризонинг по иерархии классов через предикат rdfs:subClassOf. Если задан следующий граф:
-- https://trinidata.ru/tech_sparql.htm
+
+### trinidata
+https://trinidata.ru/tech_sparql.htm
 Запрос на добавление данных выглядит просто:
 ```
 INSERT DATA { <http://example.com/#alpha>	 <http://example.com/#Name> "Alpha, JSC".

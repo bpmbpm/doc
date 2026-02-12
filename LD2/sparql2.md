@@ -1,12 +1,12 @@
 ## sparql2.md
-### kgcourse2021
+### 1 kgcourse2021
 https://migalkin.github.io/kgcourse2021/lectures/lecture3  ; https://migalkin.github.io/kgcourse2021/assets/slides/Lecture3.pdf  
 Триплет - это путь Узел - связь - Узел:  
 ?s ?p ?o - все пути графа, т.е. все триплеты
   - reasoning  
 Простейший пример - ризонинг по иерархии классов через предикат rdfs:subClassOf. Если задан следующий граф:
 
-### trinidata
+### 2 trinidata
 https://trinidata.ru/tech_sparql.htm
 Запрос на добавление данных выглядит просто:
 ```
@@ -23,3 +23,10 @@ DELETE WHERE { <http://example.com/#beta> ?b ?c }
 
 `ASK { ?cust <http://example.com/#Child> ?parent }`
 На нашей модели результатом такого запроса будет true, истина.
+
+### 3 questions
+https://stackoverflow.com/questions/9705495/sparql-query-to-delete
+
+### 4
+- https://nodepit.com/node/org.knime.semanticweb.nodes.delete.DeleteRowsNodeFactory
+- https://docs.progress.com/bundle/marklogic-server-develop-with-semantic-graphs-11/page/topics/sparql-update.html См. раздел «Использование функции SPARQL Update с XQuery или серверным JavaScript» .

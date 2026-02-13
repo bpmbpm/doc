@@ -10,3 +10,9 @@
 Требует высокой интуиции, чтобы "не оборвать леску" (не довести сотрудника до увольнения или депрессии). Радикальныей аналог "кнута и пряника" (пример, как разговор в Северном с аккумуляторщиком). 
 
 ### Метод лягушки (тайм-менеджмент)
+- [Брайан Трейси https://4brain.ru/](https://4brain.ru/blog/metod-sesh-lyagushku-kak-perestat-otkladyvat-dela-i-nachat-zhit-bez-stressa)
+
+### Басня об управлении бизнес-процессами: "Лебедь, рак и щука"
+- https://ria-stk.ru/mmq/adetail.php?ID=189713 ; https://dzen.ru/a/ZbuIqRNqFmf1MOoL
+- https://books.yandex.ru/books/dJfleqyq/read-online
+- https://www.e-xecutive.ru/management/itforbusiness/1683519-zanimatelnyi-menedzhment-kak-lebed-rak-i-schuka-upravlyaut-kompaniei

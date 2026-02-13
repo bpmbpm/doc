@@ -16,3 +16,4 @@
 
 ## my
 - https://github.com/bpmbpm/rdf-grapher/blob/main/ver1
+- https://github.com/bpmbpm/rdf-grapher/blob/main/ver1/rdf_viewer.md

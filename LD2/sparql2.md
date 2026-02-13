@@ -48,3 +48,6 @@ SPARQL-операторы INSERT DATA и INSERT используются для 
 Сценарий: INSERT DATA подходит для простых загрузок, INSERT — для преобразования или обновления данных.  
 Ограничения: INSERT DATA не допускает Blank Nodes в некоторых реализациях, в то время как INSERT обеспечивает полную гибкость
 
+### Problem
+@prefix — синтаксис Turtle/RDF, а не SPARQL. В SPARQL используется PREFIX
+

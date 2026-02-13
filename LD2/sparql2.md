@@ -37,6 +37,10 @@ https://stackoverflow.com/questions/9705495/sparql-query-to-delete
 
 ### lectures
 - https://aidanhogan.com/teaching/cc7220-1-2020/lectures/WdD2020-08.pdf
+
+### zazuko.com
+- https://zazuko.com/get-started/sparql-query/ Помимо ответов в виде результирующего набора, SPARQL может возвращать и RDF-подграфы. 
+
 ### 5 INSERT DATA vs INSERT 
 SPARQL-операторы INSERT DATA и INSERT используются для добавления триплетов в RDF-граф, но имеют разное назначение: INSERT DATA — для добавления конкретных, статических данных без переменных, а INSERT — для вставки данных на основе существующих шаблонов или результатов поиска (WHERE).
 - INSERT DATA: Добавляет конкретные триплеты напрямую. Не допускает использования переменных или шаблонов. Применяется, когда данные известны заранее.  

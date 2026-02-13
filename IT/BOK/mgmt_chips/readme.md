@@ -16,3 +16,6 @@
 - https://ria-stk.ru/mmq/adetail.php?ID=189713 ; https://dzen.ru/a/ZbuIqRNqFmf1MOoL
 - https://books.yandex.ru/books/dJfleqyq/read-online
 - https://www.e-xecutive.ru/management/itforbusiness/1683519-zanimatelnyi-menedzhment-kak-lebed-rak-i-schuka-upravlyaut-kompaniei
+
+### also
+- https://github.com/bpmbpm/doc/tree/main/psychology

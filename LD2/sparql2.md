@@ -55,5 +55,5 @@ SPARQL-операторы INSERT DATA и INSERT используются для 
 Ограничения: INSERT DATA не допускает Blank Nodes в некоторых реализациях, в то время как INSERT обеспечивает полную гибкость
 
 ### Problem
-@prefix — синтаксис Turtle/RDF, а не SPARQL. В SPARQL используется PREFIX
+@prefix — синтаксис Turtle/RDF, а не SPARQL. В SPARQL используется PREFIX и без точки
 

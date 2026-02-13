@@ -29,4 +29,8 @@ https://stackoverflow.com/questions/9705495/sparql-query-to-delete
 
 ### 4
 - https://nodepit.com/node/org.knime.semanticweb.nodes.delete.DeleteRowsNodeFactory
-- https://docs.progress.com/bundle/marklogic-server-develop-with-semantic-graphs-11/page/topics/sparql-update.html См. раздел «Использование функции SPARQL Update с XQuery или серверным JavaScript» .
+- https://docs.progress.com/bundle/marklogic-server-develop-with-semantic-graphs-11/page/topics/sparql-update.html См. раздел «Использование функции SPARQL Update с XQuery или серверным JavaScript» 
+
+### online
+- https://atomgraph.github.io/SPARQL-Playground/ ; https://tools.kurrawong.ai/query
+- endpoint https://sparql.carsten.io/ ; https://www.genome.jp/sparql/linkdb

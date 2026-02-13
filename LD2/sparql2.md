@@ -34,3 +34,17 @@ https://stackoverflow.com/questions/9705495/sparql-query-to-delete
 ### online
 - https://atomgraph.github.io/SPARQL-Playground/ ; https://tools.kurrawong.ai/query
 - endpoint https://sparql.carsten.io/ ; https://www.genome.jp/sparql/linkdb
+
+### 5 INSERT DATA и INSERT 
+SPARQL-операторы INSERT DATA и INSERT используются для добавления триплетов в RDF-граф, но имеют разное назначение: INSERT DATA — для добавления конкретных, статических данных без переменных, а INSERT — для вставки данных на основе существующих шаблонов или результатов поиска (WHERE).
+- INSERT DATA: Добавляет конкретные триплеты напрямую. Не допускает использования переменных или шаблонов. Применяется, когда данные известны заранее.  
+`INSERT DATA { <http://example/subject> <http://example/predicate> "Object" . }`
+- INSERT: Вставляет данные, сгенерированные по результатам выполнения запроса WHERE (шаблон данных). Позволяет использовать переменные.
+`INSERT { ?s ?p "NewObject" . }`
+`WHERE { ?s ?p "OldObject" . }`
+
+Основные различия:  
+Гибкость: INSERT поддерживает переменные и WHERE, INSERT DATA — нет.  
+Сценарий: INSERT DATA подходит для простых загрузок, INSERT — для преобразования или обновления данных.  
+Ограничения: INSERT DATA не допускает Blank Nodes в некоторых реализациях, в то время как INSERT обеспечивает полную гибкость
+

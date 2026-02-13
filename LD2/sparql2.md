@@ -56,6 +56,6 @@ SPARQL-операторы INSERT DATA и INSERT используются для 
 
 ### Problem
 - @prefix — синтаксис Turtle/RDF, а не SPARQL. В SPARQL используется PREFIX 
-- без точки
+- без точки (т.е. вначале и в конце убираем по символу)
 - PREFIX vad: <http://example.org/vad#>
 

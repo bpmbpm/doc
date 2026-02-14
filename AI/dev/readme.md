@@ -6,6 +6,14 @@
 - system
   - HM ; Clawdbot 
 - https://habr.com/ru/news/995534/ На Vending Bench 2 модель занимает первое место среди open-source и приближается к Claude Opus 4.5. 
+### glm & kimi
+kimi-k2.5 есть в двух подписках https://github.com/link-assistant/hive-mind/blob/main/docs/FREE_MODELS.md
+- kilo/glm-5-free
+- kilo/kimi-k2.5-free
+- opencode/kimi-k2.5-free  
+`--tool agent --model kilo/glm-5-free` - эта штука должна быть на уровне Opus 4.5  
+glm-5 не может читать картинки, а вот kimi-k2.5 может, поэтому для визуальной части можно использовать kimi-k2.5, а для мозгов и планированя glm-5.
+
 ### forum
 Советы про вайб кодинг, когда с объемом ломается код) лучше спросить? Какой либо волшебный промт типа "не ломай код" может есть? 
 - https://habr.com/ru/articles/991188/#comment_29460684

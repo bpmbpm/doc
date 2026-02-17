@@ -59,3 +59,10 @@ SPARQL-операторы INSERT DATA и INSERT используются для 
 - без точки (т.е. вначале и в конце убираем по символу)
 - PREFIX vad: <http://example.org/vad#>
 
+### link
+- GeoPuzzle — собери мир по кусочкам https://habr.com/ru/articles/427209/
+- https://migalkin.github.io/kgcourse2021/assets/slides/Lecture3.pdf
+- Язык запросов SPARQL для RDF https://web.archive.org/web/20090401192412/http://shcherbak.net/translations/ru_sparql_shcherbak_net.html
+- https://cyberleninka.ru/article/n/razrabotka-intellektualnogo-redaktora-sparql-zaprosov
+- Основы SPARQL https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial/ru
+- https://tyvik.ru/posts/sparql/

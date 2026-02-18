@@ -63,6 +63,8 @@ SPARQL-операторы INSERT DATA и INSERT используются для 
 - GeoPuzzle — собери мир по кусочкам https://habr.com/ru/articles/427209/
 - https://migalkin.github.io/kgcourse2021/assets/slides/Lecture3.pdf
 - Язык запросов SPARQL для RDF https://web.archive.org/web/20090401192412/http://shcherbak.net/translations/ru_sparql_shcherbak_net.html
-- https://cyberleninka.ru/article/n/razrabotka-intellektualnogo-redaktora-sparql-zaprosov
+- https://cyberleninka.ru/article/n/razrabotka-intellektualnogo-redaktora-sparql-zaprosov РАЗРАБОТКА ИНТЕЛЛЕКТУАЛЬНОГО РЕДАКТОРА SPARQL-ЗАПРОСОВ
 - Основы SPARQL https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial/ru
 - https://tyvik.ru/posts/sparql/
+- https://ontograph.ru/sparql/
+- немного о SPARQL точке доступа https://habr.com/ru/articles/50197/

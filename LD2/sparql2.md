@@ -69,3 +69,6 @@ SPARQL-операторы INSERT DATA и INSERT используются для 
 - https://ontograph.ru/sparql/
 - немного о SPARQL точке доступа https://habr.com/ru/articles/50197/
 - SPARQL-запрос ["язык программирования"](https://ru.wikiversity.org/wiki/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%92%D0%B8%D0%BA%D0%B8%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85/%D0%AF%D0%B7%D1%8B%D0%BA%D0%B8_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)
+- https://studfile.net/preview/17170468/page:5/
+- https://www.w3.org/wiki/SPARQL/Extensions
+- https://bigdataschool.ru/blog/graph-languages-overview/ 5 популярных языков запросов к графам

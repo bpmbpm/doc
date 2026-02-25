@@ -206,7 +206,7 @@ Wikidata — это огромная база знаний, которую мо�
 | **Основной вариант использования** | Простые, ограниченные по размеру древа, где важна простота создания и чтения человеком (например, учебные примеры). | Системы, где важна целостность данных, возможность сложных запросов и автоматическое обнаружение новых связей. Подходит для баз знаний. |
 
 Ссылки:
-1. http://www.j-parc.jp/ctrl/documents/articles/PlantUML/FamilyTree_in_Graphviz.html#other-example
+1. http://www.j-parc.jp/ctrl/documents/articles/PlantUML/FamilyTree_in_Graphviz.html#other-example Примеры
 2. https://raw.githubusercontent.com/MatteusV/DockYard-Academy/eb6b60cea6d2d39ca0edf9ba3908b2bbc6fe9d89/exercises/family_tree.livemd
 3. https://m.wikidata.org/w/index.php?title=Wikidata:WikiProject_Genealogy&diff=cur&oldid=1138697776
 4. https://github.com/Melimelo237/genelogy
@@ -216,3 +216,6 @@ Wikidata — это огромная база знаний, которую мо�
 8. https://www.npmjs.com/~balkangraph?activeTab=packages
 9. https://qiita.com/wonox/items/87501b36b59ccead9f5b
 10. https://pypi.org/project/snutree/0.2.1/
+
+### 3
+- https://github.com/JonasHeller/genealogical-trees Следует отметить, что онтология FHKB, хотя и очень мала, использует необычайно сложную иерархию ролей и довольно сложна для современных систем логического вывода.

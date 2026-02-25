@@ -18,3 +18,6 @@
 ### 2
 - [Онтологический подход к проектированию биллинговых систем](https://cyberleninka.ru/article/n/ontologicheskiy-podhod-k-proektirovaniyu-billingovyh-sistem)
 - [МЕТЕОР](https://gsom.spbu.ru/files/1/17-07-00228%20%D0%9E%D1%82%D1%87%D0%B5%D1%82%20%D0%B7%D0%B0%202018%20%D0%B3%D0%BE%D0%B4%20(%D0%93%D0%B0%D0%B2%D1%80%D0%B8%D0%BB%D0%BE%D0%B2%D0%B0%20%D0%A2%D0%90)%20(1)%20(1).pdf)
+
+### Manchester syntax
+- https://www.iprosoft.ru/docs/?nd=493701322 ГОСТ Р 56272-2014/ISO/TS 15926-8:2011

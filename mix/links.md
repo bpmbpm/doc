@@ -6,4 +6,5 @@ habr:
 github
 - [linksplatform](https://github.com/linksplatform/.github/blob/main/profile/README.ru.md), [Lino](https://github.com/linksplatform/Protocols.Lino) , [demo CLI](https://github.com/link-foundation/link-cli) , https://t.me/agirussia/96737
 - https://github.com/avers52/VAD-DOT/issues/1 ; https://github.com/iu5git/JavaScript?tab=readme-ov-file
+- https://github.com/Jhon-crow
 - https://cyberleninka.ru/article/n/podhod-k-otsenke-nadezhnosti-klasternyh-struktur/viewer 

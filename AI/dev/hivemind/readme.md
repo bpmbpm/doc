@@ -25,3 +25,6 @@ HM сделал PR, я посмотрел PR, Далее: алзакрыл PR б
 
 ### limits
 Сгорает только если мы недельный лимит не успели использовать. Зачем тогда пятичасовой? 
+
+### Jhon-Crow
+- https://github.com/Jhon-Crow/many-from-hiv-minde/tree/main/docs/case-studies/issue-1

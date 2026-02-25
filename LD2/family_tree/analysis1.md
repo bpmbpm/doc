@@ -209,4 +209,10 @@ Wikidata — это огромная база знаний, которую мо�
 1. http://www.j-parc.jp/ctrl/documents/articles/PlantUML/FamilyTree_in_Graphviz.html#other-example
 2. https://raw.githubusercontent.com/MatteusV/DockYard-Academy/eb6b60cea6d2d39ca0edf9ba3908b2bbc6fe9d89/exercises/family_tree.livemd
 3. https://m.wikidata.org/w/index.php?title=Wikidata:WikiProject_Genealogy&diff=cur&oldid=1138697776
-4. 
+4. https://github.com/Melimelo237/genelogy
+5. https://www.wikidata.org/w/index.php?title=Wikidata:Tools/Visualize_data&curid=39721428&diff=2280408869&oldid=2280408712
+6. https://frdm.cyut.edu.tw/~ckhung/c/ml249g/hw3.php
+7. https://lists.wikimedia.org/hyperkitty/list/wikidata@lists.wikimedia.org/message/UXVHB3YEPJVACO2ZUVYU2XTY75YTH6AB/
+8. https://www.npmjs.com/~balkangraph?activeTab=packages
+9. https://qiita.com/wonox/items/87501b36b59ccead9f5b
+10. https://pypi.org/project/snutree/0.2.1/

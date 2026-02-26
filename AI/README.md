@@ -80,3 +80,7 @@ vibe coding ( vibe — «ощущение, атмосфера»)
 - Producer.ai https://habr.com/ru/companies/bothub/articles/986122/
 ### 3
 - [Апофатический ИИ: Почему нейросети учатся через «НЕТ», и как синтетические данные убивают смысл](https://habr.com/ru/articles/986162/)
+
+### AI (VPN)
+- https://grok.com ; https://chatgpt.com/ ;
+- ru: https://trychatgpt.ru/

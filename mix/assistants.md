@@ -26,8 +26,7 @@ https://github.blog/developer-skills/github/include-diagrams-markdown-files-merm
 [Проводим слепой тест переводов прямо на Хабре](https://habr.com/ru/articles/908280/)
 
 ### VPN 
-- см. sec
-- https://habr.com/ru/companies/amnezia/articles/957152/
+https://github.com/bpmbpm/doc/tree/main/IT/security
   
 ### Z-Library Archive 
 - [Google удалила 749 млн URL-адресов Anna's Archive из результатов поиска](https://habr.com/ru/news/963174/)

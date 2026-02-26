@@ -43,8 +43,9 @@ OpenMetaData
   - про Open Metadata из блога МКБ https://habr.com/ru/companies/mkb/articles/766716/
   - про Datahub из блога СберМаркета https://habr.com/ru/companies/sbermarket/articles/788402/
   - про Apache Atlas https://habr.com/ru/companies/glowbyte/articles/667834/
-  - про своё решение от Тинькофф https://habr.com/ru/companies/oleg-bunin/articles/697220/
+  - про своё решение от Тинькофф https://habr.com/ru/companies/oleg-bunin/articles/697220/ Как в Тинькофф создавали Data Catalog
   - про lineage моделей машинного обучения от Билайн. https://habr.com/ru/companies/beeline_tech/articles/807833/  
 - [Жизненный цикл качества данных](https://learn.microsoft.com/ru-ru/purview/unified-catalog-data-quality)
 - [MDM системы и Data Catalog](https://1solution.ru/events/articles/mdm-sistemy-i-data-catalog-upravlenie-dannymi-obespechenie-ikh-kachestva-i-prozrachnosti/)
 - https://www.decosystems.ru/data-catalog/
+- [Data catalog есть, а пользы нет: Частые ошибки внедрения](https://habr.com/ru/articles/1003158/) ; [Хороший, плохой, злой: База данных, data catalog и AI](https://habr.com/ru/articles/996288/)

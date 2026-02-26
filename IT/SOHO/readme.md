@@ -7,3 +7,6 @@
 
 ### backup
 - [Бэкап файлов без программирования](https://habr.com/ru/articles/979448/)
+
+### also
+- https://github.com/bpmbpm/doc/tree/main/mix/audio

@@ -49,3 +49,10 @@ OpenMetaData
 - [MDM системы и Data Catalog](https://1solution.ru/events/articles/mdm-sistemy-i-data-catalog-upravlenie-dannymi-obespechenie-ikh-kachestva-i-prozrachnosti/)
 - https://www.decosystems.ru/data-catalog/
 - [Data catalog есть, а пользы нет: Частые ошибки внедрения](https://habr.com/ru/articles/1003158/) ; [Хороший, плохой, злой: База данных, data catalog и AI](https://habr.com/ru/articles/996288/)
+- [Как мы выбирали Data Catalog, но в итоге оставили все как есть](https://habr.com/ru/companies/lamoda/articles/551092/) Lamoda Tech
+
+### 5
+- [Apache Atlas – доступный data catalog](https://habr.com/ru/companies/glowbyte/articles/667834/)
+- [Data catalog: от истории до сравнения решений](https://habr.com/ru/companies/vk/articles/857894/)
+- [Ландшафт Open Source Data Engineering в 2024 году: место России и мировые тенденции](https://habr.com/ru/articles/809427/)
+- [Data Governance и Бизнес: как найти общий язык](https://habr.com/ru/articles/899080/)

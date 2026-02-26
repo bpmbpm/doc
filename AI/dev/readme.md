@@ -25,3 +25,17 @@ glm-5 не может читать картинки, а вот kimi-k2.5 мож�
 
 ### Claude 
 - [Прощай, Cursor](https://habr.com/ru/articles/1003310/)
+
+### also
+#### ИИ - програмеры:
+- https://you.com не хочет работать уже с 190 строк кода (js)
+- https://chat.deepseek.com/ проблема с безопасностью [«чрезмерный» сбор ПД](https://www.securitylab.ru/news/556499.php)
+- https://www.phind.com/
+#### ИИ
+- https://chat.qwen.ai/
+- [pdd aistudio.google.com](https://github.com/bpmbpm/doc/blob/main/AI/RAG2/test2/pdd.md)
+
+Тестирование: https://github.com/bpmbpm/doc/blob/main/test/AI/code/SVG/SVG_focus.md  
+Обзоры: https://www.getguru.com/ru/reference/ai-search-engine
+
+  

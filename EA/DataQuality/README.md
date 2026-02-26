@@ -46,5 +46,5 @@ OpenMetaData
   - про своё решение от Тинькофф https://habr.com/ru/companies/oleg-bunin/articles/697220/
   - про lineage моделей машинного обучения от Билайн. https://habr.com/ru/companies/beeline_tech/articles/807833/  
 - [Жизненный цикл качества данных](https://learn.microsoft.com/ru-ru/purview/unified-catalog-data-quality)
-  - [MDM системы и Data Catalog](https://1solution.ru/events/articles/mdm-sistemy-i-data-catalog-upravlenie-dannymi-obespechenie-ikh-kachestva-i-prozrachnosti/)
-  - https://www.decosystems.ru/data-catalog/
+- [MDM системы и Data Catalog](https://1solution.ru/events/articles/mdm-sistemy-i-data-catalog-upravlenie-dannymi-obespechenie-ikh-kachestva-i-prozrachnosti/)
+- https://www.decosystems.ru/data-catalog/

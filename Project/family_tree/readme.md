@@ -1,5 +1,9 @@
 ## family tree
 генеалогическое древо 
+### github
+- https://github.com/bpmbpm/family-tree/tree/main/ver1
+- https://github.com/yoosername/family-tree
+
 ### Ecxel
 - https://timeweb.com/ru/community/articles/kak-sozdat-genealogicheskoe-drevo-v-microsoft-excel
 - [SmartArt](https://ru.wikihow.com/%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D0%B3%D0%B5%D0%BD%D0%B5%D0%B0%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5-%D0%B4%D1%80%D0%B5%D0%B2%D0%BE-%D0%B2-Excel)
@@ -28,5 +32,5 @@ DIY, Do It Yourself
 - [Как я составлял генеалогическое древо семьи: реалии, ограничения и рабочие решения](https://habr.com/ru/articles/919508/) Обзор ; https://genopro.com/ru/ ; https://www.geni.com/
 
 ### demo
-генеалогическое древо demo
+генеалогическое древо demo \ demo family tree
 - https://pomnirod.ru/user/drevo.html?alt#tree

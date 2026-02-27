@@ -20,6 +20,7 @@
 - https://genery.com/ru/order/ ;
 - https://the-family-chronicle.com/reg.html ; https://the-family-chronicle.com/screenshots.html
 - Gramps (бесплатный)
+- https://familio.media/about-genealogy/5-luchshih-programm-dlya-sostavleniya-genealogicheskogo-dreva/ обзор
 ### 2
 DIY, Do It Yourself 
 - [Как «яжепрограммист» построил всю свою родню](https://habr.com/ru/companies/ruvds/articles/716404/)

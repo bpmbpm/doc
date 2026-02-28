@@ -1,3 +1,6 @@
+### markdown
+- [Книга в Markdown: Автоматическая сборка статического сайта mdBook и файла DOCX с оформлением по ГОСТ](https://habr.com/ru/articles/987982/)
+- Google Документы: Откройте файлнажмите *Файл -> Скачать -> Текст (txt)*затем измените расширение на .md.
 ### converter
 - https://service-online.su/text/text-editor/ хабр, ctrl+C, поправить размер картинок, скачать как pdf, doc - не вставляет часть картинок
 - [ Редактор документов](https://xn----8sbei1akndcct.xn--p1ai/)

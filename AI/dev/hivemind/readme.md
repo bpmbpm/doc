@@ -24,7 +24,7 @@ HM сделал PR, я посмотрел PR, Далее: алзакрыл PR б
   Даем коментарий к PR. "То есть открытые Pull Request наш бот может дорабатывать". Буду давать коменты к PR и далее solve PR. 
 
 ### limits
-Сгорает только если мы недельный лимит не успели использовать. Зачем тогда пятичасовой? 
-
+Сгорает только если мы недельный лимит не успели использовать. Зачем тогда пятичасовой?  
+см. https://github.com/bpmbpm/rdf-grapher/blob/main/dev/readme.md#limits
 ### Jhon-Crow
 - https://github.com/Jhon-Crow/many-from-hiv-minde/tree/main/docs/case-studies/issue-1

@@ -10,6 +10,8 @@
 - [Свобода по цене чая: как я перестал бороться с VPN и перешел на прокси за 26 рублей в месяц в 2026 году](https://habr.com/ru/articles/984588/)
 - https://habr.com/ru/companies/amnezia/articles/957152/
 - [Proxy и VPN. В чём смысл этих понятий и чем они отличаются](https://habr.com/ru/articles/1003800/)
+### VPN
+- [ГОСТ VPN — что это и как поможет бизнесу](https://habr.com/ru/companies/selectel/articles/1005368/)
 ### ViRUS
 - [История вирусов](https://habr.com/ru/companies/timeweb/articles/894768/)
 ### Hack

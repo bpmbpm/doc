@@ -14,3 +14,7 @@ arc law
 - [saby](https://saby.ru/articles/staff/electronnyj_arhiv_kadrovih_documentov)
 - [kontur](https://kontur.ru/kedo/spravka/47812-hranenie_kadrovih_el_documentov)
 - [ldm](https://ldm.ru/novosti-i-meropriyatiya/arhivnoe-hranenie-kadrovyh-dokumentov)
+
+### blog
+- https://habr.com/ru/articles/1005790/#comment_29616408
+- https://habr.com/ru/articles/890054/comments/#comment_28031064

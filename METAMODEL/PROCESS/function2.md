@@ -1,4 +1,8 @@
 ### function vs process
+
+###
+  - [Что такое функция и функциональные требования? (по ГОСТ)](https://habr.com/ru/articles/1005192/)
+
 https://t.me/abpmp/50812
 
 #### Есть мнение:

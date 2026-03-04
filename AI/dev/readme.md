@@ -6,7 +6,8 @@
 - [Spec-Driven Development: контроль AI-кодогенерации](https://habr.com/ru/articles/985498/)
 - system
   - HM ; Clawdbot 
-- https://habr.com/ru/news/995534/ На Vending Bench 2 модель занимает первое место среди open-source и приближается к Claude Opus 4.5. 
+- https://habr.com/ru/news/995534/ На Vending Bench 2 модель занимает первое место среди open-source и приближается к Claude Opus 4.5.
+- OpenClaw
 ### glm & kimi
 kimi-k2.5 есть в двух подписках https://github.com/link-assistant/hive-mind/blob/main/docs/FREE_MODELS.md
 - kilo/glm-5-free
@@ -25,6 +26,7 @@ glm-5 не может читать картинки, а вот kimi-k2.5 мож�
 
 ### Claude 
 - [Прощай, Cursor](https://habr.com/ru/articles/1003310/)
+- https://habr.com/ru/companies/bothub/articles/1006170/#comment_29616510
 
 ### also
 #### ИИ - програмеры:
@@ -40,3 +42,7 @@ glm-5 не может читать картинки, а вот kimi-k2.5 мож�
 
 ### history
 - [От Vibe Coding к Agentic Engineering: что изменилось в ИИ-разработке за 1 год](https://habr.com/ru/articles/1006096/)
+
+### example
+- [Запустили за 5 дней: как AI-агенты собрали полноценный SaaS-продукт](https://habr.com/ru/articles/1005276/)
+  

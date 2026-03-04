@@ -1,13 +1,15 @@
 ### KEDO
-
+### arc
 - Приказ 578н https://mintrud.gov.ru/docs/mintrud/orders/2424 ; [ludidela](https://www.ludidela.ru/articles/kak-vesti-elektronnyy-kadrovyy-dokumentooborot/) ; 
-- [Кадровый ЭДО](https://habr.com/ru/articles/703388/) ; [Формат МинЦифры №472](https://habr.com/ru/articles/717804/) 
+### info
+- [Кадровый ЭДО, itGuevara](https://habr.com/ru/articles/703388/) ; [Формат МинЦифры №472](https://habr.com/ru/articles/717804/) 
 - [directum](https://habr.com/ru/companies/directum/articles/961556/#comment_29039706)
 - [EXDP, КЭДО и цифровизация HR: 5 кейсов, которые меняют работу с сотрудниками](https://habr.com/ru/companies/lansoft_career/articles/972528/) LDM: пределимся с требованиями к системе КЭДО.
 ### KEDO archive
-### law
+arc law 
 - [Приказ Росархива №77](https://www.garant.ru/products/ipo/prime/doc/407519908/)
 - [Особенности архивирования документов в организациях](https://www.garant.ru/article/1808828/)
+- [Методические рекомендации по внедрению электронного документооборота в целях обеспечения популяризации использования электронного документооборота среди граждан и организаций Российской Федерации](https://www.garant.ru/products/ipo/prime/doc/410300691/)
 ### примеры
 - [saby](https://saby.ru/articles/staff/electronnyj_arhiv_kadrovih_documentov)
 - [kontur](https://kontur.ru/kedo/spravka/47812-hranenie_kadrovih_el_documentov)

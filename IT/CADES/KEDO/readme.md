@@ -10,6 +10,7 @@ arc law
 - [Приказ Росархива №77](https://www.garant.ru/products/ipo/prime/doc/407519908/)
 - [Особенности архивирования документов в организациях](https://www.garant.ru/article/1808828/)
 - [Методические рекомендации по внедрению электронного документооборота в целях обеспечения популяризации использования электронного документооборота среди граждан и организаций Российской Федерации](https://www.garant.ru/products/ipo/prime/doc/410300691/)
+- списком: https://www.diadoc.ru/articles/83835-kedo_i_zakonodatelstvo_v_sfere_trudovyx_otnoshenij
 ### примеры
 - [saby](https://saby.ru/articles/staff/electronnyj_arhiv_kadrovih_documentov)
 - [kontur](https://kontur.ru/kedo/spravka/47812-hranenie_kadrovih_el_documentov)

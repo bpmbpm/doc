@@ -17,7 +17,8 @@ arc law
 - [ldm](https://ldm.ru/novosti-i-meropriyatiya/arhivnoe-hranenie-kadrovyh-dokumentov)
 
 ### blog
-- https://habr.com/ru/companies/1forma/articles/971958/comments/#comment_29209934
-- https://habr.com/ru/companies/directum/articles/961556/comments/#comment_29067178 !
+- [Почему бизнес не любит летать в облаках и при чём тут КЭДО](https://habr.com/ru/companies/directum/articles/961556/comments/#comment_29067178) 
+- [Автоматизация выдачи УНЭП у федерального ритейлера: интеграция BPMS с 1С: ЗУП и КриптоПро](https://habr.com/ru/companies/1forma/articles/971958/comments/#comment_29209934)
 - https://habr.com/ru/articles/1005790/#comment_29616408
 - https://habr.com/ru/articles/890054/comments/#comment_28031064
+- [Внедряем КЭДО в ИТ-компании правильно: знакомимся с четырьмя ловушками ФНС и ГИТ](https://habr.com/ru/articles/1005790/#comment_29621482)

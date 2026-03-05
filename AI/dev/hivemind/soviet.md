@@ -32,3 +32,6 @@ https://github.com/link-foundation/go-ai-driven-development-pipeline-template
 https://github.com/link-foundation/java-ai-driven-development-pipeline-template
 
 https://github.com/link-assistant/hive-mind/?tab=readme-ov-file#-best-practices
+
+## architecture-principles
+https://github.com/link-foundation/code-architecture-principles?tab=readme-ov-file#code-architecture-principles - вот ссылку на это ему дай.

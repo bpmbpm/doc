@@ -34,3 +34,9 @@ DIY, Do It Yourself
 ### demo
 генеалогическое древо demo \ demo family tree
 - https://pomnirod.ru/user/drevo.html?alt#tree
+- https://www.genotek.ru/demo/genealogical-tree
+- https://genery.com/ru/about_the_program/
+
+### обзоры
+- https://forum.vgd.ru/3/138245/ Лучший сайт для размещения генеалогического древа 2022 года
+- https://www.reddit.com/r/Genealogy/comments/16qk7yx/software_to_display_a_full_tree_family_view_every/?tl=ru

@@ -6,6 +6,9 @@
 - https://alice.yandex.ru/ (Qwen); https://giga.chat/
 - [MTS](https://mws.ru/services/mws-gpt/) - платная ; T-Банк (T-Lite, T-Pro) = Qwen ;
 - [Топ-12 нейросетей на русском языке](https://giga.chat/help/articles/neural-networks-in-russian) 
+### Chief AI Officer
+- [Chief AI Officer](https://habr.com/ru/articles/1006660/)
+
 ### Achievements
 - [ИИ впервые официально прошел строгий тест Тьюринга](https://habr.com/ru/news/896938/)
 ### Applications  

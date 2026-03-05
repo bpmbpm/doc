@@ -149,3 +149,14 @@ flowchart TD
     *   **CAdES-T:** Юридически допустим, но **неоптимален** для 50-летнего хранения. Он лишь отсрочивает проблему, требуя от владельца архива проводить дополнительные действия по "усовершенствованию" подписей каждые 10-15 лет (по мере истечения сертификатов служб меток времени) .
     *   **CAdES-A:** **Оптимальный и рекомендуемый выбор** для трудовых договоров. Он позволяет создать подпись "с защитой на будущее" уже на этапе первичного подписания. Законодательство (**63-ФЗ** и **ГОСТ**) не только не запрещает, но и подразумевает использование таких форматов для обеспечения долговременной юридической значимости документов . При подписании трудового договора с использованием УКЭП или УНЭП, итоговый файл подписи должен быть сформирован именно в формате, обеспечивающем долгосрочную проверку, то есть CAdES-A.
       
+### Ссылки:
+1. https://base.garant.ru/58072920/
+2. https://ca.kontur.ru/articles/55956-usovershenstvovannaya_kvalificirovannaya_podpis
+3. https://buh.ru/articles/kak-vybrat-format-elektronnoy-podpisi-pri-podpisanii-dokumentov.html
+4. https://sign.mig24.ru/cadesa
+5. https://www.consultant.ru/document/cons_doc_LAW_427901/e748e6ecc7af65652f4df1f306333f303a278c9a/
+6. https://astral.ru/help/astral-doverennost/podpisanie-i-otpravka-mchd/metka-vremeni-pri-podpisanii/
+7. https://ru.wikipedia.org/wiki/CAdES?oldid=93915931
+8. https://admpritmo.ru/index.php/2020-03-12-09-34-49/304-2020-03-12-10-26-05/11340-2022-10-31-08-22-27
+9. https://www.cryptopro.ru/forum2/default.aspx?g=posts&t=19512&p=3
+10. https://thehrd.ru/articles/chto-nado-znat-rabotodatelyam-ob-izmeneniyah-v-edo-s-1-marta-2023-goda/

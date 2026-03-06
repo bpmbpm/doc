@@ -15,3 +15,6 @@
 
 ### pattern 
 - [Паттерны проектирования](https://habr.com/ru/articles/1006094/)
+
+### Architecture as Code
+- Structurizr + Claude Code [Вы знали, что с помощью LLM можно вывести подход Architecture as Code на новый уровень?](https://habr.com/ru/companies/bcs_company/articles/1006944/)

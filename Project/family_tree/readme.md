@@ -1,7 +1,7 @@
 ## family tree
 генеалогическое древо 
 ### github
-- https://github.com/bpmbpm/family-tree/tree/main/ver1
+- https://github.com/bpmbpm/family-tree/tree/main/ver3 ; https://github.com/bpmbpm/family-tree/tree/main/ver1
 - https://github.com/yoosername/family-tree
 
 ### Ecxel

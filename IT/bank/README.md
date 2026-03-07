@@ -28,3 +28,6 @@ OpenAPI
 ### info
 - https://bankiram.blogspot.com/p/30.html
 - [Под капотом платежей: чем отличаются ПС «Мир» и СБП](https://habr.com/ru/specials/978610/)
+
+### ai
+- [Магия ИИ-банкинга 5.0 и её разоблачение](https://habr.com/ru/articles/1007554/)

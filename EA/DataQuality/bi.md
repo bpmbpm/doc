@@ -14,3 +14,4 @@
 
 ### choice
 - [Выбираем BI-системы: обзор архитектуры, технологий и выбора](https://habr.com/ru/articles/903974/)
+- [Как мы меняли в компании BI-систему и что из этого вышло](https://hub.okkam.group/tpost/41c85gb8g1-kak-mi-menyali-v-kompanii-bi-sistemu-i-c)

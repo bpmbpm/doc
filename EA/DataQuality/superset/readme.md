@@ -26,8 +26,13 @@ Superset предоставляет Вам возможность пользов
 - Метаданные: В своей внутренней базе (например, PostgreSQL) Superset хранит только структуру датасетов, права доступа и настройки графиков.
 - Виртуальные датасеты: Можно создавать виртуальные датасеты, которые представляют собой сохраненные SQL-запросы, а не физические таблицы. 
 
+- Примечателен тот факт, что на сегодня создатель SuperSet Максим Башмин основал компанию Preset, которая представляет облачное решение SuperSet для компаний, у которых нет ресурсов на развертывание и поддержку системы.
+  
 #### install
 - [Поднимаем Apache Superset — необходимый и достаточный гайд](https://habr.com/ru/articles/661159/)
 
 ### analogue
 - https://blog.karpov.courses/apache-superset-chto-eto-takoe-opisanie-platformy-dlya-vizualizaczii-dannyh-i-analitiki/ Tableau, Pentaho, Google Data Studio, MS Power BI, Looker, Metabase 
+
+### apache superset vs visiology
+- https://yolva-it.ru/2024/02/12/bi-reshenie-visiology/

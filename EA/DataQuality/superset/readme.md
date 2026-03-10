@@ -22,3 +22,6 @@ Superset предоставляет Вам возможность пользов
 
 #### install
 - [Поднимаем Apache Superset — необходимый и достаточный гайд](https://habr.com/ru/articles/661159/)
+
+### analogue
+- https://blog.karpov.courses/apache-superset-chto-eto-takoe-opisanie-platformy-dlya-vizualizaczii-dannyh-i-analitiki/ Tableau, Pentaho, Google Data Studio, MS Power BI, Looker, Metabase 

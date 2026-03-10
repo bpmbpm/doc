@@ -11,3 +11,7 @@ Apache Superset написан на языках Python и [react](https://githu
 
 Альтернативы:  
 Tableau | PowerBI | Looker | Metabase | QuickSight | Redash
+
+Логические составляющие Superset:
+- источники — источники информации;
+- дашборды;

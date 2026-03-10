@@ -12,6 +12,7 @@
 - [Proxy и VPN. В чём смысл этих понятий и чем они отличаются](https://habr.com/ru/articles/1003800/)
 ### VPN
 - [ГОСТ VPN — что это и как поможет бизнесу](https://habr.com/ru/companies/selectel/articles/1005368/)
+- [Белые списки добрались до Москвы: изучаем механику «отсечки» в 16 килобайт](https://habr.com/ru/articles/1008164/)
 ### ViRUS
 - [История вирусов](https://habr.com/ru/companies/timeweb/articles/894768/)
 ### Hack

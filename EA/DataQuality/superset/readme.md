@@ -19,3 +19,6 @@ Tableau | PowerBI | Looker | Metabase | QuickSight | Redash
 Apache Superset использует Flask, который является фреймворком для создания веб-приложений на Python, а также SQLAlchemy в качестве ORM.  
 Для создания динамических отчетов и визуализаций Superset использует шаблоны Jinja.  
 Superset предоставляет Вам возможность пользоваться инструментом SQL Lab, с помощью которого Вы можете писать и выполнять интерактивные SQL-запросы к источникам данных. 
+
+#### install
+- [Поднимаем Apache Superset — необходимый и достаточный гайд](https://habr.com/ru/articles/661159/)

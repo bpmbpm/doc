@@ -9,4 +9,5 @@ Apache Superset написан на языках Python и [react](https://githu
 - Кэш (Memcached, Redis);
 - Бэкенд результатов (S3, Redis, Memcached)
 
-
+Альтернативы:  
+Tableau | PowerBI | Looker | Metabase | QuickSight | Redash

@@ -1,5 +1,5 @@
 ### Apache Superset
-https://github.com/apache/superset ; 
+https://github.com/apache/superset ; https://superset.apache.org/
 #### about
 https://datafinder.ru/products/apache-superset-vvedenie  
 Основные элементы Apache Superset:

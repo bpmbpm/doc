@@ -56,3 +56,7 @@ OpenMetaData
 - [Data catalog: от истории до сравнения решений](https://habr.com/ru/companies/vk/articles/857894/)
 - [Ландшафт Open Source Data Engineering в 2024 году: место России и мировые тенденции](https://habr.com/ru/articles/809427/)
 - [Data Governance и Бизнес: как найти общий язык](https://habr.com/ru/articles/899080/)
+
+### 6
+- [Как мы построили витрины данных из разрозненных микросервисов](https://habr.com/ru/companies/greenatom/articles/1007324/)
+- [Как за 22 часа я собрала полноценный UI-прототип корпоративной системы с помощью ИИ](https://habr.com/ru/companies/technokratos/articles/1008644/)

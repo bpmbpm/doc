@@ -73,3 +73,5 @@ BPMN \ YAWL ?? Semantic formalism, [LD/formalism.md](https://github.com/bpmbpm/d
 Последняя цифра - их сумма - ответ на поставленный вопрос. [Сводная таблица событий BPMN 2.0](https://bpmn20.ru/docs/docly-documentation/sobytiya/)
 
 - конечные Компенсация и Терминатор 
+### example
+- [Тренажёр по BPMN: дистанционное банковское обслуживание](https://habr.com/ru/articles/1007438/)

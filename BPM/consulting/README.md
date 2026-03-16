@@ -37,4 +37,4 @@
 
 ### Другое
 - [Magic Quadrant for BI Platforms, 1Q06](https://www.umsl.edu/~sauterv/DSS4BI/links/pdf/BI/magic_quadrant_for_business__136660.pdf)
-- 
+- байки https://github.com/bpmbpm/doc/blob/main/IT/BOK/mgmt_tales/readme.md

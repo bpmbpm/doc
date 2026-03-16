@@ -40,7 +40,7 @@
 Полагаю, что 2х-aC в связке с LLM создадут [отдельное направление в vibe coding](https://github.com/bpmbpm/doc/blob/main/AI/dev/DSL/DSL_AI.md#revision)
 
 ##### 1.3 link (DaC&AaC)
-В папке https://github.com/bpmbpm/doc/tree/main/visualization/diagramascode собирал по DaC\AaC,
+В папке https://github.com/bpmbpm/doc/tree/main/visualization/diagramascode собирал по DaC\AaC, задавал вопросы,
 [например,](https://github.com/bpmbpm/doc/blob/main/visualization/diagramascode/5_11/%D0%A0%D0%B0%D1%81%D1%88%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE.txt)
 ```
 Архитектура как код - это не про визуализацию нарисованной модели,

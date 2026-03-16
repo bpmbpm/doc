@@ -37,6 +37,8 @@
 
 Таким образом, 2х-aC в версии "прямая разработка" - это MBSD, где модель процесса (архитектуры) является активным реальным артефактом, управляющим поведением программы, а не просто красивой картинкой в спецификации. В случае 2х-aC в версии "обратная разработка" - это mining \ Autodiscover. В обоих случаях - это как правило "графика" с промежуточным скриптовым представлением (dot\plantUML или даже RDF\OWL) или таблицей. 
 
+Полагаю, что 2х-aC в связке с LLM создадут [отдельное направление в vibe coding](https://github.com/bpmbpm/doc/blob/main/AI/dev/DSL/DSL_AI.md#revision)
+
 ### 3 link
 В папке https://github.com/bpmbpm/doc/tree/main/visualization/diagramascode много про AaC,
 [например,](https://github.com/bpmbpm/doc/blob/main/visualization/diagramascode/5_11/%D0%A0%D0%B0%D1%81%D1%88%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE.txt)

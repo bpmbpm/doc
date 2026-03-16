@@ -16,5 +16,7 @@
 ### Open Source 2
 есть еще папка
 - [Как обычному разработчику попасть в open source и стоит ли это делать](https://habr.com/ru/companies/ru_mts/articles/1005558/)
+- [Идеальный Open Source проект, что ты такое?](https://habr.com/ru/articles/1010580/)
+  - https://github.com/bpmbpm/doc/blob/main/IT/programming/foss_share.md
 ### ru
 - [Большой разворот: как изменился стек технологий в российском IT после 2022 года](https://habr.com/ru/companies/timeweb/articles/971778/)

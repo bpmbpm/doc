@@ -15,7 +15,24 @@
 - верхнеуровнеывый JS/Java (условно) для каждого языка програмрования - возможно единая оболочка, транслирующая верхнеуровневый код в язык програмирования, как и компилятор в машинный код \ bytecode. Назовем его macro code (MC)
 
 Общий вариант: человек (DSL-програмист \ DSL промпт-инженер) пишет на DSL, далее агент генерит MC-код, человек его CR и далее только человек участвует только в User testing.   
-Как варинт, упрощенный DSL - это связка Онтологии (на каком либо языке, например, OWL/RDF, т.е. формальная онтология) и языка запросов, например, SPARQL. Такая связка показана в проекте [Semantic BPM\VAD](https://github.com/bpmbpm/rdf-grapher/tree/main/ver9d), оетология [в частности](https://github.com/bpmbpm/rdf-grapher/tree/main/ver9d/ontology).
+Как варинт, упрощенный DSL - это связка Онтологии (на каком либо языке, например, OWL/RDF, т.е. формальная онтология) и языка запросов, например, SPARQL. Такая связка показана в проекте [Semantic BPM\VAD](https://github.com/bpmbpm/rdf-grapher/tree/main/ver9d), оетология [в частности](https://github.com/bpmbpm/rdf-grapher/tree/main/ver9d/ontology).  
+Общий подход [SPARQL-driven Programming Guide](https://github.com/bpmbpm/rdf-grapher/blob/main/ver9d/requirements/sparql-driven-programming_min1.md) - лишь как демонстрация.  Далее его бы развить до аналога PL\SQL, т.е. добавить процедурного расширение для получения PL\SPARQL.    
+PL\SPARQL - это только в части обработки данных (сама модель данных в OWL\RDF).  
+
+Блок workflow - как уже устоявшаяся практика в задачах "управления задачами" - BPMN-engine. Только конечно более совершенный, чем BPMN 2.0, но вектор верный "Программирование без програмирования": от Model-Based Design до Model Based Software Development (MBSE), где по модели генерируется весь код. BPMN 2.0 до этого еще далеко, там **no-code** только для примитивов типа [Hello Calculator](https://habr.com/ru/articles/866822/). Графическая визуализация - это основа для MC. 
+
+Полагаю, что отдельным направлением будет "vibe coding по аналогии" - это когда даешь ссылку на сервис (в идеале open source) и он тебе этот сервис переделывает под твои предпочтения, например, другой стек или добавляет новые функции. Или просто далае "один в один" - для обхода блокировок.   
+Фактически "по кнопке" сделал сервисы: 
+- on-line сервис: https://www.ldf.fi/service/rdf-grapher см. https://github.com/bpmbpm/rdf-grapher/tree/main/ver1
+- graphviz-online см. https://github.com/bpmbpm/graphviz-online/tree/main/ver1 - удивительно, в оригинальном graphviz-online не было поддержки тега image
+- https://github.com/bpmbpm/excel-online/tree/main/ver1  
+и другие
+
+ 
+
+
+
+
 
 
      

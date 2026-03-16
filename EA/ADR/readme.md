@@ -33,3 +33,6 @@ https://doc.wikimedia.org/Wikibase/master/php/docs_adr_index.html
 
 ### example 
 - [nats-io](https://github.com/nats-io/nats-architecture-and-design)
+
+### 2
+- [Интересные кейсы про ADR + ИИ](https://habr.com/ru/companies/gram_ax/articles/1010500/)

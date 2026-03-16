@@ -42,6 +42,11 @@ https://geti2p.net/en/
 
 ### Also
 - https://github.com/bpmbpm/doc/tree/main/IT/CADES
+### TG 
+### TG 03.26
+- [Инструкция по обходу блокировки Telegram. Как активировать SOCKS 5](https://habr.com/ru/articles/404921/) + comment
+SOCKS — сетевой протокол, который позволяет клиент-серверным приложениям прозрачно (незаметно для них) использовать сервисы за межсетевыми экранами (фаерволами). Опция уже доступна в Telegram Desktop и Mac, а мобильные клиенты получат её в ближайшем обновлении.  
+Совет: включите в настройках опцию автоматического обновления.
 
 ### WhatsApp etc
 - [Альтернативы для общения вместо WhatsApp](https://habr.com/ru/news/971482/#comment_29181148) ; [Svyazist](https://habr.com/ru/news/971482/#comment_29180288)

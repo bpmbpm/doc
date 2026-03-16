@@ -1,7 +1,7 @@
 ### 2x-aC
-#### term
+#### 1 term
 Много всякого "ХХ as Code": Архитектура (программная, корпоративная и другая), BP (business process, бизнес-процесс), инфраструктура, документация и т.п. И все это - "КАК КОД".  
-##### 1 DaC
+##### 1.1 DaC
 Наиболее понятное - Диаграмма как код (DaC, diagram as code) - это типа написал скрипт на dot, plantUML, mermaid (github) и т.п., нажал кнопку показать и у тебя "сама нарисовалась схема".
 Собственно мои проекты - это про это же:
 - знания как код, RDF - grapher как on-line сервис: вместо https://www.ldf.fi/service/rdf-grapher см. https://github.com/bpmbpm/rdf-grapher/tree/main/ver1
@@ -18,7 +18,7 @@
 Это к тому, что код (скрипт) - таблица или иной формализм для построения схемы - все это DaC \ 1х-aC. 
 Также, часто вместо схемы достаточно построить граф, и это будет "Граф как код". 
 
-##### 2 Mining
+##### 1.2 Mining
 Как было сказано [Проблемы EA и BPM - схожие](https://habr.com/ru/articles/1009402/comments/#comment_29658294)  
 Та же самая проблема, когда «as is» отличается от «as-really-is», см. [Инструментальный Цифровой двойник](https://habr.com/ru/articles/927360/)
 
@@ -39,7 +39,7 @@
 
 Полагаю, что 2х-aC в связке с LLM создадут [отдельное направление в vibe coding](https://github.com/bpmbpm/doc/blob/main/AI/dev/DSL/DSL_AI.md#revision)
 
-### 3 link
+##### 1.3 link (DaC&AaC)
 В папке https://github.com/bpmbpm/doc/tree/main/visualization/diagramascode много про AaC,
 [например,](https://github.com/bpmbpm/doc/blob/main/visualization/diagramascode/5_11/%D0%A0%D0%B0%D1%81%D1%88%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE.txt)
 ```

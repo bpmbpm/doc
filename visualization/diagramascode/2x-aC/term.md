@@ -52,5 +52,5 @@
 ```
 ###### also
 - eXtreme Programming (XP), RUP, CASE https://habr.com/ru/posts/1011182/
-
+- [Проблемы ИТ-архитектуры](https://habr.com/ru/articles/1009402/)
 

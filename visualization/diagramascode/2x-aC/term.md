@@ -53,4 +53,4 @@
 ###### also
 - eXtreme Programming (XP), RUP, CASE https://habr.com/ru/posts/1011182/
 - [Проблемы ИТ-архитектуры](https://habr.com/ru/articles/1009402/)
-
+- [DSL & program language](https://github.com/bpmbpm/doc/blob/main/AI/dev/DSL/DSL_AI.md#dsl--program-language)

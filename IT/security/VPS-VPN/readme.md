@@ -10,3 +10,6 @@
 - https://noisycake.ru/articles/vpn_server/ Свой VPN для самых маленьких | 3X-UI + VLESS
 ### yandex 
  - https://qna.habr.com/q/1389866 яндекс облако - это не vps, а PaaS типа Azure или AWS, с возможностью делать всё через API, поминутной тарификацией, кучей managed сервисов и т.д.
+
+### WL
+- https://github.com/zieng2/wl

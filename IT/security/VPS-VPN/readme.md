@@ -3,7 +3,7 @@
 
 ## hosting
 - deephost.pw Сергей
-  - https://ru.hostings.info/deephost-pw.html
+  - https://ru.hostings.info/deephost-pw.html ; https://vps.today/companies/deephost-pw Просят телефон при регистрации...в топку
 ### hosting 
 - https://poiskvps.ru/companies/deephost-pw/reviews
 - https://phpbbx.ru/hosting.html ; VPS \ VDS https://phpbbx.ru/topic52.html

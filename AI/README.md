@@ -87,3 +87,7 @@ vibe coding ( vibe — «ощущение, атмосфера»)
 ### AI (VPN)
 - https://grok.com ; https://chatgpt.com/ ;
 - ru: https://trychatgpt.ru/
+
+### ai assistant
+ИИ-ассистент
+  - [Операционная система Анна](https://habr.com/ru/articles/1011964/)

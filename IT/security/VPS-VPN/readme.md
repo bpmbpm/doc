@@ -1,6 +1,6 @@
-## spep
+## step
 - [Outline: Делаем свой личный VPN от Google за 5$ в месяц (и за 1€ для продвинутых)](https://habr.com/ru/articles/358828/)
-
+  - OpenVPN
 ## hosting
 - deephost.pw Сергей
   - https://ru.hostings.info/deephost-pw.html ; https://vps.today/companies/deephost-pw Просят телефон при регистрации...в топку

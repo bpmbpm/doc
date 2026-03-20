@@ -1,4 +1,5 @@
-## LD vs LLS/RAG
+### also
+#### LD vs LLS/RAG
 https://github.com/bpmbpm/doc/blob/main/LD2/LDvsLLS/readme.md
 
 ### AIRI Seminars | Должен ли AGI «думать» как мы? Принцип свободной энергии, модель мира и LLM (26.03.25)

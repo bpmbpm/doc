@@ -1,4 +1,6 @@
+## LD\ontology vs LLS\RAG
+
 ### habr
 - https://habr.com/ru/articles/1012556/#comment_29695404 А с LLM\RAG - или без, это уже не столь принципиально.  
 При "семантизации" (онтология + LD-формализм) предприятия рычаги LLM\RAG усилят эффект, но на мой взгляд семантизация первична.
--  
+- https://habr.com/ru/articles/1012714/#comment_29696046 

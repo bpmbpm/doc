@@ -20,4 +20,4 @@ https://www.usbdev.ru/files/phison/kingstonformatutility/
 
 https://www.sdcard.org/downloads/formatter/sd-memory-card-formatter-for-windows-download/
 
-rufus
+rufus - неизвестные ошибки форматирования

@@ -16,3 +16,8 @@ https://www.icare-recovery.com/howto/best-free-disk-formatting-software.html
 
 https://www.icare-recovery.com/howto/best-free-disk-formatting-software.html#jump10
 
+https://www.usbdev.ru/files/phison/kingstonformatutility/
+
+https://www.sdcard.org/downloads/formatter/sd-memory-card-formatter-for-windows-download/
+
+rufus

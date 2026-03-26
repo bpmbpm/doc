@@ -91,3 +91,5 @@ vibe coding ( vibe — «ощущение, атмосфера»)
 ### ai assistant
 ИИ-ассистент
   - [Операционная система Анна](https://habr.com/ru/articles/1011964/)
+### сравнение
+- https://www.finam.ru/publications/item/arkhitektory-ii-vosem-chelovek-opredelyayushchikh-budushchee-tekhnologiy-20251215-1936/

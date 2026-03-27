@@ -606,3 +606,268 @@ console.log('Задачи:', serviceTasks?.map(t => t.id));
 Для серверной части (Node.js) лучше использовать **bpmn-engine** или **ProcessEngine Core**, так как они предоставляют готовое выполнение процессов.
 
 Если нужен пример интеграции **bpmn-engine** с вашим веб-интерфейсом (через API), дайте знать – подготовлю дополнительный пример.
+
+## 3
+> bpmn-moddle или bpmn-marshaller позволят разобрать XML, а логику вычислений реализовать вручную (как вы уже сделали).
+
+Подробно поясни с примером
+
+Мы понимаем, что в предыдущих обсуждениях мы много раз пытались настроить отображение палитры BPMN-редактора и в итоге получили работающую схему, но палитра (stencil) так и не появилась. Затем пользователь попросил подробно пояснить, как использовать bpmn-moddle или bpmn-marshaller для парсинга XML и ручной реализации логики калькулятора, а не выполнения процесса движком. Он хочет понять, как можно, имея BPMN-диаграмму, извлечь из неё информацию (например, идентификаторы задач, параметры) и на основе этого строить логику калькулятора. Мы дадим подробный пример использования bpmn-moddle (проще для понимания) в браузере для парсинга XML, извлечения информации о процессе и затем связывания с интерфейсом калькулятора.
+
+Также учтём, что ранее мы создавали полноценный BPMN-редактор с bpmn-js, где уже есть визуальное редактирование. Теперь нужно показать, как можно загрузить XML из этого редактора, распарсить его с помощью bpmn-moddle и использовать для выполнения кастомной логики (например, вычисления). Это будет демонстрация того, как можно расширить функциональность, чтобы "транслировать" BPMN-модель в исполняемую логику.
+
+## 🔄 Трансляция BPMN XML в исполняемую логику с помощью bpmn-moddle
+
+### Зачем это нужно
+Когда у вас есть BPMN-диаграмма, созданная в редакторе (например, bpmn-js), и вы хотите, чтобы она не просто визуально отображалась, но и **управляла выполнением** какой-то бизнес-логики (в нашем случае – калькулятора), вам необходимо:
+1. **Загрузить XML** диаграммы.
+2. **Распарсить его** в объектную модель (JavaScript-объекты).
+3. **Извлечь структуру** процесса: начальные события, задачи, шлюзы, последовательности.
+4. **Интерпретировать эту структуру**, т.е. пройти по потоку управления и для каждого узла (ServiceTask) вызвать соответствующую функцию.
+
+Именно этим занимаются **bpmn-moddle** и **bpmn-marshaller**. Они не выполняют процесс автоматически, но дают вам **удобный доступ к данным модели**, чтобы вы сами могли реализовать выполнение.
+
+Ниже приведён подробный пример использования **bpmn-moddle** (более простой и хорошо документированный) для:
+- Парсинга BPMN XML, загруженного из редактора.
+- Построения графа последовательности выполнения.
+- Исполнения логики калькулятора для задачи `CalculateTask`.
+
+### Установка и подключение
+В браузере bpmn-moddle можно подключить через CDN как ES-модуль:
+
+```html
+<script type="importmap">
+  {
+    "imports": {
+      "bpmn-moddle": "https://esm.sh/bpmn-moddle@8.1.0",
+      "min-dash": "https://esm.sh/min-dash@4.2.1"
+    }
+  }
+</script>
+<script type="module">
+  import { BpmnModdle } from 'bpmn-moddle';
+  // ... ваш код
+</script>
+```
+
+### Шаг 1: Парсинг BPMN XML
+Допустим, у вас есть XML, полученный из редактора (например, через вызов `modeler.saveXML()`). Создаём экземпляр `BpmnModdle` и вызываем `fromXML`:
+
+```javascript
+const moddle = new BpmnModdle();
+moddle.fromXML(bpmnXml, (err, definitions) => {
+  if (err) {
+    console.error('Ошибка парсинга:', err);
+    return;
+  }
+  // definitions — корневой объект BPMN
+  // Далее извлекаем процесс и его элементы
+});
+```
+
+### Шаг 2: Извлечение структуры процесса
+Объектная модель, возвращаемая `moddle`, соответствует BPMN 2.0. Вам нужно найти:
+- Элемент `<process>` (он лежит в `definitions.rootElements`).
+- Все элементы потока: `startEvent`, `endEvent`, `serviceTask`, `sequenceFlow` и т.д.
+- Построить карту последовательностей, чтобы определить порядок выполнения.
+
+Вот пример функции, которая строит граф процесса:
+
+```javascript
+function buildProcessGraph(process) {
+  const elements = {};
+  const flows = [];
+  const startEvents = [];
+
+  // Собираем все элементы потока
+  process.flowElements.forEach(el => {
+    elements[el.id] = el;
+    if (el.$type === 'bpmn:StartEvent') {
+      startEvents.push(el);
+    }
+    if (el.$type === 'bpmn:SequenceFlow') {
+      flows.push(el);
+    }
+  });
+
+  // Строим карту исходящих рёбер для каждого узла
+  const outgoing = {};
+  flows.forEach(flow => {
+    if (!outgoing[flow.sourceRef]) outgoing[flow.sourceRef] = [];
+    outgoing[flow.sourceRef].push(flow.targetRef);
+  });
+
+  return { elements, outgoing, startEvents };
+}
+```
+
+### Шаг 3: Интерпретатор процесса
+Теперь нам нужно «пройти» по процессу, начиная со стартового события, и для каждой встреченной задачи выполнить соответствующую логику. Простейший интерпретатор может быть рекурсивным:
+
+```javascript
+async function executeNode(nodeId, variables, outgoing, elements, handlers) {
+  const node = elements[nodeId];
+  if (!node) return;
+
+  switch (node.$type) {
+    case 'bpmn:StartEvent':
+      // Просто идём дальше по исходящим потокам
+      const nextIds = outgoing[nodeId] || [];
+      for (const nextId of nextIds) {
+        await executeNode(nextId, variables, outgoing, elements, handlers);
+      }
+      break;
+
+    case 'bpmn:ServiceTask':
+      // Вызываем зарегистрированный обработчик для этой задачи
+      const handler = handlers[node.id];
+      if (handler) {
+        await handler(variables);
+      }
+      // После выполнения идём по исходящим потокам
+      const next = outgoing[nodeId] || [];
+      for (const n of next) {
+        await executeNode(n, variables, outgoing, elements, handlers);
+      }
+      break;
+
+    case 'bpmn:EndEvent':
+      // Конец, ничего не делаем
+      break;
+
+    default:
+      // Можно добавить обработку других типов узлов (шлюзов и т.п.)
+      break;
+  }
+}
+```
+
+### Шаг 4: Регистрация обработчиков задач
+Для каждой `serviceTask` мы можем задать свою функцию. В нашем калькуляторе у нас есть задача с id `CalculateTask`. Регистрируем обработчик:
+
+```javascript
+const handlers = {
+  CalculateTask: async (variables) => {
+    const { num1, num2, operation } = variables;
+    let result;
+    switch (operation) {
+      case '+': result = num1 + num2; break;
+      case '-': result = num1 - num2; break;
+      case '*': result = num1 * num2; break;
+      case '/': result = num2 === 0 ? 'Ошибка: деление на ноль' : num1 / num2; break;
+      default: result = 'Ошибка: неизвестная операция';
+    }
+    variables.result = result;
+  }
+};
+```
+
+### Шаг 5: Запуск процесса с входными данными
+Входные данные (числа, операция) передаются через объект `variables`. После завершения интерпретации результат будет лежать в `variables.result`.
+
+```javascript
+async function runProcess(bpmnXml, inputVariables) {
+  return new Promise((resolve, reject) => {
+    const moddle = new BpmnModdle();
+    moddle.fromXML(bpmnXml, async (err, definitions) => {
+      if (err) reject(err);
+      // Находим первый процесс (можно выбрать по id)
+      const process = definitions.rootElements.find(el => el.$type === 'bpmn:Process');
+      if (!process) reject('Нет процесса');
+
+      const { elements, outgoing, startEvents } = buildProcessGraph(process);
+      if (startEvents.length === 0) reject('Нет стартового события');
+
+      const variables = { ...inputVariables };
+      const handlers = {
+        CalculateTask: async (vars) => {
+          // реализация из п.4
+        }
+      };
+
+      // Запускаем со стартового события
+      await executeNode(startEvents[0].id, variables, outgoing, elements, handlers);
+      resolve(variables.result);
+    });
+  });
+}
+```
+
+### Полный пример интеграции с bpmn-js
+Теперь соединим всё вместе. Предположим, у нас есть HTML-страница с bpmn-js редактором и калькулятором, как мы разрабатывали ранее. Мы добавим кнопку «Выполнить процесс», которая:
+1. Получает текущий XML из редактора.
+2. Берёт значения из полей ввода.
+3. Запускает интерпретатор.
+4. Отображает результат.
+
+```html
+<!-- Добавим кнопку в панель калькулятора -->
+<button id="executeProcessBtn">▶ Выполнить BPMN процесс</button>
+```
+
+```javascript
+// В коде, где у нас есть modeler (экземпляр BpmnModeler)
+document.getElementById('executeProcessBtn').addEventListener('click', async () => {
+  try {
+    // 1. Получаем XML из редактора
+    const { xml } = await modeler.saveXML({ format: true });
+    
+    // 2. Получаем входные данные из формы
+    const num1 = parseFloat(document.getElementById('num1').value);
+    const num2 = parseFloat(document.getElementById('num2').value);
+    const operation = document.getElementById('operation').value;
+    
+    // 3. Запускаем интерпретатор (описан выше)
+    const result = await runProcess(xml, { num1, num2, operation });
+    
+    // 4. Отображаем результат
+    document.getElementById('result').textContent = 
+      typeof result === 'number' ? result.toFixed(4) : result;
+  } catch (err) {
+    console.error(err);
+    document.getElementById('result').textContent = 'Ошибка выполнения процесса';
+  }
+});
+```
+
+### Что происходит внутри
+- **Парсинг**: `moddle.fromXML` превращает XML в объектную модель.
+- **Построение графа**: мы извлекаем все элементы и последовательности, строим карту исходящих рёбер.
+- **Интерпретация**: `executeNode` рекурсивно проходит по узлам в порядке, определяемом `sequenceFlow`. При достижении `serviceTask` вызывается зарегистрированный обработчик.
+- **Обработчик** выполняет вычисление и сохраняет результат в объекте `variables`.
+- После завершения процесса (когда дойдём до `endEvent`) возвращаем результат.
+
+### Преимущества такого подхода
+- **Гибкость**: вы сами контролируете, как интерпретировать каждый тип узла.
+- **Независимость от движка**: не нужно поднимать Node.js-сервер, всё работает в браузере.
+- **Легковесность**: bpmn-moddle – небольшая библиотека, не требующая тяжёлых зависимостей.
+- **Расширяемость**: вы можете добавить поддержку шлюзов, параллельных ветвей, подпроцессов и т.д.
+
+### Расширение: обработка условий, шлюзов
+Для простоты мы пропустили шлюзы и условия. Если в вашем процессе есть exclusive gateway, вам нужно анализировать `conditionExpression` на исходящих потоках. Пример проверки условия:
+
+```javascript
+// Для узла типа bpmn:ExclusiveGateway
+const outgoingFlows = outgoing[nodeId];
+for (const flowId of outgoingFlows) {
+  const flow = elements[flowId];
+  if (flow.conditionExpression) {
+    // Вычисляем условие (можно выполнить как JavaScript-код)
+    const condition = flow.conditionExpression.body; // например, "${num1 > 0}"
+    // Нужно безопасно вычислить выражение с переменными
+    if (evaluateCondition(condition, variables)) {
+      await executeNode(flow.targetRef, ...);
+      break; // выбираем только один путь
+    }
+  }
+}
+```
+
+Для вычисления условий можно использовать `new Function('variables', 'return ' + condition.replace(/\$\{([^}]+)\}/g, 'variables.$1'))` (но осторожно с безопасностью).
+
+### Заключение
+Используя **bpmn-moddle**, вы получаете полный контроль над процессом выполнения BPMN-диаграммы. Вы сами определяете, как обрабатывать задачи, условия и потоки. Это идеальное решение для no‑code/low‑code систем, где нужно связывать визуальные модели с бизнес-логикой, написанной на JavaScript.
+
+Весь код, описанный выше, можно добавить в ваш существующий проект с bpmn-js. После этого калькулятор будет не просто отдельным компонентом, а будет **исполнять BPMN-процесс**, который пользователь может редактировать визуально. Таким образом, вы получите полноценный **транслятор BPMN XML в исполняемый код**.
+
+Если вам нужен более подробный пример с обработкой шлюзов или интеграцией с серверной частью, дайте знать.

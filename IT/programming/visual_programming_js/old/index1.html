@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BPMN Калькулятор | No-Code на основе BPMN</title>
+    
+    <!-- Стили bpmn-js -->
+    <link rel="stylesheet" href="https://unpkg.com/bpmn-js@latest/dist/assets/diagram-js.css">
+    <link rel="stylesheet" href="https://unpkg.com/bpmn-js@latest/dist/assets/bpmn-font/css/bpmn.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 20px;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .bpmn-panel {
+            background: #f8f9fa;
+            padding: 20px;
+            min-height: 500px;
+        }
+        
+        #canvas {
+            width: 100%;
+            height: 500px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .calculator-panel {
+            background: white;
+            padding: 30px;
+            border-left: 1px solid #e9ecef;
+        }
+        
+        .calculator-panel h2 {
+            margin-bottom: 20px;
+            color: #2d3748;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #4a5568;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .result {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .result-label {
+            font-size: 14px;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 10px;
+        }
+        
+        .result-value {
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .info {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f7fafc;
+            border-radius: 8px;
+            font-size: 12px;
+            color: #718096;
+        }
+        
+        .bpmn-info {
+            margin-top: 15px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 8px;
+            font-size: 12px;
+            text-align: center;
+            color: #495057;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .calculator-panel {
+                border-left: none;
+                border-top: 1px solid #e9ecef;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="bpmn-panel">
+        <h3 style="margin-bottom: 15px;">📊 BPMN 2.0 Модель процесса</h3>
+        <div id="canvas"></div>
+        <div class="bpmn-info">
+            ⚙️ BPMN-процесс: Старт → Вычисление → Конец<br>
+            🔄 При изменении входных данных процесс «выполняется» автоматически
+        </div>
+    </div>
+    
+    <div class="calculator-panel">
+        <h2>🧮 BPMN Калькулятор</h2>
+        
+        <div class="form-group">
+            <label>Число A:</label>
+            <input type="number" id="num1" value="10" step="any">
+        </div>
+        
+        <div class="form-group">
+            <label>Число B:</label>
+            <input type="number" id="num2" value="5" step="any">
+        </div>
+        
+        <div class="form-group">
+            <label>Операция:</label>
+            <select id="operation">
+                <option value="+">➕ Сложение (+)</option>
+                <option value="-">➖ Вычитание (-)</option>
+                <option value="*">✖️ Умножение (*)</option>
+                <option value="/">➗ Деление (/)</option>
+            </select>
+        </div>
+        
+        <div class="result">
+            <div class="result-label">Результат вычисления:</div>
+            <div class="result-value" id="result">—</div>
+        </div>
+        
+        <div class="info">
+            <strong>💡 Как это работает:</strong><br>
+            1. BPMN-диаграмма визуализирует процесс вычисления<br>
+            2. JavaScript реализует бизнес-логику калькулятора<br>
+            3. Любое изменение входных данных автоматически обновляет результат<br>
+            4. BPMN-модель служит документацией процесса
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/bpmn-js@latest/dist/bpmn-modeler.development.js"></script>
+<script>
+    // ========== Логика калькулятора ==========
+    function calculate(num1, num2, operation) {
+        if (isNaN(num1) || isNaN(num2)) return "Ошибка: введите числа";
+        switch (operation) {
+            case '+': return num1 + num2;
+            case '-': return num1 - num2;
+            case '*': return num1 * num2;
+            case '/': return num2 === 0 ? "Ошибка: деление на ноль" : num1 / num2;
+            default: return "Ошибка: неизвестная операция";
+        }
+    }
+    
+    function updateResult() {
+        const num1 = parseFloat(document.getElementById('num1').value);
+        const num2 = parseFloat(document.getElementById('num2').value);
+        const op = document.getElementById('operation').value;
+        const res = calculate(num1, num2, op);
+        document.getElementById('result').textContent = typeof res === 'number' ? res.toFixed(4) : res;
+        
+        // Анимация BPMN-задачи
+        highlightTask();
+    }
+    
+    function highlightTask() {
+        const taskGfx = document.querySelector('[data-element-id="CalculateTask"]');
+        if (taskGfx) {
+            taskGfx.style.transition = 'filter 0.3s';
+            taskGfx.style.filter = 'drop-shadow(0 0 8px #667eea)';
+            setTimeout(() => { if (taskGfx) taskGfx.style.filter = ''; }, 300);
+        }
+    }
+    
+    // ========== Инициализация BPMN-диаграммы ==========
+    // Корректный BPMN 2.0 XML (проверен)
+    const bpmnXML = `<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+             targetNamespace="http://bpmn.io/schema/bpmn">
+  <process id="CalculatorProcess" isExecutable="false">
+    <startEvent id="StartEvent" name="Старт" />
+    <serviceTask id="CalculateTask" name="Вычислить результат" />
+    <endEvent id="EndEvent" name="Конец" />
+    <sequenceFlow id="flow1" sourceRef="StartEvent" targetRef="CalculateTask" />
+    <sequenceFlow id="flow2" sourceRef="CalculateTask" targetRef="EndEvent" />
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="CalculatorProcess">
+      <bpmndi:BPMNShape id="StartEvent_di" bpmnElement="StartEvent">
+        <dc:Bounds x="80" y="150" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CalculateTask_di" bpmnElement="CalculateTask">
+        <dc:Bounds x="180" y="130" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_di" bpmnElement="EndEvent">
+        <dc:Bounds x="350" y="150" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="flow1_di" bpmnElement="flow1">
+        <di:waypoint x="116" y="168" />
+        <di:waypoint x="180" y="170" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="flow2_di" bpmnElement="flow2">
+        <di:waypoint x="300" y="170" />
+        <di:waypoint x="350" y="168" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>`;
+    
+    // Создаём экземпляр просмотрщика (BpmnJS)
+    const viewer = new BpmnJS({ container: '#canvas' });
+    
+    // Загружаем диаграмму
+    viewer.importXML(bpmnXML, function(err) {
+        if (err) {
+            console.error('Ошибка загрузки BPMN:', err);
+            document.getElementById('canvas').innerHTML = 
+                '<div style="color:red; padding:20px;">❌ Не удалось загрузить BPMN-диаграмму</div>';
+            return;
+        }
+        console.log('✅ BPMN-диаграмма загружена успешно');
+        
+        // Получаем элемент сервисной задачи для анимации
+        const elementRegistry = viewer.get('elementRegistry');
+        const taskElement = elementRegistry.get('CalculateTask');
+        if (taskElement) {
+            const gfx = elementRegistry.getGraphics(taskElement);
+            if (gfx) gfx.setAttribute('data-element-id', 'CalculateTask');
+        }
+    });
+    
+    // Подписка на изменения
+    document.getElementById('num1').addEventListener('input', updateResult);
+    document.getElementById('num2').addEventListener('input', updateResult);
+    document.getElementById('operation').addEventListener('change', updateResult);
+    
+    // Первый расчёт
+    updateResult();
+</script>
+</body>
+</html>

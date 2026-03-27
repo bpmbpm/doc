@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>BPMN Калькулятор — окончательная версия</title>
+    <link rel="stylesheet" href="https://unpkg.com/bpmn-js@7.4.0/dist/assets/diagram-js.css">
+    <link rel="stylesheet" href="https://unpkg.com/bpmn-js@7.4.0/dist/assets/bpmn-font/css/bpmn.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            background: #f1f5f9;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+            height: calc(100vh - 40px);
+        }
+        .bpmn-editor {
+            flex: 2;
+            background: white;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        #canvas {
+            flex: 1;
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            min-height: 0;
+        }
+        .right-panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .calculator {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .debug-panel {
+            background: #1e293b;
+            color: #e2e8f0;
+            border-radius: 12px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            overflow-y: auto;
+            max-height: 300px;
+        }
+        .debug-panel h3 { color: #facc15; margin-bottom: 10px; }
+        .debug-log { white-space: pre-wrap; }
+        .debug-buttons {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        .debug-buttons button {
+            background: #334155;
+            color: white;
+            border: none;
+            padding: 4px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 11px;
+        }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: 600; }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+        }
+        .result {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .result-value { font-size: 28px; font-weight: bold; color: white; }
+        button { background: #10b981; color: white; border: none; padding: 6px 12px; border-radius: 6px; cursor: pointer; margin-top: 10px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="bpmn-editor">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+            <h3>📊 BPMN Редактор</h3>
+            <button id="exportBtn">💾 Сохранить XML (в консоль)</button>
+        </div>
+        <div id="canvas"></div>
+        <div class="info" style="margin-top: 12px; font-size: 12px; color: #475569;">
+            💡 Редактируйте диаграмму. При изменении чисел задача "CalculateTask" подсвечивается.
+        </div>
+    </div>
+    <div class="right-panel">
+        <div class="calculator">
+            <h2>🧮 Калькулятор</h2>
+            <div class="form-group">
+                <label>Число A:</label>
+                <input type="number" id="num1" value="10" step="any">
+            </div>
+            <div class="form-group">
+                <label>Число B:</label>
+                <input type="number" id="num2" value="5" step="any">
+            </div>
+            <div class="form-group">
+                <label>Операция:</label>
+                <select id="operation">
+                    <option value="+">➕ Сложение (+)</option>
+                    <option value="-">➖ Вычитание (-)</option>
+                    <option value="*">✖️ Умножение (*)</option>
+                    <option value="/">➗ Деление (/)</option>
+                </select>
+            </div>
+            <div class="result">
+                <div class="result-label">Результат:</div>
+                <div class="result-value" id="result">—</div>
+            </div>
+        </div>
+        <div class="debug-panel">
+            <h3>🐞 ОТЛАДКА (лог)</h3>
+            <div id="debugLog" class="debug-log">[Инициализация] Ждём события...</div>
+            <div class="debug-buttons">
+                <button id="clearDebugBtn">🗑️ Очистить лог</button>
+                <button id="copyDebugBtn">📋 Копировать лог</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/bpmn-js@7.4.0/dist/bpmn-modeler.development.js"></script>
+<script>
+    const debugDiv = document.getElementById('debugLog');
+    function log(msg, isErr = false) {
+        const time = new Date().toLocaleTimeString();
+        const prefix = isErr ? `[${time}] ❌ ` : `[${time}] ✅ `;
+        const span = document.createElement('div');
+        span.textContent = prefix + msg;
+        span.style.color = isErr ? '#f87171' : '#bbf0d0';
+        debugDiv.appendChild(span);
+        debugDiv.scrollTop = debugDiv.scrollHeight;
+        console.log(prefix + msg);
+    }
+
+    document.getElementById('clearDebugBtn').onclick = () => {
+        debugDiv.innerHTML = '';
+        log('Лог очищен');
+    };
+    document.getElementById('copyDebugBtn').onclick = async () => {
+        try {
+            await navigator.clipboard.writeText(debugDiv.innerText);
+            const btn = document.getElementById('copyDebugBtn');
+            const orig = btn.textContent;
+            btn.textContent = '✅ Скопировано!';
+            setTimeout(() => btn.textContent = orig, 1500);
+        } catch (e) {
+            log('Копирование не удалось: ' + e.message, true);
+        }
+    };
+
+    log('Страница загружена, начинаем инициализацию...');
+
+    if (typeof BpmnModeler === 'undefined') {
+        log('BpmnModeler не определён!', true);
+        import('https://esm.sh/bpmn-js@7.4.0').then(module => {
+            log('Модуль загружен, используем Modeler');
+            startApp(module.default);
+        }).catch(err => log('Ошибка загрузки модуля: ' + err.message, true));
+    } else {
+        log('BpmnModeler найден');
+        startApp(BpmnModeler);
+    }
+
+    function startApp(ModelerClass) {
+        const canvasDiv = document.getElementById('canvas');
+        if (!canvasDiv) {
+            log('Элемент #canvas не найден!', true);
+            return;
+        }
+        const rect = canvasDiv.getBoundingClientRect();
+        log(`Размеры #canvas: ${rect.width}x${rect.height}`);
+
+        log('Создаём модельер...');
+        let modeler;
+        try {
+            modeler = new ModelerClass({
+                container: '#canvas',
+                keyboard: { bindTo: window }
+            });
+            log('Модельер создан');
+        } catch (err) {
+            log(`Ошибка при создании модельера: ${err.message}`, true);
+            canvasDiv.innerHTML = '<div style="color:red;padding:20px;">❌ Ошибка инициализации BPMN редактора. Смотрите консоль.</div>';
+            return;
+        }
+
+        const bpmnXML = `<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+             targetNamespace="http://bpmn.io/schema/bpmn">
+  <process id="CalculatorProcess" isExecutable="false">
+    <startEvent id="StartEvent" name="Старт" />
+    <serviceTask id="CalculateTask" name="Вычислить результат" />
+    <endEvent id="EndEvent" name="Конец" />
+    <sequenceFlow id="flow1" sourceRef="StartEvent" targetRef="CalculateTask" />
+    <sequenceFlow id="flow2" sourceRef="CalculateTask" targetRef="EndEvent" />
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="CalculatorProcess">
+      <bpmndi:BPMNShape id="StartEvent_di" bpmnElement="StartEvent">
+        <dc:Bounds x="80" y="150" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CalculateTask_di" bpmnElement="CalculateTask">
+        <dc:Bounds x="180" y="130" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_di" bpmnElement="EndEvent">
+        <dc:Bounds x="350" y="150" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="flow1_di" bpmnElement="flow1">
+        <di:waypoint x="116" y="168" />
+        <di:waypoint x="180" y="170" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="flow2_di" bpmnElement="flow2">
+        <di:waypoint x="300" y="170" />
+        <di:waypoint x="350" y="168" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>`;
+
+        log('Загружаем BPMN XML...');
+        modeler.importXML(bpmnXML, function(err) {
+            if (err) {
+                log(`Ошибка загрузки BPMN: ${err.message || err}`, true);
+                console.error(err);
+                return;
+            }
+            log('BPMN-диаграмма загружена успешно');
+
+            const elementRegistry = modeler.get('elementRegistry');
+            const allElements = elementRegistry.getAll();
+            log(`Загружено элементов: ${allElements.length}`);
+            const elementIds = allElements.map(el => el.id).join(', ');
+            log(`Идентификаторы: ${elementIds}`);
+
+            const palette = modeler.get('palette');
+            if (palette) {
+                log('Палитра (stencil) доступна');
+                if (palette.open) palette.open();
+                log('Палитра открыта');
+            } else {
+                log('Палитра (stencil) НЕ доступна', true);
+            }
+
+            const canvas = modeler.get('canvas');
+            if (canvas) {
+                log('Холст доступен');
+                canvas.zoom('fit-viewport');
+                log('zoom("fit-viewport") выполнен');
+            } else {
+                log('Холст НЕ доступен', true);
+            }
+
+            setTimeout(() => {
+                const canvasContainer = document.getElementById('canvas');
+                if (canvasContainer) {
+                    const svgElements = canvasContainer.querySelectorAll('svg');
+                    if (svgElements.length) {
+                        log(`В #canvas найдено SVG (${svgElements.length} элементов)`);
+                        const svg = svgElements[0];
+                        const svgRect = svg.getBoundingClientRect();
+                        log(`Размеры SVG: ${svgRect.width}x${svgRect.height}`);
+                    } else {
+                        log('В #canvas НЕТ элементов SVG!', true);
+                    }
+                }
+            }, 500);
+        });
+
+        document.getElementById('exportBtn').addEventListener('click', async () => {
+            try {
+                const { xml } = await modeler.saveXML({ format: true });
+                log('XML сохранён в консоль');
+                console.log(xml);
+                alert('XML скопирован в консоль (F12)');
+            } catch (err) {
+                log(`Ошибка сохранения: ${err.message}`, true);
+            }
+        });
+
+        function calculate(num1, num2, op) {
+            if (isNaN(num1) || isNaN(num2)) return "Ошибка: введите числа";
+            switch (op) {
+                case '+': return num1 + num2;
+                case '-': return num1 - num2;
+                case '*': return num1 * num2;
+                case '/': return num2 === 0 ? "Ошибка: деление на ноль" : num1 / num2;
+                default: return "Ошибка: неизвестная операция";
+            }
+        }
+
+        function updateResult() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const op = document.getElementById('operation').value;
+            const res = calculate(num1, num2, op);
+            document.getElementById('result').textContent = typeof res === 'number' ? res.toFixed(4) : res;
+            try {
+                const elementRegistry = modeler.get('elementRegistry');
+                const task = elementRegistry.get('CalculateTask');
+                if (task) {
+                    const gfx = elementRegistry.getGraphics(task);
+                    if (gfx) {
+                        gfx.style.transition = 'filter 0.2s';
+                        gfx.style.filter = 'drop-shadow(0 0 8px #3b82f6)';
+                        setTimeout(() => { if (gfx) gfx.style.filter = ''; }, 400);
+                    }
+                }
+            } catch (e) {}
+        }
+
+        const num1El = document.getElementById('num1');
+        const num2El = document.getElementById('num2');
+        const opEl = document.getElementById('operation');
+        if (num1El && num2El && opEl) {
+            num1El.addEventListener('input', updateResult);
+            num2El.addEventListener('input', updateResult);
+            opEl.addEventListener('change', updateResult);
+            updateResult();
+            log('Калькулятор активирован');
+        } else {
+            log('Поля ввода не найдены!', true);
+        }
+    }
+</script>
+</body>
+</html>

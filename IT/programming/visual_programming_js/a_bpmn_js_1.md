@@ -258,5 +258,351 @@ const result = await fetch('/api/execute', {
 - [Apache KIE Tools](https://github.com/apache/incubator-kie-tools)
 - [bpmn.io — экосистема инструментов](https://bpmn.io)
 
-
 Share: https://chat.deepseek.com/a/chat/s/e841c3c8-0070-4a6b-ac9b-6ec56ee56fc9
+
+## 2
+## 📐 Подробные примеры реализации калькулятора для каждого инструмента трансляции BPMN в JavaScript
+
+Ниже приведены детальные примеры использования каждого из четырёх инструментов для реализации калькулятора: два поля ввода чисел, выбор операции (+, -, *, /) и поле результата.
+
+---
+
+## 1. **bpmn-engine** (полноценный движок выполнения, Node.js)
+
+### Описание
+`bpmn-engine` — JavaScript-движок для выполнения BPMN-процессов в Node.js. Позволяет загружать BPMN XML, задавать переменные и обрабатывать задачи через кастомные сервисы.
+
+### BPMN XML (calculator.bpmn)
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             targetNamespace="http://bpmn.io/schema/bpmn">
+  <process id="CalculatorProcess" isExecutable="true">
+    <startEvent id="StartEvent" />
+    <serviceTask id="CalculateTask" name="Вычислить результат" />
+    <endEvent id="EndEvent" />
+    <sequenceFlow id="flow1" sourceRef="StartEvent" targetRef="CalculateTask" />
+    <sequenceFlow id="flow2" sourceRef="CalculateTask" targetRef="EndEvent" />
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="CalculatorProcess">
+      <bpmndi:BPMNShape id="StartEvent_di" bpmnElement="StartEvent">
+        <dc:Bounds x="80" y="150" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CalculateTask_di" bpmnElement="CalculateTask">
+        <dc:Bounds x="180" y="130" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_di" bpmnElement="EndEvent">
+        <dc:Bounds x="350" y="150" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="flow1_di" bpmnElement="flow1">
+        <di:waypoint x="116" y="168" />
+        <di:waypoint x="180" y="170" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="flow2_di" bpmnElement="flow2">
+        <di:waypoint x="300" y="170" />
+        <di:waypoint x="350" y="168" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>
+```
+
+### Код Node.js (calculator-engine.js)
+```javascript
+const Engine = require('bpmn-engine');
+const fs = require('fs');
+
+// Читаем BPMN XML (или используем строку)
+const bpmnXml = fs.readFileSync('./calculator.bpmn', 'utf8');
+
+// Создаём движок с кастомным сервисом для задачи CalculateTask
+const engine = new Engine({
+    source: bpmnXml,
+    services: {
+        // Имя задачи должно совпадать с id в BPMN
+        CalculateTask: async (context) => {
+            // Получаем переменные из контекста процесса
+            const { num1, num2, operation } = context.environment.variables;
+            
+            // Выполняем вычисление
+            let result;
+            switch (operation) {
+                case '+': result = num1 + num2; break;
+                case '-': result = num1 - num2; break;
+                case '*': result = num1 * num2; break;
+                case '/': result = num2 === 0 ? 'Ошибка: деление на ноль' : num1 / num2; break;
+                default: result = 'Ошибка: неизвестная операция';
+            }
+            
+            // Сохраняем результат в переменные процесса
+            context.environment.variables.result = result;
+            return result;
+        }
+    }
+});
+
+// Запускаем процесс с входными переменными
+engine.execute((err, instance) => {
+    if (err) {
+        console.error('Ошибка выполнения:', err);
+        return;
+    }
+    
+    // Устанавливаем переменные перед началом
+    instance.environment.setVariable('num1', 10);
+    instance.environment.setVariable('num2', 5);
+    instance.environment.setVariable('operation', '+');
+    
+    // Слушаем окончание процесса
+    instance.on('end', () => {
+        const result = instance.environment.getVariable('result');
+        console.log(`Результат: ${result}`);
+    });
+});
+```
+
+### Пояснение
+- **Движок** загружает BPMN XML и регистрирует обработчик для `CalculateTask`.
+- Входные данные передаются как переменные окружения.
+- После выполнения задачи результат сохраняется в переменную `result`.
+- В конце процесса мы получаем результат.
+
+---
+
+## 2. **@process-engine/process_engine_core** (модульный движок, Node.js)
+
+### Описание
+Более модульный движок, разделяющий парсинг и выполнение. Позволяет гибко настраивать обработчики для разных типов узлов.
+
+### Установка
+```bash
+npm install @process-engine/process_engine_core
+```
+
+### Код Node.js (calculator-process-engine.js)
+```javascript
+const { BpmnModelParser } = require('@process-engine/process_engine_core').Model;
+const { ExecuteProcessService } = require('@process-engine/process_engine_core').Runtime;
+const fs = require('fs');
+
+// 1. Парсим BPMN XML в модель
+const bpmnXml = fs.readFileSync('./calculator.bpmn', 'utf8');
+const parser = new BpmnModelParser();
+const model = parser.parse(bpmnXml); // модель процесса
+
+// 2. Создаём экземпляр сервиса выполнения
+const executionService = new ExecuteProcessService();
+
+// 3. Регистрируем кастомный обработчик для ServiceTask
+const flowNodeHandlers = {
+    serviceTask: {
+        async onEnter(flowNode, context) {
+            if (flowNode.id === 'CalculateTask') {
+                // Получаем переменные процесса
+                const variables = context.executionContext.getVariables();
+                const num1 = variables.num1;
+                const num2 = variables.num2;
+                const operation = variables.operation;
+                
+                // Вычисляем
+                let result;
+                switch (operation) {
+                    case '+': result = num1 + num2; break;
+                    case '-': result = num1 - num2; break;
+                    case '*': result = num1 * num2; break;
+                    case '/': result = num2 === 0 ? 'Ошибка: деление на ноль' : num1 / num2; break;
+                    default: result = 'Ошибка: неизвестная операция';
+                }
+                
+                // Сохраняем результат
+                context.executionContext.setVariable('result', result);
+                return; // завершаем задачу
+            }
+        }
+    }
+};
+
+// 4. Запускаем процесс с входными переменными
+const variables = {
+    num1: 10,
+    num2: 5,
+    operation: '+'
+};
+
+executionService.start(model, variables, flowNodeHandlers)
+    .then((executionContext) => {
+        // Процесс завершён
+        const result = executionContext.getVariable('result');
+        console.log(`Результат: ${result}`);
+    })
+    .catch((err) => console.error('Ошибка выполнения:', err));
+```
+
+### Пояснение
+- **Парсер** превращает XML в объектную модель.
+- **Сервис выполнения** запускает процесс, передавая ему переменные и хендлеры.
+- Для узла `CalculateTask` мы определяем `onEnter`, который выполняет вычисление и сохраняет результат.
+- Процесс завершается автоматически после выполнения всех узлов.
+
+---
+
+## 3. **bpmn-moddle** (парсинг XML ↔ JSON, браузер / Node.js)
+
+### Описание
+`bpmn-moddle` не выполняет процессы, а только парсит BPMN XML в JavaScript-объекты и обратно. Мы можем использовать его для чтения BPMN и последующей ручной интерпретации.
+
+### Код (браузерный пример)
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BPMN Moddle Calculator</title>
+</head>
+<body>
+    <input type="number" id="num1" value="10">
+    <input type="number" id="num2" value="5">
+    <select id="operation">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <button id="calculate">Вычислить</button>
+    <div id="result">Результат: </div>
+
+    <script type="module">
+        import { BpmnModdle } from 'https://esm.sh/bpmn-moddle@8.1.0';
+
+        // BPMN XML (тот же, что и выше)
+        const bpmnXml = `<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             targetNamespace="http://bpmn.io/schema/bpmn">
+  <process id="CalculatorProcess" isExecutable="true">
+    <startEvent id="StartEvent" />
+    <serviceTask id="CalculateTask" name="Вычислить результат" />
+    <endEvent id="EndEvent" />
+    <sequenceFlow id="flow1" sourceRef="StartEvent" targetRef="CalculateTask" />
+    <sequenceFlow id="flow2" sourceRef="CalculateTask" targetRef="EndEvent" />
+  </process>
+</definitions>`;
+
+        // Создаём экземпляр моддла
+        const moddle = new BpmnModdle();
+
+        // Парсим XML
+        moddle.fromXML(bpmnXml, (err, definitions) => {
+            if (err) {
+                console.error('Ошибка парсинга:', err);
+                return;
+            }
+            // Извлекаем процесс и его элементы
+            const process = definitions.rootElements.find(el => el.$type === 'bpmn:Process');
+            const tasks = process.flowElements.filter(el => el.$type === 'bpmn:ServiceTask');
+            console.log('Найдено задач:', tasks.length);
+            // Здесь можно проанализировать структуру процесса
+        });
+
+        // Логика калькулятора (исполнение не связано с BPMN, просто демонстрация)
+        document.getElementById('calculate').addEventListener('click', () => {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const op = document.getElementById('operation').value;
+            
+            let result;
+            switch (op) {
+                case '+': result = num1 + num2; break;
+                case '-': result = num1 - num2; break;
+                case '*': result = num1 * num2; break;
+                case '/': result = num2 === 0 ? 'Ошибка: деление на ноль' : num1 / num2; break;
+                default: result = 'Ошибка: неизвестная операция';
+            }
+            document.getElementById('result').innerText = `Результат: ${result}`;
+        });
+    </script>
+</body>
+</html>
+```
+
+### Пояснение
+- `BpmnModdle` парсит XML в объектную модель.
+- В примере мы парсим диаграмму, а затем используем отдельную JavaScript-функцию для вычислений.
+- **bpmn-moddle** не выполняет процесс; мы сами должны интерпретировать модель и вызывать нужные обработчики.
+
+---
+
+## 4. **bpmn-marshaller** (от Apache KIE Tools, TypeScript, браузер)
+
+### Описание
+`bpmn-marshaller` — современный TypeScript-инструмент для парсинга BPMN XML в строго типизированные JavaScript-объекты. Он также не выполняет процессы, но даёт удобный доступ к данным модели.
+
+### Установка
+```bash
+npm install @kie-tools/bpmn-marshaller
+```
+
+### Код (TypeScript / браузер)
+```typescript
+import { Bpmn2Marshaller } from '@kie-tools/bpmn-marshaller';
+import { XmlParser } from '@kie-tools/xml-parser-ts';
+
+// BPMN XML
+const bpmnXml = `<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             targetNamespace="http://bpmn.io/schema/bpmn">
+  <process id="CalculatorProcess" isExecutable="true">
+    <startEvent id="StartEvent" />
+    <serviceTask id="CalculateTask" name="Вычислить результат" />
+    <endEvent id="EndEvent" />
+    <sequenceFlow id="flow1" sourceRef="StartEvent" targetRef="CalculateTask" />
+    <sequenceFlow id="flow2" sourceRef="CalculateTask" targetRef="EndEvent" />
+  </process>
+</definitions>`;
+
+// Создаём парсер XML
+const xmlParser = new XmlParser();
+
+// Используем маршаллер
+const marshaller = new Bpmn2Marshaller();
+const model = marshaller.unmarshal(xmlParser.parse(bpmnXml));
+// model — строго типизированный объект, описывающий BPMN-диаграмму
+
+// Находим задачу
+const definitions = model.definitions;
+const process = definitions.rootElements?.find(el => el.$type === 'bpmn:Process');
+const serviceTasks = process?.flowElements?.filter(el => el.$type === 'bpmn:ServiceTask');
+console.log('Задачи:', serviceTasks?.map(t => t.id));
+
+// Логика калькулятора (отдельно)
+// ...
+```
+
+### Пояснение
+- `bpmn-marshaller` даёт **строго типизированное** представление BPMN.
+- Можно легко навигировать по модели, получать информацию о задачах, шлюзах и т.д.
+- Выполнение процесса нужно реализовывать самостоятельно, используя полученную модель.
+
+---
+
+## 📊 Сравнение подходов в контексте калькулятора
+
+| Инструмент | Где выполняется | Сложность реализации | Особенности |
+|------------|----------------|----------------------|-------------|
+| **bpmn-engine** | Node.js | Низкая | Готовый движок, кастомные сервисы. Не работает в браузере. |
+| **ProcessEngine Core** | Node.js | Средняя | Модульный, гибкие обработчики. Требует больше кода. |
+| **bpmn-moddle** | Браузер/Node.js | Низкая (парсинг) | Только парсинг. Выполнение нужно писать самому. |
+| **bpmn-marshaller** | Браузер/Node.js | Низкая (парсинг) | TypeScript, строгая типизация. Выполнение ручное. |
+
+### Рекомендация для вашего приложения
+Если вы создаёте веб-приложение (как в вашем предыдущем коде с bpmn-js) и хотите выполнять BPMN-процессы прямо в браузере:
+- **bpmn-moddle** или **bpmn-marshaller** позволят разобрать XML, а логику вычислений реализовать вручную (как вы уже сделали).
+- Если вам нужен полноценный исполняемый движок в браузере, можно рассмотреть портирование `bpmn-engine` в Web Worker, но это сложнее.
+
+Для серверной части (Node.js) лучше использовать **bpmn-engine** или **ProcessEngine Core**, так как они предоставляют готовое выполнение процессов.
+
+Если нужен пример интеграции **bpmn-engine** с вашим веб-интерфейсом (через API), дайте знать – подготовлю дополнительный пример.

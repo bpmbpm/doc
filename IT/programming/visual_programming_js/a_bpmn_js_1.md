@@ -258,4 +258,5 @@ const result = await fetch('/api/execute', {
 - [Apache KIE Tools](https://github.com/apache/incubator-kie-tools)
 - [bpmn.io — экосистема инструментов](https://bpmn.io)
 
-Если нужна помощь с интеграцией bpmn-engine в ваш калькулятор или реализация кастомных обработчиков — дайте знать, подготовлю пример кода.
+
+Share: https://chat.deepseek.com/a/chat/s/e841c3c8-0070-4a6b-ac9b-6ec56ee56fc9

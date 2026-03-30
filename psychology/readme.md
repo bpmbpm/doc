@@ -37,3 +37,7 @@ https://github.com/bpmbpm/doc/tree/main/EA/ORG
 - нигилизм, критическое мышление vs ассертивность - где баланс?  
 - Тим Урбан прокрастинация 
 - Синдром самозванца, 
+
+## 3 lies and business
+- [Как младенец с погремушкой объясняет крах государств](https://habr.com/ru/articles/1002012/#comment_29635856)
+- тг leanconsult 30.03.26

@@ -1,4 +1,5 @@
 ## array
+## 1
 ### habr
 - [Алгоритм моделирования многомерного массива данных, распределенных по нормальному закону](https://habr.com/ru/articles/145315/)
 ### excel
@@ -8,7 +9,12 @@
 ### js
 - https://selectel.ru/blog/array-methods-part-1/
 
-## AI
+## 2
+### tuples_or_sets
+- https://www.reddit.com/r/learnpython/comments/ve6fe5/why_use_tuples_or_sets_instead_of_lists/?tl=ru
+- 
+
+## 3 AI
 ### array
 В функции есть несколько массивов - как входящие данные и несколько массивов - как результат функции. Как записать математически?
 

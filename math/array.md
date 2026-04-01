@@ -337,13 +337,16 @@ $$
 
 Если $\text{in}_1$ и $\text{out}_1$ — тензоры одного типа, а $\text{in}_2$ и $\text{out}_2$ — другого, и преобразования линейны, то можно записать как **прямую сумму (блочно-диагональный) оператор**:
 
-Пусть $\mathsf{T}_1: \mathcal{T}^{(p,q)} \to \mathcal{T}^{(r,s)}$ — оператор, преобразующий $\text{in}_1$ в $\text{out}_1$,  
-$\mathsf{T}_2: \mathcal{U}^{(p',q')} \to \mathcal{U}^{(r',s')}$ — оператор, преобразующий $\text{in}_2$ в $\text{out}_2$.  
+Пусть 
+$\mathsf{T}_1: \mathcal{T}^{(p,q)} \to \mathcal{T}^{(r,s)}$ — оператор, преобразующий $\text{in}_1$ в $\text{out}_1$    
+$\mathsf{T}_2: \mathcal{U}^{(p',q')} \to \mathcal{U}^{(r',s')}$ — оператор, преобразующий $\text{in}_2$ в $\text{out}_2$  
+
 Тогда комбинированное отображение:
 
 $$
 \mathsf{T} = \mathsf{T}_1 \oplus \mathsf{T}_2 : \mathcal{T}^{(p,q)} \times \mathcal{U}^{(p',q')} \longrightarrow \mathcal{T}^{(r,s)} \times \mathcal{U}^{(r',s')}
 $$
+
 $$
 \mathsf{T}(\text{in}_1, \text{in}_2) = \bigl( \mathsf{T}_1(\text{in}_1),\; \mathsf{T}_2(\text{in}_2) \bigr).
 $$
@@ -373,7 +376,8 @@ $$
 
 Здесь первый выход может зависеть от обоих входов, но по смыслу он «привязан» к первому входу. Один из способов — ввести **тензорный оператор** $\mathcal{M}$, который действует на пару входов и выдаёт пару выходов, а затем спроецировать:
 
-Пусть $\mathcal{M}$ — оператор (линейный или нелинейный), отображающий $\text{in}_1 \otimes \text{in}_2$ (или пару) в $\text{out}_1 \otimes \text{out}_2$. Тогда:
+Пусть $\mathcal{M}$ — оператор (линейный или нелинейный), отображающий $\text{in}_1 \otimes \text{in}_2$ (или пару) в $\text{out}_1 \otimes \text{out}_2$  
+Тогда:
 
 $$
 (\text{out}_1, \text{out}_2) = \mathcal{M}(\text{in}_1, \text{in}_2) \quad\text{или}\quad
@@ -392,9 +396,11 @@ $$
 $$
 (\text{out}_1)^{ij} = M^{ij}_{\;klpq} (\text{in}_1)^{kl} (\text{in}_2)^{pq} + \dots
 $$
+
 $$
 (\text{out}_2)^{rs} = N^{rs}_{\;klpq} (\text{in}_1)^{kl} (\text{in}_2)^{pq} + \dots
 $$
+
 где $M$ и $N$ — тензоры операторов, задающие преобразование.
 
 ---
@@ -409,6 +415,7 @@ A & B \\
 C & D
 \end{pmatrix},
 $$
+
 где:
 - $A: V_1 \to W_1$ — отображение $\text{in}_1$ в $\text{out}_1$,
 - $B: V_2 \to W_1$ — влияние $\text{in}_2$ на $\text{out}_1$,
@@ -450,6 +457,7 @@ $$
 \text{out}_1 = \mathcal{O}_1(\text{in}_1, \text{in}_2),\qquad
 \text{out}_2 = \mathcal{O}_2(\text{in}_1, \text{in}_2),
 $$
+
 где $\mathcal{O}_1$ и $\mathcal{O}_2$ — некоторые тензорные операторы.
 
 ---
@@ -463,6 +471,7 @@ $$
 Y_{kl} = \sum_{i,j,m} K^{(1)}_{klijm} X_{ij} u_m,\qquad
 v = \sum_{i,j,m} K^{(2)}_{mij} X_{ij} u_m,
 $$
+
 где $K^{(1)}$ и $K^{(2)}$ — тензоры ядер.
 
 ### Пример Б (прямое произведение как частный случай)
@@ -472,6 +481,7 @@ $$
 \text{out}_1 = A(\text{in}_1),\qquad
 \text{out}_2 = D(\text{in}_2),
 $$
+
 что возвращает нас к независимому случаю.
 
 ---
@@ -481,31 +491,37 @@ $$
 Для строгой тензорной записи с сохранением ассоциации «первый вход → первый выход» можно использовать:
 
 ```markdown
+
 $$
 \begin{pmatrix} \text{out}_1 \\ \text{out}_2 \end{pmatrix}
 =
 \begin{pmatrix} \mathcal{A} & \mathcal{B} \\ \mathcal{C} & \mathcal{D} \end{pmatrix}
 \begin{pmatrix} \text{in}_1 \\ \text{in}_2 \end{pmatrix},
 $$
+
 ```
 где $\mathcal{A}, \mathcal{B}, \mathcal{C}, \mathcal{D}$ — тензорные операторы. Если $\mathcal{C}=0$, то второй выход не зависит от первого входа.
 
 Для нелинейного случая:
 
 ```markdown
+
 $$
 (\text{out}_1)^{\alpha\ldots}_{\beta\ldots} = \mathcal{F}_1^{\alpha\ldots}_{\beta\ldots}(\text{in}_1, \text{in}_2),\qquad
 (\text{out}_2)^{\mu\ldots}_{\nu\ldots} = \mathcal{F}_2^{\mu\ldots}_{\nu\ldots}(\text{in}_1, \text{in}_2).
 $$
+
 ```
 
 Если требуется подчеркнуть независимость:
 
 ```markdown
+
 $$
 F = f_1 \times f_2,\qquad
 F(\text{in}_1, \text{in}_2) = \bigl( f_1(\text{in}_1),\, f_2(\text{in}_2) \bigr).
 $$
+
 ```
 
 Все варианты корректно отображаются на GitHub и используют только стандартную математическую нотацию.

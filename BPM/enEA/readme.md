@@ -1,23 +1,30 @@
-### comparison
+## Enterprise-architecture-tool
+### 1 comparison
 - https://github.com/bpmbpm/doc/blob/main/BPM/enEA/comparison2.md
 
-### commercial
+### 1.2 commercial
 - https://www.ardoq.com/knowledge-hub/enterprise-architecture-tool
-### FOSS Tools
+### 1.3 FOSS Tools
 - archi
 - ADOxx https://www.adoxx.org ; [adoxx_libraries](https://www.adoxx.org/documentation/80_special_cases/adoxx_libraries.html) ; [researchgate](https://www.researchgate.net/publication/235990915_On_the_Conceptualisation_of_Modelling_Methods_Using_the_ADOxx_Meta_Modelling_Platform?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoiX2RpcmVjdCJ9fQ)
     - [omilab.org DEMO](https://nemo.omilab.org/nemo/2021/lectures/05-deVries.html) ; [MEMO4ADO](https://link.springer.com/chapter/10.1007/978-3-319-39417-6_11) 
 - Essential https://enterprise-architecture.org/ ; [Essential Project](https://www.reddit.com/r/EnterpriseArchitect/comments/1h5z04c/essential_project_open_source_ea_tool/)
 - comparison: Archi vs ADOxx https://github.com/bpmbpm/doc/blob/main/BPM/enEA/comparison.md
 
-### Resource
+### 1.4 handmade
+- Штатная связка visio + excel позволяет делать крутые системы EA. Видел несколько реализаций - прелесть.
+- vibe coding  
+
+### 2 Resource
 #### Architecture Weekly
 - t.me/ArchitectureWeekly
 - [softwarearchitectureweekly](https://softwarearchitectureweekly.substack.com/p/architecture-weekly-163?utm_source=substack&utm_medium=email&utm_content=share)
 - https://www.architecture-weekly.com/ ; https://github.com/oskardudycz/ArchitectureWeekly
 ### Conf
 - https://modelsward.scitevents.org/
-### Отдельные фишки 
+
+### 3 features
+Отдельные фишки 
 #### Nesting
 Вложение (Nesting) элементов друг в друга:
 - [visual-paradigm](https://www.visual-paradigm.com/support/documents/vpuserguide/4455/4409/86501_useofnesting.html)

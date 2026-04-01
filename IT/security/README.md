@@ -9,6 +9,8 @@
 - [Свобода по цене чая: как я перестал бороться с VPN и перешел на прокси за 26 рублей в месяц в 2026 году](https://habr.com/ru/articles/984588/)
 - https://habr.com/ru/companies/amnezia/articles/957152/
 - [Proxy и VPN. В чём смысл этих понятий и чем они отличаются](https://habr.com/ru/articles/1003800/)
+### VPN-technique
+- [Как оператор связи видит, что вы используете VPN — техническая сторона вопроса](https://habr.com/ru/articles/1017158/)
 ### Amnezia
 - AmneziaVPN [Ваш VPN перестал работать? Мы можем помочь](https://habr.com/ru/companies/amnezia/news/901110/) ; [copy](https://dimonvideo.ru/usernews/401234)
   - [AmneziaWG 2.0: от маскировки трафика к полной мимикрии](https://habr.com/ru/companies/amnezia/articles/1014636/)
@@ -45,6 +47,7 @@ https://geti2p.net/en/
 ### Also
 - https://github.com/bpmbpm/doc/tree/main/IT/CADES
 ### TG 
+- [Способы обхода замедления Telegram](https://habr.com/ru/articles/1014934/)
 ### TG 03.26
 - [Инструкция по обходу блокировки Telegram. Как активировать SOCKS 5](https://habr.com/ru/articles/404921/) + comment
 SOCKS — сетевой протокол, который позволяет клиент-серверным приложениям прозрачно (незаметно для них) использовать сервисы за межсетевыми экранами (фаерволами). Опция уже доступна в Telegram Desktop и Mac, а мобильные клиенты получат её в ближайшем обновлении.  

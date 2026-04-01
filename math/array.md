@@ -11,8 +11,9 @@
 
 ## 2
 ### tuples_or_sets
-- https://www.reddit.com/r/learnpython/comments/ve6fe5/why_use_tuples_or_sets_instead_of_lists/?tl=ru
-- 
+- https://www.reddit.com/r/learnpython/comments/ve6fe5/why_use_tuples_or_sets_instead_of_lists/?tl=ru Список
+Очень похож на кортеж в использовании, но очень отличается по концепции. Техническое объяснение состоит в том, что список - это изменяемая упорядоченная коллекция, то есть ее состояние может меняться, но порядок элементов гарантирован.
+- https://informatics.msk.ru/mod/book/view.php?id=49881
 
 ## 3 AI
 ### array

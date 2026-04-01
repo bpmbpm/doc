@@ -1,6 +1,6 @@
 ### comparison
 - https://github.com/bpmbpm/doc/blob/main/BPM/enEA/comparison2.md
-- Archi vs ADOxx https://github.com/bpmbpm/doc/blob/main/BPM/enEA/comparison.md
+
 ### commercial
 - https://www.ardoq.com/knowledge-hub/enterprise-architecture-tool
 ### FOSS Tools
@@ -8,7 +8,7 @@
 - ADOxx https://www.adoxx.org ; [adoxx_libraries](https://www.adoxx.org/documentation/80_special_cases/adoxx_libraries.html) ; [researchgate](https://www.researchgate.net/publication/235990915_On_the_Conceptualisation_of_Modelling_Methods_Using_the_ADOxx_Meta_Modelling_Platform?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoiX2RpcmVjdCJ9fQ)
     - [omilab.org DEMO](https://nemo.omilab.org/nemo/2021/lectures/05-deVries.html) ; [MEMO4ADO](https://link.springer.com/chapter/10.1007/978-3-319-39417-6_11) 
 - Essential https://enterprise-architecture.org/ ; [Essential Project](https://www.reddit.com/r/EnterpriseArchitect/comments/1h5z04c/essential_project_open_source_ea_tool/)
-
+- comparison: Archi vs ADOxx https://github.com/bpmbpm/doc/blob/main/BPM/enEA/comparison.md
 
 ### Resource
 #### Architecture Weekly

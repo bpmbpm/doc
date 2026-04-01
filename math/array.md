@@ -547,6 +547,7 @@ $$
 $$
 (\text{out}_1)^{\alpha_1\ldots\alpha_r}_{\beta_1\ldots\beta_s} = \mathcal{F}_1^{\alpha_1\ldots\alpha_r}_{\beta_1\ldots\beta_s}\bigl( (\text{in}_1)^{\mu_1\ldots\mu_p}_{\nu_1\ldots\nu_q} \bigr),
 $$
+
 $$
 (\text{out}_2)^{\gamma_1\ldots\gamma_t}_{\delta_1\ldots\delta_u} = \mathcal{F}_2^{\gamma_1\ldots\gamma_t}_{\delta_1\ldots\delta_u}\bigl( (\text{in}_2)^{\xi_1\ldots\xi_a}_{\eta_1\ldots\eta_b} \bigr).
 $$
@@ -562,6 +563,7 @@ $$
 $$
 (\text{out}_1)^{\alpha_1\ldots\alpha_r}_{\beta_1\ldots\beta_s} = \mathcal{O}_1^{\alpha_1\ldots\alpha_r}_{\beta_1\ldots\beta_s}\bigl( (\text{in}_1)^{\mu_1\ldots\mu_p}_{\nu_1\ldots\nu_q},\; (\text{in}_2)^{\xi_1\ldots\xi_a}_{\eta_1\ldots\eta_b} \bigr),
 $$
+
 $$
 (\text{out}_2)^{\gamma_1\ldots\gamma_t}_{\delta_1\ldots\delta_u} = \mathcal{O}_2^{\gamma_1\ldots\gamma_t}_{\delta_1\ldots\delta_u}\bigl( (\text{in}_1)^{\mu_1\ldots\mu_p}_{\nu_1\ldots\nu_q},\; (\text{in}_2)^{\xi_1\ldots\xi_a}_{\eta_1\ldots\eta_b} \bigr).
 $$
@@ -575,6 +577,7 @@ $$
 $$
 (\text{out}_1)^i = \sum_{j} A^i_{\,j} (\text{in}_1)^j + \sum_{k} B^i_{\,k} (\text{in}_2)^k,
 $$
+
 $$
 (\text{out}_2)^\ell = \sum_{m} C^\ell_{\,m} (\text{in}_1)^m + \sum_{n} D^\ell_{\,n} (\text{in}_2)^n.
 $$
@@ -582,7 +585,7 @@ $$
 Здесь $A$, $B$, $C$, $D$ — матрицы (тензоры второго ранга), задающие отображение.
 
 В более компактной блочной форме:
-
+```
 $$
 \begin{pmatrix}
 (\text{out}_1)^i \\[2pt]
@@ -599,6 +602,7 @@ C^\ell_{\,m} & D^\ell_{\,n}
 (\text{in}_2)^k
 \end{pmatrix},
 $$
+```
 где $\ast$ означает свёртку по соответствующим индексам.
 
 ---
@@ -611,11 +615,13 @@ $$
 \text{out}_1 = \mathcal{M}_1 \bigl( \text{in}_1 \otimes \text{in}_2 \bigr),\qquad
 \text{out}_2 = \mathcal{M}_2 \bigl( \text{in}_1 \otimes \text{in}_2 \bigr),
 $$
+
 где $\mathcal{M}_1$ и $\mathcal{M}_2$ — тензорные операторы, возможно, получаемые проекцией из общего оператора $\mathcal{M}$:
 
 $$
 \mathcal{M}: \text{in}_1 \otimes \text{in}_2 \longrightarrow \text{out}_1 \otimes \text{out}_2,
 $$
+
 $$
 \text{out}_1 = \pi_1\!\left( \mathcal{M}(\text{in}_1 \otimes \text{in}_2) \right),\quad
 \text{out}_2 = \pi_2\!\left( \mathcal{M}(\text{in}_1 \otimes \text{in}_2) \right).
@@ -647,6 +653,7 @@ T^{\alpha_1\ldots\alpha_r}_{\beta_1\ldots\beta_s}
 ## 6. Пример полностью корректной записи для GitHub
 
 ```markdown
+
 $$
 {\text{out}_1}^{\alpha_1\ldots\alpha_r}_{\beta_1\ldots\beta_s} = 
 \mathcal{F}_1^{\alpha_1\ldots\alpha_r}_{\beta_1\ldots\beta_s}
@@ -656,6 +663,7 @@ $$
 \mathcal{F}_2^{\gamma_1\ldots\gamma_t}_{\delta_1\ldots\delta_u}
 \bigl( {\text{in}_2}^{\xi_1\ldots\xi_a}_{\eta_1\ldots\eta_b} \bigr).
 $$
+
 ```
 
 Все индексы сгруппированы, двойных подстрочников нет, формула корректно отображается.

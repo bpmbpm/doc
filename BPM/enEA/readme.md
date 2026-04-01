@@ -1,9 +1,11 @@
-### 1
+### commercial
 - https://www.ardoq.com/knowledge-hub/enterprise-architecture-tool
 ### FOSS Tools
 - archi
-- ADOxx
+- ADOxx [researchgate](https://www.researchgate.net/publication/235990915_On_the_Conceptualisation_of_Modelling_Methods_Using_the_ADOxx_Meta_Modelling_Platform?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoiX2RpcmVjdCJ9fQ)
+    - [omilab.org DEMO](https://nemo.omilab.org/nemo/2021/lectures/05-deVries.html) ; 
 - Essential https://enterprise-architecture.org/ ; [Essential Project](https://www.reddit.com/r/EnterpriseArchitect/comments/1h5z04c/essential_project_open_source_ea_tool/)
+
 
 ### Resource
 #### Architecture Weekly

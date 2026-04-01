@@ -1,3 +1,6 @@
+### comparison
+- https://github.com/bpmbpm/doc/blob/main/BPM/enEA/comparison2.md
+- Archi vs ADOxx https://github.com/bpmbpm/doc/blob/main/BPM/enEA/comparison.md
 ### commercial
 - https://www.ardoq.com/knowledge-hub/enterprise-architecture-tool
 ### FOSS Tools

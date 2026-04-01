@@ -29,9 +29,11 @@ $$
 $$
 f(a_1, a_2, \dots, a_k) = (b_1, b_2, \dots, b_m)
 $$
+
 где $a_i \in A_i$, $b_j \in B_j$.
 
 ### Вариант 3: Векторная форма (если все массивы одного типа)
+
 $$
 f: A^k \to B^m,\qquad f(\mathbf{a}) = \mathbf{b}
 $$
@@ -39,6 +41,7 @@ $$
 с $\mathbf{a} \in A^k$, $\mathbf{b} \in B^m$.
 
 ### Вариант 4: Теоретико-множественное определение (с использованием $\subseteq$)
+
 $$
 f \subseteq (A_1 \times \dots \times A_k) \times (B_1 \times \dots \times B_m)
 $$

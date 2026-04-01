@@ -22,4 +22,4 @@ https://github.com/bpmbpm/doc/tree/main/IT/security
 - [Google удалила 749 млн URL-адресов Anna's Archive из результатов поиска](https://habr.com/ru/news/963174/)
 
 ### 2
-- [Яндекс Трекер](https://habr.com/ru/articles/1013888/) + заставка
+- [Яндекс Трекер](https://habr.com/ru/articles/1013888/) + заставка [wiki](https://ru.wikipedia.org/wiki/%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81_%D0%A2%D1%80%D0%B5%D0%BA%D0%B5%D1%80)

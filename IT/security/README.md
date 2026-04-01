@@ -2,8 +2,6 @@
 ### Network
 - Блокировки: [openvpn](https://www.pvsm.ru/cat/openvpn) ; [Лучшие бесплатные VPN для ПК и смартфона 2025 (которые работают)](https://www.pvsm.ru/openvpn/410582) ;
 - Censor Tracker - прокси-расширение
-- AmneziaVPN [Ваш VPN перестал работать? Мы можем помочь](https://habr.com/ru/companies/amnezia/news/901110/) ; [copy](https://dimonvideo.ru/usernews/401234)
-  - [AmneziaWG 2.0: от маскировки трафика к полной мимикрии](https://habr.com/ru/companies/amnezia/articles/1014636/)
 - [Все о блокировках VPN за последние две недели](https://habr.com/ru/companies/amnezia/articles/928378/)
 - [Свой прокси DNS сервер для обхода санкций зарубежных сайтов(с использованием VPS)](https://habr.com/ru/articles/956916/)
 - https://nasvyazi.org/zvezda-na-svyazi-luchshie-vpn-oktyabr-2024/ ; https://rutracker.org/forum/viewtopic.php?t=5204008&start=930 подборка не обновлялась уже год, но оставлю ресурс с рекомендациями в плане впн. Там указаны те, на которые стоит обратить внимание, и те, которые лучше обойти стороной. Кстати, Browsec один из тех, что не рекомендуется к использованию. Если впн хоть немного связан с РФ - скажите ему "прощай". Рекомендаций не даю, но и уже давно ничего не тестирую и не ищу ввиду сформированного набора инструментов. Мой топ, это Psiphon, Launcher for zapret, GoodbyeDPI, Nekoray, Throne. Для мобилки обходчик по DPI от Романа и тот же Psiphon, Husi.
@@ -11,6 +9,9 @@
 - [Свобода по цене чая: как я перестал бороться с VPN и перешел на прокси за 26 рублей в месяц в 2026 году](https://habr.com/ru/articles/984588/)
 - https://habr.com/ru/companies/amnezia/articles/957152/
 - [Proxy и VPN. В чём смысл этих понятий и чем они отличаются](https://habr.com/ru/articles/1003800/)
+### Amnezia
+- AmneziaVPN [Ваш VPN перестал работать? Мы можем помочь](https://habr.com/ru/companies/amnezia/news/901110/) ; [copy](https://dimonvideo.ru/usernews/401234)
+  - [AmneziaWG 2.0: от маскировки трафика к полной мимикрии](https://habr.com/ru/companies/amnezia/articles/1014636/)
 ### VPN
 - [ГОСТ VPN — что это и как поможет бизнесу](https://habr.com/ru/companies/selectel/articles/1005368/)
 - [Белые списки добрались до Москвы: изучаем механику «отсечки» в 16 килобайт](https://habr.com/ru/articles/1008164/)

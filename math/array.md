@@ -19,11 +19,13 @@
 ## 1. Математическая нотация (только $ и $$)
 
 ### Вариант 1: Декартово произведение (дисплейная формула)
+
 $$
 f: A_1 \times A_2 \times \dots \times A_k \;\longrightarrow\; B_1 \times B_2 \times \dots \times B_m
 $$
 
 ### Вариант 2: Значение функции — кортеж (дисплейная формула)
+
 $$
 f(a_1, a_2, \dots, a_k) = (b_1, b_2, \dots, b_m)
 $$
@@ -33,12 +35,14 @@ $$
 $$
 f: A^k \to B^m,\qquad f(\mathbf{a}) = \mathbf{b}
 $$
+
 с $\mathbf{a} \in A^k$, $\mathbf{b} \in B^m$.
 
 ### Вариант 4: Теоретико-множественное определение (с использованием $\subseteq$)
 $$
 f \subseteq (A_1 \times \dots \times A_k) \times (B_1 \times \dots \times B_m)
 $$
+
 и для каждого входа существует ровно один выход.
 
 ---

@@ -60,3 +60,6 @@ OpenMetaData
 ### 6
 - [Как мы построили витрины данных из разрозненных микросервисов](https://habr.com/ru/companies/greenatom/articles/1007324/)
 - [Как за 22 часа я собрала полноценный UI-прототип корпоративной системы с помощью ИИ](https://habr.com/ru/companies/technokratos/articles/1008644/)
+
+### DLS
+- [Data as Code на практике: создаём, версионируем и делимся модулями БД с помощью ArchDB](https://habr.com/ru/articles/1018586/)

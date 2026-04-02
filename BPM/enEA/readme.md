@@ -1,5 +1,6 @@
 ## Enterprise-architecture-tool
-### 1 comparison
+### 1 tool
+### 1.1 comparison
 - https://github.com/bpmbpm/doc/blob/main/BPM/enEA/comparison2.md
 
 ### 1.2 commercial

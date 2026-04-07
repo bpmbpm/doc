@@ -11,3 +11,6 @@ https://ncsa.ru/upload/iblock/d96/hgwl5jxciahzyqe3o37817xuoap52iqq.pdf?ysclid=mg
 ### also
 - https://github.com/bpmbpm/doc/blob/main/EA/grail.md
 - https://github.com/bpmbpm/doc/tree/main/visualization/executable_model  
+
+### model-first vs Database-First
+- https://learn.microsoft.com/ru-ru/ef/ef6/modeling/designer/workflows/model-first

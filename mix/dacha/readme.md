@@ -9,3 +9,6 @@
 
 ### arc
 - [izba2000.narod.ru](https://web.archive.org/web/20210508043030/http://izba2000.narod.ru/)
+
+### also
+- https://github.com/bpmbpm/doc/blob/main/IT/DIY/readme.md

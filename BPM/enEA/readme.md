@@ -58,3 +58,6 @@
 - «Архитектура предприятия в действии» Марка Ланкхорста 
 - https://sparxsystems.com/resources/user-guides/16.1/model-domains/languages/archimate.pdf Create and Visualize Enterprise Architecture Models, Views and Viewpoints
 - https://uzor.todaytimes.ru/yadro-yazyka-modelirovaniya-arkhitektury-predpriyatiya-archimate-razlichayet-sleduyushchiye-sloi/
+
+### 2
+- https://eam-initiative.org/pages/x6ywbrw8r2h4/EA-Model

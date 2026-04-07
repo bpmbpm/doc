@@ -6,4 +6,5 @@
 «Присоединяйтесь к Share, и сотни экспертов окажут вам необходимую поддержку». 
 
 ### also
-https://github.com/bpmbpm/doc/tree/main/IT/software#open-source-2
+- https://github.com/bpmbpm/doc/tree/main/IT/software#open-source-2
+- https://github.com/bpmbpm/doc/blob/main/IT/readme.md#share

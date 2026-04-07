@@ -14,3 +14,5 @@ https://ncsa.ru/upload/iblock/d96/hgwl5jxciahzyqe3o37817xuoap52iqq.pdf?ysclid=mg
 
 ### model-first vs Database-First
 - https://learn.microsoft.com/ru-ru/ef/ef6/modeling/designer/workflows/model-first
+- https://www.reddit.com/r/dotnet/comments/2wo834/entity_framework_code_first_db_first_or_model/?tl=ru
+- https://www.llblgen.com/documentation/3.1/Designer/Concepts/DatabaseFirstModelFirst.htm

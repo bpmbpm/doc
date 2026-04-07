@@ -14,3 +14,10 @@ https://t.me/abpmp/48743
 
 - см. G178e Value Streams.pdf **A Comparison of Alternative Value Analysis Techniques** A.3 Lean Value Stream:
 Несмотря на сходство названия с потоком создания ценности в бизнес-архитектуре, основная цель бережливого потока создания ценности — документирование, анализ и улучшение потока информации или материалов, необходимых для производства продукта или услуги для клиента. Он не предназначен (и не подходит) для решения более широких архитектурных задач, а именно для декомпозиции до критических видов деятельности (или этапов), которые постепенно объединяются для создания ценности для заинтересованной стороны, или для перекрестного сопоставления этих этапов потока создания ценности с соответствующими бизнес-возможностями.
+
+### 2
+- https://habr.com/ru/companies/raiffeisenbank/articles/1018776/#comment_29786402
+- https://enterprise-architecture.org/about/thought-leadership/how-the-essential-ea-management-tool-supports-strategic-portfolio-design/ ; https://enterprise-architecture.org/ontology-enterprise-architecture/
+- https://bluedolphin.io/blog/explaining-value-stream-mapping-to-enterprise-architecture-leaders/
+- https://iasa-global.github.io/btabok/value_streams.html
+- 

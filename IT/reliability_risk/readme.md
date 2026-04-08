@@ -4,3 +4,4 @@
 ## 2
 - Data Multiverse https://www.flexvertex.com/multiverse
 - https://en.wikipedia.org/wiki/Multiverse_analysis
+- https://ieeexplore.ieee.org/document/6329370

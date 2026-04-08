@@ -15,3 +15,7 @@
 
 ### also
 - https://github.com/bpmbpm/doc/blob/main/IT/programming/yaml_etc.md
+
+## GoJS jointjs
+- https://gojs.net/latest/
+- https://www.jointjs.com/ https://www.jointjs.com/demos/bpmn-editor

@@ -12,3 +12,6 @@
 
 ### Tags
 - [DeepSeek + Unity: Как заставить ИИ рисовать схемы и не сойти с ума от веселья Part2](https://habr.com/ru/articles/978306/)
+
+### also
+- https://github.com/bpmbpm/doc/blob/main/IT/programming/yaml_etc.md

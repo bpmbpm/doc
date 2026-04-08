@@ -18,4 +18,4 @@
 
 ## GoJS jointjs
 - https://gojs.net/latest/
-- https://www.jointjs.com/ https://www.jointjs.com/demos/bpmn-editor
+- https://www.jointjs.com/ ; https://www.jointjs.com/demos/bpmn-editor `JointJS BPMN`

@@ -61,6 +61,8 @@ GBO — промежуточный, единый формат.
 
 Эта методология (ASBO-GBO-ASBO) широко используется при проектировании интеграционных решений и в Event Driven Architecture.
 
+### 3
+- https://documentation.alfabet.com/en/PME_CapBusiObjCat_Basic.html
 ### ESB
 - https://citforum.ru/seminars/cbd2006/websphere.pdf c32
 

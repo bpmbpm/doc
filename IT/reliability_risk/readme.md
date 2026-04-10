@@ -15,6 +15,6 @@ Multiverse and Palantir Partner to Launch NHS Federated Data Platform Apprentice
 
 ## Multiverse Computing
 - [wiki](https://en.wikipedia.org/wiki/Multiverse_Computing)
-
+- https://www.reddit.com/r/BuyFromEU/comments/1la7w20/spain_multiverse_computing_raises_215_million_to/?tl=ru ; https://finance.yahoo.com/news/spains-multiverse-raises-217-million-090834949.html
 ## Multiverse Privacy Theory
 - https://arxiv.org/pdf/2506.10042

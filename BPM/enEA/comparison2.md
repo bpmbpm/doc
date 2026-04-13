@@ -266,3 +266,5 @@ ADOIT (Architecture Design and Outlook Integration Tool) — флагманск�
 ## Part 3
 - https://www.reddit.com/r/EnterpriseArchitect/comments/1hb7gbk/ea_software_preferences/ Перешёл с ADOIT на LeanIX, оценил MEGA, Ardoq и LeanIX. На мой взгляд, Ardoq и LeanIX значительно превосходят все остальные по качеству
   - BiZZDesign, Enterprise Insight, Essential project, BlueDolphin от ValueBlue, https://enterprisemodelling.co.uk/ 
+- https://www.reddit.com/r/EnterpriseArchitect/comments/1g1zt6d/selection_of_ea_platform_tool/
+- https://sourceforge.net/software/compare/Enterprise-Architect-vs-Essential/

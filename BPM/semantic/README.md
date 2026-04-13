@@ -7,7 +7,8 @@
 Например, запатентованный граф знаний Ardoq полностью отказывается от ручного рисования в пользу визуализации на основе данных . Одно и то же хранилище данных графа может создавать карту возможностей , схему процесса , организационную диаграмму или тепловую карту возможностей   — все они согласованы друг с другом, поскольку используют одни и те же связанные данные. 
 - https://www.ardoq.com/knowledge-hub/enterprise-architecture-metamodel Метамодели корпоративной архитектуры: подробное руководство
 - https://www.thoughtworks.com/radar/platforms/ardoq
-    
+- Gremlin https://help.ardoq.com/en/articles/44110-gremlin-graph-search
+      
 ### semantic BPM  
 Подборка ссылок про "BPM+Семантика", т.е. направление semantic BPM
 Папка проекта [SemanticBPM](https://github.com/bpmbpm/doc/tree/main/Project/SemanticBPM)

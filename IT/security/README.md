@@ -11,6 +11,7 @@
 - [Proxy и VPN. В чём смысл этих понятий и чем они отличаются](https://habr.com/ru/articles/1003800/)
 ### VPN-technique
 - [Как оператор связи видит, что вы используете VPN — техническая сторона вопроса](https://habr.com/ru/articles/1017158/)
+- [Отправим стукачей в ГУЛАГ](https://habr.com/ru/articles/1022390/)
 ### Amnezia
 - AmneziaVPN [Ваш VPN перестал работать? Мы можем помочь](https://habr.com/ru/companies/amnezia/news/901110/) ; [copy](https://dimonvideo.ru/usernews/401234)
   - [AmneziaWG 2.0: от маскировки трафика к полной мимикрии](https://habr.com/ru/companies/amnezia/articles/1014636/)

@@ -268,3 +268,5 @@ ADOIT (Architecture Design and Outlook Integration Tool) — флагманск�
   - BiZZDesign, Enterprise Insight, Essential project, BlueDolphin от ValueBlue, https://enterprisemodelling.co.uk/ 
 - https://www.reddit.com/r/EnterpriseArchitect/comments/1g1zt6d/selection_of_ea_platform_tool/
 - https://sourceforge.net/software/compare/Enterprise-Architect-vs-Essential/
+### semantic
+- https://github.com/bpmbpm/doc/blob/main/BPM/semantic/README.md#example-sembpmea

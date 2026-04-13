@@ -8,7 +8,10 @@
 - https://www.ardoq.com/knowledge-hub/enterprise-architecture-metamodel Метамодели корпоративной архитектуры: подробное руководство
 - https://www.thoughtworks.com/radar/platforms/ardoq
 - Gremlin https://help.ardoq.com/en/articles/44110-gremlin-graph-search
-      
+
+#### EA
+https://github.com/bpmbpm/doc/blob/main/BPM/enEA/comparison2.md
+
 ### semantic BPM  
 Подборка ссылок про "BPM+Семантика", т.е. направление semantic BPM
 Папка проекта [SemanticBPM](https://github.com/bpmbpm/doc/tree/main/Project/SemanticBPM)

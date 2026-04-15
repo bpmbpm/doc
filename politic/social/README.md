@@ -34,13 +34,14 @@ https://t.me/rusontology/2479
 - РОТУ https://github.com/bpmbpm/doc/edit/main/IT/systems_theory/README.md
   - Русский путь в управление. Зачем, как и что понимать русскому человеку в управлении собой, делом и Родиной https://www.litres.ru/book/mihail-nikolskiy-332/russkiy-put-v-upravlenie-zachem-kak-i-chto-ponimat-ru-71481805/chitat-onlayn/
 
-### темы "философия" нет в каталоге
+### philosophy
+- https://github.com/bpmbpm/doc/tree/main/philosophy
 - https://github.com/bpmbpm/doc/blob/main/LD/metaphysics/readme.md
 - politic/social/
 
 ### marginal
 - [А судьи кто?](https://habr.com/ru/articles/960220/)
-
+- [Десоциализация: почему одинокие кукухи отлетают первыми?](https://habr.com/ru/articles/1023614/)
 ### 2
 - [Диалектика общественного развития: откуда и куда мы идем?](https://habr.com/ru/articles/960876/)
 - [Как младенец с погремушкой объясняет крах государств](https://habr.com/ru/articles/1002012/)

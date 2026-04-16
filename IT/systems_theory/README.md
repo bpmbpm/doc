@@ -55,3 +55,8 @@ https://t.me/agirussia/111225
 - https://t.me/rusontology/12099
 - https://t.me/rusontology/12086
 - https://github.com/bpmbpm/doc/tree/main/METAMODEL/LINK/doc
+
+### functional programming
+- https://www.reddit.com/r/ProgrammingLanguages/comments/nf54og/functional_dependency_injection_after_years/?tl=ru
+- https://habr.com/ru/articles/492460/
+- https://avito.tech/content/kpfills681-ot-aristotelya-do-tyuringa-chto-takoe-fu

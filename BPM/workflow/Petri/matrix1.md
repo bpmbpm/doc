@@ -1,7 +1,7 @@
 ## 2
 сети петри через матрицы
 
-- https://cyberleninka.ru/article/n/predstavlenie-setey-petri-v-matrichno-predikatnom-vide/viewer
+- Представление сетей Петри в матрично-предикатном виде [pdf](https://cyberleninka.ru/article/n/predstavlenie-setey-petri-v-matrichno-predikatnom-vide/viewer) ; https://cyberleninka.ru/article/n/predstavlenie-setey-petri-v-matrichno-predikatnom-vide
 - 26.Выполнение сетей Петри на основе решения матричных уравне­ний. Примеры https://dmittimofeev.narod.ru/main2/25.htm
   - Движение фишек в сети может быть представлено в модели достаточно простыми математическими средствами. Cобственно сеть Пэтри отражается в машине двумя матрицами:
     - DI- матрица входов

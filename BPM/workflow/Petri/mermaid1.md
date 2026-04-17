@@ -13,6 +13,5 @@ flowchart TB
 %% создаем узел
     A --> B 
 %% Описываем действия для клика по узлу
-
 click A "http://www.github.com"
 ```

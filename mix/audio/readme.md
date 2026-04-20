@@ -2,11 +2,14 @@
 #### RX v463
 - https://www.manualsdir.ru/manuals/10434/yamaha-rx-v463.html?page=105
 #### NS-8900
-- [yamaha-laboratory.ru](http://www.yamaha-laboratory.ru/FAQ/Impedance/Answer%20Impedance_final.html) 
+- [yamaha-laboratory.ru](http://www.yamaha-laboratory.ru/FAQ/Impedance/Answer%20Impedance_final.html)
+- https://img.mvideo.ru/ins/11031140.pdf manual https://mcgrp.ru/files/viewer/185460/1 NS-P8900  = NS-C8900 + NS-E8900 
 - Tweeter ВЧ динамик X7305A0 для NS-8900 NS-7900 NS-6900
 - http://www.salonav.com/arch/2006/11/080-083.html
-- https://archive.stereo.ru/forum/viewtopic.php%3Ft=41264.html 8900 модель изначально киношная, ... И еще у 8900 есть одно неоспоримое достоинство - надежность. 
-### 2 tweeter
+- https://archive.stereo.ru/forum/viewtopic.php%3Ft=41264.html 8900 модель изначально киношная, ... И еще у 8900 есть одно неоспоримое достоинство - надежность.
+  - сейчас есть Yamaha RX-V463 с комплектом акустики Yamaha ns-8900 (5.0)+саб Yamaha yst-sw216. Послушал Yamaha RX-V3067 c Monitor Audio Silver RX6 и все рес буду менять на тысячную или 3-х тысячную серию посоветуйте на что сменить акустику. Или на какую обратить внимание. На моем комплекте для кино всё отлично, но на музыке раздражают средние (слишком много) и плоский низы в сравнении с мониторами. https://forum.ixbt.com/topic.cgi?id=61:19-149 
+  - самотключения с разной переодичностью, https://archive.stereo.ru/forum/viewtopic.php%3Ft=55844.html
+### tweeter
 Твитер
 #### high-pass filter
 | мкф | 4 Ом, кГц| 8 Ом, кГц | 

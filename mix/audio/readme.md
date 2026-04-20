@@ -5,7 +5,7 @@
 - [yamaha-laboratory.ru](http://www.yamaha-laboratory.ru/FAQ/Impedance/Answer%20Impedance_final.html) 
 - Tweeter ВЧ динамик X7305A0 для NS-8900 NS-7900 NS-6900
 - http://www.salonav.com/arch/2006/11/080-083.html
-
+- https://archive.stereo.ru/forum/viewtopic.php%3Ft=41264.html 8900 модель изначально киношная, ... И еще у 8900 есть одно неоспоримое достоинство - надежность. 
 ### 2 tweeter
 Твитер
 #### high-pass filter

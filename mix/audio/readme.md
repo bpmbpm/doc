@@ -33,3 +33,6 @@
 
 ### Ampflifier
 - [XH-A232 8-26В](https://www.ozon.ru/product/audio-usilitel-moshchnosti-zvuka-dlya-kolonok-xh-a232-30-vt-30-vt-815933824/?tab=reviews)
+
+### intro
+- [Статьи о динамиках, усилителях, и пассивных/активных монитора](https://rmmedia.ru/threads/100054/)

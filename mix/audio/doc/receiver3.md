@@ -67,6 +67,14 @@ Sony STR-KG800
 | ... | Примитивная настройка сабвуфера (Low Pass Filter) |
 | ... | Крайне мало информации в открытых источниках |
 
+### Pioneer VSX-529-K vs Yamaha RX-V465
+https://www.reddit.com/r/BudgetAudiophile/comments/1nmqx85/help_me_decide_between_the_pioneer_vsx529k_or_the/?tl=ru (не V463)
+
+## Часть 2
 ### autocalibration
 Pioneer VSX-529-k   
 Подключить телевизор к HDMI out ресивера (появится меню по кнопке). Подключить микрофон и запустить первую строку меню.
+
+### Bluetooth
+Pioneer VSX-529-k  https://mcgrp.ru/files/viewer/105378/20
+

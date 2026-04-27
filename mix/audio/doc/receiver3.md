@@ -76,5 +76,6 @@ Pioneer VSX-529-k
 Подключить телевизор к HDMI out ресивера (появится меню по кнопке). Подключить микрофон и запустить первую строку меню.
 
 ### Bluetooth
-Pioneer VSX-529-k  https://mcgrp.ru/files/viewer/105378/20
-
+- Pioneer VSX-529-k  https://mcgrp.ru/files/viewer/105378/20
+- [Добавляем свежий Bluetooth в устаревшую аудиотехнику и DIY-проекты](https://www.ixbt.com/live/topcompile/dobavlyaem-svezhiy-bluetooth-v-ustarevshuyu-audiotehniku-i-diy-proekty.html)
+- https://www.ozon.ru/product/bluetooth-5-1-peredatchik-priemnik-tsifroanalogovyy-audio-preobrazovatel-1972638683/

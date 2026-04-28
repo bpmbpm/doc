@@ -102,4 +102,4 @@ $$
 - [Калькулятор кроссовера акустических систем](https://radioskot.ru/calc/kalkulyator-krossovera-akusticheskih-sistem)
 - [NS-6490](https://cxem.net/sound/dinamics/dinamic117.php)
 - https://www.drive2.ru/l/549208258171110110/ катушка 
-- https://stereo.ru/p/3ai0p-samodelnaya-as-chast-4-ili-wharfedale-elysian-4-v-domashnem-variante фильтр НЧ катушка индуктивности 6 милигенри и наборные конденсаторы МБГО и К73-16 общей емкостью 92 мФ (частот среза 350 герц)
+- https://stereo.ru/p/3ai0p-samodelnaya-as-chast-4-ili-wharfedale-elysian-4-v-domashnem-variante фильтр НЧ катушка индуктивности 6 милигенри и наборные конденсаторы МБГО и К73-16 общей емкостью 92 мФ (частота среза 350 герц)

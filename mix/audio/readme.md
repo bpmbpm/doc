@@ -36,3 +36,6 @@
 
 ### intro
 - [Статьи о динамиках, усилителях, и пассивных/активных монитора](https://rmmedia.ru/threads/100054/)
+
+### also
+- https://github.com/bpmbpm/doc/tree/main/IT/DIY

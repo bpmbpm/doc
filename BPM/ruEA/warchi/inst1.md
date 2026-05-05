@@ -1,5 +1,5 @@
 ## 1
-прокоментируй код
+прокоментируй код (https://warchi.ru/ Быстрый старт. Три команды — и репозиторий готов к работе)
 ```
 $ cd ../arepos-server && ./gradlew bootRun # backend на :8080 (нужен PostgreSQL)
 $ cd ../warchi && npm install && npm run dev # frontend на :5173

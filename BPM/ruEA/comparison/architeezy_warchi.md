@@ -1,8 +1,10 @@
 # Сравнительный анализ инструментов моделирования архитектуры предприятия Open Source
 Enterprise Architecture tools, Open Source (architeezy - добавлен "авансом" и в надежде "на лучшее \ светлое - открытое \ свободное").  
 Если обобщить, то **EA\BPM tools**, т.к. различие только в используемой нотации (исполняемый BPMN \ BPM не расматриваем).    
-Версия 1: PR https://github.com/bpmbpm/doc/pull/5 [made with help of hive mind](https://github.com/link-assistant/hive-mind/blob/main/README.ru.md)
-Версия 2: С уточнениями авторов wArchi (ошибка в лицензии и компоненты убрал не относящиеся к проекту) и architeezy
+
+### version
+- версия 1: PR https://github.com/bpmbpm/doc/pull/5 [made with help of hive mind](https://github.com/link-assistant/hive-mind/blob/main/README.ru.md)
+- версия 2: С уточнениями авторов wArchi (ошибка в лицензии и компоненты убрал не относящиеся к проекту) и architeezy
 
 ## Содержание
 

@@ -1,5 +1,6 @@
 # Сравнительный анализ инструментов моделирования архитектуры предприятия
-PR https://github.com/bpmbpm/doc/pull/5
+Enterprise Architecture tool, Open Source (architeezy - как надежда на Open Source)  
+PR https://github.com/bpmbpm/doc/pull/5 
 ## Содержание
 
 1. [ADOxx](#1-adoxx)
@@ -1044,3 +1045,9 @@ components:
 ---
 
 *Анализ подготовлен на основе открытой документации, репозиториев и публикаций по состоянию на май 2026 года.*
+
+### also
+#### EA Tools
+
+#### 
+- Мифы EA Tool… https://www.businessstudio.ru/upload/files/Pinaev_mythologyEA.pdf

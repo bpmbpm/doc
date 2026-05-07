@@ -1047,7 +1047,7 @@ components:
 *Анализ подготовлен на основе открытой документации, репозиториев и публикаций по состоянию на май 2026 года.*
 
 ### also
-#### EA Tools
-
-#### 
+#### EA Tools TOP
+- https://boardmix.com/articles/top-10-enterprise-architecture-tools/
+#### myth
 - Мифы EA Tool… https://www.businessstudio.ru/upload/files/Pinaev_mythologyEA.pdf

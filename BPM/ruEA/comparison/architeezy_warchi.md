@@ -499,7 +499,7 @@ wArchi — российская open source / dual-license платформа д
 ---
 
 ## 7. Другие open source инструменты EA
-(не совсем EA, "но пусть будет")
+(не совсем EA, т.е. EA\BPM tool - это нечто "репозитарное", но "пусть будет")
 ### 7.1 Modelio
 
 - **Репозиторий**: https://github.com/ModelioOpenSource/Modelio

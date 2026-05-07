@@ -1,0 +1,1045 @@
+# Сравнительный анализ инструментов моделирования архитектуры предприятия
+
+## Содержание
+
+1. [ADOxx](#1-adoxx)
+2. [Archi](#2-archi)
+3. [Essential Project](#3-essential-project)
+4. [DocHub (dochub.info)](#4-dochub-dochubifo)
+5. [architeezy](#5-architeezy)
+6. [wArchi (warchi.ru)](#6-warchi-warchiru)
+7. [Другие open source инструменты EA](#7-другие-open-source-инструменты-ea)
+8. [Сравнительная таблица](#8-сравнительная-таблица)
+9. [Семантические технологии](#9-семантические-технологии)
+10. [Форматы хранения артефактов](#10-форматы-хранения-артефактов)
+11. [Инструкция по сборке из исходников](#11-инструкция-по-сборке-из-исходников)
+12. [Концепт / Экземпляр (Индивид) / Исполняемый экземпляр](#12-концепт--экземпляр-индивид--исполняемый-экземпляр)
+
+---
+
+## 1. ADOxx
+
+### Общее описание
+
+ADOxx — метамоделирующая платформа с открытым исходным кодом, разработанная под руководством профессора Димитриса Карагианниса в Венском университете. Предназначена для создания предметно-ориентированных инструментов моделирования. На базе ADOxx реализованы десятки специализированных инструментов, распространяемых через организацию OMiLAB NPO.
+
+Известные реализации:
+- **OMILAB** — сообщество и репозиторий инструментов на базе ADOxx (omilab.org, code.omilab.org)
+- **MEMO4ADO** — реализация методологии MEMO (Multi-Perspective Enterprise Modelling) на платформе ADOxx
+- **ADOIT** — коммерческий EA-инструмент компании BOC Group, выросший из ADOxx, признан Gartner
+
+### Репозитории
+
+- Платформа: https://adoxx.org / https://adoxx.omilab.org
+- Модули: https://code.omilab.org/resources/adoxx-modules
+- MEMO4ADO: https://austria.omilab.org/psm/content/memo4ado/info
+
+### Лицензия
+
+Лицензия на использование — проприетарная EULA (End User License Agreement), однако платформа **бесплатна** для академического и исследовательского использования. Пользователь регистрируется и получает персональный лицензионный код по email. Исходный код платформы **не открыт** в полном объёме, однако сообщество OMiLAB распространяет модули и библиотеки. Заявлена поддержка open-source модулей на code.omilab.org.
+
+### Языки программирования
+
+- **AdoScript** — встроенный скриптовый язык платформы (поддержка в VS Code через расширение)
+- Внутренняя реализация платформы: предположительно C/C++ (Windows-native исполняемые файлы)
+
+### СУБД
+
+- **SQLite** (по умолчанию, начиная с версии 1.5+): файлы хранятся в `%APPDATA%\ADOxx\sqlitedbs\`
+- **Microsoft SQL Server** (опционально, для корпоративных развёртываний)
+
+### API
+
+- **OLIVE framework** — механизм интеграции с внешними API и веб-сервисами
+- **REST API** — задокументирован по спецификации OpenAPI (OAS); позволяет читать и изменять данные моделей
+- Поддержка веб-сервисов для вызова внешних функций
+
+### Поддерживаемые нотации
+
+Платформа сама по себе является метамоделирующей — пользователь определяет любые нотации через конфигурацию. Встроенные реализации включают:
+- BPMN, EPC (через стандартные библиотеки)
+- ArchiMate (через соответствующие библиотеки OMiLAB)
+- MEMO (Multi-Perspective Enterprise Modelling) — через MEMO4ADO
+- Пользовательские DSL
+
+### Diagram as Code
+
+Не поддерживается в явном виде. Модели создаются в графическом интерфейсе; экспорт в текстовые форматы возможен через скрипты AdoScript или REST API.
+
+### Возможность совместной работы
+
+Ограниченная. Совместная работа реализуется через разделение баз данных (SQL Server) или ручной обмен файлами. Нет встроенных механизмов реального времени.
+
+### Modeler / Publisher
+
+- **Modeler**: ADOxx Arena (areena.exe) — инструмент моделирования
+- **Developer Toolkit**: aadma.exe — инструмент конфигурации метамоделей
+- **Publisher**: веб-публикация возможна через REST API и внешние представления; аналога ARIS Business Publisher нет из коробки
+
+### Внешние зависимости для развёртывания
+
+- Microsoft Visual C++ 2015–2022 Redistributable (x64)
+- SQLite (включён) или MS SQL Server
+- Windows 10/11 (основная платформа; ограниченная поддержка Linux/macOS)
+
+### Идеология
+
+Meta-modelling: «реализуй собственный инструмент моделирования». Академическая направленность, тесная связь с исследовательскими проектами. Low-code/no-code подход к созданию DSL-инструментов.
+
+---
+
+## 2. Archi
+
+### Общее описание
+
+Archi — наиболее популярный свободный кроссплатформенный инструмент моделирования архитектуры предприятия на языке ArchiMate. Разработан Phillip Beauvoir и Jean-Baptiste Sarrodie. Ежемесячно скачивается около 6 000 раз.
+
+### Репозитории
+
+- Основной: https://github.com/archimatetool/archi
+- Плагин coArchi (совместная работа): https://github.com/archimatetool/archi-modelrepository-plugin
+- Плагин coArchi2: https://github.com/archimatetool/archi-modelrepository-plugin2
+- Плагин jArchi (скрипты): https://github.com/archimatetool/archi-scripting-plugin
+- Коллекция моделей: https://github.com/archimatetool/ArchiModels
+
+### Лицензия
+
+**MIT** (с версии 4.x). Исходный код полностью открыт.
+
+### Языки программирования
+
+- **Java** (~93%) — основная кодовая база
+- HTML, JavaScript, CSS — вспомогательные компоненты
+- Построен на Eclipse RCP (Rich Client Platform)
+
+### СУБД
+
+Не используется традиционная СУБД. Модели хранятся в файловой системе:
+- Нативный формат: `.archimate` (ZIP-архив с XML-файлами)
+- При использовании coArchi: набор XML-файлов в Git-репозитории (один файл = один объект)
+
+### API
+
+- **jArchi** (плагин): JavaScript-скрипты для автоматизации, генерации отчётов, импорта/экспорта
+- Командная строка (CLI): `archi --help`, поддержка headless-режима для автоматизации
+- REST API: отсутствует нативно; реализуется через jArchi и внешние инструменты
+
+### Поддерживаемые нотации
+
+- **ArchiMate 3.2** (полная поддержка, включая все слои: бизнес, приложения, технологии, мотивация, стратегия, физический слой)
+- Экспорт в форматы: SVG, PNG, PDF, HTML-отчёты, CSV, Excel (через плагин), Jasper Reports
+
+### Diagram as Code
+
+Частичная поддержка через jArchi: возможна генерация моделей из кода и обратная генерация артефактов.
+
+### Возможность совместной работы
+
+- **coArchi** (v0.9.5): Git-based совместная работа; офлайн-коммиты с разрешением конфликтов
+- **coArchi2** (v1.3.3): полная переработка, улучшенная скорость и функциональность
+- Требует Archi 5.6+; распространяется для Patreon-поддержщиков и через платный доступ
+
+### Modeler / Publisher
+
+- **Modeler**: Archi Desktop Application
+- **Publisher**: экспорт HTML-отчётов (встроенный); плагин Lightbox для галереи диаграмм
+
+### Внешние зависимости для развёртывания
+
+- Java Runtime Environment (JRE) 11+ (включён в дистрибутив)
+- Eclipse RCP (включён)
+- Поддержка: Windows, macOS, Linux
+
+### Идеология
+
+Простота, открытость, стандарт ArchiMate. Сообщество активно развивает экосистему плагинов. Поддерживается TOGAF®-контекст. Позиционируется как бесплатная альтернатива коммерческим EA-инструментам.
+
+### Форумы / Сообщество
+
+- https://www.archimatetool.com/forum/
+- GitHub Issues: https://github.com/archimatetool/archi/issues
+
+---
+
+## 3. Essential Project
+
+### Общее описание
+
+Essential Project — открытый EA-инструмент, построенный на онтологическом подходе с использованием Protégé (редактор OWL-онтологий). Признан Gartner как «visionary» в категории EA-инструментов. Предоставляется как в open source, так и в коммерческой версии.
+
+### Репозитории
+
+- Организация: https://github.com/essentialproject
+- Essential Viewer: https://github.com/essentialproject/essential_viewer
+
+### Лицензия
+
+- **GPL-3.0** для open source компонентов
+- Коммерческая лицензия для корпоративной версии
+
+### Языки программирования
+
+- **XSLT** (~58%) — трансформации для Essential Viewer
+- **JavaScript** (~33%) — клиентская часть
+- **Java** — серверная часть (JSP/Servlet)
+- HTML, CSS, SCSS
+
+### СУБД
+
+Не использует традиционную СУБД напрямую. Данные хранятся в **OWL-онтологии** (формат RDF/XML или Turtle), редактируемой через Protégé. Essential Viewer — отдельное веб-приложение, публикующее данные из онтологии.
+
+### API
+
+- REST API через Essential Viewer для чтения данных
+- Экспорт данных через XSLT-трансформации
+- Интеграция с Protégé через стандартные OWL API (Java OWL API)
+
+### Поддерживаемые нотации
+
+- Собственная EA-метамодель (Essential Meta Model — «минимальная, но достаточная» для большинства EA-работ)
+- Покрытие концепций ArchiMate и TOGAF 9
+- Функциональная независимость от конкретных фреймворков (мониторинг и адаптация к эволюции TOGAF, ArchiMate)
+- Нет нативной графической нотации; визуализация строится через XSLT-шаблоны (HTML-таблицы, диаграммы)
+
+### Diagram as Code
+
+Данные хранятся в OWL (текстовый формат), что де-факто означает «архитектура как данные». Визуализации генерируются через XSLT.
+
+### Возможность совместной работы
+
+Ограниченная: Protégé поддерживает совместную работу через Protégé Web (онлайн-редактор), однако это требует дополнительной настройки.
+
+### Modeler / Publisher
+
+- **Modeler**: Protégé (десктопный или веб-редактор OWL-онтологий)
+- **Publisher**: Essential Viewer — веб-приложение для публикации и просмотра EA-данных (аналог ARIS Publisher)
+
+### Внешние зависимости для развёртывания
+
+- Protégé (бесплатный онтологический редактор)
+- Java Runtime Environment
+- Web-сервер (Tomcat и т.п.) для Essential Viewer
+- Docker-образы доступны
+
+### Идеология
+
+Онтологический подход к EA: данные архитектуры — это OWL-онтология, что обеспечивает семантическую совместимость и возможность логического вывода. Независимость от фреймворков — ключевой принцип.
+
+### Семантические технологии
+
+- **OWL** (Web Ontology Language) — основа метамодели
+- **RDF** — формат хранения
+- **SPARQL** — возможность запросов к онтологии
+- **Protégé** — редактор онтологий с поддержкой логических выводов (reasoner: HermiT, Pellet)
+
+### Форумы / Сообщество
+
+- https://enterprise-architecture.org/community/
+- GitHub: https://github.com/essentialproject
+
+---
+
+## 4. DocHub (dochub.info)
+
+### Общее описание
+
+DocHub (не путать с dochub.com — сервисом для работы с PDF) — инструмент класса «Architecture as Code» от команды Rabota.ru / DocHubTeam. Позволяет описывать архитектуру экосистемы через код (YAML/JSON манифесты) с версионированием через Git. Ключевой принцип: «Архитектура как данные» — извлечение ценной информации из архитектуры с помощью языка запросов JSONata.
+
+### Репозитории
+
+- Основной (DocHubTeam): https://github.com/DocHubTeam/DocHub
+- Оригинальный (Rabota.ru): https://github.com/RabotaRu/DocHub
+- SDK: https://github.com/DocHubTeam/DocHubSDK
+- Примеры: https://github.com/DocHubTeam/DocHubExamples
+- JSONata для DocHub: https://github.com/DocHubTeam/dochub-jsonata
+
+### Лицензия
+
+- Основной репозиторий (DocHub): **Apache License 2.0**
+- SDK: **GPL-3.0**
+- JSONata, Examples: **MIT**
+
+### Языки программирования
+
+- **HTML** (~44%), **JavaScript** (~29%), **Vue** (~23%), **TypeScript** (~3%), CSS (~1%)
+- Стек: Vue.js SPA + GitLab/Git backend
+- Сборка: npm, Babel, Webpack/Vite
+- Тестирование: Jest
+
+### СУБД
+
+Не использует традиционную СУБД. Данные хранятся в **Git-репозитории** в виде YAML/JSON-файлов. GitLab выступает как backend для хранения и версионирования.
+
+### API
+
+- Поддержка **Swagger** и **AsyncAPI** для описания контрактов
+- **JSONata** — язык запросов для анализа архитектурных данных
+- Интеграция с GitLab API для доступа к репозиторию
+
+### Поддерживаемые нотации / форматы диаграмм
+
+- **Markdown**
+- **PlantUML**
+- **BPMN** (через bpmn.js)
+- **Mermaid**
+- **Swagger/OpenAPI**
+- **AsyncAPI**
+- **SmartAnts** (собственный инструмент презентаций)
+- YAML/JSON-манифесты для описания компонентов, контекстов, аспектов
+
+### Diagram as Code
+
+**Полная поддержка** — ключевая концепция инструмента. Все диаграммы создаются как код (PlantUML, Mermaid, BPMN-XML) и хранятся в Git.
+
+### Возможность совместной работы
+
+- **Git/GitLab** — основа для совместной работы: ветки, мёрж-реквесты, история изменений
+- Децентрализованное управление архитектурой между командами
+- Поддержка нескольких репозиториев (multi-repo consolidation)
+- Telegram-сообщество для координации
+
+### Modeler / Publisher
+
+- **Modeler**: редактор IDE (VS Code, JetBrains через плагин DocHubIdeaPlugin) + YAML/JSON
+- **Publisher**: DocHub SPA (веб-приложение) — публикует архитектурный портал из Git-данных
+
+### Внешние зависимости для развёртывания
+
+- Node.js + npm
+- GitLab (self-hosted или cloud)
+- Docker / Docker Compose
+- Nginx (для production-деплоя)
+
+### Идеология
+
+«Архитектура как код» и «Архитектура как данные». Децентрализованный подход: каждая команда владеет своим фрагментом архитектуры. Интеграция с DevOps-процессами через Git. Расширяемый метамодель.
+
+### Форумы / Сообщество
+
+- https://t.me/dochubinfo (Telegram)
+- GitHub Discussions: https://github.com/DocHubTeam/DocHub
+
+---
+
+## 5. architeezy
+
+### Общее описание
+
+architeezy — веб-платформа для моделирования архитектуры предприятия, созданная командой architeezy (Россия). Позиционируется как инструмент «между enterprise-решением и простым рисовальщиком диаграмм» (draw.io). Использует MOF/Ecore как метамоделирующую основу, поддерживает множество нотаций, включая ArchiMate, C4, BPMN/EPC. Имеет REST API и поддержку Model Context Protocol (MCP) для AI-интеграции.
+
+### Репозитории
+
+- Примеры приложений на API: https://github.com/metamodeldev/architeezy-apps
+- Основная платформа: **закрытый исходный код** (SaaS + self-hosted)
+
+### Лицензия
+
+- Примеры приложений (architeezy-apps): **MIT**
+- Основная платформа: **проприетарная** (SaaS с бесплатным тарифом и возможностью self-hosted деплоя)
+
+### Языки программирования (примеры приложений)
+
+- JavaScript (88.3%), CSS (6.4%), HTML (2.9%), Python (2.4%)
+- Внутренняя реализация платформы не раскрыта
+
+### СУБД
+
+Не указана публично. Предположительно реляционная БД на стороне сервера.
+
+### API
+
+- **REST API**: эндпоинты для чтения моделей:
+  - `GET /api/models` — список моделей
+  - `GET /api/models/{scope}/{project}/{version}/{slug}/content` — контент модели
+  - `GET /api/users/current` — профиль пользователя
+- **HAL-based** ответы с пагинацией
+- **OAuth popup** аутентификация для SPA
+- **Cookie-based** аутентификация для same-domain
+- **EMF/Ecore JSON** формат экспорта данных модели
+- **Model Context Protocol (MCP)** — интеграция с AI-агентами
+
+### Поддерживаемые нотации
+
+- **ArchiMate** (включая пользовательские расширения)
+- **C4 Model**
+- **BPMN / EPC / VAD** (Event-driven Process Chain, Value-Added Chain)
+- **Data models** (UML Class Diagram)
+- **Нотации IT-инфраструктуры** (собственная разработка, объединяющая ArchiMate с AWS Cloud Notation)
+- Кастомные нотации через Notation Editor
+
+### Diagram as Code
+
+Частичная поддержка: экспорт в **Markdown/Mermaid** возможен через трансформации. Основной режим работы — графический редактор.
+
+### Возможность совместной работы
+
+- **Реал-тайм совместное редактирование**
+- Двухуровневая система прав (пространства моделирования + проекты)
+- Три роли: Guest, Editor, Owner
+- Версионирование моделей
+
+### Modeler / Publisher
+
+- **Modeler**: веб-редактор с поддержкой диаграмм, дерева, таблиц и текстового представления
+- **Publisher**: встроенная публикация моделей; разграничение доступа VIEW/EDIT
+
+### Внешние зависимости для развёртывания
+
+- SaaS: не требует установки (architeezy.com)
+- Self-hosted: детали не публичны
+- Docker-образ (предположительно)
+
+### Идеология
+
+Строгая типизация на основе метамодели (в отличие от draw.io). Открытые форматы (Ecore/EMF). Нет vendor lock-in благодаря совместимости с метамоделью Archi (ArchiMate). Интеграция с AI через MCP. Цель — снижение барьера использования EA-инструментов.
+
+### Аутентификация
+
+Google, GitHub, Yandex, Keycloak
+
+### Форумы / Сообщество
+
+- Habr: https://habr.com/ru/companies/architeezy/articles/
+- GitHub: https://github.com/metamodeldev
+
+---
+
+## 6. wArchi (warchi.ru)
+
+### Общее описание
+
+wArchi — российская open source / dual-license платформа для управления архитектурными моделями и нотациями. Состоит из двух основных компонентов: фронтенд (warchi — Vue/TypeScript SPA) и бэкенд (arepos-server — Kotlin/Spring Boot). Дополнительные компоненты: Papirus (библиотека SVG-диаграмм), mdwiki-api и mdwiki-frontend (markdown wiki).
+
+### Репозитории
+
+- Фронтенд: https://gitverse.ru/ngroznykh/warchi
+- Бэкенд: https://gitverse.ru/ngroznykh/arepos-server
+- Библиотека диаграмм: https://gitverse.ru/ngroznykh/papirus
+- Wiki API: https://gitverse.ru/ngroznykh/mdwiki-api
+- Wiki Frontend: https://gitverse.ru/ngroznykh/mdwiki-frontend
+
+### Лицензия
+
+**Dual License**: открытая лицензия (OSS) + коммерческая лицензия (LICENSE_COMMERCIAL.md). Документация на русском и французском языках.
+
+### Языки программирования
+
+**Фронтенд (warchi)**:
+- Vue (48.1%), TypeScript (45.6%), JavaScript (2.1%), Shell (2.1%), HTML (1.8%), CSS (0.2%)
+
+**Бэкенд (arepos-server)**:
+- Kotlin (91.3%), Shell (5.4%), PL/pgSQL (2.9%), Smarty (0.4%)
+
+**Papirus (диаграммы)**:
+- TypeScript (99.9%)
+
+**mdwiki-api**:
+- Kotlin (97.4%), Shell (2.3%), Smarty (0.3%)
+
+**mdwiki-frontend**:
+- Vue (47.1%), TypeScript (46.6%), CSS (3.9%)
+
+### СУБД
+
+- **PostgreSQL** (бэкенд arepos-server, mdwiki-api)
+- Миграции через **Liquibase**
+
+### API
+
+- **OpenAPI / REST** — бэкенд arepos-server предоставляет RESTful API для управления моделями
+- Ключевой эндпоинт (упомянутый в документации): `GET /api/v1/models`
+- Авторизация: **Cerbos** (policy-based authorization)
+- Live sync через outbox pattern
+
+### Поддерживаемые нотации
+
+Информация о конкретных EA-нотациях (ArchiMate, BPMN и т.п.) в публичной документации не детализирована. Система поддерживает:
+- Кастомные домен-модели и нотации
+- Компоненты, связи, кастомные свойства
+- Матрицу связей (Relation Matrix)
+- SVG-диаграммы через Papirus
+
+### Diagram as Code
+
+Не является основным режимом работы. Данные хранятся в PostgreSQL и редактируются через веб-интерфейс.
+
+### Возможность совместной работы
+
+- **ACL-based sharing**: VIEW/EDIT уровни доступа
+- **Real-time synchronization** (live sync)
+- Совместное редактирование
+- Функции трассируемости (Traceability)
+
+### Modeler / Publisher
+
+- **Modeler**: веб-SPA на Vue/TypeScript
+- **Publisher**: разграничение VIEW/EDIT через ACL; публикация моделей в read-only режиме
+
+### Внешние зависимости для развёртывания
+
+- **PostgreSQL** (обязательно)
+- **Node.js** + npm (фронтенд)
+- **JDK 25** (бэкенд, Kotlin/Spring Boot)
+- **Gradle** (сборка бэкенда)
+- **Cerbos** (авторизация)
+- Docker, Helm, Kubernetes (production-деплой)
+
+### Идеология
+
+Современный стек (Vue 3, Kotlin, Spring Boot, PostgreSQL). Dual-license: open для сообщества, коммерческая — для бизнеса. Kubernetes-ready с Helm charts. Интеграция с AI через mdwiki-api (RAG/LLM Studio embeddings).
+
+### Форумы / Сообщество
+
+- Telegram: https://t.me/archi_strateg
+- Вебинар (апрель 2025): https://youtu.be/JglyV8m2t4g
+
+---
+
+## 7. Другие open source инструменты EA
+
+### 7.1 Modelio
+
+- **Репозиторий**: https://github.com/ModelioOpenSource/Modelio
+- **Лицензия**: GPL-3.0 (ядро) + Apache 2.0 (API)
+- **Языки**: Java (93.3%), HTML, JavaScript, XSLT, Python
+- **Нотации**: UML 2, BPMN 2, ArchiMate, XMI, MDA, TOGAF
+- **СУБД**: файловая система (проприетарный формат .eap/.mdp)
+- **API**: модульная архитектура, Jython-скрипты
+- **Семантика**: валидация согласованности модели
+- **Совместная работа**: ограниченная (нет реал-тайм)
+- **Статус**: поддерживается, но обновления нерегулярны
+
+### 7.2 BPMN.io / Camunda Modeler
+
+- **Репозиторий**: https://github.com/bpmn-io
+- **Лицензия**: MIT / Apache 2.0
+- **Языки**: JavaScript
+- **Нотации**: BPMN 2.0, DMN, CMMN, Form (Camunda-специфичные)
+- **СУБД**: файловая система (XML)
+- **Diagram as Code**: BPMN XML
+- **Совместная работа**: через Git или Camunda Platform
+
+### 7.3 PlantUML
+
+- **Репозиторий**: https://github.com/plantuml/plantuml
+- **Лицензия**: GPL-3.0 (ядро)
+- **Языки**: Java
+- **Нотации**: UML (все виды), C4, ArchiMate (базово), BPMN, Gantt, MindMap и др.
+- **Diagram as Code**: основной режим работы
+- **СУБД**: не используется (текстовые файлы → SVG/PNG)
+
+### 7.4 Structurizr
+
+- **Репозиторий**: https://github.com/structurizr
+- **Лицензия**: Apache 2.0 (DSL), проприетарная (cloud)
+- **Нотации**: C4 Model
+- **Diagram as Code**: Structurizr DSL — текстовый язык описания C4-архитектуры
+- **Совместная работа**: через cloud или self-hosted
+
+### 7.5 draw.io / diagrams.net
+
+- **Репозиторий**: https://github.com/jgraph/drawio
+- **Лицензия**: Apache 2.0
+- **Языки**: JavaScript
+- **Нотации**: любые (нет строгой типизации, рисование)
+- **СУБД**: XML-файлы
+- **Совместная работа**: через облачное хранилище (Google Drive, OneDrive и др.)
+
+### 7.6 C4-PlantUML
+
+- **Репозиторий**: https://github.com/plantuml-stdlib/C4-PlantUML
+- **Лицензия**: MIT
+- **Нотации**: C4 Model через PlantUML макросы
+- **Diagram as Code**: полная
+
+---
+
+## 8. Сравнительная таблица
+
+| Критерий | ADOxx | Archi | Essential Project | DocHub | architeezy | wArchi |
+|---|---|---|---|---|---|---|
+| **Тип** | Meta-modelling Platform | ArchiMate Modeller | Ontology-based EA | Architecture as Code | Web EA Modeller | Web EA Modeller |
+| **Лицензия** | Бесплатная EULA (закрытый код) | MIT (открытый) | GPL-3.0 (открытый) | Apache 2.0 (открытый) | Проприетарная (SaaS+self-host) | Dual: OSS + Commercial |
+| **Исходный код** | Закрыт (модули открыты) | Полностью открыт | Полностью открыт | Полностью открыт | Закрыт (примеры MIT) | Частично открыт |
+| **Языки** | AdoScript / C (платформа) | Java | Java, XSLT, JavaScript | JavaScript, Vue, HTML | Не раскрыто (JS-примеры) | Kotlin, Vue, TypeScript |
+| **СУБД** | SQLite / MS SQL Server | Файловая система | OWL / RDF файлы | Git (YAML/JSON) | Не раскрыто | PostgreSQL |
+| **API** | REST (OpenAPI), OLIVE | jArchi (JS), CLI | REST, XSLT, OWL API | JSONata, GitLab API | REST (HAL), MCP | REST (OpenAPI), Cerbos |
+| **Нотации** | Любые DSL (configurable) | ArchiMate 3.2 | Собственная + TOGAF/ArchiMate | PlantUML, BPMN, Mermaid, Markdown | ArchiMate, C4, BPMN, EPC | Кастомные + SVG |
+| **Diagram as Code** | Нет (экспорт через API) | Частично (jArchi) | Частично (OWL текст) | Полностью | Частично (экспорт) | Нет |
+| **Совместная работа** | Ограниченная (общий SQL Server) | Git (coArchi/coArchi2) | Protégé Web (ограничено) | Git/GitLab (полностью) | Реал-тайм (встроено) | Реал-тайм (ACL) |
+| **Modeler** | ADOxx Arena | Archi Desktop | Protégé | IDE / редактор кода | Веб-редактор | Веб-SPA |
+| **Publisher** | Нет нативного | HTML-отчёты, Lightbox | Essential Viewer (веб) | DocHub SPA (веб) | Встроен в платформу | ACL VIEW-mode |
+| **Семантические технологии** | Метамоделирование (ADO) | Нет | OWL, RDF, SPARQL, Protégé | JSONata (запросы) | Ecore/EMF (MOF) | Нет |
+| **Deployment** | Windows (основной) | Windows/Mac/Linux | Windows/Linux + Docker | Node.js + GitLab + Docker | SaaS / self-hosted | Docker, Helm, K8s |
+| **Импорт / Экспорт** | AdoScript, REST, собственный | .archimate, ArchiMate XML Exchange | OWL, RDF/XML, Excel | YAML, JSON, PlantUML, SVG | JSON, EMF/Ecore JSON, SVG | REST API, OpenAPI |
+| **Совместимость с Archi** | Нет | Нативная | Концептуальная | Нет | Да (общая метамодель) | Нет |
+| **Форум / Сообщество** | OMiLAB, academia | archimatetool.com/forum | enterprise-architecture.org | Telegram | Habr, GitHub | Telegram |
+| **Обновляемость** | Активно (v1.8.0) | Активно | Активно | Активно | Активно | Активно (v0.6.x) |
+| **Концепт/Экземпляр** | Класс/Экземпляр через метамодель | Элемент + специализация | OWL Class / OWL Individual | Компонент / манифест-ссылка | Концепт в метамодели / индивид | Компонент / экземпляр |
+
+---
+
+## 9. Семантические технологии
+
+### 9.1 Обзор
+
+Семантические технологии обеспечивают формальное описание смысла данных, позволяя машинам «понимать» и обрабатывать информацию, а не только хранить её. В контексте EA-инструментов это означает:
+- Возможность логического вывода (reasoning) из архитектурных данных
+- Стандартизированные запросы (SPARQL и аналоги)
+- Совместимость через общие онтологии (ArchiMate как RDF-онтология)
+
+### 9.2 Применение в рассматриваемых системах
+
+#### Essential Project — наиболее полная реализация
+
+| Технология | Роль в Essential |
+|---|---|
+| **OWL** (Web Ontology Language) | Язык описания метамодели и данных архитектуры; поддержка классов, свойств, ограничений, аксиом |
+| **RDF** (Resource Description Framework) | Формат хранения онтологии; тройки субъект-предикат-объект |
+| **SPARQL** | Язык запросов к RDF-данным |
+| **Protégé** | Редактор OWL-онтологий; поддержка reasoner'ов |
+| **HermiT / Pellet** | Reasoner'ы для логического вывода из OWL-онтологий |
+| **OWL API (Java)** | Программный API для работы с OWL-онтологиями |
+
+**Что даёт**: возможность определять концепты с формальной семантикой, выводить неявные связи (implied relationships), проверять согласованность архитектуры через логику описаний (DL — Description Logic).
+
+#### ADOxx — метамоделирование
+
+| Технология | Роль в ADOxx |
+|---|---|
+| **ADOxx Metamodel** | Собственная концепция метамоделирования; не OWL/RDF, но аналогичная роль |
+| **AdoScript** | Скриптовый язык для задания семантики поведения |
+| **OLIVE** | Интеграция с внешними семантическими сервисами |
+
+**Что даёт**: определение формальной семантики нотаций через метамодель; возможность трансформаций, симуляции и анализа. Не использует W3C-стандарты семантического веба.
+
+#### Archi — ограниченная семантика
+
+ArchiMate сам по себе имеет формальную семантику (определённую The Open Group). Archi реализует ArchiMate-типизацию элементов и связей, что обеспечивает структурную валидацию. Поддержки OWL/RDF/SPARQL нет нативно, но сообщество разработало конвертеры ArchiMate → OWL (например, проект ArchiMate 3.2 как RDF-онтология, 2026).
+
+#### architeezy — Ecore/MOF
+
+| Технология | Роль |
+|---|---|
+| **MOF** (Meta-Object Facility, OMG) | Метамоделирующий стандарт (4-уровневая иерархия: M3-M2-M1-M0) |
+| **Ecore** (EMF) | Реализация MOF в Eclipse; является своим собственным метамоделем |
+| **EMF/Ecore JSON** | Формат экспорта данных моделей |
+| **XMI** | XML-формат обмена моделями (OMG стандарт) |
+
+**Что даёт**: строгая типизация, трансформации моделей (M2M и M2T), генерация документов, валидация. Не является семантическим вебом, но обеспечивает формальную модель-ориентированную семантику.
+
+#### DocHub — семантика через запросы
+
+| Технология | Роль |
+|---|---|
+| **JSONata** | Язык запросов и трансформаций для JSON/YAML-данных архитектуры |
+| **YAML/JSON-манифесты** | Машиночитаемый формат описания архитектуры |
+
+**Что даёт**: аналитические запросы по архитектурным данным, автоматическое выявление проблем и нарушений правил, трансформации представлений. Семантика неформальная (нет логического вывода), но функционально богатая.
+
+### 9.3 Сравнение семантических возможностей
+
+| Критерий | Essential | ADOxx | Archi | architeezy | DocHub | wArchi |
+|---|---|---|---|---|---|---|
+| OWL / RDF | ✅ Полная | ❌ | ❌ | ❌ | ❌ | ❌ |
+| SPARQL | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Логический вывод | ✅ (OWL DL) | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Формальная метамодель | ✅ (OWL) | ✅ (ADOxx MM) | ✅ (ArchiMate) | ✅ (Ecore/MOF) | Частично (YAML-схемы) | Частично |
+| MOF / Ecore | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ |
+| Запросы к данным | ✅ (SPARQL) | ✅ (AdoScript) | ✅ (jArchi) | ✅ (REST API) | ✅ (JSONata) | ✅ (REST API) |
+| Трансформации моделей | ✅ (XSLT) | ✅ | Частично | ✅ | Частично | ❌ |
+
+---
+
+## 10. Форматы хранения артефактов
+
+### ADOxx
+
+- **SQLite-база данных** (файлы `.sqlitedb`) — основное хранилище: метамодели, модели, конфигурации
+- **XML** — экспорт/импорт моделей через стандартные механизмы
+- **AdoScript** — файлы конфигурации и логики (текстовые)
+- **JSON** (через REST API) — программный доступ к данным
+
+### Archi
+
+- **`.archimate`** — ZIP-архив, содержащий XML-файлы; нативный формат при одиночной работе
+- **Разложенный XML** (coArchi/Git режим): каждый объект модели (элемент, связь, представление) хранится как отдельный XML-файл в директориях `model/elements/`, `model/relations/`, `model/views/`; это позволяет версионировать и делать diff отдельных объектов в Git
+- **ArchiMate XML Exchange Format** — открытый стандарт The Open Group для обмена моделями между инструментами (экспорт/импорт)
+- **SVG, PNG, PDF** — экспорт диаграмм
+- **HTML** — экспорт отчётов
+- **CSV, Excel (.xlsx)** — экспорт данных через плагины
+
+### Essential Project
+
+- **OWL/RDF файлы** (`.owl`, RDF/XML или Turtle) — основное хранилище архитектурных данных в виде онтологии; редактируются в Protégé
+- **Protégé project file** — файл проекта онтологии
+- **HTML** — публикуемые Essential Viewer отчёты и порталы
+- **Excel** — импорт/экспорт данных через шаблоны
+
+### DocHub
+
+- **YAML/JSON манифесты** — основной формат: `root.yaml` как точка входа, описание компонентов, контекстов, аспектов, документов
+- **PlantUML, Mermaid, BPMN XML** — форматы диаграмм (хранятся как текстовые файлы в Git)
+- **Markdown** — документация
+- **Swagger/OpenAPI, AsyncAPI YAML** — описание API-контрактов
+- Всё хранится в **Git-репозитории**; GitLab выступает backend
+
+Структура типичного манифеста:
+```yaml
+# components.yaml
+components:
+  my_service:
+    title: "Мой сервис"
+    entity: component
+    aspects:
+      links:
+        - id: dep_service
+          direction: in
+```
+
+### architeezy
+
+- **JSON** (внутреннее хранение) — модели хранятся на сервере в JSON-формате
+- **EMF/Ecore JSON** — формат экспорта для интеграции с EMF-инструментами
+- **SVG** — экспорт диаграмм
+- **XMI** (предположительно, через совместимость с ArchiMate метамоделью)
+- Импорт/экспорт с **Archi** (`.archimate` формат)
+
+### wArchi
+
+- **PostgreSQL таблицы** — основное хранилище: домен-модели, нотации, компоненты, связи, свойства, история изменений (audit trail)
+- **OpenAPI JSON** — формат описания REST API
+- **SVG** — диаграммы через библиотеку Papirus
+- Soft delete для моделей (данные не удаляются физически)
+
+---
+
+## 11. Инструкция по сборке из исходников
+
+### 11.1 Сборка architeezy из исходников
+
+> **Статус**: Основная платформа architeezy имеет **закрытый исходный код** и доступна только как SaaS (architeezy.com) или self-hosted (по договорённости с командой). Из открытых источников доступны только **примеры клиентских приложений** на REST API.
+
+#### Сборка примеров приложений (architeezy-apps)
+
+**Требования**:
+- Node.js 18+ и npm
+- Bun (runtime для dev-сервера)
+- Docker (опционально)
+- Аккаунт на architeezy.com (для доступа к API)
+
+**Шаги**:
+
+```bash
+# 1. Клонирование репозитория
+git clone https://github.com/metamodeldev/architeezy-apps.git
+cd architeezy-apps
+
+# 2. Переход в конкретное приложение (например, graph)
+cd apps/graph
+
+# 3. Установка зависимостей (если используется npm)
+npm install
+
+# 4. Запуск dev-сервера через Bun
+bun run dev
+
+# 5. Или запуск через Docker
+docker build -t architeezy-graph .
+docker run -p 3000:3000 architeezy-graph
+
+# 6. Открыть в браузере
+open http://localhost:3000
+```
+
+**Конфигурация API**:
+- Необходимо указать `ARCHITEEZY_API_URL` и токен OAuth в переменных окружения или конфигурационном файле
+- Аутентификация через OAuth popup (Google, GitHub, Yandex, Keycloak)
+
+**Тестирование**:
+```bash
+# E2E тесты через Playwright
+npx playwright test
+```
+
+---
+
+### 11.2 Сборка wArchi из исходников
+
+**Требования системы**:
+- **JDK 25** (для бэкенда)
+- **Node.js** 18+ и **npm** (для фронтенда); рекомендуется использовать `.nvmrc`
+- **PostgreSQL** 14+ (запущенный экземпляр)
+- **Cerbos** (авторизационный сервер)
+- **Git** для клонирования с GitVerse
+
+#### Шаг 1. Клонирование репозиториев
+
+```bash
+# Создать рабочую директорию
+mkdir warchi-workspace && cd warchi-workspace
+
+# Клонировать бэкенд
+git clone https://gitverse.ru/ngroznykh/arepos-server.git
+
+# Клонировать фронтенд
+git clone https://gitverse.ru/ngroznykh/warchi.git
+
+# Клонировать библиотеку диаграмм (опционально)
+git clone https://gitverse.ru/ngroznykh/papirus.git
+```
+
+#### Шаг 2. Настройка PostgreSQL
+
+```bash
+# Создать базу данных
+psql -U postgres -c "CREATE DATABASE warchi;"
+psql -U postgres -c "CREATE USER warchi_user WITH PASSWORD 'your_password';"
+psql -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE warchi TO warchi_user;"
+```
+
+#### Шаг 3. Настройка и сборка бэкенда (arepos-server)
+
+```bash
+cd arepos-server
+
+# Проверить версию JDK (требуется 25)
+java -version
+
+# Настроить подключение к БД
+# Отредактировать src/main/resources/application.yml или application.properties:
+# spring.datasource.url=jdbc:postgresql://localhost:5432/warchi
+# spring.datasource.username=warchi_user
+# spring.datasource.password=your_password
+
+# Настроить Cerbos (URL авторизационного сервера):
+# cerbos.host=localhost
+# cerbos.port=3593
+
+# Сборка через Gradle
+./gradlew build
+
+# Запуск (dev-режим, бэкенд стартует на :8080)
+./gradlew bootRun
+
+# Альтернатива: запуск JAR
+java -jar build/libs/arepos-server-*.jar
+```
+
+> **Примечание**: Liquibase автоматически применит миграции БД при первом запуске.
+
+#### Шаг 4. Настройка Cerbos (авторизация)
+
+```bash
+# Установка Cerbos (Linux)
+curl -L -o cerbos https://github.com/cerbos/cerbos/releases/latest/download/cerbos_linux_amd64
+chmod +x cerbos
+
+# Запуск с базовой конфигурацией
+./cerbos server --config=.cerbos.yaml
+# Cerbos слушает на :3593 (gRPC) и :3592 (HTTP)
+```
+
+#### Шаг 5. Настройка и запуск фронтенда (warchi)
+
+```bash
+cd ../warchi
+
+# Использовать версию Node.js из .nvmrc
+nvm use   # или nvm install && nvm use
+
+# Установка зависимостей
+npm install
+
+# Настроить переменные окружения (скопировать и отредактировать):
+cp .env.example .env
+# VITE_API_URL=http://localhost:8080
+# VITE_AUTH_URL=... (если требуется)
+
+# Запуск dev-сервера (фронтенд на :5173)
+npm run dev
+
+# Production-сборка
+npm run build
+# Артефакты появятся в ./dist/
+```
+
+#### Шаг 6. Сборка Papirus (библиотека диаграмм, опционально)
+
+```bash
+cd ../papirus
+
+# Использовать версию Node.js из .nvmrc
+nvm use
+
+# Установка зависимостей
+npm install
+
+# Сборка
+npm run build
+
+# Запуск тестов
+npm run test
+```
+
+#### Шаг 7. Сборка wiki-компонентов (опционально)
+
+```bash
+# mdwiki-api (Kotlin/Spring Boot + PostgreSQL)
+git clone https://gitverse.ru/ngroznykh/mdwiki-api.git
+cd mdwiki-api
+./gradlew bootRun   # слушает на :8081 (или настраивается)
+
+# mdwiki-frontend (Vue/TypeScript)
+git clone https://gitverse.ru/ngroznykh/mdwiki-frontend.git
+cd mdwiki-frontend
+npm install && npm run dev
+```
+
+#### Шаг 8. Проверка работоспособности
+
+```bash
+# Проверить бэкенд
+curl -s http://localhost:8080/api/v1/models | jq
+
+# Открыть фронтенд
+open http://localhost:5173   # macOS
+xdg-open http://localhost:5173   # Linux
+```
+
+#### Типичные проблемы
+
+| Проблема | Решение |
+|---|---|
+| Бэкенд не запускается | Проверить, запущен ли PostgreSQL; проверить настройки подключения в application.yml |
+| Ошибка миграции Liquibase | Проверить права пользователя БД; выполнить `./gradlew clean` и повторить |
+| Фронтенд не видит API | Убедиться, что `VITE_API_URL` указывает на `http://localhost:8080`; проверить CORS-настройки |
+| JDK версия | Установить JDK 25: `sdk install java 25-open` (через SDKMAN) |
+| Порт занят | `lsof -i :8080` и `kill <PID>` |
+| Cerbos не запускается | Проверить конфигурационный файл `.cerbos.yaml`; убедиться, что порты 3592/3593 свободны |
+
+#### Production-деплой (Kubernetes)
+
+```bash
+# Сборка Docker-образов
+docker build -t arepos-server:latest ./arepos-server
+docker build -t warchi-frontend:latest ./warchi
+
+# Деплой через Helm
+helm install warchi ./helm/warchi \
+  --set backend.image=arepos-server:latest \
+  --set frontend.image=warchi-frontend:latest \
+  --set postgresql.host=your-pg-host
+```
+
+---
+
+## 12. Концепт / Экземпляр (Индивид) / Исполняемый экземпляр
+
+### 12.1 Понятийная таблица
+
+| Термин | Определение | Пример |
+|---|---|---|
+| **Концепт (Класс, Тип)** | Абстрактное описание категории объектов; определяет структуру, свойства и поведение | «Бизнес-процесс», «Приложение», «Сервер» |
+| **Экземпляр (Индивид, Копия)** | Конкретный представитель концепта; существует в нескольких схемах, но ссылается на один объект; изменение концепта влияет на все экземпляры | «Процесс Обработки заказов» (размещён в 3 диаграммах) |
+| **Исполняемый экземпляр** | Запущенный процесс в runtime; имеет собственный идентификатор, время старта/завершения, состояние; не путать с моделью! | Конкретный запуск «Процесса Обработки заказов #12345» в BPMN-движке |
+
+> **Ключевое различие**: индивид (копия) — это один объект в нескольких местах модели; исполняемый экземпляр — это запущенный процесс в системе выполнения (workflow engine).
+
+### 12.2 Реализация в каждой системе
+
+#### ADOxx
+
+В ADOxx концепт/экземпляр реализуется через метамоделирование:
+- **Метаклас** (M2) → **Класс/Тип** (M1) → **Экземпляр объекта** (M0)
+- Один и тот же объект может быть отображён на нескольких диаграммах; при редактировании в любом месте изменения применяются ко всем отображениям — это ключевая фича ADOxx
+- **Управление зависимостями**: через атрибуты связей (relations) и механизмы анализа (queries via AdoScript)
+- **Функции**: `WHERE-IS` — показывает все вхождения объекта; поиск зависимостей через модельные связи
+
+#### Archi
+
+- **Элемент** (концепт) создаётся один раз в модели и может появляться в **многих представлениях (Views)** — это фундаментальный принцип ArchiMate
+- Изменение свойств элемента автоматически отражается во всех представлениях
+- **Специализация** — механизм создания подтипов концептов
+- **Управление зависимостями**: «Used in Views» — показывает все представления с данным элементом; анализ через jArchi
+- Исполняемые экземпляры BPMN не поддерживаются (Archi — инструмент EA, не workflow engine)
+
+```
+Концепт: «Сервис аутентификации» (Application Component)
+Индивид: тот же элемент, размещённый в:
+  - View «Контекст системы»
+  - View «Приложения слой»
+  - View «Развёртывание»
+→ Один объект, три представления
+```
+
+#### Essential Project
+
+- **OWL Class** = концепт (например, `ea:BusinessProcess`)
+- **OWL Individual** = экземпляр/индивид (например, `ea:OrderProcessing rdf:type ea:BusinessProcess`)
+- Один OWL Individual может быть использован в нескольких диаграммах Essential Viewer без дублирования
+- **Логический вывод (Reasoning)**: OWL reasoner (HermiT) автоматически выводит принадлежность индивидов к классам и выявляет противоречия
+- **Функции управления зависимостями**: SPARQL-запросы выявляют все связи индивида; Essential Viewer строит dependency views; импакт-анализ через OWL properties
+
+Пример OWL:
+```turtle
+# Концепт
+ea:BusinessProcess rdf:type owl:Class .
+
+# Индивид
+ea:OrderProcessing rdf:type ea:BusinessProcess ;
+    rdfs:label "Обработка заказов" ;
+    ea:usedBy ea:SalesSystem ;
+    ea:implementedBy ea:OrderService .
+```
+
+#### DocHub (dochub.info)
+
+- **Компонент** (YAML-запись) = концепт или индивид; разница определяется контекстом
+- Один компонент может быть **реферирован** из множества контекстов и документов через YAML-ссылки (`$ref` или id-ссылки)
+- Изменение компонента автоматически отражается во всех документах, которые его референсируют
+- **JSONata-запросы** позволяют найти все зависимости компонента
+- Явного разделения Класс/Экземпляр в метамодели нет — это определяется пользователем через расширение метамодели
+
+```yaml
+# Концепт/Экземпляр — один объект
+components:
+  auth_service:
+    title: "Сервис аутентификации"
+    entity: component
+    # Этот же ID используется в разных контекстах:
+    # context_a.yaml, context_b.yaml → оба ссылаются на auth_service
+```
+
+#### architeezy
+
+- Основана на **Ecore/MOF**: чёткое разделение M2 (метамодель/концепт) → M1 (модель/тип) → M0 (экземпляр/индивид)
+- Элемент создаётся один раз и может использоваться в нескольких диаграммах одного проекта
+- **Импорт/экспорт с Archi**: элементы из Archi-модели сохраняют свою идентичность
+- Трансформации между уровнями (M2T — Model to Text, M2M — Model to Model)
+- Функции управления зависимостями: REST API для получения всех связей элемента; интерфейс показывает «where used»
+
+#### wArchi
+
+- **Домен-модель** содержит компоненты и связи; компонент — концепт или индивид
+- Один компонент может присутствовать на нескольких диаграммах (нотациях)
+- **Relation Matrix** — инструмент анализа зависимостей между компонентами
+- **Traceability** — встроенная функция трассировки зависимостей
+- Audit trail фиксирует историю изменений каждого объекта
+- Soft delete: удалённые объекты сохраняются в БД, что позволяет восстановить историю зависимостей
+
+### 12.3 Основные функции управления зависимостями концепта/индивида
+
+| Функция | ADOxx | Archi | Essential | DocHub | architeezy | wArchi |
+|---|---|---|---|---|---|---|
+| Где используется (Where-used) | ✅ (WHERE-IS) | ✅ (Used in Views) | ✅ (SPARQL + Viewer) | ✅ (JSONata) | ✅ (REST API) | ✅ (Relation Matrix) |
+| Импакт-анализ | ✅ (AdoScript) | ✅ (jArchi) | ✅ (OWL reasoning) | ✅ (JSONata rules) | ✅ | ✅ (Traceability) |
+| Один объект — много диаграмм | ✅ | ✅ | ✅ | ✅ (refs) | ✅ | ✅ |
+| Автообновление при изменении | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| История изменений | Через SQL | Git (coArchi) | Через Protégé | Git | Версионирование | Audit trail (PostgreSQL) |
+| Логический вывод зависимостей | Частично | ❌ | ✅ (OWL DL) | ❌ | ❌ | ❌ |
+| Визуализация зависимостей | ✅ | ✅ | ✅ (Essential Viewer) | ✅ (портал) | ✅ | ✅ (Relation Matrix) |
+
+---
+
+*Анализ подготовлен на основе открытой документации, репозиториев и публикаций по состоянию на май 2026 года.*

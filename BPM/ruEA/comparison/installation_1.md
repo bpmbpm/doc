@@ -1,4 +1,4 @@
-## ## 11. Инструкция по сборке из исходников
+## 11. Инструкция по сборке из исходников
 Дополнние к https://github.com/bpmbpm/doc/blob/main/BPM/ruEA/comparison/architeezy_warchi.md
 ### 11.1 Сборка architeezy из исходников
 

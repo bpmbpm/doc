@@ -1,6 +1,6 @@
 # comparison2.md
-обзор и сравнительный анализ систем (software) Enterprise archutecture
-
+Обзор и сравнительный анализ систем (software) Enterprise archutecture  
+В продолжение см. https://github.com/bpmbpm/doc/blob/main/BPM/ruEA/comparison/architeezy_warchi.md 
 ## Part 1
 
 Современный ландшафт систем Enterprise Architecture (EA) в 2026 году предлагает множество решений — от классических "тяжеловесных" инструментов для глубокого моделирования до легких облачных платформ для управления портфелем приложений. Выбор подходящего инструмента зависит от размера компании, используемых методологий (например, TOGAF, ArchiMate) и конкретных бизнес-целей.

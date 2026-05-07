@@ -1,5 +1,5 @@
 # Сравнительный анализ инструментов моделирования архитектуры предприятия Open Source
-Enterprise Architecture tools, Open Source (architeezy - добавлен "авансом", т.е. в надежде "на лучшее \ светлое - откоытое \ свободное").  
+Enterprise Architecture tools, Open Source (architeezy - добавлен "авансом", т.е. в надежде "на лучшее \ светлое - открытое \ свободное").  
 Если обобщить, то **EA\BPM tools**, т.к. различие только в используемой нотации (исполняемый BPMN \ BPM не расматриваем).    
 PR https://github.com/bpmbpm/doc/pull/5 
 ## Содержание

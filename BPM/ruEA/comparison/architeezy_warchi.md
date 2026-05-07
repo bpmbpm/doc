@@ -1,5 +1,5 @@
 # Сравнительный анализ инструментов моделирования архитектуры предприятия
-https://github.com/bpmbpm/doc/pull/5
+PR https://github.com/bpmbpm/doc/pull/5
 ## Содержание
 
 1. [ADOxx](#1-adoxx)

@@ -725,7 +725,7 @@ components:
 ---
 
 ## 11. Инструкция по сборке из исходников
-
+https://github.com/bpmbpm/doc/blob/main/BPM/ruEA/comparison/installation_1.md
 
 ## 12. Концепт / Экземпляр (Индивид) / Исполняемый экземпляр
 

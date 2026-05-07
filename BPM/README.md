@@ -16,6 +16,7 @@ lean лежит [IT/BOK/](https://github.com/bpmbpm/doc/blob/main/IT/BOK/README.
 
 ## comparisons
 - https://marcus-aurelius.ru/articles/tools.html
+- https://github.com/bpmbpm/doc/blob/main/BPM/enEA/comparison2.md
 ### company
 - https://busset.ru/
 - https://marcus-aurelius.ru/

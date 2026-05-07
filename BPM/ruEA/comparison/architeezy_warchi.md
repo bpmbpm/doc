@@ -401,6 +401,7 @@ Google, GitHub, Yandex, Keycloak
 
 - Habr: https://habr.com/ru/companies/architeezy/articles/
 - GitHub: https://github.com/metamodeldev
+- Telegram: https://t.me/architeezy
 
 ---
 
@@ -490,7 +491,7 @@ wArchi — российская open source / dual-license платформа д
 
 ### Форумы / Сообщество
 
-- Telegram: https://t.me/archi_strateg
+- упоминается в Telegram: https://t.me/archi_strateg
 - Вебинар (апрель 2025): https://youtu.be/JglyV8m2t4g
 
 ---

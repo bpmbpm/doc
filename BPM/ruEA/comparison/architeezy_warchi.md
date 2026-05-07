@@ -845,6 +845,7 @@ components:
 *Анализ подготовлен на основе открытой документации, репозиториев и публикаций по состоянию на май 2026 года.*
 
 ### also
+- https://github.com/bpmbpm/doc/blob/main/BPM/enEA/comparison2.md Обзор и сравнительный анализ систем (software) Enterprise archutecture
 #### EA Tools TOP
 - https://boardmix.com/articles/top-10-enterprise-architecture-tools/
 #### myth

@@ -742,10 +742,10 @@ https://github.com/bpmbpm/doc/blob/main/BPM/ruEA/comparison/installation_1.md
 
 Не путать с исполняемым экземпляром процесса в BPMN-engine.
 
-Анализ подходов Образ \ Индивид в BPM\EA tools 
+#### Анализ подходов Образ \ Индивид в BPM\EA tools 
 - https://github.com/bpmbpm/rdf-grapher/blob/main/ver9d/analysis/new_individ_process.md
 
-Обрывочно замечания к реализации в [rdf-grapher](https://github.com/bpmbpm/rdf-grapher/blob/main/ver9d/requirements/function/process_concept.md)   
+В [rdf-grapher](https://github.com/bpmbpm/rdf-grapher/blob/main/ver9d/requirements/function/process_concept.md) расказывал с примерами на RDF реализацию функций создания концепта процесса и его индивидов.   
 
 ### 12.2 Реализация в каждой системе
 

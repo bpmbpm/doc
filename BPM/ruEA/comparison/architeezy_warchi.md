@@ -1,5 +1,5 @@
 # Сравнительный анализ инструментов моделирования архитектуры предприятия
-Enterprise Architecture tool, Open Source (architeezy - как надежда на Open Source)  
+Enterprise Architecture tool, Open Source (architeezy - в надежде на Open Source)  
 PR https://github.com/bpmbpm/doc/pull/5 
 ## Содержание
 

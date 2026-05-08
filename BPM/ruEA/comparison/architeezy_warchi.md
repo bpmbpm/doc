@@ -749,7 +749,7 @@ https://github.com/bpmbpm/doc/blob/main/BPM/ruEA/comparison/installation_1.md
 - реализация в онтологии https://github.com/bpmbpm/rdf-grapher/blob/main/ver9d/ontology/vad-basic-ontology.trig
 - в [rdf-grapher](https://github.com/bpmbpm/rdf-grapher/blob/main/ver9d/requirements/function/process_concept.md) расказывал с примерами на RDF реализацию функций создания концепта процесса и его индивидов.   
 
-Вообще, если ключевой элемент BPM\EA инструмента (а Инструмент №1 - это ARIS) - это репозитарий, то основной элемент построения репозитария это формализация и взаимодействие Concept vs Individ 
+Вообще, если ключевой элемент BPM\EA инструмента (а Инструмент №1 - это ARIS) - это репозитарий (репозитОрий объектов и их свойств, включая взаимосвязи), то основной элемент построения репозитария это формализация и взаимодействие Concept vs Individ. 
 
 ### 12.2 Реализация в каждой системе
 

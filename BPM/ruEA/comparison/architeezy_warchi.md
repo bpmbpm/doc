@@ -743,10 +743,13 @@ https://github.com/bpmbpm/doc/blob/main/BPM/ruEA/comparison/installation_1.md
 
 Не путать с исполняемым экземпляром процесса в BPMN-engine.
 
-#### Анализ подходов Образ \ Индивид в BPM\EA tools 
-- https://github.com/bpmbpm/rdf-grapher/blob/main/ver9d/analysis/new_individ_process.md
+#### Concept vs Individ
+- Общая идеология Concept vs Individ https://github.com/bpmbpm/rdf-grapher/blob/main/ver9d/ontology/term.md см. п. 2.3 Концепт (Concept), 2.4 Индивид / Экземпляр (Individ, Individual / Instance)
+- Анализ подходов Образ \ Индивид в разных BPM\EA tools https://github.com/bpmbpm/rdf-grapher/blob/main/ver9d/analysis/new_individ_process.md
+- реализация в онтологии https://github.com/bpmbpm/rdf-grapher/blob/main/ver9d/ontology/vad-basic-ontology.trig
+- в [rdf-grapher](https://github.com/bpmbpm/rdf-grapher/blob/main/ver9d/requirements/function/process_concept.md) расказывал с примерами на RDF реализацию функций создания концепта процесса и его индивидов.   
 
-В [rdf-grapher](https://github.com/bpmbpm/rdf-grapher/blob/main/ver9d/requirements/function/process_concept.md) расказывал с примерами на RDF реализацию функций создания концепта процесса и его индивидов.   
+Вообще, если ключевой элемент BPM\EA инструмента (а Инструмент №1 - это ARIS) - это репозитарий, то основной элемент построения репозитария это формализация и взаимодействие Concept vs Individ 
 
 ### 12.2 Реализация в каждой системе
 

@@ -11,7 +11,10 @@ BS (business studio)
 
 ### sys
 - Comindware
-- 
+- storm 
 - https://architeezy.com/
 - https://fox-manager.com/ 
 - https://github.com/bpmbpm/rdf-grapher/blob/main/ver9d/ontology/vad-basic-ontology.trig
+
+### 3 
+- Объектно-ориентированное моделирование https://www.businessstudio.ru/upload/files/Obektno_orientirovannoe_modelirovanie.pdf

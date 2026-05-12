@@ -10,6 +10,8 @@ BS (business studio)
 - Нотации моделирования процессной архитектуры https://www.osp.ru/os/2026/01/13060495
 
 ### sys
+- Comindware
+- 
 - https://architeezy.com/
 - https://fox-manager.com/ 
 - https://github.com/bpmbpm/rdf-grapher/blob/main/ver9d/ontology/vad-basic-ontology.trig

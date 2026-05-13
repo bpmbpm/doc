@@ -8,6 +8,8 @@ BS (business studio)
 ### BCD
 - Business Capabilities Diagram Диаграмма бизнес-способностей https://www.osp.ru/os/2026/02/13060742 
 - Нотации моделирования процессной архитектуры https://www.osp.ru/os/2026/01/13060495
+#### capabilities
+- https://github.com/bpmbpm/doc/blob/main/BPM/ARIS/readme.md#capabilities
 
 ### sys
 - Comindware

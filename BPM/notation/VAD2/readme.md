@@ -1,5 +1,5 @@
 ## VAD-подобное
-
+Обзор https://github.com/bpmbpm/jsDOTsmartDesign/tree/main/ver2VAD
 ### VAD
 BS (business studio)
 - https://www.businessstudio.ru/help/docs/v6/doku.php/ru/manual/creating_model/built_in_editor/vad_notation?s[]=vad

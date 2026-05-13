@@ -59,3 +59,7 @@ HTML → CSS → JavaScript → React → Next → Node → Express → MongoDB
 
 Для бесплатного обучения я использую The Odin Project — потрясающий курс по полному стеку на JavaScript, основанный на проектном обучении. Если хотите что-то более глубокое и платное — рекомендую Zero to Mastery.  
 А если хотите создавать и мобильные приложения — просто добавьте React Native. Если вы знаете React, это очень легко. Используйте Expo — он позволит вам собирать приложения для iOS и Android из одного кода.
+
+## spec-driven development
+- example https://habr.com/ru/articles/982620/#comment_29343506 ; https://github.com/github/spec-kit/blob/main/templates/spec-template.md
+- Почему spec-driven development плохо работает на микросервисах: часть 1. Где теряется контекст https://habr.com/ru/articles/1033510/

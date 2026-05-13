@@ -6,6 +6,8 @@
 ## 2
 ### capabilities
 - Модель "Матрица выбора процессов" - PSM/ARIS https://studfile.net/preview/9553711/page:10/
+![pic](https://studfile.net/html/2706/58/html_gda0lI0_pK.wlBZ/htmlconvd-tUgsRb_html_7c62069b48a83435.png)
+закупка, хранение, продажа - это типа capabilities (зачем?)
 
 ### 2
 - МЕТОДЫ И СРЕДСТВА  МОДЕЛИРОВАНИЯ БИЗНЕС-ПРОЦЕССОВ:  МЕТОДОЛОГИЯ ARIS Учебно-методическое пособие https://elib.pnzgu.ru/files/eb/oqunj0EcBQGW.pdf

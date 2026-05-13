@@ -20,8 +20,8 @@ https://albertodmendoza.net/2026/03/01/archimate-3-2-as-an-rdf-ontology-beyond-t
 
 ### 🔧 Инструменты и трансформации
 
-*   **Archi2RDF**: Инструмент для перевода моделей ArchiMate в RDF. Требует Java (см. подробную инструкцию в README).
-*   **BPMN2OWL**: Java-инструмент (JAR-файл) для проверки BPMN-диаграмм на соответствие спецификации 2.0.
+*   **Archi2RDF**: Инструмент для перевода моделей ArchiMate в RDF. Требует Java (см. подробную инструкцию в README). 
+*   **BPMN2OWL**: Java-инструмент (JAR-файл) для проверки BPMN-диаграмм на соответствие спецификации 2.0. https://github.com/reiterma13/IPPR/blob/master/README.md
 *   **Archi (плагин)**: Популярный бесплатный инструмент для ArchiMate с плагином для экспорта моделей в RDF/OWL.
 
 ### 🎨 Другие нотации и связанные стандарты

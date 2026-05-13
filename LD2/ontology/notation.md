@@ -79,4 +79,4 @@ https://albertodmendoza.net/2026/03/01/archimate-3-2-as-an-rdf-ontology-beyond-t
     *   `https://chowlk.linkeddata.es`
     *   `https://github.com/oeg-upm/Chowlk`
 
-Надеюсь, этот структурированный список с прямыми ссылками будет вам полезен. Если потребуется уточнить или скорректировать что-то ещё, обращайтесь.
+

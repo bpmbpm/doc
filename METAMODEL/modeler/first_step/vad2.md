@@ -29,7 +29,7 @@ ExecutorGroup (эллипс)
 
 ## 2
 
-## Часть 1. Минимальная онтология VAD с `ExecutorGroup` (читаемый формат + русские комментарии)
+## Часть 1. Минимальная онтология VAD с `ExecutorGroup` 
 
 ### Файл `vad_with_group.ttl`
 
@@ -183,7 +183,7 @@ graph TD
     ProcessType(Тип процесса) :::ptype
 
     hasNext -->|hasNext| Process
-    hasExecutor -->|hasExecutor (1)| ExecutorGroup
+    hasExecutor -->|hasExecutor 1| ExecutorGroup
     hasExecutorMember -->|hasExecutorMember| Executor
     hasProcessType -->|hasProcessType| ProcessType
 

@@ -35,3 +35,8 @@
 - Удерживая кнопку, подключите USB-кабель к ПК и приставке (лучше использовать USB 2.0 порт, не синий).
 - Отпустите кнопку, когда компьютер начнет прошивку (полоса прогресса).
 - По окончании (надпись Burn success) нажмите Stop, отсоедините приставку и подключите к телевизору (первая загрузка долгая).
+
+##### Amlogic USB Burning Tool
+- https://4pda.to/forum/index.php?showtopic=766306
+- Amlogic USB Burning Tool, для прошивок 10+ Android! https://4pda.to/forum/index.php?showtopic=766306&st=580#entry110344310 ; https://disk.yandex.ru/d/GYRf8GG42C4Mqw
+- https://androidmtk.com/download-amlogic-usb-burning-tool ; https://androiddatahost.com/l8sha Amlogic_USB_Burning_Tool_v3.2.0

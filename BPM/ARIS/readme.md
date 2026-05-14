@@ -5,6 +5,7 @@
 
 ## 2
 ### capabilities
+- https://github.com/bpmbpm/doc/blob/main/BPM/notation/VAD2/readme.md#capabilities
 - Модель "Матрица выбора процессов" - PSM/ARIS https://studfile.net/preview/9553711/page:10/
 ![pic](https://studfile.net/html/2706/58/html_gda0lI0_pK.wlBZ/htmlconvd-tUgsRb_html_7c62069b48a83435.png)
 закупка, хранение, продажа - это типа capabilities (зачем?)

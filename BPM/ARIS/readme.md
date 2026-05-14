@@ -3,7 +3,6 @@
 - http://www.bpm.processoffice.ru/
 - https://macros208.rssing.com/chan-25252576/all_p19.html
 
-## 2
 ### capabilities
 - https://github.com/bpmbpm/doc/blob/main/BPM/notation/VAD2/readme.md#capabilities
 - Модель "Матрица выбора процессов" - PSM/ARIS https://studfile.net/preview/9553711/page:10/

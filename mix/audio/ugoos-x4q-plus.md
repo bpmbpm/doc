@@ -11,4 +11,4 @@
 
 ### firmware
 - https://proshivkis.ru/?k=ugoos-x4q-plus-s905x4-tv-box-firmware
-- https://4pda.to/forum/index.php?showtopic=1057154&st=20 1.2.4 https://4pda.to/forum/index.php?showtopic=1057154&st=10240#entry133365390
+- https://4pda.to/forum/index.php?showtopic=1057154&st=20 1.2.4 https://4pda.to/forum/index.php?showtopic=1057154&st=10240#entry133365390 error https://mega.nz/file/2ldHUDJL#hfuWbPmfE1jW6Az5j-zvZuCWvYe6Psaz8Au4a0BAHKY

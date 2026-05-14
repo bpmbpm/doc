@@ -171,6 +171,7 @@ ExecutorGroup (эллипс)
 ## Часть 2. Мета-модель в формате Mermaid (как в Protege OntoGraf)
 
 Ошибки: 
+
 ```
 graph TD
     classDef process fill:#cds,stroke:#333,stroke-width:2px,shape:chevron
@@ -219,7 +220,7 @@ graph TD
     class ProcessType ptype
 
     hasNext -->|hasNext| Process
-    hasExecutor -->|hasExecutor (1)| ExecutorGroup
+    hasExecutor -->|hasExecutor 1| ExecutorGroup
     hasExecutorMember -->|hasExecutorMember| Executor
     hasProcessType -->|hasProcessType| ProcessType
 

@@ -173,7 +173,7 @@ ExecutorGroup (эллипс)
 ```mermaid
 graph TD
     classDef process fill:#cds,stroke:#333,stroke-width:2px,shape:chevron
-    classDef group fill:#e6e6fa,stroke:#333,stroke-width:2px,shape=ellipse
+    classDef group fill:#e6e6fa,stroke:#333,stroke-width:2px,shape:ellipse
     classDef executor fill:#bbffbb,stroke:#333
     classDef ptype fill:#ffccff,stroke:#333
 

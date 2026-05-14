@@ -170,7 +170,8 @@ ExecutorGroup (эллипс)
 
 ## Часть 2. Мета-модель в формате Mermaid (как в Protege OntoGraf)
 
-```mermaid
+Ошибки: 
+```
 graph TD
     classDef process fill:#cds,stroke:#333,stroke-width:2px,shape:chevron
     classDef group fill:#e6e6fa,stroke:#333,stroke-width:2px,shape:ellipse
@@ -184,6 +185,41 @@ graph TD
 
     hasNext -->|hasNext| Process
     hasExecutor -->|hasExecutor 1| ExecutorGroup
+    hasExecutorMember -->|hasExecutorMember| Executor
+    hasProcessType -->|hasProcessType| ProcessType
+
+    id -->|id| Process
+    hasProcessId -->|hasProcessId| ExecutorGroup
+    hasExecutorId -->|hasExecutorId| Executor
+    comment -->|comment| Process
+```
+
+Ошибка в синтаксисе Mermaid: GitHub не поддерживает **inline-стилизацию с `:::`** внутри блока graph. Также `shape:` внутри `classDef` не работает.
+**Что было исправлено:**
+- Убраны `shape=chevron` и `shape=ellipse` из `classDef` (Mermaid не поддерживает их внутри `classDef`).
+- Вместо `:::` используется явное присвоение класса после объявления узлов: `class Process process`.
+- Символ `(("текст"))` рисует эллипс (для группы исполнителей). Шеврон можно имитировать, используя `[/"Процесс"/]` (ромб) или обычный прямоугольник. При желании замените `(("Процесс"))` на `[Процесс]` (прямоугольник).
+
+Исправлено.
+``` mermaid
+graph TD
+    classDef process fill:#cdd,stroke:#333,stroke-width:2px
+    classDef group fill:#e6e6fa,stroke:#333,stroke-width:2px
+    classDef executor fill:#bbffbb,stroke:#333
+    classDef ptype fill:#ffccff,stroke:#333
+
+    Process(("Процесс"))
+    ExecutorGroup(("Группа исполнителей"))
+    Executor(Исполнитель)
+    ProcessType(Тип процесса)
+
+    class Process process
+    class ExecutorGroup group
+    class Executor executor
+    class ProcessType ptype
+
+    hasNext -->|hasNext| Process
+    hasExecutor -->|hasExecutor (1)| ExecutorGroup
     hasExecutorMember -->|hasExecutorMember| Executor
     hasProcessType -->|hasProcessType| ProcessType
 

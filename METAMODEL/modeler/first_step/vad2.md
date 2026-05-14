@@ -898,3 +898,115 @@ Protege иногда лучше понимает Unicode-коды, чем пря
 - Если вам нужно просто нарисовать схему в Protege и показать связи – **можно убрать** их, как в упрощённой версии.
 - Промежуточный вариант: оставить `domain` и `range` только для ключевых свойств (например, `hasNext`), а для менее важных – опустить.
 
+## example 
+
+## Пример схемы процесса изготовления скрепки (упрощённая онтология)
+
+Ниже приведён файл `vad_simplest_example.ttl`, который использует классы и свойства из предыдущей максимально простой онтологии (без `rdfs:domain` и `rdfs:range`). В нём описаны три процесса, типы процессов, исполнители и все связи.
+
+### Файл `vad2_easy_example.ttl` (полный код)
+
+```turtle
+@prefix :      <http://example.org/vad-simplest#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+#######################################################################
+#  ИНДИВИДЫ (экземпляры) для процесса изготовления скрепки
+#######################################################################
+
+# ---- Типы процессов (экземпляры ProcessType) ----
+:CuttingType rdf:type :ProcessType ;
+    rdfs:label "Cutting" .
+:BendingType rdf:type :ProcessType ;
+    rdfs:label "Bending" .
+:CoatingType rdf:type :ProcessType ;
+    rdfs:label "Coating" .
+
+# ---- Процессы (экземпляры Process) ----
+:CutWire rdf:type :Process ;
+    rdfs:label "Cut the wire" ;
+    :id "P001" ;
+    :comment "Cut a piece of wire 8 cm long" ;
+    :hasProcessType :CuttingType ;
+    :hasNext :BendWire ;
+    :hasExecutor :Executor1, :Executor2 .
+
+:BendWire rdf:type :Process ;
+    rdfs:label "Bend the wire into a paperclip shape" ;
+    :id "P002" ;
+    :comment "Form a classic paperclip" ;
+    :hasProcessType :BendingType ;
+    :hasNext :CoatWire ;
+    :hasExecutor :Executor3, :Executor4, :Executor5, :Executor6, :Executor7 .
+
+:CoatWire rdf:type :Process ;
+    rdfs:label "Apply coating" ;
+    :id "P003" ;
+    :comment "Apply blue polymer coating" ;
+    :hasProcessType :CoatingType ;
+    :hasExecutor :Executor8, :Executor9 .
+
+# ---- Исполнители (экземпляры Executor) ----
+:Executor1 rdf:type :Executor ;
+    :hasExecutorId "E001" ;
+    rdfs:label "Ivan" .
+:Executor2 rdf:type :Executor ;
+    :hasExecutorId "E002" ;
+    rdfs:label "Cutting machine" .
+:Executor3 rdf:type :Executor ;
+    :hasExecutorId "E003" ;
+    rdfs:label "Peter" .
+:Executor4 rdf:type :Executor ;
+    :hasExecutorId "E004" ;
+    rdfs:label "Bending robot" .
+:Executor5 rdf:type :Executor ;
+    :hasExecutorId "E005" ;
+    rdfs:label "Controller" .
+:Executor6 rdf:type :Executor ;
+    :hasExecutorId "E006" ;
+    rdfs:label "Electronic scheme" .
+:Executor7 rdf:type :Executor ;
+    :hasExecutorId "E007" ;
+    rdfs:label "Lubricator" .
+:Executor8 rdf:type :Executor ;
+    :hasExecutorId "E008" ;
+    rdfs:label "Maria" .
+:Executor9 rdf:type :Executor ;
+    :hasExecutorId "E009" ;
+    rdfs:label "Coating chamber" .
+```
+
+### Пояснение к примеру
+
+| Процесс (ID) | Название (rdfs:label) | Тип процесса | Исполнители (количество) | Следующий процесс |
+|--------------|------------------------|--------------|--------------------------|-------------------|
+| `:CutWire` (P001) | Cut the wire | Cutting | Иван, Станок_отрезной (2) | `:BendWire` |
+| `:BendWire` (P002) | Bend the wire into a paperclip shape | Bending | Пётр, Гибка_автомат, Контроллер, Электронная_схема, Смазчик (5) | `:CoatWire` |
+| `:CoatWire` (P003) | Apply coating | Coating | Мария, Покрасочная_камера (2) | – |
+
+**Важно:** В этой простой онтологии нет ограничения на количество исполнителей. Поэтому процесс `:BendWire` имеет пять связей `:hasExecutor` (что полностью соответствует заданию: «операция "Согнуть проволоку по форме скрепки" имеет пять исполнителей (включая схему)»).
+
+### Как загрузить в Protege
+
+1. Сохраните код в файл `vad2_easy_example.ttl`.
+2. Убедитесь, что кодировка **UTF-8 без BOM** (Notepad++: «Кодировки → Преобразовать в UTF-8 без BOM»).
+3. Откройте Protege → **File → Open** → выберите файл.
+4. После загрузки вы увидите:
+   - **Classes**: `Process`, `Executor`, `ProcessType`
+   - **Individuals**: все перечисленные индивиды
+   - **Object properties**: `hasNext`, `hasExecutor`, `hasProcessType`
+5. Чтобы увидеть граф, перейдите на вкладку **OntoGraf**, выберите класс `Process` и нажмите **Refresh**. Появятся три процесса с их исполнителями и связями.
+
+### Что демонстрирует этот пример
+
+- **Прямая связь** `:hasExecutor` между процессом и исполнителем (без промежуточной группы).
+- **Множественные исполнители** (особенно пять для процесса сгибания).
+- **Последовательность процессов** через `:hasNext`.
+- **Классификацию** через `:hasProcessType`.
+- Все идентификаторы и комментарии заполнены.
+
+Теперь у вас есть полностью рабочий, максимально простой пример, который не вызывает проблем с кодировкой и не требует включения reasoner'а.
+

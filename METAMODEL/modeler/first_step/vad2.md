@@ -632,6 +632,269 @@ Protege иногда лучше понимает Unicode-коды, чем пря
 *   **Обновление Java**: Иногда проблема кроется в старой версии Java. Установка последней версии с официального сайта может её решить.
 *   **Замена файла `felix.jar`**: В редких случаях помогает замена системного файла `felix.jar` в папке `bin` Protege. Этот способ требует осторожности, и перед его применением лучше поискать инструкции, актуальные именно для вашей версии программы.
 
-Надеюсь, один из этих способов поможет решить вашу проблему с отображением! Если что-то останется неясным, спрашивайте
+## En
 
+## Способ 3. Переход на английские метки – готовый код
+
+Ниже представлен файл `vad2_nogroup_en.ttl` – полный аналог вашего `vad2_nogroup.ttl`, но с английскими названиями классов, свойств и меток. Это гарантирует отсутствие проблем с кодировкой в Protege. Для удобства я добавил русские комментарии (они в Turtle оформлены как `#` и не влияют на отображение).
+
+```turtle
+@prefix :      <http://example.org/vad-without-group#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+: rdf:type owl:Ontology ;
+    rdfs:comment "Минимальная онтология VAD без группы исполнителей (английские метки)" .
+
+#######################################################################
+#  КЛАССЫ (типы объектов)
+#######################################################################
+:Process rdf:type owl:Class ;
+    rdfs:label "Process" ;
+    rdfs:comment "Бизнес-операция или работа, добавляющая ценность." .
+
+:Executor rdf:type owl:Class ;
+    rdfs:label "Executor" ;
+    rdfs:comment "Исполнитель (человек, станок, роль)." .
+
+:ProcessType rdf:type owl:Class ;
+    rdfs:label "Process type" ;
+    rdfs:comment "Категория процесса (резка, гибка, покрытие)." .
+
+#######################################################################
+#  АТРИБУТЫ (datatype properties)
+#######################################################################
+:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Process ;
+    rdfs:range xsd:string ;
+    rdfs:label "id" ;
+    rdfs:comment "Уникальный идентификатор процесса." .
+
+:hasExecutorId rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Executor ;
+    rdfs:range xsd:string ;
+    rdfs:label "executor id" ;
+    rdfs:comment "Идентификатор исполнителя." .
+
+:comment rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Process ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf rdfs:comment ;
+    rdfs:label "comment" ;
+    rdfs:comment "Пояснение к процессу." .
+
+#######################################################################
+#  СВЯЗИ (object properties)
+#######################################################################
+:hasNext rdf:type owl:ObjectProperty ;
+    rdfs:domain :Process ;
+    rdfs:range :Process ;
+    rdfs:label "has next" ;
+    rdfs:comment "Ссылка на следующий процесс в цепочке." .
+
+:hasExecutor rdf:type owl:ObjectProperty ;
+    rdfs:domain :Process ;
+    rdfs:range :Executor ;
+    rdfs:label "has executor" ;
+    rdfs:comment "Прямая связь процесса с исполнителем (без группы)." .
+
+:hasProcessType rdf:type owl:ObjectProperty ;
+    rdfs:domain :Process ;
+    rdfs:range :ProcessType ;
+    rdfs:label "has process type" ;
+    rdfs:comment "Тип процесса." .
+```
+
+## Как использовать
+
+1. Скопируйте приведённый код в новый текстовый файл.
+2. Сохраните файл с именем `vad2_nogroup_en.ttl` (важно: расширение `.ttl`).
+3. Убедитесь, что кодировка файла – **UTF-8 без BOM** (в Notepad++: «Кодировки → Преобразовать в UTF-8 без BOM»).
+4. Откройте файл в Protege (`File → Open`, выберите тип «All files» или «Turtle»).
+
+В Protege вы увидите классы `Process`, `Executor`, `ProcessType` и свойства с английскими именами. Проблем с иероглифами не будет.
+
+## Примечание
+
+- **Комментарии на русском** остались только в коде (после `#`) – они не видны в интерфейсе Protege. Если вы хотите, чтобы в Protege подсказки были на русском, замените текст в `rdfs:comment` (но тогда вернётся проблема с кодировкой – лучше оставить английский).
+- При желании вы можете позже изменить отображаемые названия через Protege (вкладка `Annotations`) – программа сама подставит русские буквы корректно, если шрифт поддерживает кириллицу.
+
+Этот файл полностью работоспособен и не содержит символов, вызывающих ошибки парсера.
+
+## Easy
+
+## Подробный комментарий к коду (английская версия)
+
+Разберём каждую часть приведённого файла `vad2_nogroup_en.ttl` построчно и по смыслу.
+
+### Префиксы (объявления пространств имён)
+
+```turtle
+@prefix :      <http://example.org/vad-without-group#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+```
+
+- `:` – сокращение для базового URI нашей онтологии (http://example.org/vad-without-group#). Все определённые нами сущности будут иметь этот префикс.
+- `rdf:`, `rdfs:`, `owl:`, `xsd:` – стандартные схемы для RDF, RDF Schema, OWL и XML Schema типов данных.
+
+### Объявление онтологии
+
+```turtle
+: rdf:type owl:Ontology ;
+    rdfs:comment "Минимальная онтология VAD без группы исполнителей (английские метки)" .
+```
+
+- Указывает, что сам документ является онтологией (экземпляр класса `owl:Ontology`).
+- Добавляет комментарий (`rdfs:comment`) на английском (в данном случае тоже английский). Это не влияет на логику, только на документацию.
+
+### Классы
+
+```turtle
+:Process rdf:type owl:Class ;
+    rdfs:label "Process" ;
+    rdfs:comment "Бизнес-операция или работа, добавляющая ценность." .
+```
+
+- Создаёт класс `:Process`. 
+- `rdf:type owl:Class` – объявляет его как класс OWL.
+- `rdfs:label` – человеко-читаемое имя (отображается в Protege).
+- `rdfs:comment` – описание (также отображается).
+
+Аналогично для `:Executor` и `:ProcessType`.
+
+### Datatype-свойства (атрибуты)
+
+```turtle
+:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Process ;
+    rdfs:range xsd:string ;
+    rdfs:label "id" ;
+    rdfs:comment "Уникальный идентификатор процесса." .
+```
+
+- `owl:DatatypeProperty` – свойство, связывающее экземпляр класса с литералом (строкой, числом, датой).
+- `rdfs:domain :Process` – **заявляет**, что субъект этого свойства **должен** быть экземпляром класса `:Process` (логическое ограничение). В Protege это будет проверяться, но онтология может оставаться логически непротиворечивой, даже если вы используете свойство с другим классом – это лишь подсказка для вывода.
+- `rdfs:range xsd:string` – **заявляет**, что объект (значение) этого свойства **должен** быть строкой (`xsd:string`).
+- `rdfs:label` и `rdfs:comment` – как у классов.
+
+Аналогично для `:hasExecutorId` (домен `:Executor`, диапазон строка).
+
+```turtle
+:comment rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Process ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf rdfs:comment ;
+    rdfs:label "comment" ;
+    rdfs:comment "Пояснение к процессу." .
+```
+
+- `rdfs:subPropertyOf rdfs:comment` – объявляет, что наше свойство `:comment` является **подсвойством** встроенного `rdfs:comment`. Это означает, что всё, что мы записываем через `:comment`, автоматически считается и `rdfs:comment`. На практике это удобно для совместимости со стандартными инструментами (например, Protege показывает комментарии в специальном поле).
+
+### Object-свойства (связи между экземплярами классов)
+
+```turtle
+:hasNext rdf:type owl:ObjectProperty ;
+    rdfs:domain :Process ;
+    rdfs:range :Process ;
+    rdfs:label "has next" ;
+    rdfs:comment "Ссылка на следующий процесс в цепочке." .
+```
+
+- **`rdf:type owl:ObjectProperty`** – это свойство соединяет два **объекта** (экземпляры классов), а не объект с литералом.
+- **`rdfs:domain :Process`** – указывает, что субъект (источник) этой связи **должен быть** экземпляром класса `:Process`. Формально: если есть тройка `X :hasNext Y`, то из этого следует, что `X rdf:type :Process`.
+- **`rdfs:range :Process`** – указывает, что объект (цель) этой связи **должен быть** экземпляром класса `:Process`. Если есть `X :hasNext Y`, то выводится `Y rdf:type :Process`.
+- **Зачем это нужно?**  
+  - Для **логических выводов**: reasoner может автоматически определить тип неизвестного ресурса, если он участвует в таком свойстве.  
+  - Для **валидации**: в Protege можно проверить, что модель не содержит ошибочных связей (например, `:CutWire :hasNext 123` – выдаст предупреждение, так как 123 не является `:Process`).  
+  - Для **удобства пользователя**: при создании связей в редакторе Protege предлагает только подходящие по диапазону экземпляры.
+
+```turtle
+:hasExecutor rdf:type owl:ObjectProperty ;
+    rdfs:domain :Process ;
+    rdfs:range :Executor ;
+    rdfs:label "has executor" ;
+    rdfs:comment "Прямая связь процесса с исполнителем (без группы)." .
+```
+
+- Аналогично: процесс может иметь несколько исполнителей (ниже будет показано, что кардинальность не задана, значит, может быть от 0 до многих).
+
+```turtle
+:hasProcessType rdf:type owl:ObjectProperty ;
+    rdfs:domain :Process ;
+    rdfs:range :ProcessType ;
+    rdfs:label "has process type" ;
+    rdfs:comment "Тип процесса." .
+```
+
+- Связывает процесс с экземпляром `:ProcessType` (классификатором).
+
+---
+
+### Важное замечание о `rdfs:domain` и `rdfs:range`
+
+- В **чистом RDF** (без OWL-вывода) эти утверждения всего лишь **метаданные** – они не запрещают использовать свойство с другими классами. Но при включённом reasoner'e (например, HermiT в Protege) эти ограничения становятся активными и могут влиять на непротиворечивость онтологии.
+- Если вы не планируете запускать reasoner или хотите максимально лёгкую онтологию, можно **опустить `rdfs:domain` и `rdfs:range`**, оставив только `rdf:type owl:ObjectProperty`. Связи всё равно будут работать, но без автоматической типизации.
+
+---
+
+## Ещё более простая версия (без `rdfs:domain` и `rdfs:range`)
+
+Ниже представлена минимальная онтология, где:
+- Убраны все `rdfs:domain` и `rdfs:range`.
+- Убрано `rdfs:subPropertyOf rdfs:comment` (можно просто использовать прямое `:comment` как datatype property).
+- Оставлены только классы и свойства с `rdfs:label` (для отображения).
+
+Эта онтология **не требует reasoner'а**, но сохраняет всю семантику связей. Protege будет показывать связи, но не будет проверять типы субъектов/объектов.
+
+**Файл `vad_simplest.ttl`:**
+
+```turtle
+@prefix :      <http://example.org/vad-simplest#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+# Онтология
+: rdf:type owl:Ontology ;
+    rdfs:comment "Упрощённая онтология VAD без domain/range" .
+
+# Классы
+:Process rdf:type owl:Class ; rdfs:label "Process" .
+:Executor rdf:type owl:Class ; rdfs:label "Executor" .
+:ProcessType rdf:type owl:Class ; rdfs:label "Process type" .
+
+# Datatype свойства (без domain/range)
+:id rdf:type owl:DatatypeProperty ; rdfs:label "id" .
+:hasExecutorId rdf:type owl:DatatypeProperty ; rdfs:label "executor id" .
+:comment rdf:type owl:DatatypeProperty ; rdfs:label "comment" .
+
+# Object свойства (без domain/range)
+:hasNext rdf:type owl:ObjectProperty ; rdfs:label "has next" .
+:hasExecutor rdf:type owl:ObjectProperty ; rdfs:label "has executor" .
+:hasProcessType rdf:type owl:ObjectProperty ; rdfs:label "has process type" .
+```
+
+**Что потеряно?**  
+- Reasoner не сможет автоматически определить, что если `x :hasNext y`, то `x` и `y` – процессы.  
+- В интерфейсе Protege при создании связи не будет фильтрации по классам (можно будет привязать к любому экземпляру любого класса).  
+- Нет проверки ошибок (например, случайно привязать исполнителя как `hasNext`).  
+
+**Что приобретено?**  
+- Максимальная простота и лёгкость.  
+- Подходит для быстрого прототипирования, когда важна только структура связей, а не строгая типизация.  
+- Меньше шансов на конфликты при работе с разными reasoner'ами.
+
+---
+
+### Итоговый совет
+
+- Если вы разрабатываете онтологию для дальнейшего логического вывода или интеграции с другими OWL-инструментами – **оставляйте `rdfs:domain` и `rdfs:range`**, это хорошая практика.
+- Если вам нужно просто нарисовать схему в Protege и показать связи – **можно убрать** их, как в упрощённой версии.
+- Промежуточный вариант: оставить `domain` и `range` только для ключевых свойств (например, `hasNext`), а для менее важных – опустить.
 

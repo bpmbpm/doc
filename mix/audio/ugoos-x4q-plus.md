@@ -12,3 +12,9 @@
 ### firmware
 - https://proshivkis.ru/?k=ugoos-x4q-plus-s905x4-tv-box-firmware
 - https://4pda.to/forum/index.php?showtopic=1057154&st=20 1.2.4 https://4pda.to/forum/index.php?showtopic=1057154&st=10240#entry133365390 error https://mega.nz/file/2ldHUDJL#hfuWbPmfE1jW6Az5j-zvZuCWvYe6Psaz8Au4a0BAHKY
+- ATV_1.2.4 прошивка для X4Q! Собрана на основе стока v.1.2.4. С приложениями! https://4pda.to/forum/index.php?showtopic=1057154&st=10260#entry133384244
+скачать https://mega.nz/folder/56shDCRC#KhQA36LFcBdsX6WAKgDs9Q
+  - Кто пользуется моей предыдущей ATV прошивкой, то можно прошить без галки в прошивальщике EraseFlash
+- прошивка
+  - [https://ugoos.ru](https://ugoos.ru/%D0%9A%D0%B0%D0%BA-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-%D0%BF%D1%80%D0%BE%D1%88%D0%B8%D0%B2%D0%BA%D1%83-Amlogic-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2-Ugoos-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D0%9F%D0%9A)
+  - https://proshivkis.ru/?k=ugoos-x4q-plus-s905x4-update 

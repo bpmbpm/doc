@@ -1,0 +1,66 @@
+@prefix : <http://example.org/aris-vad-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://example.org/aris-vad-ontology>
+  rdf:type owl:Ontology ;
+  dc:title "ARIS VAD Metamodel Ontology" ;
+  dc:description "Ontology representing the core metamodel of ARIS Value-Added Chain Diagrams (VAD)." ;
+  dc:creator "Generated for Protege" ;
+  dc:date "2026-05-14"^^xsd:date ;
+  owl:versionIRI <http://example.org/aris-vad-ontology/1.0> .
+
+# Classes
+:VADElement rdf:type owl:Class ; rdfs:label "VAD Element" .
+:ValueAddedChain rdf:type owl:Class ; rdfs:subClassOf :VADElement ; rdfs:label "Value-Added Chain" .
+:ValueAddedChainElement rdf:type owl:Class ; rdfs:subClassOf :VADElement ; rdfs:label "Value-Added Chain Element" .
+:Cluster rdf:type owl:Class ; rdfs:subClassOf :ValueAddedChainElement ; rdfs:label "Cluster" .
+:Process rdf:type owl:Class ; rdfs:subClassOf :ValueAddedChainElement ; rdfs:label "Process" .
+:Function rdf:type owl:Class ; rdfs:subClassOf :ValueAddedChainElement ; rdfs:label "Function" .
+:Interface rdf:type owl:Class ; rdfs:subClassOf :VADElement ; rdfs:label "Interface" .
+:OrganizationalUnit rdf:type owl:Class ; rdfs:subClassOf :VADElement ; rdfs:label "Organizational Unit" .
+:ApplicationComponent rdf:type owl:Class ; rdfs:subClassOf :VADElement ; rdfs:label "Application Component" .
+:DataObject rdf:type owl:Class ; rdfs:subClassOf :VADElement ; rdfs:label "Data Object" .
+
+# Object Properties
+:precedes rdf:type owl:TransitiveProperty , owl:ObjectProperty ;
+  rdfs:domain :ValueAddedChainElement ; rdfs:range :ValueAddedChainElement ;
+  rdfs:label "precedes" ; owl:inverseOf :succeeds .
+:succeeds rdf:type owl:ObjectProperty ; rdfs:domain :ValueAddedChainElement ; rdfs:range :ValueAddedChainElement ;
+  rdfs:label "succeeds" ; owl:inverseOf :precedes .
+:hasInput rdf:type owl:ObjectProperty ; rdfs:domain :ValueAddedChainElement ; rdfs:range :DataObject ; rdfs:label "has input" .
+:hasOutput rdf:type owl:ObjectProperty ; rdfs:domain :ValueAddedChainElement ; rdfs:range :DataObject ; rdfs:label "has output" .
+:performedBy rdf:type owl:ObjectProperty ; rdfs:domain :ValueAddedChainElement ; rdfs:range :OrganizationalUnit ; rdfs:label "performed by" .
+:supportedBy rdf:type owl:ObjectProperty ; rdfs:domain :ValueAddedChainElement ; rdfs:range :ApplicationComponent ; rdfs:label "supported by" .
+:hasInterface rdf:type owl:ObjectProperty ; rdfs:domain :ValueAddedChainElement ; rdfs:range :Interface ; rdfs:label "has interface" .
+:connects rdf:type owl:ObjectProperty ; rdfs:domain :Interface ; rdfs:range :ValueAddedChainElement ; rdfs:label "connects" .
+:hasElement rdf:type owl:ObjectProperty ; rdfs:domain :ValueAddedChain ; rdfs:range :ValueAddedChainElement ; rdfs:label "has element" ; owl:inverseOf :isPartOf .
+:isPartOf rdf:type owl:ObjectProperty ; rdfs:domain :ValueAddedChainElement ; rdfs:range :ValueAddedChain ; rdfs:label "is part of" .
+
+# Datatype Properties
+:hasName rdf:type owl:DatatypeProperty ; rdfs:domain :VADElement ; rdfs:range xsd:string ; rdfs:label "has name" .
+:hasDescription rdf:type owl:DatatypeProperty ; rdfs:domain :VADElement ; rdfs:range xsd:string ; rdfs:label "has description" .
+:hasCreationDate rdf:type owl:DatatypeProperty ; rdfs:domain :ValueAddedChain ; rdfs:range xsd:dateTime ; rdfs:label "creation date" .
+:hasVersion rdf:type owl:DatatypeProperty ; rdfs:domain :ValueAddedChain ; rdfs:range xsd:string ; rdfs:label "version" .
+:hasResponsibleRole rdf:type owl:DatatypeProperty ; rdfs:domain :OrganizationalUnit ; rdfs:range xsd:string ; rdfs:label "responsible role" .
+
+# Restrictions (исправлены для datatype property)
+:ValueAddedChainElement rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty :hasName ; owl:cardinality 1 ] .
+:ValueAddedChain rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty :hasElement ; owl:someValuesFrom :ValueAddedChainElement ] .
+
+# Индивиды (те же, что были)
+:SampleChain rdf:type :ValueAddedChain ; :hasName "Order-to-Cash VAD" ; :hasDescription "High-level value chain for processing customer orders from receipt to payment." ; :hasCreationDate "2026-05-14T10:00:00Z"^^xsd:dateTime ; :hasVersion "1.0" .
+:OrderEntry rdf:type :Process ; :hasName "Order Entry" ; :hasDescription "Capture and validate customer order." ; :isPartOf :SampleChain ; :performedBy :SalesDept ; :hasOutput :OrderData ; :precedes :InventoryCheck .
+:InventoryCheck rdf:type :Process ; :hasName "Inventory Check" ; :hasDescription "Verify product availability." ; :isPartOf :SampleChain ; :performedBy :Warehouse ; :hasInput :OrderData ; :hasOutput :AvailabilityStatus ; :precedes :Shipment .
+:Shipment rdf:type :Process ; :hasName "Shipment" ; :hasDescription "Pick, pack, and ship goods to customer." ; :isPartOf :SampleChain ; :performedBy :Logistics ; :hasInput :AvailabilityStatus ; :hasOutput :ShippingNotice .
+:SalesDept rdf:type :OrganizationalUnit ; :hasName "Sales Department" ; :hasResponsibleRole "Sales Representative" .
+:Warehouse rdf:type :OrganizationalUnit ; :hasName "Warehouse" ; :hasResponsibleRole "Inventory Manager" .
+:Logistics rdf:type :OrganizationalUnit ; :hasName "Logistics" ; :hasResponsibleRole "Shipping Coordinator" .
+:OrderData rdf:type :DataObject ; :hasName "Order Data" ; :hasDescription "Customer order details including items, quantities, and shipping address." .
+:AvailabilityStatus rdf:type :DataObject ; :hasName "Availability Status" ; :hasDescription "Indicates whether ordered items are in stock." .
+:ShippingNotice rdf:type :DataObject ; :hasName "Shipping Notice" ; :hasDescription "Notification sent to customer with tracking information." .
+:OrderInterface rdf:type :Interface ; :hasName "Order Interface" ; :hasDescription "External interface for order submission from web shop." ; :connects :OrderEntry .
+:ERP_System rdf:type :ApplicationComponent ; :hasName "ERP System" ; :hasDescription "Enterprise resource planning system handling order processing." ; :supportedBy :OrderEntry , :InventoryCheck .

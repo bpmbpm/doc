@@ -1,0 +1,38 @@
+@prefix :      <http://example.org/vad-without-group#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+: rdf:type owl:Ontology .
+
+# Классы
+:Process rdf:type owl:Class ;
+    rdfs:label "Процесс" .
+:Executor rdf:type owl:Class ;
+    rdfs:label "Исполнитель" .
+:ProcessType rdf:type owl:Class ;
+    rdfs:label "Тип процесса" .
+
+# Атрибуты
+:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Process ;
+    rdfs:range xsd:string .
+:hasExecutorId rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Executor ;
+    rdfs:range xsd:string .
+:comment rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Process ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf rdfs:comment .
+
+# Связи
+:hasNext rdf:type owl:ObjectProperty ;
+    rdfs:domain :Process ;
+    rdfs:range :Process .
+:hasExecutor rdf:type owl:ObjectProperty ;
+    rdfs:domain :Process ;
+    rdfs:range :Executor .   # прямая связь, без группы
+:hasProcessType rdf:type owl:ObjectProperty ;
+    rdfs:domain :Process ;
+    rdfs:range :ProcessType .

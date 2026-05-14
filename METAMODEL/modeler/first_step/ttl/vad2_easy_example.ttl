@@ -1,0 +1,70 @@
+@prefix :      <http://example.org/vad-simplest#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+#######################################################################
+#  ИНДИВИДЫ (экземпляры) для процесса изготовления скрепки
+#######################################################################
+
+# ---- Типы процессов (экземпляры ProcessType) ----
+:CuttingType rdf:type :ProcessType ;
+    rdfs:label "Cutting" .
+:BendingType rdf:type :ProcessType ;
+    rdfs:label "Bending" .
+:CoatingType rdf:type :ProcessType ;
+    rdfs:label "Coating" .
+
+# ---- Процессы (экземпляры Process) ----
+:CutWire rdf:type :Process ;
+    rdfs:label "Cut the wire" ;
+    :id "P001" ;
+    :comment "Cut a piece of wire 8 cm long" ;
+    :hasProcessType :CuttingType ;
+    :hasNext :BendWire ;
+    :hasExecutor :Executor1, :Executor2 .
+
+:BendWire rdf:type :Process ;
+    rdfs:label "Bend the wire into a paperclip shape" ;
+    :id "P002" ;
+    :comment "Form a classic paperclip" ;
+    :hasProcessType :BendingType ;
+    :hasNext :CoatWire ;
+    :hasExecutor :Executor3, :Executor4, :Executor5, :Executor6, :Executor7 .
+
+:CoatWire rdf:type :Process ;
+    rdfs:label "Apply coating" ;
+    :id "P003" ;
+    :comment "Apply blue polymer coating" ;
+    :hasProcessType :CoatingType ;
+    :hasExecutor :Executor8, :Executor9 .
+
+# ---- Исполнители (экземпляры Executor) ----
+:Executor1 rdf:type :Executor ;
+    :hasExecutorId "E001" ;
+    rdfs:label "Ivan" .
+:Executor2 rdf:type :Executor ;
+    :hasExecutorId "E002" ;
+    rdfs:label "Cutting machine" .
+:Executor3 rdf:type :Executor ;
+    :hasExecutorId "E003" ;
+    rdfs:label "Peter" .
+:Executor4 rdf:type :Executor ;
+    :hasExecutorId "E004" ;
+    rdfs:label "Bending robot" .
+:Executor5 rdf:type :Executor ;
+    :hasExecutorId "E005" ;
+    rdfs:label "Controller" .
+:Executor6 rdf:type :Executor ;
+    :hasExecutorId "E006" ;
+    rdfs:label "Electronic scheme" .
+:Executor7 rdf:type :Executor ;
+    :hasExecutorId "E007" ;
+    rdfs:label "Lubricator" .
+:Executor8 rdf:type :Executor ;
+    :hasExecutorId "E008" ;
+    rdfs:label "Maria" .
+:Executor9 rdf:type :Executor ;
+    :hasExecutorId "E009" ;
+    rdfs:label "Coating chamber" .

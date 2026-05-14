@@ -1,0 +1,24 @@
+@prefix :      <http://example.org/vad-simplest#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+# Онтология
+: rdf:type owl:Ontology ;
+    rdfs:comment "Упрощённая онтология VAD без domain/range" .
+
+# Классы
+:Process rdf:type owl:Class ; rdfs:label "Process" .
+:Executor rdf:type owl:Class ; rdfs:label "Executor" .
+:ProcessType rdf:type owl:Class ; rdfs:label "Process type" .
+
+# Datatype свойства (без domain/range)
+:id rdf:type owl:DatatypeProperty ; rdfs:label "id" .
+:hasExecutorId rdf:type owl:DatatypeProperty ; rdfs:label "executor id" .
+:comment rdf:type owl:DatatypeProperty ; rdfs:label "comment" .
+
+# Object свойства (без domain/range)
+:hasNext rdf:type owl:ObjectProperty ; rdfs:label "has next" .
+:hasExecutor rdf:type owl:ObjectProperty ; rdfs:label "has executor" .
+:hasProcessType rdf:type owl:ObjectProperty ; rdfs:label "has process type" .

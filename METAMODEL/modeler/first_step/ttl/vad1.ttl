@@ -1,0 +1,311 @@
+@prefix : <http://example.org/aris-vad-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+# Ontology declaration
+<http://example.org/aris-vad-ontology>
+  rdf:type owl:Ontology ;
+  dc:title "ARIS VAD Metamodel Ontology" ;
+  dc:description "Ontology representing the core metamodel of ARIS Value-Added Chain Diagrams (VAD)." ;
+  dc:creator "Generated for Protege" ;
+  dc:date "2026-05-14"^^xsd:date ;
+  owl:versionIRI <http://example.org/aris-vad-ontology/1.0> .
+
+# ------------------------------------------------------------
+#  Classes (Concepts)
+# ------------------------------------------------------------
+
+# Top-level class for all VAD elements
+:VADElement
+  rdf:type owl:Class ;
+  rdfs:label "VAD Element" ;
+  rdfs:comment "Abstract superclass for all elements in a Value-Added Chain Diagram." .
+
+# Value-Added Chain (the diagram itself)
+:ValueAddedChain
+  rdf:type owl:Class ;
+  rdfs:subClassOf :VADElement ;
+  rdfs:label "Value-Added Chain" ;
+  rdfs:comment "A top-level model representing a sequence of value-adding steps." .
+
+# Element in a value-added chain (e.g., process, cluster)
+:ValueAddedChainElement
+  rdf:type owl:Class ;
+  rdfs:subClassOf :VADElement ;
+  rdfs:label "Value-Added Chain Element" ;
+  rdfs:comment "A single node in a value-added chain, representing a business function, process, or cluster." .
+
+# Specific types of VAD elements
+:Cluster
+  rdf:type owl:Class ;
+  rdfs:subClassOf :ValueAddedChainElement ;
+  rdfs:label "Cluster" ;
+  rdfs:comment "Group of logically related VAD elements." .
+
+:Process
+  rdf:type owl:Class ;
+  rdfs:subClassOf :ValueAddedChainElement ;
+  rdfs:label "Process" ;
+  rdfs:comment "Detailed business process, often further decomposed." .
+
+:Function
+  rdf:type owl:Class ;
+  rdfs:subClassOf :ValueAddedChainElement ;
+  rdfs:label "Function" ;
+  rdfs:comment "Lowest-level activity or task." .
+
+# External entities
+:Interface
+  rdf:type owl:Class ;
+  rdfs:subClassOf :VADElement ;
+  rdfs:label "Interface" ;
+  rdfs:comment "Connection point between two VAD elements, or between a VAD element and external entities." .
+
+:OrganizationalUnit
+  rdf:type owl:Class ;
+  rdfs:subClassOf :VADElement ;
+  rdfs:label "Organizational Unit" ;
+  rdfs:comment "Responsible actor (department, role, person) that performs a VAD element." .
+
+:ApplicationComponent
+  rdf:type owl:Class ;
+  rdfs:subClassOf :VADElement ;
+  rdfs:label "Application Component" ;
+  rdfs:comment "IT system or software used to support a VAD element." .
+
+:DataObject
+  rdf:type owl:Class ;
+  rdfs:subClassOf :VADElement ;
+  rdfs:label "Data Object" ;
+  rdfs:comment "Information artifact produced or consumed by a VAD element." .
+
+# ------------------------------------------------------------
+#  Object Properties (Relations)
+# ------------------------------------------------------------
+
+:precedes
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :ValueAddedChainElement ;
+  rdfs:range :ValueAddedChainElement ;
+  rdfs:label "precedes" ;
+  rdfs:comment "Indicates that one VAD element directly precedes another in the chain." ;
+  owl:inverseOf :succeeds ;
+  rdf:type owl:TransitiveProperty .   # if A precedes B and B precedes C then A precedes C
+
+:succeeds
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :ValueAddedChainElement ;
+  rdfs:range :ValueAddedChainElement ;
+  rdfs:label "succeeds" ;
+  rdfs:comment "Indicates that one VAD element directly follows another in the chain." ;
+  owl:inverseOf :precedes .
+
+:hasInput
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :ValueAddedChainElement ;
+  rdfs:range :DataObject ;
+  rdfs:label "has input" ;
+  rdfs:comment "Links a VAD element to a data object that is consumed as input." .
+
+:hasOutput
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :ValueAddedChainElement ;
+  rdfs:range :DataObject ;
+  rdfs:label "has output" ;
+  rdfs:comment "Links a VAD element to a data object that is produced as output." .
+
+:performedBy
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :ValueAddedChainElement ;
+  rdfs:range :OrganizationalUnit ;
+  rdfs:label "performed by" ;
+  rdfs:comment "Assigns a VAD element to the organizational unit responsible for its execution." .
+
+:supportedBy
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :ValueAddedChainElement ;
+  rdfs:range :ApplicationComponent ;
+  rdfs:label "supported by" ;
+  rdfs:comment "Links a VAD element to an application component that supports it." .
+
+:hasInterface
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :ValueAddedChainElement ;
+  rdfs:range :Interface ;
+  rdfs:label "has interface" ;
+  rdfs:comment "Associates a VAD element with an interface for external communication." .
+
+:connects
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :Interface ;
+  rdfs:range :ValueAddedChainElement ;
+  rdfs:label "connects" ;
+  rdfs:comment "An interface connects two VAD elements (source and target)." .
+
+# ------------------------------------------------------------
+#  Datatype Properties (Attributes)
+# ------------------------------------------------------------
+
+:hasName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :VADElement ;
+  rdfs:range xsd:string ;
+  rdfs:label "has name" ;
+  rdfs:comment "Unique human-readable name of the element." .
+
+:hasDescription
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :VADElement ;
+  rdfs:range xsd:string ;
+  rdfs:label "has description" ;
+  rdfs:comment "Detailed textual description." .
+
+:hasCreationDate
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :ValueAddedChain ;
+  rdfs:range xsd:dateTime ;
+  rdfs:label "creation date" ;
+  rdfs:comment "Timestamp when the VAD was created." .
+
+:hasVersion
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :ValueAddedChain ;
+  rdfs:range xsd:string ;
+  rdfs:label "version" ;
+  rdfs:comment "Version identifier of the VAD model." .
+
+:hasResponsibleRole
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :OrganizationalUnit ;
+  rdfs:range xsd:string ;
+  rdfs:label "responsible role" ;
+  rdfs:comment "Role name within the organizational unit." .
+
+# ------------------------------------------------------------
+#  Axioms and Restrictions (optional constraints)
+# ------------------------------------------------------------
+
+# A VAD element must have at least one name (but open world, only annotation)
+:ValueAddedChainElement
+  rdfs:subClassOf [
+    rdf:type owl:Restriction ;
+    owl:onProperty :hasName ;
+    owl:cardinality 1 ;
+    owl:onClass xsd:string ;
+    owl:qualifiedCardinality 1 ;
+  ] .
+
+# A VAD must have at least one element (existential restriction)
+:ValueAddedChain
+  rdfs:subClassOf [
+    rdf:type owl:Restriction ;
+    owl:onProperty :hasElement ;        # we need to define hasElement property? Or simply use composition
+    owl:someValuesFrom :ValueAddedChainElement ;
+  ] .
+
+# Since we didn't define hasElement, we add it now
+:hasElement
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :ValueAddedChain ;
+  rdfs:range :ValueAddedChainElement ;
+  rdfs:label "has element" ;
+  rdfs:comment "Relates a value-added chain to its contained elements." ;
+  owl:inverseOf :isPartOf .
+
+:isPartOf
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :ValueAddedChainElement ;
+  rdfs:range :ValueAddedChain ;
+  rdfs:label "is part of" ;
+  rdfs:comment "Links a VAD element to the chain it belongs to." ;
+  owl:inverseOf :hasElement .
+
+# ------------------------------------------------------------
+#  Example Individuals (Instances)
+# ------------------------------------------------------------
+
+# A sample Value-Added Chain
+:SampleChain
+  rdf:type :ValueAddedChain ;
+  :hasName "Order-to-Cash VAD" ;
+  :hasDescription "High-level value chain for processing customer orders from receipt to payment." ;
+  :hasCreationDate "2026-05-14T10:00:00Z"^^xsd:dateTime ;
+  :hasVersion "1.0" .
+
+# Example VAD elements
+:OrderEntry
+  rdf:type :Process ;
+  :hasName "Order Entry" ;
+  :hasDescription "Capture and validate customer order." ;
+  :isPartOf :SampleChain ;
+  :performedBy :SalesDept ;
+  :hasOutput :OrderData ;
+  :precedes :InventoryCheck .
+
+:InventoryCheck
+  rdf:type :Process ;
+  :hasName "Inventory Check" ;
+  :hasDescription "Verify product availability." ;
+  :isPartOf :SampleChain ;
+  :performedBy :Warehouse ;
+  :hasInput :OrderData ;
+  :hasOutput :AvailabilityStatus ;
+  :precedes :Shipment .
+
+:Shipment
+  rdf:type :Process ;
+  :hasName "Shipment" ;
+  :hasDescription "Pick, pack, and ship goods to customer." ;
+  :isPartOf :SampleChain ;
+  :performedBy :Logistics ;
+  :hasInput :AvailabilityStatus ;
+  :hasOutput :ShippingNotice .
+
+# Organizational units
+:SalesDept
+  rdf:type :OrganizationalUnit ;
+  :hasName "Sales Department" ;
+  :hasResponsibleRole "Sales Representative" .
+
+:Warehouse
+  rdf:type :OrganizationalUnit ;
+  :hasName "Warehouse" ;
+  :hasResponsibleRole "Inventory Manager" .
+
+:Logistics
+  rdf:type :OrganizationalUnit ;
+  :hasName "Logistics" ;
+  :hasResponsibleRole "Shipping Coordinator" .
+
+# Data objects
+:OrderData
+  rdf:type :DataObject ;
+  :hasName "Order Data" ;
+  :hasDescription "Customer order details including items, quantities, and shipping address." .
+
+:AvailabilityStatus
+  rdf:type :DataObject ;
+  :hasName "Availability Status" ;
+  :hasDescription "Indicates whether ordered items are in stock." .
+
+:ShippingNotice
+  rdf:type :DataObject ;
+  :hasName "Shipping Notice" ;
+  :hasDescription "Notification sent to customer with tracking information." .
+
+# Interface example
+:OrderInterface
+  rdf:type :Interface ;
+  :hasName "Order Interface" ;
+  :hasDescription "External interface for order submission from web shop." ;
+  :connects :OrderEntry .
+
+# Application component
+:ERP_System
+  rdf:type :ApplicationComponent ;
+  :hasName "ERP System" ;
+  :hasDescription "Enterprise resource planning system handling order processing." ;
+  :supportedBy :OrderEntry , :InventoryCheck .

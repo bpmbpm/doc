@@ -177,7 +177,7 @@ graph TD
     classDef executor fill:#bbffbb,stroke:#333
     classDef ptype fill:#ffccff,stroke:#333
 
-    Process(("Процесс")) :::process
+    Process((Процесс)) :::process
     ExecutorGroup(("Группа исполнителей")) :::group
     Executor(Исполнитель) :::executor
     ProcessType(Тип процесса) :::ptype

@@ -39,6 +39,8 @@ Business Architecture
 - https://studopedia.org/4-154823.html  consist of — состоит из; is assigned to — связан(а)
   - https://swsu.ru/sveden/files/MU_LB_Inform._podderghka.pdf Рис. 28. Описание типов связи на VADдиаграмме 
   - https://www.tisbi.ru/files/prod/home/nauka/vestnik-universiteta-upravleniya-tisbi/170ee3071533126c06839b87f3cf2a43.pdf
+- https://ariscommunity.com/users/grzegorzgruchman/2012-07-12-fire-and-ice-part-6-bpmn-and-aris-process-architectures
+- https://yasm.com/en/products/yasm-process-map-aris#ARIS_diagrams
 ### Link 2
 - https://github.com/bpmbpm/doc/blob/main/BPM/ARIS/readme.md#capabilities
 - https://habr.com/ru/companies/otus/articles/1033052/#comment_29975146

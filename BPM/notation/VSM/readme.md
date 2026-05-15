@@ -20,4 +20,6 @@ https://t.me/abpmp/48743
 - https://enterprise-architecture.org/about/thought-leadership/how-the-essential-ea-management-tool-supports-strategic-portfolio-design/ ; https://enterprise-architecture.org/ontology-enterprise-architecture/
 - https://bluedolphin.io/blog/explaining-value-stream-mapping-to-enterprise-architecture-leaders/
 - https://iasa-global.github.io/btabok/value_streams.html
-- 
+
+### VSMvsVSM
+- VSMvsVSM.md

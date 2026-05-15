@@ -23,3 +23,5 @@ https://t.me/abpmp/48743
 
 ### VSMvsVSM
 - VSMvsVSM.md
+### TOGAF
+- [Как построить Value Stream Map (VSM): пошаговая инструкция](https://habr.com/ru/companies/otus/articles/1033052/)

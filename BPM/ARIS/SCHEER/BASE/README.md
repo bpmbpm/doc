@@ -3,6 +3,7 @@
 - ARIS Method Reference
 
 - Семантика online [VAD](https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494393/en/1) ; [EPC](https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494769/en/1)
+- PSD, PSM \ VAD & VSM  https://habr.com/ru/companies/otus/articles/1033052/comments/#comment_29975562
 - [function.md](https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/function.md) 
 
 ### info 

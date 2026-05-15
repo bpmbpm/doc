@@ -31,6 +31,9 @@ https://t.me/bpmnforum/35277
 ### 3 
 - Объектно-ориентированное моделирование https://www.businessstudio.ru/upload/files/Obektno_orientirovannoe_modelirovanie.pdf
 
+### predicate 
+- https://studopedia.org/4-154823.html consist of — состоит из; is assigned to — связан(а)
+- https://swsu.ru/sveden/files/MU_LB_Inform._podderghka.pdf Рис. 28. Описание типов связи на VADдиаграмме
 ### info
 Схожие [IDEF](https://github.com/bpmbpm/doc/tree/main/BPM/notation/IDEF) ; [VSM](https://github.com/bpmbpm/doc/tree/main/BPM/notation/VSM)  
 

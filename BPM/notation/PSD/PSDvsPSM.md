@@ -1,5 +1,6 @@
 ## PSDvsPSM
 Business Architecture  
+https://habr.com/ru/companies/otus/articles/1033052/comments/#comment_29975562
 ## 1 start
 Путаница между *Process Selection Diagram* (PSD) и *Process Selection Matrix* (PSM) в ARIS возникает не случайно — по сути, это один и тот же метод представления информации, просто по-разному названный. Различия здесь заключаются не в диаграмме как таковой, а скорее в историческом контексте, способе визуализации и практическом использовании для решения архитектурных задач.
 

@@ -1,6 +1,6 @@
 ### video 
 - [Galene — простой сервер видеоконференций. Установка на VPS](https://habr.com/ru/articles/939650/)
-
+- [Yadaphone](https://habr.com/ru/articles/1034494/)
 ### Telegram & WhatsApp
 - [Чем заменить звонки в Telegram и WhatsApp для бизнеса и не только в 2025 году](https://habr.com/ru/articles/940576/)
 - [Новый народный мессенджер России. Можно, а зачем?](https://habr.com/ru/articles/1016784/)

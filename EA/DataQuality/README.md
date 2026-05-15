@@ -63,3 +63,4 @@ OpenMetaData
 
 ### DLS
 - [Data as Code на практике: создаём, версионируем и делимся модулями БД с помощью ArchDB](https://habr.com/ru/articles/1018586/)
+- язык описания данных DML (Microsoft Access SQL), DDL\SQL, ERD и т.п.

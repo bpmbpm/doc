@@ -26,11 +26,18 @@ Business Architecture
 
 Таким образом, в ARIS нет двух разных диаграмм "выбора процесса". Вместо этого есть один мощный **матричный метод**, известный под двумя именами, где PSD — это визуальное представление, а PSM — описывающая его суть архитектурная концепция.
 
+### example
+- https://studfile.net/preview/9553711/page:10/ 
+- https://www.betec.ru/index.php?id=18&sid=58
 ### Link
-- https://studfile.net/preview/9553711/page:10/ ; https://studfile.net/preview/9381319/page:5/
+- https://studfile.net/preview/9381319/page:5/
 - https://pqm-online.com/assets/files/lib/books/vest-mt.pdf Инструментарий ARIS. Методы  
 - https://elib.pnzgu.ru/files/eb/oqunj0EcBQGW.pdf Пособие
-
+- https://docs.aris.com/latest/yay-product-feature-matrix-guide/en/Product-Feature-Matrix.pdf
+- https://www.manualzz.com/doc/7200149/yasm-for-aris-process-platform-process-map-user-manual?p=7
+- https://studopedia.org/4-154823.html  consist of — состоит из; is assigned to — связан(а)
+  - https://swsu.ru/sveden/files/MU_LB_Inform._podderghka.pdf Рис. 28. Описание типов связи на VADдиаграмме 
+  - https://www.tisbi.ru/files/prod/home/nauka/vestnik-universiteta-upravleniya-tisbi/170ee3071533126c06839b87f3cf2a43.pdf
 ### Link 2
 - https://github.com/bpmbpm/doc/blob/main/BPM/ARIS/readme.md#capabilities
 - https://habr.com/ru/companies/otus/articles/1033052/#comment_29975146

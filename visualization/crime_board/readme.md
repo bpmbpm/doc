@@ -1,4 +1,5 @@
 ### crime board soft
+detective board
 #### Palantir
 - [Palantir 101. Что позволено знать простым смертным о второй по крутоcти частной компании в Кремниевой Долине](https://habr.com/ru/articles/271883)
 - [wiki](https://en.wikipedia.org/wiki/Palantir_Technologies?ysclid=mg9dyldh9837794882) ; [ruwiki](https://ru.wikipedia.org/wiki/Palantir)
@@ -18,3 +19,9 @@ https://github.com/bpmbpm/doc/tree/main/LD/ontology
 - [Визуализация больших графов для самых маленьких](https://habr.com/ru/companies/ods/articles/464715/)
 - [Построение графов для чайников: пошаговый гайд](https://habr.com/ru/companies/leader-id/articles/488058/)
 - https://habr.com/ru/articles/148162/
+
+### also
+- https://github.com/bpmbpm/doc/tree/main/law
+
+### investigation
+- [Как Александр Чачава купил пол-Рунета и как он может повлиять на публичные компании?](https://habr.com/ru/articles/1036600/)

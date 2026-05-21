@@ -1,3 +1,7 @@
+### info
+- https://corpinfosys.ru/archive/2024/issue-26/275-2024-26-togaf
+
+### opengroup
 Чтение страниц на https://pubs.opengroup.org/ стало требовать регистрации.
 
 Сохранил: [30. Метамодель контента](https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap30.html)

@@ -1,6 +1,9 @@
 ### info
 - https://corpinfosys.ru/archive/2024/issue-26/275-2024-26-togaf
 
+### ArchiMate 4
+- [ArchiMate 4: Отказ от слоёв и унификация метамодели](https://habr.com/ru/articles/1037744/)
+ 
 ### opengroup
 Чтение страниц на https://pubs.opengroup.org/ стало требовать регистрации.
 

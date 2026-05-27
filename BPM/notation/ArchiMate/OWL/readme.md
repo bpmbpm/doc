@@ -1,7 +1,8 @@
 ### owl archimate
 #### github
 - https://github.com/nfigay/archimate.owl
-- https://yasenstar.github.io/ArchiMate_Ontology/
+- https://yasenstar.github.io/ArchiMate_Ontology/ ; https://github.com/yasenstar/ArchiMate_Ontology
+- https://github.com/search?q=ArchiMate_Ontology&type=repositories
 - OWL Exchange Plug-in for Archi https://github.com/archimatetool/OWLExchange Цель данного плагина — попытка импортировать и экспортировать модель ArchiMate в Archi, инструменте моделирования ArchiMate 
 #### info
 - От ArchiMate до OWL https://www.nilus.be/blog/archimate-to-owl/

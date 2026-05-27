@@ -1,7 +1,7 @@
 # Сравнительный анализ инструментов моделирования архитектуры предприятия Open Source
 Enterprise Architecture tools, Open Source (architeezy - добавлен "авансом" - в надежде "на лучшее \ светлое - открытое \ свободное"), [FOSS](https://ru.wikipedia.org/wiki/%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5_%D0%B8_%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B5_%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5).   Некоторые указанные инструменты не на 100% Open Source, но все free.   
 Если обобщить, то речь **EA\BPM tools**, т.к. различие только в используемой нотации (исполняемый BPMN \ BPM не расматриваем), т.е. хороший инструменнт моделирования он и для Enterprise Architecture и для класического BPM (ARIS-подобия).    
-В обзоре один из факторов - поддержка семантических технологий, см. [обсуждение](https://habr.com/ru/companies/architeezy/articles/1035178/comments/#comment_30025018). 
+В обзоре один из факторов - поддержка семантических технологий, см. [обсуждение](https://habr.com/ru/companies/architeezy/articles/1035178/comments/#comment_30025018).  
 Если есть пожелания, какие инструменты добавить - пишите (см. profile).
 ### version
 - версия 1: [made with help of hive mind](https://github.com/link-assistant/hive-mind/blob/main/README.ru.md) PR https://github.com/bpmbpm/doc/pull/5

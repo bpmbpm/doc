@@ -22,3 +22,9 @@ arc law
 - https://habr.com/ru/articles/1005790/#comment_29616408
 - https://habr.com/ru/articles/890054/comments/#comment_28031064
 - [Внедряем КЭДО в ИТ-компании правильно: знакомимся с четырьмя ловушками ФНС и ГИТ](https://habr.com/ru/articles/1005790/#comment_29621482)
+
+### comment
+- https://habr.com/ru/articles/1005790/comments/#comment_29733216 ; https://habr.com/ru/articles/1037736/comments/#comment_30006020
+
+### forum
+- [прокэдо.рф](https://xn--d1allcbg7g.xn--p1ai/about/)

@@ -1,6 +1,6 @@
 # Сравнительный анализ инструментов моделирования архитектуры предприятия Open Source
-Enterprise Architecture tools, Open Source (architeezy - добавлен "авансом" и в надежде "на лучшее \ светлое - открытое \ свободное").  
-Если обобщить, то **EA\BPM tools**, т.к. различие только в используемой нотации (исполняемый BPMN \ BPM не расматриваем).    
+Enterprise Architecture tools, Open Source (architeezy - добавлен "авансом" и в надежде "на лучшее \ светлое - открытое \ свободное").   Некоторые указанные инструменты не на 100% Open Source, но все free.   
+Если обобщить, то речь **EA\BPM tools**, т.к. различие только в используемой нотации (исполняемый BPMN \ BPM не расматриваем), т.е. хороший инструменнт моделирования он и для Enterprise Architecture и для класического BPM (ARIS-подобия).    
 
 ### version
 - версия 1: [made with help of hive mind](https://github.com/link-assistant/hive-mind/blob/main/README.ru.md) PR https://github.com/bpmbpm/doc/pull/5
@@ -409,6 +409,9 @@ Google, GitHub, Yandex, Keycloak
 - GitHub: https://github.com/metamodeldev
 - Telegram: https://t.me/architeezy
 
+Из свежего:
+- [Ещё один репозиторий моделей для Archi](https://habr.com/ru/companies/architeezy/articles/1035178/)
+
 ---
 
 ## 6. wArchi (warchi.ru)
@@ -491,6 +494,9 @@ wArchi — российская open source / dual-license платформа д
 
 - упоминается в Telegram: https://t.me/archi_strateg
 - Вебинар (апрель 2025): https://youtu.be/JglyV8m2t4g
+
+Попытка собрать копию: 
+https://github.com/bpmbpm/warchi2/tree/main/ver1
 
 ---
 

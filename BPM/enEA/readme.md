@@ -1,7 +1,7 @@
 ## Enterprise-architecture-tool
 ### 1 tool
 ### 1.1 comparison
-- https://github.com/bpmbpm/doc/blob/main/BPM/enEA/comparison2.md
+- https://github.com/bpmbpm/doc/blob/main/BPM/enEA/comparison2.md ; https://github.com/bpmbpm/doc/blob/main/BPM/ruEA/comparison/architeezy_warchi.md
 
 ### 1.2 commercial
 - https://www.ardoq.com/knowledge-hub/enterprise-architecture-tool

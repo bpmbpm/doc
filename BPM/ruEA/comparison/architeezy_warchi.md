@@ -856,8 +856,10 @@ components:
 *Анализ подготовлен на основе открытой документации, репозиториев и публикаций по состоянию на май 2026 года.*
 
 ### also
-- Обзор и сравнительный анализ систем (software) Enterprise archutecture https://github.com/bpmbpm/doc/blob/main/BPM/enEA/comparison2.md 
+- Обзор и сравнительный анализ систем (software) Enterprise archutecture https://github.com/bpmbpm/doc/blob/main/BPM/enEA/comparison2.md
+- https://habr.com/ru/companies/axenix/articles/1038916/comments/#comment_30024696
 #### EA Tools TOP
 - https://boardmix.com/articles/top-10-enterprise-architecture-tools/
 #### myth
-- Мифы EA Tool… https://www.businessstudio.ru/upload/files/Pinaev_mythologyEA.pdf
+- Мифы EA Tool… https://www.businessstudio.ru/upload/files/Pinaev_mythologyEA.pdf Сейчас разработчики инструментов делают собственные маппинги одних нотаций в другие, см. Табличку **Миф 3. Решение: меппинг нотаций**. Только это все получается как очередной велосипед, т.к. не используется единый язык, тот же OWL \ RDF.
+

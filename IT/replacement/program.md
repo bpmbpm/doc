@@ -11,3 +11,15 @@
     - 100%
     - 30%
 - ПРИКАЗ от 26 мая 2015 г. N 1263 О ВНЕСЕНИИ ИЗМЕНЕНИЙ В ПРИКАЗ МИНПРОМТОРГА РОССИИ ОТ 31 МАРТА 2015 Г. N 662 "ОБ УТВЕРЖДЕНИИ ОТРАСЛЕВОГО ПЛАНА МЕРОПРИЯТИЙ ПО ИМПОРТОЗАМЕЩЕНИЮ В РАДИОЭЛЕКТРОННОЙ ПРОМЫШЛЕННОСТИ РОССИЙСКОЙ ФЕДЕРАЦИИ" https://sudact.ru/law/prikaz-minpromtorga-rossii-ot-26052015-n-1263/ ; https://legalacts.ru/doc/prikaz-minpromtorga-rossii-ot-26052015-n-1263-o-vnesenii/
+
+### prorram
+- Об утверждении государственной программы Российской Федерации «Развитие электронной и радиоэлектронной промышленности на 2013 - 2025 годы» http://government.ru/docs/3345/
+  - https://luceen.livejournal.com/27459.html
+  - АНАЛИТИЧЕСКОЕ УПРАВЛЕНИЕ АППАРАТА СОВЕТА ФЕДЕРАЦИИ http://council.gov.ru/media/files/41d51d722c0fdcb10554.pdf
+  - ПРОТОКОЛ № ПО-ВТ-2/16 оценки и определения рейтинга заявок, поданных российскими организациями на конкурсный отбор на право получения из федерального бюджета субсидий на возмещение части затрат на создание научно-технического задела по разработке базовых технологий производства приоритетных электронных компонентов и радиоэлектронной аппаратуры в рамках подпрограммы «Развитие производства вычислительной техники» государственной программы Российской Федерации  «Развитие электронной и радиоэлектронной промышленности на 2013–2025 годы» https://d-russia.ru/wp-content/uploads/2016/10/27.09.2016_Protokol_rejting_VT.pdf
+  - https://old.pta-expo.ru/automation/articles/razvitie_electroniki/
+  - [tadviser](https://www.tadviser.ru/index.php/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D1%8F:%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0_%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D1%8F_%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%BD%D0%BE%D0%B9_%D0%B1%D0%B0%D0%B7%D1%8B_%D0%B8_%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8_%D0%B4%D0%BE_2025_%D0%B3%D0%BE%D0%B4%D0%B0)
+  - https://base.garant.ru/56627168/
+### info
+- https://news.rambler.ru/other/42808953-velichie-rossiyskoy-elektronnoy-promyshlennosti-poka-suschestvuet-tolko-v-nesbytochnyh-proektah/
+- http://government.ru/rugovclassifier/837/events/

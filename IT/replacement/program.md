@@ -23,3 +23,6 @@
 ### info
 - https://news.rambler.ru/other/42808953-velichie-rossiyskoy-elektronnoy-promyshlennosti-poka-suschestvuet-tolko-v-nesbytochnyh-proektah/
 - http://government.ru/rugovclassifier/837/events/
+
+### 2025 elbrus
+- [Сооснователь МЦСТ пообещал через два года выпустить процессор на новой архитектуре, превосходящий иностранные аналоги «в 30-200 раз»](https://www.cnews.ru/news/top/2025-05-12_osnovatel_mtsst_i_vyhodets) ; https://habr.com/ru/news/909078/

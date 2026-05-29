@@ -4,6 +4,7 @@
 - [Важность качества данных при внедрении ERP](https://habr.com/ru/companies/rdv-it/articles/939832/)
 
 ### Разное
+- https://github.com/bpmbpm/doc/tree/main/IT/BOK
 - [Data Pipeline](https://habr.com/ru/articles/900640/)
 - [Data Mesh](https://habr.com/ru/articles/903822/)
 

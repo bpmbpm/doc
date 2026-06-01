@@ -6,7 +6,7 @@ confluence
 - https://motivityy.atlassian.net/wiki/spaces/Documentation/pages/5734679/TinyMCE
 
 ### mermaid
-#### ermaid Chart for Confluence
+#### Mermaid Chart for Confluence
 Официальное приложение Mermaid, разработанное создателями Mermaid.js. 
 - Особенности: Включает встроенный визуальный редактор, генерацию диаграмм на основе искусственного интеллекта, подсветку синтаксиса и синхронизацию с облаком.
 - Как использовать: Во время редактирования страницы введите текст /mermaid, чтобы открыть редактор, затем напишите, вставьте или сгенерируйте свой код Mermaid

@@ -84,6 +84,9 @@ vibe coding ( vibe — «ощущение, атмосфера»)
 ### 3
 - [Апофатический ИИ: Почему нейросети учатся через «НЕТ», и как синтетические данные убивают смысл](https://habr.com/ru/articles/986162/)
 
+### 4
+- Odysseus
+  - [PewDiePie выложил в open source Odysseus — персональный AI-хаб для локальной работы](https://habr.com/ru/companies/first/articles/1041970/) 
 ### AI (VPN)
 - https://grok.com ; https://chatgpt.com/ ;
 - ru: https://trychatgpt.ru/

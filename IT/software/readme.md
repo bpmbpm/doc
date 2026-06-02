@@ -1,6 +1,10 @@
 ### help
 - https://github.com/bpmbpm/doc/tree/main/help github ; jira ; confluence 
 
+### DWH_BI_etc
+- https://github.com/bpmbpm/doc/tree/main/IT/DWH
+- https://github.com/bpmbpm/doc/blob/main/IT/BI/readme.md
+- https://github.com/bpmbpm/doc/tree/main/IT/DBMS
 ### also
 - https://github.com/bpmbpm/doc/tree/main/EA/integration
 - WFE https://github.com/bpmbpm/doc/tree/main/BPM/workflow/WFE

@@ -16,3 +16,4 @@
 - https://github.com/bpmbpm/doc/blob/main/LD/Semantic_Layer.md
 ### 2
 - [Онлайн-таблицы: как ИИ делает аналитику доступной каждому](https://habr.com/ru/articles/980086/)
+- [rapeed: in-memory OLAP-движок с собственной алгеброй связей](https://habr.com/ru/companies/w_code/articles/1042524/) алгебра операций над данными

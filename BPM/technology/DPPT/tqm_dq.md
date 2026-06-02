@@ -117,3 +117,81 @@ b) намерена повышать удовлетворённость потр
 - *Контроль качества продукции* — только та часть, которая измеряет соответствие стандартам и инициирует корректировки.
 
 Точно так же Data Quality — подмножество Data Management, специализирующееся на «соответствии требованиям», тогда как Data Management отвечает за всю экосистему работы с данными.
+
+### 3
+Помимо DAMA-DMBOK разграничение и взаимосвязь «Управление данными» (Data Management) и «Качество данных» (Data Quality) зафиксированы в следующих авторитетных источниках.
+
+---
+
+### 1. CMMI Data Management Maturity Model (DMM)
+Модель зрелости от CMMI Institute (ныне ISACA) выделяет шесть областей, и **Data Quality** является одной из них, входящей в категорию «Данные как продукт». Сама модель называется Data Management Maturity Model, то есть охватывает управление данными целиком.
+
+> «The Data Management Maturity (DMM) Model defines a framework of best practices across six key process areas: Data Governance, Data Quality, Data Operations, Data Platform, Data Architecture, and Supporting Processes. Data Quality is a component of a comprehensive data management program.»  
+> — *CMMI Institute, DMM Model Overview*
+
+Здесь чётко: Data Quality – компонент комплексной программы управления данными.
+
+---
+
+### 2. DCAM (Data Management Capability Assessment Model)
+Модель EDM Council включает восемь компонентов, и «Data Quality» – отдельный измеримый компонент наряду с Data Governance, Data Architecture, Data Technology и др. Модель в целом называется Data Management Capability.
+
+> «The DCAM framework defines the capabilities required for sustainable data management. Data Quality is one of the core components, encompassing profiling, measurement, monitoring, and remediation.»  
+> — *EDM Council, DCAM Framework, Version 2.2*
+
+---
+
+### 3. ISO 8000 (Качество данных)
+Серия стандартов ISO 8000 целиком сосредоточена на качестве данных, но определяет его место в общем управлении данными.
+
+> «Качество данных не может существовать изолированно. Оно зависит от внедрённого руководства данными (Data Governance) и процессов управления данными (Data Management) в организации.»  
+> — *ISO/TS 8000-60:2017, п. 4.2*
+
+Таким образом, стандарт явно указывает, что Data Quality опирается на более широкий фундамент Data Management.
+
+---
+
+### 4. TOGAF (The Open Group)
+В разделе «Архитектура данных» TOGAF различает управление данными как активом (Data Management) и обеспечение качества данных как одну из целей этого управления.
+
+> «Data Management covers the policies, procedures, and standards for managing data assets. Ensuring data quality is a key objective, achieved through profiling, cleansing, and monitoring.»  
+> — *TOGAF Standard, 10th Edition, Part II: Architecture Development Method, Data Architecture*
+
+---
+
+### 5. MIT Total Data Quality Management (TDQM)
+Программа Массачусетского технологического института сформулировала цикл TDQM, который находится внутри общей стратегии управления данными.
+
+> «Total Data Quality Management is a systematic approach to continuously improving data quality within the framework of an organization's overall data management strategy.»  
+> — *Wang, R.Y., Strong, D.M. (1996), "Beyond Accuracy: What Data Quality Means to Data Consumers", Journal of Management Information Systems*
+
+Исследователи подчёркивают, что TDQM – это применение принципов TQM к данным, и оно работает в контексте общего управления данными.
+
+---
+
+### 6. ГОСТ Р 56213-2014 / ISO/TS 8000-1:2011
+Российский стандарт, идентичный технической спецификации ISO, определяет качество данных как часть менеджмента данных.
+
+> «Настоящий стандарт устанавливает общие положения по управлению качеством данных в рамках менеджмента данных организации. Качество данных должно рассматриваться как неотъемлемая часть процессов менеджмента данных.»  
+> — *ГОСТ Р 56213-2014, п. 1*
+
+---
+
+### 7. ITIL 4
+В ITIL 4 практика «Управление информацией» (Information Management) охватывает и качество данных, и управление ими, но не выделяет их строго.
+
+> «The purpose of the information management practice is to ... ensure that high-quality information is available. This includes activities for managing data quality, data integration, and data governance.»  
+> — *ITIL Foundation, ITIL 4 Edition, Axelos*
+
+---
+
+### 8. COBIT 2019
+В COBIT цели управления информацией связывают качество данных с общим менеджментом данных.
+
+> «Manage data ensures that data quality objectives are met. This includes establishing data quality standards, measuring quality, and reporting on conformance.»  
+> — *COBIT 2019 Framework: Governance and Management Objectives, DSS06 Manage Data*
+
+---
+
+**Обобщение:** Во всех авторитетных фреймворках и стандартах «Качество данных» позиционируется как поддомен, цель или компонент более широкой дисциплины «Управление данными». DAMA-DMBOK представляет эту иерархию наиболее детально, но остальные источники последовательно подтверждают её.
+

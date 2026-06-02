@@ -38,9 +38,10 @@
 - [Architecture as Code: реализуем подход Саймона Брауна](https://habr.com/ru/articles/759820/) Документы Arc42 находятся в internet-banking-system/docs
 - likeC4
 - наблон arc42 https://arc42.org/ ; https://github.com/arc42 
-### см. также
+### also
 - [life cycle IT/BOK/life_cycle](https://github.com/bpmbpm/doc/tree/main/IT/BOK/life_cycle)
 - https://github.com/bpmbpm/doc/blob/main/visualization/diagramascode/README.md#xx-as-code
+- https://github.com/bpmbpm/doc/blob/main/BPM/technology/BCS/readme.md
 ### монолит vs микросервис
 - [Галопом по архитектуре. Часть 2. Архитектура с нуля](https://habr.com/ru/articles/919368/)
 

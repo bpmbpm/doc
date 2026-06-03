@@ -19,7 +19,9 @@
 - [Управление данными на финансовом рынке](https://cbr.ru/develop/data_management_fm/)
 
 ### tools
-OpenMetaData
+- OpenMetaData https://open-metadata.org/
+- hop.apache https://hop.apache.org/manual/latest/projects/metadata.html
+- https://arenadata.tech/products/arenadata-catalog-data-quality-framework/ ; [Arenadata Catalog](https://arenadc.io/dataquality)
 
 ### video
 - https://vkvideo.ru/video-214144682_456239209 Сессия. Культура управления данными
@@ -33,11 +35,7 @@ OpenMetaData
 ### 3
 - [Капитализация данных osp.ru](https://www.osp.ru/os/2023/01/13056920)
 - [Управление метаданными по DMBOK](https://bigdataschool.ru/blog/news/catalog-for-metadata-management-on-data-platform/)
-### 4
-- hop.apache https://hop.apache.org/manual/latest/projects/metadata.html
-- https://open-metadata.org/
-- https://arenadata.tech/products/arenadata-catalog-data-quality-framework/ ; [Arenadata Catalog](https://arenadc.io/dataquality)
-- 
+  
 ### Data Cataloq
 Каталог данных (качество данных)
 - [Современные каталоги данных: эволюция и применение больших языковых моделей](https://habr.com/ru/articles/824360/) OpenDataDiscovery. Только эта платформа, наряду с Open Metadata, поддерживает 10 характеристик из 11 максимально возможных для каталога данных. На Хабре за последние годы появилось несколько интересных публикаций на тему каталогов данных. Мне понравились статьи:

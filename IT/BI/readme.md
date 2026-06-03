@@ -7,8 +7,8 @@
 - https://blog.skillfactory.ru/chto-takoe-apache-superset/
 - https://datafinder.ru/products/vizualizaciya-dannyh-clickhouse-s-pomoshchyu-apache-superset-chast-2-dashbordy
 #### Superset
+- https://github.com/bpmbpm/doc/blob/main/EA/DataQuality/superset/readme.md#apache-superset
 - [Apache Superset — почему все топы рынка выбрали именно его?](https://habr.com/ru/articles/939876/)
-
 
 ### also
 - https://github.com/bpmbpm/doc/blob/main/EA/DataQuality/bi.md#dq-bi

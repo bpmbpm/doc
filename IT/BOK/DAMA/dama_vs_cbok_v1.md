@@ -182,8 +182,8 @@ graph TD
     subgraph "BPM CBOK 4 (Process Governance)"
         direction LR
         A1[Процессная архитектура] --> A2{Стратегические процессы, Core}
-        A1 --> A3{Операционные процессы (Supporting)}
-        A1 --> A4{Управляющие процессы (Managing)}
+        A1 --> A3{Операционные процессы, Supporting}
+        A1 --> A4{Управляющие процессы, Managing}
         A2 --- A5(APQC PCF / CoreStream)
         A5 --> A6[Стандартизация и бенчмаркинг]
     end

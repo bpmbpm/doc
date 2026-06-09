@@ -8,3 +8,11 @@
 - интересная сравнительная таблица разных библиотек онтологий https://hal.univ-lille.fr/hal-01398427/file/ETD_2016-1.pdf
 - можем подключиться к сайтуhttps://www.kmwiki.ru/doku.php
 - https://t.me/rusontology/15004 Достаточно глянуть вполне практичный пример https://finregont.com , где и онтология, и схемы данных, и выравнивание с банковской онтологией.
+
+### also
+- https://github.com/bpmbpm/rdf-grapher/blob/main/ver9d/ontology/vad-basic-ontology.trig
+- owl, shacl, wolfram, SWRL, SPIN
+
+## ld
+- Семантический веб: краткий обзор технологий и инструментов https://habr.com/ru/articles/857652/
+- Правила логического вывода SWRL, SPIN, SHACL https://trinidata.ru/tech_swrl.htm

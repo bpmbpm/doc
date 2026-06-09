@@ -20,6 +20,11 @@
 Последний стандарт OMG — это Commons Ontology Library. В отличие от FIBO, комментарии Commons предназначены для всех отраслей.  
 Теперь эти две организации объединились. EDMC приобрела OMG в октябре прошлого года.  
 Объединенная ассоциация является крупнейшей в мире некоммерческой торговой ассоциацией и органом по стандартизации в области управления данными.     
+- https://t.me/rusontology/15137
+  - Модели данных в FIBO есть. Пример: https://bankontology.com/loans-data-model-diagrams/
+  - в принципе банк - это собственно реализация требований регуляторки, начиная с https://www.bis.org/baselframework/background.htm и заканчивая правилами бухучёта.
+  - Открытой референсной онтологии не знаю, но можно обратиться в https://www.wolfram.com/data-science-consulting/finance/ - они решат вашу проблему. Дорого. 
+
 
 ### also
 - https://github.com/bpmbpm/rdf-grapher/blob/main/ver9d/ontology/vad-basic-ontology.trig

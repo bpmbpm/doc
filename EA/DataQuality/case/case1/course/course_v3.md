@@ -419,4 +419,4 @@ flowchart TD
    pandoc kurs_dq.md -o Kurs_DQ.pptx --filter mermaid-filter
    ```
 
-**Результат:** 13 слайдов, все диаграммы работают. Слайд 13 исправлен, закрывающий синтаксис добавлен.
+

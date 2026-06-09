@@ -5,4 +5,5 @@ PowerPoint "Data Quality"
   - Michigan School Business Officials
 
  ## info 
-- [Управление качеством данных: роли, процессы, инструменты](https://habr.com/ru/articles/694690/) 
+- [Управление качеством данных: роли, процессы, инструменты](https://habr.com/ru/articles/694690/)
+  - Data Quality Assessment Framework (DQAF)

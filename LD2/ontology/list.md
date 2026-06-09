@@ -7,8 +7,12 @@
   - Кто готов заниматься поддержкой и наполнением - делайте PR через github или напишите в личку чтобы дал права на Wiki
 - интересная сравнительная таблица разных библиотек онтологий https://hal.univ-lille.fr/hal-01398427/file/ETD_2016-1.pdf
 - можем подключиться к сайтуhttps://www.kmwiki.ru/doku.php
-- https://t.me/rusontology/15004 Достаточно глянуть вполне практичный пример https://finregont.com , где и онтология, и схемы данных, и выравнивание с банковской онтологией.
-
+- best
+  - https://t.me/rusontology/15004 Достаточно глянуть вполне практичный пример https://finregont.com , где и онтология, и схемы данных, и выравнивание с банковской онтологией.
+  - https://bankontology.com/
+    - Banking data model resources https://bankontology.com/banking-data-model/  
+    - https://bankontology.com/loans-data-model-diagrams/
+      
 ### also
 - https://github.com/bpmbpm/rdf-grapher/blob/main/ver9d/ontology/vad-basic-ontology.trig
 - owl, shacl, wolfram, SWRL, SPIN

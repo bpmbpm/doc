@@ -14,7 +14,8 @@
     - https://bankontology.com/loans-data-model-diagrams/
     - В отчете представлен список всех 1810 сущностей банковской модели данных https://bankontology.com/entity-definitions-list-report/
     - https://bankontology.com/fundamental-business-concepts-scope-bank-reference-data-fib-dm/
-    - https://bankontology.com/semantics-for-large-banks-1-open-banking/ Теперь рассмотрим Object Management Group, также хорошо известную организацию, насчитывающую более 220 крупных организаций-членов.
+    - https://bankontology.com/semantics-for-large-banks-1-open-banking/  «Семантики для средних, крупных и сверхкрупных банков».  
+Теперь рассмотрим Object Management Group, также хорошо известную организацию, насчитывающую более 220 крупных организаций-членов.
 Они разработали стандарты UML, BPML, DDS и SysML.  
 Последний стандарт OMG — это Commons Ontology Library. В отличие от FIBO, комментарии Commons предназначены для всех отраслей.  
 Теперь эти две организации объединились. EDMC приобрела OMG в октябре прошлого года.  

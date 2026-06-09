@@ -48,7 +48,8 @@ DQAF МВФ имеет разные версии в зависимости от 
 - Chapter 13 QUALITY MANAGEMENT AND REPORTING https://www.imf.org/-/media/files/data/cpi/chapter-13-quality-management-and-reporting.pdf#3#1
 - https://www.elibrary.imf.org/downloadpdf/view/journals/007/2005/008/007.2005.issue-008-en.pdf#2#1 скачивание null-007.2005.issue-008-en.pdf
 - https://millenniumindicators.un.org/wiki/pages/diffpagesbyversion.action?pageId=5308823&selectedPageVersions=6&selectedPageVersions=7
-
+- https://www.imf.org/en/data/statistics/cpi-manual
+  
 ## 2
 Вы совершенно правы. Ссылка, которую я предоставил ранее, ведет только на **Главу 13 (Управление качеством и отчетность)** Руководства по ИПЦ, а не на полный DQAF.
 

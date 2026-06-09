@@ -48,3 +48,47 @@ DQAF МВФ имеет разные версии в зависимости от 
 - Chapter 13 QUALITY MANAGEMENT AND REPORTING https://www.imf.org/-/media/files/data/cpi/chapter-13-quality-management-and-reporting.pdf#3#1
 - https://www.elibrary.imf.org/downloadpdf/view/journals/007/2005/008/007.2005.issue-008-en.pdf#2#1 скачивание null-007.2005.issue-008-en.pdf
 - https://millenniumindicators.un.org/wiki/pages/diffpagesbyversion.action?pageId=5308823&selectedPageVersions=6&selectedPageVersions=7
+
+## 2
+Вы совершенно правы. Ссылка, которую я предоставил ранее, ведет только на **Главу 13 (Управление качеством и отчетность)** Руководства по ИПЦ, а не на полный DQAF.
+
+Ниже приведены ссылки на **все доступные публичные главы и разделы** DQAF (Структуры оценки качества данных) и сопутствующих методологий МВФ.
+
+### 1. Основной каркас DQAF
+
+Это общая структура, описывающая 5 измерений качества (0-4) и их элементы. Это самый главный документ.
+
+*   **Название:** **The Data Quality Assessment Framework (DQAF)** – *Структура оценки качества данных*.
+*   **Прямая ссылка на PDF:** **[IMF DQAF Generic Framework](https://dsbb.imf.org/content/pdfs/dgrs_Genframework.pdf)**
+
+---
+
+### 2. Специализированные версии DQAF (по секторам)
+
+DQAF имеет разные "ответвления" для разных типов данных. Ниже приведены ссылки на тематические версии (Dataset-specific DQAF), которые доступны в открытом доступе на сайте DSBB МВФ.
+
+| № | Сектор статистики | Название документа | Прямая ссылка (PDF) |
+| :--- | :--- | :--- | :--- |
+| 1 | **Национальные счета** | DQAF for National Accounts | **[Скачать DQAF_NA](https://dsbb.imf.org/content/pdfs/dqrs_na.pdf)** |
+| 2 | **Платежный баланс** | DQAF for Balance of Payments Statistics | **[Скачать DQAF_BOP](https://dsbb.imf.org/content/pdfs/dqrs_bop.pdf)** |
+| 3 | **Госфинансы (GFS)** | DQAF for Government Finance Statistics | **[Скачать DQAF_GFS](https://dsbb.imf.org/content/pdfs/dqrs_gfs.pdf)** |
+| 4 | **Денежно-кредитная сфера** | DQAF for Monetary Statistics | **[Скачать DQAF_MON](https://dsbb.imf.org/content/pdfs/dqrs_mon.pdf)** |
+| 5 | **Внешний долг** | DQAF for External Debt Statistics | **[Скачать DQAF_ED](https://dsbb.imf.org/content/pdfs/dqrs_ed.pdf)** |
+
+*   **Важное примечание:** Ссылки на **ИПЦ и ИЦП** (CPI/PPI), о которых вы упомянули, действительно ведут в другое руководство. Глава 13, на которую вы ссылались, является частью Руководства по ИПЦ, которое использует принципы DQAF. Полное Руководство по ИПЦ (включая главу 13) доступно здесь: **[CPI Manual](https://www.imf.org/en/Data/Statistics/CPI-Manual)**.
+
+### 3. Практическое применение: Отчеты ROSC
+
+Для понимания, как DQAF применяется на практике в банковской сфере, рекомендую ознакомиться с готовыми отчетами по конкретным странам. Эти документы фактически являются «заполненными чек-листами DQAF».
+
+*   **Как скачать:**
+    1.  Перейдите на сайт МВФ: **[IMF Data Quality ROSC](https://dsbb.imf.org/other-reports/data-quality-rosc)**
+    2.  Выберите любую страну (например, Germany, France, Russia). Отчеты на английском.
+
+### Итог по документам
+
+1.  **Для понимания теории:** Скачайте **"Generic Framework"** (ссылка №1 в разделе 1).
+2.  **Для банковской тематики:** Скачайте **"Monetary Statistics"** (№4) и **"External Debt"** (№5).
+3.  **Для примера из реальной жизни:** Используйте отчеты **ROSC Data Module** (раздел 3).
+
+Извините за путаницу с главой 13 в прошлый раз, это была специфическая выдержка из Руководства по ИПЦ. Общая структура DQAF гораздо шире.

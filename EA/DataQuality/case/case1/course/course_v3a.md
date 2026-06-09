@@ -527,7 +527,7 @@ flowchart TD
 
    ## link
 
-   - DATA QUALITY ASSESSMENT IN CREDIT RISK MANAGEMENT BY A CUSTOMIZED TOTAL DATA QUALITY MANAGEMENT APPROACH https://etd.lib.metu.edu.tr/upload/12619894/index.pdf#20#15
+   - DATA QUALITY ASSESSMENT IN CREDIT RISK MANAGEMENT BY A CUSTOMIZED TOTAL DATA QUALITY MANAGEMENT APPROACH https://etd.lib.metu.edu.tr/upload/12619894/index.pdf#20#15 (см. перевод)
    - Data Quality Assessment Framework for the ICP and Checklist https://thedocs.worldbank.org/en/doc/908331487259614275-0050022017/original/ICPRC01PP26.pdf#1#1
    - https://www.imf.org/external/pubs/ft/bop/news/pdf/0602.pdf#4#1
    - https://dama-rockymountainchapter.org/news/13443040

@@ -369,3 +369,37 @@ Data Management включает в себя:
 * выявление и устранение проблем (очистка данных, обогащение) — *Issue Identification and Resolution (Data Cleansing, Enrichment)*;
 * процессы мониторинга и улучшения качества данных — *Processes for Monitoring and Improving Data Quality*;
 * стандарты и методики для поддержания качества данных на протяжении жизненного цикла — *Standards and Methodologies for Maintaining Data Quality Across the Lifecycle*.
+
+## 3b
+
+В DAMA-DMBOK 11 областей знаний (knowledge areas) действительно составляют основу концепции **Data Management** (управления данными). Каждая из этих областей представляет собой отдельный аспект управления данными, который вместе с другими формирует комплексную систему управления информационными активами организации. [```6```](https://dama.org/about-dama/what-is-data-management/)[```2```](https://dataliteracy.ru/dmbok)[```8```](https://dataninjago.com/2021/09/15/what-is-data-management-actually-dama-dmbok-framework/)[```10```](https://cdto.work/wp-content/uploads/2021/11/4.upravlenie-dannymi.pdf)[```7```](https://corpinfosys.ru/archive/2024/issue-28/280-2024-28-damadmbok)[```14```](https://www.osp.ru/articles/2025/0307/13059243)
+
+## Ссылки на разделы DAMA-DMBOK
+
+Конкретные компоненты каждой области знаний подробно описаны в соответствующих главах DAMA-DMBOK. Например, в издании DAMA-DMBOK2:
+* **Data Governance (руководство данными)** — глава 3. [```9```](https://www.osp.ru/os/2019/04/13055217)
+* **Data Architecture (архитектура данных)** — глава 4. [```9```](https://www.osp.ru/os/2019/04/13055217)
+* **Data Modeling and Design (моделирование и проектирование данных)** — глава 5. [```9```](https://www.osp.ru/os/2019/04/13055217)
+* **Data Storage and Operations (хранение и операции с данными)** — глава 6. [```9```](https://www.osp.ru/os/2019/04/13055217)
+* **Data Security (безопасность данных)** — глава 7. [```9```](https://www.osp.ru/os/2019/04/13055217)
+* **Data Integration and Interoperability (интеграция и интероперабельность данных)** — отдельная глава.
+* **Document and Content Management (управление документами и контентом)** — отдельная глава.
+* **Reference and Master Data (справочные и основные данные)** — отдельная глава.
+* **Data Warehousing and Business Intelligence (ведение хранилищ данных и бизнес-аналитика)** — глава 11. [```9```](https://www.osp.ru/os/2019/04/13055217)
+* **Metadata Management (управление метаданными)** — глава 12. [```9```](https://www.osp.ru/os/2019/04/13055217)
+* **Data Quality (качество данных)** — глава 13. [```9```](https://www.osp.ru/os/2019/04/13055217)
+
+В книге для каждой области знаний представлены бизнес-драйверы, цели и принципы, основные понятия и концепции, инструменты и методы, рекомендации по внедрению, а также метрики. [```9```](https://www.osp.ru/os/2019/04/13055217)
+
+## Можно ли назвать все 11 частей Data Management?
+
+Да, все 11 областей знаний DAMA-DMBOK являются составными частями **Data Management** (управления данными). Data Management в контексте DAMA-DMBOK определяется как «разработка, исполнение и контроль выполнения программ, практик и политик предоставления, проверки, защиты и повышения ценности данных и прочих информационных активов на протяжении всего их жизненного цикла». [```6```](https://dama.org/about-dama/what-is-data-management/)[```3```](https://habr.com/ru/articles/1028864/)[```18```](https://www.osp.ru/os/2020/02/13055423)
+
+## Есть ли иной термин?
+
+Хотя Data Management является общим термином, охватывающим все аспекты управления данными, иногда используются и другие связанные понятия:
+* **Data Governance** — подмножество Data Management, фокусирующееся на руководящих и контрольных полномочиях, стратегическом управлении данными. [```6```](https://dama.org/about-dama/what-is-data-management/)[```4```](https://uploads-ssl.webflow.com/5e2f2765e479669a6715b19a/5e387c3d5ca35e4311ebc6b6_DAMA-DMBOK2_fragment.pdf)
+* **Data Management Framework** — рамочная структура, которая организует знания и практики управления данными, как это делает DAMA-DMBOK. [```14```](https://www.osp.ru/articles/2025/0307/13059243)
+* В некоторых контекстах могут применяться термины, связанные с конкретными аспектами управления данными, например, **Data Quality Management** (управление качеством данных) или **Data Security Management** (управление безопасностью данных).
+
+Таким образом, Data Management — это обобщающий термин, который включает в себя все 11 областей знаний DAMA-DMBOK, а отдельные области могут обозначаться более специфическими терминами в зависимости от их направленности.

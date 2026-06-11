@@ -3,3 +3,6 @@
 - [Как работает ChatGPT: объясняем на простом русском эволюцию языковых моделей с T9 до чуда хабр](https://habr.com/ru/companies/ods/articles/716918/)
 - [GPT для чайников: от токенизации до файнтюнинга хабр](https://habr.com/ru/articles/599673/)
 - [Generative pre-trained transformer wiki](https://ru.wikipedia.org/wiki/Generative_pre-trained_transformer)
+
+## 2
+- [П維чему нейро考ети дел思ют так](https://habr.com/ru/companies/selectel/articles/1044854/)

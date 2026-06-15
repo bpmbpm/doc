@@ -30,3 +30,6 @@ SWITCH-технология А.А. Шалыто
 
 ### OOP
 - https://github.com/bpmbpm/doc/blob/main/EA/object-oriented-programming.md
+
+### not normal
+- [Ненормальное марковское программирование](https://habr.com/ru/articles/1046688/)

@@ -1,6 +1,8 @@
 ### SQL
 - [SQL Оконные функции простым языком](https://habr.com/ru/articles/1046325/)
 
+### 2
+- [FIFO на миллионах строк: как подружить бонусы, SQL и асимметричный N×M-граф](https://habr.com/ru/companies/avito/articles/1043532/) будет полезна аналитикам и data-инженерам уровней мидл+, которые работают с финансовыми данными в Trino, Presto и Spark SQL.
 ### constructor
 - constructor
   - [SAP Hana Calculation View](https://habr.com/ru/articles/948888/) Тебе не надо будет писать SQL

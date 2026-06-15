@@ -12,3 +12,4 @@
 - https://www.hrono.ru/biograf/bio_u/ulyanov_ai.php ; [Революционный](https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B2%D0%BE%D0%BB%D1%8E%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9_%D1%82%D0%B5%D1%80%D1%80%D0%BE%D1%80%D0%B8%D0%B7%D0%BC_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%B8%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D0%B8) ; https://proza.ru/2015/11/19/2195
 - Известно, что у нас дается возможность развивать умственные силы, но не дается возможности употреблять их на служение родине.  https://hrono.ru/dokum/1800dok/188704rech.html ; https://intelligentsia1.livejournal.com/1032593.html
 -  «Мы пойдём другим путём»
+-  https://ru.citaty.net/tsitaty/654406-sergei-stepniak-kravchinskii-terror-uzhasnaia-veshch-est-tolko-odna-veshch-khuzhe/

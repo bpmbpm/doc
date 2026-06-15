@@ -27,3 +27,6 @@ SWITCH-технология А.А. Шалыто
 
 ### Compile
 - [Что происходит, когда запускается код?](https://habr.com/ru/articles/971730/)
+
+### OOP
+- https://github.com/bpmbpm/doc/blob/main/EA/object-oriented-programming.md

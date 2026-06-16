@@ -6,6 +6,8 @@
 - [alasql](https://alasql-wiki.readthedocs.io/en/latest/readme.html)
 - [Доступ к данным с помощью ODBC и JDBC](https://www.dialektika.com/PDF/978-5-907144-81-1/part.pdf)
 
+#### news
+- [Базы данных-2025: ретроспектива](https://habr.com/ru/companies/postgrespro/articles/985698/)
 ### ORM
 - ORM (Object-Relational Mapping) позволяет разработчикам работать с базами данных через объекты объектно-ориентированного языка программирования, а не через прямые SQL-запросы. Это упрощает взаимодействие между объектно-ориентированным кодом и реляционными базами данных, абстрагируя их различия и связывая объекты с таблицами. 
 - [«База данных как API»: Почему я написал свою ORM на Source Generators и обогнал Dapper в 800 раз](https://habr.com/ru/articles/971758/)

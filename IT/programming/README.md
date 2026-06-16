@@ -33,3 +33,6 @@ SWITCH-технология А.А. Шалыто
 
 ### not normal
 - [Ненормальное марковское программирование](https://habr.com/ru/articles/1046688/) 2 https://habr.com/ru/articles/1047886/
+
+### 3
+- [Наш конвейер разработки на 1С](https://habr.com/ru/articles/1047924/)

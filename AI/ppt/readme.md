@@ -1,10 +1,11 @@
 ## service
-
+### Платно
 - gamma.app
-- https://sokratic.ru/ru Сократик (вошел через google) Платно
-- https://flyvi.io/ru/prezentaciya-za-5-minut-white (вошел через google) Платно
-
-## free
+- https://sokratic.ru/ru Сократик (вошел через google) 
+- https://flyvi.io/ru/prezentaciya-za-5-minut-white (вошел через google) 
+- https://www.perplexity.ai/ (вошел через google) 
+- 
+### free
 - https://sigma-chat.ru/ три слайда
 - https://giga.chat/
 - https://kampus.ai/ вошел под яндекс

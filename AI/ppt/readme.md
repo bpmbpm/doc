@@ -1,9 +1,11 @@
 ## service
 
 - gamma.app
+- https://sokratic.ru/ru Сократик (вошел через google) Платно
+- https://flyvi.io/ru/prezentaciya-za-5-minut-white (вошел через google) Платно
 
-- https://sokratic.ru/ru Сократик (вошел через google)
-- https://flyvi.io/ru/prezentaciya-za-5-minut-white
+## free
+- https://sigma-chat.ru/ три слайда
 ## all
 - https://habr.com/ru/companies/kemp_ai/articles/989372/
 - https://workspace.ru/blog/top-10-analogov-gamma-kakie-neyroseti-mogut-zamenit-gammu/

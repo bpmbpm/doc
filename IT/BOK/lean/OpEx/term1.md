@@ -52,6 +52,7 @@
 ### Operational_excellence
 - https://en.wikipedia.org/wiki/Operational_excellence
 - Что понимается под операционной эффективностью? BPM – как ключевой метод повышения операционной эффективности бизнеса https://www.businessstudio.ru/articles/article/metody_povysheniya_operatsionnoy_effektivnosti_bpm/
+- https://togroup.company/en/services/strategy-management/operational-excellence-lean
 
 ### base
 - https://www.leanzone.ru/index.php?option=com_kunena&view=topic&catid=9&id=3959&Itemid=151

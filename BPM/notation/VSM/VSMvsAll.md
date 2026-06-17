@@ -18,8 +18,8 @@ https://cyberleninka.ru/article/n/history-of-development-of-the-method-of-map-fl
 Тут важно сразу развеять миф: VSM не изобрели в Вумековском институте. На самом деле корни инструмента глубже — они в Toyota Production System (TPS). Конкретно термин и практика зародились в Отделе консалтинга операционного менеджмента (Operations Management Consulting Division, OMCD) компании Toyota. Там этот инструмент использовали как аналитическую помощь: чтобы визуализировать потоки материалов и информации при внедрении бережливого производства, в том числе при работе с поставщиками.
 https://cyberleninka.ru/article/n/history-of-development-of-the-method-of-map-flows-of-creation-of-value ; https://cyberleninka.ru/article/n/razvitie-i-primenenie-kart-potoka-sozdaniya-tsennostey ; https://projectproduction.org/journal/operations-science-view-of-value-stream-mapping/ ; https://michelbaudin.com/2013/10/25/where-do-value-stream-maps-come-from/
 
-А вот Джеймс Вумек (основатель Lean Enterprise Institute) вместе с Дэниелом Джонсом сыграли ключевую роль в том, чтобы вывести этот инструмент за пределы Toyota и популяризировать его в мире. В книге Lean Thinking (1996) они ввели само понятие «поток создания ценности» (value stream) и предложили метод его картирования. Позже Джон Шук и Майк Ротер в рабочей тетради Learning to See (издана Lean Enterprise Institute) ещё сильнее закрепили практику, сделав её доступной для широкого применения вне Японии. 
-https://www.wevalgo.com/know-how/lean-management/lean-methods-tools/vsm ; https://projectproduction.org/journal/operations-science-view-of-value-stream-mapping/ ; https://blog.gembaacademy.com/2009/02/10/where_did_value_stream_mapping_come_from/ ; https://www.industryweek.com/operations/continuous-improvement/video/21963618/take-the-value-stream-walk-presentation-by-jim-womack
+Джеймс Вумек (основатель Lean Enterprise Institute) вместе с Дэниелом Джонсом сыграли ключевую роль в том, чтобы вывести этот инструмент за пределы Toyota и популяризировать его в мире. В книге Lean Thinking (1996) они ввели само понятие «поток создания ценности» (value stream) и предложили метод его картирования. Позже Джон Шук и Майк Ротер в рабочей тетради Learning to See (издана Lean Enterprise Institute) ещё сильнее закрепили практику, сделав её доступной для широкого применения вне Японии. 
+https://www.wevalgo.com/know-how/lean-management/lean-methods-tools/vsm ; https://projectproduction.org/journal/operations-science-view-of-value-stream-mapping/ ; https://blog.gembaacademy.com/2009/02/10/where_did_value_stream_mapping_come_from/ ; https://www.industryweek.com/operations/continuous-improvement/video/21963618/take-the-value-stream-walk-presentation-by-jim-womack ; https://habr.com/ru/companies/tbank/articles/856100/
 
 Суть VSM — в визуализации всего потока (материального, информационного, иногда человеческого), который проходит продукт от идеи до потребителя. Цель — наглядно выявить потери (муда) и наметить шаги по улучшению потока. Часто строят две карты: текущего состояния (чтобы диагностировать проблемы) и будущего (чтобы спроектировать улучшенный процесс). 
 [wevalgo.com](https://www.wevalgo.com/know-how/lean-management/lean-methods-tools/vsm) ; https://www.lean-consult.ru/blog/karta-potoka-sozdaniya-tsennosti-vsm/
@@ -52,3 +52,15 @@ https://www.wevalgo.com/know-how/lean-management/lean-methods-tools/vsm ; https:
 [```14```](https://projectproduction.org/journal/operations-science-view-of-value-stream-mapping/)  
 [```17```](https://www.scoop.it/topic/tls-toc-lean-six-sigma/p/4149923914/2023/12/30/where-do-value-stream-maps-come-from-article-by-michel-baudin)
 
+### Value Stream Mapping
+
+Включение среднеквадратичного отклонения (СКО) или коэффициента вариации в Value Stream Mapping (VSM) позволяет показать нестабильность процессов.   
+Чтобы добавить СКО на карту, выполните следующие шаги:
+1. Соберите данные: Для каждого этапа зафиксируйте реальное время выполнения (например, 10 замеров для каждого процесса).
+2. Рассчитайте СКО: Используйте формулу стандартного отклонения:\(\sigma = \sqrt{\frac{\sum (X_i - \overline{X})^2}{n - 1}}\)где \(X_{i}\) — замер, \(\overline{X}\) — среднее время, а n — количество замеров.
+3. Отобразите на карте: Добавьте показатель СКО в таблицу данных (Data Box) под каждым процессом, рядом со средним временем цикла (Cycle Time) и временем переналадки (Changeover Time).
+
+Как это применять на практике
+- Выявление узких мест: Большое СКО показывает нестабильность процесса и частые сбои. В бережливом производстве это важнее, чем разовые задержки.
+- Расчет страховых запасов: Высокое СКО (колебания) времени выполнения операций требует большего страхового запаса на складе перед этим процессом.
+- Визуализация: Вы можете выделить процессы с критическим отклонением цветом или добавить график размаха (диаграмму) под картой потока для наглядности.

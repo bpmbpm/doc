@@ -52,7 +52,7 @@ https://www.wevalgo.com/know-how/lean-management/lean-methods-tools/vsm ; https:
 [```14```](https://projectproduction.org/journal/operations-science-view-of-value-stream-mapping/)  
 [```17```](https://www.scoop.it/topic/tls-toc-lean-six-sigma/p/4149923914/2023/12/30/where-do-value-stream-maps-come-from-article-by-michel-baudin)
 
-### Value Stream Mapping
+### 4 Value Stream Mapping & CKO
 
 Включение среднеквадратичного отклонения (СКО) или коэффициента вариации в Value Stream Mapping (VSM) позволяет показать нестабильность процессов.   
 Чтобы добавить СКО на карту, выполните следующие шаги:

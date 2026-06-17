@@ -47,7 +47,7 @@ https://www.wevalgo.com/know-how/lean-management/lean-methods-tools/vsm ; https:
 
 В целом статья даёт хороший исторический контекст: она показывает, что VSM — это не изначально глобальная методология, а инструмент, который эволюционировал и был адаптирован за пределами исходной среды. [```14```](https://projectproduction.org/journal/operations-science-view-of-value-stream-mapping/)[```2```](https://vestnik.pstu.ru/get/_res/fs/file.pdf/11186/%D0%C0%C7%C2%C8%D2%C8%C5+%C8+%CF%D0%C8%CC%C5%CD%C5%CD%C8%C5+%CA%C0%D0%D2+%CF%CE%D2%CE%CA%C0++%D1%CE%C7%C4%C0%CD%C8%DF+%D6%C5%CD%CD%CE%D1%D2%C5%C9file.pdf)
 
-Боден пишет живо, приводит интересные детали и ссылки на другие источники, так что материал легко усваивается. 
+Боден пишет живо, приводит интересные детали и ссылки на другие источники, так что материал легко усваивается.  
 - [```14```](https://projectproduction.org/journal/operations-science-view-of-value-stream-mapping/)
 - [```17```](https://www.scoop.it/topic/tls-toc-lean-six-sigma/p/4149923914/2023/12/30/where-do-value-stream-maps-come-from-article-by-michel-baudin)
 

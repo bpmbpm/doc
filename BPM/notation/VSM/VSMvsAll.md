@@ -32,7 +32,7 @@ https://www.wevalgo.com/know-how/lean-management/lean-methods-tools/vsm ; https:
 
 Это не конкурирующие, а дополняющие друг друга инструменты для разных задач: от стратегического анализа до детальной оптимизации операционных потоков.
 
-### Where do «Value Stream Maps» come from?
+### 3 Where do «Value Stream Maps» come from?
 
 **Ссылка:** [Where do «Value Stream Maps» come from?](https://projectproduction.org/journal/operations-science-view-of-value-stream-mapping/) (Мишель Боден, 25 октября 2013 года). Статья опубликована в личном блоге автора — michelbaudin.com. [```14```](https://projectproduction.org/journal/operations-science-view-of-value-stream-mapping/)[```15```](https://customerscience.com.au/uncategorized/value-stream-mapping-for-services/)[```8```](https://michelbaudin.com/)
 

@@ -9,6 +9,7 @@ https://github.com/bpmbpm/doc/blob/main/BPM/notation/VSM/VSMvsVSM.md
 
 
 2. VAD (Value-Added Chain Diagram) в ARIS
+- https://github.com/bpmbpm/doc/tree/main/BPM/notation/VAD  
 Нотацию VAD разработал Август-Вильгельм Шеер в рамках методологии ARIS (Architecture of Integrated Information Systems). Сам продукт ARIS впервые вышел в 1994 году. VAD — это нотация для моделирования бизнес-процессов. Её задача — визуализировать функции, которые напрямую создают ценность для клиента, на верхнем уровне. Диаграмма даёт общую картину: показывает последовательность ключевых процессов и их взаимосвязи. При этом элементы VAD можно детализировать — декомпозировать на более низкие уровни VAD или переходить к более детальной нотации (например, EPC). То есть это инструмент для процессного управления: чтобы описать «как есть» и «как должно быть», найти узкие места и заложить основу для оптимизации или автоматизации. 
 cyberleninka.ru +3
 https://cyberleninka.ru/article/n/history-of-development-of-the-method-of-map-flows-of-creation-of-value ; https://tettra.com/article/flowcharts/ ; https://www.osp.ru/os/2026/01/13060495

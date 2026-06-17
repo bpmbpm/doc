@@ -7,7 +7,7 @@
 - 
 ### free
 - https://sigma-chat.ru/ три слайда
-- https://giga.chat/
+- https://giga.chat/ потом требует регистрацию (свою)
 - https://kampus.ai/ вошел под яндекс
   
 - Некоторые бесплатные аналоги сервиса Gamma.app:  

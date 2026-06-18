@@ -1,3 +1,4 @@
+Начало: https://github.com/bpmbpm/doc/blob/main/IT/BOK/lean/lean_vs_bpm_2a.md
 ## Part 2
 
 ## 1 lean-like ontology
@@ -1352,3 +1353,150 @@ Level 5 (Semantic-OpEx):
 
 **Итог**: Semantic-OpEx может дать преимущество, потому что **использует LLM + Knowledge Graph**, **AI под контролем**, **5 уровней онтологии (конкретные домены)**, **полуавтоматическая разметка**, а не абстрактную онтологию верхнего уровня и ручную разметку, как в Semantic Web.
 
+## 6
+
+# ⚠️ **Критический анализ Semantic-OpEx с точки зрения Lean Manufacturing, OpEx и BPM**
+
+***
+
+## 🔴 **Почему семантические технологии провалились: Lean Manufacturing и BPM перспектива**
+
+### 📌 **1. Semantic Web провалился: Lean-проблемы**
+
+| Lean-проблема | Описание в Lean Manufacturing | Причина провала Semantic Web |
+|---------------|-------------------------------|---------------------------|
+| **Muda 1: Перепроизводство (Overproduction)** | Производство больше, чем требуется клиенту | ❌ **Дублирование информации**: каждый документ в двух экземплярах (людьми + машина) — избыточное производство метаданных  [ru.wikipedia](https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D0%B0) |
+| **Muda 2: Ожидание (Waiting)** | Ожидание материала, задачи, станка | ❌ **Ручная разметка**: люди избегают работы по поддержке метаданных — ожидание разметки  [ru.wikipedia](https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D0%B0) |
+| **Muda 3: Транспортировка (Transportation)** | Лишняя транспортировка материалов | ❌ **Отсутствие совместимости**: нет общей основы для интеграции моделей — лишняя транспортировка данных между системами  [libeldoc.bsuir](https://libeldoc.bsuir.by/bitstream/123456789/48018/1/Shunkevich_Semanticheskie.pdf) |
+| **Muda 4: Излишняя обработка (Overprocessing)** | Больше обработки, чем требуется клиенту | ❌ **Вычислительная сложность**: NP-полная задача поиска изоморфного подграфа — излишняя обработка  [recyclebin](http://recyclebin.ru/BMK/APIP/l1.pdf) |
+| **Muda 5: Inventory (Запасы)** | Излишние запасы материалов, продуктов | ❌ **Ограниченный размер**: большие онтологии (> 1 млрд объектов) — избыточные запасы знаний  [injoit](http://injoit.org/index.php/j1/article/download/1951/1754) |
+| **Muda 6: Движение (Motion)** | Лишнее движение людей, станков | ❌ **Человеческий фактор**: люди избегают разметки — лишнее движение для поддержки метаданных  [ru.wikipedia](https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D0%B0) |
+| **Muda 7: Дефекты (Defects)** | Продукция с ошибками | ❌ **Недостоверность**: вывод в семантических сетях не гарантирует достоверность — дефекты в знаниях  [recyclebin](http://recyclebin.ru/BMK/APIP/l1.pdf) |
+
+**Lean-итог**: Semantic Web провалился, потому что **создал 7 типов потерь (Muda)**: перепроизводство метаданных, ожидание разметки, транспортировка данных, излишняя обработка вычислений, избыточные запасы онтологий, лишнее движение людей, дефекты в знаниях.
+
+***
+
+### 📌 **2. Другие провалы семантических технологий: BPM-перспектива**
+
+| BPM-проблема | Описание в BPM | Причина провала |
+|--------------|----------------|-----------------|
+| **BPMN не семантичный** | BPMN 2.0 — диаграммы, не семантический слой | ❌ Semantic Web не интегрировался с BPMN, нет Semantic BPM |
+| **Process Mining не интегррирован** | Process Mining отдельно, BPM отдельно | ❌ Semantic Web не интегрировал Process Mining с BPM |
+| **ROI не измерен** | BPM не измеряет ROI, KPI, improvement | ❌ Semantic Web не измерял ROI, KPI, Lean Six Sigma |
+| **Системы изолированы** | ERP, CRM, BPM изолированы, нет единого слоя | ❌ Semantic Web не создал единый семантический слой для ERP, CRM, BPM |
+
+**BPM-итог**: Semantic Web провалился, потому что **не интегрировался с BPMN**, **не интегрировал Process Mining**, **не измерял ROI**, **не создал единый слой для ERP, CRM, BPM**.
+
+***
+
+## 🎯 **Почему в Semantic-OpEx семантика/онтология должна дать преимущество: OpEx-перспектива**
+
+### ✅ **1. Semantic-OpEx = Lean + OpEx + BPM 5.0: Ключевые отличия от Semantic Web**
+
+| Характеристика | Semantic Web (провал) | Semantic-OpEx (OpEx-преимущество) |
+|----------------|----------------------|----------------------------------|
+| **Muda (Потерии)** | ❌ **Создал 7 типов Muda**: перепроизводство, ожидание, транспортировка, излишняя обработка, Inventory, движение, дефекты  [ru.wikipedia](https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D0%B0) | ✅ **Уменьшает 7 типов Muda**: Muda кодируется в Lean Ontology (7 типов в формальном виде)  [nauteh-journal](http://www.nauteh-journal.ru/files/f3f92fbe-e50c-4c7a-942a-03a75f17fb5e) |
+| **OEE (Overall Equipment Effectiveness)** | ❌ **Не измерял OEE**: нет метрик процесса | ✅ **Измеряет OEE**: Lean Ontology измеряет OEE = Availability × Performance × Quality  [nauteh-journal](http://www.nauteh-journal.ru/files/f3f92fbe-e50c-4c7a-942a-03a75f17fb5e) |
+| **Cycle Time (Время цикла)** | ❌ **Не измерял Cycle Time**: нет метрик времени | ✅ **Измеряет Cycle Time**: Lean Ontology измеряет время цикла процесса  [nauteh-journal](http://www.nauteh-journal.ru/files/f3f92fbe-e50c-4c7a-942a-03a75f17fb5e) |
+| **Lead Time (Время выполнения заказа)** | ❌ **Не измерял Lead Time**: нет метрик заказа | ✅ **Измеряет Lead Time**: Lean Ontology измеряет время выполнения заказа  [nauteh-journal](http://www.nauteh-journal.ru/files/f3f92fbe-e50c-4c7a-942a-03a75f17fb5e) |
+| **Pull System (Pull-система)** | ❌ **Не использовал Pull**: не было Pull-системы | ✅ **Использует Pull**: Lean Ontology включает Pull-система (производство по запросу, не по прогнозу) |
+| **Kanban** | ❌ **Не использовал Kanban**: не было Kanban-таблиц | ✅ **Использует Kanban**: Lean Ontology включает Kanban Board, Column, Card, WIP Limit  [nauteh-journal](http://www.nauteh-journal.ru/files/f3f92fbe-e50c-4c7a-942a-03a75f17fb5e) |
+| **Kaizen (Непрерывное улучшение)** | ❌ **Не использовал Kaizen**: не было непрерывного улучшения | ✅ **Использует Kaizen**: Lean Ontology включает Kaizen Event, PDCA (Plan-Do-Check-Act), 5S  [nauteh-journal](http://www.nauteh-journal.ru/files/f3f92fbe-e50c-4c7a-942a-03a75f17fb5e) |
+| **BPMN + Semantic** | ❌ **Не интегрировал BPMN**: нет Semantic BPM | ✅ **Интегрирует BPMN**: Semantic BPM = онтологическое моделирование процессов  [habr](https://habr.com/ru/articles/828266/) |
+| **Process Mining** | ❌ **Не интегрировал Process Mining**: отдельно | ✅ **Интегрирует Process Mining**: Process Mining + Lean Six Sigma + BPM Analytics  [habr](https://habr.com/ru/articles/795883/) |
+| **ROI Measurement** | ❌ **Не измерял ROI**: нет ROI, KPI | ✅ **Измеряет ROI**: Lean Six Sigma + BPM Analytics для ROI, KPI, improvement  [habr](https://habr.com/ru/articles/795883/) |
+| **Единый слой** | ❌ **Не создал единый слой**: ERP, CRM, BPM изолированы | ✅ **Создал единый слой**: Enterprise Ontology объединяет ERP, CRM, BPM, IoT  [architect.salesforce](https://architect.salesforce.com/docs/architect/ru-ru/fundamentals/guide/agentic-enterprise-it-architecture.html) |
+
+***
+
+### ✅ **2. Почему Semantic-OpEx дает OpEx-преимущество: 5 ключевых причин**
+
+| OpEx-преимущество | Объяснение в Lean/OpEx/BPM терминологии | Почему это работает |
+|-------------------|----------------------------------------|---------------------|
+| **1. Lean Ontology = Muda формализация** | Lean Ontology кодирует **7 типов Muda (потерии)** в формальном, машиночитаемом виде: Overproduction, Waiting, Transportation, Overprocessing, Inventory, Motion, Defects  [nauteh-journal](http://www.nauteh-journal.ru/files/f3f92fbe-e50c-4c7a-942a-03a75f17fb5e) | ✅ **Muda формализация**: Muda в формальном виде = можно измерять, уменьшать, оптимизировать |
+| **2. OEE + Cycle Time + Lead Time метрики** | Lean Ontology измеряет **OEE (Overall Equipment Effectiveness)**, **Cycle Time (время цикла)**, **Lead Time (время выполнения заказа)**, **WIP (Work in Progress)**  [nauteh-journal](http://www.nauteh-journal.ru/files/f3f92fbe-e50c-4c7a-942a-03a75f17fb5e) | ✅ **Метрики процесса**: OEE, Cycle Time, Lead Time = можно измерять improvement, ROI |
+| **3. Pull + Kanban система** | Lean Ontology включает **Pull-система** (производство по запросу, не по прогнозу) + **Kanban** (Board, Column, Card, WIP Limit)  [nauteh-journal](http://www.nauteh-journal.ru/files/f3f92fbe-e50c-4c7a-942a-03a75f17fb5e) | ✅ **Pull + Kanban**: Pull-система уменьшает Inventory, Kanban ограничивает WIP |
+| **4. Kaizen + PDCA + 5S** | Lean Ontology включает **Kaizen Event** (непрерывное улучшение), **PDCA** (Plan-Do-Check-Act), **5S** (Sort, Set in order, Shine, Standardize, Sustain)  [nauteh-journal](http://www.nauteh-journal.ru/files/f3f92fbe-e50c-4c7a-942a-03a75f17fb5e) | ✅ **Kaizen + PDCA**: непрерывное улучшение процессов через PDCA и 5S |
+| **5. Semantic BPM + Process Mining** | Semantic BPM = **онтологическое моделирование бизнес-процессов**, Process Mining = **обнаружение отклонений, оптимизация процессов**  [habr](https://habr.com/ru/articles/828266/) | ✅ **Semantic BPM + Process Mining**: онтологическое моделирование + Process Mining = оптимизация процессов |
+
+***
+
+### ✅ **3. Ключевые элементы Semantic-OpEx, дающие OpEx-преимущество**
+
+| Элемент Semantic-OpEx | OpEx-описание в Lean/BPM терминологии | OpEx-преимущество |
+|-----------------------|--------------------------------------|-------------------|
+| **1. Lean Manufacturing Ontology** | Lean Ontology: **Muda (7 типов)**, **Muri (нагрузка)**, **Mura (непостоянство)**, **OEE**, **Cycle Time**, **Lead Time**, **WIP**, **Pull**, **Kanban**  [nauteh-journal](http://www.nauteh-journal.ru/files/f3f92fbe-e50c-4c7a-942a-03a75f17fb5e) | ✅ **Lean формализация**: Muda, Muri, Mura в формальном виде = можно измерять, уменьшать потерии |
+| **2. Semantic BPM** | Semantic BPM = **онтологическое моделирование бизнес-процессов**, эквивалентно Semantic BPM  [habr](https://habr.com/ru/articles/828266/) | ✅ **Semantic BPM**: онтологическое моделирование = Semantic BPM, интегрировано с BPMN |
+| **3. Process Mining + Lean Six Sigma** | Process Mining + **Lean Six Sigma** + **BPM Analytics** для **ROI**, **KPI**, **отклонений**, **improvement**  [habr](https://habr.com/ru/articles/795883/) | ✅ **ROI измерение**: Lean Six Sigma + BPM Analytics = измерение ROI, KPI, improvement |
+| **4. Enterprise Ontology** | **Enterprise Ontology** объединяет **ERP**, **CRM**, **BPM**, **IoT** в единый семантический слой  [architect.salesforce](https://architect.salesforce.com/docs/architect/ru-ru/fundamentals/guide/agentic-enterprise-it-architecture.html) | ✅ **Единый слой**: ERP, CRM, BPM, IoT в едином слое = интеграция систем, нет изоляции |
+| **5. AI под контролем онтологии** | **AI-агенты под контролем онтологии**, **люди верифицируют AI** перед применением, **Human-in-the-Loop**  [architect.salesforce](https://architect.salesforce.com/docs/architect/ru-ru/fundamentals/guide/agentic-enterprise-it-architecture.html) | ✅ **Human-in-the-Loop**: люди верифицируют AI, не автоматическое применение = меньше ошибок AI |
+| **6. 5 уровней онтологии** | **5 уровней**: Strategy → Domain → Process → Business → Technology (**конкретные домены**, не абстрактная онтология верхнего уровня) | ✅ **Конкретные домены**: не абстрактная онтология, а 5 конкретных уровней (Strategy, Domain, Process, Business, Technology) |
+| **7. Semi-automated разметка** | **Автоматические + полуавтоматические методы** построения графа знаний, не только ручная разметка  [ellibs.elpub](https://ellibs.elpub.ru/jour/article/view/629?locale=ru_RU) | ✅ **Полуавтоматика**: автоматические + полуавтоматические методы = меньше ручной разметки, меньше Muda Waiting |
+
+***
+
+## 🔍 **Критический анализ Semantic-OpEx: OpEx-риски (Lean/BPM перспектива)**
+
+### ⚠️ **1. OpEx-риски Semantic-OpEx (Muda в Semantic-OpEx)**
+
+| OpEx-риск (Muda) | Описание в Lean/BPM терминах | Приоритет |
+|------------------|----------------------------|-----------|
+| **Muda Waiting (Ожидание)** | **Ручная разметка**: полностью автоматизированный процесс разметки — нерешенная задача, требуется ручная разметка, ожидание разметки  [pzs.dstu.dp](http://pzs.dstu.dp.ua/DataMining/searchWEB/bibl/semanticheskiy-poisk-problemy-i-tehnologii.pdf) | 🔴 **Высокий**: Muda Waiting = ожидание разметки онтологий |
+| **Muda Overprocessing (Излишняя обработка)** | **Вычислительная сложность**: семантические модели требуют ресурсоемкие вычисления, время отклика > 10 сек, излишняя обработка вычислений  [injoit](http://injoit.org/index.php/j1/article/download/1951/1754) | 🔴 **Высокий**: Muda Overprocessing = излишняя обработка вычислений |
+| **Muda Inventory (Запасы)** | **Ограниченный размер**: большие онтологии (> 1 млрд объектов) требуют оптимизации, избыточные запасы знаний  [learn.microsoft](https://learn.microsoft.com/ru-ru/training/modules/design-scalable-semantic-models/) | 🔴 **Высокий**: Muda Inventory = избыточные запасы онтологий |
+| **Muda Transportation (Транспортировка)** | **Отсутствие совместимости**: преобразование запросов свободной формы в формальный вид требует дополнительной транспортировки данных  [pzs.dstu.dp](http://pzs.dstu.dp.ua/DataMining/searchWEB/bibl/semanticheskiy-poisk-problemy-i-tehnologii.pdf) | 🟠 **Средний**: Muda Transportation = транспортировка данных между системами |
+| **Muda Defects (Дефекты)** | **Недостоверность**: вывод в семантических сетях не гарантирует достоверность, дефекты в знаниях  [recyclebin](http://recyclebin.ru/BMK/APIP/l1.pdf) | 🟠 **Средний**: Muda Defects = дефекты в знаниях, но AI под контролем минимизирует |
+
+***
+
+### ⚠️ **2. Почему Semantic-OpEx НЕ гарантирует OpEx-преимущество: Lean/BPM риски**
+
+| Lean/BPM-риск | Описание в Lean/BPM терминах | Почему провал возможен |
+|---------------|----------------------------|----------------------|
+| **Muda Waiting (Ожидание разметки)** | Полностью автоматизированный процесс разметки — нерешенная задача, требуется ручная разметка онтологий  [pzs.dstu.dp](http://pzs.dstu.dp.ua/DataMining/searchWEB/bibl/semanticheskiy-poisk-problemy-i-tehnologii.pdf) | ❌ **Muda Waiting**: ожидание разметки онтологий = Muda Waiting в процессе создания онтологий |
+| **Muda Overprocessing (Вычислительная сложность)** | Семантические модели требуют ресурсоемкие вычисления, вычислительная сложность NP-полная  [recyclebin](http://recyclebin.ru/BMK/APIP/l1.pdf) | ❌ **Muda Overprocessing**: излишняя обработка вычислений = Muda Overprocessing в вычислениях |
+| **Muda Inventory (Запасы онтологий)** | Большие онтологии (> 1 млрд объектов) требуют оптимизации, избыточные запасы знаний  [learn.microsoft](https://learn.microsoft.com/ru-ru/training/modules/design-scalable-semantic-models/) | ❌ **Muda Inventory**: избыточные запасы онтологий = Muda Inventory в онтологиях |
+| **Muda Defects (Недостоверность знаний)** | Вывод не гарантирует достоверность, но AI под контролем (Human-in-the-Loop) минимизирует  [recyclebin](http://recyclebin.ru/BMK/APIP/l1.pdf) | ❌ **Muda Defects**: дефекты в знаниях, но AI под контролем = меньше Muda Defects |
+
+***
+
+## ✅ **Окончательный ответ: OpEx-ориентированный**
+
+### 🔴 **Почему семантические технологии провалились: Lean Manufacturing перспектива**
+
+| Lean-проблема (Muda) | Описание в Lean Manufacturing | Причина провала Semantic Web |
+|----------------------|-------------------------------|---------------------------|
+| **Muda 1: Overproduction** | Перепроизводство метаданных | ❌ Дублирование информации: каждый документ в двух экземплярах  [ru.wikipedia](https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D0%B0) |
+| **Muda 2: Waiting** | Ожидание разметки | ❌ Ручная разметка: люди избегают разметки  [ru.wikipedia](https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D0%B0) |
+| **Muda 3: Transportation** | Транспортировка данных | ❌ Отсутствие совместимости: нет общей основы  [libeldoc.bsuir](https://libeldoc.bsuir.by/bitstream/123456789/48018/1/Shunkevich_Semanticheskie.pdf) |
+| **Muda 4: Overprocessing** | Излишняя обработка вычислений | ❌ Вычислительная сложность: NP-полная задача  [recyclebin](http://recyclebin.ru/BMK/APIP/l1.pdf) |
+| **Muda 5: Inventory** | Запасы онтологий | ❌ Ограниченный размер: > 1 млрд объектов  [injoit](http://injoit.org/index.php/j1/article/download/1951/1754) |
+| **Muda 6: Motion** | Движение людей | ❌ Человеческий фактор: люди избегают разметки  [ru.wikipedia](https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D0%B0) |
+| **Muda 7: Defects** | Дефекты в знаниях | ❌ Недостоверность: вывод не гарантирует достоверность  [recyclebin](http://recyclebin.ru/BMK/APIP/l1.pdf) |
+
+**Lean-итог**: Semantic Web создал **7 типов потерь (Muda)** и провалился.
+
+***
+
+### 🎯 **Почему Semantic-OpEx дает OpEx-преимущество: 5 ключевых причин в Lean/BPM терминах**
+
+| OpEx-преимущество | Объяснение в Lean/BPM терминологии |
+|-------------------|-----------------------------------|
+| **1. Lean Ontology = Muda формализация** | Lean Ontology кодирует **7 типов Muda** (Overproduction, Waiting, Transportation, Overprocessing, Inventory, Motion, Defects) в формальном виде  [nauteh-journal](http://www.nauteh-journal.ru/files/f3f92fbe-e50c-4c7a-942a-03a75f17fb5e) |
+| **2. OEE + Cycle Time + Lead Time метрики** | Lean Ontology измеряет **OEE**, **Cycle Time**, **Lead Time**, **WIP** для измерения improvement, ROI  [nauteh-journal](http://www.nauteh-journal.ru/files/f3f92fbe-e50c-4c7a-942a-03a75f17fb5e) |
+| **3. Pull + Kanban система** | Lean Ontology включает **Pull-система** (по запросу) + **Kanban** (WIP Limit) для уменьшения Inventory  [nauteh-journal](http://www.nauteh-journal.ru/files/f3f92fbe-e50c-4c7a-942a-03a75f17fb5e) |
+| **4. Kaizen + PDCA + 5S** | Lean Ontology включает **Kaizen Event**, **PDCA**, **5S** для непрерывного улучшения процессов  [nauteh-journal](http://www.nauteh-journal.ru/files/f3f92fbe-e50c-4c7a-942a-03a75f17fb5e) |
+| **5. Semantic BPM + Process Mining** | **Semantic BPM** (онтологическое моделирование) + **Process Mining** (обнаружение отклонений) + **Lean Six Sigma** (ROI, KPI)  [habr](https://habr.com/ru/articles/828266/) |
+
+***
+
+### ⚠️ **Почему Semantic-OpEx НЕ гарантирует OpEx-преимущество: Lean-риски**
+
+| Lean-риск (Muda) | Описание в Lean терминах |
+|------------------|------------------------|
+| **Muda Waiting (Ожидание разметки)** | Требуется ручная разметка онтологий, не автоматически  [pzs.dstu.dp](http://pzs.dstu.dp.ua/DataMining/searchWEB/bibl/semanticheskiy-poisk-problemy-i-tehnologii.pdf) |
+| **Muda Overprocessing (Вычислительная сложность)** | Вычислительная сложность NP-полная, требуется оптимизация  [recyclebin](http://recyclebin.ru/BMK/APIP/l1.pdf) |
+| **Muda Inventory (Запасы онтологий)** | Большие онтологии (> 1 млрд объектов) = избыточные запасы  [learn.microsoft](https://learn.microsoft.com/ru-ru/training/modules/design-scalable-semantic-models/) |
+
+**Итог**: Semantic-OpEx может дать **OpEx-преимущество**, потому что **формализует Muda в Lean Ontology**, **измеряет OEE/Cycle Time/Lead Time**, **использует Pull/Kanban/Kaizen/PDCA/5S**, **интегрирует Semantic BPM + Process Mining + Lean Six Sigma**, но **не гарантирует**, потому что **Muda Waiting (ручная разметка)** и **Muda Overprocessing (вычислительная сложность)** остаются.

@@ -17,3 +17,6 @@
 
 ## mgmt
 - [Остерегайтесь Сирен лженаучного менеджмента](https://tocpeople.com/2013/10/sireny-lzhemenedzhmenta/)
+
+## 2
+- [7 бизнес-катастроф, которые вошли в историю](https://rb.ru/stories/failures-went-history/)

@@ -1,4 +1,6 @@
-https://www.perplexity.ai/search/74739e6f-28da-42be-a371-b5c909a6f047
+https://www.perplexity.ai/search/74739e6f-28da-42be-a371-b5c909a6f047  
+https://www.perplexity.ai/search/glubokoe-issledovanie-proanali-dHOebyjaQr6jcbXJCabwRw
+
 # OpEx: BPM vs lean-like. AiP-OpEx vs Semantic-OpEx
 План:
 - вначале "для затравки" попросить показать проблему OpEx: BPM vs lean-like

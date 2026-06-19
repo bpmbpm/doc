@@ -1,5 +1,12 @@
 https://www.perplexity.ai/search/74739e6f-28da-42be-a371-b5c909a6f047
 # OpEx: BPM vs lean-like. AiP-OpEx vs Semantic-OpEx
+План:
+- вначале "для затравки" попросить показать проблему OpEx: BPM vs lean-like
+- потом спросить Что же делать?
+- покритиковать его предложение (AiP-OpEx) и получить новую концепцию (Semantic-OpEx)
+
+В 2a.md ; 2b.md ; 2c.md - развитие Semantic-OpEx 
+
 ## 1 prompt
 (лаконично)  
 

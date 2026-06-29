@@ -38,7 +38,9 @@ https://t.me/bpmnforum/35277
 ### info1 
 - [Карта процессов верхнего уровня компании и матрица RACI c помощью drawio и google sheets](https://forpes.ru/post/128134) ; https://studfile.net/preview/4433564/page:20/
 - https://bpmbpm.github.io/draw-vad/aris/ver1/
-
+- aris
+  - https://docs.aris.com/latest/yay-method-reference/en/#/index/en/1
+    
 ### info2
 Схожие [IDEF](https://github.com/bpmbpm/doc/tree/main/BPM/notation/IDEF) ; [VSM](https://github.com/bpmbpm/doc/tree/main/BPM/notation/VSM)  
 

@@ -44,7 +44,7 @@ https://t.me/bpmnforum/35277
 - aris ru
   - 4.4.1.3.2. Диаграмма цепочки добавленного качества https://pqm-online.com/assets/files/lib/books/vest-mt.pdf
   - https://djvu.online/file/YpZ38RBBwNfKS
-    
+  - https://ppt-online.org/600852 презентация  
 ### info2
 Схожие [IDEF](https://github.com/bpmbpm/doc/tree/main/BPM/notation/IDEF) ; [VSM](https://github.com/bpmbpm/doc/tree/main/BPM/notation/VSM)  
 

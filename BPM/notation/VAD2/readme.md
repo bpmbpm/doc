@@ -34,7 +34,12 @@ https://t.me/bpmnforum/35277
 ### predicate 
 - https://studopedia.org/4-154823.html consist of — состоит из; is assigned to — связан(а) (без картинок)
 - https://swsu.ru/sveden/files/MU_LB_Inform._podderghka.pdf Рис. 28. Описание типов связи на VADдиаграмме (стр. 32) https://studopedia.org/4-154823.html 
-### info
+
+### info1 
+- [Карта процессов верхнего уровня компании и матрица RACI c помощью drawio и google sheets](https://forpes.ru/post/128134) ; https://studfile.net/preview/4433564/page:20/
+- https://bpmbpm.github.io/draw-vad/aris/ver1/
+
+### info2
 Схожие [IDEF](https://github.com/bpmbpm/doc/tree/main/BPM/notation/IDEF) ; [VSM](https://github.com/bpmbpm/doc/tree/main/BPM/notation/VSM)  
 
 Обзор https://github.com/bpmbpm/jsDOTsmartDesign/tree/main/ver3VAD  

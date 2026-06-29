@@ -41,6 +41,9 @@ https://t.me/bpmnforum/35277
 - aris
   - ARIS Method https://docs.aris.com/latest/bpa.html?lang=en 
   - https://docs.aris.com/latest/yay-method-reference/en/#/index/en/1 
+- aris ru
+  - 4.4.1.3.2. Диаграмма цепочки добавленного качества https://pqm-online.com/assets/files/lib/books/vest-mt.pdf
+  - https://djvu.online/file/YpZ38RBBwNfKS
     
 ### info2
 Схожие [IDEF](https://github.com/bpmbpm/doc/tree/main/BPM/notation/IDEF) ; [VSM](https://github.com/bpmbpm/doc/tree/main/BPM/notation/VSM)  

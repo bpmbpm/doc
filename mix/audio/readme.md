@@ -37,5 +37,7 @@
 ### intro
 - [Статьи о динамиках, усилителях, и пассивных/активных монитора](https://rmmedia.ru/threads/100054/)
 
+### S/PDIF 
+- [Преобразователь коаксиального S/PDIF в оптический](https://habr.com/ru/articles/1053154/)
 ### also
 - https://github.com/bpmbpm/doc/tree/main/IT/DIY

@@ -40,7 +40,8 @@ https://t.me/bpmnforum/35277
 - https://bpmbpm.github.io/draw-vad/aris/ver1/
 - aris
   - ARIS Method https://docs.aris.com/latest/bpa.html?lang=en 
-  - https://docs.aris.com/latest/yay-method-reference/en/#/index/en/1 
+  - https://docs.aris.com/latest/yay-method-reference/en/#/index/en/1
+  - Model Types/ Connections and Assignment https://docs.aris.com/10.0.27.0/yay-method-reference/en/#/home/494769/en/1
 - aris ru
   - 4.4.1.3.2. Диаграмма цепочки добавленного качества https://pqm-online.com/assets/files/lib/books/vest-mt.pdf
   - https://djvu.online/file/YpZ38RBBwNfKS

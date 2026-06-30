@@ -10,10 +10,10 @@ lean лежит [IT/BOK/](https://github.com/bpmbpm/doc/blob/main/IT/BOK/README.
 ### Регламенты по Управлению БП
 - orgstudio.ru [Положение о бизнес-процессах организации](https://orgstudio.ru/files/process_management_normative_document.pdf)
 
-### разное
+### also
 - Нулевой процесс (нулевая \ корневая архитектура) https://github.com/bpmbpm/doc/blob/main/BPM/theory/company-wide-process.md
 - https://edgenode.org/ru-RU/ ; https://drondoc.ru/
-
+- reliability https://github.com/bpmbpm/doc/tree/main/IT/reliability_risk/reliability/ProcessQuality
 ## comparisons
 - https://marcus-aurelius.ru/articles/tools.html
 - https://github.com/bpmbpm/doc/blob/main/BPM/enEA/comparison2.md ; https://github.com/bpmbpm/doc/blob/main/BPM/ruEA/comparison/architeezy_warchi.md

@@ -10,3 +10,5 @@
 - https://www.heradas.lt/controller-for-electric-bicycle-36v-48v-250w-350w-yk85s ; https://electrotransport.ru/index.php?topic=67120.4752 
 ### velo
 - [Проект PikaBoost 2 Lite позволяет быстро превратить обычный велосипед в электрический](https://habr.com/ru/news/984704/)
+### e-mobil
+- [В РФ запретили парковать электрокары и гибриды на необорудованных специально для этого транспорта подземных паркингах](https://habr.com/ru/news/1042336/) Народ, читайте прежде область действия норм

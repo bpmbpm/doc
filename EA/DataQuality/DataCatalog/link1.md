@@ -2,6 +2,7 @@
 ### habr
 - [Data Mesh, Data Fabric, Lakehouse: разбираем модные термины](https://habr.com/ru/articles/1005062/)
   - Нет "Типового каталога" для "типового банка".  https://habr.com/ru/articles/1005062/#comment_30092246
+#### Catalog 
 - [Каталог данных — почему без него непросто и как всё организовать с максимальной пользой](https://habr.com/ru/companies/mkb/articles/766716/) МКБ
 - [Каталог данных: что нужно знать, прежде чем начинать внедрение](https://habr.com/ru/companies/vktech/articles/1054554/) VK Tech
  
@@ -14,9 +15,6 @@
 
 ### info
 - [Unity Catalog и другие инструменты управления метаданными](https://bigdataschool.ru/blog/news/catalog-for-metadata-management-on-data-platform/) Архитектура Данных
-
-### Catalog 
-- [Каталог данных — почему без него непросто и как всё организовать с максимальной пользой](https://habr.com/ru/companies/mkb/articles/766716/) МКБ
 
 ### prosess
 - https://eiwi.ru/9519-corestream-process-framework-mezhotraslevoj-universalnyj-klassifikator-biznes-processov.html

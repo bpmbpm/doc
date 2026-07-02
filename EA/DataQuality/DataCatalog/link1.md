@@ -2,6 +2,8 @@
 ### habr
 - [Data Mesh, Data Fabric, Lakehouse: разбираем модные термины](https://habr.com/ru/articles/1005062/)
   - Нет "Типового каталога" для "типового банка".  https://habr.com/ru/articles/1005062/#comment_30092246
+- [Каталог данных — почему без него непросто и как всё организовать с максимальной пользой](https://habr.com/ru/companies/mkb/articles/766716/) МКБ
+- [Каталог данных: что нужно знать, прежде чем начинать внедрение](https://habr.com/ru/companies/vktech/articles/1054554/) VK Tech
  
 ### Data Lineage
 - https://www.decosystems.ru/data-lineage/

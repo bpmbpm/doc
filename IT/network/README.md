@@ -9,3 +9,6 @@
 - [Собственный суверенный интернет: настраиваем DNS, CA и TLS своими руками](https://habr.com/ru/companies/cloud_ru/articles/970834/)
 ### simple
 - [Полный путь пакета в Linux: от Ethernet-кадра до Kubernetes CNI](https://habr.com/ru/companies/gnivc/articles/983800/)
+
+## popular
+- [OSI и TCP/IP на примере заказа пиццы](https://habr.com/ru/articles/1054514/)

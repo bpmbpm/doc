@@ -17,6 +17,10 @@
 
 см. также https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/process.md
 
+### Capability
+- [Что такое бизнес-способности / business capabilities и зачем они нужны](https://habr.com/ru/articles/1055782/)
+- https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/capability.md
+  
 # 2 BPM, Enterprise, Architecture
 ## BPM 
 Статьи эпохи Ренесанса BPM (ru). Это к истории возникновения термина BPM  

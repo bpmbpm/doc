@@ -81,6 +81,7 @@ vibe coding ( vibe — «ощущение, атмосфера»)
 ### art
 - [Нейрофилософия: как я автоматизировал философию с помощью ChatGPT и Open Code](https://habr.com/ru/articles/984816/)
 - Producer.ai https://habr.com/ru/companies/bothub/articles/986122/
+- [Генератор песен: Как собрать песню с вокалом и припевом — ТОП-7 нейросетей, промпты, примеры](https://habr.com/ru/companies/tsnis/articles/1057814/)
 ### 3
 - [Апофатический ИИ: Почему нейросети учатся через «НЕТ», и как синтетические данные убивают смысл](https://habr.com/ru/articles/986162/)
 

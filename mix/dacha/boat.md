@@ -10,4 +10,4 @@
 Потом на лодку наносится слой грунта, это может быть как обычная олифа, так и свинцовый сурик.  
 Саму краску можно использовать эмаль, но красить надо как минимум в 4 слоя, а то и больше. Не нужно ждать окончательного высыхания, достаточно того, что краска подсохла. 
 - двухкомпонентная грунтовка "Interprotect" для лодок
-  - Загорск Двухкомпонентная 1 кг ЭВОМИКС https://www.ozon.ru/product/kraska-dlya-lodki-sero-golubaya-emal-epoksidnaya-dvuhkomponentnaya-1-kg-evomiks-3153545961/?at=57tw7XxJQclpL6gZSWPVgKgfRM2BP7IzWlXR0F9lRL8D 
+  - Загорское лакокрасочное производство Двухкомпонентная 1 кг ЭВОМИКС https://www.ozon.ru/product/kraska-dlya-lodki-sero-golubaya-emal-epoksidnaya-dvuhkomponentnaya-1-kg-evomiks-3153545961/?at=57tw7XxJQclpL6gZSWPVgKgfRM2BP7IzWlXR0F9lRL8D 

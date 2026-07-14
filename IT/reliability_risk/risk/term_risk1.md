@@ -106,3 +106,7 @@
    - для `RiskNegative` — свойство `isThreat` (угроза).
 
 Если нужно, могу оформить эту структуру в виде RDF/OWL‑схемы или CSV для загрузки в Palantir Foundry.
+
+## 2 info
+- [Позитивные и негативные риски на проекте](https://quality-lab.ru/blog/positive-and-negative-risks-on-the-project/)
+- [БЕЗУПРЕЧНЫЙ РИСК-МЕНЕДЖМЕНТ](https://portal.tpu.ru/SHARED/n/NIKOLAENKOVS/student/risk_management/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B5%D0%BD%D0%BA%D0%BE_%D0%91%D0%B5%D0%B7%D1%83%D0%BF%D1%80%D0%B5%D1%87%D0%BD%D1%8B%D0%B9%20%D1%80%D0%B8%D1%81%D0%BA-%D0%BC.pdf)

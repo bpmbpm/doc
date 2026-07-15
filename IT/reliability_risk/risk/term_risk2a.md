@@ -58,7 +58,7 @@ Business continuity management. Part 3. Guidance on meeting the requirements of 
 
 https://unicoms.biz/upload/medialibrary/9ac/9ac6b28c48d604c87d5618262c0c2227.pdf
 
-- https://meganorm.ru/mega_doc/norm/gost-r_gosudarstvennyj-standart/11/gost_r_27_011-2019_IEC_TR_63039_2016_natsionalnyy_standart.html
+- "ГОСТ Р 27.011-2019 (IEC/TR 63039:2016). Национальный стандарт Российской Федерации. Надежность в технике. Вероятностный анализ риска технических систем. Оценка интенсивности конечного события для заданного исходного состояния" https://meganorm.ru/mega_doc/norm/gost-r_gosudarstvennyj-standart/11/gost_r_27_011-2019_IEC_TR_63039_2016_natsionalnyy_standart.html
   - 3 Термины, определения и сокращения
 3.1 В настоящем стандарте приведены термины по ГОСТ 27.002, ГОСТ Р 27.010, [1], а также следующие термины с соответствующими определениями:  
 3.1.1 риск (risk): Следствие влияния неопределенности на достижение поставленных целей.  

@@ -1,5 +1,8 @@
 ## jira
-
+- [Постановка (создание) задач в Jira](https://atlassian.engexp.ru/docs/jira/postanovka-sozdanie-zadach-v-jira/)
+- https://www.atlassian.com/ru/software/jira/guides/basic-roadmaps/tutorials#enable-roadmaps
+### epic-task
+- https://ux-journal.ru/tema-epik-istoriya-zadacha-terminologiya-metoda-story-mapping.html
 ### jira vs github 
 сопоставление статусов задач
 

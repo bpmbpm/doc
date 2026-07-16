@@ -1,3 +1,4 @@
 ## iso 
 - [Анализ международных документов по управлению рисками информационной безопасности. Часть 1](https://habr.com/ru/articles/495236/) ; https://habr.com/ru/articles/495986/
 - [Переход к ISO/IEC 27001:2013. Тонкости перевода и не только](https://habr.com/ru/articles/221359/)
+- [Обзор Preliminary Cybersecurity Framework или как Обама завещал управлять рисками ИБ](https://habr.com/ru/articles/203776/)

@@ -478,7 +478,7 @@ H3 --> H4["Переход к управлению\nнадёжностью и PRA
 
 H4 --> H5["Интеграция risk management\nв dependability\nГОСТ Р 51901.x-2005/2007\nГОСТ Р ИСО 31000-2010\nвне серии 27, но\nсмежные"]
 
-H5 --> H6["Реинтерпретация IEC 31010\nкак части \"Надежность в технике\"\nГОСТ Р МЭК 31010-2021\nDependability in technics.\nRisk assessment techniques\nТК 119"]
+H5 --> H6["Реинтерпретация IEC 31010\nкак части Надежность в технике\nГОСТ Р МЭК 31010-2021\nDependability in technics.\nRisk assessment techniques\nТК 119"]
 
 H6 --> H7["Современный концепт:\n\"Dependability in technics\"\nкак онтология методов\nрасчёта надежности,\nPRA, BCM, ТОиР,\nобъектной и системной\nнадёжности серия 27.\*,\nТК 119 + IEC/ISO"]
 ```

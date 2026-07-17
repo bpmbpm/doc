@@ -164,3 +164,165 @@ S --> S12["ГОСТ Р ИСО 22313-2021\nСистемы менеджмента\
 
 Если нужно, могу развить это дерево до уровня «онтологии ГОСТ по надёжности» с формальными отношениями (is_a, part_of, regulates, method_for) и предложить модель интеграции с вашей архитектурой OpEx/семантического управления.
 
+## 2
+Сделаю разбивку на несколько вертикально ориентированных схем, каждая – по своей логике группировки стандартов.
+
+Ниже — первый пакет схем, сфокусированный на «скелете» ССНТ и ключевых ветках. Если нужно, можем добавить ещё (например, отдельную схему только по ГОСТ Р 51901.\* или только по испытаниям 27.4xx).
+
+***
+
+## 1. «Скелет» системы 27.\* и эволюция основ
+
+```mermaid
+graph TD
+
+%% Вертикальное дерево: от предтеч к основному стандарту и его развитиям
+A["Предпосылки\n(ранние ГОСТ с упоминанием надежности,\nотраслевые документы, РД 50-...)"] --> B["ГОСТ 27.001-81\nССНТ. Основные положения"]
+B --> C["ГОСТ 27.001-95\nSystem of standards for\ndependability in technics.\nBasic principles"]
+C --> D["ГОСТ Р 27.001-2009\nDependability in technics (SSNT).\nReliability management system.\nBasic principles"]
+
+%% От основ к группам объектов стандартизации
+C --> G0["Группа 0\nОбщие вопросы"]
+C --> G1["Группа 1\nОрганизация работ\nпо обеспечению надежности"]
+C --> G2["Группа 2\nСпособы обеспечения надежности\nна стадиях жизненного цикла"]
+C --> G3["Группа 3\nАнализ и расчет надежности"]
+C --> G4["Группа 4\nИспытания, контроль,\nоценка надежности"]
+C --> G5["Группа 5\nИнформационное обеспечение,\nЗИП и данные"]
+```
+
+**Почему так:** ГОСТ 27.001‑95 прямо задаёт структуру групп 0–5 как «ось» для всех последующих стандартов по надёжности в технике. Вертикальная развёртка показывает эволюцию: от первых формулировок ССНТ (27.001‑81) к уточнённой структуре (27.001‑95), а затем к переходу от «общих положений» к «системе управления надёжностью» (ГОСТ Р 27.001‑2009). [files.stroyinf](https://files.stroyinf.ru/Data2/1/4294827/4294827557.htm)
+
+***
+
+## 2. Терминология и общие вопросы (группа 0)
+
+```mermaid
+graph TD
+
+%% Верхний уровень: основной стандарт по терминам
+T0["Группа 0:\nОбщие вопросы\n(по ГОСТ 27.001-95)"] --> T1["ГОСТ 27.002-89\nIndustrial product dependability.\nTerms and definitions"]
+T1 --> T2["ГОСТ 27.002-2015\nDependability in technics.\nTerms and definitions"]
+
+%% Связь с системой управления надежностью и моделями отказов
+T0 --> T3["ГОСТ Р 27.001-2009\nReliability management system"]
+T0 --> T4["ГОСТ Р 27.004-2009\nFailure models"]
+T0 --> T5["ГОСТ Р 27.101-2021\nReliability of task performance\nand business continuity.\nTerms and definitions"]
+
+%% Вертикальная специализация внутри общих вопросов
+T4 --> T6["ГОСТ Р 27.010-2019\nMathematical expressions for\nreliability, availability,\nmaintainability (RAM)"]
+T4 --> T7["ГОСТ Р 27.011-2019\nProbabilistic risk analysis\nof technical systems"]
+```
+
+**Почему так:**  
+
+- ГОСТ 27.002‑89/2015 создаёт общую терминологическую базу для всей ССНТ. [protect.gost](https://protect.gost.ru/gost/details/46499d03-5a3e-408c-82a6-c5d15cfd1fe0)
+- ГОСТ Р 27.001‑2009 и 27.004‑2009 деятельно продолжают группу 0, но уже в логике «управления» и «моделей отказов», а не только понятий. [docs.cntd](https://docs.cntd.ru/document/1200078693)
+- ГОСТ Р 27.010/27.011 логически «подвешены» под модели отказов, задавая формальный математический и риск‑аналитический аппарат; вертикальное дерево подчёркивает это наследование. [files.stroyinf](https://files.stroyinf.ru/Data2/1/4294827/4294827557.htm)
+
+***
+
+## 3. Технологические системы и способы обеспечения надёжности (группа 2)
+
+```mermaid
+graph TD
+
+G2["Группа 2:\nСпособы обеспечения надежности\nи технологические системы"] --> TS1["ГОСТ 27.202-83\nTechnological systems.\nQuality-based reliability assessment"]
+TS1 --> TS2["ГОСТ 27.203-83\nTechnological systems.\nGeneral requirements for\nassessment methods"]
+TS2 --> TS3["ГОСТ 27.204-83\nTechnological systems.\nRequirements for productivity-based\nassessment methods"]
+
+G2 --> TS4["ГОСТ Р 27.203-2012\nDependability in technics (SSNT).\nObsolescence management"]
+
+G2 --> TS5["ГОСТ 27.501-95\nDependability in technics.\nMaintenance and repair\n(если использовать старую редакцию,\nв ряде перечней фигурирует как часть группы 2)"]
+```
+
+**Почему так:**  
+
+- ГОСТ 27.202–204‑83 формируют вертикальную ветку «технологические системы», начиная от общей концепции и последовательно уточняя методы оценки через качество и производительность. [dependability](https://www.dependability.ru/jour/article/viewFile/61/147.pdf)
+- ГОСТ Р 27.203‑2012 по управлению устареванием логически размещается в той же группе, так как речь идёт о способах обеспечения надёжности на жизненном цикле через управление obsolescence. [dependability](https://www.dependability.ru/jour/article/viewFile/61/147.pdf)
+- ГОСТы по техническому обслуживанию и ремонту (27.5xx, 27.6xx) можно «подвесить» сюда как продолжение методов обеспечения эксплуатационной пригодности.
+
+***
+
+## 4. Анализ и расчёт надёжности, риск (группа 3)
+
+```mermaid
+graph TD
+
+G3["Группа 3:\nАнализ и расчет надежности"] --> A1["ГОСТ 27.301-95\nReliability calculation.\nBasic principles"]
+A1 --> A2["ГОСТ Р 27.301-2011\nReliability management.\nFailure analysis techniques"]
+
+G3 --> A3["ГОСТ 27.310-95\nFMECA.\nBasic principles"]
+A3 --> A4["ГОСТ Р 27.303-2021\nFMEA\n(аналитика видов и последствий отказов)"]
+
+G3 --> A5["ГОСТ Р 27.302-2009\nFault tree analysis"]
+G3 --> A6["ГОСТ Р 27.010-2019\nRAM mathematical expressions"]
+G3 --> A7["ГОСТ Р 27.011-2019\nProbabilistic risk analysis\nof technical systems"]
+
+%% Связанные стандарты по риск-менеджменту (отдельная серия)
+G3 --> R1["ГОСТ Р 51901.5-2005\nGuidance on reliability\nanalysis methods"]
+R1 --> R2["ГОСТ Р 51901.6-2005\nReliability growth programme"]
+R2 --> R3["ГОСТ Р 51901.16-2005\nReliability growth.\nStatistical methods"]
+G3 --> R4["ГОСТ Р 51901.14-2007\nRisk management.\nReliability block diagrams\nand Boolean methods"]
+```
+
+**Почему так:**  
+
+- ГОСТ 27.301‑95 – базовое ядро расчёта надёжности, от него вертикально «вырастают» ГОСТ Р 27.301‑2011 (уже об управлении надёжностью на основе анализа безотказности). [dependability](https://www.dependability.ru/jour/article/viewFile/61/147.pdf)
+- ГОСТ 27.310‑95 (FMECA) и ГОСТ Р 27.303‑2021 (FMEA) композиционно отображают эволюцию от более тяжёлого формата FMECA к более широко применяемой FMEA, согласованной с IEC/ISO. [dependability](https://www.dependability.ru/jour/article/viewFile/61/147.pdf)
+- ГОСТ Р 27.302‑2009 (FTA), 27.010 и 27.011 – вертикальная цепочка от структурного анализа отказов к формальному математическому и вероятностному описанию риск‑профиля системы. [dependability](https://www.dependability.ru/jour/article/viewFile/61/147.pdf)
+- Серия ГОСТ Р 51901.\* вынесена в отдельный вертикальный «столбик»: это уже «менеджмент риска», но он тесно связан с анализом надёжности, поэтому дерево показывает их как смежный, но не входящий формально в ССНТ комплекс. [files.stroyinf](https://files.stroyinf.ru/Data2/1/4294827/4294827557.htm)
+
+***
+
+## 5. Испытания, контроль, оценка надёжности (группа 4)
+
+```mermaid
+graph TD
+
+G4["Группа 4:\nИспытания, контроль,\nоценка надежности"] --> TST1["ГОСТ 27.402-95\nTest plans for MTBF control\n(exponential distribution)"]
+TST1 --> TST2["ГОСТ Р 27.403-2009\nTest plans for reliability\n(вероятность безотказной работы)"]
+TST2 --> TST3["ГОСТ Р 27.404-2009\nTest plans for availability\n(коэффициент готовности)"]
+
+G4 --> TST4["ГОСТ Р 27.405-2011\nScreening tests for early failures\nof complex systems"]
+G4 --> TST5["ГОСТ Р 27.406-2012\nLife tests for maintainability\n(если учитывать полный перечень\nиспытательных ГОСТ 27.4xx)"]
+```
+
+**Почему так:**  
+
+- ГОСТ 27.402‑95 фактически «корневой» для испытаний по надёжности, от него логично вертикально разворачиваются ГОСТ Р 27.403 и 27.404 как уточнения по другим показателям (вероятность безотказной работы, готовность). [dependability](https://www.dependability.ru/jour/article/viewFile/61/147.pdf)
+- ГОСТ Р 27.405‑2011 выделяется в отдельную ветку как специфический стандарт для сложных систем, фокусированный на ранних отказах и ��тбраковочных испытаниях. [dependability](https://www.dependability.ru/jour/article/viewFile/61/147.pdf)
+- Пакет испытательных ГОСТ 27.4xx по различным видам испытаний можно разворачивать дальше вниз, сохраняя вертикальный принцип.
+
+***
+
+## 6. Информационное обеспечение, ЗИП и смежные темы (группа 5 + АСУ/BCM)
+
+```mermaid
+graph TD
+
+G5["Группа 5:\nИнформационное обеспечение,\nЗИП, эксплуатация"] --> I1["ГОСТ 27.507-2015\nSpare parts, tools and accessories.\nStock evaluation and calculation"]
+G5 --> I2["ГОСТ Р 27.601-2011\nDependability management.\nMaintenance and support"]
+
+%% Связанные стандарты по надежности АСУ и непрерывности деятельности
+G5 --> AC1["ГОСТ 24.701-86\nDependability of automated\ncontrol systems.\nBasic principles"]
+AC1 --> AC2["ГОСТ 34.201-89\nInformation technology.\nDocuments for creating ACS\n(связь с надежностью через\nтребования к документации)"]
+
+G5 --> BC1["ГОСТ Р 27.101-2021\nReliability of task performance\nand management of business continuity"]
+BC1 --> BC2["ГОСТ Р ИСО 22301-2021\nBusiness continuity\nmanagement systems.\nRequirements"]
+BC1 --> BC3["ГОСТ Р ИСО 22313-2021\nBusiness continuity\nmanagement systems.\nGuidance"]
+```
+
+**Почему так:**  
+
+- ГОСТ 27.507‑2015 и ГОСТ Р 27.601‑2011 – вертикально упорядоченная ветка по ЗИП, обслуживанию и эксплуатационной поддержке; они делают надёжность практически реализуемой через логистику и ТОиР. [dependability](https://www.dependability.ru/jour/article/viewFile/61/147.pdf)
+- ГОСТ 24.701‑86 и 34.201‑89 показывают расширение концепта надёжности на автоматизированные системы управления (АСУ), что типично для зрелых программ надёжности. [dependability](https://www.dependability.ru/jour/article/viewFile/61/147.pdf)
+- ГОСТ Р 27.101‑2021 + ГОСТ Р ИСО 22301/22313‑2021 создают вертикальное дерево «от надёжности выполнения задания» к системам менеджмента непрерывности деятельности, объединяя инженерную надёжность с операционным риск‑менеджментом и OpEx. [dependability](https://www.dependability.ru/jour/article/viewFile/61/147.pdf)
+
+***
+
+Если тебе удобно, на следующем шаге могу:
+
+- ДОстроить схемы до уровня «онтологии» (в стиле `Class: GOST_27_302 SubClassOf: MethodFor(FaultTreeAnalysis)`),  
+- или сгруппировать их в отдельные mermaid‑модули по твоей архитектуре (например: «Модуль: Reliability Analytics», «Модуль: Risk & BCM», «Модуль: Maintenance & Obsolescence»), чтобы можно было напрямую использовать в Foundry/EA‑репозитории.
+
+  

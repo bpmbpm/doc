@@ -435,7 +435,7 @@ R2 --> R5["Связь с ГОСТ Р 27.302/303\nFTA & FMEA в серии 27.\*"
 ```mermaid
 graph TD
 
-E0["\"Надежность в технике\" —\nанглоязычные варианты"] --> E1["Dependability in technics\nГОСТ 13377-75,\nГОСТ 27.002-2015,\nГОСТ Р МЭК 31010-2021"]
+E0["Надежность в технике —\nанглоязычные варианты"] --> E1["Dependability in technics\nГОСТ 13377-75,\nГОСТ 27.002-2015,\nГОСТ Р МЭК 31010-2021"]
 E0 --> E2["System of standards for\ndependability in technics\nГОСТ 27.001-95"]
 E0 --> E3["Industrial product dependability\nГОСТ 27.002-89"]
 E0 --> E4["Risk management.\nRisk assessment techniques\nГОСТ Р ИСО/МЭК 31010-2011,\nне в серии 27"]
@@ -469,7 +469,7 @@ E0 --> E4["Risk management.\nRisk assessment techniques\nГОСТ Р ИСО/МЭ
 ```mermaid
 graph TD
 
-H0["Исходный концепт:\nНадежность как свойство\nтехнического объекта\nГОСТ 13377-75,\nГОСТ 27.001-81"] --> H1["Система стандартов\n\"Надежность в технике\" (ССНТ)\nГОСТ 27.001-95\nSystem of standards for\ndependability in technics"]
+H0["Исходный концепт:\nНадежность как свойство\nтехнического объекта\nГОСТ 13377-75,\nГОСТ 27.001-81"] --> H1["Система стандартов\n\"Надежность в технике\" ССНТ\nГОСТ 27.001-95\nSystem of standards for\ndependability in technics"]
 H1 --> H2["Формализация терминологии\nГОСТ 27.002-89\nIndustrial product dependability,\nзатем ГОСТ 27.002-2015\nDependability in technics"]
 
 H2 --> H3["Расширение на технологические\nсистемы, АСУ, измерения\nГОСТ 27.202-204-83,\nГОСТ 24.701-86,\nГОСТ 27883-88"]

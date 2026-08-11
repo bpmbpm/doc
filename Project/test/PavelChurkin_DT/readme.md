@@ -7,4 +7,4 @@ PavelChurkin
 
 ## resource-based-economy-Article
 Цифровой двойник
-- [Обучающий материал](https://github.com/PavelChurkin/resource-based-economy-Article/tree/main/%D0%A6%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%B4%D0%B2%D0%BE%D0%B9%D0%BD%D0%B8%D0%BA) 
+- [Обучающий курс](https://github.com/PavelChurkin/resource-based-economy-Article/tree/main/%D0%A6%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%B4%D0%B2%D0%BE%D0%B9%D0%BD%D0%B8%D0%BA) 

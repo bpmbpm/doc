@@ -5,3 +5,7 @@
 
 ### vibe code
 - [После Тьюринга: может ли машина программировать?](https://habr.com/ru/articles/1069038/) 
+
+## my
+- https://github.com/bpmbpm/DSL1
+- https://github.com/bpmbpm/DSL2flow

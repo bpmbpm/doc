@@ -32,3 +32,8 @@
 
 ### 2025 elbrus
 - [Сооснователь МЦСТ пообещал через два года выпустить процессор на новой архитектуре, превосходящий иностранные аналоги «в 30-200 раз»](https://www.cnews.ru/news/top/2025-05-12_osnovatel_mtsst_i_vyhodets) ; https://habr.com/ru/news/909078/
+
+### comment
+- https://habr.com/ru/articles/1069074/#comment_30319288 Перспективы дальнейшего развития ИТ в России
+  - https://docs.cntd.ru/document/902063681 ; http://static.government.ru/media/files/1QkfNDghANiBUNBbXaFBM69Jxd48ePeY.pdf
+- https://habr.com/ru/news/1039864/comments/#comment_30030282

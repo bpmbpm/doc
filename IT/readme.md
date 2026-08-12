@@ -8,6 +8,6 @@ https://github.com/bpmbpm/doc/tree/main/mix/HR
 - [Топ-10 дорогих компаний Рунета 2026: e-com лидирует, облака растут, VK ищет дно](https://habr.com/ru/companies/finam_broker/articles/1014800/)
 
 ### replacement
-импортозамещение
+импортозамещение https://github.com/bpmbpm/doc/tree/main/IT/replacement
 
 

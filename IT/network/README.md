@@ -1,4 +1,5 @@
-### Интересные сети:
+### net
+Интересные сети:
 - LoRaWAN + HNT. Helium Network [Bobcat Miner 300](https://habr.com/ru/companies/ru_mts/articles/890098/)
 - [Как отправлять email через LoRa mesh-сеть (Meshtastic + Python)](https://habr.com/ru/articles/1011970/)
 ### WiFi
@@ -10,5 +11,8 @@
 ### simple
 - [Полный путь пакета в Linux: от Ethernet-кадра до Kubernetes CNI](https://habr.com/ru/companies/gnivc/articles/983800/)
 
-## popular
+### popular
 - [OSI и TCP/IP на примере заказа пиццы](https://habr.com/ru/articles/1054514/)
+
+### scan 
+- [Агент, скан или что-то еще: как сканировать все, что есть в инфраструктуре](https://habr.com/ru/articles/1064072/)

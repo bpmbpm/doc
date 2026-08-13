@@ -373,7 +373,8 @@ ApplicationWindow {
 
 Хотите, разберу подробнее, как в Rete.js привязать кастомную функцию к событию выбора узла, или подскажу, с какого туториала начать для TeleportHQ?
 
-## 4
+## 4 link
+- https://grapesjs.com/docs/getting-started.html#add-blocks
 
 
 

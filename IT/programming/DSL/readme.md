@@ -8,7 +8,8 @@
 - CodeSpeak
   - https://habr.com/ru/articles/1010082/#comment_29674904
   - https://github.com/bpmbpm/doc/blob/main/AI/dev/DSL/DSL_AI.md#revision
-
+- also
+  - https://github.com/bpmbpm/doc/blob/main/AI/dev/vibe1.md 
 ## my
 - https://github.com/bpmbpm/DSL1
 - https://github.com/bpmbpm/DSL2flow

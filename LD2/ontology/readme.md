@@ -11,3 +11,6 @@
 - https://en.wikipedia.org/wiki/Web_Ontology_Language
 - https://www.w3.org/2007/OWL/wiki/PrimerExampleTurtle
 - https://gist.github.com/balhoff/62fb8f2c1e29bc0d4d27c3df0d005154
+
+## BBO, EBTIC-BPM
+- [Выбор онтологии для VAD (диаграммы цепочки добавленной стоимости)](https://github.com/bpmbpm/rdf-grapher/blob/main/ver4p/ontology.md)

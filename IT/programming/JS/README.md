@@ -16,3 +16,6 @@
 ### obj-class
 - [Функции-конструкторы и оператор new в JavaScript](https://habr.com/ru/companies/selectel/articles/976548/)
 - [Синтаксический сахар или технический деготь: классы в JavaScript](https://habr.com/ru/companies/selectel/articles/976550/)
+
+## type
+- jsdoc https://www.dev-notes.ru/articles/javascript/jsdoc-a-solid-alternative-to-typescript/

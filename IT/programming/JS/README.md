@@ -18,4 +18,5 @@
 - [Синтаксический сахар или технический деготь: классы в JavaScript](https://habr.com/ru/companies/selectel/articles/976550/)
 
 ## type
+typeScript etc
 - jsdoc https://www.dev-notes.ru/articles/javascript/jsdoc-a-solid-alternative-to-typescript/

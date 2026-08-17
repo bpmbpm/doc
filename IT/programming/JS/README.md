@@ -23,3 +23,4 @@ typeScript etc
 
 ## setState
 - [Когда setState недостаточно: как я написал транзакционный стейт-менеджер на TypeScript](https://habr.com/ru/articles/1070960/)
+- https://eurobyte.ru/articles/zachem-nuzhny-i-kak-rabotayut-menedzhery-sostoyanij-state-manager/ ; https://gist.github.com/nodkz/41a5ee356581503033bd05104f5048bf

@@ -92,6 +92,9 @@ vibe coding ( vibe — «ощущение, атмосфера»)
 - https://grok.com ; https://chatgpt.com/ ;
 - ru: https://trychatgpt.ru/
 
+## bubble
+- https://github.com/bpmbpm/doc/blob/main/economics/bubble.md
+
 ### ai assistant
 ИИ-ассистент
   - [Операционная система Анна](https://habr.com/ru/articles/1011964/)

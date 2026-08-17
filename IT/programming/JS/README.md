@@ -20,3 +20,6 @@
 ## type
 typeScript etc
 - jsdoc https://www.dev-notes.ru/articles/javascript/jsdoc-a-solid-alternative-to-typescript/
+
+## setState
+- [Когда setState недостаточно: как я написал транзакционный стейт-менеджер на TypeScript](https://habr.com/ru/articles/1070960/)

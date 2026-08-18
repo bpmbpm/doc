@@ -11,6 +11,7 @@ IEM (integrated enterprise managing) https://iemcommunity.ru/iem-paradigm/
 ### Digital Twin of an Organization 
 - [Gartner Magic Quadrant for Digital Twin of an Organization Platforms](https://aris.com/resources/gartner-magic-quadrant-digital-twin-organization/)
 - [SPARK Matrix](https://www.qualiware.com/digital-twin-of-an-organization)
+-  Magic Quadrant: https://github.com/bpmbpm/doc/tree/main/BPM/consulting#1-gartner-magic-quadrant
 
 ### also
 - Просто про цифровой двойник предприятия (digital twin of an organization)⁠⁠ https://pikabu.ru/story/prosto_pro_tsifrovoy_dvoynik_predpriyatiya_digital_twin_of_an_organization_6831348

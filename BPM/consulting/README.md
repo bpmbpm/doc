@@ -9,6 +9,8 @@
 Обзоры:
 - [Enterprise Business Process Analysis Tools, Gartner](https://www.gartner.com/reviews/market/enterprise-business-process-analysis-tools)
 - [The BPA Market Catches Another Major Updraft](https://web.archive.org/web/20030620074615/http://www.gartner.com:80/gc/webletter/idsscheer/issue1/article1.html) ; [pdf](https://web.archive.org/web/20171205151918/http://web.tiscali.it/listonint/gartner.pdf) см. папку gartner_BPA Market_2003.pdf
+
+https://github.com/bpmbpm/doc/blob/main/IT/software/DT/readme.md#digital-twin-of-an-organization
 #### BPMS
 - [bpms2007mq](https://bpmfundamentals.wordpress.com/wp-content/uploads/2009/01/gartner_mq_business_process_management_suites-20071.pdf)
 - [bpms2010mq](https://agileelements.wordpress.com/wp-content/uploads/2010/10/gartner-2010-bpms_-magic_-quadrant.pdf) ; [progress-tech.ru](https://www.progress-tech.ru/pdf/Gartner_Magic_Quadrant_BPMS_%202010.pdf) ; [progress-tech.ru/pdf](https://www.progress-tech.ru/pdf/)

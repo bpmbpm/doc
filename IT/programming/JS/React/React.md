@@ -10,3 +10,6 @@ JSX (JavaScript XML): Синтаксис, позволяющий писать HT
 
 React часто используется для создания Single Page Applications (SPA — одностраничных приложений), где страницы не перезагружаются при взаимодействии.  
 Также существует React Native для разработки мобильных приложений. 
+
+## info
+- [Зачем фронтендерам React, если есть JavaScript](https://htmlacademy.ru/blog/js/react-js)

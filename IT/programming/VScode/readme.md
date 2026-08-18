@@ -1,6 +1,8 @@
 ### Visual Studio Code
 - [Редактор кода Visual Studio Code. Самый подробный гайд по настройке и установке плагинов для начинающих](https://habr.com/ru/articles/490754/)
 
+### help
+ панель расширений (нажмите Ctrl+Shift+X) 
 ## js 
 - [Browser debugging in VS Code](https://code.visualstudio.com/docs/nodejs/browser-debugging)
 - https://www.8host.com/blog/otladka-javascript-s-pomoshhyu-visual-studio-code-i-devtools-ot-google-chrome/

@@ -1,6 +1,12 @@
 ## sandbox + ai
-### 
-
+### list
+#### ai
+- https://gitverse.ru/home/
+- 
+#### Sandbox
+- https/en.wikipedia.org/wiki/Sandbox_(software_development)
+- https/en.wikipedia.org/wiki/Comparison_of_online_source_code_playgrounds
+- https://habr.com/ru/articles/906152/ Большая подборка тестовых площадок («песочниц») и ресурсов для начинающих и опытных QA
 ### 1
 sandbox для тестирования кода js с бесплатны ИИ
 

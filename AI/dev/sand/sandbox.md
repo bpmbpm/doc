@@ -10,6 +10,10 @@
 
 #### article
 - [Кодопись аналитика](https://habr.com/ru/companies/sberbank/articles/1005720/) Vibe Coding с использованием инструментов GigaCode, Cursor, Claude Code, Kilo Code, Antigravity и других.
+
+#### info
+- В LM Studio из коробки есть plugin - js-code-sandbox, с одним-единственным инструментом - run_javascript, который позволяет модели запускать произвольный JavaScript/TypeScript-код в изолированном in-process sandbox без доступа к сети. https://habr.com/ru/articles/1071944/
+
 ## 1
 sandbox для тестирования кода js с бесплатны ИИ
 

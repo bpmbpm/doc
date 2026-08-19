@@ -7,7 +7,10 @@
 - https/en.wikipedia.org/wiki/Sandbox_(software_development)
 - https/en.wikipedia.org/wiki/Comparison_of_online_source_code_playgrounds
 - https://habr.com/ru/articles/906152/ Большая подборка тестовых площадок («песочниц») и ресурсов для начинающих и опытных QA
-### 1
+
+#### article
+- [Кодопись аналитика](https://habr.com/ru/companies/sberbank/articles/1005720/) Vibe Coding с использованием инструментов GigaCode, Cursor, Claude Code, Kilo Code, Antigravity и других.
+## 1
 sandbox для тестирования кода js с бесплатны ИИ
 
 Для тестирования JavaScript-кода с бесплатным ИИ-помощником отлично подойдут два варианта: **Coddy** и **LabEx**. Оба сервиса дают изолированную среду (песочницу), где можно писать и запускать код, а ИИ в них встроен и работает без оплаты. [```1```](https://coddy.tech/playground/ru/javascript)[```4```](https://labex.io/ru/tutorials/javascript-online-javascript-compiler-and-editor-373404)

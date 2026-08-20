@@ -26,3 +26,6 @@ Cloud.ru
 AI-модель сама создаст структуру проекта, напишет код и настроит окружение.
 
 📖 **Подробнее:** [Вайб-кодинг с Foundation Models](https://cloud.ru/docs/tutorials-evolution/list/topics/container-apps__vibecode-django-photo-app-mcp-server)
+
+## 1
+..12345

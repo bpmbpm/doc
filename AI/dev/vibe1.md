@@ -3,7 +3,15 @@
 - codex
 - deepseek
   - [DeepSeek Harness набрал 37 тысяч звёзд за первый день: что умеет новый кодинг-агент](https://habr.com/ru/news/1070332/) 
+- Replit
+- gitverse.ru ; https://gitverse.ru/bpmbpm/testjs
+   
+## free
+- [5 бесплатных AI-агентов для кодинга, которые заменяют подписку за $20 в месяц](https://diffnotes.tech/posts/free-ai-coding-agents-2026) Qwen Code и Gemini CLI дают по 1000 бесплатных запросов в день — реальная замена подписке на Claude Code или Cursor за $20/мес.
+  - https://diffnotes.tech/tags/free-tools
 
+## all
+- [Топ 12 агентов для генерации кода: Cursor, Copilot, Claude Code…](https://habr.com/ru/companies/bothub/articles/1013102/)
 
 ## also
 - https://github.com/bpmbpm/doc/tree/main/IT/programming/DSL#vibe-code

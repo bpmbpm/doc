@@ -93,6 +93,7 @@ vibe coding ( vibe — «ощущение, атмосфера»)
 - ru: https://trychatgpt.ru/
 
 ## bubble
+мыльный пузырь
 - https://github.com/bpmbpm/doc/blob/main/economics/bubble.md
 
 ### ai assistant

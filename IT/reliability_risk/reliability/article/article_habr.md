@@ -4,6 +4,10 @@
 - [Надёжность, устойчивость, доступность](https://habr.com/ru/articles/1072108/)
 
 ## 2 all
+- [Как умирает техника? Элементы теории надёжности](https://habr.com/ru/companies/ua-hosting/articles/219189/)
+- [Как вычисляется среднее время до отказа и вероятность безотказной работы?](https://habr.com/ru/companies/nerepetitor/articles/254893/)
+- [«Надежность и безотказность как в Google» — и не только: перевод статьи «Расчёт надёжности сервиса»](https://habr.com/ru/companies/itsumma/articles/435662/)
+- [Математика надёжности. Доклад Яндекса](https://habr.com/ru/companies/yandex/articles/835112/) Reliability + Resiliency: надёжность + устойчивость
 
 ## 3 sec
 - [Функциональная безопасность, часть 6 из 7. Оценивание показателей функциональной безопасности и надежности](https://habr.com/ru/articles/323776/)

@@ -12,6 +12,7 @@
 
 ## all
 - [Топ 12 агентов для генерации кода: Cursor, Copilot, Claude Code…](https://habr.com/ru/companies/bothub/articles/1013102/)
-
+- https://q.diasoft.ru/mediacenter/knowledge/11-luchshikh-besplatnykh-ai-ide-i-ii-assistentov-dlya-koda/
+- https://github.com/ohong/awesome-coding-ai/
 ## also
 - https://github.com/bpmbpm/doc/tree/main/IT/programming/DSL#vibe-code

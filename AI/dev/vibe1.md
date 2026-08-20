@@ -5,6 +5,8 @@
   - [DeepSeek Harness набрал 37 тысяч звёзд за первый день: что умеет новый кодинг-агент](https://habr.com/ru/news/1070332/) 
 - Replit
 - gitverse.ru ; https://gitverse.ru/bpmbpm/testjs
+  - https://gitverse.ru/docs/gigaide-cloud-uc/gigaide-quick-start-uc
+  - https://habr.com/ru/companies/cloud_ru/articles/851034/
    
 ## free
 - [5 бесплатных AI-агентов для кодинга, которые заменяют подписку за $20 в месяц](https://diffnotes.tech/posts/free-ai-coding-agents-2026) Qwen Code и Gemini CLI дают по 1000 бесплатных запросов в день — реальная замена подписке на Claude Code или Cursor за $20/мес.

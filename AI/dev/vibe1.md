@@ -4,7 +4,7 @@
 - deepseek
   - [DeepSeek Harness набрал 37 тысяч звёзд за первый день: что умеет новый кодинг-агент](https://habr.com/ru/news/1070332/) 
 - Replit
-- gitverse.ru ; https://gitverse.ru/bpmbpm/testjs
+- gitverse.ru ; https://gitverse.ru/bpmbpm/testjs ; https://cloud.ru/
   - https://gitverse.ru/docs/gigaide-cloud-uc/gigaide-quick-start-uc
   - https://habr.com/ru/companies/cloud_ru/articles/851034/
    

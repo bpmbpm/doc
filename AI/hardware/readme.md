@@ -1,6 +1,6 @@
 ### info
 - [Зачем вашему процессору нейронный блок, если есть RTX 4090?](https://habr.com/ru/articles/971820/)
-
+- [Корпоративный мозг на одной видеокарте: что на самом деле умеет локальная модель](https://habr.com/ru/articles/1072746/)
 ### DeepSeek Hardware
 
 - [Требования к GPU и VRAM](https://habr.com/ru/articles/876320/)

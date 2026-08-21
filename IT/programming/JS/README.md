@@ -11,6 +11,7 @@
 - [Браузеры и локальные файлы. #$%^&* CORS!](https://www.linux.org.ru/forum/web-development/16005217)
 ### Обход
 - [Как обойти CORS при запуске сайта не на сервере?](https://qna.habr.com/q/1318344)
+- https://github.com/bpmbpm/testjs2/blob/main/ver2/cors1.md
 ### ORM
 - [ORM в Node.js](https://habr.com/ru/articles/959518/)
 ### obj-class
@@ -24,3 +25,6 @@ typeScript etc
 ## setState
 - [Когда setState недостаточно: как я написал транзакционный стейт-менеджер на TypeScript](https://habr.com/ru/articles/1070960/)
 - https://eurobyte.ru/articles/zachem-nuzhny-i-kak-rabotayut-menedzhery-sostoyanij-state-manager/ ; https://gist.github.com/nodkz/41a5ee356581503033bd05104f5048bf
+
+## 2
+- [DI во фронтенде: от Context API к Composition Root](https://habr.com/ru/articles/1072780/)

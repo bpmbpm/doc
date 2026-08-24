@@ -250,7 +250,11 @@ graph LR
     style 0 fill:#f8d7da,stroke:#dc3545
 
 ## Дифференциальные уравнения
-$$\begin{aligned} \frac{dP_2(t)}{dt} &= -2\lambda P_2(t) + \mu P_1(t) \\ \frac{dP_{Rec}(t)}{dt} &= 2\lambda P_2(t) - \gamma P_{Rec}(t) \\ \frac{dP_1(t)}{dt} &= \gamma P_{Rec}(t) - (\lambda + \mu) P_1(t) + \mu P_0(t) \\ \frac{dP_0(t)}{dt} &= \lambda P_1(t) - \mu P_0(t) \end{aligned}$$ 
+
+$$
+\begin{aligned} \frac{dP_2(t)}{dt} &= -2\lambda P_2(t) + \mu P_1(t) \\ \frac{dP_{Rec}(t)}{dt} &= 2\lambda P_2(t) - \gamma P_{Rec}(t) \\ \frac{dP_1(t)}{dt} &= \gamma P_{Rec}(t) - (\lambda + \mu) P_1(t) + \mu P_0(t) \\ \frac{dP_0(t)}{dt} &= \lambda P_1(t) - \mu P_0(t) \end{aligned}
+$$ 
+
 Коэффициент готовности: $A = P_2 + P_1$ (состояние Rec не входит в готовность, так как сессия пользователя разорвана).
 ------------------------------
 ## Сценарий 4: Nontransparent recovery, nontransparent repair

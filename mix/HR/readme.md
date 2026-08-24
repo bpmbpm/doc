@@ -7,3 +7,7 @@
 ## reloc
 - [Узбекистан сделал предложение о визах талантов для ИТ-специалистов на фоне обстановки в Персидском заливе](https://habr.com/ru/companies/ssp-soft/news/1012104/)
 - [Пора валить 2.0 (или сколько там)](https://habr.com/ru/articles/1012492/)
+
+### also
+- https://github.com/bpmbpm/doc/tree/main/psychology#polygraph
+- https://github.com/bpmbpm/doc/blob/main/psychology/hr.md

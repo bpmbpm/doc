@@ -467,6 +467,7 @@ $$\beta = \frac{1}{T_{wait}}$$
 [4] [https://roc.cs.berkeley.edu](http://roc.cs.berkeley.edu/papers/brown-dissertation-TR.pdf)
 
 
-https://share.google/aimode/DxWcq5ZGe9T54wLTt
-
-
+- https://share.google/aimode/DxWcq5ZGe9T54wLTt
+- https://www.geeksforgeeks.org/computer-networks/fault-tolerance-in-distributed-system/
+- https://www.scirp.org/journal/paperinformation?paperid=18548
+- https://www.researchgate.net/publication/347529856_Resource_Management_for_Improving_Overall_Reliability_of_Multi-Processor_Systems-on-Chip

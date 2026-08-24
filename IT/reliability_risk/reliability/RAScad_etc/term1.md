@@ -405,14 +405,68 @@ $$\beta = \frac{1}{T_{wait}}$$
 
 Хотите, я помогу составить матрицу переходов для симулятора, где наглядно видно разницу в итоговой доступности при разном времени ожидания окна $\beta$?
 
-[1] [https://www.academia.edu](https://www.academia.edu/107052532/System_Reliability_Availability_and_Maintainability)
-[2] [https://ru.wikipedia.org](https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D0%BF%D1%8C_%D0%9C%D0%B0%D1%80%D0%BA%D0%BE%D0%B2%D0%B0)
-[3] [https://www.researchgate.net](https://www.researchgate.net/publication/338122911_Probabilistic_Assessment_of_Two-Unit_Parallel_System_with_Correlated_Lifetime_under_Inspection_Using_Regenerative_Point_Technique)
-[4] [https://www.sciencedirect.com](https://www.sciencedirect.com/science/article/pii/S2211467X26001598)
-[5] [https://www.sciencedirect.com](https://www.sciencedirect.com/science/article/abs/pii/S0951832021005159)
-[6] [https://www.sciencedirect.com](https://www.sciencedirect.com/science/article/pii/S0278612524001286)
-[7] [https://standards.iteh.ai](https://standards.iteh.ai/catalog/standards/clc/fca33546-920c-466d-b454-08b98abebd83/en-61703-2016)
+[1] [https://www.academia.edu](https://www.academia.edu/107052532/System_Reliability_Availability_and_Maintainability)  
+[2] [https://ru.wikipedia.org](https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D0%BF%D1%8C_%D0%9C%D0%B0%D1%80%D0%BA%D0%BE%D0%B2%D0%B0)  
+[3] [https://www.researchgate.net](https://www.researchgate.net/publication/338122911_Probabilistic_Assessment_of_Two-Unit_Parallel_System_with_Correlated_Lifetime_under_Inspection_Using_Regenerative_Point_Technique)  
+[4] [https://www.sciencedirect.com](https://www.sciencedirect.com/science/article/pii/S2211467X26001598)  
+[5] [https://www.sciencedirect.com](https://www.sciencedirect.com/science/article/abs/pii/S0951832021005159)  
+[6] [https://www.sciencedirect.com](https://www.sciencedirect.com/science/article/pii/S0278612524001286)  
+[7] [https://standards.iteh.ai](https://standards.iteh.ai/catalog/standards/clc/fca33546-920c-466d-b454-08b98abebd83/en-61703-2016)  
 [8] [https://www.researchgate.net](https://www.researchgate.net/publication/330451238_Reliability_availability_and_maintainability_analysis_of_a_cement_plant_a_case_study)
 
+## 2f
+
+В инженерной практике и ИТ-документации концепции разделения прозрачности восстановления (Recovery) и ремонта (Repair) встречаются в архитектурных руководствах, паттернах отказоустойчивости корпоративных вендоров и материалах по Site Reliability Engineering (SRE).
+Ниже приведены реальные примеры из индустрии со ссылками на первоисточники, иллюстрирующие каждый из четырех сценариев:
+------------------------------
+## Сценарий 1. Transparent recovery, transparent repair (Прозрачно / Прозрачно)
+Этот сценарий — золотой стандарт для отказоустойчивых систем (Fault-Tolerant), где и переключение, и ввод в строй полностью автоматизированы.
+
+* Пример: Протоколы защиты оптических и DWDM-сетей (1:1 / 1+1 Path Protection).
+* Суть: В магистральных сетях связи используются технологии автоматического обхода обрывов кабеля (например, механизмы защиты в оптических mesh-сетях).
+   * Transparent Recovery: При физическом обрыве оптического волокна трафик мгновенно (менее чем за 50 мс) перенаправляется по резервному маршруту. Пользователи не замечают разрыва сессий.
+   * Transparent Repair: Отремонтированный или замененный линк автоматически тестируется оборудованием и бесшовно возвращается в пул доступных путей без остановки передачи данных.
+   * Документация / Подтверждение: Описание таких алгоритмов восстановления на лету приведено в исследовании на [ResearchGate о DWDM сетях и времени восстановления](https://www.researchgate.net/publication/3898768_Wavelength_Usage_Efficiency_versus_Recovery_Time_in_Path-Protected_DWDM_Mesh_Networks). [1] 
+
+------------------------------
+## Сценарий 2. Transparent recovery, nontransparent repair (Прозрачно / Непрозрачно)
+Сбой скрывается от пользователя, но повторная синхронизация или замена узла требует его изоляции (вывода из работы) во избежание «шторма» или перегрузки.
+
+* Пример: Обслуживание и осушение (Draining) сетевых коммутаторов в дата-центрах Google.
+* Суть: Эксплуатация крупных сетевых фабрик корпоративного уровня.
+   * Transparent Recovery: При выходе из строя линейной платы коммутатора или целого шасси протоколы маршрутизации (BGP/ECMP) уводят трафик на параллельные пути. Сервисы продолжают отвечать без прерывания.
+   * Nontransparent Repair: Чтобы физически извлечь сгоревшую плату и вставить новую, техник не может сделать это «вслепую» прямо во время работы. В UI управления инфраструктурой заложена жесткая процедура — chassis drain (изоляция и осушение трафика). Инженер обязан нажать кнопку, дождаться, пока узел полностью отключится от сети, произвести ремонт, выполнить тесты и только затем инициировать процедуру планового возврата в строй, которая временно меняет топологию сети.
+   * Документация / Подтверждение: Пошаговое описание этой неавтоматической практики ремонта (Toil Elimination) описано в официальной книге [Google SRE Workbook — Глава «Eliminating Toil»](https://sre.google/workbook/eliminating-toil/). [2] 
+
+------------------------------
+## Сценарий 3. Nontransparent recovery, transparent repair (Непрозрачно / Прозрачно)
+Сбой приводит к деградации или падению сессий (пользователь видит ошибку), но система чинит себя сама и возвращается в идеальное состояние автоматически.
+
+* Пример: Поведение параллельных файловых систем (Lustre / BeeGFS) в суперкомпьютерах (HPC).
+* Суть: Хранилища данных, обслуживающие тысячи вычислительных узлов.
+   * Nontransparent Recovery: При падении одного из серверов хранения (OSS) текущие тяжелые операции ввода-вывода (I/O) зависают или аварийно прерываются с ошибкой тайм-аута. Приложения на суперкомпьютере вынуждены встать на паузу или перезапустить расчеты с последнего чекпоинта.
+   * Transparent Repair: Внутри систем Lustre работает компонент LFSCK (Lustre File System Check). Он автоматически и в фоновом режиме сканирует поврежденные распределенные объекты, восстанавливает согласованность метаданных и возвращает упавший узел обратно в строй без какого-либо привлечения администраторов или остановки других здоровых частей системы.
+   * Документация / Подтверждение: Анализ этих паттернов «неидеального» восстановления подробно разобран в научной работе на ACM Digital Library: A Study of Failure Recovery of High-Performance Parallel File Systems. [3] 
+
+------------------------------
+## Сценарий 4. Nontransparent recovery, nontransparent repair (Непрозрачно / Непрозрачно)
+Худший или наименее автоматизированный сценарий, характерный для критических инцидентов с повреждением данных, где автоматика бессильна и на обоих этапах нужен оператор.
+
+* Пример: Восстановление после катастрофического повреждения данных (State Corruption) и операторских ошибок.
+* Суть: Ситуации, когда из-за бага, взлома или ошибки администратора была повреждена база данных (или конфигурация всей инфраструктуры), и репликация просто скопировала эту ошибку на резервный узел.
+   * Nontransparent Recovery: Происходит полный отказ сервиса. Автоматический failover не помогает, так как резервный узел содержит ту же самую испорченную базу данных. Пользователи видят экран ошибки (Crash).
+   * Nontransparent Repair: Чтобы починить систему, операторам приходится использовать специализированные тяжелые архитектурные паттерны вроде System-Wide Undo (глобальный откат состояния). Администратор вручную изолирует систему, запускает процедуру отката временной шкалы назад (Timeline Rollback), изолированно применяет ретроактивные исправления (Retroactive Repairs) и только после полной ручной проверки и повторной остановки-запуска вводит кластер обратно в эксплуатацию.
+   * Документация / Подтверждение: Математическое и концептуальное обоснование необходимости ручного隔離 (изолированного) ремонта при повреждениях состояний подробно изложено в фундаментальной работе Калифорнийского университета в Беркли (UC Berkeley): [Repairing Past Errors with System-Wide Undo](http://roc.cs.berkeley.edu/papers/brown-dissertation-TR.pdf). [4] 
+
+------------------------------
+Если вы готовите документацию для репозитория, эти примеры можно оформить в виде таблицы со ссылками для каждого раздела README.md. Нужна ли помощь в форматировании сравнительной таблицы с этими ссылками?
+
+[1] [https://www.researchgate.net](https://www.researchgate.net/publication/3898768_Wavelength_Usage_Efficiency_versus_Recovery_Time_in_Path-Protected_DWDM_Mesh_Networks)  
+[2] [https://sre.google](https://sre.google/workbook/eliminating-toil/)  
+[3] [https://dl.acm.org](https://dl.acm.org/doi/fullHtml/10.1145/3483447)  
+[4] [https://roc.cs.berkeley.edu](http://roc.cs.berkeley.edu/papers/brown-dissertation-TR.pdf)
+
+
+https://share.google/aimode/DxWcq5ZGe9T54wLTt
 
 

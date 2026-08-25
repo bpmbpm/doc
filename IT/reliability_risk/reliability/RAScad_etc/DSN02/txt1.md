@@ -244,6 +244,7 @@ RAScad строит отдельную Markov-модель для каждого
 
 Для каждого Markov-состояния задан reward rate:
 
+$$
 \[
 r_s =
 \begin{cases}
@@ -251,18 +252,23 @@ r_s =
 0, & \text{система недоступна пользователю}.
 \end{cases}
 \]
+$$
 
 При стационарном распределении состояний \(\pi_s\) доступность блока:
 
+$$
 \[
 A_i=\sum_{s \in S}\pi_s r_s.
 \]
+$$
 
 Если верхнеуровневый diagram моделируется как последовательная RBD из \(n\) блоков, то при принятом авторами допущении независимости типов компонентов:
 
+$$
 \[
 A_{\text{diagram}}=\prod_{i=1}^{n} A_i.
 \]
+$$
 
 Тип Markov-модели выбирается прежде всего по соотношению:
 
@@ -287,9 +293,11 @@ A_{\text{diagram}}=\prod_{i=1}^{n} A_i.
 
 ### Условие
 
+$$
 \[
 N=K.
 \]
+$$
 
 Например:
 
@@ -338,9 +346,11 @@ Recovery / restart                               │ verification
 
 Для объяснения статьи используется пример:
 
+$$
 \[
 N=2,\qquad K=1.
 \]
+$$
 
 То есть в группе есть два одинаковых компонента, а для сохранения функции достаточно одного. После первого отказа система может оставаться доступной, но она переходит в degraded mode: запас отказоустойчивости исчерпан либо уменьшен.
 
@@ -487,19 +497,23 @@ Type 4 объединяет два независимых источника н�
 
 В RAScad ремонтный цикл не является одной неделимой величиной. Для блока задаются, в частности:
 
+$$
 \[
 T_{\text{repair}} =
 T_{\text{diagnosis}} +
 T_{\text{corrective action}} +
 T_{\text{verification}},
 \]
+$$
 
 а также отдельно учитываются:
 
+$$
 \[
 T_{\text{logistics}} =
 MTTM + T_{resp}.
 \]
+$$
 
 Где:
 
@@ -513,11 +527,13 @@ MTTM + T_{resp}.
 
 Поэтому необходимо различать:
 
+$$
 \[
 T_{\text{maintenance campaign}}
 \neq
 T_{\text{user-visible downtime}}.
 \]
+$$
 
 ### Сценарий A: hot-plug, но нет dynamic reconfiguration
 
@@ -610,3 +626,262 @@ Node A: Down
 Практически корректная формулировка такова:
 
 > Nontransparent repair означает, что хотя бы часть repair/reintegration создаёт недоступность моделируемой пользовательской функции. Это не означает, что система либо кластер недоступны на всём интервале ожидания запчасти, диагностики и ремонта одного компонента; состав downtime определяется архитектурой, hot-plug capability, dynamic reconfiguration и выбранной границей доступности.
+
+## 3
+
+Для двух узлового кластера для режима 4:
+1 Состояние оба работают.
+2 Один сломался, кластер не доступен (переключение на резерв),
+3 Завершено переключение, кластер доступен (исправный узел) и одновременно идет ремонт
+4 Ремонт закончен идет перезагрузка (перенастройка) и кластер недоступен.
+5 Перезагрузка завершена и кластер доступен (оба исправных узла)
+
+
+Ваша последовательность для упрощённого **Type 4** логически верна: после первого обнаруженного отказа сервис кратковременно недоступен из-за nontransparent recovery, затем работает в деградированном режиме, а позже получает второе interruption при nontransparent repair/reintegration. Но это лишь основной успешный сценарий; полная цепь должна также учитывать latent fault, transient fault, неуспешный recovery, второй отказ в degraded mode и ошибку диагностики.
+
+Важно: ниже показана **адаптация Type 4 к двухузловой системе**. В исходной статье подробно нарисован Type 3, а Type 4 задаётся комбинацией «nontransparent recovery + nontransparent repair». Кроме того, исходный RAScad моделировал симметричные резервированные FRU; специализированная генерация для primary–standby/primary–secondary clusters у авторов тогда ещё обозначалась как work in progress.
+
+## Ваша базовая цепь
+
+Если считать, что:
+
+- есть два взаимозаменяемых узла;
+- \(N=2\), \(K=1\);
+- услуга доступна, если работает хотя бы один узел;
+- отказ первого узла обнаруживается;
+- переключение на второй узел требует interruption;
+- repair/reintegration первого узла требует отдельного interruption,
+
+то ваша логика имеет следующий вид.
+
+| Шаг | Состояние | Доступность услуги |
+|---:|---|---|
+| 1 | Два узла исправны, услуга работает | Up |
+| 2 | Первый узел отказал; идёт failover / automatic recovery | Down |
+| 3 | Failover завершён; один узел обслуживает услугу, второй ремонтируется или ожидает ремонта | Up, но деградированная отказоустойчивость |
+| 4 | Начат repair/reintegration, требующий restart или остановки | Down |
+| 5 | Repair/reintegration завершены; оба узла снова доступны | Up |
+
+В условных обозначениях:
+
+$$
+\[
+S_0
+\rightarrow
+AR_1
+\rightarrow
+D_1
+\rightarrow
+M_1
+\rightarrow
+S_0
+\]
+$$
+
+где:
+
+- \(S_0\) — оба узла исправны;
+- \(AR_1\) — recovery/failover после первого отказа;
+- \(D_1\) — degraded mode: один узел доступен;
+- \(M_1\) — maintenance outage: ремонт или reintegration требуют interruption.
+
+## Mermaid: базовый сценарий
+
+```mermaid
+stateDiagram-v2
+    direction LR
+
+    [*] --> S0
+
+    state "S0: два узла исправны; услуга доступна; r = 1" as S0
+    state "AR1: failover / automatic recovery; r = 0" as AR1
+    state "D1: один узел работает; второй неисправен или ремонтируется; r = 1" as D1
+    state "M1: repair/reintegration требует interruption; r = 0" as M1
+
+    S0 --> AR1: обнаружен отказ первого узла
+    AR1 --> D1: failover успешно завершён
+    D1 --> M1: scheduled repair/reintegration
+    M1 --> S0: узел восстановлен и reintegrated
+```
+
+В GitHub Mermaid для state machine используется синтаксис `stateDiagram-v2`; начальное состояние обозначается `[*]`, а подпись перехода задаётся после двоеточия. [mermaid](https://mermaid.ai/open-source/syntax/stateDiagram.html)
+
+## Что именно означает шаг 4
+
+Ваше понимание шага 4 корректно, но его стоит сделать точнее:
+
+> Nontransparent repair означает не обязательно «кластер не работает всё время ремонта», а то, что в repair/reintegration lifecycle есть интервал, на котором пользовательская услуга недоступна.
+
+Возможны два принципиально разных случая.
+
+### Hot-plug, но нет dynamic reconfiguration
+
+Неисправный узел или FRU можно физически заменить при работающей системе, однако для его включения в рабочую конфигурацию нужен restart, reload configuration либо иной interruption.
+
+```text
+D1: сервис работает на оставшемся узле
+  │
+  ├── ожидание инженера / запчасти
+  ├── диагностика
+  ├── физическая замена
+  │
+  └── restart или reintegration
+          │
+          └── короткий downtime M1
+```
+
+В этом случае:
+
+$$
+\[
+D_{\text{user}}
+\approx
+T_{\text{reintegration}}
++
+T_{\text{restart}}
++
+T_{\text{verification, if blocking}}.
+\]
+$$
+
+Ожидание запчасти, сервисная логистика и часть диагностических работ могут проходить, пока услуга остаётся доступной на втором узле.
+
+### Компонент или узел нельзя обслужить online
+
+Если для замены требуется power-off, остановка соответствующей платформы, выключение shared subsystem либо cluster-wide restart, user-visible downtime обычно длиннее:
+
+```text
+D1: сервис доступен на оставшемся узле
+  │
+  ├── ожидание maintenance window
+  │
+  └── maintenance outage M1
+          │
+          ├── остановка
+          ├── физическая замена
+          ├── запуск
+          ├── verification
+          └── reintegration
+```
+
+Тогда:
+
+$$
+\[
+D_{\text{user}}
+\approx
+T_{\text{shutdown}}
++
+T_{\text{offline corrective action}}
++
+T_{\text{boot}}
++
+T_{\text{verification}}
++
+T_{\text{reintegration}}.
+\]
+$$
+
+Но даже в этом случае downtime не обязательно включает время ожидания инженера, доставки детали или согласования окна обслуживания. Пока система находится в \(D_1\), сервис ещё может работать, хотя риск полного отказа повышен.
+
+## Полная цепь Type 4
+
+Для более реалистичной модели нужно добавить несколько ветвей, которые в статье явно показаны для Type 3 и логически переносятся на Type 4.
+
+```mermaid
+stateDiagram-v2
+    direction LR
+
+    [*] --> S0
+
+    state "S0: оба узла исправны; service Up; r = 1" as S0
+    state "AR1: recovery после первого обнаруженного отказа; r = 0" as AR1
+    state "D1: деградированный режим; один узел обслуживает сервис; r = 1" as D1
+    state "L1: latent fault; один узел уже отказал, но это ещё не обнаружено; r = 1" as L1
+    state "M1: repair/reintegration первого узла; r = 0" as M1
+    state "SE: ошибочная диагностика или неверный repair; r = 0" as SE
+    state "AR2: recovery при втором отказе; r = 0" as AR2
+    state "F2: потерян последний рабочий узел; service Down; r = 0" as F2
+    state "SPF: recovery/failover неуспешен; service Down; r = 0" as SPF
+
+    S0 --> AR1: обнаруженный permanent fault
+    S0 --> L1: permanent fault не обнаружен
+
+    AR1 --> D1: recovery успешен
+    AR1 --> SPF: recovery неуспешен
+
+    L1 --> AR1: latent fault обнаружен
+    L1 --> F2: второй permanent fault
+    L1 --> AR2: transient fault оставшегося узла
+
+    D1 --> M1: planned repair/reintegration
+    M1 --> S0: correct diagnosis и successful repair
+    M1 --> SE: incorrect diagnosis или incorrect corrective action
+    SE --> M1: повторный repair/reintegration
+
+    D1 --> F2: второй permanent fault
+    D1 --> AR2: transient fault оставшегося узла
+
+    AR2 --> D1: recovery успешен
+    AR2 --> SPF: recovery неуспешен
+
+    SPF --> F2: требуется repair для восстановления сервиса
+    F2 --> M1: immediate service action
+```
+
+Эта схема намеренно разделяет два разных смысла «система неисправна»:
+
+- `D1` и `L1` — сервис ещё доступен, но запас отказоустойчивости утрачен;
+- `AR1`, `AR2`, `M1`, `SE`, `SPF`, `F2` — состояния с user-visible downtime.
+
+## Дополнительные варианты режима 4
+
+В исходной классификации нет Type 5, Type 6 и так далее: существуют только четыре комбинации прозрачности recovery и repair. Но внутри **Type 4** есть много разных траекторий состояния.
+
+| Вариант | Путь в Markov-цепи | Что означает |
+|---|---|---|
+| Штатный первый отказ | \(S_0 \rightarrow AR_1 \rightarrow D_1\) | Failover/recovery успешен, но пользователь видел краткий downtime |
+| Успешный плановый ремонт | \(D_1 \rightarrow M_1 \rightarrow S_0\) | Услуга была доступна в деградированном режиме, затем остановлена на время nontransparent repair/reintegration |
+| Скрытый отказ | \(S_0 \rightarrow L_1\) | Один узел уже потерян, но отказ не обнаружен; сервис работает, резерв фактически отсутствует |
+| Выявление latent fault | \(L_1 \rightarrow AR_1 \rightarrow D_1\) | После позднего обнаружения всё равно требуется recovery, который в Type 4 nontransparent |
+| Второй permanent fault | \(D_1 \rightarrow F_2\) либо \(L_1 \rightarrow F_2\) | Последний функционирующий узел отказал; сервис теряет доступность до восстановления |
+| Transient fault в degraded mode | \(D_1 \rightarrow AR_2 \rightarrow D_1\) | Даже кратковременный сбой единственного оставшегося узла вызывает interruption |
+| Неуспешный failover | \(AR_1 \rightarrow SPF\) или \(AR_2 \rightarrow SPF\) | Recovery не завершился штатно; требуется более тяжёлое восстановление |
+| Ошибка диагностики | \(M_1 \rightarrow SE \rightarrow M_1\) | Неправильно определён отказавший элемент либо выполнена неверная corrective action; downtime продлевается |
+| Негорячая замена | \(D_1 \rightarrow M_1 \rightarrow S_0\) | В \(M_1\) входят shutdown, физическая замена, boot, verification и reintegration |
+| Hot-plug без online reintegration | \(D_1 \rightarrow M_1 \rightarrow S_0\) | В \(M_1\) может входить только короткий restart/reconfiguration для ввода replacement node/FRU в рабочую схему |
+
+## Важная граница модели
+
+Для кластера нельзя автоматически считать, что `M1` — это недоступность всей услуги. Всё зависит от того, что именно в модели считается системой.
+
+### Если граница — узел
+
+```text
+Node A: ремонтируется, Down
+Node B: работает, Up
+Clustered application: может быть Up
+```
+
+Тогда repair Node A может быть nontransparent на уровне узла, но transparent на уровне прикладной услуги.
+
+### Если граница — пользовательский сервис
+
+```text
+Node A: ремонтируется
+Node B: работает
+Application endpoint: доступен
+```
+
+Тогда у repair будет reward \(1\), пока не происходит событие, нарушающее доступность сервиса:
+
+- restart active node;
+- cluster-wide restart;
+- остановка shared storage;
+- потеря quorum;
+- interruption виртуального IP/load balancer;
+- несовместимость конфигурации при reintegration;
+- необходимость остановить активную роль для возврата repaired node.
+
+Следовательно, для сервисной модели Type 4 нужно применять только тогда, когда recovery **и** repair/reintegration действительно вызывают interruption, видимое потребителю услуги. Если же repair первого узла выполняется полностью rolling-образом, а приложение непрерывно обслуживается вторым узлом, то с точки зрения пользовательского SLA это ближе к **Type 3**: nontransparent recovery, но transparent repair.
+

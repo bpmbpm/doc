@@ -840,7 +840,7 @@ stateDiagram-v2
 
 | Вариант | Путь в Markov-цепи | Что означает |
 |---|---|---|
-| Штатный первый отказ | \(S_0 \rightarrow AR_1 \rightarrow D_1\) | Failover/recovery успешен, но пользователь видел краткий downtime |
+| Штатный первый отказ | $\(S_0 \rightarrow AR_1 \rightarrow D_1\)$ | Failover/recovery успешен, но пользователь видел краткий downtime |
 | Успешный плановый ремонт | \(D_1 \rightarrow M_1 \rightarrow S_0\) | Услуга была доступна в деградированном режиме, затем остановлена на время nontransparent repair/reintegration |
 | Скрытый отказ | \(S_0 \rightarrow L_1\) | Один узел уже потерян, но отказ не обнаружен; сервис работает, резерв фактически отсутствует |
 | Выявление latent fault | \(L_1 \rightarrow AR_1 \rightarrow D_1\) | После позднего обнаружения всё равно требуется recovery, который в Type 4 nontransparent |

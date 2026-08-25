@@ -233,3 +233,380 @@ info
 - CTMC-logic https://en.wikipedia.org/wiki/Continuous-time_Markov_chain
 - https://www.columbia.edu/~ks20/stochastic-I/stochastic-I-CTMC.pdf
 - Логический подход к спецификации мультиагентных систем с вероятностным поведением https://textarchive.ru/c-1380697-pall.html
+
+## 2 Model
+
+Ниже — объяснение Markov Model Type 0–Type 4 из статьи **Automatic Generation of Availability Models in RAScad**. Главное уточнение: **nontransparent repair не означает автоматически, что кластер недоступен всё время ремонта одного узла**; это означает, что ремонт либо reintegration вызывает недоступность на уровне выбранной границы моделируемой системы и пользовательской услуги.
+
+## Основа классификации
+
+RAScad строит отдельную Markov-модель для каждого MG-block — компонента или группы одинаковых компонентов. Затем доступность блока \(A_i\) включается в иерархическую RBD-модель системы.
+
+Для каждого Markov-состояния задан reward rate:
+
+\[
+r_s =
+\begin{cases}
+1, & \text{система доступна пользователю},\\
+0, & \text{система недоступна пользователю}.
+\end{cases}
+\]
+
+При стационарном распределении состояний \(\pi_s\) доступность блока:
+
+\[
+A_i=\sum_{s \in S}\pi_s r_s.
+\]
+
+Если верхнеуровневый diagram моделируется как последовательная RBD из \(n\) блоков, то при принятом авторами допущении независимости типов компонентов:
+
+\[
+A_{\text{diagram}}=\prod_{i=1}^{n} A_i.
+\]
+
+Тип Markov-модели выбирается прежде всего по соотношению:
+
+- \(N\) — количество экземпляров компонента;
+- \(K\) — минимально необходимое количество исправных экземпляров.
+
+Если \(N=K\), резерва нет и применяется **Type 0**. Если \(N>K\), есть резервирование и RAScad выбирает один из **Type 1–Type 4** по комбинации свойств recovery и repair. 
+
+## Сравнение Type 0–Type 4
+
+| Тип | Условие | Recovery | Repair / reintegration | Главный смысл |
+|---|---:|---|---|---|
+| **Type 0** | \(N=K\) | Не определяет отдельную 2×2-категорию | Не определяет отдельную 2×2-категорию | Нерезервированный компонент: его отказ лишает систему требуемой функции |
+| **Type 1** | \(N>K\) | Transparent | Transparent | Отказ скрывается резервированием; failover и обслуживание не прерывают сервис |
+| **Type 2** | \(N>K\) | Transparent | Nontransparent | Первый отказ скрывается, но замена/reintegration может потребовать interruption |
+| **Type 3** | \(N>K\) | Nontransparent | Transparent | После отказа требуется user-visible recovery, но ремонт и возврат компонента могут выполняться online |
+| **Type 4** | \(N>K\) | Nontransparent | Nontransparent | И recovery, и ремонт/reintegration способны вызвать interruption |
+
+Авторы прямо связывают Type 1–Type 4 с четырьмя комбинациями transparent/nontransparent recovery и repair. Они также отмечают, что сложность автоматически генерируемой модели возрастает от Type 1 к Type 4. 
+
+## Type 0: нерезервированный компонент
+
+### Условие
+
+\[
+N=K.
+\]
+
+Например:
+
+- один boot drive;
+- один system board;
+- единственный обязательный controller;
+- один нерезервированный PSU;
+- один критический компонент, для которого отказ любого экземпляра означает потерю требуемой функции.
+
+В такой архитектуре нет состояния «деградированный, но доступный режим вследствие потери одного из резервов». Если компонент с точки зрения RBD обязателен, его permanent fault создаёт состояние недоступности до успешного восстановления или ремонта.
+
+### Логика Type 0
+
+Концептуально Type 0 можно представить так:
+
+```text
+                   permanent fault
+Ok / Up  ─────────────────────────────────► Down: repair required
+   │                                             │
+   │ transient fault                             │ diagnosis
+   ▼                                             │ corrective action
+Recovery / restart                               │ verification
+   │                                             ▼
+   ├── recovery succeeds ─────────────────────► Ok / Up
+   │
+   └── recovery fails ────────────────────────► extended downtime
+                                                  │
+                                                  └── successful repair ─► Ok / Up
+```
+
+Здесь availability особенно чувствительна к:
+
+- MTBF постоянного отказа;
+- интенсивности transient faults;
+- времени восстановления или reboot;
+- времени диагностики;
+- времени corrective action;
+- времени verification;
+- service response time;
+- вероятности правильной диагностики;
+- времени устранения последствий неверной диагностики.
+
+В Type 0 любой ремонтный цикл связан с критичным компонентом: нет рабочего резерва, на котором система могла бы продолжать обслуживание. 
+
+## Type 1–Type 4: резервированный блок
+
+Для объяснения статьи используется пример:
+
+\[
+N=2,\qquad K=1.
+\]
+
+То есть в группе есть два одинаковых компонента, а для сохранения функции достаточно одного. После первого отказа система может оставаться доступной, но она переходит в degraded mode: запас отказоустойчивости исчерпан либо уменьшен.
+
+Для \(N-K>1\) RAScad автоматически повторяет соответствующие группы состояний, например состояния первого отказа, latent fault, automatic recovery и degraded permanent fault. Графически авторы показывают пример Type 3; остальные типы определяются той же логикой, но с другим назначением состояний recovery и repair как up/down. 
+
+### Type 1: transparent recovery + transparent repair
+
+```text
+Ok / two components available
+   │
+   │ first component failure
+   ▼
+PF1 / degraded but Up
+   │
+   │ online diagnosis, repair, replacement, reintegration
+   ▼
+Ok / both components available
+```
+
+В идеальном штатном сценарии:
+
+- первый отказ не вызывает downtime;
+- automatic recovery/failover не виден пользователю;
+- компонент можно заменить online;
+- reintegration не требует остановки либо restart;
+- система сохраняет сервис во время обслуживания.
+
+Типичный инженерный образ — hot-plug компонент плюс dynamic reconfiguration, когда replacement FRU может быть добавлен в работающую конфигурацию без interruption.
+
+Однако Type 1 не означает абсолютную доступность. Downtime всё ещё возможен, например:
+
+- при втором отказе до завершения ремонта;
+- при hidden/latent failure, из-за которого резерв уже утрачен;
+- при неуспешном automatic recovery;
+- при возникновении single-point failure;
+- при ошибочной диагностике или некорректном corrective action. 
+
+### Type 2: transparent recovery + nontransparent repair
+
+```text
+Ok
+   │
+   │ first fault; failover/recovery succeeds transparently
+   ▼
+PF1 / degraded but Up
+   │
+   │ logistics, waiting, preparation for maintenance
+   │ system may remain Up
+   ▼
+Repair / reintegration interruption
+   │
+   ▼
+Ok
+```
+
+Первый отказ здесь может быть скрыт от пользователя: резервный компонент принимает нагрузку либо функция сохраняется на оставшемся экземпляре.
+
+Но возвращение repair/replacement component в рабочую конфигурацию не является прозрачным. Возможные причины, прямо обсуждаемые в статье:
+
+- component hot-pluggable, но **dynamic reconfiguration отсутствует**;
+- новый компонент можно физически установить без выключения, но система должна быть перезапущена, чтобы распознать и reintegrate его;
+- component не является hot-pluggable;
+- для замены требуется power-off соответствующей системы. 
+
+Ключевое следствие: Type 2 не означает, что сервис недоступен на всём интервале от первого отказа до завершения ремонта. После первого отказа система может продолжать обслуживать нагрузку в `PF1`. Downtime возникает в момент или на период операции, которая действительно требует interruption.
+
+### Type 3: nontransparent recovery + transparent repair
+
+Type 3 — единственный из Type 1–Type 4, который статья раскрывает через подробную диаграмму состояний.
+
+```text
+Ok
+ │
+ ├── detected permanent fault ──► AR1 ──► PF1 ──► Ok
+ │                                  │
+ │                                  └────► SPF
+ │
+ ├── undetected permanent fault ─► Latent1 ─► AR1
+ │
+ └── transient fault ───────────► TF1 ─────► AR1
+```
+
+Смысл состояний:
+
+| Состояние | Интерпретация |
+|---|---|
+| `Ok` | Нормальная работа, оба экземпляра доступны |
+| `AR1` | Automatic recovery после первого обнаруженного отказа |
+| `PF1` | Один permanent fault, но система доступна в degraded mode |
+| `Latent1` | Один permanent fault не обнаружен; сервис ещё работает, но резерв скрыто утрачен |
+| `TF1` | Первый transient fault |
+| `SPF` | Неуспешный recovery переводит систему в single-point-of-failure state |
+| `PF2` | Второй permanent fault при уже деградированной системе |
+| `TF2` | Transient fault на фоне уже имеющегося permanent fault |
+| `ServiceError` | Последствие ошибочной диагностики либо неверной corrective action |
+
+В Type 3 detected permanent fault запускает `AR1`. Если automatic recovery успешен, система достигает `PF1`: она вновь доступна, но на одном оставшемся компоненте. Если recovery неуспешен, возникает `SPF`, то есть состояние недоступности на время, заданное параметром \(T_{spf}\). 
+
+Существенное свойство Type 3:
+
+- `AR1` связан с downtime, поскольку recovery **nontransparent**;
+- после успешного recovery состояние `PF1` доступно пользователю;
+- ремонт `PF1` и возврат replacement component могут быть transparent;
+- следовательно, пользователь замечает interruption при failover/reboot, но не обязательно при последующей физической замене FRU.
+
+Пример из статьи: при отказе CPU automatic recovery может реализовываться reboot для deconfigure неисправного CPU. Сервер затем продолжает работу на оставшихся CPU, но reboot уже вызвал user-visible interruption. 
+
+### Type 4: nontransparent recovery + nontransparent repair
+
+```text
+Ok
+ │
+ │ first fault
+ ▼
+Recovery interruption
+ │
+ ▼
+PF1 / degraded but Up
+ │
+ │ planned or immediate maintenance
+ ▼
+Repair / reintegration interruption
+ │
+ ▼
+Ok
+```
+
+Type 4 объединяет два независимых источника недоступности:
+
+1. interruption во время automatic recovery/failover;
+2. interruption во время repair/reintegration.
+
+Это не обязательно означает два длинных простоя. Первый interruption может быть коротким reboot/failover, а второй — отдельным коротким restart при reintegration. Но если компонент не hot-pluggable и его физическая замена требует выключения, второй downtime может быть существенно длиннее. 
+
+## Что именно означает nontransparent repair
+
+### Короткий ответ
+
+Нет, **не обязательно весь период ремонта одного узла или компонента равен недоступности кластера**.
+
+В терминологии статьи *nontransparent repair* означает, что ремонт и/или последующий reintegration не могут быть выполнены полностью без interruption **на границе доступности, выбранной для модели**. Иными словами, какая-то часть процесса технического обслуживания имеет reward \(0\): пользовательская функция в этот момент недоступна. 
+
+### Ремонтный процесс состоит из частей
+
+В RAScad ремонтный цикл не является одной неделимой величиной. Для блока задаются, в частности:
+
+\[
+T_{\text{repair}} =
+T_{\text{diagnosis}} +
+T_{\text{corrective action}} +
+T_{\text{verification}},
+\]
+
+а также отдельно учитываются:
+
+\[
+T_{\text{logistics}} =
+MTTM + T_{resp}.
+\]
+
+Где:
+
+- \(MTTM\) — service restriction time: среднее ожидание перед вызовом сервиса или плановым обслуживанием;
+- \(T_{resp}\) — время прибытия/реакции сервисной службы;
+- diagnosis — выявление неисправного FRU;
+- corrective action — замена либо исправление;
+- verification — проверка, что replacement component функционирует, либо восстановление утраченных данных;
+- reintegration time — отдельно задаваемое время, связанное с возвратом компонента в конфигурацию;
+- reboot time — отдельный глобальный параметр. 
+
+Поэтому необходимо различать:
+
+\[
+T_{\text{maintenance campaign}}
+\neq
+T_{\text{user-visible downtime}}.
+\]
+
+### Сценарий A: hot-plug, но нет dynamic reconfiguration
+
+```text
+Система в PF1, сервис продолжает работать
+        │
+        ├── ожидание обслуживания
+        ├── прибытие сервиса
+        ├── физическая замена hot-plug FRU
+        │
+        └── restart для reintegration
+                 │
+                 └── user-visible downtime
+```
+
+Здесь component можно извлечь и установить при работающей системе, но без dynamic reconfiguration операционная система либо firmware не вводят новый компонент в конфигурацию online.
+
+В таком случае nontransparent может быть именно короткий restart/reintegration. Весь период логистики и подготовки к ремонту не обязан быть downtime: система может оставаться в `PF1`, то есть работать с меньшей резервированностью.
+
+### Сценарий B: компонент не hot-pluggable
+
+```text
+Система в PF1
+        │
+        ├── ожидание детали и инженера: система может оставаться Up
+        │
+        └── scheduled maintenance window
+                 │
+                 ├── power-off
+                 ├── физическая замена
+                 ├── power-on / boot
+                 ├── verification
+                 └── reintegration
+```
+
+Здесь downtime обычно включает как минимум ту часть corrective action, которую невозможно выполнить под питанием, а также boot и reintegration. Но даже здесь не обязательно в downtime входят:
+
+- ожидание инженера;
+- доставка запчасти;
+- планирование окна работ;
+- диагностика, если её удалось выполнить заранее при работающей системе.
+
+### Сценарий C: кластер как граница системы
+
+Особенно важно не смешивать:
+
+- **недоступность одного узла**;
+- **недоступность кластера**;
+- **недоступность пользовательского приложения**.
+
+Если отказавший узел можно остановить, заменить и перезапустить, а приложение в это время обслуживается peer node, nontransparent repair узла может быть **transparent на уровне услуги**.
+
+Например:
+
+```text
+Node A: failed, under maintenance
+Node B: active, serves application traffic
+
+Application service: Up
+Cluster capacity/redundancy: degraded
+Node A: Down
+```
+
+Для модели, границей которой является пользовательский сервис, такой ремонт должен интерпретироваться как transparent, пока:
+
+- failover прошёл без потери пользовательской функции;
+- активный узел продолжает обслуживать нагрузку;
+- maintenance не требует остановить активный узел;
+- отсутствует cluster-wide restart;
+- нет потери quorum, split-brain, shared-storage interruption или иной общей зависимости.
+
+Напротив, repair является nontransparent для пользовательского сервиса, если reintegration требует, например:
+
+- cluster-wide restart;
+- остановки active service;
+- interruption shared storage;
+- остановки control plane, влияющей на обслуживание;
+- синхронного reboot нескольких узлов;
+- перехода, который не может быть выполнен rolling manner.
+
+### Ограничение статьи
+
+Следует учитывать, что авторы прямо указывают: генерация моделей для **primary–standby** и **primary–secondary**, включая cluster architectures, в тот момент ещё находилась в работе. Основной объект MG — симметричные резервированные FRU одного типа, с одинаковой интенсивностью отказа. Поэтому нельзя механически приравнять Type 2 или Type 4 к современному двухузловому HA-cluster без уточнения:
+
+- что именно является компонентом;
+- где проведена граница модели;
+- что считается доступностью: node, cluster, VM, database, business service или application endpoint;
+- какой режим failover и reintegration допускает платформа.
+
+Практически корректная формулировка такова:
+
+> Nontransparent repair означает, что хотя бы часть repair/reintegration создаёт недоступность моделируемой пользовательской функции. Это не означает, что система либо кластер недоступны на всём интервале ожидания запчасти, диагностики и ремонта одного компонента; состав downtime определяется архитектурой, hot-plug capability, dynamic reconfiguration и выбранной границей доступности.

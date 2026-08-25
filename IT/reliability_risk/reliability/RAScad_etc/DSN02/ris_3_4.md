@@ -471,10 +471,7 @@ $$
 +
 \text{transparent repair},
 \]
-$$
 
-
-$$
 \[
 \text{Type 4}
 =
@@ -486,10 +483,286 @@ $$
 
 В Type 4 после успешного failover пользователь может сначала наблюдать downtime из-за `AR1`, затем сервис работает в `PF1`, а позднее появляется второй downtime, когда начинается `M1`.
 
-
-## 2 
 Однако `M1` не обязан включать весь календарный период ремонта. Его длительность определяется тем, какие части maintenance lifecycle действительно требуют остановки пользовательской функции:
 
 - при hot-plug без dynamic reconfiguration — возможно, только restart и reintegration;
 - при non-hot-pluggable component — shutdown, physical replacement, boot, verification и reintegration;
 - при cluster-wide reconfiguration — период, в который невозможно сохранить active service на оставшемся узле.
+
+## 2
+
+Да. Сначала уточнение: в статье не используется запись `N^Quantity`. Корректная исходная формулировка авторов:
+
+> “Let \(N\) represents Quantity and \(K\) represents Minimum Quantity Required.”
+
+То есть \(N\) — это `Quantity`, а \(K\) — `Minimum Quantity Required`. В Mermaid и в русской интерпретации лучше писать именно так:
+
+\[
+N = \text{Quantity}, \qquad K = \text{Minimum Quantity Required}.
+\]
+
+## Оригинальные подписи рисунков
+
+| Оригинальная подпись | Перевод |
+|---|---|
+| `Figure 3. Markov Model Type 0` | Рисунок 3. Марковская модель типа 0 |
+| `Figure 4. Markov Model Type 3` | Рисунок 4. Марковская модель типа 3 |
+
+Тип 0 используется, когда:
+
+\[
+N=K.
+\]
+
+То есть резервирования нет: все установленные экземпляры необходимы для обеспечения функции.
+
+Для Type 1–Type 4 используется условие:
+
+\[
+N>K.
+\]
+
+То есть экземпляров больше, чем минимально необходимо; присутствует резервирование.
+
+В Figure 4 авторы для иллюстрации задают:
+
+\[
+N=2,\qquad K=1.
+\]
+
+Перевод:
+
+> Имеются два экземпляра компонента; для работоспособности системы нужен как минимум один.
+
+Это симметричная схема `2-out-of-1`, то есть два однотипных компонента, из которых достаточно одного работающего.
+
+## Базовые обозначения
+
+| Оригинал | Перевод | Точное значение в RAScad |
+|---|---|---|
+| `Quantity` | Количество экземпляров | Сколько однотипных FRU или компонентов содержится в рассматриваемом блоке |
+| `Minimum Quantity Required` | Минимально требуемое количество экземпляров | Сколько исправных экземпляров необходимо для сохранения функции блока |
+| `N` | Количество экземпляров | Формальное обозначение `Quantity` |
+| `K` | Минимально требуемое количество | Формальное обозначение `Minimum Quantity Required` |
+| `N = K` | Нет резервирования | Отказ любого требуемого экземпляра нарушает работу блока |
+| `N > K` | Есть резервирование | Некоторое число отказов может быть пережито без потери функции |
+| `N - K > 1` | Запас резервирования больше одного экземпляра | RAScad повторяет группы состояний первого, второго и последующих отказов |
+| `1` внутри состояния | Работоспособное состояние | Reward rate равен 1: функция доступна пользователю |
+| `0` внутри состояния | Неработоспособное состояние | Reward rate равен 0: функция недоступна пользователю |
+
+Формально availability вычисляется по всем состояниям цепи:
+
+\[
+A=\sum_{s \in S}\pi_s r_s,
+\]
+
+где:
+
+- \(\pi_s\) — вероятность нахождения в состоянии \(s\);
+- \(r_s\) — reward rate состояния: 1 или 0.
+
+## Оригинальные подписи Figure 4
+
+Ниже приведены обозначения состояний Figure 4 / Markov Model Type 3 и их смысл. Английские краткие имена сохранены в том виде, который используется авторами.
+
+| Оригинальная подпись | Развёртка | Перевод | Смысл |
+|---|---|---|---|
+| `Ok` | Normal/operational state | Нормальное работоспособное состояние | Оба компонента исправны; система доступна |
+| `TF1` | Transient Fault 1 | Первый временный отказ | Первый transient fault, например ошибка ПО, power surge, кратковременное нарушение состояния |
+| `AR1` | Automatic Recovery 1 | Первое автоматическое восстановление | Recovery/failover после первого обнаруженного отказа |
+| `PF1` | Permanent Fault 1 | Первый постоянный отказ | Один компонент отказал окончательно; система работает на оставшемся экземпляре |
+| `Latent1` | Latent Fault 1 | Первый скрытый отказ | Один компонент уже отказал, но отказ ещё не обнаружен |
+| `SPF` | Single Point of Failure state | Состояние единичной точки отказа | Recovery не завершился штатно; система становится недоступной |
+| `PF2` | Permanent Fault 2 | Второй постоянный отказ | Второй отказ в деградированном режиме; при \(N=2,\ K=1\) сервис потерян |
+| `TF2` | Transient Fault 2 | Второй временный отказ | Transient fault, возникший при уже имеющемся permanent fault |
+| `ServiceError` | Service Error state | Состояние сервисной ошибки | Последствие неверной диагностики или некорректного corrective action |
+
+Числа `1` и `2` в `TF1`, `PF1`, `TF2`, `PF2` обозначают не номер физического узла `Node 1` / `Node 2`, а порядковый уровень отказного состояния:
+
+- `1` — первый отказ при наличии достаточного резерва;
+- `2` — следующий отказ, когда система уже находится в degraded mode.
+
+Для \(N=2,\ K=1\):
+
+```text
+Ok       = оба компонента доступны
+PF1      = один компонент отказал, один работает
+PF2      = оба компонента отказали
+```
+
+## Оригинальные параметры и перевод
+
+### Параметры отказов
+
+| Оригинал | Перевод | Значение |
+|---|---|---|
+| `MTBF` | Mean Time Between Failures | Средняя наработка между постоянными отказами |
+| `Transient Failure Rate` | Интенсивность временных отказов | Частота transient faults; в статье задаётся в FIT |
+| `FIT` | Failures In Time | Отказы на \(10^9\) часов |
+| `Plf` | Probability of Latent Fault | Вероятность скрытого отказа |
+| `MTTDLF` | Mean Time To Detect Latent Fault | Среднее время до обнаружения скрытого отказа |
+
+Для первого permanent fault исходный смысл переходов такой:
+
+```text
+Ok → AR1
+```
+
+если отказ обнаружен,
+
+и:
+
+```text
+Ok → Latent1
+```
+
+если permanent fault не обнаружен и становится latent fault.
+
+Упрощённо это можно представить как разветвление:
+
+\[
+\Pr(\text{detected permanent fault}) = 1-P_{lf},
+\]
+
+\[
+\Pr(\text{latent permanent fault}) = P_{lf}.
+\]
+
+### Параметры automatic recovery
+
+| Оригинал | Перевод | Значение |
+|---|---|---|
+| `Automatic Recovery (AR)` | Автоматическое восстановление | Автоматический recovery/failover после обнаруженного отказа |
+| `Transparent` | Прозрачное восстановление | Нет downtime, видимого пользователю |
+| `Nontransparent` | Непрозрачное восстановление | Recovery создаёт downtime |
+| `AR/Failover Time` | Время автоматического восстановления / переключения | Задаваемое пользователем время interruption, связанное с AR |
+| `Pspf` | Probability of SPF during AR | Вероятность возникновения SPF при automatic recovery |
+| `Tspf` | SPF State Recovery Time | Время восстановления из состояния SPF |
+
+Для Figure 4 логика первого detected permanent fault:
+
+```text
+Ok → AR1
+```
+
+После этого:
+
+```text
+AR1 → PF1
+```
+
+если automatic recovery успешен,
+
+либо:
+
+```text
+AR1 → SPF
+```
+
+если recovery неудачен.
+
+В Type 3 состояние `AR1` имеет reward 0, поскольку это `Nontransparent recovery`. Состояние `PF1` имеет reward 1: recovery уже завершён, и система работает на оставшемся компоненте.
+
+### Параметры сервиса и ремонта
+
+| Оригинал | Перевод | Значение |
+|---|---|---|
+| `MTTM` | Mean Time To Maintenance | Среднее время до начала обслуживания; service restriction time |
+| `Tresp` | Service Response Time | Время ожидания прибытия сервисной службы |
+| `MTTR Part 1: Diagnosis Time` | Время диагностики | Время идентификации неисправного компонента |
+| `MTTR Part 2: Corrective Action Time` | Время корректирующего действия | Время замены или устранения неисправности |
+| `MTTR Part 3: Verification Time` | Время верификации | Время проверки replacement component либо восстановления данных |
+| `Pcd` | Probability of Correct Diagnosis | Вероятность правильной диагностики и корректной замены |
+| `MTTRFID` | Mean Time To Repair From Incorrect Diagnosis | Среднее время устранения ошибки после неверной диагностики |
+| `Reintegration Time` | Время reintegration | Время возврата repaired/replacement component в рабочую конфигурацию |
+| `Tboot` | Reboot Time | Время перезагрузки системы |
+
+В тексте статьи путь ремонта из `PF1` описан так:
+
+```text
+PF1 → Ok
+```
+
+после логистической задержки:
+
+\[
+MTTM+T_{resp},
+\]
+
+если repair успешен.
+
+Если диагностика или corrective action неуспешны:
+
+```text
+PF1 → ServiceError.
+```
+
+После дополнительного времени:
+
+\[
+MTTRFID,
+\]
+
+система возвращается к нормальной работе.
+
+## Figure 4 с английскими подписями и переводом
+
+Ниже — Mermaid-версия, в которой английские оригинальные обозначения сохранены внутри состояний, а после тире дан русский перевод.
+
+```mermaid
+stateDiagram-v2
+    direction LR
+
+    [*] --> Ok
+
+    state "Ok — нормальное работоспособное состояние; r = 1" as Ok
+    state "TF1 — первый временный отказ; r = 0" as TF1
+    state "AR1 — первое автоматическое восстановление; r = 0" as AR1
+    state "PF1 — первый постоянный отказ; degraded mode; r = 1" as PF1
+    state "Latent1 — первый скрытый отказ; r = 1" as Latent1
+    state "TF2 — второй временный отказ; r = 0" as TF2
+    state "AR2 — recovery при отказе в degraded mode; r = 0" as AR2
+    state "PF2 — второй постоянный отказ; r = 0" as PF2
+    state "SPF — single point of failure state; r = 0" as SPF
+    state "ServiceError — сервисная ошибка; r = 0" as ServiceError
+
+    Ok --> AR1: detected permanent fault
+    Ok --> Latent1: undetected permanent fault
+    Ok --> TF1: first transient fault
+
+    Latent1 --> AR1: latent fault detected after MTTDLF
+
+    TF1 --> AR1: automatic recovery
+    AR1 --> PF1: recovery succeeds
+    AR1 --> SPF: recovery fails; Pspf
+
+    PF1 --> Ok: successful repair after MTTM + Tresp
+    PF1 --> ServiceError: incorrect diagnosis or corrective action
+    ServiceError --> Ok: repair from incorrect diagnosis; MTTRFID
+
+    PF1 --> PF2: second permanent fault
+    PF1 --> TF2: transient fault in degraded mode
+
+    Latent1 --> PF2: second permanent fault
+    Latent1 --> TF2: transient fault in degraded mode
+
+    TF2 --> AR2: automatic recovery
+    AR2 --> PF1: recovery succeeds
+    AR2 --> SPF: recovery fails
+
+    SPF --> PF2: service unavailable; repair required
+    PF2 --> Ok: immediate service action and successful repair
+```
+
+## Важная оговорка о точности Figure 3
+
+Текст статьи подробно объясняет назначение Type 0, Type 3 и всех параметров, а также явно описывает переходы Figure 4. Но в текстовом извлечении PDF графические подписи внутри Figure 3 и Figure 4 распознаются не полностью: часть формульных labels является растровой графикой, а не текстовым слоем документа.
+
+Поэтому следует различать:
+
+- подписи, которые приведены выше как **дословные термины статьи**: `Quantity`, `Minimum Quantity Required`, `Ok`, `TF1`, `AR1`, `PF1`, `Latent1`, `SPF`, `PF2`, `TF2`, `ServiceError`, `MTTM`, `Tresp`, `MTTDLF`, `Pspf`, `MTTRFID` и другие;
+- точное типографическое размещение параметров у конкретных стрелок на исходном рисунке;
+- Mermaid-перерисовку, которая воспроизводит описанную авторами семантику цепи, но не претендует на побуквенную факсимильную копию схемы IEEE.
+
+Если вам нужна именно факсимильная транскрипция каждой подписи у стрелок — включая все дроби, индексы, степени и вероятности — лучше прислать отдельно увеличенные изображения Figure 3 и Figure 4. Тогда можно будет построить Mermaid-версию с полным соответствием каждой стрелке оригинала.
+

@@ -594,9 +594,9 @@ Ok → Latent1
 
 Упрощённо это можно представить как разветвление:
 
-$\Pr(\text{detected permanent fault})$ = $/1-P_{lf}$,
+$\Pr(\text{detected permanent fault})$ = $1-P_{lf}$,
 
-$\Pr(\text{latent permanent fault})$ = $/P_{lf}$.
+$\Pr(\text{latent permanent fault})$ = $P_{lf}$.
 
 ### Параметры automatic recovery
 

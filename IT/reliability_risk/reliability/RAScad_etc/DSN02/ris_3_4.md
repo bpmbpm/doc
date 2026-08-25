@@ -462,16 +462,8 @@ stateDiagram-v2
 
 Это изменение означает:
 
+$\text{Type 3}$ = $\text{nontransparent recovery}$ + $\text{transparent repair}$,
 
-$$
-\[
-\text{Type 3}
-=
-\text{nontransparent recovery}
-+
-\text{transparent repair},
-\]
-$$
 $$
 \[
 \text{Type 4}

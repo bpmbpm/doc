@@ -1,8 +1,3 @@
-### info
-- CTMC-logic https://en.wikipedia.org/wiki/Continuous-time_Markov_chain
-- https://www.columbia.edu/~ks20/stochastic-I/stochastic-I-CTMC.pdf
-- Логический подход к спецификации мультиагентных систем с вероятностным поведением https://textarchive.ru/c-1380697-pall.html
-
 ## 1
 
 Статья Tang, Zhu и Andrada описывает RAScad как ранний вариант model-driven engineering для RAM/RAS: инженер собирает параметризованную архитектурную модель системы, а инструмент автоматически компилирует её в RBD и цепи Маркова для расчёта доступности и надёжности. Ниже — содержательный пересказ и подборка наиболее близких работ, включая несколько открыто доступных полных текстов. 

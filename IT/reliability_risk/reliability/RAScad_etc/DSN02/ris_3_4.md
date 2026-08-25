@@ -471,7 +471,8 @@ $$
 +
 \text{transparent repair},
 \]
-
+$$
+$$
 \[
 \text{Type 4}
 =

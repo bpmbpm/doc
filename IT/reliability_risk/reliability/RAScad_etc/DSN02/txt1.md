@@ -680,8 +680,8 @@ $$
 
 где:
 
-- \(S_0\) — оба узла исправны;
-- \(AR_1\) — recovery/failover после первого отказа;
+- $\(S_0\)$ — оба узла исправны;
+- $\(AR_1\)$ — recovery/failover после первого отказа;
 - \(D_1\) — degraded mode: один узел доступен;
 - \(M_1\) — maintenance outage: ремонт или reintegration требуют interruption.
 
@@ -841,15 +841,15 @@ stateDiagram-v2
 | Вариант | Путь в Markov-цепи | Что означает |
 |---|---|---|
 | Штатный первый отказ | $\(S_0 \rightarrow AR_1 \rightarrow D_1\)$ | Failover/recovery успешен, но пользователь видел краткий downtime |
-| Успешный плановый ремонт | \(D_1 \rightarrow M_1 \rightarrow S_0\) | Услуга была доступна в деградированном режиме, затем остановлена на время nontransparent repair/reintegration |
-| Скрытый отказ | \(S_0 \rightarrow L_1\) | Один узел уже потерян, но отказ не обнаружен; сервис работает, резерв фактически отсутствует |
-| Выявление latent fault | \(L_1 \rightarrow AR_1 \rightarrow D_1\) | После позднего обнаружения всё равно требуется recovery, который в Type 4 nontransparent |
-| Второй permanent fault | \(D_1 \rightarrow F_2\) либо \(L_1 \rightarrow F_2\) | Последний функционирующий узел отказал; сервис теряет доступность до восстановления |
-| Transient fault в degraded mode | \(D_1 \rightarrow AR_2 \rightarrow D_1\) | Даже кратковременный сбой единственного оставшегося узла вызывает interruption |
-| Неуспешный failover | \(AR_1 \rightarrow SPF\) или \(AR_2 \rightarrow SPF\) | Recovery не завершился штатно; требуется более тяжёлое восстановление |
-| Ошибка диагностики | \(M_1 \rightarrow SE \rightarrow M_1\) | Неправильно определён отказавший элемент либо выполнена неверная corrective action; downtime продлевается |
-| Негорячая замена | \(D_1 \rightarrow M_1 \rightarrow S_0\) | В \(M_1\) входят shutdown, физическая замена, boot, verification и reintegration |
-| Hot-plug без online reintegration | \(D_1 \rightarrow M_1 \rightarrow S_0\) | В \(M_1\) может входить только короткий restart/reconfiguration для ввода replacement node/FRU в рабочую схему |
+| Успешный плановый ремонт | $\(D_1 \rightarrow M_1 \rightarrow S_0\$) | Услуга была доступна в деградированном режиме, затем остановлена на время nontransparent repair/reintegration |
+| Скрытый отказ | $\(S_0 \rightarrow L_1\)$ | Один узел уже потерян, но отказ не обнаружен; сервис работает, резерв фактически отсутствует |
+| Выявление latent fault | $\(L_1 \rightarrow AR_1 \rightarrow D_1\)$ | После позднего обнаружения всё равно требуется recovery, который в Type 4 nontransparent |
+| Второй permanent fault | $\(D_1 \rightarrow F_2\) либо \(L_1 \rightarrow F_2\)$ | Последний функционирующий узел отказал; сервис теряет доступность до восстановления |
+| Transient fault в degraded mode | $\(D_1 \rightarrow AR_2 \rightarrow D_1\)$ | Даже кратковременный сбой единственного оставшегося узла вызывает interruption |
+| Неуспешный failover | $\(AR_1 \rightarrow SPF\) или \(AR_2 \rightarrow SPF\)$ | Recovery не завершился штатно; требуется более тяжёлое восстановление |
+| Ошибка диагностики | $\(M_1 \rightarrow SE \rightarrow M_1\)$ | Неправильно определён отказавший элемент либо выполнена неверная corrective action; downtime продлевается |
+| Негорячая замена | $\(D_1 \rightarrow M_1 \rightarrow S_0\)$ | В \(M_1\) входят shutdown, физическая замена, boot, verification и reintegration |
+| Hot-plug без online reintegration | $\(D_1 \rightarrow M_1 \rightarrow S_0\)$ | В \(M_1\) может входить только короткий restart/reconfiguration для ввода replacement node/FRU в рабочую схему |
 
 ## Важная граница модели
 

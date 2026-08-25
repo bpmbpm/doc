@@ -23,6 +23,7 @@ $$
 \text{fault diagnosis / repair}.
 \]
 $$
+
 Перевод:
 
 1. возникновение неисправности;
@@ -86,6 +87,7 @@ r_{\text{Latent1}}=1.
 $$
 
 Но с точки зрения резервирования состояние уже ухудшилось:
+
 $$
 \[
 \text{было: } 2 \text{ исправных компонента},
@@ -134,7 +136,7 @@ MTTDLF
 \]
 $$
 
-— `Mean Time To Detect Latent Fault`, среднее время до обнаружения скрытого отказа. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/1419432341/594457a8-e0a8-47cf-abee-20e24d111586/RAScad_DSN02.pdf?AWSAccessKeyId=ASIA2F3EMEYE4ZX42K5M&Signature=p9ajn7wWoRSCQiASG%2F49XlispJU%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEDwaCXVzLWVhc3QtMSJIMEYCIQCW4pApvZ9qIrJqmtc6ke37SHXiNtafpo9rpxsiXGRlzQIhAP5PDPiutYOLVwGq45GOXJbgmkuAbfKZxtINXLJn04imKvMECAQQARoMNjk5NzUzMzA5NzA1IgwCMfFLZiKSfBvDK9sq0ARIg70qhcuEh7dNlnN3hMAkzrNw7jULRxiyDuZMrt1Er31IGOCncaekxMWobKqWZWR3uty9rO226yqNZaa4RXkkGRAlyJDhodm6Nxz9EqeTXhxnjlBwskdLk0EN2E%2FqlaIi5UHhM%2FXDHQbYp3NUhviKNt%2BBUQDGdzDNDA08CjFKqmqwmE%2Bk7QJaltjsCfNaG5OVo7Ep2DciUgWVC%2FL5pbWmNomUggowhJJPqr6arvCzAb%2FiaI%2BUA6velu4UGiKfLU7GOUPxRvdCYge7Xh%2FzBP2YHqEjmFFLlHF9Y88lU68bzR479rGQw1glSzLJio8O4tRTx4hCmr73UhlL4yGuA%2F3GjCbrjY1flNCeoH8NoGf2v3c9CUOuZVFXxYEgY8RKho7DYETvxmyqgHbm%2FyWssHoHmURYUIs06Qflblup%2BnoUVr8OEDKCPsEJmUCR%2B62n%2BtZZQXXGxL0LS4ZRkncHP4EF%2F4RF2ye%2F8a66CCrUnsXu9%2FjxKSXrJVYkjuf0W4dCjIXfEQo6%2FlZquUB3RW0vjQCM95rOu4HycAjvRXqEX67RBahTc%2B0a%2FCWfMzeQ8KLEZVLlEMqwr60nTlE74Qs6s9YBAKCM%2FymXtTBEPAJG%2BeE6yZY0HpQ%2BcrqaNeQDe83tY1RuB5JZ1b75WTJp1CrKyi6f82j6SnaPeY3Lu3mxvpaZ5JH%2By6U27iDCd8wYqyfgXy6ZELyJTVIJ%2BH6WFLIKPrf7b2jkx6drnKp7PHu5hUr%2Bafw1zfc0DSxxw%2FkvDshqyToIvIs88RR0k%2FesXYx8ZM2lMKzvtdQGOpcB7JQ7QDLJlGoU%2BkD5KXQEqmLv%2FabDEwhM9wGS2z3%2Ba75q0qw%2BxwK8%2FB2F0RI%2BlKzX7wIsDNnomrY8bmNE4TdogfXMQslMwJ3%2FSowl135v54MEmB9zjK1AOtefWIfZAQklNl3%2BU%2FLJdpGCC20xaG0Qidu3%2FBrSl74wDgH7nHJV8rNE%2BggJ9nS7kW6CMlrtYPkZ0%2BllkYIf5A%3D%3D&Expires=1787659647)
+— `Mean Time To Detect Latent Fault`, среднее время до обнаружения скрытого отказа. 
 
 ### Диагностическая проверка при обращении
 
@@ -200,7 +202,7 @@ Ok → Latent1
 Latent1 → AR1
 ```
 
-когда скрытый отказ обнаруживается после задержки \(MTTDLF\). [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/1419432341/594457a8-e0a8-47cf-abee-20e24d111586/RAScad_DSN02.pdf?AWSAccessKeyId=ASIA2F3EMEYE4ZX42K5M&Signature=p9ajn7wWoRSCQiASG%2F49XlispJU%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEDwaCXVzLWVhc3QtMSJIMEYCIQCW4pApvZ9qIrJqmtc6ke37SHXiNtafpo9rpxsiXGRlzQIhAP5PDPiutYOLVwGq45GOXJbgmkuAbfKZxtINXLJn04imKvMECAQQARoMNjk5NzUzMzA5NzA1IgwCMfFLZiKSfBvDK9sq0ARIg70qhcuEh7dNlnN3hMAkzrNw7jULRxiyDuZMrt1Er31IGOCncaekxMWobKqWZWR3uty9rO226yqNZaa4RXkkGRAlyJDhodm6Nxz9EqeTXhxnjlBwskdLk0EN2E%2FqlaIi5UHhM%2FXDHQbYp3NUhviKNt%2BBUQDGdzDNDA08CjFKqmqwmE%2Bk7QJaltjsCfNaG5OVo7Ep2DciUgWVC%2FL5pbWmNomUggowhJJPqr6arvCzAb%2FiaI%2BUA6velu4UGiKfLU7GOUPxRvdCYge7Xh%2FzBP2YHqEjmFFLlHF9Y88lU68bzR479rGQw1glSzLJio8O4tRTx4hCmr73UhlL4yGuA%2F3GjCbrjY1flNCeoH8NoGf2v3c9CUOuZVFXxYEgY8RKho7DYETvxmyqgHbm%2FyWssHoHmURYUIs06Qflblup%2BnoUVr8OEDKCPsEJmUCR%2B62n%2BtZZQXXGxL0LS4ZRkncHP4EF%2F4RF2ye%2F8a66CCrUnsXu9%2FjxKSXrJVYkjuf0W4dCjIXfEQo6%2FlZquUB3RW0vjQCM95rOu4HycAjvRXqEX67RBahTc%2B0a%2FCWfMzeQ8KLEZVLlEMqwr60nTlE74Qs6s9YBAKCM%2FymXtTBEPAJG%2BeE6yZY0HpQ%2BcrqaNeQDe83tY1RuB5JZ1b75WTJp1CrKyi6f82j6SnaPeY3Lu3mxvpaZ5JH%2By6U27iDCd8wYqyfgXy6ZELyJTVIJ%2BH6WFLIKPrf7b2jkx6drnKp7PHu5hUr%2Bafw1zfc0DSxxw%2FkvDshqyToIvIs88RR0k%2FesXYx8ZM2lMKzvtdQGOpcB7JQ7QDLJlGoU%2BkD5KXQEqmLv%2FabDEwhM9wGS2z3%2Ba75q0qw%2BxwK8%2FB2F0RI%2BlKzX7wIsDNnomrY8bmNE4TdogfXMQslMwJ3%2FSowl135v54MEmB9zjK1AOtefWIfZAQklNl3%2BU%2FLJdpGCC20xaG0Qidu3%2FBrSl74wDgH7nHJV8rNE%2BggJ9nS7kW6CMlrtYPkZ0%2BllkYIf5A%3D%3D&Expires=1787659647)
+когда скрытый отказ обнаруживается после задержки \(MTTDLF\). 
 
 Полная логика:
 
@@ -366,7 +368,7 @@ stateDiagram-v2
     Recovered --> Ok: return to normal
 ```
 
-Но это уже **расширение модели RAScad**, а не буквальная структура Figure 4. В исходной модели `Latent1` предназначен для скрытого permanent fault резервированного компонента. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/1419432341/594457a8-e0a8-47cf-abee-20e24d111586/RAScad_DSN02.pdf?AWSAccessKeyId=ASIA2F3EMEYE4ZX42K5M&Signature=p9ajn7wWoRSCQiASG%2F49XlispJU%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEDwaCXVzLWVhc3QtMSJIMEYCIQCW4pApvZ9qIrJqmtc6ke37SHXiNtafpo9rpxsiXGRlzQIhAP5PDPiutYOLVwGq45GOXJbgmkuAbfKZxtINXLJn04imKvMECAQQARoMNjk5NzUzMzA5NzA1IgwCMfFLZiKSfBvDK9sq0ARIg70qhcuEh7dNlnN3hMAkzrNw7jULRxiyDuZMrt1Er31IGOCncaekxMWobKqWZWR3uty9rO226yqNZaa4RXkkGRAlyJDhodm6Nxz9EqeTXhxnjlBwskdLk0EN2E%2FqlaIi5UHhM%2FXDHQbYp3NUhviKNt%2BBUQDGdzDNDA08CjFKqmqwmE%2Bk7QJaltjsCfNaG5OVo7Ep2DciUgWVC%2FL5pbWmNomUggowhJJPqr6arvCzAb%2FiaI%2BUA6velu4UGiKfLU7GOUPxRvdCYge7Xh%2FzBP2YHqEjmFFLlHF9Y88lU68bzR479rGQw1glSzLJio8O4tRTx4hCmr73UhlL4yGuA%2F3GjCbrjY1flNCeoH8NoGf2v3c9CUOuZVFXxYEgY8RKho7DYETvxmyqgHbm%2FyWssHoHmURYUIs06Qflblup%2BnoUVr8OEDKCPsEJmUCR%2B62n%2BtZZQXXGxL0LS4ZRkncHP4EF%2F4RF2ye%2F8a66CCrUnsXu9%2FjxKSXrJVYkjuf0W4dCjIXfEQo6%2FlZquUB3RW0vjQCM95rOu4HycAjvRXqEX67RBahTc%2B0a%2FCWfMzeQ8KLEZVLlEMqwr60nTlE74Qs6s9YBAKCM%2FymXtTBEPAJG%2BeE6yZY0HpQ%2BcrqaNeQDe83tY1RuB5JZ1b75WTJp1CrKyi6f82j6SnaPeY3Lu3mxvpaZ5JH%2By6U27iDCd8wYqyfgXy6ZELyJTVIJ%2BH6WFLIKPrf7b2jkx6drnKp7PHu5hUr%2Bafw1zfc0DSxxw%2FkvDshqyToIvIs88RR0k%2FesXYx8ZM2lMKzvtdQGOpcB7JQ7QDLJlGoU%2BkD5KXQEqmLv%2FabDEwhM9wGS2z3%2Ba75q0qw%2BxwK8%2FB2F0RI%2BlKzX7wIsDNnomrY8bmNE4TdogfXMQslMwJ3%2FSowl135v54MEmB9zjK1AOtefWIfZAQklNl3%2BU%2FLJdpGCC20xaG0Qidu3%2FBrSl74wDgH7nHJV8rNE%2BggJ9nS7kW6CMlrtYPkZ0%2BllkYIf5A%3D%3D&Expires=1787659647)
+Но это уже **расширение модели RAScad**, а не буквальная структура Figure 4. В исходной модели `Latent1` предназначен для скрытого permanent fault резервированного компонента.
 
 ## Исправленная формулировка
 

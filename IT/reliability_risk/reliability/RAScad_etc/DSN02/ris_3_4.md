@@ -422,22 +422,10 @@ PF1 → ServiceError → Ok
 
 Параметры:
 
-$$
-\[
-P_{cd}
-=
-\Pr(\text{correct diagnosis and correction}),
-\]
-$$
+$\P_{cd}$ = $\Pr(\text{correct diagnosis and correction})$,
 
+MTTRFID = $\text{mean time to repair after incorrect diagnosis}$.
 
-$$
-\[
-MTTRFID
-=
-\text{mean time to repair after incorrect diagnosis}.
-\]
-$$
 
 Именно этот путь отражает важную эксплуатационную реальность: downtime и длительность восстановления часто определяются не только ремонтопригодностью FRU, но и качеством диагностики, процедурой troubleshooting и корректностью сервисного действия.
 
@@ -464,15 +452,8 @@ stateDiagram-v2
 
 $\text{Type 3}$ = $\text{nontransparent recovery}$ + $\text{transparent repair}$,
 
-$$
-\[
-\text{Type 4}
-=
-\text{nontransparent recovery}
-+
-\text{nontransparent repair}.
-\]
-$$
+$\text{Type 4}$ = $\text{nontransparent recovery}$ + $\text{nontransparent repair}$.
+
 
 В Type 4 после успешного failover пользователь может сначала наблюдать downtime из-за `AR1`, затем сервис работает в `PF1`, а позднее появляется второй downtime, когда начинается `M1`.
 

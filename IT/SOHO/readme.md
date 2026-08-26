@@ -12,3 +12,4 @@
 - https://github.com/bpmbpm/doc/tree/main/mix/audio
 ### old server
 - [Конвертация старых физических серверов в виртуалки (часть 1)](https://habr.com/ru/articles/1010628/)
+- [Два сервера дома: аварийная инфраструктура на списанном железе](https://habr.com/ru/articles/1074564/)

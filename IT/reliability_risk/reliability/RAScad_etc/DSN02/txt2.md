@@ -5,7 +5,7 @@
 
 - `ServiceError` — ошибка в процессе диагностики или ремонта;
 - `SPF` — отказ автоматического восстановления, после которого система попадает в состояние single point of failure;
-- `Latent1` — скрытый постоянный отказ одного резервного компонента, при котором система ещё работает, но резерв уже фактически потерян. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/1419432341/594457a8-e0a8-47cf-abee-20e24d111586/RAScad_DSN02.pdf?AWSAccessKeyId=ASIA2F3EMEYE5VRBSLNR&Signature=ytYwyo05erbnXq4Rc%2BMw8ZuNex8%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEFsaCXVzLWVhc3QtMSJGMEQCIBA%2FikyCBJrC23kuB6F4qKRMNaVW%2F23Ck2CUedgBYn1GAiAb%2Ftb1z2FfaRzbYCxTblIc5CXZLc%2BJUDkZ487wcYBw2CrzBAgjEAEaDDY5OTc1MzMwOTcwNSIM%2FxAV3dB33mUeDNysKtAEKjP3%2B7Jf9osilzGMwY6OJBinh2HhwdeoWSDTVE3PHKEXWe3fxmF2KK4IFsaq4B0rhvjToIUhkhBN%2BtCTPztzB7CiZrL7ZFGVcZhTtW99fjbPiMD%2BP1iWpteWaYf%2F98mWXgjjn3i3Q8fbmWd21YjC36vkn5%2F5VpHh6ZYe9eS%2FDRO1EZYSnNvqvPbqL5%2FetCz4d8t9L1Rc96%2FNA1%2BtvNur3egF%2FHkZip1wI538nbDbCLLRuFoc%2FdolDV%2B4BHfnH9BeY2X5bXbosz8pyPYgypMuLC6FfGNqn%2FMBqiqaWdgh1cQLWtIZ9fpWLZN6P7lhteCaocrynQe7Y4Rv6FJ6QBtHS9LDwbUAhdve56wII9xTYQVI9dy1RK6VaFjMg7d39C1sT2EOTcguz8sYV%2F6c1gNdE5r1nP8TAAwcaxS1cnuE2ZZtDwrzGEV653qq2dE5fzY5jv2EphhFKJeNlGaPAH5orlN%2BEoK3pWZo5SQcutj9gsY%2FMFztPM3mj7m0BBDEj5NTX%2FxalCBJTqGPudMbWzMLJ0Ro%2B5KnPLVDJ67bWnjYY%2FkK6g9BVCKCdyVaZABP%2BTQYxRcb66NLw8aPip7qZDvNaARCbrE4edNO4pPkmWDZZo%2BLDIvlb92xiORXWQpzjE0CnVTeQjpSdF9XmTYSDxSRbrvAgHvJtMpWznwHf0eeevofnfBT%2Bx0ZWZBYz%2BB92vTzrCjWj1fPqSmuozRWD7FTSK%2FK8Um1TSSXICYdwMJ%2FpHiz2AHpnXtmRttg46VsTpqhdZxQ%2F%2FkJYbylDZegf12vwjCW2LzUBjqZAfdtljog00hSnT%2FJJGEIfoPt9V6othWwTGy%2Bx4vro89dGCplMmRkVRF78mSUXsdpHW596mgZ5tOR31%2F8vpvfOCaDLBAtcSjYhJWcwyj2pkWmBI0fSqUh3dDC2jsyAPaiAiebW2aJmyK7ET8qR%2FsJuMepYNuZjYf9k22mrMy3IhhVKpaRdcsWbD%2FMpNvRa%2BoNcfQe4Oy21MdOVg%3D%3D&Expires=1787771369)
+- `Latent1` — скрытый постоянный отказ одного резервного компонента, при котором система ещё работает, но резерв уже фактически потерян. 
 
 ## 1. Состояние ServiceError
 
@@ -27,7 +27,7 @@ ServiceError state
 PF1 → ServiceError
 ```
 
-если диагностика и corrective action выполнены неправильно. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/1419432341/594457a8-e0a8-47cf-abee-20e24d111586/RAScad_DSN02.pdf?AWSAccessKeyId=ASIA2F3EMEYE5VRBSLNR&Signature=ytYwyo05erbnXq4Rc%2BMw8ZuNex8%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEFsaCXVzLWVhc3QtMSJGMEQCIBA%2FikyCBJrC23kuB6F4qKRMNaVW%2F23Ck2CUedgBYn1GAiAb%2Ftb1z2FfaRzbYCxTblIc5CXZLc%2BJUDkZ487wcYBw2CrzBAgjEAEaDDY5OTc1MzMwOTcwNSIM%2FxAV3dB33mUeDNysKtAEKjP3%2B7Jf9osilzGMwY6OJBinh2HhwdeoWSDTVE3PHKEXWe3fxmF2KK4IFsaq4B0rhvjToIUhkhBN%2BtCTPztzB7CiZrL7ZFGVcZhTtW99fjbPiMD%2BP1iWpteWaYf%2F98mWXgjjn3i3Q8fbmWd21YjC36vkn5%2F5VpHh6ZYe9eS%2FDRO1EZYSnNvqvPbqL5%2FetCz4d8t9L1Rc96%2FNA1%2BtvNur3egF%2FHkZip1wI538nbDbCLLRuFoc%2FdolDV%2B4BHfnH9BeY2X5bXbosz8pyPYgypMuLC6FfGNqn%2FMBqiqaWdgh1cQLWtIZ9fpWLZN6P7lhteCaocrynQe7Y4Rv6FJ6QBtHS9LDwbUAhdve56wII9xTYQVI9dy1RK6VaFjMg7d39C1sT2EOTcguz8sYV%2F6c1gNdE5r1nP8TAAwcaxS1cnuE2ZZtDwrzGEV653qq2dE5fzY5jv2EphhFKJeNlGaPAH5orlN%2BEoK3pWZo5SQcutj9gsY%2FMFztPM3mj7m0BBDEj5NTX%2FxalCBJTqGPudMbWzMLJ0Ro%2B5KnPLVDJ67bWnjYY%2FkK6g9BVCKCdyVaZABP%2BTQYxRcb66NLw8aPip7qZDvNaARCbrE4edNO4pPkmWDZZo%2BLDIvlb92xiORXWQpzjE0CnVTeQjpSdF9XmTYSDxSRbrvAgHvJtMpWznwHf0eeevofnfBT%2Bx0ZWZBYz%2BB92vTzrCjWj1fPqSmuozRWD7FTSK%2FK8Um1TSSXICYdwMJ%2FpHiz2AHpnXtmRttg46VsTpqhdZxQ%2F%2FkJYbylDZegf12vwjCW2LzUBjqZAfdtljog00hSnT%2FJJGEIfoPt9V6othWwTGy%2Bx4vro89dGCplMmRkVRF78mSUXsdpHW596mgZ5tOR31%2F8vpvfOCaDLBAtcSjYhJWcwyj2pkWmBI0fSqUh3dDC2jsyAPaiAiebW2aJmyK7ET8qR%2FsJuMepYNuZjYf9k22mrMy3IhhVKpaRdcsWbD%2FMpNvRa%2BoNcfQe4Oy21MdOVg%3D%3D&Expires=1787771369)
+если диагностика и corrective action выполнены неправильно. 
 
 ### Что такое PF1
 
@@ -43,9 +43,11 @@ PF1 = Permanent Fault 1
 
 Для примера:
 
+$$
 \[
 N=2,\qquad K=1.
 \]
+$$
 
 Это означает:
 
@@ -56,9 +58,11 @@ N=2,\qquad K=1.
 
 Поэтому `PF1` — это не обязательно полная недоступность. Это **degraded operational state**:
 
+$$
 \[
 r(PF1)=1.
 \]
+$$
 
 Система доступна, но без нормального резерва.
 
@@ -87,7 +91,7 @@ PF1 → ServiceError
 
 Авторы описывают это так:
 
-> If the repair (diagnosis and corrective action) is successful, the system goes back to the normal state (`PF1 → Ok`). Otherwise, it has to go through the service error state (`PF1 → ServiceError`), which represents a longer downtime (`MTTRFID`). [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/1419432341/594457a8-e0a8-47cf-abee-20e24d111586/RAScad_DSN02.pdf?AWSAccessKeyId=ASIA2F3EMEYE5VRBSLNR&Signature=ytYwyo05erbnXq4Rc%2BMw8ZuNex8%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEFsaCXVzLWVhc3QtMSJGMEQCIBA%2FikyCBJrC23kuB6F4qKRMNaVW%2F23Ck2CUedgBYn1GAiAb%2Ftb1z2FfaRzbYCxTblIc5CXZLc%2BJUDkZ487wcYBw2CrzBAgjEAEaDDY5OTc1MzMwOTcwNSIM%2FxAV3dB33mUeDNysKtAEKjP3%2B7Jf9osilzGMwY6OJBinh2HhwdeoWSDTVE3PHKEXWe3fxmF2KK4IFsaq4B0rhvjToIUhkhBN%2BtCTPztzB7CiZrL7ZFGVcZhTtW99fjbPiMD%2BP1iWpteWaYf%2F98mWXgjjn3i3Q8fbmWd21YjC36vkn5%2F5VpHh6ZYe9eS%2FDRO1EZYSnNvqvPbqL5%2FetCz4d8t9L1Rc96%2FNA1%2BtvNur3egF%2FHkZip1wI538nbDbCLLRuFoc%2FdolDV%2B4BHfnH9BeY2X5bXbosz8pyPYgypMuLC6FfGNqn%2FMBqiqaWdgh1cQLWtIZ9fpWLZN6P7lhteCaocrynQe7Y4Rv6FJ6QBtHS9LDwbUAhdve56wII9xTYQVI9dy1RK6VaFjMg7d39C1sT2EOTcguz8sYV%2F6c1gNdE5r1nP8TAAwcaxS1cnuE2ZZtDwrzGEV653qq2dE5fzY5jv2EphhFKJeNlGaPAH5orlN%2BEoK3pWZo5SQcutj9gsY%2FMFztPM3mj7m0BBDEj5NTX%2FxalCBJTqGPudMbWzMLJ0Ro%2B5KnPLVDJ67bWnjYY%2FkK6g9BVCKCdyVaZABP%2BTQYxRcb66NLw8aPip7qZDvNaARCbrE4edNO4pPkmWDZZo%2BLDIvlb92xiORXWQpzjE0CnVTeQjpSdF9XmTYSDxSRbrvAgHvJtMpWznwHf0eeevofnfBT%2Bx0ZWZBYz%2BB92vTzrCjWj1fPqSmuozRWD7FTSK%2FK8Um1TSSXICYdwMJ%2FpHiz2AHpnXtmRttg46VsTpqhdZxQ%2F%2FkJYbylDZegf12vwjCW2LzUBjqZAfdtljog00hSnT%2FJJGEIfoPt9V6othWwTGy%2Bx4vro89dGCplMmRkVRF78mSUXsdpHW596mgZ5tOR31%2F8vpvfOCaDLBAtcSjYhJWcwyj2pkWmBI0fSqUh3dDC2jsyAPaiAiebW2aJmyK7ET8qR%2FsJuMepYNuZjYf9k22mrMy3IhhVKpaRdcsWbD%2FMpNvRa%2BoNcfQe4Oy21MdOVg%3D%3D&Expires=1787771369)
+> If the repair (diagnosis and corrective action) is successful, the system goes back to the normal state (`PF1 → Ok`). Otherwise, it has to go through the service error state (`PF1 → ServiceError`), which represents a longer downtime (`MTTRFID`). 
 
 ### Что означает ошибка
 
@@ -107,17 +111,21 @@ PF1 → ServiceError
 
 Для availability-модели состояние `ServiceError` имеет:
 
+$$
 \[
 r(ServiceError)=0.
 \]
+$$
 
 Причина: к этому моменту модель предполагает, что система находится в extended downtime и пользовательская функция недоступна.
 
 Продолжительность такого состояния характеризуется параметром:
 
+$$
 \[
 MTTRFID,
 \]
+$$
 
 где:
 
@@ -187,7 +195,7 @@ single point of failure
 AR1 → SPF
 ```
 
-если automatic recovery не сработал. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/1419432341/594457a8-e0a8-47cf-abee-20e24d111586/RAScad_DSN02.pdf?AWSAccessKeyId=ASIA2F3EMEYE5VRBSLNR&Signature=ytYwyo05erbnXq4Rc%2BMw8ZuNex8%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEFsaCXVzLWVhc3QtMSJGMEQCIBA%2FikyCBJrC23kuB6F4qKRMNaVW%2F23Ck2CUedgBYn1GAiAb%2Ftb1z2FfaRzbYCxTblIc5CXZLc%2BJUDkZ487wcYBw2CrzBAgjEAEaDDY5OTc1MzMwOTcwNSIM%2FxAV3dB33mUeDNysKtAEKjP3%2B7Jf9osilzGMwY6OJBinh2HhwdeoWSDTVE3PHKEXWe3fxmF2KK4IFsaq4B0rhvjToIUhkhBN%2BtCTPztzB7CiZrL7ZFGVcZhTtW99fjbPiMD%2BP1iWpteWaYf%2F98mWXgjjn3i3Q8fbmWd21YjC36vkn5%2F5VpHh6ZYe9eS%2FDRO1EZYSnNvqvPbqL5%2FetCz4d8t9L1Rc96%2FNA1%2BtvNur3egF%2FHkZip1wI538nbDbCLLRuFoc%2FdolDV%2B4BHfnH9BeY2X5bXbosz8pyPYgypMuLC6FfGNqn%2FMBqiqaWdgh1cQLWtIZ9fpWLZN6P7lhteCaocrynQe7Y4Rv6FJ6QBtHS9LDwbUAhdve56wII9xTYQVI9dy1RK6VaFjMg7d39C1sT2EOTcguz8sYV%2F6c1gNdE5r1nP8TAAwcaxS1cnuE2ZZtDwrzGEV653qq2dE5fzY5jv2EphhFKJeNlGaPAH5orlN%2BEoK3pWZo5SQcutj9gsY%2FMFztPM3mj7m0BBDEj5NTX%2FxalCBJTqGPudMbWzMLJ0Ro%2B5KnPLVDJ67bWnjYY%2FkK6g9BVCKCdyVaZABP%2BTQYxRcb66NLw8aPip7qZDvNaARCbrE4edNO4pPkmWDZZo%2BLDIvlb92xiORXWQpzjE0CnVTeQjpSdF9XmTYSDxSRbrvAgHvJtMpWznwHf0eeevofnfBT%2Bx0ZWZBYz%2BB92vTzrCjWj1fPqSmuozRWD7FTSK%2FK8Um1TSSXICYdwMJ%2FpHiz2AHpnXtmRttg46VsTpqhdZxQ%2F%2FkJYbylDZegf12vwjCW2LzUBjqZAfdtljog00hSnT%2FJJGEIfoPt9V6othWwTGy%2Bx4vro89dGCplMmRkVRF78mSUXsdpHW596mgZ5tOR31%2F8vpvfOCaDLBAtcSjYhJWcwyj2pkWmBI0fSqUh3dDC2jsyAPaiAiebW2aJmyK7ET8qR%2FsJuMepYNuZjYf9k22mrMy3IhhVKpaRdcsWbD%2FMpNvRa%2BoNcfQe4Oy21MdOVg%3D%3D&Expires=1787771369)
+если automatic recovery не сработал. 
 
 ### Как возникает SPF
 
@@ -215,7 +223,7 @@ AR1 → SPF
 
 Авторы формулируют это следующим образом:
 
-> If the AR works, the system goes into a degraded mode (`AR1 → PF1`). Otherwise, it goes into the single point of failure state (`AR1 → SPF`), where it stays for a period of time (`Tspf`) defined by the user. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/1419432341/594457a8-e0a8-47cf-abee-20e24d111586/RAScad_DSN02.pdf?AWSAccessKeyId=ASIA2F3EMEYE5VRBSLNR&Signature=ytYwyo05erbnXq4Rc%2BMw8ZuNex8%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEFsaCXVzLWVhc3QtMSJGMEQCIBA%2FikyCBJrC23kuB6F4qKRMNaVW%2F23Ck2CUedgBYn1GAiAb%2Ftb1z2FfaRzbYCxTblIc5CXZLc%2BJUDkZ487wcYBw2CrzBAgjEAEaDDY5OTc1MzMwOTcwNSIM%2FxAV3dB33mUeDNysKtAEKjP3%2B7Jf9osilzGMwY6OJBinh2HhwdeoWSDTVE3PHKEXWe3fxmF2KK4IFsaq4B0rhvjToIUhkhBN%2BtCTPztzB7CiZrL7ZFGVcZhTtW99fjbPiMD%2BP1iWpteWaYf%2F98mWXgjjn3i3Q8fbmWd21YjC36vkn5%2F5VpHh6ZYe9eS%2FDRO1EZYSnNvqvPbqL5%2FetCz4d8t9L1Rc96%2FNA1%2BtvNur3egF%2FHkZip1wI538nbDbCLLRuFoc%2FdolDV%2B4BHfnH9BeY2X5bXbosz8pyPYgypMuLC6FfGNqn%2FMBqiqaWdgh1cQLWtIZ9fpWLZN6P7lhteCaocrynQe7Y4Rv6FJ6QBtHS9LDwbUAhdve56wII9xTYQVI9dy1RK6VaFjMg7d39C1sT2EOTcguz8sYV%2F6c1gNdE5r1nP8TAAwcaxS1cnuE2ZZtDwrzGEV653qq2dE5fzY5jv2EphhFKJeNlGaPAH5orlN%2BEoK3pWZo5SQcutj9gsY%2FMFztPM3mj7m0BBDEj5NTX%2FxalCBJTqGPudMbWzMLJ0Ro%2B5KnPLVDJ67bWnjYY%2FkK6g9BVCKCdyVaZABP%2BTQYxRcb66NLw8aPip7qZDvNaARCbrE4edNO4pPkmWDZZo%2BLDIvlb92xiORXWQpzjE0CnVTeQjpSdF9XmTYSDxSRbrvAgHvJtMpWznwHf0eeevofnfBT%2Bx0ZWZBYz%2BB92vTzrCjWj1fPqSmuozRWD7FTSK%2FK8Um1TSSXICYdwMJ%2FpHiz2AHpnXtmRttg46VsTpqhdZxQ%2F%2FkJYbylDZegf12vwjCW2LzUBjqZAfdtljog00hSnT%2FJJGEIfoPt9V6othWwTGy%2Bx4vro89dGCplMmRkVRF78mSUXsdpHW596mgZ5tOR31%2F8vpvfOCaDLBAtcSjYhJWcwyj2pkWmBI0fSqUh3dDC2jsyAPaiAiebW2aJmyK7ET8qR%2FsJuMepYNuZjYf9k22mrMy3IhhVKpaRdcsWbD%2FMpNvRa%2BoNcfQe4Oy21MdOVg%3D%3D&Expires=1787771369)
+> If the AR works, the system goes into a degraded mode (`AR1 → PF1`). Otherwise, it goes into the single point of failure state (`AR1 → SPF`), where it stays for a period of time (`Tspf`) defined by the user. 
 
 То есть `SPF` возникает не просто от самого первого отказа. Первый отказ может быть пережит благодаря резерву. `SPF` возникает тогда, когда механизм, который должен был безопасно перераспределить функцию или перевести систему в degraded mode, не завершился успешно.
 
@@ -227,7 +235,7 @@ AR1 → SPF
 
 Перевод:
 
-> recovery может завершиться неудачей, например из-за повреждения данных. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/1419432341/594457a8-e0a8-47cf-abee-20e24d111586/RAScad_DSN02.pdf?AWSAccessKeyId=ASIA2F3EMEYE5VRBSLNR&Signature=ytYwyo05erbnXq4Rc%2BMw8ZuNex8%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEFsaCXVzLWVhc3QtMSJGMEQCIBA%2FikyCBJrC23kuB6F4qKRMNaVW%2F23Ck2CUedgBYn1GAiAb%2Ftb1z2FfaRzbYCxTblIc5CXZLc%2BJUDkZ487wcYBw2CrzBAgjEAEaDDY5OTc1MzMwOTcwNSIM%2FxAV3dB33mUeDNysKtAEKjP3%2B7Jf9osilzGMwY6OJBinh2HhwdeoWSDTVE3PHKEXWe3fxmF2KK4IFsaq4B0rhvjToIUhkhBN%2BtCTPztzB7CiZrL7ZFGVcZhTtW99fjbPiMD%2BP1iWpteWaYf%2F98mWXgjjn3i3Q8fbmWd21YjC36vkn5%2F5VpHh6ZYe9eS%2FDRO1EZYSnNvqvPbqL5%2FetCz4d8t9L1Rc96%2FNA1%2BtvNur3egF%2FHkZip1wI538nbDbCLLRuFoc%2FdolDV%2B4BHfnH9BeY2X5bXbosz8pyPYgypMuLC6FfGNqn%2FMBqiqaWdgh1cQLWtIZ9fpWLZN6P7lhteCaocrynQe7Y4Rv6FJ6QBtHS9LDwbUAhdve56wII9xTYQVI9dy1RK6VaFjMg7d39C1sT2EOTcguz8sYV%2F6c1gNdE5r1nP8TAAwcaxS1cnuE2ZZtDwrzGEV653qq2dE5fzY5jv2EphhFKJeNlGaPAH5orlN%2BEoK3pWZo5SQcutj9gsY%2FMFztPM3mj7m0BBDEj5NTX%2FxalCBJTqGPudMbWzMLJ0Ro%2B5KnPLVDJ67bWnjYY%2FkK6g9BVCKCdyVaZABP%2BTQYxRcb66NLw8aPip7qZDvNaARCbrE4edNO4pPkmWDZZo%2BLDIvlb92xiORXWQpzjE0CnVTeQjpSdF9XmTYSDxSRbrvAgHvJtMpWznwHf0eeevofnfBT%2Bx0ZWZBYz%2BB92vTzrCjWj1fPqSmuozRWD7FTSK%2FK8Um1TSSXICYdwMJ%2FpHiz2AHpnXtmRttg46VsTpqhdZxQ%2F%2FkJYbylDZegf12vwjCW2LzUBjqZAfdtljog00hSnT%2FJJGEIfoPt9V6othWwTGy%2Bx4vro89dGCplMmRkVRF78mSUXsdpHW596mgZ5tOR31%2F8vpvfOCaDLBAtcSjYhJWcwyj2pkWmBI0fSqUh3dDC2jsyAPaiAiebW2aJmyK7ET8qR%2FsJuMepYNuZjYf9k22mrMy3IhhVKpaRdcsWbD%2FMpNvRa%2BoNcfQe4Oy21MdOVg%3D%3D&Expires=1787771369)
+> recovery может завершиться неудачей, например из-за повреждения данных. 
 
 Обобщённо возможны:
 
@@ -246,21 +254,29 @@ AR1 → SPF
 
 Для Figure 4:
 
+$$
 \[
 r(SPF)=0.
 \]
+$$
 
 Причина: система не выполняет требуемую функцию.
 
 Это отличие от `PF1`:
 
+$$
 \[
 r(PF1)=1,
 \]
+$$
 
+и
+
+$$
 \[
 r(SPF)=0.
 \]
+$$
 
 Сравнение:
 
@@ -324,13 +340,19 @@ Pspf: Probability of SPF during AR
 
 Для одной операции recovery можно концептуально записать:
 
+$$
 \[
 P(\text{AR succeeds})=1-P_{spf},
 \]
+$$
 
+и
+
+$$
 \[
 P(\text{AR fails})=P_{spf}.
 \]
+$$
 
 При этом статья не обязательно задаёт в таком виде все вероятностные переходы на рисунке; это удобная интерпретация смысла параметра `Pspf`.
 
@@ -354,7 +376,7 @@ Latent1
 
 Авторы пишут:
 
-> An non-detected permanent fault (latent fault) changes the system to another degraded mode — the latent fault state (`Ok → Latent1`). [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/1419432341/594457a8-e0a8-47cf-abee-20e24d111586/RAScad_DSN02.pdf?AWSAccessKeyId=ASIA2F3EMEYE5VRBSLNR&Signature=ytYwyo05erbnXq4Rc%2BMw8ZuNex8%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEFsaCXVzLWVhc3QtMSJGMEQCIBA%2FikyCBJrC23kuB6F4qKRMNaVW%2F23Ck2CUedgBYn1GAiAb%2Ftb1z2FfaRzbYCxTblIc5CXZLc%2BJUDkZ487wcYBw2CrzBAgjEAEaDDY5OTc1MzMwOTcwNSIM%2FxAV3dB33mUeDNysKtAEKjP3%2B7Jf9osilzGMwY6OJBinh2HhwdeoWSDTVE3PHKEXWe3fxmF2KK4IFsaq4B0rhvjToIUhkhBN%2BtCTPztzB7CiZrL7ZFGVcZhTtW99fjbPiMD%2BP1iWpteWaYf%2F98mWXgjjn3i3Q8fbmWd21YjC36vkn5%2F5VpHh6ZYe9eS%2FDRO1EZYSnNvqvPbqL5%2FetCz4d8t9L1Rc96%2FNA1%2BtvNur3egF%2FHkZip1wI538nbDbCLLRuFoc%2FdolDV%2B4BHfnH9BeY2X5bXbosz8pyPYgypMuLC6FfGNqn%2FMBqiqaWdgh1cQLWtIZ9fpWLZN6P7lhteCaocrynQe7Y4Rv6FJ6QBtHS9LDwbUAhdve56wII9xTYQVI9dy1RK6VaFjMg7d39C1sT2EOTcguz8sYV%2F6c1gNdE5r1nP8TAAwcaxS1cnuE2ZZtDwrzGEV653qq2dE5fzY5jv2EphhFKJeNlGaPAH5orlN%2BEoK3pWZo5SQcutj9gsY%2FMFztPM3mj7m0BBDEj5NTX%2FxalCBJTqGPudMbWzMLJ0Ro%2B5KnPLVDJ67bWnjYY%2FkK6g9BVCKCdyVaZABP%2BTQYxRcb66NLw8aPip7qZDvNaARCbrE4edNO4pPkmWDZZo%2BLDIvlb92xiORXWQpzjE0CnVTeQjpSdF9XmTYSDxSRbrvAgHvJtMpWznwHf0eeevofnfBT%2Bx0ZWZBYz%2BB92vTzrCjWj1fPqSmuozRWD7FTSK%2FK8Um1TSSXICYdwMJ%2FpHiz2AHpnXtmRttg46VsTpqhdZxQ%2F%2FkJYbylDZegf12vwjCW2LzUBjqZAfdtljog00hSnT%2FJJGEIfoPt9V6othWwTGy%2Bx4vro89dGCplMmRkVRF78mSUXsdpHW596mgZ5tOR31%2F8vpvfOCaDLBAtcSjYhJWcwyj2pkWmBI0fSqUh3dDC2jsyAPaiAiebW2aJmyK7ET8qR%2FsJuMepYNuZjYf9k22mrMy3IhhVKpaRdcsWbD%2FMpNvRa%2BoNcfQe4Oy21MdOVg%3D%3D&Expires=1787771369)
+> An non-detected permanent fault (latent fault) changes the system to another degraded mode — the latent fault state (`Ok → Latent1`). 
 
 Более грамотно по-русски:
 
@@ -364,9 +386,11 @@ Latent1
 
 Для:
 
+$$
 \[
 N=2,\qquad K=1
 \]
+$$
 
 пусть компонент A отказал, но отказ не обнаружен, а компонент B продолжает работать:
 
@@ -378,15 +402,19 @@ Service = работает
 
 Пользовательская функция ещё выполняется. Поэтому:
 
+$$
 \[
 r(Latent1)=1.
 \]
+$$
 
 Но система уже находится в опасном состоянии:
 
+$$
 \[
 N_{\text{working}}=1,\qquad K=1.
 \]
+$$
 
 То есть ровно минимально необходимое число компонентов остаётся работоспособным. Запаса больше нет.
 
@@ -394,13 +422,19 @@ N_{\text{working}}=1,\qquad K=1.
 
 С точки зрения текущей доступности оба состояния могут иметь reward 1:
 
+$$
 \[
 r(PF1)=1,
 \]
+$$
 
+и
+
+$$
 \[
 r(Latent1)=1.
 \]
+$$
 
 Но они различаются с точки зрения observability и service response.
 
@@ -423,25 +457,31 @@ Reward function в статье описывает не исправность �
 Авторы объясняют, что:
 
 - reward rate 1 означает operational/up state;
-- reward rate 0 означает failure/down state. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/1419432341/594457a8-e0a8-47cf-abee-20e24d111586/RAScad_DSN02.pdf?AWSAccessKeyId=ASIA2F3EMEYE5VRBSLNR&Signature=ytYwyo05erbnXq4Rc%2BMw8ZuNex8%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEFsaCXVzLWVhc3QtMSJGMEQCIBA%2FikyCBJrC23kuB6F4qKRMNaVW%2F23Ck2CUedgBYn1GAiAb%2Ftb1z2FfaRzbYCxTblIc5CXZLc%2BJUDkZ487wcYBw2CrzBAgjEAEaDDY5OTc1MzMwOTcwNSIM%2FxAV3dB33mUeDNysKtAEKjP3%2B7Jf9osilzGMwY6OJBinh2HhwdeoWSDTVE3PHKEXWe3fxmF2KK4IFsaq4B0rhvjToIUhkhBN%2BtCTPztzB7CiZrL7ZFGVcZhTtW99fjbPiMD%2BP1iWpteWaYf%2F98mWXgjjn3i3Q8fbmWd21YjC36vkn5%2F5VpHh6ZYe9eS%2FDRO1EZYSnNvqvPbqL5%2FetCz4d8t9L1Rc96%2FNA1%2BtvNur3egF%2FHkZip1wI538nbDbCLLRuFoc%2FdolDV%2B4BHfnH9BeY2X5bXbosz8pyPYgypMuLC6FfGNqn%2FMBqiqaWdgh1cQLWtIZ9fpWLZN6P7lhteCaocrynQe7Y4Rv6FJ6QBtHS9LDwbUAhdve56wII9xTYQVI9dy1RK6VaFjMg7d39C1sT2EOTcguz8sYV%2F6c1gNdE5r1nP8TAAwcaxS1cnuE2ZZtDwrzGEV653qq2dE5fzY5jv2EphhFKJeNlGaPAH5orlN%2BEoK3pWZo5SQcutj9gsY%2FMFztPM3mj7m0BBDEj5NTX%2FxalCBJTqGPudMbWzMLJ0Ro%2B5KnPLVDJ67bWnjYY%2FkK6g9BVCKCdyVaZABP%2BTQYxRcb66NLw8aPip7qZDvNaARCbrE4edNO4pPkmWDZZo%2BLDIvlb92xiORXWQpzjE0CnVTeQjpSdF9XmTYSDxSRbrvAgHvJtMpWznwHf0eeevofnfBT%2Bx0ZWZBYz%2BB92vTzrCjWj1fPqSmuozRWD7FTSK%2FK8Um1TSSXICYdwMJ%2FpHiz2AHpnXtmRttg46VsTpqhdZxQ%2F%2FkJYbylDZegf12vwjCW2LzUBjqZAfdtljog00hSnT%2FJJGEIfoPt9V6othWwTGy%2Bx4vro89dGCplMmRkVRF78mSUXsdpHW596mgZ5tOR31%2F8vpvfOCaDLBAtcSjYhJWcwyj2pkWmBI0fSqUh3dDC2jsyAPaiAiebW2aJmyK7ET8qR%2FsJuMepYNuZjYf9k22mrMy3IhhVKpaRdcsWbD%2FMpNvRa%2BoNcfQe4Oy21MdOVg%3D%3D&Expires=1787771369)
+- reward rate 0 означает failure/down state. 
 
 В `Latent1` один компонент уже отказал, но второй компонент всё ещё обеспечивает требуемую функцию. При \(N=2,\ K=1\) условие работоспособности:
 
+$$
 \[
 N_{\text{working}}\geq K.
 \]
+$$
 
 В `Latent1`:
 
+$$
 \[
 1\geq 1.
 \]
+$$
 
 Следовательно:
 
+$$
 \[
 r(Latent1)=1.
 \]
+$$
 
 Но это не означает, что `Latent1` является нормальным состоянием. Это **операционно доступное, но рискованное деградированное состояние**.
 
@@ -465,21 +505,27 @@ PF2 / Down
 
 После первого скрытого отказа:
 
+$$
 \[
 N_{\text{working}}=1.
 \]
+$$
 
 После второго permanent fault:
 
+$$
 \[
 N_{\text{working}}=0.
 \]
+$$
 
 Так как:
 
+$$
 \[
 0<K=1,
 \]
+$$
 
 система недоступна. Поэтому второй permanent fault переводит систему в `PF2`, а не в `Latent2`.
 
@@ -494,11 +540,13 @@ N_{\text{working}}=0.
 
 Но при двух компонентах и требовании одного работающего компонента это невозможно:
 
+$$
 \[
 N=2,\quad K=1,\quad \text{два отказа}
 \Rightarrow
 0 \text{ работающих компонентов}.
 \]
+$$
 
 Следовательно, `Latent2` не может быть операционно доступным состоянием в этой конкретной конфигурации.
 
@@ -506,15 +554,19 @@ N=2,\quad K=1,\quad \text{два отказа}
 
 Отсутствие `Latent2` не является универсальным законом. Оно обусловлено примером:
 
+$$
 \[
 N=2,\qquad K=1.
 \]
+$$
 
 Если взять:
 
+$$
 \[
 N=3,\qquad K=1,
 \]
+$$
 
 то возможна цепочка:
 
@@ -533,39 +585,49 @@ Ok → Latent1 → Latent2 → PF3
 
 Для:
 
+$$
 \[
 N=3,\qquad K=1
 \]
+$$
 
 в `Latent2`:
 
+$$
 \[
 N_{\text{working}}=1\geq K,
 \]
+$$
 
 поэтому:
 
+$$
 \[
 r(Latent2)=1.
 \]
+$$
 
 Если же:
 
+$$
 \[
 N=3,\qquad K=2,
 \]
+$$
 
 то после двух скрытых отказов останется только один работающий компонент:
 
+$$
 \[
 1<K=2.
 \]
+$$
 
 В этом случае `Latent2` уже не является доступным состоянием; система будет недоступна после второго отказа.
 
 ## 7. Почему в статье упоминается повторение состояний
 
-Авторы указывают, что число состояний зависит от \(N\) и \(K\). При больших значениях резервирования состояния вроде `TF1`, `AR1`, `PF1` и `Latent1` повторяются для более высоких уровней отказов. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/1419432341/594457a8-e0a8-47cf-abee-20e24d111586/RAScad_DSN02.pdf?AWSAccessKeyId=ASIA2F3EMEYE5VRBSLNR&Signature=ytYwyo05erbnXq4Rc%2BMw8ZuNex8%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEFsaCXVzLWVhc3QtMSJGMEQCIBA%2FikyCBJrC23kuB6F4qKRMNaVW%2F23Ck2CUedgBYn1GAiAb%2Ftb1z2FfaRzbYCxTblIc5CXZLc%2BJUDkZ487wcYBw2CrzBAgjEAEaDDY5OTc1MzMwOTcwNSIM%2FxAV3dB33mUeDNysKtAEKjP3%2B7Jf9osilzGMwY6OJBinh2HhwdeoWSDTVE3PHKEXWe3fxmF2KK4IFsaq4B0rhvjToIUhkhBN%2BtCTPztzB7CiZrL7ZFGVcZhTtW99fjbPiMD%2BP1iWpteWaYf%2F98mWXgjjn3i3Q8fbmWd21YjC36vkn5%2F5VpHh6ZYe9eS%2FDRO1EZYSnNvqvPbqL5%2FetCz4d8t9L1Rc96%2FNA1%2BtvNur3egF%2FHkZip1wI538nbDbCLLRuFoc%2FdolDV%2B4BHfnH9BeY2X5bXbosz8pyPYgypMuLC6FfGNqn%2FMBqiqaWdgh1cQLWtIZ9fpWLZN6P7lhteCaocrynQe7Y4Rv6FJ6QBtHS9LDwbUAhdve56wII9xTYQVI9dy1RK6VaFjMg7d39C1sT2EOTcguz8sYV%2F6c1gNdE5r1nP8TAAwcaxS1cnuE2ZZtDwrzGEV653qq2dE5fzY5jv2EphhFKJeNlGaPAH5orlN%2BEoK3pWZo5SQcutj9gsY%2FMFztPM3mj7m0BBDEj5NTX%2FxalCBJTqGPudMbWzMLJ0Ro%2B5KnPLVDJ67bWnjYY%2FkK6g9BVCKCdyVaZABP%2BTQYxRcb66NLw8aPip7qZDvNaARCbrE4edNO4pPkmWDZZo%2BLDIvlb92xiORXWQpzjE0CnVTeQjpSdF9XmTYSDxSRbrvAgHvJtMpWznwHf0eeevofnfBT%2Bx0ZWZBYz%2BB92vTzrCjWj1fPqSmuozRWD7FTSK%2FK8Um1TSSXICYdwMJ%2FpHiz2AHpnXtmRttg46VsTpqhdZxQ%2F%2FkJYbylDZegf12vwjCW2LzUBjqZAfdtljog00hSnT%2FJJGEIfoPt9V6othWwTGy%2Bx4vro89dGCplMmRkVRF78mSUXsdpHW596mgZ5tOR31%2F8vpvfOCaDLBAtcSjYhJWcwyj2pkWmBI0fSqUh3dDC2jsyAPaiAiebW2aJmyK7ET8qR%2FsJuMepYNuZjYf9k22mrMy3IhhVKpaRdcsWbD%2FMpNvRa%2BoNcfQe4Oy21MdOVg%3D%3D&Expires=1787771369)
+Авторы указывают, что число состояний зависит от \(N\) и \(K\). При больших значениях резервирования состояния вроде `TF1`, `AR1`, `PF1` и `Latent1` повторяются для более высоких уровней отказов. 
 
 Это означает, что в полной автоматически сгенерированной модели может существовать логика, аналогичная:
 
@@ -580,15 +642,19 @@ Latent3
 
 Но для показательного случая:
 
+$$
 \[
 N=2,\qquad K=1
 \]
+$$
 
 максимально возможен только один скрытый отказ при сохранении доступности:
 
+$$
 \[
 N_{\text{working}}=1.
 \]
+$$
 
 После следующего permanent fault наступает отказ системы, поэтому Figure 4 содержит `Latent1`, но не `Latent2`.
 
@@ -631,6 +697,7 @@ stateDiagram-v2
 
 ### ServiceError
 
+$$
 \[
 PF1
 \xrightarrow{\text{incorrect diagnosis/action}}
@@ -638,11 +705,13 @@ ServiceError,
 \qquad
 r=0.
 \]
+$$
 
 Это ошибка **сервисного процесса**.
 
 ### SPF
 
+$$
 \[
 AR1
 \xrightarrow{\text{recovery failure}}
@@ -650,11 +719,12 @@ SPF,
 \qquad
 r=0.
 \]
+$$
 
 Это ошибка **automatic recovery/failover**.
 
 ### Latent1
-
+$$
 \[
 Ok
 \xrightarrow{\text{undetected permanent fault}}
@@ -662,6 +732,7 @@ Latent1,
 \qquad
 r=1
 \]
+$$
 
 для \(N=2,\ K=1\), потому что один оставшийся компонент всё ещё поддерживает требуемую функцию.
 

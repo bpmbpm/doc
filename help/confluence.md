@@ -2,6 +2,7 @@ confluence
 
 ### 1
 - [Как выжать максимум из Confluence. Глава первая](https://habr.com/ru/companies/tbank/articles/769694)
+- [Ссылки на конкретную часть статьи (якорь в статье)](https://atlassian.engexp.ru/docs/confluence/stati-dopolnitelno/ssylki-na-konkretnuyu-chast-stati-yakor-v-state/)
 ### info
 - https://atlassian.engexp.ru/docs/confluence/prostranstva/pro-prostranstva-v-confluence/ Как правило, пространство называется так же как и проект в Jira.
 - https://www.atlassian.com/ru/software/confluence/resources/guides/get-started/overview#key-terms ;

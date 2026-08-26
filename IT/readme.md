@@ -11,3 +11,5 @@ https://github.com/bpmbpm/doc/tree/main/mix/HR
 импортозамещение https://github.com/bpmbpm/doc/tree/main/IT/replacement
 
 
+## 3
+- [Что происходит, когда вы открываете сайт в браузере: путь одного запроса](https://habr.com/ru/companies/timeweb/articles/1073860/)

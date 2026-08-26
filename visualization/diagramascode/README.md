@@ -54,3 +54,4 @@
 ### 2
 - [Code as Docs](https://habr.com/ru/articles/969278/)
 - [Лучшие практики в Sequence-диаграммах для системных аналитиков](https://habr.com/ru/articles/969192/)
+- [Sequence в PlantUML — проще, понятнее, ярче… И стандартнее](https://habr.com/ru/companies/sberbank/articles/1072650/)

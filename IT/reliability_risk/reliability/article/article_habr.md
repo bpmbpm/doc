@@ -1,7 +1,7 @@
 ## 1 base
 
 - [Надежность в процессах. Часть 1](https://habr.com/ru/articles/844992/)
-- [Надёжность, устойчивость, доступность](https://habr.com/ru/articles/1072108/)
+- [Надёжность, устойчивость, доступность](https://habr.com/ru/articles/1072108/) ; [Базовые модели надежности отказоустойчивого кластера](https://habr.com/ru/articles/1075024/)
 
 ## 2 all
 - [Как умирает техника? Элементы теории надёжности](https://habr.com/ru/companies/ua-hosting/articles/219189/)

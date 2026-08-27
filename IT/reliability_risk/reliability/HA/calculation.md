@@ -7,4 +7,4 @@
 - [Dynamic Fault Tolerance and Task Scheduling in Distributed Systems](https://lup.lub.lu.se/luur/download?func=downloadFile&recordOId=8876351&fileOId=8876355)
 
 ## 3
-- [Hands-On Machine Learning with Scikit-Learn & TensorFlow](https://mathprofi.com/uploads/files/2747_f_41_hands-on-ml.pdf?key=45d711d3550c24aaf46636f317a2dc89/)
+- [Hands-On Machine Learning with Scikit-Learn & TensorFlow](https://mathprofi.com/uploads/files/2747_f_41_hands-on-ml.pdf?key=45d711d3550c24aaf46636f317a2dc89/) Практическое обучение машинному обучению с использованием Scikit-Learn и TensorFlow

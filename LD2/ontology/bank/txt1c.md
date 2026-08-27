@@ -269,7 +269,7 @@ ORDER BY ?account5Sign ?currencyCode
 ## 1. Реализация на классическом RDF (Ограниченный подход)
 В плоском RDF мы привязаны к узлу «Слепок остатка». Мы не можем привязать дату к факту владения.
 
-# В классическом SHACL мы можем проверить только свойство узла Snapshot
+В классическом SHACL мы можем проверить только свойство узла Snapshot
 ```
 ex:PassiveBalanceShape a sh:NodeShape ;
     sh:targetClass rbo:AccountBalanceSnapshot ;
@@ -285,7 +285,7 @@ ex:PassiveBalanceShape a sh:NodeShape ;
 ## 2. Реализация в формате TriG (Именованные графы)
 В TriG мы можем изолировать проверку внутри конкретного операционного дня (графа дня).
 
-# Проверка запускается только внутри графа конкретного дня
+Проверка запускается только внутри графа конкретного дня
 ```
 ex:OperationalDayGraphShape a sh:NodeShape ;
     sh:targetGraph ex:LedgerGraph_2026_08_27 ; 

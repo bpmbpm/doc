@@ -95,15 +95,16 @@ ex:TransactionMapping
    
 ## 🚀 Что происходит в момент SPARQL-запроса?
 Когда аналитик пишет SPARQL-запрос к семантическому слою:
-
+```
 SELECT ?tx WHERE { ?tx a fibo-fbc:AccountingEntry ; ex:currencyCode "RUB" . }
-
+```
 Движок OBDA не сканирует граф (ведь физически триплетов в Triple Store нет). Он смотрит на маппинг ex:TransactionMapping, видит соответствие класса AccountingEntry таблице bank_transactions, а свойства currencyCode — колонке currency.
 Движок моментально транслирует этот SPARQL в нативный и максимально быстрый SQL-запрос к реляционной базе:
-
+```
 SELECT tx_id FROM bank_transactions WHERE currency = 'RUB';
-
+```
 И возвращает пользователю результат в семантическом формате.
+
 ------------------------------
 ## 📌 Ресурсы для работы с R2RML
 
@@ -160,14 +161,14 @@ SELECT tx_id FROM bank_transactions WHERE currency = 'RUB';
 * Какую конкретную форму отчетности (или аналитическую задачу) вы хотите поверх этого графа реализовать?
 
 
-[1] [https://www.researchgate.net](https://www.researchgate.net/publication/367344257_A_Semantic_Model_for_Enhancing_Data-Driven_Open_Banking_Services)
-[2] [https://www.mdpi.com](https://www.mdpi.com/2076-3417/13/3/1447)
-[3] [https://ceur-ws.org](https://ceur-ws.org/Vol-1612/paper6.pdf)
-[4] [https://www.researchgate.net](https://www.researchgate.net/publication/318824704_The_OntoREA_Accounting_Model_Ontology-based_Modeling_of_the_Accounting_Domain)
-[5] [https://spec.edmcouncil.org](https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/)
-[6] [https://www.linkedin.com](https://www.linkedin.com/pulse/part-3-agentic-ai-open-banking-ontologies-based-graph-venkatesh-sh5lc)
-[7] [https://www.researchgate.net](https://www.researchgate.net/publication/291223515_OBDA_Query_Rewriting_or_Materialization_In_Practice_Both)
-[8] [https://www.reddit.com](https://www.reddit.com/r/OntologyEngineering/comments/1sex5bi/obda_explained_what_it_is_what_it_runs_on_how_it/)
+[1] [https://www.researchgate.net](https://www.researchgate.net/publication/367344257_A_Semantic_Model_for_Enhancing_Data-Driven_Open_Banking_Services)  
+[2] [https://www.mdpi.com](https://www.mdpi.com/2076-3417/13/3/1447)  
+[3] [https://ceur-ws.org](https://ceur-ws.org/Vol-1612/paper6.pdf)  
+[4] [https://www.researchgate.net](https://www.researchgate.net/publication/318824704_The_OntoREA_Accounting_Model_Ontology-based_Modeling_of_the_Accounting_Domain)  
+[5] [https://spec.edmcouncil.org](https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/)  
+[6] [https://www.linkedin.com](https://www.linkedin.com/pulse/part-3-agentic-ai-open-banking-ontologies-based-graph-venkatesh-sh5lc)  
+[7] [https://www.researchgate.net](https://www.researchgate.net/publication/291223515_OBDA_Query_Rewriting_or_Materialization_In_Practice_Both)  
+[8] [https://www.reddit.com](https://www.reddit.com/r/OntologyEngineering/comments/1sex5bi/obda_explained_what_it_is_what_it_runs_on_how_it/)  
 
 
 ## 2

@@ -338,7 +338,8 @@ $$
    3. Накопление дельты данных: Пока узел лежал, активный узел ушел далеко вперед по транзакциям. Чтобы догнать его, требуется контролируемый процесс репликации, который безопасно проводить только при минимальной нагрузке.
 
 ------------------------------
-## Примеры сценариев с «окном обслуживания $\beta$»## 1. Базы данных и тяжелая репликация (FinTech / ERP)
+## Примеры сценариев с «окном обслуживания $\beta$»
+## 1. Базы данных и тяжелая репликация (FinTech / ERP)
 
 * Контекст: Кластер из двух серверов баз данных Oracle. Один сервер (Node 1) вышел из строя из-за сбоя оперативной памяти. Система прозрачно переключилась на Node 2.
 * Физический ремонт ($\mu$): Техник приехал в дата-центр через 3 часа, заменил планку памяти и включил сервер. Сервер загрузился, операционная система работает.
@@ -364,7 +365,11 @@ $$
 ## Как это влияет на математику Марковской модели?
 Если бы ремонт был transparent (прозрачным), узел возвращался бы в строй со скоростью $\mu$ (как только починили — сразу работает).
 При nontransparent ремонте эффективная скорость возврата в исходное безопасное состояние падает. Интенсивность $\beta$ рассчитывается как:
-$$\beta = \frac{1}{T_{wait}}$$ 
+
+$$
+\beta = \frac{1}{T_{wait}}
+$$ 
+
 где $T_{wait}$ — среднее время ожидания одобрения или наступления технического окна. Если окна происходят раз в сутки, то $T_{wait} \approx 12$ часов.
 Хотите ли вы посмотреть, как сильно параметр $\beta$ снижает итоговый коэффициент готовности системы на конкретном численном примере в Python?
 
@@ -469,7 +474,7 @@ $$\beta = \frac{1}{T_{wait}}$$
 [4] [https://roc.cs.berkeley.edu](http://roc.cs.berkeley.edu/papers/brown-dissertation-TR.pdf)
 
 
-- https://share.google/aimode/DxWcq5ZGe9T54wLTt
-- https://www.geeksforgeeks.org/computer-networks/fault-tolerance-in-distributed-system/
-- https://www.scirp.org/journal/paperinformation?paperid=18548
-- https://www.researchgate.net/publication/347529856_Resource_Management_for_Improving_Overall_Reliability_of_Multi-Processor_Systems-on-Chip
+- https://share.google/aimode/DxWcq5ZGe9T54wLTt  
+- https://www.geeksforgeeks.org/computer-networks/fault-tolerance-in-distributed-system/  
+- https://www.scirp.org/journal/paperinformation?paperid=18548  
+- https://www.researchgate.net/publication/347529856_Resource_Management_for_Improving_Overall_Reliability_of_Multi-Processor_Systems-on-Chip  

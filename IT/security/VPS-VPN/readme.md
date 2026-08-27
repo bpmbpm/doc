@@ -25,3 +25,4 @@
 
 ## 3
 - [Прячем метаданные в мессенджере: 2-hop onion-lite поверх обычных VLESS + Reality relay, и почему это почти бесплатно](https://habr.com/ru/articles/1047920/)
+- [Нашёл «VPN», который оказался обычным SOCKS5-прокси](https://habr.com/ru/articles/1075128/)

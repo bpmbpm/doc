@@ -14,7 +14,7 @@
 ------------------------------
 ## 2. Цель: Что мы хотим получить в Triple Store (Графе)
 Мы хотим, чтобы эта строка виртуально представлялась в виде следующих RDF-триплетов (в синтаксисе Turtle):
-
+```
 @prefix ex: <http://example.com> .
 @prefix fibo-fbc: <https://edmcouncil.org> .
 @prefix xsd: <http://w3.org> .
@@ -25,11 +25,12 @@ ex:tx_10050 a fibo-fbc:AccountingEntry ;
     ex:hasCreditAccount ex:acc_40817810... ;
     ex:bookingAmount    "15000.00"^^xsd:decimal ;
     ex:currencyCode     "RUB" .
+```
 
 ------------------------------
 ## 3. Сам R2RML-маппинг (В формате Turtle)
 Движок OBDA (например, Ontop или Stardog) считывает этот файл маппинга, чтобы понять, как транслировать SQL-таблицу в граф. Маппинг состоит из логических блоков (TriplesMap).
-
+```
 @prefix rr: <http://w3.org> .
 @prefix ex: <http://example.com> .
 @prefix fibo-fbc: <https://edmcouncil.org> .
@@ -81,6 +82,7 @@ ex:TransactionMapping
             rr:column "currency" 
         ] ;
     ] .
+```
 
 ------------------------------
 ## 🕵️‍♂️ Пошаговое пояснение, как это работает
@@ -174,6 +176,7 @@ SELECT tx_id FROM bank_transactions WHERE currency = 'RUB';
 Ниже представлена готовая схема базовых классов и свойств кастомной онтологии RBO (Russian Banking Ontology) в формате Turtle.
 ## 🛠️ Схема онтологии в формате Turtle (rbo.ttl)
 
+```
 @prefix rdfs: <http://w3.org> .
 @prefix owl:  <http://w3.org> .
 @prefix xsd:  <http://w3.org> .
@@ -294,6 +297,7 @@ rbo:balanceDate a owl:DatatypeProperty ;
     rdfs:domain rbo:AccountBalance ;
     rdfs:range xsd:date ;
     rdfs:label "Дата фиксации остатка" .
+```
 
 ------------------------------
 ## 🕵️‍♂️ Архитектурные особенности этой схемы
@@ -306,7 +310,7 @@ rbo:balanceDate a owl:DatatypeProperty ;
 ------------------------------
 ## 📊 Как на основе этой схемы будет выглядеть экземпляр данных (Пример кредитной операции)
 Если движок OBDA обработает строку из вашей базы через маппинг, он сформирует следующий логический граф:
-
+```
 @prefix ex:  <http://example.com> .
 @prefix rbo: <http://example.com> .
 @prefix xsd: <http://w3.org> .
@@ -333,9 +337,11 @@ ex:Tx_887766 a rbo:AccountingEntry ;
     rbo:amountValue      "15000.00"^^xsd:decimal ;
     rbo:currencyISO      "RUB" ;
     rbo:bookingDate      "2026-08-27T12:00:00Z"^^xsd:dateTime .
+```
 
 Если хотите, мы можем написать SPARQL-запрос для проверки регуляторного правила. Например, "Найти все кредитные договоры физлиц, у которых ссудный счет почему-то открыт на балансовом счете юридических лиц (не начинается на 455/457)".
 Вам интересен пример такого контролирующего SPARQL-запроса для Triple Store?
+
 ------------------------------
 ## 🔗 Дополнительные источники:
 
@@ -348,6 +354,7 @@ ex:Tx_887766 a rbo:AccountingEntry ;
 Ниже представлена развернутая, готовая к загрузке в Triple Store (GraphDB, Stardog) схема классов, свойств и аксиом на языке Turtle (OWL 2 DL).
 ## 🛠️ Полная производственная схема онтологии (rbo.ttl)
 
+```
 @prefix rdfs: <http://w3.org> .
 @prefix owl:  <http://w3.org> .
 @prefix xsd:  <http://w3.org> .
@@ -573,6 +580,7 @@ rbo:provisionRate a owl:DatatypeProperty ;
     rdfs:domain rbo:RiskCategory ;
     rdfs:range xsd:decimal ;
     rdfs:label "Процент расчетного резерва (по 590-П)" .
+```
 
 ------------------------------
 ## 🧠 Какую регуляторную логику решает эта полная схема?
@@ -586,6 +594,7 @@ rbo:provisionRate a owl:DatatypeProperty ;
 ## 📊 Пример SPARQL-запроса: Оборотно-сальдовая ведомость (Форма 101)
 Используя эту полную схему, вы можете запустить нетранзакционный скрипт генерации отчетности для Центробанка по балансовым счетам второго порядка:
 
+```
 PREFIX rbo: <http://example.com>
 PREFIX xsd: <http://w3.org>
 
@@ -603,6 +612,7 @@ WHERE {
 }
 GROUP BY ?acc2ndOrderCode
 ORDER BY ?acc2ndOrderCode
+```
 
 Если у вас развернута СУБД, скажите:
 

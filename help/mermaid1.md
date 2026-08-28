@@ -1,5 +1,13 @@
-()
+(```mermaid)
 ## 1 
+test
+```mermaid
+stateDiagram-v2
+    direction LR
+
+    [*] --> Ok
+```
+
 Исходный:
 
 ```mermaid

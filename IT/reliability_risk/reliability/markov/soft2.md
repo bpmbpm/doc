@@ -172,3 +172,7 @@ print(f"Коэффициент готовности: {K_g:.6f}")
 Если хотите, могу показать, как построить конкретную модель (например, дублированную систему с восстановлением) и посчитать для неё Кг — на relind.ru или на Python.
 
 ## 3
+### relind
+- https://relind.ru/
+  - https://relind.ru/mHelp.html
+  - https://relind.ru/CalcGraph.html online

@@ -149,5 +149,8 @@ graph LR
 
 ---
 
-## 2
-- https://github.com/Kostyak7/TRP_task1?ysclid=mtckdlwppd485092812
+## 2 online
+- https://www.desmos.com/calculator/tclco6ytwr?lang=ru 
+
+## 3 install
+- https://github.com/Kostyak7/TRP_task1 python, не online

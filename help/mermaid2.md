@@ -24,3 +24,7 @@ graph LR
     S1 -->|μ| S0
     S1 -->|λ| S2((S2))
 ```
+
+## link
+- https://habr.com/ru/articles/652867/ Рисуем диаграммы Mermaid.js в README-файлах GitHub
+- https://toolact.com/ru/mermaid

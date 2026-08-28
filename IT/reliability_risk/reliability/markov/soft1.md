@@ -1,3 +1,9 @@
+## theory
+- https://grigorevasv.ru/docs/gsv/disciplini/modelsys/P_mp.pdf
+  
+## all
+- [8 сервисов для визуализации алгоритмов](https://tproger.ru/digest/8-algorithm-visualizers)
+
 ## 1 markov soft
 программы и сервисы визуализации марковских цепей
 
@@ -151,6 +157,12 @@ graph LR
 
 ## 2 online
 - https://www.desmos.com/calculator/tclco6ytwr?lang=ru 
-
+- https://markov.yoriz.co.uk/
+ 
 ## 3 install
 - https://github.com/Kostyak7/TRP_task1 python, не online
+
+## 4
+- https://www.wolfram.com/mathematica/new-in-9/markov-chains-and-queues/visualize-a-sample-path-for-a-finite-markov-proces.html.ru Новое в системе Wolfram Mathematica 9
+- https://www.mathworks.com/help/econ/simulate-random-walks-through-markov-chain.html
+- https://fuodorov.github.io/papers/docs/markov_chain/markov_chain_text_generation.html Анализ и моделирование цепей Маркова с помощью Python

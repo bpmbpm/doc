@@ -175,4 +175,4 @@ print(f"Коэффициент готовности: {K_g:.6f}")
 ### relind
 - https://relind.ru/
   - https://relind.ru/mHelp.html
-  - https://relind.ru/CalcGraph.html online
+  - https://relind.ru/CalcGraph.html online Калькулятор Марковских Расчетов Надежности

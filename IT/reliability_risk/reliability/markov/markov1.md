@@ -1,3 +1,6 @@
+### intro
+- [Цепи Маркова и Пайтон — разбираемся в теории и собираем генератор текстов](https://habr.com/ru/articles/510798/)
+
 ### info
 - CTMC-logic https://en.wikipedia.org/wiki/Continuous-time_Markov_chain
 - https://www.columbia.edu/~ks20/stochastic-I/stochastic-I-CTMC.pdf

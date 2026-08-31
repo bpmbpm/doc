@@ -1,5 +1,8 @@
 ## Harness
 
+- [русский перевод книги DeepSeek Harness Orange Book](https://disk.yandex.ru/i/RkQZ5kE3-2M4BQ)
+- https://habr.com/ru/news/1070332/
+
 Детально расскажи, как с помощью DeepSeek Harness выполнить:
 1 Создаю проект на github. Пишу issue - даю DeepSeek Harness ссылку на это issue
 2 DeepSeek Harness в этом же проекте (github) пишет PR, я делаю code review и MR (merge) (получаю рабочий код)

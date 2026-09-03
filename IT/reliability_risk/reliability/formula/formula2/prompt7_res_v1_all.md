@@ -4,7 +4,7 @@
 
 # Промпт
 
-```text
+
 Рассчитай стационарный коэффициент готовности семипозиционной модели восстанавливаемого отказоустойчивого кластера методом непрерывной однородной цепи Маркова.
 
 # Часть 1. Постановка задачи и расчетная модель
@@ -194,7 +194,7 @@ flowchart LR
     TF -->|μtr| S0
 
     S0 -->|2λη| S_failover
-    S0 -->|2λ(1 − η)| latent
+    S0 -->|2λ<1 − η>| latent
     latent -->|θ| S_failover
 
     S_failover -->|μ_failover| S1
@@ -249,10 +249,10 @@ flowchart LR
 
 В LaTeX-варианте используй:
 
-- \mu_{\mathrm{failover}};
-- \mu_{\mathrm{failback}};
-- P_{\mathrm{failover}};
-- P_{\mathrm{failback}}.
+- $\mu_{\mathrm{failover}}$;
+- $\mu_{\mathrm{failback}}$;
+- $P_{\mathrm{failover}}$;
+- $P_{\mathrm{failback}}$.
 
 Вариант 1:
 
@@ -435,7 +435,7 @@ flowchart LR
     TF -->|μtr| S0
 
     S0 -->|2λη| S_failover
-    S0 -->|2λ(1 − η)| latent
+    S0 -->|2λ{1 − η}| latent
     latent -->|θ| S_failover
 
     S_failover -->|μ_failover| S1

@@ -1119,7 +1119,7 @@ flowchart LR
     TF -->|μtr| S0
 
     S0 -->|2λη| S_failover
-    S0 -->|2λ(1 − η)| latent
+    S0 -->|2λ<1 − η>| latent
     latent -->|θ| S_failover
 
     S_failover -->|μ_failover| S1

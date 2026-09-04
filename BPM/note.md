@@ -6,3 +6,6 @@
 
 
 - https://habr.com/ru/articles/727812/#comment_25424082
+
+### man
+- https://zenodo.org/records/11232149 Царев Модели процессов (план и факт) 

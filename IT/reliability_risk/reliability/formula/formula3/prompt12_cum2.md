@@ -322,7 +322,6 @@ flowchart LR
     S2 -->|"μ"| S2_failback
     S2_failover -->|"μ_failover"| S1
     S2_failback -->|"μ_failback"| S3
-    S_latent -->|"θ"| S0_fail
 
     S1 -->|"λ_tr"| S1_tf
     S1_tf -->|"μ_tr"| S1
@@ -330,7 +329,6 @@ flowchart LR
     S1 -->|"λ(1 − η)"| S_latent
     S1 -->|"μ"| S1_failback
     S1_failback -->|"μ_failback"| S2
-    S_latent -->|"θ"| S0_fail
 
     S0_fail -->|"μ"| S1
 ```
@@ -421,4 +419,7 @@ $$
 $$
 \theta \approx 0{,}0000347222222\ \mathrm{s}^{-1}
 $$
+
+# 2
+
 

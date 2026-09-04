@@ -18,3 +18,7 @@
 - https://github.com/ohong/awesome-coding-ai/
 ## also
 - https://github.com/bpmbpm/doc/tree/main/IT/programming/DSL#vibe-code
+
+## question
+- Подскажите бесплатного агента, которому я в качестве параметра указываю ссылку на номер (адрес) github issue, а он по нему создает в репозитарии (публичном) pull request. Или аналогичные сервисы github, пусть и попроще, но имеющие бесплатные: сервис repo + агент разработки в нем кода + github pages. https://habr.com/ru/articles/1078298/#comment_30394820
+- [DeepSeek Harness](https://habr.com/ru/news/1070332/#comment_30331818) 

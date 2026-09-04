@@ -534,7 +534,6 @@ flowchart LR
 
 ## Требование к оформлению Mermaid
 
-```text
 ## Требования к Mermaid
 
 Используй Mermaid, совместимый с GitHub.
@@ -627,7 +626,7 @@ flowchart LR
 - цветные контуры;
 - дополнительные Mermaid-узлы для легенды;
 - текстовые описания внутри узлов.
-```
+
 
 Эта конструкция с `subgraph` обеспечивает надежное группирование состояний в кластеры, и Mermaid корректно отображает их визуально.
 
@@ -784,3 +783,153 @@ flowchart TB
 
 
 Попробуй оба варианта и выбери тот, который лучше отображается в твоей среде.
+
+
+# 7
+
+выдели два кластера:
+- первый "Normal state (no failure)" - включает S0, S1. Внутри кластера ранжирование по горизонтали
+- второй "Transient fault (tr)" - включает S0_tf, S1_tf Внутри кластера ранжирование по горизонтали
+
+Вот вариант с двумя кластерами и горизонтальным ранжированием внутри каждого:
+
+```mermaid
+flowchart LR
+    subgraph Normal["Normal state (no failure)"]
+        direction LR
+        S0((S0))
+        S1((S1))
+    end
+
+    subgraph Transient["Transient fault (tr)"]
+        direction LR
+        S0_tf([S0_tf])
+        S1_tf([S1_tf])
+    end
+
+    S2_fail([S2_fail])
+    S_failover([S_failover])
+    S_failback([S_failback])
+    S_latent([S_latent])
+
+    S0 -->|"2λ_tr"| S0_tf
+    S0_tf -->|"μ_tr"| S0
+
+    S0 -->|"2λη"| S_failover
+    S0 -->|"2λ(1 − η)"| S_latent
+    S_latent -->|"θ"| S2_fail
+
+    S_failover -->|"μ_failover"| S1
+
+    S1 -->|"λη"| S2_fail
+    S1 -->|"λ(1 − η)"| S_latent
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S2_fail -->|"μ"| S1
+
+    S1 -->|"μ"| S_failback
+    S_failback -->|"μ_failback"| S0
+```
+
+## Требование к оформлению Mermaid
+
+## Требования к Mermaid
+
+Используй Mermaid, совместимый с GitHub.
+
+В Mermaid используй ASCII-идентификаторы:
+
+- S0;
+- S0_tf;
+- S1_tf;
+- S_latent;
+- S_failover;
+- S1;
+- S2_fail;
+- S_failback.
+
+Работоспособные состояния обозначай окружностями:
+
+- `((S))`.
+
+Неработоспособные состояния обозначай овалами:
+
+- `([S])`.
+
+Граф направь слева направо.
+
+Используй два кластера (подграфа) с явным указанием направления LR внутри каждого:
+
+1. Первый кластер "Normal state (no failure)" включает:
+   - S0;
+   - S1.
+   
+   Внутри кластера используй: `direction LR`
+
+2. Второй кластер "Transient fault (tr)" включает:
+   - S0_tf;
+   - S1_tf.
+   
+   Внутри кластера используй: `direction LR`
+
+Остальные состояния (S_latent, S_failover, S2_fail, S_failback) размести вне кластеров.
+
+Для подписей переходов, содержащих круглые скобки, используй кавычки:
+
+```text
+S0 -->|"2λ(1 − η)"| S_latent
+```
+
+Используй следующий граф:
+
+```mermaid
+flowchart LR
+    subgraph Normal["Normal state (no failure)"]
+        direction LR
+        S0((S0))
+        S1((S1))
+    end
+
+    subgraph Transient["Transient fault (tr)"]
+        direction LR
+        S0_tf([S0_tf])
+        S1_tf([S1_tf])
+    end
+
+    S2_fail([S2_fail])
+    S_failover([S_failover])
+    S_failback([S_failback])
+    S_latent([S_latent])
+
+    S0 -->|"2λ_tr"| S0_tf
+    S0_tf -->|"μ_tr"| S0
+
+    S0 -->|"2λη"| S_failover
+    S0 -->|"2λ(1 − η)"| S_latent
+    S_latent -->|"θ"| S2_fail
+
+    S_failover -->|"μ_failover"| S1
+
+    S1 -->|"λη"| S2_fail
+    S1 -->|"λ(1 − η)"| S_latent
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S2_fail -->|"μ"| S1
+
+    S1 -->|"μ"| S_failback
+    S_failback -->|"μ_failback"| S0
+```
+
+Не используй:
+
+- `classDef`;
+- `class`;
+- `style`;
+- заливку;
+- цветные контуры;
+- дополнительные Mermaid-узлы для легенды;
+- текстовые описания внутри узлов.
+
+Этот вариант должен обеспечить четкое горизонтальное расположение S0 и S1 в одном кластере, а S0_tf и S1_tf — в другом.

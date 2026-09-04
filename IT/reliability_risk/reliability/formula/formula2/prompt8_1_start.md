@@ -491,3 +491,144 @@ flowchart LR
 - S0_tf, S1_tf на отдельной горизонтали (уровень временных сбоев);
 - S_failover, S_failback на одной вертикали.
 
+# 5
+
+Да, Mermaid действительно плохо справляется с множественными ранжированиями через `~~~`. Использование `subgraph` (кластеров) — более надежный способ.
+
+Вот исправленный граф с двумя кластерами:
+
+```mermaid
+flowchart LR
+    subgraph Basic["Basic states"]
+        S0((S0))
+        S1((S1))
+        S2_fail([S2_fail])
+    end
+
+    subgraph Transient["Transient fault (tr)"]
+        S0_tf([S0_tf])
+        S1_tf([S1_tf])
+    end
+
+    S_latent([S_latent])
+    S_failover([S_failover])
+    S_failback([S_failback])
+
+    S0 -->|"2λ_tr"| S0_tf
+    S0_tf -->|"μ_tr"| S0
+
+    S0 -->|"2λη"| S_failover
+    S0 -->|"2λ(1 − η)"| S_latent
+    S_latent -->|"θ"| S2_fail
+
+    S_failover -->|"μ_failover"| S1
+
+    S1 -->|"λη"| S2_fail
+    S1 -->|"λ(1 − η)"| S_latent
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S2_fail -->|"μ"| S1
+
+    S1 -->|"μ"| S_failback
+    S_failback -->|"μ_failback"| S0
+```
+
+## Требование к оформлению Mermaid
+
+```text
+## Требования к Mermaid
+
+Используй Mermaid, совместимый с GitHub.
+
+В Mermaid используй ASCII-идентификаторы:
+
+- S0;
+- S0_tf;
+- S1_tf;
+- S_latent;
+- S_failover;
+- S1;
+- S2_fail;
+- S_failback.
+
+Работоспособные состояния обозначай окружностями:
+
+- `((S))`.
+
+Неработоспособные состояния обозначай овалами:
+
+- `([S])`.
+
+Граф направь слева направо.
+
+Используй два кластера (подграфа):
+
+1. Первый кластер "Basic states" включает:
+   - S0;
+   - S1;
+   - S2_fail.
+
+2. Второй кластер "Transient fault (tr)" включает:
+   - S0_tf;
+   - S1_tf.
+
+Остальные состояния (S_latent, S_failover, S_failback) размести вне кластеров.
+
+Для подписей переходов, содержащих круглые скобки, используй кавычки:
+
+```text
+S0 -->|"2λ(1 − η)"| S_latent
+```
+
+Используй следующий граф:
+
+```mermaid
+flowchart LR
+    subgraph Basic["Basic states"]
+        S0((S0))
+        S1((S1))
+        S2_fail([S2_fail])
+    end
+
+    subgraph Transient["Transient fault (tr)"]
+        S0_tf([S0_tf])
+        S1_tf([S1_tf])
+    end
+
+    S_latent([S_latent])
+    S_failover([S_failover])
+    S_failback([S_failback])
+
+    S0 -->|"2λ_tr"| S0_tf
+    S0_tf -->|"μ_tr"| S0
+
+    S0 -->|"2λη"| S_failover
+    S0 -->|"2λ(1 − η)"| S_latent
+    S_latent -->|"θ"| S2_fail
+
+    S_failover -->|"μ_failover"| S1
+
+    S1 -->|"λη"| S2_fail
+    S1 -->|"λ(1 − η)"| S_latent
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S2_fail -->|"μ"| S1
+
+    S1 -->|"μ"| S_failback
+    S_failback -->|"μ_failback"| S0
+```
+
+Не используй:
+
+- `classDef`;
+- `class`;
+- `style`;
+- заливку;
+- цветные контуры;
+- дополнительные Mermaid-узлы для легенды;
+- текстовые описания внутри узлов.
+```
+
+Эта конструкция с `subgraph` обеспечивает надежное группирование состояний в кластеры, и Mermaid корректно отображает их визуально.

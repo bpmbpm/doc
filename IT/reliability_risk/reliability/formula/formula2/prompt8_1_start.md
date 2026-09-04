@@ -337,3 +337,157 @@ flowchart LR
     S1 -->|"μ"| S_failback
     S_failback -->|"μ_failback"| S0
 ```
+
+# 4
+
+Нужно:
+
+- первая горизонталь: S0, S1, S2_fail;
+- вторая горизонталь: S0_tf, S1_tf;
+- одна вертикаль: S_failover, S_failback.
+
+
+```mermaid
+flowchart LR
+    S0((S0))
+    S_latent([S_latent])
+    S_failover([S_failover])
+    S1((S1))
+    S2_fail([S2_fail])
+    S_failback([S_failback])
+    S0_tf([S0_tf])
+    S1_tf([S1_tf])
+
+    S0 ~~~ S1 ~~~ S2_fail
+    S0_tf ~~~ S1_tf
+    S_failover ~~~ S_failback
+
+    S0 -->|"2λ_tr"| S0_tf
+    S0_tf -->|"μ_tr"| S0
+
+    S0 -->|"2λη"| S_failover
+    S0 -->|"2λ(1 − η)"| S_latent
+    S_latent -->|"θ"| S2_fail
+
+    S_failover -->|"μ_failover"| S1
+
+    S1 -->|"λη"| S2_fail
+    S1 -->|"λ(1 − η)"| S_latent
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S2_fail -->|"μ"| S1
+
+    S1 -->|"μ"| S_failback
+    S_failback -->|"μ_failback"| S0
+```
+
+## Требование к оформлению Mermaid
+
+```text
+## Требования к Mermaid
+
+Используй Mermaid, совместимый с GitHub.
+
+В Mermaid используй ASCII-идентификаторы:
+
+- S0;
+- S0_tf;
+- S1_tf;
+- S_latent;
+- S_failover;
+- S1;
+- S2_fail;
+- S_failback.
+
+Работоспособные состояния обозначай окружностями:
+
+- `((S))`.
+
+Неработоспособные состояния обозначай овалами:
+
+- `([S])`.
+
+Граф направь слева направо.
+
+Расположи состояния на трех уровнях:
+
+1. Первая горизонталь (основная): S0, S1, S2_fail:
+
+```text
+S0 ~~~ S1 ~~~ S2_fail
+```
+
+2. Вторая горизонталь (временные сбои): S0_tf, S1_tf:
+
+```text
+S0_tf ~~~ S1_tf
+```
+
+3. Вертикаль (failover и failback): S_failover, S_failback:
+
+```text
+S_failover ~~~ S_failback
+```
+
+Для подписей переходов, содержащих круглые скобки, используй кавычки:
+
+```text
+S0 -->|"2λ(1 − η)"| S_latent
+```
+
+Используй следующий граф:
+
+```mermaid
+flowchart LR
+    S0((S0))
+    S_latent([S_latent])
+    S_failover([S_failover])
+    S1((S1))
+    S2_fail([S2_fail])
+    S_failback([S_failback])
+    S0_tf([S0_tf])
+    S1_tf([S1_tf])
+
+    S0 ~~~ S1 ~~~ S2_fail
+    S0_tf ~~~ S1_tf
+    S_failover ~~~ S_failback
+
+    S0 -->|"2λ_tr"| S0_tf
+    S0_tf -->|"μ_tr"| S0
+
+    S0 -->|"2λη"| S_failover
+    S0 -->|"2λ(1 − η)"| S_latent
+    S_latent -->|"θ"| S2_fail
+
+    S_failover -->|"μ_failover"| S1
+
+    S1 -->|"λη"| S2_fail
+    S1 -->|"λ(1 − η)"| S_latent
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S2_fail -->|"μ"| S1
+
+    S1 -->|"μ"| S_failback
+    S_failback -->|"μ_failback"| S0
+```
+
+Не используй:
+
+- `subgraph`;
+- `classDef`;
+- `class`;
+- `style`;
+- заливку;
+- цветные контуры;
+- дополнительные Mermaid-узлы для легенды;
+- текстовые описания внутри узлов.
+```
+
+Эта конструкция обеспечивает:
+
+- S0, S1, S2_fail на одной горизонтали (основной уровень);
+- S0_tf, S1_tf на отдельной горизонтали (уровень временных сбоев);
+- S_failover, S_failback на одной вертикали.
+

@@ -118,6 +118,7 @@ flowchart LR
 Кг,ст = P2 + P1
 
 **Вариант 2, LaTeX:**
+
 $$
 K_{\mathrm{г,ст}} = P_2 + P_1
 $$

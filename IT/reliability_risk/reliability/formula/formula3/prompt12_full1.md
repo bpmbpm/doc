@@ -941,3 +941,219 @@ flowchart LR
 S3 ← S2_failback ← S2 ← S1_failback ← S1
 
 Это достигается за счет объявления узлов в порядке их желаемого расположения слева направо.
+
+# 5
+
+# Альтернативные решения
+
+## Вариант 1: Использование `linkStyle` для скрытия направлений
+
+Проблема в том, что Mermaid автоматически располагает узлы по направлению потоков. Можно попробовать явно указать порядок через `linkStyle`:
+
+```mermaid
+flowchart LR
+    S3((S3))
+    S2_failback([S2_failback])
+    S2((S2))
+    S1_failback([S1_failback])
+    S1((S1))
+    S0_fail([S0_fail])
+    
+    S3_tf([S3_tf])
+    S2_tf([S2_tf])
+    S1_tf([S1_tf])
+    
+    S_latent([S_latent])
+    
+    S3_failover([S3_failover])
+    S2_failover([S2_failover])
+
+    S3 -->|"3λ_tr"| S3_tf
+    S3_tf -->|"μ_tr"| S3
+
+    S3 -->|"3λη"| S3_failover
+    S3 -->|"3λ(1 − η)"| S_latent
+    S3_failover -->|"μ_failover"| S2
+    S_latent -->|"θ"| S0_fail
+
+    S2 -->|"2λ_tr"| S2_tf
+    S2_tf -->|"μ_tr"| S2
+
+    S2 -->|"2λη"| S2_failover
+    S2 -->|"2λ(1 − η)"| S_latent
+    S2_failback -->|"μ_failback"| S3
+    S2 -->|"μ"| S2_failback
+    S2_failover -->|"μ_failover"| S1
+
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S1 -->|"λ(1 − η)"| S_latent
+    S1_failback -->|"μ_failback"| S2
+    S1 -->|"μ"| S1_failback
+
+    S0_fail -->|"μ"| S1
+    
+    linkStyle 6,7,10,11 stroke-width:0px,fill:none,stroke:none;
+```
+
+***
+
+## Вариант 2: Изменение логики представления failback
+
+Вместо того чтобы показывать failback как отдельные узлы, можно показать их как подписи на переходах восстановления:
+
+```mermaid
+flowchart LR
+    S3((S3))
+    S2((S2))
+    S1((S1))
+    S0_fail([S0_fail])
+    
+    S3_tf([S3_tf])
+    S2_tf([S2_tf])
+    S1_tf([S1_tf])
+    
+    S_latent([S_latent])
+    
+    S3_failover([S3_failover])
+    S2_failover([S2_failover])
+
+    S3 -->|"3λ_tr"| S3_tf
+    S3_tf -->|"μ_tr"| S3
+
+    S3 -->|"3λη"| S3_failover
+    S3 -->|"3λ(1 − η)"| S_latent
+    S3_failover -->|"μ_failover"| S2
+    S_latent -->|"θ"| S0_fail
+
+    S2 -->|"2λ_tr"| S2_tf
+    S2_tf -->|"μ_tr"| S2
+
+    S2 -->|"2λη"| S2_failover
+    S2 -->|"2λ(1 − η)"| S_latent
+    S2 -->|"μ (failback)"| S3
+    S2_failover -->|"μ_failover"| S1
+
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S1 -->|"λ(1 − η)"| S_latent
+    S1 -->|"μ (failback)"| S2
+
+    S0_fail -->|"μ"| S1
+```
+
+***
+
+## Вариант 3: Разделение графа на две части
+
+Можно разделить граф на основную часть и блок failover/failback:
+
+```mermaid
+flowchart TB
+    subgraph Main["Основной цикл"]
+        S3((S3))
+        S2((S2))
+        S1((S1))
+        S0_fail([S0_fail])
+        
+        S3_tf([S3_tf])
+        S2_tf([S2_tf])
+        S1_tf([S1_tf])
+        
+        S_latent([S_latent])
+        
+        S3 -->|"3λ_tr"| S3_tf
+        S3_tf -->|"μ_tr"| S3
+        S3 -->|"3λ(1 − η)"| S_latent
+        S_latent -->|"θ"| S0_fail
+        
+        S2 -->|"2λ_tr"| S2_tf
+        S2_tf -->|"μ_tr"| S2
+        S2 -->|"2λ(1 − η)"| S_latent
+        
+        S1 -->|"λ_tr"| S1_tf
+        S1_tf -->|"μ_tr"| S1
+        S1 -->|"λ(1 − η)"| S_latent
+        
+        S0_fail -->|"μ"| S1
+        S2 -->|"μ"| S3
+        S1 -->|"μ"| S2
+    end
+    
+    subgraph Failover["Failover"]
+        S3_failover([S3_failover])
+        S2_failover([S2_failover])
+        
+        S3 -->|"3λη"| S3_failover
+        S3_failover -->|"μ_failover"| S2
+        S2 -->|"2λη"| S2_failover
+        S2_failover -->|"μ_failover"| S1
+    end
+```
+
+***
+
+## Вариант 4: Отказ от отдельных узлов failback
+
+Самое простое решение — не создавать отдельные узлы для failback, а показать их как часть переходов восстановления:
+
+```mermaid
+flowchart LR
+    S3((S3))
+    S2((S2))
+    S1((S1))
+    S0_fail([S0_fail])
+    
+    S3_tf([S3_tf])
+    S2_tf([S2_tf])
+    S1_tf([S1_tf])
+    
+    S_latent([S_latent])
+    
+    S3_failover([S3_failover])
+    S2_failover([S2_failover])
+
+    S3 -->|"3λ_tr"| S3_tf
+    S3_tf -->|"μ_tr"| S3
+
+    S3 -->|"3λη"| S3_failover
+    S3 -->|"3λ(1 − η)"| S_latent
+    S3_failover -->|"μ_failover"| S2
+    S_latent -->|"θ"| S0_fail
+
+    S2 -->|"2λ_tr"| S2_tf
+    S2_tf -->|"μ_tr"| S2
+
+    S2 -->|"2λη"| S2_failover
+    S2 -->|"2λ(1 − η)"| S_latent
+    S2 -->|"μ_failback"| S3
+    S2_failover -->|"μ_failover"| S1
+
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S1 -->|"λ(1 − η)"| S_latent
+    S1 -->|"μ_failback"| S2
+
+    S0_fail -->|"μ"| S1
+```
+
+В этом варианте:
+- Переход S2 → S3 обозначен как μ_failback (вместо отдельных узлов S2_failback);
+- Переход S1 → S2 обозначен как μ_failback (вместо отдельных узлов S1_failback).
+
+***
+
+## Рекомендация
+
+**Вариант 4** является наиболее практичным:
+
+1. Упрощает граф (10 узлов вместо 12);
+2. Сохраняет всю информацию о модели;
+3. Избегает проблем с компоновкой Mermaid;
+4. Легче читается и понимается.
+
+Если же обязательно нужны отдельные узлы для failback, то можно использовать **Вариант 3** с разделением на подграфы, но это усложнит визуализацию.
+

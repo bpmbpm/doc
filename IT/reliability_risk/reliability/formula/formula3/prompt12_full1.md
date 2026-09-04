@@ -769,3 +769,175 @@ end
 ```
 
 Это разместит S3_failover над S2_failback, а S2_failover над S1_failback.
+
+# 4
+
+# Решение: Изменение направления переходов failback
+
+Проблема в том, что в текущей записи переходы failback идут как `S1 --> S1_failback --> S2`, что заставляет Mermaid размещать S1_failback правее S1.
+
+Для правильного размещения нужно изменить логику: S1_failback должен быть между S1 и S2, то есть переходы должны быть записаны так, чтобы S1_failback располагался левее S1.
+
+## Вариант: Изменение порядка переходов
+
+```mermaid
+flowchart LR
+    S3((S3))
+    S2((S2))
+    S1((S1))
+    S0_fail([S0_fail])
+    
+    S3_tf([S3_tf])
+    S2_tf([S2_tf])
+    S1_tf([S1_tf])
+    
+    S_latent([S_latent])
+    
+    S3_failover([S3_failover])
+    S2_failover([S2_failover])
+    
+    S2_failback([S2_failback])
+    S1_failback([S1_failback])
+
+    S3 -->|"3λ_tr"| S3_tf
+    S3_tf -->|"μ_tr"| S3
+
+    S3 -->|"3λη"| S3_failover
+    S3 -->|"3λ(1 − η)"| S_latent
+    S3_failover -->|"μ_failover"| S2
+    S_latent -->|"θ"| S0_fail
+
+    S2 -->|"2λ_tr"| S2_tf
+    S2_tf -->|"μ_tr"| S2
+
+    S2 -->|"2λη"| S2_failover
+    S2 -->|"2λ(1 − η)"| S_latent
+    S2_failback -->|"μ_failback"| S3
+    S2 -->|"μ"| S2_failback
+    S2_failover -->|"μ_failover"| S1
+
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S1 -->|"λ(1 − η)"| S_latent
+    S1_failback -->|"μ_failback"| S2
+    S1 -->|"μ"| S1_failback
+
+    S0_fail -->|"μ"| S1
+```
+
+***
+
+## Вариант: Использование невидимых связей для принудительного размещения
+
+```mermaid
+flowchart LR
+    S3((S3))
+    S2((S2))
+    S1((S1))
+    S0_fail([S0_fail])
+    
+    S3_tf([S3_tf])
+    S2_tf([S2_tf])
+    S1_tf([S1_tf])
+    
+    S_latent([S_latent])
+    
+    S3_failover([S3_failover])
+    S2_failover([S2_failover])
+    
+    S2_failback([S2_failback])
+    S1_failback([S1_failback])
+
+    %% Невидимые связи для принудительного размещения
+    S2 -.-> S2_failback -.-> S3
+    S1 -.-> S1_failback -.-> S2
+    
+    S3 -->|"3λ_tr"| S3_tf
+    S3_tf -->|"μ_tr"| S3
+
+    S3 -->|"3λη"| S3_failover
+    S3 -->|"3λ(1 − η)"| S_latent
+    S3_failover -->|"μ_failover"| S2
+    S_latent -->|"θ"| S0_fail
+
+    S2 -->|"2λ_tr"| S2_tf
+    S2_tf -->|"μ_tr"| S2
+
+    S2 -->|"2λη"| S2_failover
+    S2 -->|"2λ(1 − η)"| S_latent
+    S2_failback -->|"μ_failback"| S3
+    S2 -->|"μ"| S2_failback
+    S2_failover -->|"μ_failover"| S1
+
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S1 -->|"λ(1 − η)"| S_latent
+    S1_failback -->|"μ_failback"| S2
+    S1 -->|"μ"| S1_failback
+
+    S0_fail -->|"μ"| S1
+```
+
+***
+
+## Вариант: Изменение порядка объявления узлов
+
+Объявление узлов в нужном порядке может повлиять на их размещение:
+
+```mermaid
+flowchart LR
+    %% Объявление узлов в порядке размещения
+    S3((S3))
+    S2_failback([S2_failback])
+    S2((S2))
+    S1_failback([S1_failback])
+    S1((S1))
+    S0_fail([S0_fail])
+    
+    S3_tf([S3_tf])
+    S2_tf([S2_tf])
+    S1_tf([S1_tf])
+    
+    S_latent([S_latent])
+    
+    S3_failover([S3_failover])
+    S2_failover([S2_failover])
+
+    S3 -->|"3λ_tr"| S3_tf
+    S3_tf -->|"μ_tr"| S3
+
+    S3 -->|"3λη"| S3_failover
+    S3 -->|"3λ(1 − η)"| S_latent
+    S3_failover -->|"μ_failover"| S2
+    S_latent -->|"θ"| S0_fail
+
+    S2 -->|"2λ_tr"| S2_tf
+    S2_tf -->|"μ_tr"| S2
+
+    S2 -->|"2λη"| S2_failover
+    S2 -->|"2λ(1 − η)"| S_latent
+    S2_failback -->|"μ_failback"| S3
+    S2 -->|"μ"| S2_failback
+    S2_failover -->|"μ_failover"| S1
+
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S1 -->|"λ(1 − η)"| S_latent
+    S1_failback -->|"μ_failback"| S2
+    S1 -->|"μ"| S1_failback
+
+    S0_fail -->|"μ"| S1
+```
+
+***
+
+## Рекомендация
+
+**Вариант с изменением порядка объявления узлов** (третий вариант) должен разместить узлы в правильном порядке:
+
+S3 ← S2_failback ← S2 ← S1_failback ← S1
+
+Это достигается за счет объявления узлов в порядке их желаемого расположения слева направо.

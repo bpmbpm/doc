@@ -314,3 +314,228 @@ $$
 - Поясни, что означает «одна ремонтная бригада» и как это влияет на интенсивности восстановления.
 - Поясни, почему из S_latent только один переход в S0_fail.
 - Приведи ссылки на похожие модели надежности (k-out-of-n, coverage model и т.п.).
+
+# 2
+
+# Варианты размещения S2_failback и S1_failback на графе
+
+## Вариант 1: Вертикальное размещение (сверху)
+
+Разместить S2_failback над дугой S2 → S3, а S1_failback над дугой S1 → S2:
+
+```mermaid
+flowchart LR
+    S3((S3))
+    S2((S2))
+    S1((S1))
+    S0_fail([S0_fail])
+    
+    S3_tf([S3_tf])
+    S2_tf([S2_tf])
+    S1_tf([S1_tf])
+    
+    S_latent([S_latent])
+    
+    S3_failover([S3_failover])
+    S2_failover([S2_failover])
+    
+    S2_failback([S2_failback])
+    S1_failback([S1_failback])
+
+    S3 -->|"3λ_tr"| S3_tf
+    S3_tf -->|"μ_tr"| S3
+
+    S3 -->|"3λη"| S3_failover
+    S3 -->|"3λ(1 − η)"| S_latent
+    S3_failover -->|"μ_failover"| S2
+    S_latent -->|"θ"| S0_fail
+
+    S2 -->|"2λ_tr"| S2_tf
+    S2_tf -->|"μ_tr"| S2
+
+    S2 -->|"2λη"| S2_failover
+    S2 -->|"2λ(1 − η)"| S_latent
+    S2 -->|"μ"| S2_failback
+    S2_failback -->|"μ_failback"| S3
+    S2_failover -->|"μ_failover"| S1
+
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S1 -->|"λ(1 − η)"| S_latent
+    S1 -->|"μ"| S1_failback
+    S1_failback -->|"μ_failback"| S2
+
+    S0_fail -->|"μ"| S1
+```
+
+***
+
+## Вариант 2: Под основными состояниями (снизу)
+
+Разместить S2_failback и S1_failback под основными состояниями S3, S2, S1:
+
+```mermaid
+flowchart LR
+    S3((S3))
+    S2((S2))
+    S1((S1))
+    S0_fail([S0_fail])
+    
+    S3_tf([S3_tf])
+    S2_tf([S2_tf])
+    S1_tf([S1_tf])
+    
+    S_latent([S_latent])
+    
+    S3_failover([S3_failover])
+    S2_failover([S2_failover])
+    
+    S2_failback([S2_failback])
+    S1_failback([S1_failback])
+
+    S3 -->|"3λ_tr"| S3_tf
+    S3_tf -->|"μ_tr"| S3
+
+    S3 -->|"3λη"| S3_failover
+    S3 -->|"3λ(1 − η)"| S_latent
+    S3_failover -->|"μ_failover"| S2
+    S_latent -->|"θ"| S0_fail
+
+    S2 -->|"2λ_tr"| S2_tf
+    S2_tf -->|"μ_tr"| S2
+
+    S2 -->|"2λη"| S2_failover
+    S2 -->|"2λ(1 − η)"| S_latent
+    S2 -->|"μ"| S2_failback
+    S2_failback -->|"μ_failback"| S3
+    S2_failover -->|"μ_failover"| S1
+
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S1 -->|"λ(1 − η)"| S_latent
+    S1 -->|"μ"| S1_failback
+    S1_failback -->|"μ_failback"| S2
+
+    S0_fail -->|"μ"| S1
+```
+
+***
+
+## Вариант 3: Сбоку от основных состояний (справа)
+
+Разместить S2_failback и S1_failback справа от основных состояний:
+
+```mermaid
+flowchart LR
+    S3((S3))
+    S2((S2))
+    S1((S1))
+    S0_fail([S0_fail])
+    
+    S3_tf([S3_tf])
+    S2_tf([S2_tf])
+    S1_tf([S1_tf])
+    
+    S_latent([S_latent])
+    
+    S3_failover([S3_failover])
+    S2_failover([S2_failover])
+    
+    S2_failback([S2_failback])
+    S1_failback([S1_failback])
+
+    S3 -->|"3λ_tr"| S3_tf
+    S3_tf -->|"μ_tr"| S3
+
+    S3 -->|"3λη"| S3_failover
+    S3 -->|"3λ(1 − η)"| S_latent
+    S3_failover -->|"μ_failover"| S2
+    S_latent -->|"θ"| S0_fail
+
+    S2 -->|"2λ_tr"| S2_tf
+    S2_tf -->|"μ_tr"| S2
+
+    S2 -->|"2λη"| S2_failover
+    S2 -->|"2λ(1 − η)"| S_latent
+    S2 -->|"μ"| S2_failback
+    S2_failback -->|"μ_failback"| S3
+    S2_failover -->|"μ_failover"| S1
+
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S1 -->|"λ(1 − η)"| S_latent
+    S1 -->|"μ"| S1_failback
+    S1_failback -->|"μ_failback"| S2
+
+    S0_fail -->|"μ"| S1
+```
+
+***
+
+## Вариант 4: Явное указание подграфов (subgraph)
+
+Использовать подграфы для группировки состояний:
+
+```mermaid
+flowchart LR
+    subgraph Normal["Normal states"]
+        S3((S3))
+        S2((S2))
+        S1((S1))
+    end
+    
+    subgraph Failback["Failback states"]
+        S2_failback([S2_failback])
+        S1_failback([S1_failback])
+    end
+    
+    S0_fail([S0_fail])
+    S3_tf([S3_tf])
+    S2_tf([S2_tf])
+    S1_tf([S1_tf])
+    S_latent([S_latent])
+    S3_failover([S3_failover])
+    S2_failover([S2_failover])
+
+    S3 -->|"3λ_tr"| S3_tf
+    S3_tf -->|"μ_tr"| S3
+
+    S3 -->|"3λη"| S3_failover
+    S3 -->|"3λ(1 − η)"| S_latent
+    S3_failover -->|"μ_failover"| S2
+    S_latent -->|"θ"| S0_fail
+
+    S2 -->|"2λ_tr"| S2_tf
+    S2_tf -->|"μ_tr"| S2
+
+    S2 -->|"2λη"| S2_failover
+    S2 -->|"2λ(1 − η)"| S_latent
+    S2 -->|"μ"| S2_failback
+    S2_failback -->|"μ_failback"| S3
+    S2_failover -->|"μ_failover"| S1
+
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S1 -->|"λ(1 − η)"| S_latent
+    S1 -->|"μ"| S1_failback
+    S1_failback -->|"μ_failback"| S2
+
+    S0_fail -->|"μ"| S1
+```
+
+***
+
+## Рекомендация
+
+**Вариант 1 (вертикальное размещение сверху)** является наиболее оптимальным, так как:
+
+1. S2_failback визуально располагается между S2 и S3;
+2. S1_failback визуально располагается между S1 и S2;
+3. Граф остается компактным и читаемым;
+4. Направление переходов восстановления (S2 → S2_failback → S3 и S1 → S1_failback → S2) интуитивно понятно.
+
+   

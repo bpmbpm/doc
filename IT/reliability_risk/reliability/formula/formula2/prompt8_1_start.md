@@ -299,3 +299,41 @@ flowchart LR
    - S1 → S2_fail: λη.
 
 Эти уточнения обеспечивают корректность модели и соответствие технической реализации кластера.
+
+# 3
+
+```mermaid
+flowchart LR
+    S0_tf([S0_tf])
+    S1_tf([S1_tf])
+
+    S0((S0))
+    S_latent([S_latent])
+    S_failover([S_failover])
+    S1((S1))
+    S2_fail([S2_fail])
+    S_failback([S_failback])
+
+    S0 ~~~ S1 ~~~ S2_fail
+    S0_tf ~~~ S1_tf
+    S_failover ~~~ S_failback
+
+    S0 -->|"2λ_tr"| S0_tf
+    S0_tf -->|"μ_tr"| S0
+
+    S0 -->|"2λη"| S_failover
+    S0 -->|"2λ(1 − η)"| S_latent
+    S_latent -->|"θ"| S2_fail
+
+    S_failover -->|"μ_failover"| S1
+
+    S1 -->|"λη"| S2_fail
+    S1 -->|"λ(1 − η)"| S_latent
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S2_fail -->|"μ"| S1
+
+    S1 -->|"μ"| S_failback
+    S_failback -->|"μ_failback"| S0
+```

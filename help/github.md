@@ -24,6 +24,8 @@ Git оперирует только файлами, а не папками (он
 - https://docs.github.com/ru/pull-requests
 - https://stepik.org/lesson/1791641/step/1
 - Reverts В нижней части PR кнопка [Отменить изменения](https://docs.github.com/ru/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/reverting-a-pull-request). [revert](https://habr.com/ru/articles/520762/)
+- https://jeka.by/post/1053/github-send-PR-to-other-repository/
+- [Pull request'ы на GitHub или Как мне внести изменения в чужой проект](https://habr.com/ru/articles/125999/?ysclid=mtmo5iq85f470100722)
 
 ### Projects
 - https://docs.github.com/ru/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects

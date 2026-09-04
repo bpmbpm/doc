@@ -538,4 +538,234 @@ flowchart LR
 3. Граф остается компактным и читаемым;
 4. Направление переходов восстановления (S2 → S2_failback → S3 и S1 → S1_failback → S2) интуитивно понятно.
 
-   
+# 3
+
+# Вертикальное ранжирование с использованием rankdir
+
+Для вертикального ранжирования в Mermaid можно использовать директиву `rankdir` внутри подграфа или явное указание рангов через невидимые связи.
+
+## Вариант: Вертикальное ранжирование с rankdir=TB
+
+```mermaid
+flowchart LR
+    S3((S3))
+    S2((S2))
+    S1((S1))
+    S0_fail([S0_fail])
+    
+    S3_tf([S3_tf])
+    S2_tf([S2_tf])
+    S1_tf([S1_tf])
+    
+    S_latent([S_latent])
+    
+    S3_failover([S3_failover])
+    S2_failover([S2_failover])
+    
+    S2_failback([S2_failback])
+    S1_failback([S1_failback])
+
+    S3 -->|"3λ_tr"| S3_tf
+    S3_tf -->|"μ_tr"| S3
+
+    S3 -->|"3λη"| S3_failover
+    S3 -->|"3λ(1 − η)"| S_latent
+    S3_failover -->|"μ_failover"| S2
+    S_latent -->|"θ"| S0_fail
+
+    S2 -->|"2λ_tr"| S2_tf
+    S2_tf -->|"μ_tr"| S2
+
+    S2 -->|"2λη"| S2_failover
+    S2 -->|"2λ(1 − η)"| S_latent
+    S2 -->|"μ"| S2_failback
+    S2_failback -->|"μ_failback"| S3
+    S2_failover -->|"μ_failover"| S1
+
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S1 -->|"λ(1 − η)"| S_latent
+    S1 -->|"μ"| S1_failback
+    S1_failback -->|"μ_failback"| S2
+
+    S0_fail -->|"μ"| S1
+    
+    %% Невидимые связи для вертикального ранжирования
+    S3_failover ~~~ S2_failback
+    S2_failover ~~~ S1_failback
+```
+
+***
+
+## Вариант: Явное указание рангов через подграфы
+
+```mermaid
+flowchart LR
+    S3((S3))
+    S2((S2))
+    S1((S1))
+    S0_fail([S0_fail])
+    
+    S3_tf([S3_tf])
+    S2_tf([S2_tf])
+    S1_tf([S1_tf])
+    
+    S_latent([S_latent])
+    
+    S3_failover([S3_failover])
+    S2_failover([S2_failover])
+    
+    S2_failback([S2_failback])
+    S1_failback([S1_failback])
+
+    S3 -->|"3λ_tr"| S3_tf
+    S3_tf -->|"μ_tr"| S3
+
+    S3 -->|"3λη"| S3_failover
+    S3 -->|"3λ(1 − η)"| S_latent
+    S3_failover -->|"μ_failover"| S2
+    S_latent -->|"θ"| S0_fail
+
+    S2 -->|"2λ_tr"| S2_tf
+    S2_tf -->|"μ_tr"| S2
+
+    S2 -->|"2λη"| S2_failover
+    S2 -->|"2λ(1 − η)"| S_latent
+    S2 -->|"μ"| S2_failback
+    S2_failback -->|"μ_failback"| S3
+    S2_failover -->|"μ_failover"| S1
+
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S1 -->|"λ(1 − η)"| S_latent
+    S1 -->|"μ"| S1_failback
+    S1_failback -->|"μ_failback"| S2
+
+    S0_fail -->|"μ"| S1
+    
+    %% Подграфы для вертикального ранжирования
+    subgraph Rank1[" "]
+        direction TB
+        S3_failover
+        S2_failback
+    end
+    
+    subgraph Rank2[" "]
+        direction TB
+        S2_failover
+        S1_failback
+    end
+```
+
+***
+
+## Вариант: Комбинированный (невидимые связи + подграфы)
+
+```mermaid
+flowchart LR
+    S3((S3))
+    S2((S2))
+    S1((S1))
+    S0_fail([S0_fail])
+    
+    S3_tf([S3_tf])
+    S2_tf([S2_tf])
+    S1_tf([S1_tf])
+    
+    S_latent([S_latent])
+    
+    S3_failover([S3_failover])
+    S2_failover([S2_failover])
+    
+    S2_failback([S2_failback])
+    S1_failback([S1_failback])
+
+    S3 -->|"3λ_tr"| S3_tf
+    S3_tf -->|"μ_tr"| S3
+
+    S3 -->|"3λη"| S3_failover
+    S3 -->|"3λ(1 − η)"| S_latent
+    S3_failover -->|"μ_failover"| S2
+    S_latent -->|"θ"| S0_fail
+
+    S2 -->|"2λ_tr"| S2_tf
+    S2_tf -->|"μ_tr"| S2
+
+    S2 -->|"2λη"| S2_failover
+    S2 -->|"2λ(1 − η)"| S_latent
+    S2 -->|"μ"| S2_failback
+    S2_failback -->|"μ_failback"| S3
+    S2_failover -->|"μ_failover"| S1
+
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S1 -->|"λ(1 − η)"| S_latent
+    S1 -->|"μ"| S1_failback
+    S1_failback -->|"μ_failback"| S2
+
+    S0_fail -->|"μ"| S1
+    
+    %% Подграфы для вертикального ранжирования
+    subgraph FailoverFailback1[" "]
+        direction TB
+        S3_failover
+        S2_failback
+    end
+    
+    subgraph FailoverFailback2[" "]
+        direction TB
+        S2_failover
+        S1_failback
+    end
+    
+    %% Невидимые связи для улучшения компоновки
+    S3_failover ~~~ S2_failback
+    S2_failover ~~~ S1_failback
+```
+
+***
+
+## Описание команд Mermaid
+
+### 1. Невидимые связи
+
+```mermaid
+A ~~~ B
+```
+
+Создает невидимую связь между узлами A и B, которая влияет на расположение, но не отображается на графе.
+
+### 2. Подграфы с направлением
+
+```mermaid
+subgraph Name["Label"]
+    direction TB
+    Node1
+    Node2
+end
+```
+
+Создает подграф с вертикальным направлением (TB = top-to-bottom), что заставляет узлы внутри подграфа располагаться вертикально.
+
+### 3. Комбинирование
+
+Для вертикального ранжирования S3_failover и S2_failback на одной вертикали, а S2_failover и S1_failback на другой:
+
+```mermaid
+subgraph Rank1[" "]
+    direction TB
+    S3_failover
+    S2_failback
+end
+
+subgraph Rank2[" "]
+    direction TB
+    S2_failover
+    S1_failback
+end
+```
+
+Это разместит S3_failover над S2_failback, а S2_failover над S1_failback.

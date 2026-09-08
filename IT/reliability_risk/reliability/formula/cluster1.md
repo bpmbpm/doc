@@ -1,3 +1,4 @@
+# 1
 ## 1. Какие состояния можно добавить в модель 8/2
 
 Ниже — дополнительные состояния, которые имеют физический смысл для реальных двухузловых кластеров и могут быть добавлены к базовой модели 8/2.
@@ -154,3 +155,211 @@
 | Связь модели с реальностью | Прямая: состояния модели соответствуют фазам отказа, failover, ремонта, failback |
 | Публикации с расчётами | Не найдено полных марковских расчётов для конкретных продуктов; есть только качественные описания |
 | Практическое применение | Модель 8/2 пригодна для оценки и оптимизации доступности реального двухузлового кластера |
+
+# 2
+
+## Анализ публикаций по imperfect fault coverage
+
+Ниже — систематизированный анализ ключевых работ по теме **imperfect fault coverage** (неполное покрытие отказов) с прямыми ссылками на источники.
+
+***
+
+## 1. Фундаментальные работы
+
+### 1.1 NASA Tutorial по Markov Modeling [ntrs.nasa](https://ntrs.nasa.gov/api/citations/20020050518/downloads/20020050518.pdf)
+
+**Источник:** Boyd M.A. "An Introduction to Markov Modeling: Concepts and Uses". NASA Ames Research Center, 1998. [PDF](https://ntrs.nasa.gov/api/citations/20020050518/downloads/20020050518.pdf)
+
+**Ключевые положения:**
+
+- **Определение:** Imperfect fault coverage возникает, когда динамическая реконфигурация системы в ответ на отказ компонента может не завершиться успешно, что приводит к единой точке отказа системы несмотря на наличие резервирования. [ntrs.nasa](https://ntrs.nasa.gov/api/citations/20020050518/downloads/20020050518.pdf)
+
+- **Моделирование в Markov:** Для каждого imperfectly covered fault вводятся **два исходящих перехода** из состояния:
+  - Успешное покрытие (система переходит в деградированный режим);
+  - Неуспешное покрытие (система переходит в состояние полного отказа).
+
+- **Coverage factor:** Вероятность успешного завершения реконфигурации называется **coverage probability** или **coverage factor**.
+
+**Практическое значение:** Это базовый tutorial, который объясняет, как imperfect coverage вводится в марковские модели. Рекомендован для инженеров и менеджеров, не являющихся экспертами в теории надёжности.
+
+***
+
+### 1.2 Jain & Meena, 2017 [link.springer](https://link.springer.com/article/10.1007/s40092-016-0180-8)
+
+**Источник:** Jain M., Meena R.K. "Fault tolerant system with imperfect coverage, reboot and server vacation". Journal of Industrial Engineering International, 2017. [Springer](https://link.springer.com/article/10.1007/s40092-016-0180-8)
+
+**Модель:**
+
+- Система с operating units + warm/cold spares;
+- Один ремонтник (repairman);
+- Если отказ не обнаружен (imperfect coverage), система переходит в **unsafe state**, из которого восстанавливается через **reboot**.
+
+**Ключевые уравнения:**
+
+- Операционный unit может быть успешно восстановлен с вероятностью $c$ (coverage factor);
+- Если fault не detected (вероятность $1-c$), система входит в reboot state.
+
+**Численные результаты:**
+
+- При $c = 0.5$ (50% покрытие) availability системы значительно ниже, чем при $c = 0.9$;
+- Reboot rate $\beta$ влияет на availability: чем быстрее reboot, тем выше доступность.
+
+**Практическое значение:** Показывает, что imperfect coverage может доминировать над другими факторами (например, количеством spares) в определении итоговой доступности системы.
+
+***
+
+## 2. Специализированные исследования
+
+### 2.1 Demand-based Warm Standby Systems [onlinelibrary.wiley](https://onlinelibrary.wiley.com/doi/abs/10.1002/asmb.2010)
+
+**Источник:** "Reliability of demand‐based warm standby systems subject to fault level coverage". Wiley, 2014.
+
+**Ключевые положения:**
+
+- Рассматривается **demand-based** система: система отказывает, если суммарная capacity работающих компонентов не удовлетворяет demand;
+- Вводится **fault level coverage** — вероятность того, что отказ компонента будет корректно обработан на заданном уровне деградации.
+
+**Метод:** Multivalued decision diagram (MDD) для оценки reliability.
+
+**Вывод:** Fault level coverage критичен для mission-critical систем; даже при высоком резервировании низкое покрытие может привести к катастрофическому снижению reliability.
+
+***
+
+### 2.2 Binary Decision Diagram (BDD) Approach [journals.sagepub](https://journals.sagepub.com/doi/10.1177/1748006X13485562)
+
+**Источники:**
+- Zhai Q. et al. "Binary decision diagram-based reliability evaluation of k-out-of-(n + k) warm standby systems subject to fault-level coverage". SAGE, 2013. [DOI](https://journals.sagepub.com/doi/10.1177/1748006X13485562)
+- "System-level reliability analysis considering imperfect fault coverage". ACM, 2017. [DOI](https://dl.acm.org/doi/10.1145/3139315.3141787)
+
+**Ключевые положения:**
+
+- Используется **BDD** для автоматического включения imperfect fault coverage (IFC) в модели reliability;
+- Рассматриваются k-out-of-(n+k) системы с warm standby;
+- Показано, что IFC может быть автоматически интегрирован в BDD-модели без ручного расширения графа состояний.
+
+**Практическое значение:** Предлагает автоматизированный подход для учёта imperfect coverage в сложных системах, где ручное построение марковских моделей затруднено.
+
+***
+
+### 2.3 Redundant System (KM+1S) with Coverage and Reboot [rairo-ro](https://www.rairo-ro.org/articles/ro/pdf/2022/03/ro210299.pdf)
+
+**Источник:** "Exploiting performance analysis of redundant system (KM+1S) - Incorporating fault coverage and reboot delay". RAIRO-Operations Research, 2022. [PDF](https://www.rairo-ro.org/articles/ro/pdf/2022/03/ro210299.pdf)
+
+**Модель:**
+
+- Detected faults covered perfectly с вероятностью $c$;
+- Imperfectly covered с вероятностью $1-c$;
+- Включён **reboot delay** для восстановления после uncovered faults.
+
+**Результаты:**
+
+- Sensitivity analysis показывает, что увеличение $c$ с 0.9 до 0.99 даёт больший прирост availability, чем добавление дополнительного spare unit.
+
+**Вывод:** Улучшение диагностики (coverage) эффективнее, чем добавление аппаратного резервирования.
+
+***
+
+### 2.4 Coverage Factor Definition [jestec.taylors.edu](https://jestec.taylors.edu.my/Vol%208%20Issue%203%20June%2013/Volume%20(8)%20Issue%20(3)%20344-%20350.pdf)
+
+**Источник:** "Performance Improvement of a Parallel Redundant System...". Taylor's University, 2013. [PDF](https://jestec.taylors.edu.my/Vol%208%20Issue%203%20June%2013/Volume%20(8)%20Issue%20(3)%20344-%20350.pdf)
+
+**Определение:**
+
+> Coverage factor $\alpha$ = probability (fault detected AND system recovers | fault occurs)
+
+**Ключевые положения:**
+
+- Coverage factor связан с supervising mechanism и способностью системы promptly recover;
+- Fault coverage — мера способности системы к fault detection, fault location, fault containment и fault recovery;
+- Uncovered fault — одна из причин immediate system failure.
+
+***
+
+### 2.5 Plant Protection Systems [sciencedirect](https://www.sciencedirect.com/science/article/pii/001905789190008S)
+
+**Источник:** "Fault coverage in plant protection systems". ISA Transactions, 1991. [ScienceDirect](https://www.sciencedirect.com/science/article/pii/001905789190008S)
+
+**Определение:**
+
+> Coverage = properly handled faults / all possible faults
+
+**Метод оценки:**
+
+- Через FMEA (Failure Modes and Effects Analysis);
+- Coverage $c \approx$ (properly handled failures per unit time) / (total failures per unit time).
+
+**Вывод:** Системы с высоким coverage имеют мало covert failure modes и более надёжны.
+
+***
+
+## 3. Связь с феноменом «дублирование лучше троирования»
+
+### 3.1 Механизм феномена
+
+Из анализа литературы следует:
+
+1. **Imperfect coverage доминирует:** При низком coverage factor ($c < 0.99$) вероятность uncovered fault становится основным фактором неготовности системы. [ntrs.nasa](https://ntrs.nasa.gov/api/citations/20020050518/downloads/20020050518.pdf)
+
+2. **Добавление узлов увеличивает риск:** В системе с $n$ узлами общее число потенциальных uncovered faults пропорционально $n$. Если coverage не идеален, добавление узла может увеличить общую вероятность отказа системы. [onlinelibrary.wiley](https://onlinelibrary.wiley.com/doi/abs/10.1002/asmb.2010)
+
+3. **Reboot/recovery не компенсирует:** Даже при наличии механизма reboot (как в ), время восстановления после uncovered fault может быть значительным, что снижает итоговую availability. [link.springer](https://link.springer.com/article/10.1007/s40092-016-0180-8)
+
+### 3.2 Численные подтверждения
+
+Из: [rairo-ro](https://www.rairo-ro.org/articles/ro/pdf/2022/03/ro210299.pdf)
+
+- Увеличение $c$ с 0.9 до 0.99 даёт больший прирост availability, чем добавление spare unit.
+
+Из: [link.springer](https://link.springer.com/article/10.1007/s40092-016-0180-8)
+
+- При $c = 0.5$ availability системы с warm spares ниже, чем у системы без spares, но с $c = 0.9$.
+
+**Вывод:** Феномен «дублирование лучше троирования» при $\eta < 0.999$ полностью согласуется с литературой по imperfect fault coverage.
+
+***
+
+## 4. Практические рекомендации
+
+### 4.1 Для проектирования кластеров
+
+1. **Приоритет диагностики:** Инвестиции в улучшение мониторинга ($\eta \rightarrow 1$) эффективнее, чем добавление дополнительных узлов.
+
+2. **Минимизация скрытых отказов:** Внедрение периодических proof tests (уменьшение $T_{detect}$) критично для систем с неполным покрытием.
+
+3. **Оценка coverage factor:** Перед добавлением резервного узла оценить фактический coverage factor системы (через FMEA или статистику ложных срабатываний).
+
+### 4.2 Для моделирования
+
+1. **Включать imperfect coverage явно:** В марковских моделях использовать два перехода из каждого состояния отказа (успешное/неуспешное покрытие). [ntrs.nasa](https://ntrs.nasa.gov/api/citations/20020050518/downloads/20020050518.pdf)
+
+2. **Учитывать reboot delay:** Если uncovered fault приводит к reboot, явно моделировать это состояние с конечным временем восстановления. [link.springer](https://link.springer.com/article/10.1007/s40092-016-0180-8)
+
+3. **Использовать BDD/MDD:** Для сложных систем применять decision diagram-методы для автоматического учёта fault-level coverage. [journals.sagepub](https://journals.sagepub.com/doi/10.1177/1748006X13485562)
+
+***
+
+## 5. Сводная таблица источников
+
+| Источник | Тип системы | Coverage factor | Ключевой результат |
+|---|---|---|---|
+| Boyd (NASA, 1998)  [ntrs.nasa](https://ntrs.nasa.gov/api/citations/20020050518/downloads/20020050518.pdf) | Общий tutorial | $c$ | Два перехода для imperfectly covered faults |
+| Jain & Meena (2017)  [link.springer](https://link.springer.com/article/10.1007/s40092-016-0180-8) | Machining system с spares | $c = 0.5-0.9$ | Reboot необходим при imperfect coverage |
+| Demand-based warm standby  [onlinelibrary.wiley](https://onlinelibrary.wiley.com/doi/abs/10.1002/asmb.2010) | Warm standby | Fault level coverage | MDD для оценки reliability |
+| Zhai et al. (2013)  [journals.sagepub](https://journals.sagepub.com/doi/10.1177/1748006X13485562) | k-out-of-(n+k) | Fault-level coverage | BDD для автоматического учёта IFC |
+| ACM (2017)  [dl.acm](https://dl.acm.org/doi/10.1145/3139315.3141787) | System-level | IFC | Автоматическое включение IFC в BDD |
+| RAIRO (2022)  [rairo-ro](https://www.rairo-ro.org/articles/ro/pdf/2022/03/ro210299.pdf) | KM+1S redundant | $c = 0.9-0.99$ | Улучшение $c$ эффективнее добавления spare |
+| Taylor's Univ. (2013)  [jestec.taylors.edu](https://jestec.taylors.edu.my/Vol%208%20Issue%203%20June%2013/Volume%20(8)%20Issue%20(3)%20344-%20350.pdf) | Parallel redundant | $\alpha$ | Определение coverage factor |
+| ISA (1991)  [sciencedirect](https://www.sciencedirect.com/science/article/pii/001905789190008S) | Plant protection | $c$ | FMEA для оценки coverage |
+
+***
+
+## 6. Выводы
+
+1. **Феномен подтверждён литературой:** При imperfect fault coverage ($\eta < 0.999$) двухузловые системы могут быть надёжнее трёхузловых.
+
+2. **Механизм:** Добавление узлов увеличивает число потенциальных uncovered faults, что при неполном покрытии снижает общую надёжность.
+
+3. **Практика:** Приоритет — улучшение диагностики и мониторинга, а не добавление аппаратного резервирования.
+
+4. **Моделирование:** Imperfect coverage должен быть явно включён в марковские модели через дополнительные переходы и состояния (reboot, unsafe state).
+   

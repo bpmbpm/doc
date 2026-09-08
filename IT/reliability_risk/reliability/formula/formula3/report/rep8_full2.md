@@ -502,8 +502,11 @@ $$
 Тогда:
 
 $$
-P_0 = \frac{\theta}{\mu} P_{L} =
-\frac{2\lambda(1 - \eta)}{\mu} P_2 + \frac{\lambda(1 - \eta)}{\mu} P_1
+P_0 = \frac{\theta}{\mu} P_{L}
+$$
+
+$$
+P_0 = \frac{2\lambda(1 - \eta)}{\mu} P_2 + \frac{\lambda(1 - \eta)}{\mu} P_1
 $$
 
 ### 10.4 Связь $P_1$ и $P_2$
@@ -516,37 +519,58 @@ $$
 \mu_{failover} P_{FO} + \mu_{tr} P_{1tf} + \mu P_0 - (\lambda_{tr} + \lambda(1 - \eta) + \mu) P_1 = 0
 $$
 
-Подставляем:
+Подставляем выражения для $P_{FO}$, $P_{1tf}$, $P_0$:
 
 $$
-\mu_{failover} \cdot \frac{2\lambda\eta}{\mu_{failover}} P_2 +
-\mu_{tr} \cdot \frac{\lambda_{tr}}{\mu_{tr}} P_1 +
-\mu \cdot \left(
-\frac{2\lambda(1 - \eta)}{\mu} P_2 + \frac{\lambda(1 - \eta)}{\mu} P_1
-\right)
-- (\lambda_{tr} + \lambda(1 - \eta) + \mu) P_1 = 0
+P_{FO} = \frac{2\lambda\eta}{\mu_{failover}} P_2
 $$
 
-Упрощаем:
-
 $$
-2\lambda\eta P_2 + \lambda_{tr} P_1 +
-2\lambda(1 - \eta) P_2 + \lambda(1 - \eta) P_1
-- (\lambda_{tr} + \lambda(1 - \eta) + \mu) P_1 = 0
+P_{1tf} = \frac{\lambda_{tr}}{\mu_{tr}} P_1
 $$
 
-Сгруппируем члены при $P_2$ и $P_1$:
-
-При $P_2$:
-
 $$
-2\lambda\eta + 2\lambda(1 - \eta) = 2\lambda
+P_0 = \frac{2\lambda(1 - \eta)}{\mu} P_2 + \frac{\lambda(1 - \eta)}{\mu} P_1
 $$
 
-При $P_1$:
+Тогда первое слагаемое:
 
 $$
-\lambda_{tr} + \lambda(1 - \eta) - (\lambda_{tr} + \lambda(1 - \eta) + \mu) = -\mu
+\mu_{failover} P_{FO} = \mu_{failover} \cdot \frac{2\lambda\eta}{\mu_{failover}} P_2 = 2\lambda\eta P_2
+$$
+
+Второе слагаемое:
+
+$$
+\mu_{tr} P_{1tf} = \mu_{tr} \cdot \frac{\lambda_{tr}}{\mu_{tr}} P_1 = \lambda_{tr} P_1
+$$
+
+Третье слагаемое:
+
+$$
+\mu P_0 = \mu \cdot \left( \frac{2\lambda(1 - \eta)}{\mu} P_2 + \frac{\lambda(1 - \eta)}{\mu} P_1 \right)
+$$
+
+$$
+\mu P_0 = 2\lambda(1 - \eta) P_2 + \lambda(1 - \eta) P_1
+$$
+
+Подставляем все три слагаемых в уравнение 9.2:
+
+$$
+2\lambda\eta P_2 + \lambda_{tr} P_1 + 2\lambda(1 - \eta) P_2 + \lambda(1 - \eta) P_1 - (\lambda_{tr} + \lambda(1 - \eta) + \mu) P_1 = 0
+$$
+
+Группируем члены при $P_2$:
+
+$$
+2\lambda\eta P_2 + 2\lambda(1 - \eta) P_2 = 2\lambda P_2
+$$
+
+Группируем члены при $P_1$:
+
+$$
+\lambda_{tr} P_1 + \lambda(1 - \eta) P_1 - (\lambda_{tr} + \lambda(1 - \eta) + \mu) P_1 = -\mu P_1
 $$
 
 Получаем:
@@ -588,8 +612,11 @@ P_{FB} = \frac{\mu}{\mu_{failback}} P_1 = \frac{\mu}{\mu_{failback}} \cdot \frac
 $$
 
 $$
-P_{L} = \frac{2\lambda(1 - \eta)}{\theta} P_2 + \frac{\lambda(1 - \eta)}{\theta} P_1 =
-\frac{2\lambda(1 - \eta)}{\theta} P_2 + \frac{\lambda(1 - \eta)}{\theta} \cdot \frac{2\lambda}{\mu} P_2
+P_{L} = \frac{2\lambda(1 - \eta)}{\theta} P_2 + \frac{\lambda(1 - \eta)}{\theta} P_1
+$$
+
+$$
+P_{L} = \frac{2\lambda(1 - \eta)}{\theta} P_2 + \frac{\lambda(1 - \eta)}{\theta} \cdot \frac{2\lambda}{\mu} P_2
 $$
 
 $$
@@ -597,8 +624,11 @@ P_{L} = \frac{2\lambda(1 - \eta)}{\theta} \left(1 + \frac{\lambda}{\mu}\right) P
 $$
 
 $$
-P_0 = \frac{2\lambda(1 - \eta)}{\mu} P_2 + \frac{\lambda(1 - \eta)}{\mu} P_1 =
-\frac{2\lambda(1 - \eta)}{\mu} P_2 + \frac{\lambda(1 - \eta)}{\mu} \cdot \frac{2\lambda}{\mu} P_2
+P_0 = \frac{2\lambda(1 - \eta)}{\mu} P_2 + \frac{\lambda(1 - \eta)}{\mu} P_1
+$$
+
+$$
+P_0 = \frac{2\lambda(1 - \eta)}{\mu} P_2 + \frac{\lambda(1 - \eta)}{\mu} \cdot \frac{2\lambda}{\mu} P_2
 $$
 
 $$
@@ -851,3 +881,301 @@ D =
 + \frac{2\lambda\lambda_{tr}}{\mu \mu_{tr}}
 + \frac{2\lambda(1 - \eta)}{\theta} \left(1 + \frac{\lambda}{\mu}\right)
 + \frac{2\lambda\eta}{\mu_{failover}}
++ \frac{2\lambda}{\mu_{failback}}
+$$
+
+Вычислим каждое слагаемое.
+
+**Unicode:**
+
+D1 = 2λ/μ = 2 · 0.0008 = 0.0016
+
+D2 = 2λ(1 − η)/μ · (1 + λ/μ) = 2 · 3.3333e-05 · 0.01 / 0.0416667 · (1 + 0.0008) = 1.60128e-05
+
+D3 = 2λ_tr/μ_tr = 2 · 5.70775e-06 = 1.14155e-05
+
+D4 = 2λλ_tr/(μ μ_tr) = 2 · (λ/μ) · (λ_tr/μ_tr) = 2 · 0.0008 · 5.70775e-06 = 9.1324e-09
+
+D5 = 2λ(1 − η)/θ · (1 + λ/μ) = 2 · 3.3333e-05 · 0.01 / 0.125 · (1 + 0.0008) = 5.3387e-06
+
+D6 = 2λη/μ_failover = 2 · 3.3333e-05 · 0.99 / 120 = 5.5000e-07
+
+D7 = 2λ/μ_failback = 2 · 3.3333e-05 / 40 = 1.6667e-06
+
+Сумма:
+
+D = 1 + D1 + D2 + D3 + D4 + D5 + D6 + D7
+
+D = 1 + 0.0016 + 1.60128e-05 + 1.14155e-05 + 9.1324e-09 + 5.3387e-06 + 5.5000e-07 + 1.6667e-06
+
+D ≈ 1.00163497
+
+**LaTeX:**
+
+$$
+D_1 = \frac{2\lambda}{\mu} = 0.0016
+$$
+
+$$
+D_2 = \frac{2\lambda(1 - \eta)}{\mu} \left(1 + \frac{\lambda}{\mu}\right) \approx 1.60128 \times 10^{-5}
+$$
+
+$$
+D_3 = \frac{2\lambda_{tr}}{\mu_{tr}} \approx 1.14155 \times 10^{-5}
+$$
+
+$$
+D_4 = \frac{2\lambda\lambda_{tr}}{\mu \mu_{tr}} \approx 9.1324 \times 10^{-9}
+$$
+
+$$
+D_5 = \frac{2\lambda(1 - \eta)}{\theta} \left(1 + \frac{\lambda}{\mu}\right) \approx 5.3387 \times 10^{-6}
+$$
+
+$$
+D_6 = \frac{2\lambda\eta}{\mu_{failover}} \approx 5.5000 \times 10^{-7}
+$$
+
+$$
+D_7 = \frac{2\lambda}{\mu_{failback}} \approx 1.6667 \times 10^{-6}
+$$
+
+$$
+D \approx 1.00163497
+$$
+
+### 12.5 Стационарные вероятности
+
+**Unicode:**
+
+P2 = 1 / D = 1 / 1.00163497 = 0.998367
+
+P1 = (2λ/μ) · P2 = 0.0016 · 0.998367 = 0.0015974
+
+P2tf = (2λ_tr/μ_tr) · P2 = 1.14155e-05 · 0.998367 = 1.1397e-05
+
+P1tf = (λ_tr/μ_tr) · (2λ/μ) · P2 = 5.70775e-06 · 0.0016 · 0.998367 = 9.117e-09
+
+PFO = (2λη/μ_failover) · P2 = 5.5000e-07 · 0.998367 = 5.491e-07
+
+PFB = (2λ/μ_failback) · P2 = 1.6667e-06 · 0.998367 = 1.664e-06
+
+PL = 2λ(1 − η)/θ · (1 + λ/μ) · P2 = 5.3387e-06 · 0.998367 = 5.330e-06
+
+P0 = 2λ(1 − η)/μ · (1 + λ/μ) · P2 = 1.60128e-05 · 0.998367 = 1.5987e-05
+
+Проверка нормировки (сумма всех вероятностей):
+
+P2 + P1 + P0 + P2tf + P1tf + PL + PFO + PFB ≈ 1
+
+**LaTeX:**
+
+$$
+P_2 = \frac{1}{D} \approx 0.998367
+$$
+
+$$
+P_1 = \frac{2\lambda}{\mu} P_2 \approx 0.0015974
+$$
+
+$$
+P_{2tf} = \frac{2\lambda_{tr}}{\mu_{tr}} P_2 \approx 1.1397 \times 10^{-5}
+$$
+
+$$
+P_{1tf} = \frac{\lambda_{tr}}{\mu_{tr}} \cdot \frac{2\lambda}{\mu} P_2 \approx 9.117 \times 10^{-9}
+$$
+
+$$
+P_{FO} = \frac{2\lambda\eta}{\mu_{failover}} P_2 \approx 5.491 \times 10^{-7}
+$$
+
+$$
+P_{FB} = \frac{2\lambda}{\mu_{failback}} P_2 \approx 1.664 \times 10^{-6}
+$$
+
+$$
+P_{L} = \frac{2\lambda(1 - \eta)}{\theta} \left(1 + \frac{\lambda}{\mu}\right) P_2 \approx 5.330 \times 10^{-6}
+$$
+
+$$
+P_0 = \frac{2\lambda(1 - \eta)}{\mu} \left(1 + \frac{\lambda}{\mu}\right) P_2 \approx 1.5987 \times 10^{-5}
+$$
+
+### 12.6 Коэффициент готовности
+
+**Unicode:**
+
+Кг,ст = P2 + P1
+
+Кг,ст = 0.998367 + 0.0015974
+
+Кг,ст = 0.9999644
+
+**LaTeX:**
+
+$$
+K_{\mathrm{г,ст}} = P_2 + P_1
+$$
+
+$$
+K_{\mathrm{г,ст}} \approx 0.998367 + 0.0015974 = 0.9999644
+$$
+
+Стационарная неготовность:
+
+**Unicode:**
+
+Uст = 1 - Кг,ст = 3.56e-05
+
+**LaTeX:**
+
+$$
+U_{\mathrm{ст}} = 1 - K_{\mathrm{г,ст}} \approx 3.56 \times 10^{-5}
+$$
+
+### 12.7 Ожидаемый простой за год
+
+При $T = 8760$ ч:
+
+$$
+T_{\mathrm{простой}} = T \cdot U_{\mathrm{ст}}
+$$
+
+$$
+T_{\mathrm{простой}} = 8760 \cdot 3.56 \times 10^{-5} \approx 0.312\ \text{ч}
+$$
+
+$$
+T_{\mathrm{простой}} \approx 18.7\ \text{мин}
+$$
+
+---
+
+## 13. Ограничения модели
+
+- Все времена до событий предполагаются экспоненциально распределенными (постоянные интенсивности).
+- Отказы узлов считаются независимыми; не учитываются общие причины отказов (питание, сеть, СХД, гипервизор, площадка, версия ПО).
+- Скрытый отказ агрегирован в одно состояние $S_{latent}$ независимо от того, из какого состояния ($S_2$ или $S_1$) произошел переход.
+- Failover и failback моделируются как отдельные состояния с экспоненциальным временем; реальные процедуры могут иметь детерминированные или более сложные распределения.
+- Временные сбои моделируются как переходы в отдельные неработоспособные состояния с экспоненциальным восстановлением; в реальности могут быть пакеты сбоев, коррелированные во времени.
+- Одна ремонтная бригада: одновременно восстанавливается только один узел.
+- Модель описывает стационарный режим ($t \rightarrow \infty$), переходные процессы не рассматриваются.
+- Результат отражает техническую готовность кластера на уровне узлов, но не гарантирует доступность прикладного сервиса без учета зависимостей ПО, данных, сети и инфраструктуры.
+
+---
+
+## Итого
+
+### Граф состояний
+
+```mermaid
+flowchart LR
+    S2((S2))
+    S1((S1))
+    S0_fail([S0_fail])
+    
+    S2_tf([S2_tf])
+    S1_tf([S1_tf])
+    
+    S_latent([S_latent])
+    
+    S_failover([S_failover])
+    S_failback([S_failback])
+
+    S2 -->|"2λ_tr"| S2_tf
+    S2_tf -->|"μ_tr"| S2
+
+    S2 -->|"2λη"| S_failover
+    S2 -->|"2λ(1 − η)"| S_latent
+    S_failover -->|"μ_failover"| S1
+    S_latent -->|"θ"| S0_fail
+
+    S1 -->|"λ_tr"| S1_tf
+    S1_tf -->|"μ_tr"| S1
+
+    S1 -->|"λ(1 − η)"| S_latent
+    S1 -->|"μ"| S_failback
+    S_failback -->|"μ_failback"| S2
+
+    S0_fail -->|"μ"| S1
+```
+
+### Легенда состояний
+
+| Состояние | Смысл |
+|---|---|
+| $S_2$ | Оба узла работоспособны |
+| $S_1$ | Один узел работоспособен, второй в ремонте |
+| $S_{0\_fail}$ | Оба узла отказали, кластер неработоспособен |
+| $S_{2\_tf}$ | Временный сбой одного из двух узлов |
+| $S_{1\_tf}$ | Временный сбой единственного работоспособного узла |
+| $S_{latent}$ | Скрытый отказ одного из узлов |
+| $S_{failover}$ | Выполняется failover при отказе узла |
+| $S_{failback}$ | Выполняется failback после восстановления узла |
+
+### Основные формулы
+
+**Unicode:**
+
+P1 = (2λ/μ) · P2
+
+D = 1 + 2λ/μ + 2λ(1 − η)/μ · (1 + λ/μ) + 2λ_tr/μ_tr + 2λλ_tr/(μ μ_tr) + 2λ(1 − η)/θ · (1 + λ/μ) + 2λη/μ_failover + 2λ/μ_failback
+
+P2 = 1 / D
+
+Кг,ст = P2 + P1 = (1 + 2λ/μ) / D
+
+**LaTeX:**
+
+$$
+P_1 = \frac{2\lambda}{\mu} P_2
+$$
+
+$$
+D =
+1
++ \frac{2\lambda}{\mu}
++ \frac{2\lambda(1 - \eta)}{\mu} \left(1 + \frac{\lambda}{\mu}\right)
++ \frac{2\lambda_{tr}}{\mu_{tr}}
++ \frac{2\lambda\lambda_{tr}}{\mu \mu_{tr}}
++ \frac{2\lambda(1 - \eta)}{\theta} \left(1 + \frac{\lambda}{\mu}\right)
++ \frac{2\lambda\eta}{\mu_{failover}}
++ \frac{2\lambda}{\mu_{failback}}
+$$
+
+$$
+P_2 = \frac{1}{D}
+$$
+
+$$
+K_{\mathrm{г,ст}} = P_2 + P_1 = \frac{1 + \frac{2\lambda}{\mu}}{D}
+$$
+
+### Численный результат
+
+| Показатель | Значение |
+|---|---:|
+| $\lambda$ | $3.3333 \times 10^{-5}\ \text{ч}^{-1}$ |
+| $\mu$ | $0.0416667\ \text{ч}^{-1}$ |
+| $\lambda_{tr}$ | $1.14155 \times 10^{-4}\ \text{ч}^{-1}$ |
+| $\mu_{tr}$ | $20\ \text{ч}^{-1}$ |
+| $\mu_{failover}$ | $120\ \text{ч}^{-1}$ |
+| $\mu_{failback}$ | $40\ \text{ч}^{-1}$ |
+| $\theta$ | $0.125\ \text{ч}^{-1}$ |
+| $\eta$ | 0.99 |
+| $P_2$ | 0.998367 |
+| $P_1$ | 0.0015974 |
+| $P_{0\_fail}$ | $1.5987 \times 10^{-5}$ |
+| $P_{2\_tf}$ | $1.1397 \times 10^{-5}$ |
+| $P_{1\_tf}$ | $9.117 \times 10^{-9}$ |
+| $P_{latent}$ | $5.330 \times 10^{-6}$ |
+| $P_{failover}$ | $5.491 \times 10^{-7}$ |
+| $P_{failback}$ | $1.664 \times 10^{-6}$ |
+| $K_{\mathrm{г,ст}}$ | 0.9999644 |
+| $U_{\mathrm{ст}}$ | $3.56 \times 10^{-5}$ |
+| Ожидаемый простой за 8760 ч | около 18.7 мин |
+
+### Ограничения модели
+
+Модель не учитывает общие причины отказов, зависимости инфраструктуры и ПО, неэкспоненциальные распределения времен failover/failback/сбоев, задержки диагностики, переходную готовность и детали реализации кластеризации на уровне ПО.

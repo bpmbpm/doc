@@ -512,6 +512,7 @@ $$
 
 Уравнение 9.2:
 
+
 $$
 \mu_{failover} P_{FO} + \mu_{tr} P_{1tf} + \mu P_0 - (\lambda_{tr} + \lambda(1 - \eta) + \mu) P_1 = 0
 $$

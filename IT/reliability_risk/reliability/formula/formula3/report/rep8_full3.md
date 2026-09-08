@@ -671,8 +671,9 @@ D =
 $$
 
 
-Примечание не ИИ. Тут возникает проблмема с LaTex: 
-GitHub Markdown некорректно отображает многострочные формулы с `\\` и `+` на новых строках внутри одного `$$...$$`. Решение — записывать всю формулу в одну строку без переносов.
+**Примечание**.  
+Тут возникает проблмема с LaTex:  
+GitHub Markdown некорректно отображает многострочные формулы с `\\` и `+` на новых строках внутри одного `$$...$$`. Решение — записывать всю формулу в одну строку без переносов.  
 Устраняем:
 
 $$
@@ -685,7 +686,7 @@ $$
 D = 1 + \frac{2\lambda}{\mu} + \frac{2\lambda(1 - \eta)}{\mu} \left(1 + \frac{\lambda}{\mu}\right) + \frac{2\lambda_{tr}}{\mu_{tr}} + \frac{2\lambda\lambda_{tr}}{\mu \mu_{tr}} + \frac{2\lambda(1 - \eta)}{\theta} \left(1 + \frac{\lambda}{\mu}\right) + \frac{2\lambda\eta}{\mu_{failover}} + \frac{2\lambda}{\mu_{failback}}
 $$
  
-Конец Примечания. 
+Конец **Примечания**. 
 
 Тогда:
 
@@ -753,7 +754,8 @@ D =
 + \frac{2\lambda}{\mu_{failback}}
 $$
 
-Примечание. Снова проблема, исправляем:
+**Примечание**. Снова проблема.  
+Устраняем::
 
 $$
 D = 1 + \frac{2\lambda}{\mu} + \frac{2\lambda(1 - \eta)}{\mu} \left(1 + \frac{\lambda}{\mu}\right) + \frac{2\lambda_{tr}}{\mu_{tr}} + \frac{2\lambda\lambda_{tr}}{\mu \mu_{tr}} + \frac{2\lambda(1 - \eta)}{\theta} \left(1 + \frac{\lambda}{\mu}\right) + \frac{2\lambda\eta}{\mu_{failover}} + \frac{2\lambda}{\mu_{failback}}
@@ -761,7 +763,7 @@ $$
 
 Такая запись без переносов строк внутри `$$...$$` должна корректно отображаться в GitHub Markdown.
 
-конец Примечания
+Конец **Примечания**
 
 $$
 K_{\mathrm{г,ст}} =

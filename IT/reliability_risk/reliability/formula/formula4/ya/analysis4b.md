@@ -229,3 +229,30 @@ $$
 - В терминологии отказоустойчивых вычислений этот эффект обычно связывают с **imperfect fault coverage**, **latent/dormant faults**, **reconfiguration penalty** и **repair bottleneck**.
 
 **Рекомендация:** при проектировании отказоустойчивых кластеров необходимо учитывать не только число резервных узлов, но и времена восстановления, переключения и перезапуска, а также возможности ремонтной службы. В ряде случаев дублирование может быть не только дешевле, но и надёжнее троирования.
+
+Ниже приведены ссылки на каждый источник, упомянутый в анализе. Для книг и статей, защищённых авторским правом, приводятся ссылки на официальные страницы издательств или цифровые библиотеки, где можно легально приобрести или получить доступ (иногда через подписку учреждения). Для открытых источников даны прямые ссылки.
+
+### Список источников и ссылки
+
+| № | Источник | Ссылка |
+|---|----------|--------|
+| 1 | **Trivedi K.S.** *Probability and Statistics with Reliability, Queuing, and Computer Science Applications*, 2nd ed., Wiley, 2002. | [Wiley](https://www.wiley.com/en-us/Probability+and+Statistics+with+Reliability%2C+Queuing%2C+and+Computer+Science+Applications%2C+2nd+Edition-p-9780471333418) |
+| 2 | **Rausand M., Høyland A.** *System Reliability Theory: Models, Statistical Methods, and Applications*, 2nd ed., Wiley, 2004. | [Wiley](https://www.wiley.com/en-us/System+Reliability+Theory%3A+Models%2C+Statistical+Methods%2C+and+Applications%2C+2nd+Edition-p-9780471471332) |
+| 3 | **Meyer J.F.** "On Evaluating the Performability of Degradable Computing Systems", *IEEE Transactions on Computers*, vol. C-29, no. 8, 1980, pp. 720–731. | [IEEE Xplore](https://doi.org/10.1109/TC.1980.1675628) |
+| 4 | **Avizienis A., Laprie J.-C., Randell B.** *Fundamental Concepts of Dependability*, Technical Report, 2001. | [ResearchGate](https://www.researchgate.net/publication/2205645_Fundamental_Concepts_of_Dependability) (доступна PDF) |
+| 5 | **TL 9000 Quality Management System**, Release 5.5, 2012. | [TL 9000 Official Site](https://tl9000.org/) (стандарт платный, доступ через членство) |
+| 6 | **Shooman M.L.** *Reliability of Computer Systems and Networks: Fault Tolerance, Analysis, and Design*, Wiley, 2002. | [Wiley](https://www.wiley.com/en-us/Reliability+of+Computer+Systems+and+Networks%3A+Fault+Tolerance%2C+Analysis%2C+and+Design-p-9780471293422) |
+| 7 | **Dhillon B.S.** *Reliability, Quality, and Safety for Engineers*, CRC Press, 2005. | [Routledge (CRC Press)](https://www.routledge.com/Reliability-Quality-and-Safety-for-Engineers/Dhillon/p/book/9780849330681) |
+| 8 | **Levitin G.** *The Universal Generating Function in Reliability Analysis and Optimization*, Springer, 2005. | [SpringerLink](https://link.springer.com/book/10.1007/1-84628-245-4) |
+| 9 | **Gertsbakh I.B.** *Reliability Theory with Applications to Preventive Maintenance*, Springer, 2000. | [SpringerLink](https://link.springer.com/book/10.1007/978-3-662-04273-1) |
+| 10 | **Laprie J.-C. (ed.)** *Dependability: Basic Concepts and Terminology*, Springer, 1992. | [SpringerLink](https://link.springer.com/book/10.1007/978-3-7091-9170-5) |
+| 11 | **Coit D.W., Smith A.E.** "Reliability optimization of series-parallel systems using a genetic algorithm", *IEEE Transactions on Reliability*, vol. 45, no. 2, 1996. | [IEEE Xplore](https://doi.org/10.1109/24.510827) |
+| 12 | **Somani A.K., Vaidya N.H.** "Understanding fault tolerance and reliability", *IEEE Computer*, vol. 30, no. 4, 1997. | [IEEE Xplore](https://doi.org/10.1109/2.585154) |
+| 13 | **Куперман М.Б., Аверьянов Д.Е.** «Подход к оценке надежности кластерных структур» // Научные ведомости БелГУ, серия «Экономика. Информатика», № 13(84), вып. 15/1, 2010. | [КиберЛенинка](https://cyberleninka.ru/article/n/podhod-k-otsenke-nadezhnosti-klasternyh-struktur) (открытый доступ) |
+| 14 | **Dugan J.B., Trivedi K.S.** "Coverage Modeling for Dependability Analysis of Fault-Tolerant Systems", *IEEE Transactions on Computers*, vol. 38, no. 6, 1989, pp. 775–787. | [IEEE Xplore](https://doi.org/10.1109/12.24295) |
+| 15 | **Avizienis A., Laprie J.-C., Randell B., Landwehr C.** "Basic Concepts and Taxonomy of Dependable and Secure Computing", *IEEE Transactions on Dependable and Secure Computing*, vol. 1, no. 1, 2004, pp. 11–33. | [IEEE Xplore](https://doi.org/10.1109/TDSC.2004.2) |
+
+**Примечание:**  
+- Для платных источников (книги, статьи IEEE) доступ может быть через библиотеку университета или организации.  
+- КиберЛенинка и ResearchGate предоставляют свободный доступ к указанным материалам.  
+- TL 9000 является коммерческим стандартом; официальный сайт позволяет приобрести документ.

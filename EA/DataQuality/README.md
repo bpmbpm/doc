@@ -70,3 +70,4 @@
 
 ### 7
 - [Data profiling, и с чем его едят](https://habr.com/ru/companies/unidata/articles/667636/)
+- [Почему одинаковые показатели в разных отчётах не совпадают](https://habr.com/ru/articles/1079462/)

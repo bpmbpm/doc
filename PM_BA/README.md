@@ -31,3 +31,4 @@
 
 ## Kanban
 - [Люди гибнут за канбан. 7 способов убить даже хорошую доску](https://habr.com/ru/companies/yougile/articles/1079880/)
+- [Scrum, Kanban, SAFe, Lean — кто все эти люди?](https://habr.com/ru/articles/1079848/)

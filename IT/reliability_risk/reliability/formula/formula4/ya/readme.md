@@ -1,3 +1,5 @@
+https://github.com/bpmbpm/doc/blob/main/IT/reliability_risk/reliability/formula/cluster1.md
+
 ## prompt8_full1.md
 deepseek
 

@@ -4,7 +4,7 @@
 - [Как запустить Qwen3.8-Flash-Next 125B на 6 ГБ VRAM](https://habr.com/ru/articles/1079902/)
 
 ### also
-- 
+- https://github.com/bpmbpm/doc/blob/main/AI/self_host.md
 
 ### DeepSeek Hardware
 

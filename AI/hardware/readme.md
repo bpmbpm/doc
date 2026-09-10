@@ -3,6 +3,9 @@
 - [Корпоративный мозг на одной видеокарте: что на самом деле умеет локальная модель](https://habr.com/ru/articles/1072746/)
 - [Как запустить Qwen3.8-Flash-Next 125B на 6 ГБ VRAM](https://habr.com/ru/articles/1079902/)
 
+### also
+- 
+
 ### DeepSeek Hardware
 
 - [Требования к GPU и VRAM](https://habr.com/ru/articles/876320/)

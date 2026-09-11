@@ -2,7 +2,7 @@
 
 ## Сравнение моделей статьи с Jain & Meena (2017)
 
-Ниже — детальное сравнение моделей из статьи с моделью из работы Jain & Meena "Fault tolerant system with imperfect coverage, reboot and server vacation", упрощённая версия их графа в стиле вашей статьи, и анализ схожестей. [link.springer](https://link.springer.com/chapter/10.1007/978-3-662-05409-3_6)
+Ниже — детальное сравнение моделей из вашей статьи с моделью из работы Jain & Meena "Fault tolerant system with imperfect coverage, reboot and server vacation", упрощённая версия их графа в стиле вашей статьи, и анализ схожестей. [link.springer](https://link.springer.com/chapter/10.1007/978-3-662-05409-3_6)
 
 ***
 

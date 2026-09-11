@@ -44,4 +44,4 @@ https://github.com/bpmbpm/doc/tree/main/EA/ORG
   - сыворотка лжи, палантир правды (ИИ дает индекс правды по статье о лин, ВРМ и т.п.)
 
 ## ai
-- https://github.com/bpmbpm/doc/blob/main/AI/agent1.md#3
+- https://github.com/bpmbpm/doc/blob/main/AI/agent1.md#3-psychology

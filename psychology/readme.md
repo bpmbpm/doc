@@ -42,3 +42,6 @@ https://github.com/bpmbpm/doc/tree/main/EA/ORG
 - [Как младенец с погремушкой объясняет крах государств](https://habr.com/ru/articles/1002012/#comment_29635856)
 - тг leanconsult 30.03.26
   - сыворотка лжи, палантир правды (ИИ дает индекс правды по статье о лин, ВРМ и т.п.)
+
+## ai
+- https://github.com/bpmbpm/doc/blob/main/AI/agent1.md#3

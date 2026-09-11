@@ -4,5 +4,5 @@
 ## 2
 - [Архитектура современных ИИ-агентов: собираем прототип за один вечер](https://habr.com/ru/companies/selectel/articles/1079660/)
 
-## 3
+## 3 psychology
 - [Я попал к психиатру из‑за кодинга с AI](https://habr.com/ru/articles/1080778/) Потом я пересел с VSCode на Cursor, затем в терминальные harness’ы

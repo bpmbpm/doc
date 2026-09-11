@@ -14,7 +14,7 @@
 
 **Число состояний:** 12 (без transient faults):
 
-- i = 0, 1, 2 (число отказавших units);
+- i = 0, 1, 2 (число working units);
 - j = 0, 1, 2 (состояние ремонтника: vacation, busy, broken);
 - k = 0, 1 (режим системы: operating, reboot).
 
@@ -31,35 +31,40 @@ flowchart LR
     S1_brok([S1_brok])
     
     S0_vac([S0_vac])
+    S0_busy([S0_busy])
     S0_brok([S0_brok])
     
     S2_reb([S2_reb])
     S1_reb([S1_reb])
 
-    S2_busy -->|"2λ(1-c)| S2_reb
-    S1_busy -->|"λ(1-c)| S1_reb
+    S2_busy -->|"2λ(1-c)"| S2_reb
+    S1_busy -->|"λ(1-c)"| S1_reb
     
     S2_reb -->|"β"| S2_busy
     S1_reb -->|"β"| S1_busy
     
-    S2_busy -->|"2λc| S1_busy
-    S1_busy -->|"λ| S0_brok
+    S2_busy -->|"2λc"| S1_busy
+    S1_busy -->|"λ"| S0_busy
     
     S2_vac -->|"ξ"| S2_busy
     S1_vac -->|"ξ"| S1_busy
-    S0_vac -->|"ξ"| S0_brok
+    S0_vac -->|"ξ"| S0_busy
     
-    S2_busy -->|"μ| S2_vac
-    S1_busy -->|"μ| S1_vac
+    S2_busy -->|"μ"| S2_vac
+    S1_busy -->|"μ"| S1_vac
+    S0_busy -->|"μ"| S0_vac
     
-    S2_brok -->|"b| S2_busy
-    S1_brok -->|"b| S1_busy
-    S0_brok -->|"b| S1_busy
+    S2_brok -->|"b"| S2_busy
+    S1_brok -->|"b"| S1_busy
+    S0_brok -->|"b"| S0_busy
     
-    S2_busy -->|"a| S2_brok
-    S1_busy -->|"a| S1_brok
+    S2_busy -->|"a"| S2_brok
+    S1_busy -->|"a"| S1_brok
+    S0_busy -->|"a"| S0_brok
     
-    S0_brok -->|"μ| S1_brok
+    S2_vac -->|"γ"| S2_busy
+    S1_vac -->|"γ"| S1_busy
+    S0_vac -->|"γ"| S0_busy
 ```
 
 **Рис. П.1. Полный граф модели J&M (M=2, S=1, с vacation и breakdown).**
@@ -69,17 +74,16 @@ flowchart LR
 | Состояние | Смысл |
 |---|---|
 | S2_vac, S1_vac, S0_vac | Vacation state (ремонтник на отдыхе) с 2, 1, 0 working units |
-| S2_busy, S1_busy, S0_brok | Busy state (ремонтник работает) с 2, 1, 0 working units |
+| S2_busy, S1_busy, S0_busy | Busy state (ремонтник работает) с 2, 1, 0 working units |
 | S2_brok, S1_brok, S0_brok | Breakdown state (ремонтник отказал) с 2, 1, 0 working units |
 | S2_reb, S1_reb | Reboot state (неуспешное покрытие отказа) |
 | λ | Failure rate (интенсивность отказа единицы) |
 | c | Coverage probability (вероятность покрытия) |
 | 1 − c | Imperfect coverage probability (вероятность непокрытия) |
-| σ | Recovery rate (интенсивность восстановления) — в графе не показана, так как это переход |
 | β | Reboot rate (интенсивность перезагрузки) |
 | μ | Repair rate (интенсивность ремонта) |
 | ξ | Vacation rate (интенсивность ухода на отдых) |
-| γ | Return rate (интенсивность возврата из vacation) — в графе не показан, так как это переход |
+| γ | Return rate (интенсивность возврата из vacation) |
 | a | Breakdown rate (интенсивность отказа ремонтника) |
 | b | Repair rate of server (интенсивность восстановления ремонтника) |
 
@@ -123,15 +127,18 @@ flowchart LR
 flowchart LR
     S2((S2 / S2_busy))
     S1((S1 / S1_busy))
-    S0([S0_fail / S0_brok])
+    S0([S0_fail / S0_busy])
 
     S2 -->|"2λ / 2λ"| S1
     S1 -->|"λ / λ"| S0
     
     S0 -->|"μ / μ"| S1
+    S1 -->|"μ / μ"| S2
 ```
 
 **Рис. П.2. Работоспособные состояния (общее для avers_52 и J&M).**
+
+**Исправление:** Добавлен переход S1 → S2 с rate μ (ремонт завершён, возврат к полной работоспособности).
 
 ***
 
@@ -148,11 +155,11 @@ flowchart LR
     S2_lat([S_latent / S2_reb])
     S1_lat([S_latent / S1_reb])
 
-    S2 -->|"2λη / 2λ(1-c)| S2_fov
-    S2 -->|"2λ(1-η) / 2λ(1-c)| S2_lat
+    S2 -->|"2λη / 2λ(1-c)"| S2_fov
+    S2 -->|"2λ(1-η) / 2λ(1-c)"| S2_lat
     
-    S1 -->|"λη / λ(1-c)| S1_fov
-    S1 -->|"λ(1-η) / λ(1-c)| S1_lat
+    S1 -->|"λη / λ(1-c)"| S1_fov
+    S1 -->|"λ(1-η) / λ(1-c)"| S1_lat
     
     S2_fov -->|"μ_failover / —"| S1
     S1_fov -->|"μ_failover / —"| S0
@@ -167,6 +174,31 @@ flowchart LR
 
 #### 5.3 Vacation и breakdown (только J&M)
 
+**Подробное пояснение:**
+
+В модели J&M ремонтник (server) может находиться в трёх состояниях:
+
+1. **Busy (занят):** Ремонтник активно ремонтирует отказавшие единицы.
+2. **Vacation (отдых):** Если нет отказов (все units working), ремонтник уходит на vacation. Это не просто «простой», а отдельное состояние с параметрами:
+   - ξ (xi, vacation rate) — интенсивность ухода на vacation;
+   - γ (gamma, return rate) — интенсивность возврата из vacation.
+3. **Breakdown (отказ):** Ремонтник сам может отказать (сломался инструмент, бригада заболела). Параметры:
+   - a (breakdown rate) — интенсивность отказа ремонтника;
+   - b (repair rate of server) — интенсивность восстановления ремонтника.
+
+**Физический смысл для кластера:**
+
+- **Vacation:** Ремонтная бригада не дежурит 24/7, а работает по графику (например, 9:00–18:00). Если отказ произошёл в нерабочее время, система ждёт возврата бригады.
+- **Breakdown:** Ремонтная бригада или инструмент вышли из строя. Требуется восстановление бригады/инструмента перед началом ремонта.
+
+**Почему это не учтено в MTTR:**
+
+- **MTTR** — среднее время ремонта (когда бригада работает);
+- **Vacation** — задержка до начала ремонта (бригада недоступна);
+- **Breakdown** — задержка из-за отказа самой бригады.
+
+Это **дополнительные задержки**, которые увеличивают общее время восстановления, но не сводятся к простому увеличению MTTR.
+
 ```mermaid
 flowchart LR
     S2_busy((S2_busy))
@@ -176,21 +208,38 @@ flowchart LR
     S1_busy((S1_busy))
     S1_vac((S1_vac))
     S1_brok([S1_brok])
+    
+    S0_busy([S0_busy])
+    S0_vac([S0_vac])
+    S0_brok([S0_brok])
 
-    S2_busy -->|"ξ / —"| S2_vac
-    S1_busy -->|"ξ / —"| S1_vac
+    S2_busy -->|"ξ"| S2_vac
+    S1_busy -->|"ξ"| S1_vac
+    S0_busy -->|"ξ"| S0_vac
     
-    S2_vac -->|"γ / —"| S2_busy
-    S1_vac -->|"γ / —"| S1_busy
+    S2_vac -->|"γ"| S2_busy
+    S1_vac -->|"γ"| S1_busy
+    S0_vac -->|"γ"| S0_busy
     
-    S2_busy -->|"a / —"| S2_brok
-    S1_busy -->|"a / —"| S1_brok
+    S2_busy -->|"a"| S2_brok
+    S1_busy -->|"a"| S1_brok
+    S0_busy -->|"a"| S0_brok
     
-    S2_brok -->|"b / —"| S2_busy
-    S1_brok -->|"b / —"| S1_busy
+    S2_brok -->|"b"| S2_busy
+    S1_brok -->|"b"| S1_busy
+    S0_brok -->|"b"| S0_busy
 ```
 
 **Рис. П.4. Vacation и breakdown (только J&M).**
+
+**Легенда:**
+
+| Переход | Смысл |
+|---|---|
+| S_busy → S_vac (rate ξ) | Уход ремонтника на vacation (если нет отказов) |
+| S_vac → S_busy (rate γ) | Возврат ремонтника из vacation (при появлении отказов) |
+| S_busy → S_brok (rate a) | Отказ ремонтника (breakdown) |
+| S_brok → S_busy (rate b) | Восстановление ремонтника после отказа |
 
 ***
 
@@ -244,3 +293,4 @@ flowchart LR
 ### 9. Источники
 
  Jain M., Meena R.K. "Fault tolerant system with imperfect coverage, reboot and server vacation". Journal of Industrial Engineering International, 2017. [PDF](https://link.springer.com/content/pdf/10.1007/s40092-016-0180-8.pdf) [link.springer](https://link.springer.com/chapter/10.1007/978-3-662-05409-3_6)
+

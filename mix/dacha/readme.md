@@ -12,3 +12,6 @@
 
 ### also
 - https://github.com/bpmbpm/doc/blob/main/IT/DIY/readme.md
+
+### electricity
+- [Электричество трением: трибоэлектрические генераторы на примере конкретного устройства](https://habr.com/ru/companies/ruvds/articles/1016470/) 

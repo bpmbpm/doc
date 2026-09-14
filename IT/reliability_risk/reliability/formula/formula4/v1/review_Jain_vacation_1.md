@@ -111,10 +111,10 @@ flowchart LR
     Busy((Busy / Занят))
     Broken([Broken / Отказал])
 
-    Vacation -->|"ξ (vacation rate)| Busy
-    Busy -->|"μ (return rate)| Vacation
-    Busy -->|"a (breakdown rate)| Broken
-    Broken -->|"b (repair rate)| Busy
+    Vacation -->|"ξ (vacation rate)"| Busy
+    Busy -->|"μ (return rate)"| Vacation
+    Busy -->|"a (breakdown rate)"| Broken
+    Broken -->|"b (repair rate)"| Busy
 ```
 
 **Рис. 1. Граф состояний сервера (ремонтника) в модели J&M.**

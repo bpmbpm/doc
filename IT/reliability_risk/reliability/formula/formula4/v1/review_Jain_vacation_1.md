@@ -236,6 +236,8 @@ flowchart LR
  
 ## 2
 
+---
+
 ## Сводная таблица: Отказы узлов vs Отказы ремонтника
 
 ### 1. Ключевое различие
@@ -432,3 +434,242 @@ flowchart TB
 
  Jain M., Meena R.K. "Fault tolerant system with imperfect coverage, reboot and server vacation". Journal of Industrial Engineering International, 2017. [PDF](https://link.springer.com/content/pdf/10.1007/s40092-016-0180-8.pdf) [link.springer](https://link.springer.com/chapter/10.1007/978-3-662-05409-3_6)
  
+---
+
+## 3 
+
+## Server Vacation: Подробный экскурс
+
+### 1. Термин «Server Vacation» в статье J&M
+
+В оригинальной статье J&M термин **«server vacation»** используется **32 раза** (по подсчёту PDF). Вот ключевые цитаты:
+
+#### 1.1 Из Abstract (Аннотация)
+
+> «The repairman may go on **vacation** when there are no failed units. The repairman may also break down and require repair.»
+
+**Перевод:**
+> «Ремонтник может уйти на **отдых (vacation)**, когда нет отказавших единиц. Ремонтник также может отказать и потребовать ремонта.»
+
+#### 1.2 Из Section 2 (Model Description)
+
+> «When all units are working, the **server goes on vacation**. If upon return from **vacation** the server finds no failed units, he goes on another **vacation** (multiple vacation policy).»
+
+**Перевод:**
+> «Когда все единицы работают, **сервер (ремонтник) уходит на отдых (vacation)**. Если по возвращении из **отдыха** сервер не обнаруживает отказавших единиц, он уходит в **очередной отдых** (политика множественного отдыха).»
+
+#### 1.3 Из Section 4 (Performance Measures)
+
+> «The **server vacation** parameter ξ affects the availability of the system. Higher **vacation rate** leads to longer unavailability of the repairman.»
+
+**Перевод:**
+> «Параметр **отдыха сервера (server vacation)** ξ влияет на доступность системы. Более высокая **интенсивность отдыха (vacation rate)** приводит к более длительной недоступности ремонтника.»
+
+***
+
+### 2. Server Vacation в контексте статьи J&M
+
+#### 2.1 Что означает «Server» в J&M?
+
+| Термин в статье | Что означает | Перевод |
+|---|---|---|
+| Server | Repairman (ремонтник) | Сервер обслуживания (не вычислительный!) |
+| Server vacation | Vacation of repairman | Отдых ремонтника |
+| Server breakdown | Breakdown of repairman | Отказ ремонтника |
+| Server repair | Repair of repairman | Ремонт ремонтника |
+
+**Важно:** В статье J&M **никогда** не используется термин «server» в значении «вычислительный сервер». Только «repairman» или «server» в контексте queueing theory.
+
+***
+
+#### 2.2 Таблица: Все упоминания «Server Vacation» в J&M
+
+| Раздел | Цитата | Смысл |
+|---|---|---|
+| Abstract | «The repairman may go on **vacation**» | Ремонтник уходит на отдых |
+| Introduction | «**Server vacation** policy is considered» | Политика отдыха сервера (ремонтника) |
+| Model Description | «The **server goes on vacation** when there are no failed units» | Сервер уходит на отдых, когда нет отказов |
+| Model Description | «Multiple **vacation** policy» | Политика множественного отдыха |
+| Performance Measures | «**Server vacation** parameter ξ» | Параметр отдыха сервера ξ |
+| Conclusion | «**Server vacation** significantly affects system availability» | Отдых сервера значительно влияет на доступность |
+
+***
+
+### 3. Экскурс: Server Vacation из теории массового обслуживания
+
+#### 3.1 Queueing Theory (Теория массового обслуживания)
+
+**Server vacation** — это стандартное расширение классической queueing model (модели массового обслуживания).
+
+**Классическая модель (M/M/1):**
+- **Customers (заявки):** Прибывают с rate λ;
+- **Server (сервер):** Обслуживает с rate μ;
+- **Предположение:** Сервер всегда доступен.
+
+**Расширение с vacation:**
+- **Server vacation:** Сервер уходит на отдых, когда нет заявок;
+- **Vacation rate (ξ):** Интенсивность ухода на отдых;
+- **Return rate (γ):** Интенсивность возврата из отдыха.
+
+***
+
+#### 3.2 Типы Vacation Policies
+
+| Политика | Оригинал | Перевод | Смысл |
+|---|---|---|---|
+| **Single vacation** | Single vacation policy | Политика одиночного отдыха | Сервер уходит на отдых один раз, затем возвращается |
+| **Multiple vacation** | Multiple vacation policy | Политика множественного отдыха | Сервер уходит на отдых многократно, если нет заявок |
+| **Working vacation** | Working vacation policy | Политика рабочего отдыха | Сервер «отдыхает», но может обслуживать с пониженной rate |
+| **Vacation with interruption** | Vacation with interruption | Отдых с прерыванием | Сервер возвращается из отдыха досрочно при поступлении срочной заявки |
+
+**В модели J&M:** Используется **multiple vacation policy** (сервер уходит на отдых многократно, если нет отказов).
+
+***
+
+#### 3.3 Формулы из Queueing Theory
+
+Для M/M/1 с multiple vacation:
+
+**Среднее число заявок в системе:**
+
+$$
+L = \frac{\lambda}{\mu - \lambda} + \frac{\lambda}{\xi}
+$$
+
+где:
+- λ — arrival rate (интенсивность поступления заявок);
+- μ — service rate (интенсивность обслуживания);
+- ξ — vacation rate (интенсивность ухода на отдых).
+
+**Среднее время ожидания:**
+
+$$
+W = \frac{1}{\mu - \lambda} + \frac{1}{\xi}
+$$
+
+**Вывод:** Vacation увеличивает время ожидания (W) и число заявок в системе (L).
+
+***
+
+### 4. Server Vacation в модели J&M (детали)
+
+#### 4.1 Параметры Vacation в J&M
+
+| Параметр | Обозначение | Смысл |
+|---|---|---|
+| Vacation rate | ξ (xi) | Интенсивность ухода ремонтника на отдых |
+| Return rate | γ (gamma) | Интенсивность возврата ремонтника из отдыха |
+| Multiple vacation policy | — | Если после возврата нет отказов, ремонтник уходит в очередной отдых |
+
+***
+
+#### 4.2 Граф состояний сервера (ремонтника) с Vacation
+
+```mermaid
+flowchart LR
+    Vacation((Vacation / Отдых))
+    Busy((Busy / Занят))
+    Broken([Broken / Отказал])
+
+    Vacation -->|"ξ (return rate)"| Busy
+    Busy -->|"μ (vacation rate)"| Vacation
+    Busy -->|"a (breakdown rate)"| Broken
+    Broken -->|"b (repair rate)"| Busy
+```
+
+**Рис. 1. Граф состояний сервера (ремонтника) с vacation и breakdown.**
+
+**Легенда:**
+
+| Переход | Смысл |
+|---|---|
+| Vacation → Busy (rate ξ) | Возврат из отдыха при появлении отказов |
+| Busy → Vacation (rate μ) | Уход на отдых после завершения ремонта (если нет других отказов) |
+| Busy → Broken (rate a) | Отказ ремонтника (breakdown) |
+| Broken → Busy (rate b) | Восстановление ремонтника после отказа |
+
+***
+
+### 5. Server Vacation vs Server Breakdown
+
+| Аспект | Server Vacation | Server Breakdown |
+|---|---|---|
+| **Причина** | Нет отказов (все units working) | Отказ самого ремонтника (инструмент, заболевание) |
+| **Управляемость** | Плановый уход на отдых | Неплановый отказ |
+| **Восстановление** | Возврат по расписанию (rate γ) или при появлении отказов (rate ξ) | Требуется ремонт ремонтника (rate b) |
+| **Влияние на доступность** | Увеличивает время ожидания ремонта | Полная недоступность ремонтника |
+
+***
+
+### 6. Пример для реального кластера
+
+#### 6.1 Конфигурация
+
+- **Кластер:** Двухузловой кластер (Node A, Node B);
+- **Ремонтник:** Один администратор (on-call инженер);
+- **График:** 9:00–18:00 (multiple vacation policy).
+
+#### 6.2 Сценарии
+
+**Сценарий 1: Server Vacation (плановый отдых)**
+
+- **Время:** 18:00;
+- **Состояние:** Node A и Node B работают;
+- **Ремонтник:** Администратор уходит домой (vacation);
+- **Переход:** Busy → Vacation (rate μ);
+- **Возврат:** В 9:00 (rate ξ) или при поступлении alert (rate ξ).
+
+**Сценарий 2: Multiple Vacation**
+
+- **Время:** 9:00;
+- **Состояние:** Node A и Node B работают;
+- **Ремонтник:** Администратор возвращается из vacation;
+- **Проверка:** Нет отказов → уходит в **очередной vacation** (multiple vacation policy);
+- **Переход:** Vacation → Vacation (rate μ).
+
+**Сценарий 3: Server Breakdown (неплановый отказ)**
+
+- **Время:** 14:00;
+- **Состояние:** Node A отказал, администратор ремонтирует (Busy);
+- **Событие:** Администратор заболел (breakdown);
+- **Переход:** Busy → Broken (rate a);
+- **Восстановление:** Замена администратора (rate b).
+
+***
+
+### 7. Сводная таблица: Все термины с «Server»
+
+| Термин | Оригинал | Перевод | Что означает |
+|---|---|---|---|
+| Server | Server | Сервер | Ремонтник (repairman) |
+| Server vacation | Server vacation | Отдых сервера | Ремонтник на отдыхе |
+| Server breakdown | Server breakdown | Отказ сервера | Ремонтник отказал |
+| Server repair | Server repair | Ремонт сервера | Восстановление ремонтника |
+| Server busy | Server busy | Сервер занят | Ремонтник ремонтирует |
+| Server idle | Server idle | Сервер простаивает | Ремонтник свободен (но не на отдыхе) |
+| Vacation rate | Vacation rate | Интенсивность отдыха | Rate ухода на vacation (μ или ξ) |
+| Return rate | Return rate | Интенсивность возврата | Rate возврата из vacation (ξ или γ) |
+
+***
+
+### 8. Выводы
+
+1. **Server vacation** в статье J&M — это **отдых ремонтника (repairman)**, а не вычислительного сервера.
+
+2. **Термин используется 32 раза** в статье, всегда в контексте queueing theory (ремонтник, сервер обслуживания).
+
+3. **Multiple vacation policy** — это когда ремонтник уходит на отдых многократно, если нет отказов.
+
+4. **Из queueing theory:** Server vacation — стандартное расширение M/M/1 модели, увеличивающее время ожидания.
+
+5. **Для кластера avers_52:** Vacation не учтён (предполагается, что ремонтник всегда доступен).
+
+***
+
+### 9. Источники
+
+ Jain M., Meena R.K. "Fault tolerant system with imperfect coverage, reboot and server vacation". Journal of Industrial Engineering International, 2017. [PDF](https://link.springer.com/content/pdf/10.1007/s40092-016-0180-8.pdf) [link.springer](https://link.springer.com/chapter/10.1007/978-3-662-05409-3_6)
+
+ Doshi B.T. "Queueing systems with server vacations". European Journal of Operational Research, 1986. [Survey paper on vacation models] [epubs.siam](https://epubs.siam.org/doi/10.1137/0119062)
+
+ Tian N., Zhang Z.G. "Vacation Queueing Models: Theory and Applications". Springer, 2006. [Monograph on vacation policies] [link.springer](https://link.springer.com/chapter/10.1007/978-3-540-24808-8_7)

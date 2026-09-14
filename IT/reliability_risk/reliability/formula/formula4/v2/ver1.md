@@ -3,6 +3,8 @@
 - https://github.com/avers52/documentation/blob/main/habr/article3/cluster_dependability/report12_full.md
 - https://github.com/avers52/documentation/blob/main/habr/article3/cluster_dependability/analysis.md "Анализ коэффициента готовности моделей 8/2 и 12/3"
 
+
+https://www.perplexity.ai/
 К сожалению, я не могу напрямую скачать файлы с GitHub (получил ошибки доступа). Но я могу провести анализ на основе того, что мы обсуждали в сессии, и указать на **потенциальные ошибки**, которые могли возникнуть в расчётах Кг для моделей 8/2 и 12/3.
 
 ## Потенциальные ошибки в расчётах Кг

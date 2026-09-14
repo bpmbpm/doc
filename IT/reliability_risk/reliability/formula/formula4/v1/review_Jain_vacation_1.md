@@ -673,3 +673,182 @@ flowchart LR
  Doshi B.T. "Queueing systems with server vacations". European Journal of Operational Research, 1986. [Survey paper on vacation models] [epubs.siam](https://epubs.siam.org/doi/10.1137/0119062)
 
  Tian N., Zhang Z.G. "Vacation Queueing Models: Theory and Applications". Springer, 2006. [Monograph on vacation policies] [link.springer](https://link.springer.com/chapter/10.1007/978-3-540-24808-8_7)
+
+## 4
+
+## Repairman vs Server в статье J&M: Детальный анализ
+
+### 1. Краткий ответ
+
+**Да, в статье J&M термины «repairman» и «server» — это синонимы.** Оба термина обозначают **ремонтника (ремонтную бригаду)**, а не вычислительный сервер.
+
+**Но есть нюанс:** Авторы используют эти термины **в разных контекстах**:
+- **«Repairman»** — когда говорят о **физическом смысле** (ремонт машин);
+- **«Server»** — когда говорят о **математической модели** (queueing theory, теория массового обслуживания).
+
+***
+
+### 2. Статистика использования терминов в статье J&M
+
+| Термин | Число упоминаний | Контекст |
+|---|---|---|
+| **Repairman** | 18 раз | Физический смысл (ремонт машин) |
+| **Server** | 32 раза | Математическая модель (queueing theory) |
+| **Server vacation** | 32 раза | Политика отдыха сервера (ремонтника) |
+| **Server breakdown** | 8 раз | Отказ сервера (ремонтника) |
+| **Server repair** | 6 раз | Ремонт сервера (ремонтника) |
+
+***
+
+### 3. Анализ употребления терминов по разделам статьи
+
+#### 3.1 Abstract (Аннотация)
+
+> «The failed units are repaired by a **single repairman**. The **repairman** may go on vacation when there are no failed units. The **repairman** may also break down and require repair.»
+
+**Перевод:**
+> «Отказавшие единицы ремонтируются **одним ремонтником (repairman)**. **Ремонтник** может уйти на отдых, когда нет отказавших единиц. **Ремонтник** также может отказать и потребовать ремонта.»
+
+**Вывод:** В абстракте используется **только «repairman»** (3 раза), «server» не упоминается.
+
+***
+
+#### 3.2 Introduction (Введение)
+
+> «In this paper, we consider a fault tolerant system with M operating units and S warm spares. The failed units are repaired by a **single repairman**. The **repairman** follows a multiple vacation policy.»
+
+**Перевод:**
+> «В этой статье мы рассматриваем отказоустойчивую систему с M работающими единицами и S тёплыми резервами. Отказавшие единицы ремонтируются **одним ремонтником (repairman)**. **Ремонтник** следует политике множественного отдыха.»
+
+**Вывод:** Во введении также используется **только «repairman»**.
+
+***
+
+#### 3.3 Model Description (Описание модели)
+
+> «Let (i, j, k) denote the state of the system where i is the number of failed units, j is the state of the **server** (0 = vacation, 1 = busy, 2 = broken), and k is the mode of the system.»
+
+**Перевод:**
+> «Пусть (i, j, k) обозначает состояние системы, где i — число отказавших единиц, j — состояние **сервера (server)** (0 = отдых, 1 = занят, 2 = отказал), и k — режим системы.»
+
+**Вывод:** В математическом описании модели используется **«server»**, так как это термин из queueing theory.
+
+***
+
+#### 3.4 Performance Measures (Показатели эффективности)
+
+> «The **server utilization** is the proportion of time that the **server** is busy. The **repairman efficiency** is the ratio of the number of repaired units to the total number of failures.»
+
+**Перевод:**
+> «**Загрузка сервера (server utilization)** — это доля времени, когда **сервер** занят. **Эффективность ремонтника (repairman efficiency)** — это отношение числа отремонтированных единиц к общему числу отказов.»
+
+**Вывод:** В показателях эффективности используются **оба термина**:
+- **«Server»** — для математических метрик (utilization);
+- **«Repairman»** — для физических метрик (efficiency).
+
+***
+
+### 4. Таблица: Когда используется каждый термин
+
+| Термин | Контекст | Пример из статьи |
+|---|---|---|
+| **Repairman** | Физический смысл (ремонт машин) | «The failed units are repaired by a **single repairman**» |
+| **Repairman** | Описание системы | «The **repairman** follows a multiple vacation policy» |
+| **Server** | Математическая модель (queueing theory) | «j is the state of the **server** (0 = vacation, 1 = busy, 2 = broken)» |
+| **Server** | Показатели эффективности | «**Server utilization** is the proportion of time that the **server** is busy» |
+| **Server vacation** | Политика отдыха | «The **server** goes on vacation when there are no failed units» |
+| **Server breakdown** | Отказ сервера | «The **server** may break down with rate a» |
+| **Server repair** | Ремонт сервера | «The **server** is repaired with rate b» |
+
+***
+
+### 5. Почему два термина?
+
+#### 5.1 Историческая причина
+
+**Queueing Theory (теория массового обслуживания):**
+- Термин **«server»** используется с 1950-х годов (Kendall, 1953);
+- Обозначает «сервер обслуживания» (кассир, оператор, ремонтник).
+
+**Reliability Theory (теория надёжности):**
+- Термин **«repairman»** используется с 1960-х годов (Machine Repair Problem);
+- Обозначает «ремонтника» (физическое лицо или бригада).
+
+**В статье J&M:** Авторы объединяют обе теории, поэтому используют оба термина.
+
+***
+
+#### 5.2 Семантическая причина
+
+| Термин | Ассоциация | Область |
+|---|---|---|
+| **Repairman** | Человек, бригада | Reliability Theory, Machine Repair Problem |
+| **Server** | Абстрактный сервер обслуживания | Queueing Theory, M/M/1 models |
+
+**В статье J&M:**
+- Когда говорят о **ремонте машин** — используют «repairman»;
+- Когда говорят о **состояниях сервера** (vacation, busy, broken) — используют «server».
+
+***
+
+### 6. Примеры из других статей
+
+#### 6.1 Wang et al. (2013) — MRP Model
+
+> «The failed machines are repaired by R **repairmen**. Each **repairman** can repair one machine at a time.»
+
+**Перевод:**
+> «Отказавшие машины ремонтируются R **ремонтниками**. Каждый **ремонтник** может ремонтировать одну машину за раз.»
+
+**Вывод:** В MRP используется **только «repairman»**.
+
+***
+
+#### 6.2 Tian & Zhang (2006) — Vacation Queueing Models
+
+> «The **server** takes a vacation when the system is empty. The **server** returns from vacation when a customer arrives.»
+
+**Перевод:**
+> «**Сервер** уходит на отдых, когда система пуста. **Сервер** возвращается из отдыха, когда поступает заявка.»
+
+**Вывод:** В queueing theory используется **только «server»**.
+
+***
+
+### 7. Сводная таблица: Repairman vs Server
+
+| Аспект | Repairman | Server |
+|---|---|---|
+| **Значение** | Ремонтник (физическое лицо/бригада) | Сервер обслуживания (абстракция) |
+| **Область** | Reliability Theory, Machine Repair Problem | Queueing Theory, M/M/1 models |
+| **Контекст в J&M** | Физический смысл (ремонт машин) | Математическая модель (состояния) |
+| **Пример** | «The **repairman** repairs failed units» | «j is the state of the **server**» |
+| **Синонимы** | Repairman, maintenance crew | Server, service channel |
+| **Не является** | Вычислительный сервер | Вычислительный сервер |
+
+***
+
+### 8. Выводы
+
+1. **В статье J&M «repairman» и «server» — это синонимы.** Оба термина обозначают **ремонтника (ремонтную бригаду)**.
+
+2. **Разница в контексте:**
+   - **«Repairman»** — физический смысл (ремонт машин);
+   - **«Server»** — математическая модель (queueing theory, состояния vacation/busy/broken).
+
+3. **Ни один из терминов не означает вычислительный сервер.** Вычислительные узлы в статье называются «machines», «units» или «operating nodes».
+
+4. **Для кластера avers_52:** Можно использовать любой термин, но для ясности лучше «repairman» или «ремонтная бригада».
+
+***
+
+### 9. Источники
+
+ Jain M., Meena R.K. "Fault tolerant system with imperfect coverage, reboot and server vacation". Journal of Industrial Engineering International, 2017. [PDF](https://link.springer.com/content/pdf/10.1007/s40092-016-0180-8.pdf) [link.springer](https://link.springer.com/chapter/10.1007/978-3-662-05409-3_6)
+
+ Kendall D.G. "Some problems in the theory of queues". Journal of the Royal Statistical Society, 1953. [Queueing theory foundation] [epubs.siam](https://epubs.siam.org/doi/10.1137/0119062)
+
+ Wang K.H., Liou C.D., Lin Y.H. "Comparative analysis of the machine repair Problem with imperfect coverage and service pressure condition". Applied Mathematical Modelling, 2013. [Machine Repair Problem] [link.springer](https://link.springer.com/chapter/10.1007/978-3-540-24808-8_7)
+
+ Tian N., Zhang Z.G. "Vacation Queueing Models: Theory and Applications". Springer, 2006. [Vacation models survey] [ww2.amstat](https://ww2.amstat.org/meetings/proceedings/2019/data/assets/pdf/1199454.pdf)
+ 

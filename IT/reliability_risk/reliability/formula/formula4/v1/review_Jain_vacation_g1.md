@@ -47,17 +47,21 @@
 
 ## 2
 
-Почему путаница с «ремонтниками» логична, но неверна?В русскоязычной литературе по ТМО исторически (с 50-70-х годов XX века, со времен А.Н. Колмогорова и Б.В. Гнеденко) часто использовалась «человеческая» терминология. Каналы обслуживания называли «контролерами», «кассирами» или «операторами».Когда западные математики ввели термин «Server Vacation» (в работах Леви, Яхаве, Купера в 1970-1980-х годах), они имели в виду именно технический сервер. Но при дословном переводе («отпуск сервера») у человека, не погруженного глубоко в формулы ТМО, возникает стойкая ассоциация с живым сотрудником, который ушел в отпуск (заболел, уехал).Если вы посмотрите уравнения баланса интенсивностей в главе статьи Springer, ссылку на которую вы дали, вы увидите, что период "vacation" начинается автоматически, как только длина очереди \(L(t) = 0\). Живой ремонтник не может уходить в отпуск ровно в ту секунду, когда у программистов на кластере кончились задачи, и мгновенно возвращаться, когда они появились. 
+Почему путаница с «ремонтниками» логична, но неверна?В русскоязычной литературе по ТМО исторически (с 50-70-х годов XX века, со времен А.Н. Колмогорова и Б.В. Гнеденко) часто использовалась «человеческая» терминология. Каналы обслуживания называли «контролерами», «кассирами» или «операторами».
+
+Когда западные математики ввели термин «Server Vacation» (в работах Леви, Яхаве, Купера в 1970-1980-х годах), они имели в виду именно технический сервер. Но при дословном переводе («отпуск сервера») у человека, не погруженного глубоко в формулы ТМО, возникает стойкая ассоциация с живым сотрудником, который ушел в отпуск (заболел, уехал).
+
+Если вы посмотрите уравнения баланса интенсивностей в главе статьи Springer, ссылку на которую вы дали, вы увидите, что период "vacation" начинается автоматически, как только длина очереди \(L(t) = 0\). Живой ремонтник не может уходить в отпуск ровно в ту секунду, когда у программистов на кластере кончились задачи, и мгновенно возвращаться, когда они появились. 
 
 Так себя ведет только алгоритм распределения ресурсов внутри ОС или гипервизора кластера.Если вы хотите разобрать конкретную схему переходов (диаграмму состояний Марковского процесса) из вашей статьи, чтобы точно увидеть, куда ведут стрелки из состояния Vacation, прикрепите скриншот диаграммы или текст системы уравнений. Я разложу её по шагам и покажу, как в ней зашито движение прибора.Вы сказали: "я хочу разобрать терминологию конкретной статьи. дай цитаты и твою интерпретацию" я хочу разобрать терминологию конкретной статьи. дай цитаты и твою интерпретацию18:30The terminology in Alessandro Birolini's "Reliability Engineering" utilizes queueing theory and vacation models to calculate system reliability. Distinctions are made between an operational state, a failure state, and a server vacation triggered by an empty queue. For more details, visit Springer Nature Link. 
-- [1] (https://link.springer.com/chapter/10.1007/978-3-662-05409-3_6),
-- [2] (https://www.researchgate.net/publication/223625382_The_infinite-buffer_single_server_queue_with_a_variant_of_multiple_vacation_policy_and_batch_Markovian_arrival_process),
-- [3] (https://www.researchgate.net/publication/226349171_Performance_analysis_and_optimization_with_the_power-series_algorithm)Springer Nature LinkReliability and Availability of Repairable Systems | Springer Nature LinkCite this chapter. Birolini, A. (2004). Reliability and Availability of Repairable Systems. In: Reliability Engineering. Springer,ResearchGatePerformance analysis and optimization with the power-series algorithmPerformance analysis and optimization with the power-series algorithm. April 2006. DOI:10.1007/BFb0013849. In book: Performance Ev...ResearchGateThe infinite-buffer single server queue with a variant of multiple vacation ...Abstract. We consider an infinite-buffer single server queue where arrivals occur according to a batch Markovian arrival process 
+- [1](https://link.springer.com/chapter/10.1007/978-3-662-05409-3_6),
+- [2](https://www.researchgate.net/publication/223625382_The_infinite-buffer_single_server_queue_with_a_variant_of_multiple_vacation_policy_and_batch_Markovian_arrival_process),
+- [3](https://www.researchgate.net/publication/226349171_Performance_analysis_and_optimization_with_the_power-series_algorithm) Springer Nature LinkReliability and Availability of Repairable Systems | Springer Nature LinkCite this chapter. Birolini, A. (2004). Reliability and Availability of Repairable Systems. In: Reliability Engineering. Springer,ResearchGatePerformance analysis and optimization with the power-series algorithmPerformance analysis and optimization with the power-series algorithm. April 2006. DOI:10.1007/BFb0013849. In book: Performance Ev...ResearchGateThe infinite-buffer single server queue with a variant of multiple vacation ...Abstract. We consider an infinite-buffer single server queue where arrivals occur according to a batch Markovian arrival process 
 
 Chapter 6 of Alessandro Birolini's Reliability Engineering integrates queueing theory with reliability for repairable systems, specifically defining the repair server as the maintenance crew rather than the computer. A "server vacation" in this context denotes the crew's scheduled shift to secondary tasks during idle periods rather than a server failure. You can review the textbook details at Alessandro Birolini's Reliability Engineering.
 
 В контексте книги А. Биролини «Reliability Engineering» термин «сервер» обозначает ремонтную бригаду или мастера, а не узел компьютерного кластера. Понятие «Server Vacation» описывает период, когда обслуживающий персонал временно отвлечен на выполнение других задач, в то время как сломанный элемент ожидает ремонта в очереди. Read the full analysis at Springer Nature Link. 
-- [1] (https://link.springer.com/chapter/10.1007/978-3-662-05409-3_6)Springer Nature LinkReliability and Availability of Repairable Systems | Springer Nature LinkCite this chapter. Birolini, A. (2004). Reliability and Availability of Repairable Systems. In: Reliability Engineering. Springer,
+- [1](https://link.springer.com/chapter/10.1007/978-3-662-05409-3_6) Springer Nature LinkReliability and Availability of Repairable Systems | Springer Nature LinkCite this chapter. Birolini, A. (2004). Reliability and Availability of Repairable Systems. In: Reliability Engineering. Springer,
 
 https://link.springer.com/content/pdf/10.1007/s40092-016-0180-8.pdf" link.springer.com  
 В этой конкретной статье «Server» (Сервер) — это НЕ узел вычислительного кластера, а ремонтный прибор (ремонтник / ремонтная бригада), который восстанавливает отказавшие рабочие элементы системы. [1]
@@ -68,24 +72,24 @@ https://link.springer.com/content/pdf/10.1007/s40092-016-0180-8.pdf" link.spring
 
 Server / Repairman (Сервер обслуживания / Ремонтник) — это сущность, которая осуществляет ремонт узлов с интенсивностью \(\mu \). Авторы используют слова Server и Repairman как полные синонимы. [1]Unreliable server (Ненадежный сервер) — означает, что сам ремонтник может выйти из строя (заболеть, сломать инструмент) с интенсивностью \(\alpha \). 
 
-[1]🔄 Разбор состояний модели (переменная \(j\) в формулах)
+🔄 Разбор состояний модели (переменная \(j\) в формулах)
 
 Авторы строят Марковскую модель, где состояние ремонтника обозначается индексом \(j\) (принимает значения 0, 1, 2): 
 
-[1]Состояние 1: Занят (\(j = 1\), Busy state)  
+Состояние 1: Занят (\(j = 1\), Busy state)  
 Что происходит: В системе есть сломанные рабочие узлы (роботы/компьютеры). Ремонтник (Server) активно их чинит.
 - Цитата из статьи: «When the server is busy in providing repair of the failed machines...»
 - Математика: Система находится в этом состоянии, пока очередь сломанных машин не опустеет. 
 
-[1]Состояние 2: В отпуске (\(j = 0\), Server vacation state)  
+Состояние 2: В отпуске (\(j = 0\), Server vacation state)  
 Что происходит: Все рабочие узлы исправны, чинить некого (очередь пуста). Чтобы не сидеть без дела, ремонтник (Server) уходит в «отпуск». Под отпуском здесь понимается либо реальный отдых персонала, либо его переключение на другие (второстепенные) задачи на заводе. Ремонтник возвращается из отпуска сразу же, как только ломается хотя бы один рабочий узел. 
-- [1]Цитата из статьи: «The server is allowed to go for vacation if there is no work load of repair job of failed units in the system and returns back from the vacation as soon as any unit fails.» 
-- [1]Математика: Переход в это состояние (\(0,0,0\)) происходит автоматически в момент, когда интенсивность завершения ремонта \(\mu \) убирает последнюю сломанную машину из очереди. 
+- Цитата из статьи: «The server is allowed to go for vacation if there is no work load of repair job of failed units in the system and returns back from the vacation as soon as any unit fails.» 
+- Математика: Переход в это состояние (\(0,0,0\)) происходит автоматически в момент, когда интенсивность завершения ремонта \(\mu \) убирает последнюю сломанную машину из очереди. 
 
-[1]Состояние 3: Сломан / Недоступен (\(j = 2\), Broken down state)  
+Состояние 3: Сломан / Недоступен (\(j = 2\), Broken down state)  
 Что происходит: Это как раз ситуация, когда ремонтник «заболел» или вышел из строя. В этот момент он не может чинить сломанные узлы кластера. Его самого начинает чинить условная «вторая ремонтная бригада» (наладчик) с интенсивностью \(\beta \). 
-- [1]Цитата из статьи: «In this case the server is broken down and the repairman [supervisor/external helper] is performing the repair job to restore it.»
-- - [1]Математика: Обозначается как \(P_{i, 2, k}(t)\). Влияет на общую доступность всей системы, так как сломанные узлы начинают копиться в очереди, пока «сервер-ремонтник» не восстановится. [1]💡 
+- Цитата из статьи: «In this case the server is broken down and the repairman [supervisor/external helper] is performing the repair job to restore it.»
+- Математика: Обозначается как \(P_{i, 2, k}(t)\). Влияет на общую доступность всей системы, так как сломанные узлы начинают копиться в очереди, пока «сервер-ремонтник» не восстановится. [1]💡 
 
 Резюме для вашего анализа
 
@@ -113,7 +117,7 @@ Server Vacation — это добровольное временное отсу�
 
 4. Время на восстановление ремонтника  
 Если ремонтник «выбыл» из строя посреди смены, время его починки/замены описывается экспоненциальным распределением с параметром \(\beta \).  
-Цитата из статьи:«In this case the server is broken down and the repairman is performing the repair job to restore it.»
+Цитата из статьи:«In this case the server is broken down and the repairman is performing the repair job to restore it.»  
 - Перевод: «В этом случае сервер [ремонтник] сломан, и [внешний] мастер выполняет ремонтные работы для его восстановления».  
 (Примечание: в оригинале текста авторы допустили тавтологию "the repairman is performing repair to restore server", но математически это означает, что сущность j=1 перешла в состояние j=2 и ждет восстановления со скоростью \(\beta \)).
 
@@ -180,6 +184,5 @@ Server Vacation — это добровольное временное отсу�
 *   **Починка ремонтника:** Возврат ремонтника к работе происходит с интенсивностью **$\beta$**. В формуле (14) за это отвечает член $-\beta P_{i,2,0}(t)$, который переходит в формулу (9) со знаком плюс ($\beta P_{i,2,0}(t)$), возвращая систему в строй.
 
 **Вывод:** Фраза *«Server breakdown»* в этой статье означает **отказ ремонтника (человека/инструмента)**, а не узла кластера. Узел кластера здесь называется *Machine* или *Unit*.  
-Используйте код с осторожностью.Если у вас есть время, ответьте на несколько вопросовУдобно ли скопировался ответ через блок кода?Да, отличноНет, неудобноФорматирование съехалоЧто ещё разобрать по этой статье?Формулы и графикиПараметры reboot/coverageНичего, всё понятноУдобно ли скопировался ответ через блок кода? - ДА.
 
 

@@ -1,4 +1,4 @@
-При файла: 
+Три файла: 
 - report8_full.md
 - report12_full.md
 - analysis.md

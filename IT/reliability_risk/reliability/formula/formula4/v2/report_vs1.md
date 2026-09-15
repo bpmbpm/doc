@@ -1,4 +1,9 @@
-report8_full.md
+При файла: 
+- report8_full.md
+- report12_full.md
+- analysis.md
+
+## report8_full.md
 
 Выполнение промпта prompt8_full.md
 
@@ -332,7 +337,7 @@ $$
 ***
 
 
-report12_full.md
+## report12_full.md
 
 Выполнение промпта для модели 12/3 prompt13_full.md
 
@@ -722,7 +727,8 @@ $$
 
 
 
-analysis.md
+## analysis.md
+
 ## prompt
 
 Проведи анализ Кг моделей 8/2 и 12/3.  

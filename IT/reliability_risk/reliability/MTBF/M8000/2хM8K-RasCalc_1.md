@@ -53,26 +53,6 @@
 | `System Mean Time To Repair:		3.6440334	hour(s)` | `Среднее время до восстановления системы (MTTR):		3,6440334	часа(ов)` |
 | `System MTBS(Mean Time Between Servies):	9342.532	(hours)` | `Среднее время между обслуживаниями системы (MTBS):	9342,532	(часов)` |
 | `null` | `null` |
-| `   1. All system/component level Reliability and Availability data` | `   1. Все данные о надёжности и доступности на уровне системы/компонентов` |
-| `(called all data) requires a signed NDA/CDA between the product's final` | `(далее «все данные») требуют подписанного соглашения о неразглашении (NDA/CDA) между конечным` |
-| `customer and Oracle Corporation.` | `заказчиком продукта и корпорацией Oracle.` |
-| `   2. All data cannot be included as part of a sales contract nor be` | `   2. Все данные не могут быть включены в качестве части договора продажи или` |
-| `considered part of the product warranty unless approval from the` | `рассматриваться как часть гарантии на продукт, если не получено одобрение от` |
-| `Systems Quality Office has been granted.` | `Офиса качества систем.` |
-| `   3. A copy of the requested data is to be submitted to the Systems` | `   3. Копия запрошенных данных должна быть представлена в Офис` |
-| ` Quality Office for review.` | ` качества систем для проверки.` |
-| `   4. All final approved data needs to come from the Systems Quality` | `   4. Все окончательно утверждённые данные должны поступать из Офиса качества` |
-| `Office in a presentation format that includes all data disclaimers,` | `систем в формате презентации, включающей все отказ от ответственности,` |
-| `assumptions, and modeling sources, and needs to be presented by a` | `допущения и источники моделирования, и должны быть представлены` |
-| `member of the Systems Quality Office, or someone approved by the Systems` | `сотрудником Офиса качества систем или лицом, одобренным Офисом` |
-| `Quality Office, to discuss the details of the data.` | `качества систем, для обсуждения деталей данных.` |
-| `   5. A business justification needs to be presented to the Systems` | `   5. Бизнес-обоснование должно быть представлено в Офис` |
-| `Quality Office to engage the support process.` | `качества систем для запуска процесса поддержки.` |
-| `   6. A 4 week notification period is requested for the Systems Quality` | `   6. Запрашивается 4-недельный период уведомления для Офиса качества` |
-| `Office to prepare a response after a business justification is received.` | `систем для подготовки ответа после получения бизнес-обоснования.` |
-| `   7. Reliability and Availability modeling data is very mathematical` | `   7. Данные моделирования надёжности и доступности очень математичны` |
-| ` and requires further explanations to understand what the customer is` | `и требуют дополнительных пояснений, чтобы понять, что клиент` |
-| `looking for and what configurations will meet their needs.` | `ищет и какие конфигурации удовлетворят его потребности.` |
 | `=======================================================================` | `=======================================================================` |
 | `NOTES` | `ПРИМЕЧАНИЯ` |
 | `-----` | `-----` |

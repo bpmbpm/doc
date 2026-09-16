@@ -1,4 +1,4 @@
-report12_full_vs_report12_cum_deepseek.md
+report12_full_vs_report12_cum_deepseek.md  (perplexity)
 
 ## Сравнение расчётов: `report12_full.md` vs `report12_cum_deepseek.md`
 

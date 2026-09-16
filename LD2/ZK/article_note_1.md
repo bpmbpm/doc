@@ -9,7 +9,7 @@ https://habr.com/ru/articles/270857/)
 5. Если про расширенную визуализацию – показал выше «продвинутый rdf-grapher», то про текстовку – пока решения не видел. В идеале скрестить markdown с семантикой (RDF), чтобы получать «форматированное семантическое описание», т.к. даже turtle – «не совсем то».
 Как пример подхода связки контент с онтологиями через RDF: JSON-LD, или [SVG11](https://www.w3.org/TR/SVG11/metadata.html) \ [SVG Tiny 1.2](https://www.w3.org/TR/SVGTiny12/metadata.html) \ SVG 2  
 Как вариант (?) «markdown-LD». 
-6. markdown, включая mermaid, LaTeX etc – хороший старт, а продолжение – это хранение в triplestore \ quadstore (во всяком для систем класса Personal Knowledge Management, т.е. «настоящего – семантического PKM») + «все прелести» Linked Data, включая reasoned etc.
+6. markdown, включая mermaid, LaTeX etc – хороший старт, а продолжение – это хранение в triplestore \ quadstore (во всяком для систем класса Personal Knowledge Management, т.е. «настоящего – семантического PKM») + «все прелести» Linked Data, включая reasoner etc.
 7. Полагаю, что для решения задачи борьбы со сложностью нужно:
 - иметь полную «связанную картину» (полный граф объектов и связей)
 - уметь фильтровать необходимые данные (объекты \ зависимости), т.е. делать «нужные вьюшки» (viewpoint). 

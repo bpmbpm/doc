@@ -1,4 +1,4 @@
-report8_full_мы_report8_full_deepseek.md (perplexity)
+report8_full_vs_report8_full_deepseek.md (perplexity)
 - report8_full.md 
 - report8_full_deepseek.md
 

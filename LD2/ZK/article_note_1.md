@@ -1,8 +1,8 @@
 Comment к [Ваша База Знаний — золотая клетка с прозрачными стенами](https://habr.com/ru/articles/1082912/)
 
-1 Тоже предпочитаю markdown \ flat-file (вместо СУБД): в wiki: dokuwiki, zettelKasten: obsidian, а личный zettelKasten веду прямо на github https://github.com/bpmbpm/doc/
-2 Заголовок статьи неверный, нет тут «Базы знаний» и в PKM-системах (Personal Knowledge Management) нет Knowledge. База знаний образуется, когда есть «семантический клей» \ семантический сахар. Wiki c ее «плоскими гиперссылками», тегами и т.п., это не про семантику. Семантика – это классификация, таксономии-онтологии, предикаты и «все остальное» в сторону Linked Data.
-3 Хотелось бы найти personal wiki (zettelKasten) с семантическим плагином, но лучше изначально semantic zettelKasten \ semanticWiki (про semantic MediaWiki знаю). Может какую семантическую надстройку к github \ GitHub Pages придумать, хотя бы визуализацию графом. В идеале – что-то подобное, т.е. «продвинутый rdf-grapher» https://habr.com/ru/articles/1079138/comments/#comment_30403910
+1. Тоже предпочитаю markdown \ flat-file (вместо СУБД): в wiki: dokuwiki, zettelKasten: obsidian, а личный zettelKasten веду прямо на github https://github.com/bpmbpm/doc/
+2. Заголовок статьи неверный, нет тут «Базы знаний» и в PKM-системах (Personal Knowledge Management) нет Knowledge. База знаний образуется, когда есть «семантический клей» \ семантический сахар. Wiki c ее «плоскими гиперссылками», тегами и т.п., это не про семантику. Семантика – это классификация, таксономии-онтологии, предикаты и «все остальное» в сторону Linked Data.
+3. Хотелось бы найти personal wiki (zettelKasten) с семантическим плагином, но лучше изначально semantic zettelKasten \ semanticWiki (про semantic MediaWiki знаю). Может какую семантическую надстройку к github \ GitHub Pages придумать, хотя бы визуализацию графом. В идеале – что-то подобное, т.е. «продвинутый rdf-grapher» https://habr.com/ru/articles/1079138/comments/#comment_30403910
 4 Как хранить. Если в сторону flatfile, то в классической семантике это triplestore \ quadstore. Семантика на примере родословной 
 https://habr.com/ru/articles/270857/
 Родословная - это тоже специфический «zettelKasten». Для больших объемов видимо нужно будет архивировать (сжатый triplestore?). 

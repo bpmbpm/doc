@@ -199,3 +199,6 @@ flowchart TD
 | **Кластер** | MTBSI, MTTR, Failover time, Re-join time (при Non-Transparent), Service Response Time, Restriction Time, System Reboot Time, Total nodes, Min nodes | MTBS, аппаратные компоненты, Service Contract, Software |
 
 **Ключевой вывод:** Re-join при Non-Transparent типе **обязательно должен учитываться** в расчёте Кг, поскольку он приводит к недоступности сервиса для клиентов. Аппаратные компоненты (CMU, IOU, CPU, MEM, диски) в таблицах параметров расчёта фигурировать не должны — они являются лишь исходными данными для симулятора, который на их основе вычисляет MTBSI и MTTR.
+
+Продолжение:  
+https://github.com/bpmbpm/doc/blob/main/IT/reliability_risk/reliability/MTBF/M8000/model/Kg_2.md

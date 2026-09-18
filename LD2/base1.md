@@ -1,5 +1,5 @@
 ## LD2
-Linked Data 2 (LD2) - это Linked Data с дополнениями \ ограничениями \ особенностями. Цель такая же - формализм знаний.  
+Linked Data. Цель - формализм знаний.  
 ### Введение
 Классический web (классический пример [wikipedia](https://ru.wikipedia.org/)) построен на гиперссылках (hyperlink).  
 [Hyperlink](https://ru.wikipedia.org/wiki/%D0%93%D0%B8%D0%BF%D0%B5%D1%80%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0) в общем случае выполняет переход по указанному адресу, который может быть файлом, UNC-адресом или URL-адресом.  
@@ -14,7 +14,7 @@ Linked Data 2 (LD2) - это Linked Data с дополнениями \ огра�
 Всегда на первом месте **Субъект** - в данном триплете - Миша, далее к нему привязанный (всегда к субъекту) **Предикат** (отношение) - Ест и **Объект** Рыбу.  
 Как в простом предложении: Подлежащее - Сказуемое - Дополнение.  
 См. позиционное правило SVO [subject–verb–object](https://en.wikipedia.org/wiki/Subject%E2%80%93verb%E2%80%93object_word_order). 
-Понятие **Объект** - [общее](https://github.com/bpmbpm/doc/blob/main/METAMODEL/object.md), а в RDF оно узкое, поэтому будем в понимании RDF Объект называть "Объектт", если рядом нет уточнения с "-" или в скобках. 
+Понятие **Объект** - [общее](https://github.com/bpmbpm/doc/blob/main/METAMODEL/object.md), а в RDF оно узкое, поэтому будем в понимании RDF Объект называть "Объект", если рядом нет уточнения с "-" или в скобках. 
 Вместо объекта \ дополнения может быть не объект (что-то с id, именованное, классифицированное и т.п.), а Литерал - безымянная константа (nameless constant).   
 Еще пример на [sky.pro/wiki/javascript](https://sky.pro/wiki/javascript/rdf-dlya-nachinayushih-chto-eto-osnovy-i-kak-ispolzovat/)  
 ``` mermaid

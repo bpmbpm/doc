@@ -9,3 +9,6 @@
 ### Интервью
 - https://www.iemag.ru/interview/detail.php?ID=16563
 - https://ib-bank.ru/bisjournal/post/46
+
+## 2
+- [Элементы построения и развития укрупненных центров обработки информации Банка России](https://rusneb.ru/catalog/000199_000009_002968721/) 

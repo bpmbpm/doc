@@ -4,3 +4,6 @@
 
 ### vscode vs obsidian
 - Для vscode есть плагин dendron который делает почти обсидиан но на vscode. Как редкатор вскода удобнее. Но мобила для меня решает. https://habr.com/ru/articles/710356/#comment_25123680 **Obsidian + Dataview: Таблицы**
+
+## DT
+- [Знакомьтесь, мой цифровой двойник](https://habr.com/ru/articles/1084596/)

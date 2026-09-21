@@ -138,3 +138,7 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 ### nvidia
 #### rtx-3060
 - 12 Gb = 30 000: https://www.dns-shop.ru/catalog/recipe/312b2b5f7f5bafe0/rtx-3060/ ; https://www.ozon.ru/category/videokarty-geforce-rtx3060/
+
+## 2
+- NVIDIA Tesla V100 SXM2 https://habr.com/ru/articles/1084234/ 
+  - https://github.com/FlashML-org/FreeToken запуск на домашних GPU

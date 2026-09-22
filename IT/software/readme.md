@@ -27,3 +27,6 @@
   - https://github.com/bpmbpm/doc/blob/main/IT/programming/foss_share.md
 ### ru
 - [Большой разворот: как изменился стек технологий в российском IT после 2022 года](https://habr.com/ru/companies/timeweb/articles/971778/)
+
+### soft radar
+- https://habr.com/ru/companies/productradar/articles/1084824/

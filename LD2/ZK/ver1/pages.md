@@ -417,7 +417,7 @@ rete pack notes.ttl -o graph.rete
 - Jekyll RDF — https://github.com/AKSW/jekyll-rdf
 - wazootech/wiki — https://github.com/wazootech/wiki
 - Geoff — https://github.com/chapeaux/geoff
-- Rete — https://github.com/caviri/rete
+- Rete — https://github.com/caviri/rete см. https://github.com/bpmbpm/doc/blob/main/LD2/ZK/ver1/rete1.md
 - Comunica (клиентский SPARQL) — https://github.com/comunica/comunica
 - Oxigraph (RDF store) — https://github.com/oxigraph/oxigraph Oxigraph — это одновременно и графовая база данных, и инструментарий для работы с RDF и SPARQL.
   - [oxigraph/wiki/Architecture](https://github.com/oxigraph/oxigraph/wiki/Architecture)

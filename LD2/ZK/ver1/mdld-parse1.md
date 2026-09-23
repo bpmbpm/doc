@@ -330,3 +330,104 @@ Vault-triplifier парсит такие файлы в RDF/Turtle и также 
 - Oxigraph (GitHub) — https://github.com/oxigraph/oxigraph
 - Oxigraph WASM на jsDelivr — https://cdn.jsdelivr.net/npm/oxigraph
 - SPARQL 1.1 (W3C) — https://www.w3.org/TR/sparql11-query/
+
+## 2
+
+Да, вы понимаете всё верно. MD-LD (Markdown-Linked Data) — это именно **надстройка над классическим Markdown**, а не его замена. Вы можете писать обычный Markdown, и при необходимости добавлять семантические аннотации в фигурных скобках `{...}`. GitHub отобразит такой файл как обычный Markdown, потому что аннотации `{...}` не являются частью стандартного синтаксиса и будут просто проигнорированы рендерером. Это ключевое преимущество MD-LD: «Уберите все блоки `{...}` — и останется чистый Markdown».
+
+Ниже — расширенный пример, который демонстрирует, как семантика добавляется в привычный текст.
+
+### 📝 Расширенный пример MD-LD
+
+Этот пример показывает документ, который читается как обычный Markdown, но при этом генерирует богатый RDF-граф.
+
+```markdown
+[ex] <tag:example.org,2026:>
+
+# Заметки о проекте {=ex:project-alpha .schema:Project name}
+
+Этот проект посвящён семантическому аннотированию Markdown.
+
+## Участники
+
+[Alice] {+ex:alice ?schema:member .schema:Person name}
+[Bob] {+ex:bob ?schema:member .schema:Person name}
+
+## Задачи
+
+- **Спроектировать схему** {+ex:task1 ?schema:hasTask .schema:Task name}
+- **Реализовать парсер** {+ex:task2 ?schema:hasTask .schema:Task name}
+- **Написать документацию** {+ex:task3 ?schema:hasTask .schema:Task name}
+
+## Ссылки
+
+[Документация MD-LD](https://mdld.js.org/) {?schema:url}
+[Спецификация](https://github.com/davay42/mdld-parse/blob/HEAD/spec/index.md) {?schema:citation}
+```
+
+### 🔍 Что здесь происходит
+
+| Фрагмент | Семантическое значение |
+|---|---|
+| `[ex] <tag:example.org,2026:>` | Объявляет префикс `ex` для самоопределяемого URI (RFC 4151) |
+| `# Заметки о проекте {=ex:project-alpha .schema:Project name}` | Создаёт субъект `ex:project-alpha` типа `schema:Project` с заголовком из текста |
+| `[Alice] {+ex:alice ?schema:member .schema:Person name}` | Создаёт объект `ex:alice` типа `schema:Person`, связывает его с проектом через `schema:member`, и добавляет `name` из текста |
+| `- **Спроектировать схему** {+ex:task1 ?schema:hasTask .schema:Task name}` | Аналогично создаёт задачу и связывает её с проектом |
+| `[Документация MD-LD](https://mdld.js.org/) {?schema:url}` | Создаёт триплет `ex:project-alpha schema:url <https://mdld.js.org/>` |
+
+### 🖥️ Как это выглядит на GitHub
+
+GitHub **не понимает** семантику `{...}` и отобразит файл так:
+
+> **Заметки о проекте** {=ex:project-alpha .schema:Project name}
+>
+> Этот проект посвящён семантическому аннотированию Markdown.
+>
+> **Участники**
+>
+> Alice {+ex:alice ?schema:member .schema:Person name}
+> Bob {+ex:bob ?schema:member .schema:Person name}
+
+Фигурные скобки останутся видны как обычный текст. Это не ошибка, а ожидаемое поведение: GitHub рендерит **стандартный CommonMark**, а MD-LD — это расширение, которое понимает только парсер `mdld-parse`.
+
+### 🎯 Зачем это нужно
+
+Вы получаете **двойную природу документа**:
+
+1.  **Для людей** (и GitHub): читаемый Markdown с небольшими визуальными вставками `{...}`, которые не мешают восприятию.
+2.  **Для машин**: полноценный RDF-граф, который можно загрузить в Oxigraph WASM и запрашивать через SPARQL.
+
+Парсер `mdld-parse` возвращает не только quads, но и «чистый» Markdown без аннотаций — свойство `result.md`. Это позволяет, например, отображать пользователю обычный текст, а семантику использовать для запросов.
+
+### 📋 Более сложный пример: встреча и задачи
+
+Вот пример из документации MD-LD, который показывает, как один документ описывает встречу, участников и задачи:
+
+```markdown
+[alice] <tag:alice@example.com,2026:>
+
+# Заметки о встрече {=alice:meeting-2026-01-15 .alice:Meeting label}
+
+Участники:
+- **Alice** {+alice:alice ?alice:attendee .alice:Person label}
+- **Bob** {+alice:bob ?alice:attendee .alice:Person label}
+
+Задачи:
+- **Проверить предложение** {+alice:task-1 ?alice:actionItem .alice:Task label}
+```
+
+Этот текст генерирует граф, где встреча связана с участниками и задачами. При этом сам текст остаётся понятным человеку.
+
+### 💎 Итог
+
+Да, вы можете писать обычный Markdown и добавлять семантику только там, где это нужно. GitHub отобразит файл корректно, просто проигнорировав аннотации. Для извлечения RDF-графа используется парсер `mdld-parse`, который можно запустить в браузере. Это делает MD-LD удобным форматом для семантического Zettelkasten, где заметки остаются читаемыми, но при этом становятся частью графа знаний.
+
+### 🔗 Ссылки
+
+- MD-LD (официальный сайт) — https://mdld.js.org/
+- mdld-parse (npm) — https://www.npmjs.com/package/mdld-parse
+- Спецификация MD-LD — https://github.com/davay42/mdld-parse/blob/HEAD/spec/index.md
+- Примеры использования — https://github.com/alan8373/mdld-py/blob/main/docs/Use-Cases.md
+- Руководство MD-LD — https://github.com/alan8373/mdld-py/blob/main/docs/Guide.md
+
+  

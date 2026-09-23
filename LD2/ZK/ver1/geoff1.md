@@ -1,7 +1,7 @@
 ## 1
 info:  
 - Встроенный RDFa в Markdown https://github.com/chapeaux/geoff#inline-rdfa-in-markdown
-  - Written by [John Doe](rdfa:author) at [Acme Corp](rdfa:publisher).
+  - `Written by [John Doe](rdfa:author) at [Acme Corp](rdfa:publisher)`
 
 
 ### Вариант geoff без CLI для Hello world 

@@ -420,7 +420,7 @@ rete pack notes.ttl -o graph.rete
 - Rete — https://github.com/caviri/rete
 - Comunica (клиентский SPARQL) — https://github.com/comunica/comunica
 - Oxigraph (RDF store) — https://github.com/oxigraph/oxigraph
-  - [oxigraph](https://github.com/oxigraph/oxigraph/wiki/Architecture)
+  - [oxigraph/wiki/Architecture](https://github.com/oxigraph/oxigraph/wiki/Architecture)
 - PIM RDF (blueprint для персональной базы знаний) — https://github.com/bmordue/pim_rdf
 - Vault-LD (спецификация Markdown → RDF) — https://github.com/The-Knowledge-Graph-Guys/vault-ld
 

@@ -310,4 +310,4 @@ entity_hints:
 - Markdown-LD (GitHub) — https://github.com/ozekik/markdown-ld
 - Oxigraph (npm) — https://www.npmjs.com/package/oxigraph
 
-  
+Продолжение см. https://github.com/bpmbpm/doc/blob/main/LD2/ZK/ver1/mdld-parse1.md 

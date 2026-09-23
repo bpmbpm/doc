@@ -1,0 +1,314 @@
+## 1
+Вариант geoff без CLI для Hello world 
+
+`geoff` — это инструмент командной строки (CLI), и запустить его «без CLI» на компьютере не получится.  
+Однако это ограничение можно обойти: **всю работу CLI можно переложить на GitHub Actions**. Вы создаёте файлы прямо в веб-интерфейсе GitHub, а сборка и деплой происходят автоматически в облаке. Для вас это будет полностью «без CLI».
+
+Ниже — пошаговая инструкция для репозитория `bpmbpm/geoff_test`.
+
+---
+
+## Шаг 1. Создание репозитория
+
+1.  Зайдите на GitHub под своим аккаунтом.
+2.  Нажмите **New repository**.
+3.  Имя репозитория: `geoff_test`.
+4.  Поставьте галочку **Public**.
+5.  Нажмите **Create repository**.
+
+---
+
+## Шаг 2. Структура проекта
+
+В репозитории `bpmbpm/geoff_test` создайте следующую структуру файлов и папок. Все файлы создаются через **Add file → Create new file** (для папок просто указывайте полный путь, например `content/index.md`, и GitHub создаст папку автоматически).
+
+```
+geoff_test/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml          # GitHub Actions для сборки и деплоя
+├── content/
+│   ├── index.md                # Главная страница
+│   └── hello.md                # Тестовая семантическая заметка
+├── ontology/
+│   └── mappings.toml           # Маппинг frontmatter → RDF-свойства
+├── geoff.toml                  # Основная конфигурация Geoff
+└── README.md                   # Описание проекта
+```
+
+---
+
+## Шаг 3. Основная конфигурация: `geoff.toml`
+
+Создайте в корне репозитория файл `geoff.toml`:
+
+```toml
+# geoff.toml — основная конфигурация статического сайта
+title = "Мой семантический Zettelkasten"
+base_url = "/geoff_test"
+content_dir = "content"
+output_dir = "dist"
+
+# Шаблон, который будет использоваться по умолчанию
+default_template = "blog-page.html"
+
+# Включаем клиентский SPARQL-поиск через Oxigraph WASM
+[search]
+enabled = true
+engine = "oxigraph-wasm"
+```
+
+Эта конфигурация указывает Geoff, где лежат Markdown-файлы, куда собирать сайт, и включает клиентский SPARQL-поиск.
+
+---
+
+## Шаг 4. Маппинг онтологии: `ontology/mappings.toml`
+
+Создайте файл `ontology/mappings.toml`. Этот файл определяет, как поля из TOML-frontmatter заметок превращаются в RDF-триплеты. Без него семантика не будет работать.
+
+```toml
+# ontology/mappings.toml — маппинг frontmatter → RDF
+
+[types]
+"Note" = "http://schema.org/CreativeWork"
+"Person" = "http://schema.org/Person"
+
+[fields]
+title = "http://schema.org/name"
+date = "http://schema.org/datePublished"
+author = "http://schema.org/author"
+tags = "http://schema.org/keywords"
+related = "http://schema.org/mentions"
+```
+
+Теперь, если в frontmatter заметки написано `author = "Alice"`, Geoff автоматически создаст триплет `?note schema:author "Alice"`.
+
+---
+
+## Шаг 5. Тестовый набор данных
+
+### `content/index.md` — главная страница
+
+```markdown
++++
+title = "Главная"
+type = "Note"
++++
+
+# Мой семантический Zettelkasten
+
+Это тестовая семантическая вики, собранная с помощью Geoff.
+
+## Все заметки
+
+<div id="sparql-results">Загрузка...</div>
+
+<script type="module">
+  import { init } from '@chapeaux/geoff-client';
+
+  const engine = await init();
+
+  const results = await engine.query(`
+    PREFIX schema: <http://schema.org/>
+    SELECT ?title ?author WHERE {
+      ?note a schema:CreativeWork ;
+            schema:name ?title ;
+            schema:author ?author .
+    }
+    ORDER BY ?title
+  `);
+
+  document.getElementById('sparql-results').innerHTML = results
+    .map(r => `<div><strong>${r.title.value}</strong> — ${r.author.value}</div>`)
+    .join('');
+</script>
+```
+
+Этот блок выполняет **SPARQL-запрос прямо в браузере** к RDF-графу, который Geoff построил из ваших Markdown-файлов.
+
+### `content/hello.md` — тестовая заметка
+
+```markdown
++++
+title = "Hello Semantic World"
+type = "Note"
+date = 2026-04-10
+author = "Alice"
+tags = ["semantic", "hello-world"]
+related = "content/index.md"
++++
+
+# Hello Semantic World
+
+Это моя первая семантическая заметка.
+
+Она автоматически превращается в RDF-триплеты:
+
+- `title` → `schema:name`
+- `author` → `schema:author`
+- `date` → `schema:datePublished`
+- `tags` → `schema:keywords`
+
+Все эти данные доступны для SPARQL-запросов в браузере.
+```
+
+### `content/bob.md` — вторая заметка
+
+```markdown
++++
+title = "Заметка Боба"
+type = "Note"
+date = 2026-04-11
+author = "Bob"
+tags = ["sparql", "rdf"]
+related = "content/hello.md"
++++
+
+# Заметка Боба
+
+Боб тоже пишет заметки. Его заметка связана с заметкой Алисы через `related`.
+```
+
+---
+
+## Шаг 6. GitHub Actions для сборки и деплоя
+
+Создайте файл `.github/workflows/deploy.yml`:
+
+```yaml
+name: Deploy Geoff Semantic Wiki
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Geoff
+        run: npm install -g @chapeaux/geoff
+
+      - name: Build Site
+        run: geoff build --output-dir dist
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "dist"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+```
+
+Этот workflow:
+1.  Устанавливает Node.js.
+2.  Устанавливает Geoff через `npm`.
+3.  Запускает сборку: `geoff build`. Geoff парсит Markdown-файлы, строит RDF-граф, генерирует HTML с встроенным JSON-LD и сериализует граф для клиентского SPARQL.
+4.  Публикует результат на GitHub Pages.
+
+---
+
+## Шаг 7. README.md для репозитория
+
+Создайте файл `README.md`:
+
+```markdown
+# geoff_test — семантический Zettelkasten на GitHub Pages
+
+Демонстрационный проект, показывающий, как развернуть семантическую вики на GitHub Pages с использованием [Geoff](https://github.com/chapeaux/geoff) — статического генератора сайтов, построенного на linked data.
+
+## Что это?
+
+Geoff превращает Markdown-файлы с TOML-frontmatter в статический HTML со встроенным JSON-LD, backed by запрашиваемый RDF-граф. Каждая заметка становится набором RDF-триплетов, а в браузере можно выполнять SPARQL-запросы через Oxigraph WASM.
+
+## Как это работает
+
+1. **Markdown + TOML frontmatter** — вы пишете заметки в Markdown, а метаданные описываете в TOML.
+2. **Маппинг онтологии** — поля frontmatter автоматически превращаются в RDF-свойства согласно `ontology/mappings.toml`.
+3. **Сборка** — GitHub Actions запускает `geoff build`, который генерирует HTML и RDF-граф.
+4. **Клиентский SPARQL** — в браузере пользователя работает Oxigraph WASM, который выполняет SPARQL-запросы к графу.
+
+## Структура
+
+- `geoff.toml` — основная конфигурация.
+- `ontology/mappings.toml` — маппинг frontmatter → RDF.
+- `content/` — Markdown-заметки.
+- `.github/workflows/deploy.yml` — сборка и деплой.
+
+## Тестовые данные
+
+В `content/` лежат три заметки: `index.md`, `hello.md` и `bob.md`. Они связаны через `related` и содержат метаданные `author`, `date`, `tags`.
+
+## Как воспроизвести
+
+1. Форкните или клонируйте этот репозиторий.
+2. Включите GitHub Pages: **Settings → Pages → Source: GitHub Actions**.
+3. Сделайте пуш в `main` — Actions соберёт и опубликует сайт.
+4. Откройте `https://bpmbpm.github.io/geoff_test/`.
+
+## Ссылки
+
+- [Geoff (GitHub)](https://github.com/chapeaux/geoff)
+- [chapeaux-geoff (crates.io)](https://crates.io/crates/chapeaux-geoff)
+- [@chapeaux/geoff (npm)](https://www.npmjs.com/package/@chapeaux/geoff)
+- [Oxigraph (RDF store с WASM)](https://github.com/oxigraph/oxigraph)
+- [SPARQL 1.1 Query Language (W3C)](https://www.w3.org/TR/sparql11-query/)
+```
+
+---
+
+## Шаг 8. Включение GitHub Pages
+
+1.  Перейдите в **Settings** репозитория.
+2.  В левом меню выберите **Pages**.
+3.  В разделе **Source** выберите **GitHub Actions** (не «Deploy from a branch»).
+4.  Нажмите **Save**.
+
+---
+
+## Шаг 9. Запуск сборки
+
+1.  Убедитесь, что все файлы закоммичены в ветку `main`.
+2.  После пуша GitHub Actions автоматически запустится. Это можно увидеть на вкладке **Actions**.
+3.  Через 1–2 минуты сайт будет доступен по адресу:  
+    **`https://bpmbpm.github.io/geoff_test/`**
+
+---
+
+## Что вы увидите
+
+На главной странице `index.md` скрипт выполнит SPARQL-запрос к RDF-графу, который Geoff построил из ваших заметок. На экране появятся две заметки с заголовками и авторами. **Весь SPARQL выполняется в браузере** — никакого сервера, никакой базы данных.
+
+---
+
+## Ссылки на использованные инструменты
+
+- Geoff (GitHub) — https://github.com/chapeaux/geoff
+- chapeaux-geoff (crates.io) — https://crates.io/crates/chapeaux-geoff
+- @chapeaux/geoff (npm) — https://www.npmjs.com/package/@chapeaux/geoff
+- Oxigraph — https://github.com/oxigraph/oxigraph
+- SPARQL 1.1 (W3C) — https://www.w3.org/TR/sparql11-query/
+- SHACL (W3C) — https://www.w3.org/TR/shacl/

@@ -1,4 +1,4 @@
-##1 
+## 1 
 [ex] <tag:example.org,2026:>
 
 # Заметки о проекте {=ex:project-alpha .schema:Project name}

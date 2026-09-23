@@ -419,7 +419,7 @@ rete pack notes.ttl -o graph.rete
 - Geoff — https://github.com/chapeaux/geoff
 - Rete — https://github.com/caviri/rete
 - Comunica (клиентский SPARQL) — https://github.com/comunica/comunica
-- Oxigraph (RDF store) — https://github.com/oxigraph/oxigraph
+- Oxigraph (RDF store) — https://github.com/oxigraph/oxigraph Oxigraph — это одновременно и графовая база данных, и инструментарий для работы с RDF и SPARQL.
   - [oxigraph/wiki/Architecture](https://github.com/oxigraph/oxigraph/wiki/Architecture)
 - PIM RDF (blueprint для персональной базы знаний) — https://github.com/bmordue/pim_rdf
 - Vault-LD (спецификация Markdown → RDF) — https://github.com/The-Knowledge-Graph-Guys/vault-ld

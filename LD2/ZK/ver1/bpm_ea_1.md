@@ -62,11 +62,11 @@
 *   **Технологический стек (ver9d):** N3.js (парсинг RDF), Comunica (SPARQL-движок в браузере), Viz.js (Graphviz на WebAssembly), N3.Store (in-memory quadstore).
 *   **Назначение:** Прототип системы моделирования бизнес-процессов, где любой объект (процесс, роль, документ) и его атрибуты доступны через SPARQL-запросы, а анализ описывается декларативно.
 
-```markdown
+Ссылки:
 - [RDF Grapher (GitHub)](https://github.com/bpmbpm/rdf-grapher)
 - [RDF Grapher: Semantic ARIS / BPM — Тезисы](https://github.com/bpmbpm/rdf-grapher/blob/main/introduction/theses.md)
 - [RDF Grapher: Подробное введение](https://github.com/bpmbpm/rdf-grapher/blob/main/introduction/introduction.md)
-```
+
 
 ### 🟠 BEE-UP (на базе ADOxx)
 
@@ -77,12 +77,12 @@
 *   В контексте **BPMN-to-RDF transformer** в BEE-UP модели BPMN могут быть преобразованы в RDF-графы для дальнейшего анализа.
 *   Это позволяет использовать SPARQL для запросов к моделям бизнес-процессов и их анализа через семантические технологии.
 
-```markdown
+Ссылки
 - [BEE-UP (официальный сайт)](https://bee-up.omilab.org)
 - [BEE-UP Handbook v1.7](https://bee-up.omilab.org)
 - [OMiLAB — ADOxx и BEE-UP](https://www.omilab.org)
 - [Leveraging RDF Graphs for Business Process Management (CEUR-WS)](https://ceur-ws.org)
-```
+
 
 ### 🟢 Cotechnoe SMW (Semantic MediaWiki)
 
@@ -94,11 +94,11 @@
 *   **Живые запросы:** Встраиваемые `#ask`-запросы обновляются автоматически при изменении данных, отображая таблицы, карты, графики и календари.
 *   **Развёртывание на Azure:** Готовый образ виртуальной машины для быстрого развёртывания в Azure с предварительно настроенным стеком (MediaWiki 1.43, SMW 6.0, MySQL 8.0, PHP 8.2).
 
-```markdown
+Ссылки:
 - [Cotechnoe SMW — Azure Marketplace](https://marketplace.microsoft.com/en-us/product/cotechnoe.smw-knowledge-base)
 - [Semantic MediaWiki — официальный сайт](https://www.semantic-mediawiki.org/)
 - [Cotechnoe — компания-разработчик](http://www.cotechnoe.com)
-```
+
 
 ### 🔵 OntoWiki
 
@@ -110,7 +110,7 @@
 *   **Визуализация и авторство:** Платформа обеспечивает визуальное представление базы знаний в виде информационной карты с разными представлениями данных и интуитивное создание семантического контента.
 *   **Применение в EA:** OntoWiki использовался в проекте ONTOWIKI для **управления знаниями на предприятии** (Enterprise Knowledge Management), а также в e-Learning и e-Tourism.
 
-
+Ссылки:
 - [OntoWiki — официальный сайт](https://ontowiki.net/)
 - [OntoWiki: Semantic Collaboration for Enterprise Knowledge Management (CORDIS)](https://www.cordis.europa.eu)
 - [OntoWiki — Semantic Wiki Web Application (Zenodo)](https://zenodo.org/records/8058448)

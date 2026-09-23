@@ -1,4 +1,4 @@
-семантические расширения для систем класса BPM (ARIS - подобные) и EA (архитектура предприятия).
+Семантические расширения для систем класса BPM (ARIS - подобные) и EA (архитектура предприятия).
 ## 1
 
 Да, для систем класса BPM (как ARIS) и EA (архитектура предприятия) существует ряд семантических расширений и RDF-ориентированных решений. Их можно условно разделить на три группы: **проприетарные инструменты с RDF-экспортом**, **открытые платформы с встроенной семантикой** и **семантические вики как платформы для EA**.
@@ -31,3 +31,96 @@
 Таким образом, для BPM и EA существует спектр решений — от проприетарных инструментов с поддержкой RDF/OWL (Sparx EA) до открытых платформ, изначально построенных на семантических стандартах (RDF Grapher, BEE-UP), и семантических вики (Cotechnoe SMW, OntoWiki). Выбор зависит от конкретных задач: нужен ли вам полноценный коммерческий EA-инструмент, открытая исследовательская платформа или гибкая вики-среда для совместной работы со знаниями.
 
 Если какой-то из этих инструментов заинтересует вас подробнее, я могу помочь с изучением его документации.
+
+Основные ссылки:
+- [Sparx Systems Enterprise Architect — Ontology Definition Metamodel (ODM)](https://sparxsystems.com/enterprise_architect_user_guide/16.1/model_domains/ontology_definition_metamo.html)
+- [ADOxx — платформа метамоделирования](https://www.adoxx.org/)
+- [BEE-UP — инструмент на базе ADOxx](https://www.bee-up.eu/)
+- [RDF Grapher / Semantic ARIS (GitHub)](https://github.com/bpmbpm/rdf-grapher)
+- [ArchiMate Ontology (OWL/RDF)](https://github.com/AlbertoDMendoza/archimate_ontology)
+- [archimate2rdf — конвертер ArchiMate в RDF](https://github.com/AlbertoDMendoza/archimate2rdf)
+- [sBPMN — Semantic BPMN (Knowledge Graphs)](https://github.com/valiant101/sbpmn)
+- [Cotechnoe SMW — Semantic MediaWiki для EA](https://www.cotechnoe.com/)
+- [OntoWiki — семантическая вики-платформа](https://ontowiki.net/)
+- [Semantic MediaWiki](https://www.semantic-mediawiki.org/)
+
+
+## 2 
+Нужны: 
+- открытые платформы, изначально построенных на семантических стандартах (RDF Grapher, BEE-UP),
+- семантические вики (Cotechnoe SMW, OntoWiki).
+
+Вот информация по указанным открытым платформам и семантическим вики, которые изначально построены на семантических стандартах (RDF/OWL).
+
+### 🔷 RDF Grapher / Semantic ARIS
+
+**RDF Grapher** — это open-source веб-приложение, которое эволюционировало от простого просмотрщика RDF-данных до прототипа **Semantic ARIS** — системы моделирования бизнес-процессов, внешне повторяющей классический интерфейс ARIS Toolset (моделер, репозитарий, паблишер, отчёты), но полностью построенной на стеке Linked Data.
+
+**Ключевые особенности:**
+*   **Хранилище:** Quadstore (triplestore) для RDF-данных, представленное набором TriG.
+*   **SPARQL как основной язык:** Все запросы пользователя, отчёты и функции системы реализуются как SPARQL-запросы к репозитарию. Базовый функционал (моделер, репозитарий, паблишер) также реализован преимущественно на SPARQL.
+*   **Технологический стек (ver9d):** N3.js (парсинг RDF), Comunica (SPARQL-движок в браузере), Viz.js (Graphviz на WebAssembly), N3.Store (in-memory quadstore).
+*   **Назначение:** Прототип системы моделирования бизнес-процессов, где любой объект (процесс, роль, документ) и его атрибуты доступны через SPARQL-запросы, а анализ описывается декларативно.
+
+```markdown
+- [RDF Grapher (GitHub)](https://github.com/bpmbpm/rdf-grapher)
+- [RDF Grapher: Semantic ARIS / BPM — Тезисы](https://github.com/bpmbpm/rdf-grapher/blob/main/introduction/theses.md)
+- [RDF Grapher: Подробное введение](https://github.com/bpmbpm/rdf-grapher/blob/main/introduction/introduction.md)
+```
+
+### 🟠 BEE-UP (на базе ADOxx)
+
+**BEE-UP** — это открытый инструмент гибридного моделирования на базе метамодельной платформы **ADOxx**, разработанный в OMiLAB (Open Models Initiative Laboratory). Он поддерживает пять языков моделирования: BPMN, EPC, ER, UML и сети Петри.
+
+**Связь с RDF:**
+*   Для ADOxx существует подход, при котором **содержимое моделей экспортируется в формат RDF**. Это описано в научных работах OMiLAB.
+*   В контексте **BPMN-to-RDF transformer** в BEE-UP модели BPMN могут быть преобразованы в RDF-графы для дальнейшего анализа.
+*   Это позволяет использовать SPARQL для запросов к моделям бизнес-процессов и их анализа через семантические технологии.
+
+```markdown
+- [BEE-UP (официальный сайт)](https://bee-up.omilab.org)
+- [BEE-UP Handbook v1.7](https://bee-up.omilab.org)
+- [OMiLAB — ADOxx и BEE-UP](https://www.omilab.org)
+- [Leveraging RDF Graphs for Business Process Management (CEUR-WS)](https://ceur-ws.org)
+```
+
+### 🟢 Cotechnoe SMW (Semantic MediaWiki)
+
+**Cotechnoe SMW** — это self-hosted платформа для управления знаниями, построенная на **Semantic MediaWiki** (SMW), которая превращает обычную вики в платформу структурированных данных.
+
+**Ключевые возможности:**
+*   **Структурированные аннотации:** Авторы размечают страницы типизированными свойствами с помощью простого inline-синтаксиса, а SMW автоматически строит запрашиваемый граф знаний.
+*   **Экспорт в RDF/OWL и SPARQL endpoint:** Граф знаний можно экспортировать в RDF/OWL или запрашивать через SPARQL-endpoint для интеграции с внешними BI-инструментами.
+*   **Живые запросы:** Встраиваемые `#ask`-запросы обновляются автоматически при изменении данных, отображая таблицы, карты, графики и календари.
+*   **Развёртывание на Azure:** Готовый образ виртуальной машины для быстрого развёртывания в Azure с предварительно настроенным стеком (MediaWiki 1.43, SMW 6.0, MySQL 8.0, PHP 8.2).
+
+```markdown
+- [Cotechnoe SMW — Azure Marketplace](https://marketplace.microsoft.com/en-us/product/cotechnoe.smw-knowledge-base)
+- [Semantic MediaWiki — официальный сайт](https://www.semantic-mediawiki.org/)
+- [Cotechnoe — компания-разработчик](http://www.cotechnoe.com)
+```
+
+### 🔵 OntoWiki
+
+**OntoWiki** — это свободная open-source семантическая вики-платформа, которая служит одновременно **редактором онтологий** и **системой приобретения знаний**, а также платформой для управления RDF-данными.
+
+**Ключевые особенности:**
+*   **RDF-ориентированность:** OntoWiki начинался как RDF-based data wiki с акцентом на коллаборацию, а затем эволюционировал в комплексный фреймворк для разработки Semantic Web приложений.
+*   **Разделение текста и знаний:** В отличие от других семантических вики, в OntoWiki редактирование текста и работа со структурированными базами знаний не смешиваются — это два разных режима.
+*   **Визуализация и авторство:** Платформа обеспечивает визуальное представление базы знаний в виде информационной карты с разными представлениями данных и интуитивное создание семантического контента.
+*   **Применение в EA:** OntoWiki использовался в проекте ONTOWIKI для **управления знаниями на предприятии** (Enterprise Knowledge Management), а также в e-Learning и e-Tourism.
+
+
+- [OntoWiki — официальный сайт](https://ontowiki.net/)
+- [OntoWiki: Semantic Collaboration for Enterprise Knowledge Management (CORDIS)](https://www.cordis.europa.eu)
+- [OntoWiki — Semantic Wiki Web Application (Zenodo)](https://zenodo.org/records/8058448)
+
+
+### 💎 Итог
+
+Все четыре решения объединяет то, что они **изначально построены на семантических стандартах** (RDF, SPARQL, OWL):
+
+*   **RDF Grapher** и **BEE-UP** — это инструменты моделирования (BPM/EA), где семантика используется для хранения и запросов к моделям.
+*   **Cotechnoe SMW** и **OntoWiki** — это семантические вики-платформы для управления знаниями, где контент структурирован и запрашиваем через SPARQL.
+
+Если потребуется углубиться в документацию по какой-либо из этих платформ, дайте знать.  

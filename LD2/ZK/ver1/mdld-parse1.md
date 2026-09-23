@@ -1,5 +1,9 @@
 начало см. https://github.com/bpmbpm/doc/blob/main/LD2/ZK/ver1/OxigraphWASM.md
 
+MD-LD (Markdown-Linked Data)
+- https://github.com/hubgit/md-ld
+- https://www.skypack.dev/view/markdownld
+
 ## 1
 
 Да, для базы из десятков заметок можно собрать **полностью клиентский вариант**: браузер сам загружает Markdown-файлы, парсит их в RDF и выполняет SPARQL-запросы. Никакого GitHub Actions, никакой сборки, никакого CLI — только статические файлы на GitHub Pages.

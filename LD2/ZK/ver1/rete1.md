@@ -224,3 +224,8 @@ rete_test/
 - SPARQL 1.1 (W3C) — https://www.w3.org/TR/sparql11-query/
 
 Если плейграунд по какой-то причине не позволит скачать `.rete` файл, альтернативный вариант — использовать GitHub Codespaces (бесплатно для публичных репозиториев), где можно выполнить одну команду `rete build` в терминале, но это уже выходит за рамки «без CLI».
+
+## 2
+Когда имеет смысл использовать rete? https://github.com/caviri/rete#when-does-rete-make-sense
+- https://github.com/oxigraph/oxigraph
+- https://caviri.github.io/rete/BENCHMARK.html#comparison-vs-oxigraph-real-opencitations-network

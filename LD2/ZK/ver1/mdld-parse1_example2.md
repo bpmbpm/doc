@@ -1,6 +1,6 @@
 ## 1
 
-Ппрокомментируй LD-markdown
+Прокомментируй LD-markdown
 ```
 [ex] <tag:example.org,2026:>
 

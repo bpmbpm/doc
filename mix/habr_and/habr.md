@@ -15,3 +15,14 @@
 
 ## hub
 - [Как превратить Хабр из ленты соцсети в библиотеку и базу знаний](https://habr.com/ru/articles/1082632/)
+
+## 2 how
+как писать  
+https://habr.com/ru/companies/ruvds/articles/530272 ; https://www.pvsm.ru/kak-pisat-na-habr/384931
+
+## 3 why
+почему пишут/ пишу статьи, чтобы объяснить самому себе
+
+- https://habr.com/ru/specials/650393/ Почему программисты пишут статьи? Разбираем мотивы в исследовании Хабра
+- https://habr.com/ru/companies/habr/articles/649293/
+- https://habr.com/ru/articles/1085896/ Зачем мы вообще пишем на Хабре?

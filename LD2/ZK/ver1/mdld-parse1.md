@@ -3,6 +3,7 @@
 MD-LD (Markdown-Linked Data)
 - https://github.com/hubgit/md-ld
 - https://www.skypack.dev/view/markdownld
+- https://github.com/alan8373/mdld-py/blob/main/docs/Guide.md doc
 
 ## 1
 

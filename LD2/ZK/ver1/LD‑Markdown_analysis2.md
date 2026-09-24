@@ -614,3 +614,65 @@ ex:bob a schema:Person ;           # Тип из .schema:Person
 3.  Добавляет `ex:bob` тип `schema:Person` (из `.schema:Person`).
 
 Это соответствует принципу MD-LD: **вся семантика извлекается только из явных аннотаций**, и каждый элемент аннотации (`[Bob]`, `+ex:bob`, `?schema:knows`, `.schema:Person`, `label`) вносит свой вклад в итоговый граф.
+
+## 2d
+Разница между `schema:name` и `rdfs:label` в вашем примере объясняется тем, что MD-LD различает **явные предикаты** (например, `schema:name`) и **специальные токены-метки** (например, `label`), которые парсер автоматически преобразует в `rdfs:label`.
+
+### 🔍 Почему в примере для Алисы и Боба разные предикаты
+
+В MD-LD токен `label` — это **встроенное сокращение** для предиката `rdfs:label`. Когда вы пишете `[Bob] {+ex:bob ?ex:knows .schema:Person label}`, парсер видит токен `label` и создаёт триплет:
+
+```turtle
+ex:bob rdfs:label "Bob" .
+```
+
+Для Алисы же в вашем примере использовался явный предикат `schema:name`:
+
+```turtle
+ex:alice schema:name "Алиса" .
+```
+
+Это не ошибка и не противоречие — это **два разных способа указать метку**:
+
+| Токен | Что создаёт | Пример |
+|---|---|---|
+| `label` | `rdfs:label` (автоматически) | `[Bob] {+ex:bob label}` → `ex:bob rdfs:label "Bob"` |
+| `schema:name` | Явный предикат `schema:name` | `[Алиса] {schema:name}` → `ex:alice schema:name "Алиса"` |
+| `ex:fullName` | Явный предикат `ex:fullName` | `[Alice Smith] {ex:fullName}` → `ex:alice ex:fullName "Alice Smith"` |
+
+Согласно спецификации, `label` — это **специализированный токен**, который всегда эмитит `rdfs:label`. В то время как `schema:name` — это **произвольный предикат**, который вы указываете явно. Оба варианта допустимы, но `label` короче и семантически однозначен (всегда `rdfs:label`), а `schema:name` даёт гибкость в выборе онтологии.
+
+### 📚 Ссылки на спецификацию и документацию MD-LD
+
+| Ресурс | Ссылка |
+|---|---|
+| **Спецификация (формальная)** | https://github.com/davay42/mdld-parse/blob/HEAD/spec/index.md |
+| **Документация (полная)** | https://github.com/davay42/mdld-parse/blob/HEAD/docs/index.md |
+| **Примеры (real-world)** | https://github.com/davay42/mdld-parse/blob/HEAD/examples/index.md |
+| **Грамматика (EBNF)** | https://github.com/davay42/mdld-parse/blob/HEAD/grammar/index.md |
+| **Онтологии (W3C)** | https://github.com/davay42/mdld-parse/blob/HEAD/ontologies/index.md |
+| **Python-порт спецификации** | https://github.com/alan8373/mdld-py/blob/main/spec/Spec.md |
+| **Синтаксис (полный справочник)** | https://github.com/alan8373/mdld-py/blob/main/docs/Syntax.md |
+| **Руководство** | https://github.com/alan8373/mdld-py/blob/main/docs/Guide.md |
+
+### 🎮 Демонстрации и песочницы
+
+| Ресурс | Ссылка |
+|---|---|
+| **Markdown-LD Playground (ozekik)** | https://ozekik.github.io/markdown-ld/ |
+| **Репозиторий ozekik/markdown-ld** | https://github.com/ozekik/markdown-ld |
+| **Пример FOAF (Markdown)** | https://github.com/ozekik/markdown-ld/blob/master/examples/foaf.md |
+| **Пример FOAF (Turtle)** | https://github.com/ozekik/markdown-ld/blob/master/examples/foaf.ttl |
+| **Пример FOAF (JSON-LD)** | https://github.com/ozekik/markdown-ld/blob/master/examples/foaf.json |
+
+### 💡 Ключевые гарантии MD-LD (из спецификации)
+
+Согласно спецификации, MD-LD даёт несколько важных гарантий:
+
+1. **Markdown остаётся валидным** — удаление всех блоков `{...}` даёт чистый Markdown.
+2. **Нет скрытых смыслов** — ничто не выводится из разметки или структуры.
+3. **Каждый факт происходит из `{...}`** — все триплеты порождаются только аннотациями.
+4. **Нет пустых узлов** — каждая сущность имеет IRI.
+5. **Детерминированность** — один проход, без эвристик и догадок.
+
+Именно эти гарантии делают MD-LD одновременно **человекочитаемым** (поскольку аннотации минимальны и локальны) и **машиночитаемым** (поскольку все триплеты явны и трассируемы).

@@ -1,6 +1,11 @@
 настоящий PIM  
 Где находимся. Есть Enterprise базы знаний (SMW, semantic EA, etc) и semantic web.  
 Есть домашний сектор, ZettelKasten.  
+Как из PIM = Personal Information Manager (management) сделать Personal knowledge management (Manager), PKM   
+https://habr.com/ru/articles/754286/
+
+Не про такое: https://soware.ru/categories/personal-information-managers/administrations
+управление задачами \ планирование - это всего лишь часть
 
 ## deepseek
 Markdown – формат ручной разметки, который позволяет оформлять тексты (статьи).

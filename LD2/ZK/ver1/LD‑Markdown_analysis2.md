@@ -7,6 +7,9 @@ https://habr.com/ru/articles/754286/
 Не про такое: https://soware.ru/categories/personal-information-managers/administrations
 управление задачами \ планирование - это всего лишь часть
 
+## also
+- https://github.com/bpmbpm/mdld-test/blob/main/ver2/doc/MD-LD_info1.md
+  
 ## deepseek
 Markdown – формат ручной разметки, который позволяет оформлять тексты (статьи).
 К нему нужно добавить возможность разметки знаний. Основной вариант Linked Data, но рассмотри и другие технологии. 

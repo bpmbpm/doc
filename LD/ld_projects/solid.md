@@ -10,3 +10,6 @@
 - I - Interface Segregation Principle (Принцип разделения интерфейса)
 - D - Dependency Inversion Principle (Принцип инверсии зависимостей)
 
+### also 
+- https://en.wikipedia.org/wiki/Web3
+- [Архитектура цифрового выражения субъектности](https://habr.com/ru/articles/1086254/)

@@ -41,3 +41,6 @@
 - [Преобразователь коаксиального S/PDIF в оптический](https://habr.com/ru/articles/1053154/)
 ### also
 - https://github.com/bpmbpm/doc/tree/main/IT/DIY
+
+## 2
+- [Как Claude Code помог мне сделать звук на мансарде приятным](https://habr.com/ru/articles/1087510/)

@@ -1,5 +1,8 @@
 ## integration 
-integration, ETL etc
+## broker
+- [REST, Webhook или Message Broker: что выбрать для интеграции корпоративных систем](https://habr.com/ru/articles/1087502/)
+
+## integration, ETL etc
 ### IBM
 ### 1 IBM ACE
 IBM App Connect Enterprise

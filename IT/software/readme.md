@@ -6,7 +6,7 @@
 - https://github.com/bpmbpm/doc/blob/main/IT/BI/readme.md
 - https://github.com/bpmbpm/doc/tree/main/IT/DBMS
 ### also
-- https://github.com/bpmbpm/doc/tree/main/EA/integration
+- ESB https://github.com/bpmbpm/doc/tree/main/EA/integration ; https://github.com/bpmbpm/doc/tree/main/EA/integration/synchronous
 - WFE https://github.com/bpmbpm/doc/tree/main/BPM/workflow/WFE
 - Programming culture https://github.com/bpmbpm/doc/tree/main/EA/software
   

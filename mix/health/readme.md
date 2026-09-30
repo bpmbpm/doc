@@ -10,7 +10,9 @@
 - [Днем я пишу код, вечером иду в гараж и продаю на Авито на 130 тысяч в месяц](https://habr.com/ru/articles/972020/)
 - [Ортопедический стул с упором в колени SmartStool KW02](https://www.i-sit.ru/products/smartstool-s-uporom-v-koleni-kw02/) ; Коленный стул Jetmama SmartStool ; [Балансирующий регулируемый коленный стул школьника JetMama](https://www.ozon.ru/category/kolennyy-stul-ortopedicheskiy-so-spinkoy/)
 
-### Разное 
+### 2
+- [простат-специфический антиген (ПСА)](https://habr.com/ru/companies/smclinic/articles/1088210/)
+### longevity 
 - [Стриралка для тела](https://habr.com/ru/articles/972636/) Биометрическая стиральная машина для человека. Японцы предлагают «ванну будущего»
 ### analysis
 - [AI-агент с долгосрочной памятью: строю личного аналитика с Claude Code](https://habr.com/ru/articles/1007940/)

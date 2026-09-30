@@ -1,5 +1,6 @@
 ## 1
-
+- https://www.w3.org/community/reports/json-ld/CG-FINAL-yaml-ld-20231206/
+- 
 ## 2
 ## YAML‑LD: что это и зачем нужно
 

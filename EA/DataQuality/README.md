@@ -5,7 +5,7 @@
 - [Управление качеством данных: роли, процессы, инструменты](https://habr.com/ru/articles/694690/)
 - [Критерии качества данных](https://loginom.ru/blog/data-quality-criteria)
 - [Важность качества данных при внедрении ERP](https://habr.com/ru/companies/rdv-it/articles/939832/)
-- [Боремся за качество данных: практический подход с Airflow](https://habr.com/ru/companies/otus/articles/1085832/) ; [Запилить еще один Low‑Code ETL? — Конечно, да. Как мы пошли в opensource](https://habr.com/ru/articles/1081182/?ysclid=munr1tv68026950352)
+- [Боремся за качество данных: практический подход с Airflow](https://habr.com/ru/companies/otus/articles/1085832/) ; [Запилить еще один Low‑Code ETL? — Конечно, да. Как мы пошли в opensource](https://habr.com/ru/articles/1081182/?ysclid=munr1tv68026950352) Идея визуального конструктора 
 
 ### Разное
 - https://github.com/bpmbpm/doc/tree/main/IT/BOK

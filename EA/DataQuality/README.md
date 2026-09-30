@@ -72,3 +72,4 @@
 ### 7
 - [Data profiling, и с чем его едят](https://habr.com/ru/companies/unidata/articles/667636/)
 - [Почему одинаковые показатели в разных отчётах не совпадают](https://habr.com/ru/articles/1079462/)
+- [Запилить еще один Low‑Code ETL? — Конечно, да. Как мы пошли в opensource](https://habr.com/ru/articles/1081182/?ysclid=munr1tv68026950352)

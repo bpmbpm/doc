@@ -31,5 +31,6 @@
 - https://kb.kuma-community.ru/books/ustanovka-i-obnovlenie/page/ustanovka-kuma-s-otkazoustoicivym-iadrom-raft
 - https://habr.com/ru/articles/1089168/#comment_30485946
 ## Patroni 
-- HAProxy/VIP и плановых switchover.
-- в Patroni на запись влияет только лидер. Failback в Patroni не нужен, бывший лидер просто становится репликой. 
+- Узнайте, как использовать Patroni для управления высокодоступными кластерами PostgreSQL.
+  - HAProxy/VIP и плановых switchover.
+  - в Patroni на запись влияет только лидер. Failback в Patroni не нужен, бывший лидер просто становится репликой. 

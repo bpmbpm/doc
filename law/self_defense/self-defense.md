@@ -3,4 +3,4 @@
   - https://github.com/stanislav-smolentsev/zaschita-it-biznesa
 
 ## spam
-- https://habr.com/ru/articles/1089210/
+- https://habr.com/ru/articles/1089210/  нарушения законодательства о рекламе

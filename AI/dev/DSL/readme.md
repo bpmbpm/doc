@@ -8,4 +8,5 @@
 
 ### DSL 
 - [Как на Python описать архитектуру сервисов и превратить её в код](https://habr.com/ru/articles/1088752/)
-  - [Граф кода как источник «говорящих» диаграмм и контекста](https://habr.com/ru/articles/1087078/) 
+  - [Граф кода как источник «говорящих» диаграмм и контекста](https://habr.com/ru/articles/1087078/)
+  - https://habr.com/ru/articles/1087678/comments/#comment_30474810 Ожидаю появление новых языков для vibecoding в направлении DDD \ DSL.

@@ -189,4 +189,201 @@ Punning позволяет, например, сказать, что `:Eagle` (�
 
 Если у вас есть конкретные аксиомы для вашей онтологии, я могу помочь проверить их на соответствие OWL 2 DL.
 
+## 3 example
+
+# 🐢 Онтология «Мир идей / Мир вещей» на Алисе и Бобе
+
+Ниже — полный Turtle-документ, который использует **все** обсуждавшиеся понятия: `rdfs:Resource`, `owl:Class`, `owl:Thing`, `owl:Nothing`, `rdfs:Datatype`, `owl:Restriction`, `rdf:Property`, `owl:ObjectProperty`, `owl:DatatypeProperty`, `owl:AnnotationProperty`, `rdfs:Literal`, `Endurant`/`Perdurant`, пустой узел, punning, домены/диапазоны.
+
+```turtle
+@prefix :     <http://example.org/plato#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# ============================================================
+# 0. КОРЕНЬ — rdfs:Resource
+# ============================================================
+# rdfs:Resource — неявный корень всего. Явно объявлять не нужно,
+# но для наглядности можно указать, что owl:Thing и owl:Class —
+# его подклассы (это ОГРАНИЧЕНИЕ OWL Full, не OWL 2 DL).
+
+# ============================================================
+# 1. МИР ИДЕЙ (owl:Class)
+# ============================================================
+
+:Endurant      a owl:Class ; rdfs:subClassOf owl:Thing .
+:Perdurant     a owl:Class ; rdfs:subClassOf owl:Thing .
+:PhysicalObject a owl:Class ; rdfs:subClassOf :Endurant .
+:AbstractObject a owl:Class ; rdfs:subClassOf :Endurant .
+:Process       a owl:Class ; rdfs:subClassOf :Perdurant .
+:Event         a owl:Class ; rdfs:subClassOf :Perdurant .
+:Meeting       a owl:Class ; rdfs:subClassOf :Event .
+
+:Person        a owl:Class ;
+               rdfs:subClassOf :PhysicalObject ;
+               rdfs:comment "Понятие «персона» — элемент мира идей"@ru .
+
+:Category      a owl:Class ;
+               rdfs:subClassOf :AbstractObject ;
+               rdfs:comment "Класс категорий-как-индивидуумов (для punning)"@ru .
+
+# Тип данных (rdfs:Datatype)
+:NameType      a rdfs:Datatype ;
+               owl:equivalentClass xsd:string .
+
+# Ограничение (owl:Restriction) — анонимный класс
+:NamedPerson   a owl:Class ;
+               owl:equivalentClass [
+                   a owl:Restriction ;
+                   owl:onProperty :hasName ;
+                   owl:someValuesFrom xsd:string
+               ] .
+
+# owl:Nothing — пустой класс
+:Impossible    a owl:Class ;
+               owl:equivalentClass owl:Nothing ;
+               rdfs:comment "Класс без экземпляров"@ru .
+
+# ============================================================
+# 2. ПРЕДИКАТЫ (rdf:Property)
+# ============================================================
+
+# --- объектные свойства: связывают индивидуума с индивидуумом ---
+:knows a owl:ObjectProperty ;
+       rdfs:domain :Person ;
+       rdfs:range  :Person ;
+       rdfs:comment "Симметричное знание между персонами"@ru .
+
+:participatesIn a owl:ObjectProperty ;
+       rdfs:domain :Endurant ;
+       rdfs:range  :Perdurant ;
+       rdfs:comment "Предмет участвует в процессе/событии"@ru .
+
+# --- свойство данных: связывает индивидуума с литералом ---
+:hasName a owl:DatatypeProperty ;
+       rdfs:domain :Endurant ;
+       rdfs:range  xsd:string ;
+       rdfs:comment "Связывает предмет с литералом"@ru .
+
+# --- аннотационное свойство: метаданные, не влияет на логику ---
+:createdBy a owl:AnnotationProperty .
+:seeAlso   a owl:AnnotationProperty .
+
+# --- свойство метамоделирования: предмет → категория (punning!) ---
+# ВНИМАНИЕ: range owl:Class запрещён в OWL 2 DL.
+# Корректный приём — punning: :Person одновременно класс и индивидуум.
+:hasCategory a owl:ObjectProperty ;
+       rdfs:domain :Endurant ;
+       rdfs:range  :Category ;
+       rdfs:comment "Связывает предмет с категорией-как-индивидуумом"@ru .
+
+# ============================================================
+# 3. МИР ВЕЩЕЙ (owl:Thing) — ИНДИВИДУУМЫ
+# ============================================================
+
+:Alice a owl:NamedIndividual , :Person ;
+       :hasName "Алиса"@ru ;
+       :knows :Bob ;
+       :participatesIn :Meeting_2024_01_15 ;
+       :hasCategory :Person_as_Category ;
+       :createdBy "user123" ;
+       :seeAlso :Bob .
+
+:Bob   a owl:NamedIndividual , :Person ;
+       :hasName "Боб"@ru ;
+       :knows :Alice ;
+       :participatesIn :Meeting_2024_01_15 ;
+       :hasCategory :Person_as_Category .
+
+# Событие — пердурант
+:Meeting_2024_01_15 a owl:NamedIndividual , :Meeting ;
+       rdfs:label "Планёрка 15.01.2024"@ru ;
+       :hasName "Планёрка" .
+
+# Пустой узел — анонимный индивидуум (участник без IRI)
+[ a :Person ;
+  :hasName "Неизвестный участник" ;
+  :participatesIn :Meeting_2024_01_15
+] .
+
+# ============================================================
+# 4. ЛИТЕРАЛЫ (rdfs:Literal)
+# ============================================================
+# Литералы — это "Алиса"@ru, "Боб"@ru, "user123", 42, true.
+# Они являются экземплярами rdfs:Literal (неявно).
+
+# ============================================================
+# 5. PUNNING: :Person как класс И как индивидуум
+# ============================================================
+
+# :Person УЖЕ объявлен как owl:Class (см. выше).
+# Теперь тот же IRI — как индивидуум:
+
+:Person_as_Category a owl:NamedIndividual , :Category ;
+       rdfs:label "Персона"@ru ;
+       rdfs:comment "Тот же смысл, что и класс :Person, но как элемент мира вещей"@ru .
+```
+
+## 🧠 Что здесь происходит: разбор по мирам
+
+| Мир | Сущность | Пример в коде |
+|---|---|---|
+| **Идеи** (`owl:Class`) | Понятие | `:Person`, `:Meeting`, `:NamedPerson` |
+| **Идеи** (`rdfs:Datatype`) | Тип данных | `:NameType` ≡ `xsd:string` |
+| **Идеи** (`owl:Restriction`) | Ограничение | `[ owl:onProperty :hasName ; owl:someValuesFrom xsd:string ]` |
+| **Идеи** (`owl:Nothing`) | Пустой класс | `:Impossible` |
+| **Отношения** (`rdf:Property`) | Предикат | `:knows`, `:hasName`, `:createdBy`, `:hasCategory` |
+| **Вещи** (`owl:Thing`) | Индивидуум | `:Alice`, `:Bob`, `:Meeting_2024_01_15` |
+| **Вещи** (аноним) | Пустой узел | `[ a :Person ; :hasName "Неизвестный участник" ]` |
+| **Данные** (`rdfs:Literal`) | Литерал | `"Алиса"@ru`, `"user123"` |
+
+## 🔗 Как связываются миры — «размерность» предикатов
+
+Ваша интуиция о «размерности» предикатов формализуется через **domain** и **range**:
+
+```
+:knows          domain: Person    range: Person       → вещь ↔ вещь
+:participatesIn domain: Endurant  range: Perdurant    → вещь ↔ вещь
+:hasName        domain: Endurant  range: xsd:string   → вещь ↔ литерал
+:hasCategory    domain: Endurant  range: Category     → вещь ↔ идея (через punning)
+rdf:type        domain: Resource  range: owl:Class    → вещь ↔ идея
+rdfs:subClassOf domain: Class     range: owl:Class    → идея ↔ идея
+```
+
+**Ключевое правило OWL 2 DL**: `rdf:type` и `rdfs:subClassOf` — это **разные предикаты с разными доменами/диапазонами**. Нельзя использовать `rdfs:subClassOf` между индивидуумами, и нельзя `rdf:type` между классами. Это и есть ваша «размерность».
+
+## ⚠️ OWL DL vs OWL Full в этом файле
+
+| Конструкция | Профиль | Комментарий |
+|---|---|---|
+| Всё, кроме `:hasCategory` | **OWL 2 DL** | Полностью соответствует |
+| `:hasCategory` с `range :Category` | **OWL 2 DL** | Корректно, если `:Category` — обычный класс |
+| Использование `:Person` как класса и как `:Person_as_Category` | **OWL 2 DL** | Это punning, разрешён |
+| Попытка `:hasCategory range owl:Class` | **OWL Full** | Запрещено в OWL 2 DL |
+| `owl:Class rdfs:subClassOf rdfs:Resource` | **OWL Full** | Запрещено в OWL 2 DL |
+
+## 🔍 Что выведет reasoner (HermiT/Pellet)
+
+Из этого файла можно вывести, например:
+
+```
+:Alice  a  :NamedPerson          (т.к. имеет :hasName со строкой)
+:Bob    a  :NamedPerson
+:Alice  :knows :Bob              (симметрия, если добавить :knows a owl:SymmetricProperty)
+[ _:b ] a  :Person               (анонимный участник)
+:Impossible  owl:equivalentClass  owl:Nothing
+```
+
+## 📚 Ссылки (текстом)
+
+1. W3C OWL 2 Structural Specification — `https://www.w3.org/TR/owl2-syntax/`
+2. W3C OWL 2 New Features (Punning) — `https://www.w3.org/TR/owl2-new-features/#F12:_Punning`
+3. W3C RDF Schema 1.1 — `https://www.w3.org/TR/rdf-schema/`
+4. W3C OWL 2 RDF-Based Semantics (OWL Full) — `https://www.w3.org/TR/owl2-rdf-based-semantics/`
+5. Horrocks, Patel-Schneider. "On the Properties of Metamodeling in OWL" — `https://www.cs.ox.ac.uk/people/ian.horrocks/Publications/download/2005/HoPa05a.pdf`
+
+Если хотите, могу добавить аксиомы дизъюнктности (`owl:disjointWith`) между `Endurant` и `Perdurant`, а также сделать `:knows` симметричным — это сделает онтологию логически строже.
+
 

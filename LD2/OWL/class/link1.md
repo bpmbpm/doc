@@ -8,3 +8,7 @@
 ## 2
 - https://habr.com/ru/companies/vktech/articles/948492/ Как онтология помогает представить структуру данных и семантику приложения
 - https://www.lektorium.tv/sites/lektorium.tv/files/additional_files/20100925_ontology_konev_lecture01.pdf
+
+## also
+- https://github.com/bpmbpm/onto/tree/main/questions
+  

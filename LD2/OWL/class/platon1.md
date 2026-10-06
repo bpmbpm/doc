@@ -1,4 +1,7 @@
 platon1.md  
+## also 
+- https://github.com/bpmbpm/onto/blob/main/questions/class/plato_1.md
+
 см. 
 - https://github.com/bpmbpm/doc/blob/main/LD2/OWL/class/ver1.md
 - https://github.com/bpmbpm/doc/blob/main/LD2/OWL/class/class1a.md

@@ -62,6 +62,8 @@ HTML → CSS → JavaScript → React → Next → Node → Express → MongoDB
 
 ## 4
 - [Какой ты вайбкодер. Шуточный опрос](https://habr.com/ru/articles/1090742/)
+- [Не ИИ заменит людей, а люди заменят ИИ. И это уже происходит](https://habr.com/ru/articles/1090612/)
+
 ## spec-driven development
 - example https://habr.com/ru/articles/982620/#comment_29343506 ; https://github.com/github/spec-kit/blob/main/templates/spec-template.md
 - Почему spec-driven development плохо работает на микросервисах: часть 1. Где теряется контекст https://habr.com/ru/articles/1033510/

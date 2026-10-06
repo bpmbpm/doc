@@ -8,7 +8,7 @@
 - Fig. 4. Activity dependency model specified by an OWL ontology https://www.researchgate.net/publication/221143530_Two_Dependency_Modeling_Approaches_for_Business_Process_Adaptation
 
 ## Class
-- https://attempto.ifi.uzh.ch/site/docs/writing_owl_in_ace.html как писать онтологии OWL на языке Attempto Controlled English (ACE).
+- ACE https://attempto.ifi.uzh.ch/site/docs/writing_owl_in_ace.html как писать онтологии OWL на языке Attempto Controlled English (ACE).
 
 
 ## Jean-Baptiste LAMY

@@ -41,8 +41,9 @@ Enterprise Architecture
 - наблон arc42 https://arc42.org/ ; https://github.com/arc42 
 ### also
 - [life cycle IT/BOK/life_cycle](https://github.com/bpmbpm/doc/tree/main/IT/BOK/life_cycle)
-- https://github.com/bpmbpm/doc/blob/main/visualization/diagramascode/README.md#xx-as-code
+- https://github.com/bpmbpm/doc/blob/main/visualization/diagramascode/README.md#xx-as-code xx-as-code
 - https://github.com/bpmbpm/doc/blob/main/BPM/technology/BCS/readme.md
+- https://github.com/bpmbpm/doc/tree/main/BPM/technology/model-first model-first
 ### монолит vs микросервис
 - [Галопом по архитектуре. Часть 2. Архитектура с нуля](https://habr.com/ru/articles/919368/)
 

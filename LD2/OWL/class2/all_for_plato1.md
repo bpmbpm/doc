@@ -1157,3 +1157,826 @@ foaf:name и foaf:familyName — свойства, используемые дл
 попробуй рассмотреть SUMO, ведь  
 Entity — корень всей иерархии, всё делится на Abstract и Physical
  
+Да, **SUMO действительно намного ближе к требуемой конструкции O2P**, чем стандартная иерархия `owl:Class` / `owl:Thing`. Но нужно точно определить, *какое* разделение она даёт.
+
+SUMO вводит корень `Entity`, который делится на:
+
+```text
+Entity
+├── Physical
+└── Abstract
+```
+
+`Physical` содержит сущности, имеющие положение в пространстве-времени; `Abstract` — сущности, не имеющие такого положения. `Physical`, в свою очередь, делится на `Object` и `Process`, а `Abstract` включает, среди прочего, классы, отношения, атрибуты, количества и пропозиции. [academic.oup](https://academic.oup.com/book/36760/chapter/321869142?searchresult=1)
+
+Это близко к O2P, но **не полностью совпадает** с платоновским разделением:
+
+```text
+мир идей ≠ просто Abstract
+мир вещей ≠ просто Physical
+```
+
+Причина в том, что SUMO помещает в `Abstract` не только категории, но также отношения, числа, атрибуты, пропозиции и другие абстрактные сущности.
+
+# 1. Иерархия SUMO
+
+Упрощённо верхний уровень SUMO можно представить так:
+
+```text
+Entity
+├── Physical
+│   ├── Object
+│   └── Process
+│
+└── Abstract
+    ├── SetOrClass
+    ├── Relation
+    ├── Attribute
+    ├── Quantity
+    └── Proposition
+```
+
+Эта схема упрощена: фактическая иерархия SUMO значительно шире.
+
+## 1.1. `Entity`
+
+В SUMO `Entity` — универсальный класс индивидов и корень иерархии:
+
+```text
+Entity — универсальная категория всех сущностей SUMO.
+```
+
+Важно: в SUMO `Entity` — не «всё существующее» в строго метафизическом смысле, а верхний класс, включающий физические и абстрактные сущности.
+
+## 1.2. `Physical`
+
+`Physical` — сущность, имеющая положение в пространстве-времени:
+
+```text
+Physical — пространственно-временная сущность.
+```
+
+Примеры:
+
+```text
+человек
+книга
+здание
+организация как физически воплощённая система
+событие
+процесс
+```
+
+## 1.3. `Object`
+
+`Object` — физическая сущность, сохраняющая идентичность во времени и имеющая пространственные части. В SUMO к объектам относятся обычные вещи, географические регионы и другие физические объекты. [ontologyportal](https://www.ontologyportal.org/SUMOhistory/SUMO1.46.txt)
+
+Примеры:
+
+```text
+Alice
+Bob
+конкретная книга
+здание
+автомобиль
+```
+
+## 1.4. `Process`
+
+`Process` — физическая сущность, разворачивающаяся во времени и имеющая временные стадии или части:
+
+```text
+лекция
+чтение книги
+производственный процесс
+перемещение
+разговор
+```
+
+Это особенно полезно для O2P, поскольку O2P должно описывать не только вещи, но и процессы.
+
+## 1.5. `Abstract`
+
+`Abstract` — сущность, не имеющая положения в пространстве-времени:
+
+```text
+Abstract — не-пространственно-временная сущность.
+```
+
+SUMO прямо относит сюда свойства, качества, множества, отношения и математические объекты. [ontologyportal](https://www.ontologyportal.org/SUMOhistory/SUMO1.46.txt)
+
+Но это не означает:
+
+```text
+Abstract = платоновский мир идей
+```
+
+В SUMO среди абстрактных сущностей находятся разные по природе элементы:
+
+```text
+классы
+отношения
+атрибуты
+числа
+пропозиции
+```
+
+Их нельзя без уточнения считать одним и тем же видом идеи.
+
+# 2. Что именно совпадает с O2P
+
+Сравним SUMO с целевой моделью O2P.
+
+| O2P | SUMO | Степень соответствия |
+|---|---|---|
+| Мир вещей | `Physical` | Высокая, но `Physical` включает процессы |
+| Конкретные вещи | `Object` | Очень высокая |
+| Процессы | `Process` | Очень высокая |
+| Мир идей | `Abstract` | Частичная |
+| Категории | `SetOrClass` | Высокая |
+| Предикаты | `Relation` | Высокая |
+| Значения и качества | `Attribute`, `Quantity` | Высокая |
+| Утверждения | `Proposition` | Высокая |
+| Иерархия категорий | `subclass` | Высокая |
+| Экземпляр категории | `instance` | Высокая |
+| Два раздельных метафизических мира | `Physical` / `Abstract` | Только частичная |
+
+Наиболее важное совпадение:
+
+```text
+O2P категория ≈ SUMO SetOrClass
+O2P вещь ≈ SUMO Object
+O2P процесс ≈ SUMO Process
+O2P предикат ≈ SUMO Relation
+O2P литеральное или качественное значение ≈ SUMO Attribute/Quantity
+```
+
+# 3. Где SUMO лучше OWL 2 DL
+
+OWL 2 DL в стандартной Direct Semantics использует:
+
+```text
+ΔI — область объектов
+ΔD — область данных
+```
+
+Классы интерпретируются как подмножества `ΔI`:
+
+```text
+Cᴵ ⊆ ΔI
+```
+
+Индивиды также находятся в `ΔI`:
+
+```text
+aᴵ ∈ ΔI
+```
+
+Поэтому OWL 2 DL не задаёт отдельный фундаментальный домен:
+
+```text
+ΔIdea
+```
+
+SUMO, напротив, явно проводит верхнеуровневое различие:
+
+```text
+Entity
+├── Physical
+└── Abstract
+```
+
+Это уже готовая таксономическая рамка для различения:
+
+```text
+физических сущностей
+абстрактных сущностей
+```
+
+Кроме того, SUMO не ограничивается стандартным паттерном:
+
+```text
+класс → экземпляр
+```
+
+В ней имеются отдельные категории:
+
+```text
+Object
+Process
+SetOrClass
+Relation
+Attribute
+Quantity
+Proposition
+```
+
+Это значительно ближе к O2P, чем попытка использовать:
+
+```text
+owl:Class
+owl:Thing
+rdf:type
+```
+
+как две противоположные стороны одной модели.
+
+# 4. Где SUMO всё ещё не совпадает с O2P
+
+## 4.1. `Abstract` шире, чем мир идей
+
+В O2P под «миром идей» понимаются прежде всего:
+
+```text
+категории
+классы
+типы
+формы
+образы
+описания свойств
+```
+
+В SUMO `Abstract` включает:
+
+```text
+SetOrClass
+Relation
+Attribute
+Quantity
+Proposition
+```
+
+Поэтому:
+
+```text
+O2P Category ⊂ SUMO Abstract
+```
+
+а не:
+
+```text
+O2P Category = SUMO Abstract
+```
+
+## 4.2. Процессы относятся к `Physical`
+
+В философской формулировке «мир вещей» иногда понимается как мир объектов, противопоставленный миру идей.
+
+Но в SUMO:
+
+```text
+Physical
+├── Object
+└── Process
+```
+
+То есть процессы относятся к `Physical`, хотя процесс не обязательно является вещью в узком смысле.
+
+Для O2P лучше использовать:
+
+```text
+мир экземпляров
+├── Object
+├── Process
+├── Event
+└── State
+```
+
+а не называть весь этот мир просто «мир вещей».
+
+## 4.3. Категории не обязательно являются отдельным «миром»
+
+В SUMO `SetOrClass` — класс абстрактных сущностей. Но это не означает автоматически:
+
+```text
+SetOrClass ∩ Physical = ∅
+```
+
+если мы рассматриваем сложные случаи метамоделирования и семантических представлений.
+
+Для строгого O2P нужно явно принять дополнительное правило:
+
+```text
+Category ⊆ Abstract
+Category ∩ Physical = ∅
+```
+
+Это уже O2P-ограничение поверх SUMO.
+
+## 4.4. Категория и множество
+
+В SUMO есть важная терминологическая особенность:
+
+```text
+SetOrClass
+```
+
+объединяет множества и классы.
+
+В O2P их лучше разделить:
+
+```text
+Category — идея, классифицирующая экземпляры
+Collection — совокупность конкретных экземпляров
+```
+
+Например:
+
+```text
+o2p:PersonCategory
+ex:personsOfDepartmentA
+```
+
+Категория `Person` не должна автоматически совпадать с конкретным множеством людей в некотором контексте.
+
+# 5. Как SUMO моделирует нужные отношения
+
+В SUMO используются специальные отношения вроде:
+
+```text
+instance
+subclass
+subrelation
+```
+
+Концептуально:
+
+```text
+ex:alice instance foaf:Person .
+o2p:Student subclass foaf:Person .
+```
+
+Для O2P это естественно преобразуется в:
+
+```turtle
+ex:alice o2p:isInstance o2p:Person .
+o2p:Student o2p:isSubClass o2p:Person .
+```
+
+## 5.1. Аналог `o2p:isInstance`
+
+```text
+SUMO: instance
+O2P:  o2p:isInstance
+```
+
+Сигнатура:
+
+```text
+o2p:isInstance: Instance × Category
+```
+
+Пример:
+
+```turtle
+ex:alice o2p:isInstance o2p:Person .
+```
+
+## 5.2. Аналог `o2p:isSubClass`
+
+```text
+SUMO: subclass
+O2P:  o2p:isSubClass
+```
+
+Сигнатура:
+
+```text
+o2p:isSubClass: Category × Category
+```
+
+Пример:
+
+```turtle
+o2p:Student o2p:isSubClass o2p:Person .
+```
+
+## 5.3. Аналог `o2p:hasProperty`
+
+SUMO имеет понятия, соответствующие:
+
+```text
+Attribute
+Relation
+Predicate
+```
+
+Но в SUMO связь:
+
+```text
+категория предусматривает свойство
+```
+
+не обязательно выражается одним универсальным отношением, полностью совпадающим с:
+
+```turtle
+o2p:Person o2p:hasProperty foaf:name .
+```
+
+Поэтому `o2p:hasProperty` всё равно нужен как специальный конструктивный предикат O2P.
+
+SUMO может дать его типологическую основу:
+
+```text
+o2p:hasProperty связывает SetOrClass с Relation или Attribute.
+```
+
+# 6. SUMO и платоновская модель
+
+Можно предложить следующее философское сопоставление:
+
+```text
+Мир категорий O2P
+    ≈ часть SUMO Abstract
+    ≈ SetOrClass, Relation, Attribute, Proposition
+
+Мир экземпляров O2P
+    ≈ SUMO Physical
+    ≈ Object и Process
+```
+
+Но это сопоставление должно быть сформулировано осторожно:
+
+```text
+SUMO Abstract ≠ платоновский мир идей
+SUMO Physical ≠ только мир материальных вещей
+```
+
+Причины:
+
+1. `Abstract` содержит не только категории.
+2. `Physical` содержит процессы, а не только объекты.
+3. SUMO допускает абстрактные сущности, связанные с физической реализацией.
+4. SUMO предназначена как общая верхняя онтология, а не как формализация платоновской метафизики.
+
+Более точное O2P-сопоставление:
+
+```text
+O2P Category ⊆ SUMO Abstract
+O2P Relation ⊆ SUMO Relation
+O2P Attribute ⊆ SUMO Attribute
+O2P Quantity ⊆ SUMO Quantity
+
+O2P Object ⊆ SUMO Physical
+O2P Process ⊆ SUMO Physical
+```
+
+# 7. Улучшенная версия O2P на основе SUMO
+
+Предлагаю не использовать буквально:
+
+```text
+O2P IdeaWorld
+O2P ThingWorld
+```
+
+а ввести два уровня классификации:
+
+```text
+O2P Category
+O2P Instance
+```
+
+Семантически:
+
+```text
+O2P Category ⊆ SUMO Abstract
+O2P Instance ⊆ SUMO Entity
+```
+
+При этом отдельные виды экземпляров:
+
+```text
+O2P Object   ⊆ SUMO Object
+O2P Process  ⊆ SUMO Process
+O2P AttributeValue ⊆ SUMO Attribute or Quantity
+```
+
+## 7.1. O2P-предикаты
+
+```turtle
+o2p:isInstance
+o2p:isSubClass
+o2p:hasProperty
+o2p:hasValue
+o2p:hasPart
+o2p:participatesIn
+```
+
+## 7.2. Сигнатуры
+
+```text
+o2p:isInstance: Instance × Category
+o2p:isSubClass: Category × Category
+o2p:hasProperty: Category × Property
+o2p:hasValue: Instance × Value
+o2p:hasPart: Entity × Entity
+o2p:participatesIn: Object × Process
+```
+
+# 8. Пример O2P + SUMO
+
+Для обозначения категорий используем `o2p:`. Для конкретных экземпляров — `ex:`.
+
+```turtle
+@prefix o2p: <https://github.com/bpmbpm/ontology/o2p#> .
+@prefix ex:  <https://example.org/> .
+@prefix sumo: <http://www.ontologyportal.org/SUMO.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# Categories
+#################################################################
+
+o2p:Person
+    o2p:correspondsTo sumo:Human ;
+    o2p:hasProperty foaf:name ;
+    o2p:hasProperty foaf:familyName .
+
+o2p:Student
+    o2p:isSubClass o2p:Person .
+
+o2p:Book
+    o2p:hasProperty o2p:hasColor ;
+    o2p:hasProperty o2p:hasAuthor .
+
+#################################################################
+# Instances
+#################################################################
+
+ex:alice
+    o2p:isInstance o2p:Student ;
+    foaf:name "Алиса"@ru ;
+    foaf:familyName "Петрова"@ru .
+
+ex:bob
+    o2p:isInstance o2p:Person ;
+    foaf:name "Боб"@ru ;
+    foaf:familyName "Смит"@ru .
+
+ex:book123
+    o2p:isInstance o2p:Book ;
+    o2p:hasAuthor ex:alice ;
+    o2p:hasColor "red"@en .
+```
+
+В этой схеме:
+
+```text
+o2p:Person — категория O2P;
+o2p:Student — подкатегория O2P;
+ex:alice — конкретный экземпляр;
+ex:bob — конкретный экземпляр;
+ex:book123 — конкретный экземпляр;
+sumo:Human — внешний SUMO-концепт;
+o2p:correspondsTo — связь выравнивания онтологий.
+```
+
+# 9. Что именно нужно заимствовать из SUMO
+
+| Элемент SUMO | Использование в O2P | Решение |
+|---|---|---|
+| `Entity` | Корневой внешний класс сущностей | Заимствовать как внешний mapping |
+| `Physical` | Физические и пространственно-временные сущности | Использовать для мира экземпляров |
+| `Object` | Сохраняющиеся вещи | Использовать для O2P Object |
+| `Process` | Процессы и события | Использовать для O2P Process |
+| `Abstract` | Абстрактные сущности | Использовать только как широкий внешний класс |
+| `SetOrClass` | Категории и множества | Использовать как прототип O2P Category |
+| `Relation` | Предикаты и отношения | Использовать как прототип O2P Property/Relation |
+| `Attribute` | Атрибуты и качества | Использовать для свойств и качеств |
+| `Quantity` | Числа и измеряемые значения | Использовать для данных и измерений |
+| `Proposition` | Высказывания | Использовать для утверждений или аксиом |
+| `instance` | Связь экземпляра с категорией | Переименовать в `o2p:isInstance` |
+| `subclass` | Иерархия категорий | Переименовать в `o2p:isSubClass` |
+
+# 10. Сравнение SUMO и O2P
+
+| Вопрос | SUMO | O2P |
+|---|---|---|
+| Корень | `Entity` | Необязательно единый RDF-корень; категории и экземпляры разделяются ролями |
+| Главная дихотомия | `Physical` / `Abstract` | Category / Instance |
+| Вещи | `Object` | Экземпляры категорий, включая объекты |
+| Процессы | `Process` | Экземпляры процессных категорий |
+| Категории | `SetOrClass` | O2P Category |
+| Отношения | `Relation` | O2P properties/predicates |
+| Принадлежность | `instance` | `o2p:isInstance` |
+| Подчинённость | `subclass` | `o2p:isSubClass` |
+| Свойства категорий | Не одно универсальное отношение | `o2p:hasProperty` |
+| Формальная двухсортность | Не в виде `ΔCategory` и `ΔInstance` | Явно задаётся O2P-семантикой |
+| Временные объекты | Поддерживаются через Physical/Process | Может быть добавлена через SUMO/BORO/ISO 15926 |
+| Платоновский мир идей | Не является специальной целью | Является целью проекта |
+
+# 11. Главная проблема: SUMO тоже не даёт полной двухсортности
+
+SUMO решает проблему лучше, но не полностью.
+
+Если мы хотим:
+
+```text
+категории существуют в одном логическом сорте;
+экземпляры существуют в другом логическом сорте;
+```
+
+то нужно явно ввести:
+
+```text
+Category
+Instance
+```
+
+и сигнатуры:
+
+```text
+isInstance: Instance × Category
+isSubClass: Category × Category
+```
+
+SUMO сама по себе задаёт более широкую классификацию:
+
+```text
+Entity
+├── Physical
+└── Abstract
+```
+
+Но она не утверждает автоматически:
+
+```text
+SetOrClass = весь мир категорий
+Physical = весь мир экземпляров
+```
+
+Более того, часть экземпляров категорий может быть абстрактной:
+
+```text
+число
+отношение
+пропозиция
+геометрическая фигура
+математический объект
+```
+
+Поэтому в O2P нужно выбрать один из двух вариантов.
+
+## Вариант 1. Физикалистский O2P
+
+```text
+Category ⊆ Abstract
+Instance ⊆ Physical
+```
+
+Тогда категориями являются только абстрактные формы, а экземплярами — физические объекты и процессы.
+
+Преимущества:
+
+```text
+простая философская интерпретация;
+ясное разделение;
+легко объяснять пользователям.
+```
+
+Недостатки:
+
+```text
+абстрактные экземпляры не покрываются;
+числа, отношения и математические объекты выпадают;
+не все экземпляры должны быть физическими.
+```
+
+## Вариант 2. Универсальный O2P
+
+```text
+Category ⊆ Abstract
+Instance ⊆ Entity
+```
+
+Тогда экземпляром категории может быть не только Physical, но и Abstract:
+
+```text
+число является экземпляром математической категории;
+отношение является экземпляром категории отношений;
+пропозиция является экземпляром категории высказываний.
+```
+
+Преимущества:
+
+```text
+модель универсальнее;
+лучше соответствует SUMO;
+подходит для семантических и enterprise-систем.
+```
+
+Недостатки:
+
+```text
+мир экземпляров уже не совпадает с физическим миром вещей;
+нужно отдельно различать Physical и Abstract экземпляры.
+```
+
+Для O2P рекомендую **вариант 2**:
+
+```text
+категория — специальный вид абстрактной сущности;
+экземпляр — сущность, соответствующая категории;
+физическая вещь — частный вид экземпляра.
+```
+
+# 12. Улучшенная формулировка O2P на SUMO
+
+> O2P — это слой метамоделирования и типизации поверх SUMO, в котором категории интерпретируются как абстрактные формы или универсалии, а экземпляры — как сущности, соответствующие этим категориям. SUMO предоставляет верхнеуровневую классификацию `Entity`, `Physical`, `Abstract`, `Object`, `Process`, `Relation`, `Attribute` и `SetOrClass`. O2P добавляет явное различение сигнатур `Category–Category`, `Instance–Category`, `Instance–Instance` и `Instance–Value`.
+
+Формальная схема:
+
+```text
+Category ⊆ Abstract
+Instance ⊆ Entity
+Object ⊆ Physical
+Process ⊆ Physical
+Relation ⊆ Abstract
+Attribute ⊆ Abstract
+```
+
+Основные отношения:
+
+```text
+isInstance ⊆ Instance × Category
+isSubClass ⊆ Category × Category
+hasProperty ⊆ Category × Relation
+hasValue ⊆ Instance × Entity
+```
+
+# 13. Итог
+
+Ваше наблюдение верное:
+
+```text
+SUMO Entity → Physical / Abstract
+```
+
+действительно гораздо ближе к необходимой модели, чем:
+
+```text
+owl:Class / owl:Thing
+```
+
+SUMO даёт:
+
+```text
+Physical — физические и пространственно-временные сущности;
+Abstract — абстрактные сущности;
+Object — вещи;
+Process — процессы;
+SetOrClass — классы и множества;
+Relation — отношения;
+Attribute — качества;
+Quantity — величины.
+```
+
+Но точное соответствие:
+
+```text
+Abstract = мир идей
+Physical = мир вещей
+```
+
+слишком грубо.
+
+Наиболее корректная формула для O2P:
+
+```text
+O2P Category ⊆ SUMO Abstract
+O2P Instance ⊆ SUMO Entity
+O2P Object ⊆ SUMO Physical
+O2P Process ⊆ SUMO Physical
+O2P Relation ⊆ SUMO Relation
+```
+
+Именно поэтому лучший вариант — не заменить O2P на SUMO, а построить:
+
+```text
+SUMO — верхнеуровневый фундамент;
+O2P — двухсортный слой категорий и экземпляров;
+SKOS — слой терминологических иерархий;
+CIDOC CRM — паттерн «тип — экземпляр»;
+SHACL — проверка сигнатур и ограничений.
+```
+
+В таком варианте `o2p:isInstance` и `o2p:isSubClass` получают ясную семантику:
+
+```text
+ex:alice o2p:isInstance o2p:Person .
+o2p:Student o2p:isSubClass o2p:Person .
+```
+
+а SUMO объясняет, что за сущности стоят за этими терминами:
+
+```text
+o2p:Person — категория, близкая к SetOrClass;
+ex:alice — сущность SUMO, например Human и Object;
+o2p:isInstance — отношение Instance–Category;
+o2p:isSubClass — отношение Category–Category.
+```
+
+Таким образом, **SUMO — наиболее сильный кандидат из рассмотренных для базового верхнеонтологического слоя O2P**, но собственное отношение `Category–Instance` и явная типизация O2P всё равно необходимы.
+

@@ -1,10 +1,19 @@
-## 1
+
 
 Оглавление:
-
+- https://github.com/bpmbpm/doc/blob/main/LD2/OWL/class2/all_for_plato1.md#1
+- https://github.com/bpmbpm/doc/blob/main/LD2/OWL/class2/all_for_plato1.md#2
+- https://github.com/bpmbpm/doc/blob/main/LD2/OWL/class2/all_for_plato1.md#3
+- https://github.com/bpmbpm/doc/blob/main/LD2/OWL/class2/all_for_plato1.md#4
 
 
 perplexity
+
+## 1
+Если ранее у нас возникли сложности с формализацией двух миров Платона (мир идей\образов  vs мир вещей\ теней) через иерархии классов OWL\RDFS, то рассмотри иные онтологии, включая: 
+Sowa's Ontology Джон Ф. Соува), Cyc, YAMATO, BFO, gist, BORO, GFO, IDEAS, ISO 15926, SUMO, UMBEL, WordNet, CIDOC Conceptual Reference Model, COSMO (Common Semantic Model), DOLCE, gist, SKOS, Computer Science Ontology, ROMULUS,  PROTON Ontology (PROTo ONtology) и другие  
+выбери наиболее подходящие и сделай сравнение.
+
 
 Наиболее подходящим кандидатом для O2P выглядит не одна готовая верхнеуровневая онтология, а комбинация:
 

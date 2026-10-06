@@ -1,5 +1,8 @@
 ## 1
+## 1.1 syntax
+- https://www.w3.org/TR/2002/WD-owl-semantics-20021108/syntax.html Раздел 2. Абстрактный синтаксис
 
+## 2
 <owl:Class rdf:ID="Person">  
   ...  
 </owl:Class>  

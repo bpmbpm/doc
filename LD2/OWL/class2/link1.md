@@ -16,6 +16,6 @@
   - Owlready2 ведёт себя аналогично Protege4
   - Owlready2 — это пакет для работы с онтологиями OWL 2.0 на языке Python.
   - Owlready2 поддерживает хранилище RDF-данных в оптимизированной базе данных (SQLite3), либо в оперативной памяти, либо на диске (см. Worlds ). Оно обеспечивает высокоуровневый доступ к классам и объектам в онтологии (так называемое онтологически ориентированное программирование).
-  - Ontologies can define entities located in other namespaces
+  - Ontologies can define entities located in other namespaces https://owlready2.readthedocs.io/en/latest/namespace.html
 - https://hpc.name/thread/b891/75539/flask-i-ontologii-reshenie-problem-s-primerom-iz-knigi-ontologies-with-python.html 
 - https://www.elibrary.ru/item.asp?id=50076327&ysclid=muwqoum4tn424917996

@@ -1,5 +1,9 @@
 ## 1
 
+Оглавление:
+
+
+
 perplexity
 
 Наиболее подходящим кандидатом для O2P выглядит не одна готовая верхнеуровневая онтология, а комбинация:
@@ -1980,3 +1984,2326 @@ o2p:isSubClass — отношение Category–Category.
 
 Таким образом, **SUMO — наиболее сильный кандидат из рассмотренных для базового верхнеонтологического слоя O2P**, но собственное отношение `Category–Instance` и явная типизация O2P всё равно необходимы.
 
+## 3
+
+Вопросы по 
+«Сравним SUMO с целевой моделью O2P.
+1 «Мир вещей \ Высокая, но Physical включает процессы»  
+Так это условно «мир вещей \ мир теней». Процесс – как «динамическая вещь». Есть образ процесса, а есть его экземпляр: процесс начатый в 12:00 и завершенный в 14:00.
+Используй термины SUMO чтобы это пояснить.   
+Также дай более пролный и более подробный словарь терминов SUMO, включая (если они есть), объект, сущность, категория, класс, экземпляр, индивид и другие, покажи их взаимосвязь и покажи наиболее близкие из owl\rdfs. Добавляй ссылки к каждому термину.  
+
+2 «Мир идей / Частичная» и «Два раздельных метафизических мира / Только частичная»  
+Почему частичная? Разве у Платона не так? Дай ссылки на концепцию Платона (неоплатоников), чтобы показать сходства и противоречия. Также Гегель пояснял такую философию Платона по разделению миров (также дай ссылки на Гегеля).   
+
+Поищи статьи или исследования на SUMO в привязке к философским течениям о разделении миров (не только Платона)  
+
+---
+
+Да, ваша интерпретация корректна: **в O2P `Physical` можно трактовать как «мир вещей и теней»**, если под «вещью» понимать не только статичный объект, но и происходящий процесс.
+
+Тогда:
+
+```text
+Physical = изменяющийся чувственно-эмпирический мир
+Object   = относительно устойчивый физический объект
+Process  = динамическая вещь или происходящее
+```
+
+А «образ» процесса — это не сам `Process`, а категория или класс процессов, например:
+
+```text
+o2p:ReadingProcess
+```
+
+Конкретное чтение, начавшееся в 12:00 и закончившееся в 14:00:
+
+```text
+ex:reading_20261006
+```
+
+В терминах SUMO:
+
+```text
+o2p:ReadingProcess — класс или категория процессов
+ex:reading_20261006 — конкретный экземпляр SUMO Process
+```
+
+# 1. Процесс как динамическая вещь
+
+В SUMO корень иерархии — `Entity`. Он делится на `Physical` и `Abstract`; `Physical` далее делится на `Object` и `Process`. `Object` — физическая сущность, а `Process` — физическая сущность, происходящая во времени. [adampease](https://www.adampease.com/FOIS.pdf)
+
+Упрощённо:
+
+```text
+Entity
+├── Physical
+│   ├── Object
+│   └── Process
+└── Abstract
+```
+
+## 1.1. Объект
+
+Пример:
+
+```text
+ex:book123
+```
+
+SUMO-интерпретация:
+
+```text
+ex:book123 — конкретный Object
+```
+
+Это относительно устойчивый носитель свойств:
+
+```text
+книга имеет автора;
+книга имеет цвет;
+книга находится в библиотеке.
+```
+
+## 1.2. Процесс
+
+Пример:
+
+```text
+ex:reading_20261006
+```
+
+Это не абстрактная идея чтения, а конкретное происходящее:
+
+```text
+начало: 12:00
+окончание: 14:00
+участник: ex:alice
+объект: ex:book123
+```
+
+В SUMO процесс — физическая сущность, которая разворачивается во времени. [adampease](https://adampease.com/ImperfectK.pdf)
+
+## 1.3. Категория процесса
+
+Категория процесса:
+
+```text
+o2p:ReadingProcess
+```
+
+Конкретный процесс:
+
+```text
+ex:reading_20261006
+```
+
+Связь:
+
+```turtle
+ex:reading_20261006 o2p:isInstance o2p:ReadingProcess .
+```
+
+В O2P это означает:
+
+```text
+ex:reading_20261006 — конкретный процесс;
+o2p:ReadingProcess — категория процессов.
+```
+
+В терминах SUMO:
+
+```text
+ex:reading_20261006 instance o2p:ReadingProcess
+```
+
+или, в O2P-форме:
+
+```text
+ex:reading_20261006 o2p:isInstance o2p:ReadingProcess .
+```
+
+## 1.4. «Образ» процесса
+
+Платоновский образ процесса — это не процесс во времени. Это категория, задающая форму возможных процессов:
+
+```text
+o2p:ReadingProcess
+```
+
+Она отвечает на вопрос:
+
+```text
+каким образом классифицировать конкретные процессы чтения?
+```
+
+Конкретный процесс отвечает на другой вопрос:
+
+```text
+какое чтение фактически произошло?
+```
+
+Сравнение:
+
+| Уровень | Пример | SUMO/O2P-смысл |
+|---|---|---|
+| Категория | `o2p:ReadingProcess` | класс процессов |
+| Экземпляр | `ex:reading_20261006` | конкретный `Process` |
+| Временные параметры | 12:00–14:00 | характеристики экземпляра |
+| Участник | `ex:alice` | конкретный `Object` |
+| Объект процесса | `ex:book123` | конкретный `Object` |
+
+# 2. Процесс в примере O2P
+
+```turtle
+@prefix o2p: <https://github.com/bpmbpm/ontology/o2p#> .
+@prefix ex:  <https://example.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+o2p:ReadingProcess
+    o2p:isSubClass o2p:Process .
+
+ex:reading_20261006
+    o2p:isInstance o2p:ReadingProcess ;
+    o2p:hasParticipant ex:alice ;
+    o2p:hasObject ex:book123 ;
+    time:hasBeginning ex:begin_20261006_1200 ;
+    time:hasEnd ex:end_20261006_1400 .
+
+ex:begin_20261006_1200
+    time:inXSDDateTime "2026-10-06T12:00:00+03:00"^^xsd:dateTime .
+
+ex:end_20261006_1400
+    time:inXSDDateTime "2026-10-06T14:00:00+03:00"^^xsd:dateTime .
+```
+
+Требуется определить дополнительные отношения:
+
+```turtle
+o2p:hasParticipant
+o2p:hasObject
+```
+
+Их смысл:
+
+```text
+процесс имеет участника;
+процесс направлен на объект.
+```
+
+Можно также использовать близкие термины DOLCE, BFO или CIDOC CRM, но для базовой O2P лучше сохранить собственные имена.
+
+# 3. Подробный словарь SUMO
+
+## 3.1. `Entity`
+
+`Entity` — корень иерархии SUMO.
+
+```text
+Entity — наиболее общий класс сущностей SUMO.
+```
+
+Он включает:
+
+```text
+Physical
+Abstract
+```
+
+Ближайший аналог в OWL/RDFS:
+
+```text
+owl:Thing
+rdfs:Resource
+```
+
+Но соответствие не полное.
+
+| SUMO | Ближайший OWL/RDFS аналог | Отличие |
+|---|---|---|
+| `Entity` | `owl:Thing`, `rdfs:Resource` | SUMO включает собственную верхнюю философскую классификацию |
+
+## 3.2. `Physical`
+
+`Physical` — сущность, имеющая положение в пространстве-времени.
+
+Примеры:
+
+```text
+человек
+книга
+стул
+лекция
+чтение
+перемещение
+```
+
+Ближайший OWL/RDFS аналог:
+
+```text
+owl:Thing
+```
+
+Но OWL не содержит стандартного встроенного класса `Physical`.
+
+## 3.3. `Object`
+
+`Object` — физическая сущность, сохраняющая идентичность и не являющаяся процессом.
+
+Примеры:
+
+```text
+Alice
+Bob
+книга
+здание
+автомобиль
+```
+
+Ближайшие аналоги:
+
+```text
+owl:NamedIndividual
+rdfs:Resource
+bfo:MaterialEntity
+dolce:PhysicalObject
+```
+
+Но `owl:NamedIndividual` обозначает способ использования имени, а не философскую категорию объекта.
+
+## 3.4. `Process`
+
+`Process` — физическая сущность, которая происходит во времени.
+
+Примеры:
+
+```text
+чтение
+строительство
+движение
+разговор
+обучение
+```
+
+Ближайшие аналоги:
+
+```text
+bfo:Process
+dolce:Perdurant
+cidoc:E5_Event
+```
+
+Однако:
+
+```text
+SUMO Process ≠ любой OWL individual
+```
+
+OWL не имеет встроенной общей категории процессов.
+
+## 3.5. `Abstract`
+
+`Abstract` — сущность, не имеющая положения в пространстве-времени.
+
+Примеры:
+
+```text
+класс
+отношение
+число
+атрибут
+пропозиция
+множество
+```
+
+Ближайший OWL-аналог:
+
+```text
+owl:Class
+owl:ObjectProperty
+owl:DatatypeProperty
+owl:Restriction
+```
+
+Но `owl:Class` покрывает только один из видов абстрактных элементов.
+
+## 3.6. `Set`
+
+`Set` — абстрактная совокупность элементов.
+
+В SUMO теория множеств играет роль основания для классов и отношений.
+
+Ближайший OWL-аналог:
+
+```text
+класс как множество своих экземпляров
+```
+
+Но OWL не предоставляет универсального объекта `owl:Set`.
+
+## 3.7. `Class`
+
+В SUMO `Class` — класс, задающий условия принадлежности своим экземплярам.
+
+Класс является разновидностью абстрактной сущности.
+
+В SUMO:
+
+```text
+Class ⊆ SetOrClass
+```
+
+Ближайший OWL-аналог:
+
+```text
+owl:Class
+```
+
+Но важно различать:
+
+```text
+SUMO Class — элемент предметно-логической иерархии SUMO
+owl:Class — vocabulary term OWL/RDF
+```
+
+В SUMO класс может быть представлен как элемент абстрактной иерархии, а не только как RDF-ресурс, имеющий `rdf:type owl:Class`.
+
+## 3.8. `SetOrClass`
+
+`SetOrClass` объединяет множества и классы.
+
+Это один из ключевых терминов SUMO для понимания метамоделирования:
+
+```text
+SetOrClass
+├── Set
+└── Class
+```
+
+В ряде формализаций SUMO класс понимается как множество с условием членства. [ontologyportal](http://ontologyportal.org/professional/FOIS.pdf)
+
+Ближайшие OWL-аналоги:
+
+```text
+owl:Class
+rdfs:Class
+```
+
+Но:
+
+```text
+SetOrClass ≠ owl:Class
+```
+
+поскольку `SetOrClass` включает ещё множества как математические или абстрактные совокупности.
+
+## 3.9. `Relation`
+
+`Relation` — абстрактная сущность, задающая отношение между сущностями.
+
+Примеры:
+
+```text
+instance
+subclass
+hasPart
+located
+agent
+```
+
+В SUMO отношение может рассматриваться как класс упорядоченных кортежей. [ontologyportal](http://ontologyportal.org/professional/FOIS.pdf)
+
+Ближайшие OWL-аналоги:
+
+```text
+owl:ObjectProperty
+owl:DatatypeProperty
+rdf:Property
+```
+
+Различие:
+
+```text
+SUMO Relation — абстрактная сущность и класс кортежей;
+OWL property — RDF/OWL-свойство с определённой семантикой.
+```
+
+## 3.10. `Predicate`
+
+`Predicate` — более специальный вид отношения, используемый в логических утверждениях.
+
+В O2P:
+
+```text
+o2p:isInstance
+o2p:isSubClass
+o2p:hasProperty
+```
+
+могут быть представлены как отношения или предикаты.
+
+Ближайшие RDF/OWL-аналоги:
+
+```text
+rdf:Property
+owl:ObjectProperty
+owl:DatatypeProperty
+```
+
+## 3.11. `Attribute`
+
+`Attribute` — абстрактная характеристика, которая может быть присуща сущности.
+
+Примеры:
+
+```text
+цвет
+твёрдость
+температура
+форма
+```
+
+Ближайшие OWL-аналоги:
+
+```text
+owl:DatatypeProperty
+owl:ObjectProperty
+```
+
+Но SUMO `Attribute` — не само значение свойства и не сам предикат RDF.
+
+Например:
+
+```text
+red — значение или атрибут;
+hasColor — отношение;
+book123 — объект.
+```
+
+## 3.12. `Quantity`
+
+`Quantity` — количественная сущность или измеряемая величина:
+
+```text
+5 метров
+2 часа
+100 килограммов
+```
+
+Ближайшие аналоги:
+
+```text
+xsd:integer
+xsd:decimal
+qudt:QuantityValue
+```
+
+Для O2P желательно использовать QUDT для единиц и значений измерений, а не моделировать всё простыми строками.
+
+## 3.13. `Proposition`
+
+`Proposition` — абстрактное содержание утверждения.
+
+Пример:
+
+```text
+«Алиса читает книгу».
+```
+
+В обычном RDF это можно представить набором троек, но сама пропозиция как объект требует reification или RDF-star.
+
+Ближайшие аналоги:
+
+```text
+rdf:Statement
+RDF-star quoted triple
+owl:Axiom
+```
+
+Однако они не полностью эквивалентны SUMO `Proposition`.
+
+## 3.14. `AttributeValue`
+
+В SUMO значение атрибута может быть отделено от самого атрибута.
+
+Например:
+
+```text
+Attribute: Color
+Value: Red
+```
+
+O2P-аналог:
+
+```text
+o2p:hasProperty o2p:Color .
+ex:book123 o2p:hasColor o2p:Red .
+```
+
+Или:
+
+```turtle
+ex:book123 o2p:hasColorValue "red"@en .
+```
+
+Нужно различать:
+
+```text
+o2p:Color — категория или атрибут;
+o2p:Red — концептуальное значение;
+"red" — литеральное значение;
+ex:book123 — конкретный объект.
+```
+
+## 3.15. `instance`
+
+В SUMO `instance` — отношение между индивидуальным объектом и классом.
+
+Пример SUMO:
+
+```text
+(instance thisGasEngine GasolineEngine)
+```
+
+Читается:
+
+```text
+thisGasEngine является экземпляром GasolineEngine.
+```
+
+Ближайший OWL-аналог:
+
+```turtle
+ex:thisGasEngine rdf:type sumo:GasolineEngine .
+```
+
+O2P-аналог:
+
+```turtle
+ex:thisGasEngine o2p:isInstance sumo:GasolineEngine .
+```
+
+В O2P:
+
+```text
+o2p:isInstance: Instance × Category
+```
+
+SUMO использует отношение `instance` не только для физических вещей, но и для разных сущностей, если они являются членами соответствующих классов.
+
+## 3.16. `subclass`
+
+В SUMO `subclass` связывает класс с более общим классом:
+
+```text
+(subclass Student Person)
+```
+
+O2P-аналог:
+
+```turtle
+o2p:Student o2p:isSubClass o2p:Person .
+```
+
+OWL/RDFS-аналоги:
+
+```turtle
+o2p:Student rdfs:subClassOf o2p:Person .
+o2p:Student owl:subClassOf o2p:Person .
+```
+
+В OWL корректное свойство для такой связи — `rdfs:subClassOf`; отдельного стандартного `owl:subClassOf` нет.
+
+## 3.17. `subrelation`
+
+`subrelation` — отношение специализации одного отношения другим.
+
+Пример:
+
+```text
+hasMother subrelation hasParent
+```
+
+O2P-аналог:
+
+```turtle
+o2p:hasMother o2p:isSubRelation o2p:hasParent .
+```
+
+OWL-аналог:
+
+```turtle
+o2p:hasMother rdfs:subPropertyOf o2p:hasParent .
+```
+
+## 3.18. `Entity`, `Object`, `Individual`
+
+Эти термины нельзя смешивать:
+
+| Термин SUMO | Смысл |
+|---|---|
+| `Entity` | любая сущность верхнего уровня |
+| `Physical` | сущность с положением в пространстве-времени |
+| `Object` | физическая сущность, сохраняющая идентичность |
+| `Process` | физическая сущность, происходящая во времени |
+| `Individual` | конкретный член класса, обычно в логическом смысле |
+| `Class` | абстрактная категория с условиями членства |
+| `Relation` | абстрактное отношение между сущностями |
+
+В O2P:
+
+```text
+SUMO Entity     — широкая сущность;
+SUMO Object     — конкретная вещь;
+SUMO Process    — конкретный процесс;
+SUMO Class      — категория или класс;
+SUMO instance   — отношение экземпляра к категории.
+```
+
+# 4. Сводное соответствие SUMO и OWL/RDFS
+
+| SUMO | O2P | Ближайший OWL/RDFS термин | Комментарий |
+|---|---|---|---|
+| `Entity` | Сущность | `owl:Thing`, `rdfs:Resource` | Только приблизительное соответствие |
+| `Physical` | Физический экземпляр | Нет прямого аналога | Можно определить собственный класс |
+| `Object` | Вещь | `owl:NamedIndividual` | OWL individual — роль имени, а не физическая категория |
+| `Process` | Процесс | Нет встроенного аналога | Используются BFO/DOLCE/CIDOC CRM или свой класс |
+| `Abstract` | Абстрактная сущность | Частично `owl:Class`, `owl:ObjectProperty` | OWL распределяет абстрактные сущности по разным ролям |
+| `SetOrClass` | Категория/класс | `owl:Class`, `rdfs:Class` | SUMO понятие шире |
+| `Class` | Категория | `owl:Class` | Наиболее близкий аналог |
+| `Relation` | Предикат/отношение | `rdf:Property`, `owl:ObjectProperty` | SUMO Relation более логически нагружен |
+| `Attribute` | Атрибут/качество | `owl:ObjectProperty`, `owl:DatatypeProperty` | Не совпадает с конкретным значением |
+| `Quantity` | Величина | XML Schema datatype, QUDT | Лучше использовать QUDT |
+| `Proposition` | Высказывание | `owl:Axiom`, RDF-star | Полного аналога нет |
+| `instance` | `o2p:isInstance` | `rdf:type` / `a` | O2P делает направление и сортировку явными |
+| `subclass` | `o2p:isSubClass` | `rdfs:subClassOf` | O2P ограничивает концы категориями |
+| `subrelation` | `o2p:isSubRelation` | `rdfs:subPropertyOf` | Близкое соответствие |
+| `member` | `o2p:isMember` | `rdf:type` или custom relation | Зависит от того, класс это или множество |
+| `hasPart` | `o2p:hasPart` | `dcterms:hasPart`, `hasPart` vocabularies | Нужна отдельная семантика частей |
+
+# 5. SUMO и O2P: уточнённая схема
+
+После вашего уточнения я бы больше не писал:
+
+```text
+мир вещей = только Object
+```
+
+Лучше:
+
+```text
+мир вещей/теней = Physical
+```
+
+Он включает:
+
+```text
+Object
+Process
+```
+
+А категория процесса является абстрактной формой:
+
+```text
+o2p:ReadingProcess
+```
+
+Конкретное осуществление процесса:
+
+```text
+ex:reading_20261006
+```
+
+Полная схема:
+
+```text
+SUMO Entity
+├── Physical — мир происходящего
+│   ├── Object — устойчивые вещи
+│   └── Process — динамические вещи
+│
+└── Abstract — мир абстрактных форм
+    ├── SetOrClass — категории
+    ├── Relation — отношения
+    ├── Attribute — качества
+    ├── Quantity — величины
+    └── Proposition — содержания утверждений
+```
+
+Для O2P:
+
+```text
+Категория объекта:
+    o2p:Book
+
+Экземпляр объекта:
+    ex:book123
+
+Категория процесса:
+    o2p:ReadingProcess
+
+Экземпляр процесса:
+    ex:reading_20261006
+```
+
+# 6. Платон: действительно ли это два мира?
+
+Да, в классической интерпретации Платона есть сильное сходство с моделью:
+
+```text
+неизменные Формы
+изменяющиеся чувственные частности
+```
+
+Формы описываются как:
+
+```text
+нематериальные
+непространственные
+вневременные
+неизменные
+универсальные
+```
+
+А чувственные частности:
+
+```text
+материальные
+пространственно-временные
+изменяющиеся
+множественные
+несовершенные
+```
+
+Stanford Encyclopedia of Philosophy прямо описывает противопоставление неизменных Форм и изменяющихся материальных частностей; Формы характеризуются как нематериальные, внепространственные и вневременные, а частности — как материальные и протяжённые в пространстве и времени. [plato.stanford](https://plato.stanford.edu/entries/plato-metaphysics/)
+
+Oxford Research Encyclopedia также формулирует различие между вечными нематериальными Формами и изменчивыми чувственными частностями. Формы являются объектами знания, а частности — объектами мнения или восприятия. [academic.oup](https://academic.oup.com/reference/62365/reference-article-abstract/554610959?redirectedFrom=fulltext)
+
+Routledge Encyclopedia of Philosophy описывает Формы как неизменные и внепространственные сущности, противопоставленные изменяющимся телам, воспринимаемым чувствами. [rep.routledge](https://www.rep.routledge.com/articles/thematic/forms-platonic/v-1)
+
+## 6.1. Сходство с SUMO
+
+| Платон | SUMO | O2P |
+|---|---|---|
+| Формы | Abstract | Категории |
+| Чувственные частности | Physical | Экземпляры |
+| Конкретная вещь | Object | Instance/Object |
+| Конкретное событие | Process | Process instance |
+| Участие вещи в Форме | `instance` | `o2p:isInstance` |
+| Иерархия Форм | `subclass` | `o2p:isSubClass` |
+
+Например:
+
+```text
+Форма Человека
+    → категория Person
+
+Алиса
+    → конкретная физическая вещь Object
+
+Алиса участвует в/соответствует Форме Человека
+    → ex:alice o2p:isInstance o2p:Person
+```
+
+## 6.2. Почему всё же была названа «частичная» аналогия
+
+Ранее «частичная» означало не отрицание платоновской модели, а то, что:
+
+```text
+SUMO Abstract шире платоновского мира Форм;
+SUMO Physical шире платоновского мира материальных тел;
+```
+
+SUMO помещает в `Abstract`:
+
+```text
+классы
+отношения
+числа
+атрибуты
+пропозиции
+множества
+```
+
+Платоновский мир Форм — это не обязательно точная сумма всех этих категорий.
+
+Кроме того, SUMO — формальная инженерная верхняя онтология, а не реконструкция платоновской метафизики.
+
+Поэтому:
+
+```text
+SUMO Physical ≈ мир чувственных и происходящих сущностей
+SUMO Abstract ≈ широкий мир абстрактных сущностей
+O2P Category ⊂ SUMO Abstract
+```
+
+Более точное соответствие:
+
+```text
+Platonic Form ≈ SUMO Class или SetOrClass
+Platonic Relation ≈ SUMO Relation
+Platonic Attribute ≈ SUMO Attribute
+Platonic Particular ≈ SUMO Object
+Platonic Event/Process ≈ SUMO Process
+```
+
+# 7. Неоплатонизм
+
+У неоплатоников схема Платона перестраивается в иерархию эманации:
+
+```text
+Единое
+  ↓
+Ум / Нус
+  ↓
+Мировая Душа
+  ↓
+Природа и чувственный космос
+```
+
+У Плотина истинно умопостигаемые Формы находятся в Нусе. Умопостигаемое является образцом чувственного, а чувственный мир занимает нижний уровень реальности.
+
+Oxford Research Encyclopedia отмечает, что неоплатонизм развивает платоновскую модель умопостигаемых Форм как объектов истинного знания и связывает её с иерархией интеллигибельной реальности. [academic.oup](https://academic.oup.com/edited-volume/34644/chapter/295202867)
+
+Для O2P это даёт не просто два множества, а многоуровневую структуру:
+
+```text
+Уровень 0: Единое
+Уровень 1: Нус / мир Форм
+Уровень 2: Душа / порядок жизни
+Уровень 3: природные процессы
+Уровень 4: конкретные вещи и события
+```
+
+SUMO не моделирует такую метафизическую эманацию напрямую. Но её можно приблизительно представить через дополнительные отношения:
+
+```text
+o2p:emanatesFrom
+o2p:grounds
+o2p:images
+o2p:participatesIn
+o2p:instantiates
+```
+
+Пример:
+
+```turtle
+o2p:Person o2p:grounds ex:alice .
+ex:alice o2p:isInstance o2p:Person .
+```
+
+Однако `grounds` и `isInstance` не следует считать синонимами:
+
+```text
+isInstance — логическое членство в категории;
+participatesIn — философское участие;
+grounds — отношение основания или зависимости.
+```
+
+# 8. Гегель о Платоне
+
+Гегелевская интерпретация Платона важна, потому что Гегель критиковал слишком простое понимание Форм как находящихся в отдельном пространстве «где-то вне вещей».
+
+В статье Stanford Encyclopedia of Philosophy о гегелевской диалектике указывается, что Платон связывает знание мира с Формами, а вещи получают свои определения через участие в Форме. В популяризированной интерпретации Формы оказываются в отдельном царстве, но гегелевская философия стремится понять универсальное не как неподвижный внешний образ, а как рациональное понятие, проявляющееся в конкретном. [plato.stanford](https://plato.stanford.edu/entries/hegel-dialectics/)
+
+Для O2P это важное предупреждение:
+
+```text
+категория не обязательно должна быть физически отдельным объектом;
+она может быть формой, принципом определения или универсальным содержанием.
+```
+
+Нужно различать две интерпретации.
+
+## 8.1. Сильное разделение миров
+
+```text
+мир Форм существует отдельно;
+вещи лишь копируют или отражают Формы;
+между ними есть отношение участия.
+```
+
+Это ближе к грубой платоновской двухмировой схеме:
+
+```text
+CategoryWorld ∩ PhysicalWorld = ∅
+```
+
+## 8.2. Гегелевская интерпретация
+
+```text
+универсальное не покидает конкретное;
+понятие реализуется в единичном;
+форма и содержание связаны диалектически.
+```
+
+Тогда категория:
+
+```text
+не только внешняя идея;
+она также внутренний принцип определения вещи.
+```
+
+Для O2P это означает, что одного отношения:
+
+```text
+ex:alice o2p:isInstance o2p:Person
+```
+
+может быть недостаточно. Возможно, потребуются разные отношения:
+
+```text
+o2p:isInstance
+o2p:participatesIn
+o2p:manifests
+o2p:realizes
+o2p:isGroundedBy
+```
+
+# 9. Исследования SUMO и философские традиции
+
+Прямых исследований, формализующих SUMO именно как модель Платона, немного. SUMO разрабатывалась как формальная верхняя онтология для информационных систем, а не как реконструкция античной философии. Официальные и академические материалы описывают её как верхнюю онтологию, организованную вокруг `Entity`, `Physical` и `Abstract`. [adampease](https://www.adampease.com/FOIS.pdf)
+
+Однако есть несколько направлений, где SUMO сопоставима с философскими схемами.
+
+## 9.1. SUMO и реализм универсалий
+
+SUMO содержит:
+
+```text
+Class
+SetOrClass
+instance
+subclass
+```
+
+Это позволяет приблизить реалистическую модель универсалий:
+
+```text
+Class — универсальный тип;
+instance — участие конкретного в универсальном;
+subclass — отношение между универсалиями.
+```
+
+Но SUMO не обязана принимать метафизический реализм в сильном платоновском смысле.
+
+## 9.2. SUMO и номинализм
+
+SUMO можно интерпретировать более номиналистически:
+
+```text
+Class — формальная совокупность объектов;
+instance — членство;
+subclass — включение множеств.
+```
+
+В такой интерпретации класс не является отдельной вечной Формой, а представляет условие принадлежности.
+
+Исследования по вложению SUMO в теорию множеств прямо рассматривают:
+
+```text
+instance t1 t2 → t1 ∈ t2
+subclass t1 t2 → t1 ⊆ t2
+```
+
+и тем самым показывают, что SUMO можно формализовать как множество классов и отношений, а не обязательно как самостоятельный мир платоновских сущностей. [aitp-conference](http://aitp-conference.org/2022/abstract/AITP_2022_paper_18.pdf)
+
+## 9.3. SUMO и аристотелевская традиция
+
+SUMO также легко интерпретировать в аристотелевском направлении:
+
+```text
+Object — субстанциальная вещь;
+Attribute — свойство;
+Process — изменение;
+Class — универсальный предикат;
+instance — принадлежность единичного общему.
+```
+
+В этом случае `Physical` и `Abstract` — не два онтологически независимых мира, а две категории предикации.
+
+## 9.4. SUMO и неоплатонизм
+
+Для неоплатонизма одной иерархии `Physical` / `Abstract` недостаточно. Нужны отношения эманации и зависимости:
+
+```text
+emanatesFrom
+participatesIn
+images
+dependsOn
+realizes
+```
+
+SUMO предоставляет классы и отношения, но не готовую метафизику:
+
+```text
+Единое → Ум → Душа → Природа → индивидуальные вещи
+```
+
+Поэтому можно сказать:
+
+```text
+SUMO совместима с созданием неоплатонического расширения,
+но сама по себе не является неоплатонической онтологией.
+```
+
+## 9.5. SUMO и Гегель
+
+Гегелевская схема требует учитывать:
+
+```text
+универсальное
+особенное
+единичное
+```
+
+и переходы между ними.
+
+SUMO предоставляет близкие технические элементы:
+
+```text
+Class       — универсальное;
+subclass    — особенное;
+instance    — единичное.
+```
+
+Но `subclass` и `instance` сами по себе не выражают гегелевскую диалектику или становление универсального в единичном.
+
+Для гегелевского профиля O2P потребуется добавить:
+
+```text
+o2p:isUniversalOf
+o2p:isParticularizationOf
+o2p:isRealizedIn
+o2p:isDeterminedBy
+o2p:developsInto
+```
+
+# 10. Уточнённая архитектура O2P на SUMO
+
+Предлагаю следующую схему.
+
+```text
+SUMO Entity
+├── Physical
+│   ├── Object
+│   └── Process
+│
+└── Abstract
+    ├── SetOrClass
+    │   └── Class
+    ├── Relation
+    ├── Attribute
+    ├── Quantity
+    └── Proposition
+```
+
+O2P-слой:
+
+```text
+o2p:Category ⊆ SUMO Class
+o2p:Property  ⊆ SUMO Relation
+o2p:Attribute ⊆ SUMO Attribute
+o2p:Quantity  ⊆ SUMO Quantity
+
+o2p:Object   ⊆ SUMO Object
+o2p:Process  ⊆ SUMO Process
+o2p:Event    ⊆ SUMO Process
+```
+
+Предикаты:
+
+```text
+o2p:isInstance  ≈ SUMO instance
+o2p:isSubClass  ≈ SUMO subclass
+o2p:isSubRelation ≈ SUMO subrelation
+o2p:hasProperty — O2P-specific
+o2p:hasValue    — O2P-specific
+```
+
+# 11. Пример: категория и процесс
+
+```turtle
+@prefix o2p: <https://github.com/bpmbpm/ontology/o2p#> .
+@prefix ex:  <https://example.org/> .
+@prefix sumo: <http://www.ontologyportal.org/SUMO.owl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# Category level
+#################################################################
+
+o2p:ReadingProcess
+    o2p:isSubClass sumo:Process ;
+    o2p:hasProperty o2p:hasParticipant ;
+    o2p:hasProperty o2p:hasObject .
+
+#################################################################
+# Instance level
+#################################################################
+
+ex:alice
+    o2p:isInstance sumo:Object .
+
+ex:book123
+    o2p:isInstance sumo:Object .
+
+ex:reading_20261006
+    o2p:isInstance o2p:ReadingProcess ;
+    o2p:hasParticipant ex:alice ;
+    o2p:hasObject ex:book123 ;
+    time:hasBeginning ex:twelve ;
+    time:hasEnd ex:fourteen .
+
+ex:twelve
+    time:inXSDDateTime "2026-10-06T12:00:00+03:00"^^xsd:dateTime .
+
+ex:fourteen
+    time:inXSDDateTime "2026-10-06T14:00:00+03:00"^^xsd:dateTime .
+```
+
+Чтение:
+
+```text
+o2p:ReadingProcess — образ или категория процесса чтения.
+ex:reading_20261006 — конкретный процесс чтения.
+ex:alice — участник процесса.
+ex:book123 — объект процесса.
+```
+
+# 12. Итоговый ответ на ваш первый вопрос
+
+Фраза:
+
+```text
+мир вещей — Physical, но Physical включает процессы
+```
+
+не является проблемой, если понимать «вещи» в широком платоновском смысле как мир чувственно данного и происходящего.
+
+Более точная терминология:
+
+```text
+Physical — мир пространственно-временных проявлений;
+Object — устойчивый объект;
+Process — динамический объект или происходящее;
+Abstract — мир нематериальных и внепространственных сущностей;
+Class / SetOrClass — категория или универсальная форма;
+instance — отношение конкретного к категории.
+```
+
+Тогда процесс имеет два уровня:
+
+```text
+образ процесса:
+    o2p:ReadingProcess
+
+конкретный процесс:
+    ex:reading_20261006
+```
+
+Именно здесь SUMO оказывается очень полезной:
+
+```text
+Object и Process — виды Physical;
+Class и Relation — виды Abstract;
+instance и subclass — базовые отношения между ними.
+```
+
+# 13. Итоговый ответ на второй вопрос
+
+У Платона действительно есть сильная модель различения:
+
+```text
+неизменные Формы / Идеи
+изменяющиеся чувственные частности
+```
+
+Это сходно с:
+
+```text
+SUMO Abstract / SUMO Physical
+O2P Category / O2P Instance
+```
+
+Но полное отождествление невозможно:
+
+```text
+SUMO Abstract шире платоновских Форм;
+SUMO Physical включает процессы;
+SUMO не задаёт отдельную платоновскую метафизику;
+SUMO instance — формальное отношение, а не обязательно «участие» в платоновской Форме.
+```
+
+Поэтому наиболее точное утверждение:
+
+```text
+SUMO предоставляет технический верхнеонтологический каркас,
+который можно интерпретировать как основу для O2P,
+но платоновский и неоплатонический смысл должен быть добавлен
+собственными отношениями O2P.
+```
+
+Рекомендуемый фундамент:
+
+```text
+SUMO:
+    Entity, Physical, Object, Process,
+    Abstract, Class, Relation, Attribute
+
+O2P:
+    isInstance
+    isSubClass
+    hasProperty
+    hasValue
+    participatesIn
+    manifests
+    realizes
+    isGroundedBy
+```
+
+То есть SUMO действительно является одним из наиболее подходящих кандидатов для O2P, но не потому, что просто содержит:
+
+```text
+Entity → Abstract / Physical
+```
+
+а потому, что дополнительно различает:
+
+```text
+Object
+Process
+Class
+SetOrClass
+Relation
+Attribute
+instance
+subclass
+```
+
+Именно совокупность этих различий позволяет выразить:
+
+```text
+категория объекта
+экземпляр объекта
+категория процесса
+экземпляр процесса
+отношение между категориями
+конкретное проявление отношения
+```
+
+
+## 4
+---
+
+покажи как через тип предиката понимать, что в триплете? 
+У нас ведь было три типа:
+утверждение внутри мира идей
+утверждение внутри мира вещей (включая экземпляры процессов)
+связь миров, т.е. объявление новых экземпляров вещей или процесса.
+
+Поясни на примере все три подхода. 
+Также как это привязать к IRI? Это какой класс в SUMO? Ранее вроде бы было все есть ресурс и распадалось на аир идей и мир вещей. Теперь как, если в SUMO корень иерархии — Entity
+
+Да. В O2P тип триплета должен определяться не именем субъекта и не пространством имён, а **типом предиката**. Тогда, увидев предикат, можно понять, какие роли имеют субъект и объект.
+
+В SUMO это хорошо согласуется с тем, что `Entity` — корень иерархии, а `Physical` и `Abstract` — его основные подклассы. `Physical` далее разделяется на `Object` и `Process`; `Abstract` включает, в частности, классы, отношения, атрибуты и другие абстрактные сущности. [ontology.nps](https://ontology.nps.edu/sigma/TreeView.jsp?lang=EnglishLanguage&flang=SUO-KIF&kb=SUMO&file=Mid-level-ontology.kif&line=4279)
+
+# 1. Три типа триплетов O2P
+
+Вводим три класса предикатов:
+
+```text
+IdeaAssertionProperty
+ThingAssertionProperty
+BridgeProperty
+```
+
+В терминах O2P:
+
+```text
+IdeaAssertionProperty — предикаты утверждений внутри мира категорий
+ThingAssertionProperty — предикаты утверждений внутри мира экземпляров
+BridgeProperty — предикаты связи категорий и экземпляров
+```
+
+Они сами являются элементами верхнеонтологического уровня. В SUMO их можно считать экземплярами или подклассами `Relation`.
+
+Схема:
+
+```text
+SUMO Abstract
+└── Relation
+    ├── IdeaAssertionProperty
+    ├── ThingAssertionProperty
+    └── BridgeProperty
+```
+
+Для конкретных предикатов:
+
+```text
+o2p:isSubClass       — IdeaAssertionProperty
+o2p:hasProperty      — IdeaAssertionProperty
+o2p:hasAuthor        — ThingAssertionProperty
+o2p:hasColor         — ThingAssertionProperty
+o2p:isInstance       — BridgeProperty
+o2p:participatesIn   — BridgeProperty
+```
+
+# 2. Тип 1: утверждение внутри мира идей
+
+## 2.1. Смысл
+
+Триплет первого типа описывает отношения между категориями, классами, образами, типами и свойствами:
+
+```text
+<Category> <IdeaAssertionProperty> <Category or Idea>
+```
+
+В терминах областей:
+
+```text
+Category × IdeaAssertionProperty × Category
+```
+
+или:
+
+```text
+ΔIdea × ΔRelation × ΔIdea
+```
+
+## 2.2. Иерархия категорий
+
+```turtle
+o2p:Student o2p:isSubClass o2p:Person .
+```
+
+Термины:
+
+```text
+o2p:Student — категория
+o2p:isSubClass — предикат внутри мира идей
+o2p:Person — категория
+```
+
+Смысл:
+
+```text
+Student является подкатегорией Person.
+```
+
+В терминах SUMO это близко к:
+
+```text
+(subclass Student Person)
+```
+
+В терминах RDFS:
+
+```turtle
+o2p:Student rdfs:subClassOf o2p:Person .
+```
+
+Но O2P использует собственный предикат, чтобы обозначить:
+
+```text
+обе стороны относятся к миру категорий.
+```
+
+## 2.3. Свойство категории
+
+```turtle
+o2p:Person o2p:hasProperty foaf:name .
+o2p:Person o2p:hasProperty foaf:familyName .
+```
+
+Смысл:
+
+```text
+категория Person предусматривает свойства name и familyName.
+```
+
+Это не утверждение о конкретном человеке. Здесь нет экземпляра.
+
+Тип триплета:
+
+```text
+Category — IdeaAssertionProperty — PropertyIdea
+```
+
+Формально:
+
+```text
+o2p:hasProperty ⊆ ΔCategory × ΔProperty
+```
+
+Если считать свойства частным видом идей:
+
+```text
+ΔProperty ⊆ ΔIdea
+```
+
+тогда:
+
+```text
+o2p:hasProperty ⊆ ΔCategory × ΔIdea
+```
+
+## 2.4. Ограничение мира идей
+
+Для предикатов первого типа задаётся правило:
+
+```text
+x o2p:isSubClass y
+→ x является категорией
+→ y является категорией
+```
+
+```text
+x o2p:hasProperty p
+→ x является категорией
+→ p является идеей свойства
+```
+
+Неправильно:
+
+```turtle
+ex:alice o2p:isSubClass o2p:Person .
+```
+
+Потому что `ex:alice` — конкретный экземпляр, а `o2p:isSubClass` предназначен для двух категорий.
+
+# 3. Тип 2: утверждение внутри мира вещей
+
+## 3.1. Смысл
+
+Триплет второго типа описывает отношения между конкретными экземплярами:
+
+```text
+<Instance> <ThingAssertionProperty> <Instance or Literal>
+```
+
+В терминах областей:
+
+```text
+Instance × ThingAssertionProperty × Instance
+Instance × ThingAssertionProperty × Data
+```
+
+Или:
+
+```text
+ΔInstance × ΔRelation × ΔInstance
+ΔInstance × ΔRelation × ΔData
+```
+
+## 3.2. Отношение между конкретными объектами
+
+```turtle
+ex:book123 o2p:hasAuthor ex:alice .
+```
+
+Смысл:
+
+```text
+конкретная книга book123 имеет конкретного автора alice.
+```
+
+Тип:
+
+```text
+Instance — ThingAssertionProperty — Instance
+```
+
+В терминах SUMO:
+
+```text
+ex:book123 — Object
+ex:alice   — Object
+o2p:hasAuthor — Relation
+```
+
+## 3.3. Литеральное значение
+
+```turtle
+ex:alice foaf:name "Алиса"@ru .
+ex:alice foaf:familyName "Петрова"@ru .
+```
+
+Тип:
+
+```text
+Instance — ThingAssertionProperty — Literal
+```
+
+Семантически:
+
+```text
+ex:alice ∈ ΔInstance
+"Алиса" ∈ ΔData
+```
+
+Термин `foaf:name` здесь выступает как предикат отношения конкретного экземпляра к значению данных.
+
+## 3.4. Процесс как экземпляр мира вещей
+
+В O2P процесс не должен исключаться из мира вещей. Нужно различать:
+
+```text
+категория процесса
+конкретный процесс
+```
+
+Категория:
+
+```turtle
+o2p:ReadingProcess
+```
+
+Конкретный процесс:
+
+```turtle
+ex:reading_20261006
+```
+
+Сам процесс относится к SUMO `Process`:
+
+```text
+ex:reading_20261006 — экземпляр SUMO Process
+```
+
+Его внутренние свойства:
+
+```turtle
+ex:reading_20261006
+    o2p:hasParticipant ex:alice ;
+    o2p:hasObject ex:book123 ;
+    o2p:startsAt "2026-10-06T12:00:00+03:00"^^xsd:dateTime ;
+    o2p:endsAt "2026-10-06T14:00:00+03:00"^^xsd:dateTime .
+```
+
+Все эти утверждения относятся к миру конкретных проявлений:
+
+```text
+конкретный процесс связан с конкретным участником;
+конкретный процесс связан с конкретным объектом;
+конкретный процесс имеет конкретное время.
+```
+
+## 3.5. Категория процесса
+
+Категория процесса описывается внутри мира идей:
+
+```turtle
+o2p:ReadingProcess o2p:hasProperty o2p:hasParticipant .
+o2p:ReadingProcess o2p:hasProperty o2p:hasObject .
+```
+
+Это уже триплеты первого типа.
+
+Таким образом:
+
+```text
+o2p:ReadingProcess
+```
+
+— образ или категория процесса.
+
+```text
+ex:reading_20261006
+```
+
+— конкретный процесс, происходящий в интервале 12:00–14:00.
+
+# 4. Тип 3: связь миров
+
+## 4.1. Смысл
+
+Триплет третьего типа связывает категорию с конкретным экземпляром:
+
+```text
+<Instance> <BridgeProperty> <Category>
+```
+
+Главный пример:
+
+```turtle
+ex:alice o2p:isInstance o2p:Person .
+```
+
+Смысл:
+
+```text
+конкретный экземпляр ex:alice относится к категории o2p:Person.
+```
+
+В SUMO это соответствует отношению:
+
+```text
+(instance alice Person)
+```
+
+SUMO определяет `instance` как отношение, при котором объект включён в класс; один индивидуальный объект может быть экземпляром нескольких классов. [sigma.ontologyportal](https://sigma.ontologyportal.org/sigma/Browse.jsp?kb=SUMO&flang=SUO-KIF&lang=EnglishLanguage&term=instance)
+
+## 4.2. Формальная сигнатура
+
+```text
+o2p:isInstance ⊆ ΔInstance × ΔCategory
+```
+
+Предикат направлен так:
+
+```text
+Instance → Category
+```
+
+Поэтому:
+
+```turtle
+ex:alice o2p:isInstance o2p:Person .
+```
+
+правильно, а:
+
+```turtle
+o2p:Person o2p:isInstance ex:alice .
+```
+
+неправильно.
+
+## 4.3. Экземпляр процесса
+
+```turtle
+ex:reading_20261006 o2p:isInstance o2p:ReadingProcess .
+```
+
+Смысл:
+
+```text
+конкретное чтение является экземпляром категории ReadingProcess.
+```
+
+В этом триплете:
+
+```text
+ex:reading_20261006 — конкретный SUMO Process
+o2p:ReadingProcess — категория процесса
+o2p:isInstance — связь миров
+```
+
+## 4.4. Другие связи миров
+
+Кроме `o2p:isInstance`, могут существовать:
+
+```text
+o2p:manifests
+o2p:realizes
+o2p:participatesIn
+o2p:conformsTo
+o2p:hasPrototype
+```
+
+Но их нельзя смешивать.
+
+| Предикат | Смысл |
+|---|---|
+| `o2p:isInstance` | экземпляр принадлежит категории |
+| `o2p:manifests` | экземпляр проявляет идею или качество |
+| `o2p:realizes` | экземпляр реализует форму или спецификацию |
+| `o2p:conformsTo` | экземпляр соответствует нормативному описанию |
+| `o2p:participatesIn` | философское участие в идее |
+| `o2p:hasPrototype` | категория связана с образцом |
+
+Для первого ядра O2P достаточно:
+
+```turtle
+o2p:isInstance
+```
+
+Остальные отношения следует вводить только после фиксации их различий.
+
+# 5. Полный пример трёх типов
+
+```turtle
+@prefix o2p: <https://github.com/bpmbpm/ontology/o2p#> .
+@prefix ex:  <https://example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# Тип 1. Утверждения внутри мира категорий
+#################################################################
+
+o2p:Student
+    o2p:isSubClass o2p:Person .
+
+o2p:Person
+    o2p:hasProperty foaf:name ;
+    o2p:hasProperty foaf:familyName .
+
+o2p:ReadingProcess
+    o2p:hasProperty o2p:hasParticipant ;
+    o2p:hasProperty o2p:hasObject ;
+    o2p:hasProperty o2p:startsAt ;
+    o2p:hasProperty o2p:endsAt .
+
+#################################################################
+# Тип 3. Связь мира экземпляров с миром категорий
+#################################################################
+
+ex:alice
+    o2p:isInstance o2p:Student .
+
+ex:bob
+    o2p:isInstance o2p:Person .
+
+ex:book123
+    o2p:isInstance o2p:Book .
+
+ex:reading_20261006
+    o2p:isInstance o2p:ReadingProcess .
+
+#################################################################
+# Тип 2. Утверждения внутри мира экземпляров
+#################################################################
+
+ex:alice
+    foaf:name "Алиса"@ru ;
+    foaf:familyName "Петрова"@ru ;
+    o2p:knows ex:bob .
+
+ex:bob
+    foaf:name "Боб"@ru ;
+    foaf:familyName "Смит"@ru ;
+    o2p:knows ex:alice .
+
+ex:book123
+    o2p:hasAuthor ex:alice .
+
+ex:reading_20261006
+    o2p:hasParticipant ex:alice ;
+    o2p:hasObject ex:book123 ;
+    o2p:startsAt "2026-10-06T12:00:00+03:00"^^xsd:dateTime ;
+    o2p:endsAt "2026-10-06T14:00:00+03:00"^^xsd:dateTime .
+```
+
+# 6. Как понять тип триплета по предикату
+
+Предикат должен иметь метаописание:
+
+```turtle
+o2p:isSubClass
+    o2p:assertionType o2p:IdeaAssertionProperty ;
+    o2p:sourceKind o2p:Category ;
+    o2p:targetKind o2p:Category .
+
+o2p:hasProperty
+    o2p:assertionType o2p:IdeaAssertionProperty ;
+    o2p:sourceKind o2p:Category ;
+    o2p:targetKind o2p:Property .
+
+o2p:hasAuthor
+    o2p:assertionType o2p:ThingAssertionProperty ;
+    o2p:sourceKind o2p:Instance ;
+    o2p:targetKind o2p:Instance .
+
+o2p:hasColor
+    o2p:assertionType o2p:ThingAssertionProperty ;
+    o2p:sourceKind o2p:Instance ;
+    o2p:targetKind o2p:Value .
+
+o2p:isInstance
+    o2p:assertionType o2p:BridgeProperty ;
+    o2p:sourceKind o2p:Instance ;
+    o2p:targetKind o2p:Category .
+```
+
+Тогда по предикату можно восстановить тип триплета:
+
+| Предикат | Тип | Сигнатура |
+|---|---|---|
+| `o2p:isSubClass` | IdeaAssertionProperty | Category → Category |
+| `o2p:hasProperty` | IdeaAssertionProperty | Category → Property |
+| `o2p:hasAuthor` | ThingAssertionProperty | Instance → Instance |
+| `o2p:hasColor` | ThingAssertionProperty | Instance → Value |
+| `o2p:isInstance` | BridgeProperty | Instance → Category |
+
+Например, увидев:
+
+```turtle
+ex:alice o2p:isInstance o2p:Person .
+```
+
+reasoner O2P читает описание `o2p:isInstance`:
+
+```text
+sourceKind = Instance
+targetKind = Category
+assertionType = BridgeProperty
+```
+
+и понимает:
+
+```text
+ex:alice — экземпляр;
+o2p:Person — категория;
+триплет связывает два мира.
+```
+
+# 7. Как типы предикатов связаны с SUMO
+
+Для SUMO предикаты O2P сами можно сопоставить с `Relation`.
+
+```text
+SUMO Relation
+├── o2p:IdeaAssertionProperty
+├── o2p:ThingAssertionProperty
+└── o2p:BridgeProperty
+```
+
+Однако сами конкретные предикаты — это не физические вещи:
+
+```text
+o2p:isInstance — абстрактное Relation
+o2p:isSubClass — абстрактное Relation
+o2p:hasAuthor — абстрактное Relation
+```
+
+Их предметная область различается сигнатурой.
+
+В SUMO-подобной записи:
+
+```text
+(subclass o2p:IdeaAssertionProperty Relation)
+(subclass o2p:ThingAssertionProperty Relation)
+(subclass o2p:BridgeProperty Relation)
+```
+
+Далее:
+
+```text
+(instance o2p:isSubClass o2p:IdeaAssertionProperty)
+(instance o2p:hasAuthor o2p:ThingAssertionProperty)
+(instance o2p:isInstance o2p:BridgeProperty)
+```
+
+В Turtle-форме O2P:
+
+```turtle
+o2p:isSubClass
+    o2p:assertionType o2p:IdeaAssertionProperty .
+
+o2p:hasAuthor
+    o2p:assertionType o2p:ThingAssertionProperty .
+
+o2p:isInstance
+    o2p:assertionType o2p:BridgeProperty .
+```
+
+# 8. Что такое IRI в этой модели
+
+IRI — это **идентификатор**, а не отдельный объект SUMO.
+
+Например:
+
+```turtle
+o2p:Person
+```
+
+синтаксически является IRI.
+
+IRI обозначает термин, который может играть определённую семантическую роль:
+
+```text
+o2p:Person — категория;
+ex:alice — конкретный экземпляр;
+o2p:isInstance — отношение;
+o2p:hasProperty — отношение;
+```
+
+Нельзя сказать:
+
+```text
+IRI — это класс SUMO.
+```
+
+Правильнее:
+
+```text
+IRI — имя, которым обозначается сущность.
+```
+
+А уже сущность может быть:
+
+```text
+SUMO Class
+SUMO Object
+SUMO Process
+SUMO Relation
+SUMO Attribute
+SUMO Proposition
+```
+
+## 8.1. Таблица IRI и SUMO-роли
+
+| IRI | Роль O2P | Ближайшая роль SUMO |
+|---|---|---|
+| `o2p:Person` | категория | `Class` или `SetOrClass` |
+| `o2p:Student` | категория | `Class` |
+| `ex:alice` | конкретный экземпляр | `Object` |
+| `ex:reading_20261006` | экземпляр процесса | `Process` |
+| `o2p:isInstance` | предикат-мост | `Relation` |
+| `o2p:isSubClass` | предикат категорий | `Relation` |
+| `o2p:hasAuthor` | предикат экземпляров | `Relation` |
+| `o2p:hasColor` | свойство/отношение | `Relation` или `Attribute` |
+| `"Алиса"` | значение данных | literal/data value |
+
+## 8.2. IRI категории
+
+```turtle
+o2p:Person
+```
+
+может быть сопоставлен с:
+
+```text
+SUMO Class
+SUMO SetOrClass
+```
+
+Но это не означает, что IRI сам является множеством. Он обозначает термин, роль которого в O2P определена как категория.
+
+## 8.3. IRI экземпляра
+
+```turtle
+ex:alice
+```
+
+сопоставляется с конкретным индивидуальным объектом:
+
+```text
+SUMO Object
+```
+
+Но IRI `ex:alice` не есть сам объект. Это имя, обозначающее объект.
+
+## 8.4. IRI предиката
+
+```turtle
+o2p:isInstance
+```
+
+сопоставляется с абстрактным отношением:
+
+```text
+SUMO Relation
+```
+
+IRI выступает в RDF как предикат, но в SUMO-семантике может быть экземпляром класса `Relation`.
+
+# 9. Исправленная верхняя схема O2P на SUMO
+
+Ранее можно было представить:
+
+```text
+Resource
+├── Idea
+└── Thing
+```
+
+Для SUMO это нужно заменить на более точную схему:
+
+```text
+SUMO Entity
+├── Physical
+│   ├── Object
+│   └── Process
+│
+└── Abstract
+    ├── SetOrClass
+    │   └── Class
+    ├── Relation
+    ├── Attribute
+    ├── Quantity
+    └── Proposition
+```
+
+O2P-отображение:
+
+```text
+o2p:Category        → SUMO Class / SetOrClass
+o2p:Instance        → SUMO Entity
+o2p:ObjectInstance  → SUMO Object
+o2p:ProcessInstance → SUMO Process
+o2p:Predicate       → SUMO Relation
+o2p:Attribute       → SUMO Attribute
+```
+
+Это означает:
+
+```text
+категории принадлежат абстрактной ветви SUMO;
+экземпляры не сводятся только к Physical;
+физические экземпляры относятся к Physical;
+абстрактные экземпляры могут также относиться к Abstract.
+```
+
+# 10. Что делать с прежней парой «мир идей / мир вещей»
+
+Теперь модель нужно уточнить.
+
+## 10.1. Не два класса, а два функциональных уровня
+
+В O2P используются:
+
+```text
+мир категорий
+мир экземпляров
+```
+
+Но в SUMO они не являются просто двумя сестринскими классами:
+
+```text
+Category ≠ Abstract полностью
+Instance ≠ Physical полностью
+```
+
+Правильное соответствие:
+
+```text
+Category ⊆ Abstract
+Instance ⊆ Entity
+```
+
+А внутри экземпляров:
+
+```text
+ObjectInstance ⊆ Physical
+ProcessInstance ⊆ Physical
+AbstractInstance ⊆ Abstract
+```
+
+## 10.2. Физическая часть мира экземпляров
+
+```text
+Instance
+├── ObjectInstance
+│   └── SUMO Object
+└── ProcessInstance
+    └── SUMO Process
+```
+
+Это и есть «мир вещей и теней» в расширенном смысле:
+
+```text
+статические вещи;
+динамические процессы;
+события;
+состояния;
+изменения.
+```
+
+## 10.3. Категориальная часть
+
+```text
+Category
+├── ObjectCategory
+├── ProcessCategory
+├── RelationCategory
+├── AttributeCategory
+└── QuantityCategory
+```
+
+Примеры:
+
+```text
+o2p:Person         — ObjectCategory
+o2p:ReadingProcess — ProcessCategory
+o2p:hasAuthor      — RelationCategory
+o2p:Color          — AttributeCategory
+```
+
+# 11. Три типа триплетов в окончательной форме
+
+## Тип I: мир категорий
+
+```text
+<Category> <IdeaAssertionProperty> <Category or Property>
+```
+
+Примеры:
+
+```turtle
+o2p:Student o2p:isSubClass o2p:Person .
+o2p:Person o2p:hasProperty foaf:name .
+o2p:ReadingProcess o2p:hasProperty o2p:hasParticipant .
+```
+
+Смысл:
+
+```text
+мы описываем формы, категории и допустимые отношения.
+```
+
+## Тип II: мир экземпляров
+
+```text
+<Instance> <ThingAssertionProperty> <Instance or Literal>
+```
+
+Примеры:
+
+```turtle
+ex:alice foaf:name "Алиса"@ru .
+ex:book123 o2p:hasAuthor ex:alice .
+ex:reading_20261006 o2p:hasParticipant ex:alice .
+```
+
+Смысл:
+
+```text
+мы описываем конкретные вещи, процессы и их фактические свойства.
+```
+
+## Тип III: связь миров
+
+```text
+<Instance> <BridgeProperty> <Category>
+```
+
+Примеры:
+
+```turtle
+ex:alice o2p:isInstance o2p:Student .
+ex:book123 o2p:isInstance o2p:Book .
+ex:reading_20261006 o2p:isInstance o2p:ReadingProcess .
+```
+
+Смысл:
+
+```text
+конкретная сущность классифицируется категорией.
+```
+
+# 12. Важная оговорка о типе предиката
+
+В RDF сам по себе предикат:
+
+```turtle
+o2p:isInstance
+```
+
+не заставляет стандартный RDF-парсер понять:
+
+```text
+субъект — экземпляр;
+объект — категория;
+триплет — связь миров.
+```
+
+Эту семантику нужно задать отдельно:
+
+```turtle
+o2p:isInstance
+    o2p:assertionType o2p:BridgeProperty ;
+    o2p:sourceKind o2p:Instance ;
+    o2p:targetKind o2p:Category .
+```
+
+Возможны три механизма проверки:
+
+```text
+O2P reasoner
+SHACL shapes
+SPARQL validation rules
+```
+
+Например, SHACL-ограничение для `o2p:isInstance` может проверять, что субъект и объект принадлежат нужным наборам категорий. SHACL предназначен именно для проверки RDF-графа по набору условий и ограничений. [w3](https://www.w3.org/TR/shacl/)
+
+# 13. Итоговая модель SUMO + O2P
+
+```text
+SUMO Entity
+├── Physical
+│   ├── Object
+│   └── Process
+│
+└── Abstract
+    ├── Class / SetOrClass
+    ├── Relation
+    ├── Attribute
+    ├── Quantity
+    └── Proposition
+```
+
+O2P:
+
+```text
+Category ⊆ SUMO Class / SetOrClass
+Instance ⊆ SUMO Entity
+ObjectInstance ⊆ SUMO Object
+ProcessInstance ⊆ SUMO Process
+Predicate ⊆ SUMO Relation
+```
+
+Три типа утверждений:
+
+```text
+1. Category → Category
+   o2p:Student o2p:isSubClass o2p:Person
+
+2. Instance → Instance или Literal
+   ex:book123 o2p:hasAuthor ex:alice
+   ex:alice foaf:name "Алиса"
+
+3. Instance → Category
+   ex:alice o2p:isInstance o2p:Person
+```
+
+IRI:
+
+```text
+IRI — идентификатор имени.
+```
+
+Он может обозначать:
+
+```text
+категорию SUMO Class;
+вещь SUMO Object;
+процесс SUMO Process;
+отношение SUMO Relation;
+атрибут SUMO Attribute.
+```
+
+Поэтому корневой вопрос теперь формулируется не как:
+
+```text
+все ресурсы делятся на идеи и вещи
+```
+
+а так:
+
+```text
+все обозначаемые сущности SUMO являются Entity;
+среди них есть Physical и Abstract;
+O2P выделяет поверх SUMO функциональные роли:
+Category, Instance и Predicate;
+тип предиката определяет допустимую комбинацию ролей в RDF-триплете.
+```
+
+Именно это позволяет совместить:
+
+```text
+SUMO:
+Entity → Physical / Abstract → Object / Process / Class / Relation
+
+O2P:
+Category → isSubClass / hasProperty
+Instance → hasAuthor / hasValue
+Instance → isInstance → Category
+```
+
+Так SUMO предоставляет онтологическую природу сущностей, а O2P — явную структуру трёх типов утверждений.

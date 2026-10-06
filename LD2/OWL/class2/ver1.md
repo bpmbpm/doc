@@ -99,3 +99,179 @@ Owl Class Thing Individual Entity
 Общий паттерн такой: почти в каждой системе есть тройка «класс — индивид — универсум», различаются только названия и то, насколько строго разделяются эти уровни (как в OWL DL) или смешиваются (как в OWL Full, где класс может быть одновременно индивидом).
 
 Если интересует какая-то конкретная пара — например, как переложить онтологию из UML в OWL или как `schema:Thing` соотносится с `rdf:Resource` — могу разобрать подробнее.
+
+## 1.3
+
+покажи
+- всю иерархию конструкций owl (взаимосвязи).
+- всю иерархию конструкций RDF/RDFS
+- всю иерархию конструкций Schema.org
+- сводную схему (все вместе)
+
+Отличная задача — свести всё в наглядные схемы. Сразу оговорка: «вся иерархия» OWL и RDFS — это иерархии их встроенных классов и словаря (не предметных классов вроде «котик» или «магазин»), а у Schema.org — вершина огромного дерева типов. Поехали.
+
+## 1. Иерархия конструкций OWL
+
+**Встроенные классы:**
+
+```
+owl:Thing (⊤, суперкласс всего)
+├── owl:Class (подкласс rdfs:Class)
+│   ├── owl:Restriction  — ограничение на свойства:
+│   │        owl:onProperty + owl:allValuesFrom / owl:someValuesFrom /
+│   │        owl:hasValue / owl:cardinality / owl:minCardinality /
+│   │        owl:maxCardinality (+ квалифицированные варианты в OWL 2)
+│   ├── owl:AllDifferent
+│   ├── owl:AllDisjointClasses        (OWL 2)
+│   ├── owl:AllDisjointProperties     (OWL 2)
+│   ├── owl:NegativePropertyAssertion (OWL 2)
+│   └── owl:DeprecatedClass
+└── owl:Nothing (⊥, пустой класс — подкласс ВСЕХ классов)
+```
+
+**Свойства (все — подклассы `rdf:Property`):**
+
+```
+rdf:Property
+├── owl:ObjectProperty    — связь индивид↔индивид
+│   ├── owl:TransitiveProperty
+│   ├── owl:SymmetricProperty
+│   ├── owl:AsymmetricProperty    (OWL 2)
+│   ├── owl:ReflexiveProperty     (OWL 2)
+│   ├── owl:IrreflexiveProperty   (OWL 2)
+│   └── owl:InverseFunctionalProperty
+├── owl:DatatypeProperty  — связь индивид↔литерал
+│   └── owl:FunctionalProperty
+├── owl:AnnotationProperty
+└── owl:OntologyProperty  (owl:imports, owl:versionInfo, ...)
+```
+
+**Словарь отношений между классами/индивидами** (сами не классы, а предикаты):
+
+```
+Между классами:   rdfs:subClassOf, owl:equivalentClass, owl:disjointWith,
+                  owl:unionOf, owl:intersectionOf, owl:complementOf, owl:oneOf
+Между свойствами: rdfs:subPropertyOf, owl:equivalentProperty,
+                  owl:inverseOf, owl:propertyChainAxiom (OWL 2),
+                  owl:propertyDisjointWith (OWL 2)
+Между индивидами: owl:sameAs, owl:differentFrom, rdf:type
+Метамодель:       owl:Ontology, owl:Axiom, owl:Annotation, owl:deprecated
+```
+
+## 2. Иерархия конструкций RDF/RDFS
+
+**Классы:**
+
+```
+rdfs:Resource — корень, всё сущее
+├── rdfs:Class            — классы вообще
+│   ├── rdfs:Datatype     — типы данных (xsd:*, ...)
+│   └── rdfs:Container    — контейнеры
+│       ├── rdf:Bag       (мультимножество)
+│       ├── rdf:Seq       (упорядоченная последовательность)
+│       └── rdf:Alt       (альтернативы)
+├── rdfs:Literal          — литералы (значения)
+│   ├── rdf:langString    (строка с языковым тегом)
+│   ├── rdf:HTML, rdf:XMLLiteral
+│   └── все типы xsd:*    (xsd:string, xsd:integer, ...)
+├── rdf:Property          — свойства
+├── rdf:Statement         — реификация (триплет как объект)
+├── rdf:List              — связный список (rdf:first / rdf:rest / rdf:nil)
+├── rdfs:ContainerMembershipProperty (rdf:_1, rdf:_2, ...)
+└── rdf:type              — NOTE: это предикат, а не класс; связывает ресурс и класс
+```
+
+**Словарь (предикаты и служебное):**
+
+```
+Структура:      rdfs:subClassOf, rdfs:subPropertyOf, rdfs:domain, rdfs:range
+Члены списков:  rdfs:member, rdf:first, rdf:rest, rdf:nil
+Реификация:     rdf:subject, rdf:predicate, rdf:object
+Мета-описания:  rdfs:label, rdfs:comment, rdfs:seeAlso,
+                rdfs:isDefinedBy, rdfs:isDefinedBy
+```
+
+## 3. Иерархия конструкций Schema.org
+
+Корень всего — `schema:Thing`. Ниже — все 10 его непосредственных «ветвей» верхнего уровня:
+
+```
+schema:Thing
+├── schema:Action         — действия («забронировать», «купить»)
+├── schema:CreativeWork   — книги, фильмы, статьи, игры...
+├── schema:Event          — события
+├── schema:Intangible     — нематериальное: предложения, рейтинги, услуги...
+├── schema:MedicalEntity  — медицина (вся ветка Medical* )
+├── schema:Organization   — организации, компании, школы...
+├── schema:Person         — люди
+├── schema:Place          — места: здания, гео-объекты...
+├── schema:Product        — товары
+└── schema:Enumeration    — перечислимые значения (только в RDFS-версии)
+```
+
+Параллельно есть ветка значений:
+
+```
+schema:DataType
+├── schema:Boolean, schema:Date, schema:DateTime, schema:Time
+├── schema:Number (→ schema:Integer, schema:Float)
+├── schema:Text
+└── schema:URL
+```
+
+Плюс в Schema.org есть **иерархия свойств** (`schema:Property` — это `rdfs:Property`-подобные сущности: `schema:name`, `schema:birthDate`...), каждое свойство имеет `domainIncludes`/`rangeIncludes` вместо `rdfs:domain`/`rdfs:range` — так одно свойство может принадлежать нескольким типам.
+
+## 4. Сводная схема
+
+Вот как все три системы складываются в одну картину:
+
+```
+rdf:Resource — «абсолютный верх», всё есть ресурс
+│
+├── rdfs:Class
+│   ├── rdfs:Datatype ──────────────── типы данных xsd:*
+│   ├── rdfs:Container ─────────────── RDF-контейнеры (Bag/Seq/Alt)
+│   │
+│   ├── owl:Class ──────────────────── OWL добавляет свой класс классов
+│   │   ├── owl:Restriction
+│   │   │      (Restriction уточняет класс через свойства)
+│   │   └── schema:Thing ───────────── Schema.org встраивается сюда:
+│   │         ├── Action              его классы — обычные rdfs-классы,
+│   │         ├── CreativeWork        их иерархия живёт под rdfs:subClassOf
+│   │         ├── Event               внутри owl:Class
+│   │         ├── Intangible
+│   │         ├── MedicalEntity
+│   │         ├── Organization
+│   │         ├── Person
+│   │         ├── Place
+│   │         ├── Product
+│   │         └── ...
+│   │
+│   └── owl:Thing = ⊤  (суперкласс для ВСЕХ классов выше)
+│       owl:Nothing = ⊥ (подкласс всех классов, пуст)
+│
+├── rdfs:Literal ───────────────────── значения
+│   └── schema:DataType (Text, Number, Date...) — «литералы» Schema.org
+│
+└── rdf:Property
+    ├── owl:ObjectProperty ─── свойства-связи между индивидами
+    │     ├── owl:TransitiveProperty
+    │     ├── owl:SymmetricProperty
+    │     ├── owl:FunctionalProperty
+    │     └── owl:InverseFunctionalProperty
+    ├── owl:DatatypeProperty ── свойства к литералам
+    ├── owl:AnnotationProperty
+    ├── owl:OntologyProperty
+    └── schema:Property (schema:name, schema:birthDate, ...)
+        └── схема через domainIncludes / rangeIncludes
+              (не строгое domain/range, как в RDFS)
+```
+
+**Ключевые точки стыковки** (что важно понять из сводки):
+
+- **RDF — фундамент**, RDFS добавляет базовые классы и предикаты, OWL надстраивает над RDFS выразительность (ограничения, кардинальности, сложные классы через union/intersection).
+- **Schema.org — это просто большая иерархия `rdfs:Class`/`rdfs:Property`** поверх RDF: её можно смешивать с OWL в одном документе, и стандартные Reason'еры поймут и то, и другое.
+- **`owl:Thing` не то же самое, что `schema:Thing`**: первый — это «всё, что существует» в онтологии; второй — «всё, что имеет тип в Schema.org» (корень их таксономии, сам — экземпляр `rdfs:Class`).
+- **`rdf:Resource` шире, чем `owl:Thing`**: `owl:Thing` покрывает только индивиды, а `rdf:Resource` — вообще всё, включая классы, свойства и литералы.
+
+Хотите, я разверну какую-то ветку подробнее — например, полную иерархию типов Schema.org до третьего уровня или различия OWL 1 vs OWL 2 по этим конструкциям?

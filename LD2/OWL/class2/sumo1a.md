@@ -1,7 +1,8 @@
 ## 1
 info:
 - https://github.com/inariksit
-- https://github.com/inariksit/cclaw-zettelkasten ; https://inariksit.github.io/cclaw-zettelkasten/sumo.html
+- https://inariksit.github.io/cclaw-zettelkasten/ ; https://github.com/inariksit/cclaw-zettelkasten ;
+- SUMO https://inariksit.github.io/cclaw-zettelkasten/sumo.html
 
 
 Вот полная схема верхнего уровня SUMO — с английскими и русскими названиями. Важная оговорка: «в полном объёме» буквально означает тысячи классов (только верхняя онтология — порядка 1000 терминов [https://inariksit.github.io/cclaw-zettelkasten/sumo.html](https://inariksit.github.io/cclaw-zettelkasten/sumo.html), а с доменными онтологиями — десятки тысяч), поэтому ниже — верхний уровень онтологии в максимальной разумной детализации (уровни 1–5), такой, как он определён в Merge.kif.

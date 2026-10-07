@@ -318,3 +318,211 @@ instance(Лёд1, Лёд) ∧ instance(Таяние1, Таяние) ∧ Таян
 - Semantic Modeling with SUMO (роли и процессы): https://arxiv.org/pdf/2012.15835
 
 Если хотите, следующим шагом могу показать это на практике: взять одну бытовую фразу (например, «Алиса купила хлеб в магазине yesterday») и разложить её в полную SUMO-запись со всеми ролями — это лучший способ увидеть, как предикаты работают вместе.
+
+## 1.1
+
+Проверю по исходникам точную аксиоматику Buying, чтобы разложение было корректным, а не «по памяти»:
+# «Алиса купила хлеб вчера в магазине» — полная SUMO-запись в трёх нотациях
+
+Сначала разберу, что именно в фразе нужно смоделировать, и зафиксирую данные (сегодня 2026-10-07, среда — значит, «вчера» = 2026-10-06, вторник; вы находитесь в Тульской области, посёлок Осиновая Гора — если магазин локальный, привязка к региону возможна, но оставлю его абстрактным).
+
+## Шаг 0. Что вообще утверждает фраза
+
+| Элемент фразы | SUMO-концепт | Роль |
+|---|---|---|
+| Алиса | Alice1 ∈ Human | agent покупки |
+| купила | Buy1 ∈ Buying ⊆ FinancialTransaction | сам процесс |
+| хлеб | Bread1 ∈ Bread | patient покупки |
+| в магазине | Store1 ∈ RetailStore | located(Buy1, Store1) — где происходило |
+| продавец | (неявно) Seller1 ∈ Agent | destination покупки |
+| вчера | дата процесса = 6 октября 2026 | date(Buy1, …) |
+| (неявно) деньги | Pay1 ∈ Payment, ~100 руб. | subProcess(Pay1, Buy1) |
+
+Три ключевых решения, продиктованных SUMO:
+
+1. **«Купила» — это не одно действие, а обмен.** В Merge.kif Buying и Selling — непересекающиеся подклассы FinancialTransaction, причём документация прямо говорит: «the buyer is the agent and the seller is the destination» (для Buying; для Selling наоборот) (https://www.swi-prolog.org/pack/file_details/logicmoo_base/t/KBs/Merge.kif). Покупка одна и та же, но у неё два каузальных агента (Алиса и продавец) — покупка всегда двустороннее событие.
+2. **Деньги — подпроцесс.** SUMO моделирует оплату как отдельный процесс Payment, входящий в покупку через subProcess; именно через него выражается обмен «хлеб ↔ деньги». Поскольку цена в фразе не названа, ставлю условную сумму — 100 рублей — и помечаю это.
+3. **«В магазине» — located, а не destination.** Located отвечает на вопрос «где физически происходило», destination — «кто получил результат». Продавец — destination, магазин — located.
+
+## Нотация 1. SUO-KIF (родная нотация SUMO)
+
+**Факты (A-box):**
+
+```
+;; --- участники ---
+(instance Alice1 Human)                        ; Алиса — человек (CognitiveAgent)
+(instance Bread1  Bread)                       ; батон хлеба
+(instance Store1  RetailStore)                 ; конкретный магазин
+(instance Seller1 Organization)                ; продавец как организация
+(instance Day20261006 Day)                     ; день «вчера», 6 октября 2026
+(instance Money1  CurrencyMeasure)             ; сумма платежа
+(instance BreadPiece1 Bread)                   ; купленный экземпляр хлеба
+
+;; --- процесс покупки ---
+(instance Buy1 Buying)
+(agent       Buy1 Alice1)                      ; покупатель — активный определитель
+(destination Buy1 Seller1)                     ; продавец — получатель (по документации Buying)
+(patient     Buy1 BreadPiece1)                 ; что перешло к покупателю
+(earlierPart Buy1 Part1)                       ; стадия: передача хлеба (инвентаризация)
+(instance    Part1 ChangeOfPossession)
+(origin      Part1 Seller1)                    ; откуда хлеб пришёл
+(destination Part1 Alice1)                     ; куда пришёл
+
+;; --- оплата как подпроцесс ---
+(instance Pay1 Payment)
+(subProcess  Pay1 Buy1)
+(agent       Pay1 Alice1)                      ; платит покупатель
+(destination Pay1 Seller1)                     ; получает продавец
+(measure     Pay1 Money1)                      ; сколько заплатили
+(equal       Money1 (MeasureFn 100 Ruble))     ; условные 100 рублей
+
+;; --- время и место ---
+(date  Buy1 Day20261006)                       ; subrelation(date, time): день события
+(time  Buy1 Day20261006)                       ; более общее: существует в этот день
+(before (EndFn (WhenFn Buy1)) (BeginFn (WhenFn Now1)))  ; покупка была до «сейчас»
+(located Buy1 Store1)                          ; процесс локализован в магазине
+(located Alice1 Store1)                        ; Алиса там же
+(located Seller1 Store1)                       ; продавец там же
+```
+
+**Аксиомы Merge.kif, которые здесь работают (вывод, а не факты):**
+
+```
+;; иерархия и запрет пересечения (даны в онтологии):
+(subclass Buying FinancialTransaction)
+(subclass Selling FinancialTransaction)
+(disjoint Buying Selling)
+
+;; платёж неявно присутствует в любой покупке — из Merge.kif:
+(=>
+  (and
+    (instance ?BUY Buying)
+    (agent ?BUY ?BUYER)
+    (patient ?BUY ?ITEM))
+  (exists (?PAYMENT ?SELLER)
+    (and
+      (instance ?PAYMENT Payment)
+      (subProcess ?PAYMENT ?BUY)
+      (instance ?SELLER Agent)
+      (agent ?PAYMENT ?BUYER)
+      (destination ?PAYMENT ?SELLER))))
+
+;; у всякого процесса есть каузальный фактор (дословно из Merge.kif):
+(=>
+  (instance ?PROCESS Process)
+  (exists (?CAUSE)
+    (agent ?PROCESS ?CAUSE)))
+
+;; типизация ролей (дословно из Merge.kif):
+(domain agent 1 Process)      (domain agent 2 Agent)
+(domain patient 1 Process)    (domain patient 2 Entity)
+(domain destination 1 Process) (domain destination 2 Entity)
+(subrelation instrument patient) (subrelation result patient) (subrelation resource patient)
+```
+
+(Аксиому о Payment привожу по смыслу существующей аксиоматики Buying/Payment в Merge.kif; точная формулировка в файле чуть длиннее — https://www.swi-prolog.org/pack/file_details/logicmoo_base/t/KBs/Merge.kif.)
+
+## Нотация 2. Логика первого порядка (юникод)
+
+Факты:
+
+```
+Alice1 ∈ Human
+Bread1  ∈ Bread
+Store1  ∈ RetailStore
+Seller1 ∈ Organization
+Buy1    ∈ Buying
+Pay1    ∈ Payment
+
+agent(Buy1, Alice1) ∧ destination(Buy1, Seller1) ∧ patient(Buy1, BreadPiece1)
+agent(Pay1, Alice1) ∧ destination(Pay1, Seller1) ∧ measure(Pay1, Money1)
+Money1 = 100 ₽ (как PhysicalQuantity: MeasureFn(100, Ruble))
+subProcess(Pay1, Buy1)
+origin(Part1, Seller1) ∧ destination(Part1, Alice1)
+date(Buy1, Day20261006) ∧ located(Buy1, Store1)
+located(Alice1, Store1) ∧ located(Seller1, Store1)
+End(When(Buy1)) < Begin(When(Now1))
+```
+
+Аксиомы (то же в математической записи):
+
+1. Покупка влечёт оплату продавцу:
+∀B ∀X ∀I ( B ∈ Buying ∧ agent(B, X) ∧ patient(B, I) → ∃P ∃S ( P ∈ Payment ∧ subProcess(P, B) ∧ agent(P, X) ∧ destination(P, S) ) )
+
+2. У всякого процесса есть каузальный фактор:
+∀P ( P ∈ Process → ∃C agent(P, C) )
+
+3. Транзитивность subProcess для ролей: если subProcess(Pay1, Buy1), то все роли Pay1 выполняются в интервале Buy1:
+subProcess(P, Q) → ∀t ( time(P, t) → time(Q, t) )
+
+4. Проверка непротиворечивости через типизацию: agent определён на Process × Agent — Alice1 обязана быть Agent:
+Human ⊆ CognitiveAgent ⊆ SentientAgent ⊆ Agent ✓
+
+5. Ключевой вывод о «двусторонности»: disjoint(Buying, Selling) ∧ оба ⊆ FinancialTransaction, значит для этой транзакции существует и процесс продажи продавца:
+∃Sell1 ( Sell1 ∈ Selling ∧ agent(Sell1, Seller1) ∧ destination(Sell1, Alice1) ∧ patient(Sell1, Money1) )
+
+Читается: «существует процесс продажи с продавцом в роли агента и Алисой в роли получателя, пациент которого — деньги». Одна бытовая фраза «Алиса купила хлеб» в SUMO автоматически разворачивается в два встречных процесса.
+
+## Нотация 3. Turtle (RDF/OWL)
+
+Сразу важная оговорка: Turtle — нотация **графа триплетов**, в ней нет импликаций и экзистенциальных переменных. Поэтому в Turtle переносится только **фактическая часть** (A-box); аксиомы остаются в SUMO-KIF и подхватываются рессонером как правила онтологии. Пространство имён SUMO в RDF-версии — http://www.ontologyportal.org/translations/SUMO.owl.txt# (так его цитируют сторонние онтологии, например Simple Event Model — https://semanticweb.cs.vu.nl/2009/11/sem/); в свежих выпусках используется также http://www.ontologyportal.org/SUMO.owl.
+
+```turtle
+@prefix sumo:  <http://www.ontologyportal.org/SUMO.owl#> .
+@prefix ex:    <http://example.org/situation#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# ---------- участники ----------
+ex:Alice1   a sumo:Human .
+ex:Seller1  a sumo:Organization .
+ex:Store1   a sumo:RetailStore .
+ex:BreadPiece1 a sumo:Bread .
+ex:Money1   a sumo:CurrencyMeasure ;
+            sumo:measureFn ex:Ruble ;
+            sumo:magnitude "100"^^xsd:integer .   # упрощение: MeasureFn в RDF передаётся парой свойств
+ex:Day20261006 a sumo:Day .
+
+# ---------- процесс покупки ----------
+ex:Buy1 a sumo:Buying ;
+        sumo:agent       ex:Alice1 ;
+        sumo:destination ex:Seller1 ;
+        sumo:patient     ex:BreadPiece1 ;
+        sumo:date        ex:Day20261006 ;
+        sumo:located     ex:Store1 .
+
+# ---------- передача хлеба как стадия ----------
+ex:Part1 a sumo:ChangeOfPossession ;
+         sumo:origin      ex:Seller1 ;
+         sumo:destination ex:Alice1 ;
+         sumo:patient     ex:BreadPiece1 .
+
+# ---------- оплата как подпроцесс ----------
+ex:Pay1 a sumo:Payment ;
+        sumo:agent       ex:Alice1 ;
+        sumo:destination ex:Seller1 ;
+        sumo:measure     ex:Money1 ;
+        sumo:subProcessOf ex:Buy1 .      # обратное направление к sumo:subProcess
+```
+
+Обратите внимание на два места, где Turtle «ломается» относительно SUO-KIF (и это показатель разницы нотаций, а не дефект языка):
+
+- **`subProcess` направлен «вверх»**: в KIF `subProcess(Pay1, Buy1)` читается «Pay1 — подпроцесс Buy1», в Turtle естественней триплет `Pay1 subProcessOf Buy1`. Мелочь, но при машинной обработке направление предиката критично.
+- **Дата и сумма**: в KIF это термы `(DayFn 6 (MonthFn October (YearFn 2026)))` и `(MeasureFn 100 Ruble)` — вложенные функции. В Turtle функция не выражается, поэтому дату и сумму приходится либо реифицировать отдельными индивидами (`ex:Day20261006`, `ex:Money1`), либо сводить к литералам с типом XSD. Именно поэтому факты — в Turtle, а аксиомы — в KIF.
+
+## Что машина выведет из этих данных (и что нет)
+
+**Выведется автоматически** (по аксиомам онтологии):
+- Buy1 ∈ FinancialTransaction, Pay1 ∈ FinancialTransaction — по транзитивности subclass;
+- существует Selling-процесс с тем же продавцом (двойственная сторона транзакции);
+- Alice1 ∈ CognitiveAgent — следовательно, способна к интенциональным процессам (Buy1 ∈ IntentionalProcess по определению Buying);
+- у Pay1 есть агент (уже указан), у каждого подпроцесса — свой каузальный фактор.
+
+**Не выведется, и это честно показать:**
+- **«Вчера» — индексальное слово.** В SUMO дата привязана к абсолютному дню (Day20261006), а не к «дню минус один от дня высказывания»; для настоящего индексального reasoning нужна дополнительная модель речевого акта, которой в ядре SUMO нет.
+- **Цена хлеба** в фразе отсутствует — я поставил 100 ₽ условно; в реальном сценарии она пришла бы из чека.
+- **«Магазин» как продавец vs как место** — я развёл их (Store1 для located, Seller1 для destination), потому что SUMO требует: located даёт физическую локализацию процесса, destination — получателя. В обычной речи «в магазине купила» склеивает оба смысла; SUMO заставляет их разделить — и это полезное насилие над интуицией.
+
+Три нотации — три уровня выразительности: SUO-KIF несёт аксиомы и вывод, FOL-запись показывает логическую форму, Turtle даёт граф, пригодный для SPARQL и Linked Data. Полная картина требует всех трёх.
+
+Хотите — добавлю четвёртую нотацию (N-Triples или JSON-LD) или разложу вторую фразу с более тонкой темпоралью, например «Алиса купила хлеб вчера, а съела сегодня» — там уже понадобятся before, holdsDuring и ChangeOfState.

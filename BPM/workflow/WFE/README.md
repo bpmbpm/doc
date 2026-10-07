@@ -4,3 +4,6 @@
 
 ## choice
 - [От потребностей команд к требованиям: выбор движка бизнес процессов после EOL Camunda 7](https://habr.com/ru/companies/tbank/articles/985132/)
+
+## 2
+- [Релиз OpenBPM 2.0](https://habr.com/ru/companies/haulmont/articles/1088860/)

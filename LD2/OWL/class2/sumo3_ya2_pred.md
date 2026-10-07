@@ -933,3 +933,290 @@ located(Филфак1, Тула)            → оба аргумента Physic
 Проверим на нашем примере за один проход: Alice1 → Human → … → Object → Physical ✓; HobbyChess → RecreationalAttribute → Attribute → Abstract ✓; Student — сам класс → Abstract ✓. Противоречий нет, потому что разбиение Entity — partition: у каждой сущности ровно один путь.
 
 Если хотите, могу показать обратную задачу: как в Merge.kif формально записано, что «всякий экземпляр класса с физическим предком — Physical» (аксиома наследования разбиения) — и почему она делает проверку шага 2 избыточной для большинства случаев.
+
+## 4
+SUMO не содержит Person или подобное?  
+Нельзя в явном виде задать Physical или Abstract? Например, через иерархию классов?
+
+Хорошие уточняющие вопросы — проверю оба утверждения по исходникам, чтобы не наврать с уровнями наследования.
+Оба вопроса — точные, и оба проверяются по исходникам. Отвечаю по порядку.
+
+## 1. Person в SUMO: нет, есть Human
+
+В ядре SUMO класса с именем `Person` нет — корректное имя **Human**. Но «человеческое» покрыто целой системой классов, и в документации прямо объяснено, что роль «пер-соны» играет другой термин.
+
+**Human — с двойным наследованием.** В Merge.kif он объявлен одновременно подклассом когнитивного агента и биологического вида:
+
+```
+(subclass Human CognitiveAgent)
+(subclass Human Hominid)
+```
+
+— это пример множественного наследования: Human наследует и «способность мыслить», и «принадлежность к приматам» (https://www.researchgate.net/publication/262222954_Typeful_Ontologies_with_Direct_Multilingual_Verbalization).
+
+**«Юридическая персона» — это CognitiveAgent.** Документация класса в исходниках говорит буквально: «This is essentially the legal/ethical notion of a person. Note that, although Human is a subclass of CognitiveAgent, there may be instances of CognitiveAgent which are not also instances of Human. For example, chimpanzees, gorillas, dolphins, whales, and some extraterrestrials (if they exist) may be CognitiveAgents» (https://www.swi-prolog.org/pack/file_details/logicmoo_base/t/KBs/Merge.kif). То есть: «персона» в смысле «кто может иметь права и обязательства» — это CognitiveAgent, а «персона» в смысле «биологический человек» — Human.
+
+| Класс SUMO | Что покрывает | «Person» в каком смысле |
+|---|---|---|
+| Human | биологический человек | как представитель вида |
+| CognitiveAgent | носитель рассуждений, планов, прав и обязанностей | юридическое/этическое понятие персоны |
+| SentientAgent | одушевлённый агент (включая животных) | «существо» |
+| Man, Woman | половые подклассы Human | — |
+| GroupOfPeople | собрание людей (физическая коллекция) | «люди» во множественном числе |
+| Organization | организованная группа с общей целью | корпоративная «персона» (юридическое лицо) |
+
+В связке с WordNet и YAGO слово «person» из естественного языка / Википедии отображается именно на Human (в YAGO-SUMO миллионы людей из Википедии типизированы как Human: http://gerard.demelo.org/yagosumo/). А классические ловушки вроде «полицейский» SUMO решает в пользу атрибута: роль — это не класс человека, а его свойство (атрибут Plumber — экземпляр SocialRole: `(attribute Alice Plumber)`), потому что роли могут совмещаться и меняться (https://inariksit.github.io/cclaw-zettelkasten/sumo.html).
+
+## 2. Можно ли явно задать Physical/Abstract? Да — и вот как именно
+
+Сначала уточнение: ярлыка-аннотации типа «эта сущность физическая» в SUMO нет. Принадлежность к Physical/Abstract **вычисляется**, и закреплена она двумя двусторонними аксиомами (бикондиционалами) — вот они дословно в переводе Adimen-SUMO (http://www.sc.ehu.es/jiwlucap/IJSWIS12.pdf):
+
+```
+(<=> (instance ?PHYS Physical)
+     (exists (?LOC ?TIME)
+       (and (located ?PHYS ?LOC) (time ?PHYS ?TIME))))
+
+(<=> (instance ?ABS Abstract)
+     (not (exists (?POINT)
+       (or (located ?ABS ?POINT) (time ?ABS ?POINT)))))
+```
+
+Unicode:
+
+- X ∈ Physical ↔ ∃L ∃T ( located(X, L) ∧ time(X, T) )
+- X ∈ Abstract ↔ ¬∃P ( located(X, P) ∨ time(X, P) )
+
+То есть «физическое» определяется не иерархией, а существованием координат: назвать нечто Physical — значит **взять на себя обязательство**, что у него есть местоположение и время. Это важнее, чем кажется: аксиома работает в обе стороны.
+
+### Способ 1 (правильный): закрепить класс в иерархии — subclass
+
+Да, через иерархию классов задать можно, и это стандартная практика. Возвращаясь к нашему примеру со студентами:
+
+```
+;; правильно: якорим класс Student под физической веткой
+(subclass Student CognitiveAgent)
+```
+
+Student → CognitiveAgent → SentientAgent → Agent → Object → Physical. Теперь всякий экземпляр Student автоматически физичен — аксиома Physical выполняется через наследование, и рессонер сам выведет существование located/time для каждой студентки.
+
+Заметьте тонкость: **класс Student при этом остаётся абстрактным** (всякий класс — экземпляр SetOrClass ⊆ Abstract), физичными становятся только его экземпляры. Иерархия задаёт физичность *индивидов*, не *классов*. Это то самое разделение уровней instance/subclass, о котором мы говорили.
+
+### Способ 2 (возможный, но рискованный): прямое утверждение instance
+
+Поскольку Physical — обычный класс, можно и напрямую написать:
+
+```
+(instance MysteryEntity Physical)
+```
+
+Такое утверждение допустимо, и рессонер немедленно потребует у вас логического следствия: по бикондиционалу обязаны существовать конкретные `located(MysteryEntity, ?LOC)` и `time(MysteryEntity, ?TIME)`. Без них база знаний неполна, с ними — ничего не противоречит. Но в стиле SUMO прямые экземпляры верхних классов почти не используются: если у сущности нет известного более специфического класса, это сигнал, что классирование не продумано.
+
+### Способ 3 (опасный): двойная типизация — и что из этого ломается
+
+А вот заявить одну сущность сразу и Physical, и Abstract **нельзя** — не запретом в синтаксисе, а потому что аксиомы сами превратят это в противоречие. В статье Adimen-SUMO разобран реальный случай — класс Outdoors («на открытом воздухе») в старых версиях SUMO оказался одновременно под Region (→ Physical) и под Attribute (→ Abstract). Вывод:
+
+- instance(Outdoors, SetOrClass) → instance(Outdoors, Abstract)
+- из X ∈ Abstract следует ¬∃y located(X, y)
+- instance(Outdoors, Region) → instance(Outdoors, Physical)
+- из X ∈ Physical следует ∃y located(X, y)
+- противоречие: ∃y located(Outdoors, y) ∧ ¬∃y located(Outdoors, y) → ⊥
+
+(полный вывод приведён в http://www.sc.ehu.es/jiwlucap/IJSWIS12.pdf)
+
+Авторы находят в SUMO и другие несоответствия этой пары аксиом — например, утверждение ∀x ( time(x, WhenFn(x)) ) в сочетании с аксиомой Abstract даёт ∀x ( ¬instance(x, Abstract) ), то есть «абстрактных сущностей не существует», что явно не замысел разработчиков. Поэтому «явно задать Abstract» — операция, за которой нужно внимательно следить: стоит приписать абстрактной сущности хоть один time-предикат, и она перестанет быть абстрактной.
+
+### Итог: сводка способов
+
+| Способ | Запись | Работает? | Комментарий |
+|---|---|---|---|
+| Якорить класс в иерархии | `(subclass Student Agent)` | да, стандартный путь | физичность наследуют экземпляры; класс остаётся Abstract |
+| Прямой экземпляр Physical | `(instance X Physical)` | да, с обязательствами | рессонер потребует located/time |
+| Прямой экземпляр Abstract | `(instance X Abstract)` | формально да, хрупко | любой located/time противоречит бикондиционалу |
+| Двойная типизация | Physical + Abstract одновременно | нет | противоречие (случай Outdoors) |
+| «Флаг»-атрибут | типа `(attribute X Physical)` | нет, так не делают | Physical/Abstract — классы, а не атрибуты |
+
+Практическое правило: проектируя доменную онтологию поверх SUMO, вы не «помечаете» сущности физичностью — вы **протягиваете им родословную до одной из двух веток**, и всё остальное онтология вычисляет сама. В этом смысле SUMO последовательна: у неё нет двух механизмов там, где хватает одного.
+
+Ссылки полными адресами:
+
+- Merge.kif (документация CognitiveAgent как «юридической персоны», Human под CognitiveAgent и Hominid): https://www.swi-prolog.org/pack/file_details/logicmoo_base/t/KBs/Merge.kif
+- Adimen-SUMO (бикондиционалы Physical/Abstract, противоречие Outdoors, проблема с time(x, WhenFn(x))): http://www.sc.ehu.es/jiwlucap/IJSWIS12.pdf
+- Разбор двойного наследования Human с примерами вывода: https://www.researchgate.net/publication/262222954_Typeful_Ontologies_with_Direct_Multilingual_Verbalization
+- YAGO-SUMO (типизация людей из Википедии): http://gerard.demelo.org/yagosumo/
+- Разбор ролей как атрибутов (Plumber): https://inariksit.github.io/cclaw-zettelkasten/sumo.html
+- Граница пространственно-временной локализации в SUMO — верификация аксиом located/time: https://link.springer.com/chapter/10.1007/978-3-319-49004-5_39
+
+## 5
+
+Проверю по исходникам, как именно зафиксировано взаимоисключение в Merge.kif — хочу процитировать точные строки, а не реконструкцию:
+Вы правы, и здесь я должен уточнить свою прошлую формулировку: взаимоисключение **заложено в онтологию явно** — это не скрытое следствие аксиом о located/time, а прямое утверждение. «Нельзя» означает не синтаксический запрет (ни KIF, ни OWL не отклоняют противоречивую запись на уровне парсера), а логическое следствие: нарушение делает базу знаний противоречивой, и рессонер это покажет. Теперь по порядку — с точными строками из исходников.
+
+## 1. Да, взаимоисключение зафиксировано — причём дважды
+
+Вот дословные строки текущего Merge.kif (https://www.swi-prolog.org/pack/file_details/logicmoo_base/t/KBs/Merge.kif):
+
+```
+(subclass Physical Entity)
+(subclass Object Physical)
+(disjoint Object Process)
+
+(subclass Abstract Entity)
+(disjoint Abstract Physical)
+```
+
+То есть: `(disjoint Abstract Physical)` — прямое запрещение пересечения двух верхних веток, записанное как полноценная аксиома онтологии. Одновременно та же связь исторически записывалась через `partition` — в CLIF-переводе SUMO стоит (https://github.com/gruninger/colore/blob/master/ontologies/sumo/sumo-cl.clif):
+
+```
+(partition Entity Physical Abstract)
+```
+
+а `partition` раскладывается на две части (определение из Merge.kif):
+
+```
+(=> (partition @ROW)
+    (and (exhaustiveDecomposition @ROW)
+         (disjointDecomposition @ROW)))
+```
+
+— разбиение = покрытие + непересекаемость. В более старых версиях SUMO под Physical была записана пара `(partition Physical Object Process)`; в актуальном Merge.kif — `(disjoint Object Process)`. Смысл одинаков, я покажу в примере оба варианта.
+
+## 2. Как устроена сама аксиома disjoint
+
+Из исходников (дословно):
+
+```
+(<=> (disjoint ?CLASS1 ?CLASS2)
+     (and (instance ?CLASS1 NonNullSet)
+          (instance ?CLASS2 NonNullSet)
+          (forall (?INST)
+            (not (and (instance ?INST ?CLASS1)
+                      (instance ?INST ?CLASS2))))))
+```
+
+В математической записи:
+
+disjoint(X, Y) ↔ X ∈ NonNullSet ∧ Y ∈ NonNullSet ∧ ∀Z ¬( Z ∈ X ∧ Z ∈ Y )
+
+Две тонкости, ради которых процитировал целиком:
+
+- **Проверка NonNullSet**: аксиома гарантирует, что disjoint утверждается о непустых классах (в теории множеств пустое множество «дизъюнктно» всему — SUMO это явно отсекает, чтобы `disjoint(X, Y)` не было тривиально истинным для пустого класса).
+- **Форма через instance**: взаимоисключение формулируется через запрет одновременной принадлежности одного индивида к двум классам — «нет ни одного Z, который был бы и тем, и другим».
+
+Поэтому, если заявить `instance(X, Physical)` и `instance(X, Abstract)` одновременно, цепочка вывода короткая: disjoint(Physical, Abstract) → ∀Z ¬(Z ∈ Physical ∧ Z ∈ Abstract) → подстановка X даёт Z ∈ Physical ∧ Z ∈ Abstract — противоречие ⊥. Рессонер (например, Vampire/Eprover в SigmaKEE) немедленно найдёт это и сообщит об unsatisfiability. Тот самый кейс Outdoors из Adimen-SUMO (http://www.sc.ehu.es/jiwlucap/IJSWIS12.pdf) был обнаружен именно так: «Outdoors is an instance of both Abstract and Physical, which are disjoint classes, thus yielding an inconsistency».
+
+## 3. Пример с явными Object и Process во всех трёх нотациях
+
+Беру наш сценарий: Алиса (Object, т. к. Human ⊆ … ⊆ Object), её учёба (Process), плюс явные утверждения о верхнем разбиении.
+
+### SUO-KIF
+
+```
+;; --- явное взаимоисключение верхнего уровня (дословно из Merge.kif) ---
+(subclass Physical Entity)
+(subclass Abstract  Entity)
+(disjoint Abstract Physical)          ; ← прямое запрещение
+;; эквивалентная историческая запись (CLIF, старые версии):
+;; (partition Entity Physical Abstract)
+
+;; --- явные классы Object и Process под Physical ---
+(subclass Object  Physical)
+(subclass Process Physical)
+(disjoint Object Process)             ; ← прямое запрещение
+;; историческая запись: (partition Physical Object Process)
+
+;; --- наши сущности, каждая привязана к своей ветке ---
+(instance Alice1 Human)               ; Human ⊆ ... ⊆ Agent ⊆ Object ⊆ Physical
+(instance Alice1 Object)              ; можно и так явно — избыточно, но выводимо
+(instance Studying1 Learning)        ; Learning ⊆ EducationalProcess ⊆ IntentionalProcess
+(instance Studying1 Process)         ; ← явно: это Процесс
+(instance Student SetOrClass)        ; класс Student — сам экземпляр множества классов
+(instance Student Abstract)          ; ← явно: это Абстрактное (выводимо из предыдущей)
+
+(disjoint Chess Go)                   ; непересекаемые виды игр (Abstract ↔ Abstract)
+```
+
+Важный штрих: `(instance Alice1 Object)` не ошибочна — просто избыточна, рессонер выведет её из иерархии. А вот `(instance Student Abstract)` — это утверждение о **классе** (классы всегда Abstract), тогда как его экземпляры — Physical.
+
+### Логика первого порядка (юникод)
+
+```
+;; верхнее разбиение
+Entity = Physical ∪ Abstract        ; покрытие (exhaustiveDecomposition)
+Physical ∩ Abstract = ∅             ; непересекаемость (disjoint)
+
+;; в форме аксиом disjoint:
+∀Z ¬( Z ∈ Physical ∧ Z ∈ Abstract )
+∀Z ¬( Z ∈ Object   ∧ Z ∈ Process )
+
+;; уровни
+Object  ⊆ Physical
+Process ⊆ Physical
+Human   ⊆ Agent ⊆ Object ⊆ Physical ⊆ Entity
+Learning ⊆ EducationalProcess ⊆ IntentionalProcess ⊆ Process ⊆ Physical ⊆ Entity
+SetOrClass ⊆ Abstract ⊆ Entity
+
+;; факты примера
+Alice1 ∈ Human, Studying1 ∈ Learning, Student ∈ SetOrClass
+
+;; выведенные (не записаны явно, следуют из иерархии):
+Alice1 ∈ Object, Studying1 ∈ Process, Student ∈ Abstract
+
+;; проверка на противоречие:
+Alice1 ∈ Physical ∧ ¬(Alice1 ∈ Abstract) ✓   (Alice1 ∈ Object, Object ∩ Abstract = ∅)
+```
+
+### Turtle
+
+```turtle
+@prefix sumo: <http://www.ontologyportal.org/SUMO.owl#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:   <http://example.org/students#> .
+
+# --- верхнее разбиение: взаимоисключение как аксиома графа ---
+sumo:Physical rdfs:subClassOf sumo:Entity .
+sumo:Abstract rdfs:subClassOf sumo:Entity ;
+              owl:disjointWith sumo:Physical .   # ← явное взаимоисключение
+
+# --- Object и Process явно ---
+sumo:Object  rdfs:subClassOf sumo:Physical .
+sumo:Process rdfs:subClassOf sumo:Physical ;
+             owl:disjointWith sumo:Object .       # ← явное взаимоисключение
+
+# --- наши сущности ---
+ex:Alice1    a sumo:Human, sumo:Object .          # Person-вещь: Physical, ветка Object
+ex:Studying1 a sumo:Learning, sumo:Process .      # занятие: Physical, ветка Process
+ex:Student   a owl:Class ;                        # класс: Abstract, ветка SetOrClass
+             rdfs:subClassOf sumo:CognitiveAgent .
+```
+
+Обратите внимание на различие «`a` против `subClassOf`» в Turtle: `ex:Alice1 a sumo:Object` — принадлежность индивида классу (instance, мост Physical↔Abstract-класса), а `sumo:Object rdfs:subClassOf sumo:Physical` — связь класс↔класс (subclass, чисто Abstract-мир). Двойное `a sumo:Human, sumo:Object` для одного индивида законно — Human и Object не дизъюнктны, одно вложено в другое.
+
+## Сводная таблица: взаимоисключения и примеры в трёх нотациях
+
+| # | Утверждение | SUO-KIF | Логика первого порядка | Turtle |
+|---|---|---|---|---|
+| 1 | Physical и Abstract — подклассы Entity | `(subclass Physical Entity) (subclass Abstract Entity)` | Physical ⊆ Entity ∧ Abstract ⊆ Entity | `sumo:Physical rdfs:subClassOf sumo:Entity .` |
+| 2 | Они не пересекаются (прямая запись) | `(disjoint Abstract Physical)` | Physical ∩ Abstract = ∅ | `sumo:Abstract owl:disjointWith sumo:Physical .` |
+| 3 | Они образуют полное разбиение (историческая/CLIF-запись) | `(partition Entity Physical Abstract)` | Entity = Physical ∪ Abstract ∧ Physical ∩ Abstract = ∅ | в OWL не выражается одним утверждением; покрытие задают ограничениями, либо остаётся правом рессонера |
+| 4 | Object и Process — подклассы Physical | `(subclass Object Physical) (subclass Process Physical)` | Object ⊆ Physical ∧ Process ⊆ Physical | `rdfs:subClassOf` |
+| 5 | Object и Process не пересекаются | `(disjoint Object Process)` | Object ∩ Process = ∅ | `owl:disjointWith` |
+| 6 | Определение disjoint | `(=> (instance ?C1 NonNullSet) (=> (instance ?C2 NonNullSet) (=> (forall (?I) (not (and (instance ?I ?C1) (instance ?I ?C2)))) (disjoint ?C1 ?C2))))` | disjoint(X, Y) ↔ X, Y непусты ∧ ∀Z ¬(Z ∈ X ∧ Z ∈ Y) | не выражается (аксиома-правило, живёт в рессонере) |
+| 7 | Алиса — объект (явно) | `(instance Alice1 Object)` | Alice1 ∈ Object | `ex:Alice1 a sumo:Object .` |
+| 8 | Алиса — объект (выводимо) | следует из `(instance Alice1 Human)` | Alice1 ∈ Human ∧ Human ⊆* Object → Alice1 ∈ Object | то же — через рессонер и иерархию |
+| 9 | Учёба — процесс (явно) | `(instance Studying1 Process)` | Studying1 ∈ Process | `ex:Studying1 a sumo:Process .` |
+| 10 | Класс Student — абстрактен | `(instance Student Abstract)` | Student ∈ Abstract | `ex:Student a owl:Class .` (+ иерархия даёт Abstract) |
+| 11 | Нарушение: один индивид в обеих ветках | `(instance X Physical) (instance X Abstract)` | X ∈ Physical ∧ X ∈ Abstract → ⊥ | запрещено семантикой disjointWith; без рессонера не «упадёт», будет unsatisfiable |
+
+## Что выведется, а что нет — проверка на консистентность
+
+Из фактов строк 7–10 рессонер выведет: Alice1 ∈ Physical (по иерархии), Studying1 ∈ Physical, Student ∈ SetOrClass ⊆ Abstract; противоречий нет — Alice1 нигде не принадлежит Abstract, Studying1 не принадлежит Object, и оба disjoint-ограничения соблюдены. Но заметьте: согласованность записи и отсутствие противоречия — разные вещи. Запись «instance(X, Physical) ∧ instance(X, Abstract)» синтаксически валидна во всех трёх нотациях; «запрещённость» проявится только на этапе логического вывода. В OWL-мире это классическая ситуация: RDFS-стек триплеты спокойно примет, а рессонер с OWL DL-семантикой объявит класс/индивидуала unsatisfiable. Поэтому мой прошлый вывод остаётся в силе, но теперь с уточнением механизма: запрет заложен явно — как аксиома, а не как парсер.
+
+Ссылки полными адресами:
+
+- Merge.kif (строки subclass/disjoint/бикондиционалы — процитированы выше): https://www.swi-prolog.org/pack/file_details/logicmoo_base/t/KBs/Merge.kif
+- CLIF-перевод SUMO (partition Entity Physical Abstract, документация disjoint): https://github.com/gruninger/colore/blob/master/ontologies/sumo/sumo-cl.clif
+- Adimen-SUMO (обнаружение противоречия Outdoors, аксиоматизация disjoint через NonNullSet): http://www.sc.ehu.es/jiwlucap/IJSWIS12.pdf
+- Пример доменной онтологии поверх SUMO с partition/disjoint (Life-Events Ontology in SU(M)O-KIF): https://link.springer.com/content/pdf/10.1007/978-3-540-24683-1_14.pdf
+
+Если хотите, могу показать, как рессонер формально «доказывает» противоречие (исчисление резолюций по этим двум аксиомам — буквально пара шагов), или как переписать разбиение Entity на четыре части (Physical / Mental / Abstract / …), если понадобится смоделировать декартовскую res cogitans.

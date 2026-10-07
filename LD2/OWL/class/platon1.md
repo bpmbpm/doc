@@ -1,6 +1,9 @@
 platon1.md  
-- https://studfile.net/preview/8719289/page:6/ 8. Платон: Теория Эйдосов. Миф о пещере.
+- https://studfile.net/preview/8719289/page:6/ 8. Платон: Теория Эйдосов. Миф о пещере. https://studfile.net/preview/2957883/page:2/ 2. Учение Платона о мире идей и вещей.
 - https://methodiks.ucoz.ru/index/platon_mif_o_peshhere_konspekt/0-388
+- https://spravochnick.ru/filosofiya/uchenie_platona_o_bytii_i_poznanii/ Небытие (материя) Согласно Платону, вещи чувственного мира не есть небытие. Им есть чем быть. ?
+- https://studwood.net/955830/filosofiya/filosofiya_platona_soprichastnost_idey_veschey
+
 ## also 
 - https://github.com/bpmbpm/onto/blob/main/questions/class/plato_1.md
 

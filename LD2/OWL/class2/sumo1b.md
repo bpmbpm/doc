@@ -22,7 +22,7 @@
 
 **Критерий деления — положение в пространстве и времени.** «Physical» — всё, что имеет позицию в пространстве-времени; «Abstract» — всё остальное (https://static.aminer.org/pdf/PDF/000/212/663/towards_a_standard_upper_ontology.pdf; русское изложение — https://new2.intuit.ru/studies/professional_skill_improvements/1627/courses/270/lecture/6851?page=2).
 
-Аксиома, формализующая Physical, требует, чтобы у каждого физического объекта существовали координаты `?LOC` (пространство) и `?TIME` (время) — определение через функции `located` и `time` приведено в лекции «ИНТУИТ» (https://new2.intuit.ru/studies/professional_skill_improvements/1627/courses/270/lecture/6851?page=2).
+Аксиома, формализующая Physical, требует, чтобы у каждого физического объекта существовали координаты `?LOC` (пространство) и `?TIME` (время) — определение через функции `located` и `time` **приведено в лекции «ИНТУИТ»** (https://new2.intuit.ru/studies/professional_skill_improvements/1627/courses/270/lecture/6851?page=2).
 
 | | Physical | Abstract |
 |---|---|---|

@@ -528,7 +528,6 @@ ex:Pay1 a sumo:Payment ;
 Хотите — добавлю четвёртую нотацию (N-Triples или JSON-LD) или разложу вторую фразу с более тонкой темпоралью, например «Алиса купила хлеб вчера, а съела сегодня» — там уже понадобятся before, holdsDuring и ChangeOfState.
 
 ## 1.2
-Сопоставь все три нотации, сделай сводную таблицу.
 
 # Сопоставление трёх нотаций: сводная таблица
 
@@ -618,3 +617,232 @@ SPARQL / Linked Data
 ```
 
 Если хотите, следующим шагом могу показать обратный конвейер: SPARQL-запрос к этому графу («все покупки Алисы за прошлый месяц с суммами и продавцами») — и как рессонер достраивает из аксиом то, чего в графе буквально нет (например, сам процесс Selling и факт, что хлеб получен именно в процессе оплаты).
+
+## 2
+
+# Простой пример: студенты, факультет и хобби в трёх нотациях
+
+## Шаг 0. Сценарий и словарь
+
+Факты, которые надо выразить:
+
+- Алиса и Боб — студенты философского факультета;
+- «студент» — подкласс чего-то более общего (придумываю: познавательного агента);
+- хобби Алисы — фотография, хобби Боба — шахматы;
+- плюс пара утверждений «для полноты»: Боб старше Алисы, оба ходят в свои клубы, доска — часть шахматного набора.
+
+Разделение ролей терминов: из SUMO беру готовое (`CognitiveAgent`, `Human`, `EducationalOrganization`, `located`, `older`, `member`, `attribute`, `knows`), а доменные понятия (`Student`, `Chess`, хобби как атрибуты) объявляю сам — это честная модель того, как поверх верхней онтологии строится доменная. Ссылку на «похожие примеры» дам в конце.
+
+---
+
+## Группа А. Связи мира идей: класс ↔ класс (Abstract ↔ Abstract)
+
+**Смысл:** «студенты — это разновидность познающих агентов»; «шахматы и го — непересекающиеся виды настольных игр»; «семестр бывает либо осенним, либо весенним».
+
+### SUO-KIF
+
+```
+;; иерархия (наши доменные классы привязаны к SUMO)
+(subclass Student CognitiveAgent)
+(subclass PhilosophyStudent Student)
+
+;; виды настольных игр: иерархия + запрещение пересечения
+(subclass Chess BoardGame)
+(subclass Go BoardGame)
+(disjoint Chess Go)
+
+;; атрибуты семестра исчерпывают множество вариантов
+(exhaustiveAttribute Semester AutumnSemester SpringSemester)
+```
+
+### Логика первого порядка (юникод)
+
+```
+Student ⊆ CognitiveAgent
+PhilosophyStudent ⊆ Student
+Chess ⊆ BoardGame, Go ⊆ BoardGame
+Chess ∩ Go = ∅
+∀X ( attribute(X, s) ∧ s ∈ Semester → s ∈ {AutumnSemester, SpringSemester} )
+```
+
+### Turtle
+
+```turtle
+@prefix sumo: <http://www.ontologyportal.org/SUMO.owl#> .
+@prefix ex:   <http://example.org/students#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+ex:Student rdfs:subClassOf sumo:CognitiveAgent .
+ex:PhilosophyStudent rdfs:subClassOf ex:Student .
+ex:Chess rdfs:subClassOf ex:BoardGame ;
+         owl:disjointWith ex:Go .
+```
+
+Заметка: `subclass` и `disjoint` из KIF здесь почти дословно ложатся на стандартные `rdfs:subClassOf` и `owl:disjointWith` — семантика этих конструкций встроена в OWL, поэтому в Turtle-группе А мы теряем меньше всего.
+
+---
+
+## Группа Б. Связи мира вещей: экземпляр ↔ экземпляр (Physical ↔ Physical)
+
+**Смысл:** Алиса — член философского клуба, Боб — шахматного; Боб старше Алисы; Алиса сейчас в библиотеке; доска — часть шахматного набора.
+
+### SUO-KIF
+
+```
+(instance Alice1 Human)
+(instance Bob1 Human)
+(instance PhilosophyClub1 GroupOfPeople)
+(instance ChessClub1 GroupOfPeople)
+
+(member Alice1 PhilosophyClub1)     ; клуб — физическая совокупность людей
+(member Bob1 ChessClub1)
+(older Bob1 Alice1)                 ; отношение «старше» — между людьми
+(located Alice1 Library1)           ; физическое расположение
+(part ChessBoard1 ChessSet1)        ; мереология: доска — часть набора
+```
+
+### Логика первого порядка (юникод)
+
+```
+Alice1 ∈ Human, Bob1 ∈ Human
+PhilosophyClub1 ∈ GroupOfPeople, ChessClub1 ∈ GroupOfPeople
+
+member(Alice1, PhilosophyClub1) ∧ member(Bob1, ChessClub1)
+older(Bob1, Alice1)
+located(Alice1, Library1)
+part(ШахматнаяДоска1, ШахматныйНабор1)
+```
+
+### Turtle
+
+```turtle
+ex:Alice1 a sumo:Human ;
+          sumo:member   ex:PhilosophyClub1 ;
+          sumo:located  ex:Library1 .
+ex:Bob1   a sumo:Human ;
+          sumo:member   ex:ChessClub1 ;
+          sumo:older    ex:Alice1 .
+ex:ChessBoard1 sumo:part ex:ChessSet1 .
+```
+
+Заметка: обратите внимание на разницу предикатов в этой группе — `member` связывает человека с **физической совокупностью** (клуб), а не с классом; если бы мы написали `Alice1 a ex:PhilosophyClub`, это была бы ошибка уровня (клуб — не класс людей, а конкретная совокупность). О такой ловушке прямо предупреждает документация SUMO (https://www.swi-prolog.org/pack/file_details/logicmoo_base/t/KBs/Merge.kif).
+
+---
+
+## Группа В. Мост между мирами: экземпляр ↔ класс (Physical ↔ Abstract)
+
+**Смысл:** Алиса и Боб — экземпляры класса «студент»; Алиса «учится на факультете философии»; у Алисы атрибут «увлекается фотографией», у Боба — «увлекается шахматами»; Алиса знает, что Боб играет в шахматы.
+
+### SUO-KIF
+
+```
+;; доменные классы и отношение «учится на» — наши добавления поверх SUMO
+(instance Student Class)
+(instance studiesAt BinaryPredicate)
+(domain studiesAt 1 Student)
+(domain studiesAt 2 EducationalOrganization)
+
+;; экземпляры (Physical) ↔ классы (Abstract)
+(instance Alice1 Student)
+(instance Bob1 Student)
+(studiesAt Alice1 PhilosophyFaculty1)
+(studiesAt Bob1 PhilosophyFaculty1)
+(instance PhilosophyFaculty1 EducationalOrganization)
+(located PhilosophyFaculty1 TulaRegion)
+
+;; атрибуты-хобби (Abstract) приписаны людям (Physical)
+(instance HobbyPhotography RecreationalAttribute)
+(instance HobbyChess RecreationalAttribute)
+(attribute Alice1 HobbyPhotography)
+(attribute Bob1 HobbyChess)
+
+;; знание (Physical-агент ↔ Abstract-пропозиция)
+(instance Prop1 Proposition)                    ; пропозиция «Боб играет в шахматы»
+(knows Alice1 Prop1)
+```
+
+### Логика первого порядка (юникод)
+
+```
+Alice1 ∈ Student, Bob1 ∈ Student
+studiesAt(Alice1, Филфак1) ∧ studiesAt(Bob1, Филфак1)
+Филфак1 ∈ EducationalOrganization
+located(Филфак1, ТульскаяОбласть)
+
+attribute(Alice1, ХоббиФотография), attribute(Bob1, ХоббиШахматы)
+ХоббиФотография ∈ RecreationalAttribute, ХоббиШахматы ∈ RecreationalAttribute
+
+knows(Alice1, P1), P1 ∈ Proposition, P1 = «Боб играет в шахматы»
+```
+
+Плюс правило-аксиома (объявление «у всякого студента есть учебное заведение»):
+
+```
+(=> (instance ?X Student)
+    (exists (?F)
+      (and (instance ?F EducationalOrganization)
+           (studiesAt ?X ?F))))
+```
+
+∀X ( X ∈ Student → ∃F ( F ∈ EducationalOrganization ∧ studiesAt(X, F) ) )
+
+### Turtle
+
+```turtle
+# типизация доменного отношения — частичный аналог domain
+ex:studiesAt rdfs:domain sumo:Student ;
+             rdfs:range  sumo:EducationalOrganization .
+
+# факты
+ex:Alice1 a sumo:Human, ex:Student ;
+          ex:studiesAt     ex:PhilosophyFaculty1 ;
+          sumo:attribute   ex:HobbyPhotography ;
+          sumo:knows       ex:Prop1 .
+ex:Bob1   a sumo:Human, ex:Student ;
+          ex:studiesAt     ex:PhilosophyFaculty1 ;
+          sumo:attribute   ex:HobbyChess .
+ex:PhilosophyFaculty1 a sumo:EducationalOrganization ;
+          sumo:located     ex:TulaRegion .
+ex:Prop1 a sumo:Proposition .   # «Боб играет в шахматы»
+```
+
+Заметка: правило с квантором (у всякого студента есть факультет) в Turtle не выражается — в OWL его можно приблизить ограничением `owl:hasValue`/`owl:someValuesFrom` через `rdfs:subClassOf`, но полная формулировка с существованием отдельной сущности остаётся в KIF/рессонере. Типизацию же (`domain`/`range`) Turtle выражает хорошо.
+
+---
+
+## Сводная таблица: три группы связей в трёх нотациях
+
+| # | Тип связи | Утверждение | SUO-KIF | Логика первого порядка | Turtle |
+|---|---|---|---|---|---|
+| A1 | Abstract↔Abstract | студент — вид познающего агента | `(subclass Student CognitiveAgent)` | Student ⊆ CognitiveAgent | `ex:Student rdfs:subClassOf sumo:CognitiveAgent .` |
+| A2 | Abstract↔Abstract | философский студент — вид студента | `(subclass PhilosophyStudent Student)` | PhilosophyStudent ⊆ Student | `rdfs:subClassOf` |
+| A3 | Abstract↔Abstract | шахматы и го не пересекаются | `(disjoint Chess Go)` | Chess ∩ Go = ∅ | `owl:disjointWith` |
+| A4 | Abstract↔Abstract | семестр — осенний или весенний | `(exhaustiveAttribute Semester AutumnSemester SpringSemester)` | s ∈ Semester → s ∈ {осенний, весенний} | не выражается (правило рессонера) |
+| Б1 | Physical↔Physical | Алиса — член клуба | `(member Alice1 PhilosophyClub1)` | member(Alice1, Клуб1) | `sumo:member` |
+| Б2 | Physical↔Physical | Боб старше Алисы | `(older Bob1 Alice1)` | older(Bob1, Alice1) | `sumo:older` |
+| Б3 | Physical↔Physical | Алиса в библиотеке | `(located Alice1 Library1)` | located(Alice1, Библиотека1) | `sumo:located` |
+| Б4 | Physical↔Physical | доска — часть набора | `(part ChessBoard1 ChessSet1)` | part(Доска1, Набор1) | `sumo:part` |
+| В1 | Physical↔Abstract | Алиса — студент | `(instance Alice1 Student)` | Alice1 ∈ Student | `ex:Alice1 a ex:Student .` |
+| В2 | Physical↔Abstract | учится на филфаке | `(studiesAt Alice1 PhilosophyFaculty1)` | studiesAt(Alice1, Филфак1) | `ex:studiesAt` |
+| В3 | Physical↔Abstract | хобби Алисы — фотография | `(attribute Alice1 HobbyPhotography)` | attribute(Alice1, ХоббиФотография) | `sumo:attribute` |
+| В4 | Physical↔Abstract | Алиса знает, что Боб играет в шахматы | `(knows Alice1 Prop1)` | knows(Alice1, P1) | `sumo:knows` |
+| R1 | правило | у всякого студента есть учебное заведение | `(=> (instance ?X Student) (exists (?F) ...))` | ∀X ( X ∈ Student → ∃F studiesAt(X, F) ) | не выражается; в OWL — приближение через someValuesFrom |
+
+## Как это читать «сверху вниз»
+
+Одно утверждение «Алиса — студентка философского факультета» в SUMO-представлении держится на трёх группах сразу: иерархия классов (A1–A2) говорит, **что такое студент**; связь экземпляра с классом (В1) говорит, **кто есть Алиса**; доменное отношение (В2) привязывает её к организации (Physical), а правило R1 заставляет рессонера вывести, что такой факультет существует. Именно это и есть главное отличие онтологии от простой базы фактов: часть знаний не записана явно — она выводится.
+
+## Похожие примеры (ссылки полными строками)
+
+- **SUO-KIF, официальный спецификационный документ** — почти наш пример: «Person — subclass of Animal», «Kofi Annan is a human and occupies position...», правило про спящего человека: http://ontolog.cim3.net/file/resource/reference/SIGMA-kee/suo-kif.pdf
+- **Merge.kif** — исходник, откуда взяты `member`, `older`, `located`, `part`, `attribute`, `knows`, и примечание «Human is a subclass of CognitiveAgent, but there may be CognitiveAgents which are not Humans»: https://www.swi-prolog.org/pack/file_details/logicmoo_base/t/KBs/Merge.kif
+- **W3C RDF 1.2 Primer** — буквально наш пример в Turtle: «Bob is a Person», «Bob is a friend of Alice», «Bob is interested in the Mona Lisa», плюс объяснение `a` = `rdf:type`: https://w3c.github.io/rdf-primer/spec/
+- **Business Rules Community, «Ontological Modeling (Part 4)»** — один и тот же пример («Obama — politician; Politician — subclass of Person») во всех пяти синтаксисах RDF/OWL, включая Turtle: https://www.brcommunity.com/articles.php?id=b539
+- **«Semantic Modeling with SUMO» (Pease)** — как устроены instance/subclass-аксиомы в SUO-KIF и как они соединяются с процессами: https://arxiv.org/pdf/2012.15835
+- **«Formalizing Knowledge by Ontologies: OWL and KIF»** — параллельное изложение одного фрагмента онтологии (класс Beverage) в KIF и в OWL/RDF: https://www.researchgate.net/profile/Francesco-Ronzano/publication/265999675_Formalizing_Knowledge_by_Ontologies_OWL_and_KIF/links/558bd99008ae681f47160807/Formalizing-Knowledge-by-Ontologies-OWL-and-KIF.pdf
+- **Учебное руководство по RDF/Turtle (OBO-туториал)** — таблицы → триплеты, префиксы, SPARQL поверх Turtle: https://github.com/jamesaoverton/obo-tutorial/blob/master/docs/processing-data.md
+- **Обзорная статья с Turtle-примерами и RDF-графами (arXiv)**: https://arxiv.org/pdf/1911.09606
+- **TinySUMO vs Merge.kif** — минимальный набор аксиом (включая `(subclass Human Physical)` из тестового набора и `(=> (subclass ?B ?A) (instance ?C ?A))`): https://github.com/ontologyportal/sumo/issues/216
+
+Если хотите, следующим шагом могу написать SPARQL-запросы к этому графу: «найти всех студентов философского факультета с их хобби» — и показать, что рессонер добавит к ответу сверх явных триплетов.

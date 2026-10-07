@@ -1,4 +1,6 @@
 platon1.md  
+- https://studfile.net/preview/8719289/page:6/ 8. Платон: Теория Эйдосов. Миф о пещере.
+- https://methodiks.ucoz.ru/index/platon_mif_o_peshhere_konspekt/0-388
 ## also 
 - https://github.com/bpmbpm/onto/blob/main/questions/class/plato_1.md
 

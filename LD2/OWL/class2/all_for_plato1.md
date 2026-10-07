@@ -5,6 +5,10 @@
 - https://github.com/bpmbpm/doc/blob/main/LD2/OWL/class2/all_for_plato1.md#g2
 - https://github.com/bpmbpm/doc/blob/main/LD2/OWL/class2/all_for_plato1.md#g3
 - https://github.com/bpmbpm/doc/blob/main/LD2/OWL/class2/all_for_plato1.md#g4
+- https://github.com/bpmbpm/doc/blob/main/LD2/OWL/class2/all_for_plato1.md#g5
+
+продолжение: https://github.com/bpmbpm/doc/blob/main/LD2/OWL/class2/sumo_article1.md
+  
 
 - https://www.perplexity.ai/search/78cb006c-319f-4501-8b8f-ec5dd22b7913
 - https://github.com/ontologyportal/sumo

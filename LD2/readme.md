@@ -1,6 +1,9 @@
 ## best
 - pl/sparql https://github.com/bpmbpm/doc/blob/main/LD2/faq1.md
-- Nevod1212 https://cognito.one/ ; переход на платформу - app.cognito.one 
+- Nevod1212 https://cognito.one/ ; переход на платформу - app.cognito.one
+
+### lecture
+- [Онтологии и тезаурусы: модели, инструменты, приложения:](https://new2.intuit.ru/studies/professional_skill_improvements/1627/info)
 
 ### confuse
 Spark SQL — модуль Apache Spark, который интегрирует реляционную обработку с функциональным программированием Spark. Он позволяет выполнять распределённые запросы стандарта ANSI SQL, работать с данными в формате DataFrames и использовать оптимизатор Catalyst для построения эффективных планов выполнения.

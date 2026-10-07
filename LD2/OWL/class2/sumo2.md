@@ -18,4 +18,4 @@ Suggested Upper Merged Ontology — формальная верхнеуровн�
 - [Онтология высшего уровня ruwiki](https://ru.ruwiki.ru/wiki/%D0%9E%D0%BD%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F_%D0%B2%D1%8B%D1%81%D1%88%D0%B5%D0%B3%D0%BE_%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D1%8F)
 
 ### article
-- https://www.ontology-of-designing.ru/article/2015_1%2815%29/5_Loukachevitch.pdf
+- ПРОЕКТИРОВАНИЕ ЛИНГВИСТИЧЕСКИХ ОНТОЛОГИЙ ДЛЯ ИНФОРМАЦИОННЫХ СИСТЕМ В ШИРОКИХ ПРЕДМЕТНЫХ ОБЛАСТЯХ https://www.ontology-of-designing.ru/article/2015_1%2815%29/5_Loukachevitch.pdf

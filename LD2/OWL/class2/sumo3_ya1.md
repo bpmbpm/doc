@@ -157,3 +157,300 @@ SUMO оказывается неожиданно «платонической» 
 
 Могу пойти дальше и сделать то же для Аристотеля (его «сущность» ложится на SUMO куда органичнее, чем у Платона) или для Декарса с его дуализмом субстанций — скажите, чья онтология интересует.
 
+## 1.1
+
+# Разбор по пунктам
+
+## 1. Демиург: что означает это слово
+
+Слово **демиург** — греческое δημιουργός (dēmiourgos), буквально «мастер, ремесленник, специалист» — от δῆμος «народ» и ἔργον «дело, работа». Так в классической Греции называли и ремесленников, и должностных лиц, работавших «на народ». Отсюда же слово «демагог» (вестник народа) — изначально без негативного оттенка.
+
+Значение сильно различается по традициям:
+
+- **У Платона** («Тимей», диалог о происхождении космоса) демиург — божественный мастер-устроитель: он не творит мир из ничего, а **взирая на вечные образцы (идеи), упорядочивает уже готовую бесформенную материю**, насколько она позволяет. Ключевая формула Платона: «Когда умозритель работает, он смотрит на вечно тождественное и вносит образец» (Тимей, 28c–29a): https://plato.stanford.edu/entries/timaeus/
+- **В гностицизме** (II–III вв.) демиург — часто **низший, невежественный или даже злой** творец материального мира (в Новом Завете апологетов он фигурирует как Ялдабаоф), противопоставляемый истинному Богу.
+- **В христианстве** слово «Демиург» иногда употребляется как торжественный титул Бога-Творца (в том числе в православной богослужебной и аскетической литературе — «Демиург всея твари»). Но важно, что христианский Бог **творит из ничего (ex nihilo)**, а не упорядочивает готовый материал, как платоновский мастер. Поэтому строгое употребление термина — скорее у платоников и гностиков; в христианском богословии он закрепился как почтительный синоним Творца.
+
+Так что в моей предыдущей таблице строку «Демиург творит мир по идеям» следует читать именно в платоновском смысле: мастер, глядящий на образец. Формула творения у Платона: идея (образец) → материя (материал) → вещь (копия). В SUMO это выражается через ролевые отношения процесса: `agent` (мастер), `result` (вещь), а сам образец — Proposition или класс, по которому создаётся экземпляр.
+
+## 2. Язык записей вида `(=> (and ...) ...)` — это SUO-KIF
+
+Такие «скобочные» записи — не экзотика, а стандартная нотация самой SUMO: язык **SUO-KIF** (Standard Upper Ontology — Knowledge Interchange Format), диалект KIF, оформленный в стиле LISP (https://en.wikipedia.org/wiki/Knowledge_Interchange_Format). Его правила просты:
+
+**Правило префиксной записи.** Любое выражение — это список в круглых скобках, где первый элемент — оператор или предикат, а дальше — аргументы:
+
+- `(instance ?P TurningOffDevice)` читается как `instance(?P, TurningOffDevice)` — «?P есть экземпляр класса TurningOffDevice»;
+- `(=> A B)` — импликация «если A, то B» (`=>` — стрелка);
+- `(and A B)` — конъюнкция «A и B»;
+- `(not A)` — отрицание.
+
+**Переменные** всегда начинаются с `?`: `?P`, `?D`. По умолчанию каждая формула с переменными неявно универсально квантифицирована: если написано `(=> ...)` без явного `(forall ...)`, это означает «для всех значений переменных верно...».
+
+**Разбор формулы из прошлого ответа поэлементно:**
+
+```
+(=>                                    ; импликация: если... то...
+  (and                                 ; конъюнкция двух условий
+    (instance ?P TurningOffDevice)     ; ?P — процесс типа «выключение устройства»
+    (patient ?P ?D))                   ; ?D — пациент процесса (то, над чем он совершается)
+  (and                                 ; заключение — тоже конъюнкция
+    (holdsDuring (BeginFn (WhenFn ?P)) (attribute ?D DeviceOn))
+                                         ; в НАЧАЛЕ процесса ?P атрибут ?D = «включено»
+    (holdsDuring (EndFn (WhenFn ?P))   (attribute ?D DeviceOff))))
+                                         ; в КОНЦЕ процесса ?P атрибут ?D = «выключено»
+```
+
+Справочник по операторам:
+
+| KIF-выражение | Что означает | Математический аналог |
+|---|---|---|
+| `(=> A B)` | из A следует B | \(A \rightarrow B\) |
+| `(and A B)` | A и B | \(A \land B\) |
+| `(or A B)` | A или B | \(A \lor B\) |
+| `(instance x C)` | x — экземпляр класса C | \(x \in C\) |
+| `(subclass C D)` | класс C — подкласс D | \(C \subseteq D\) |
+| `(patient ?P ?D)` | ?D — пациент процесса ?P | \(\mathrm{patient}(P, D)\) |
+| `(attribute x A)` | у x есть атрибут A | \(\mathrm{attr}(x, A)\) |
+| `(WhenFn ?P)` | функция «промежуток времени процесса» | \(W(P)\) |
+| `(BeginFn W)` / `(EndFn W)` | начало / конец промежутка | \(\min W\) / \(\max W\) |
+| `(holdsDuring T φ)` | формула φ истинна в течение T | \(\varphi\) на T |
+
+Теперь то же самое в классической математической записи (логика первого порядка):
+
+\[
+\forall P\, \forall D\ \Big( \big(\mathrm{TurningOffDevice}(P) \wedge \mathrm{patient}(P, D)\big) \rightarrow \big(\mathrm{holdsDuring}\big(\mathrm{BeginFn}(W(P)),\ \mathrm{DeviceOn}(D)\big) \wedge \mathrm{holdsDuring}\big(\mathrm{EndFn}(W(P)),\ \mathrm{DeviceOff}(D)\big)\big) \Big)
+\]
+
+Читается так: «Для любого процесса \(P\) и любого устройства \(D\): если \(P\) — выключение устройства и \(D\) — его пациент, то в момент начала \(P\) устройство \(D\) включено, а в момент конца \(P\) — выключено».
+
+Ещё два рабочих примера в обоих представлениях.
+
+Пример 1 — определение Physical (упрощённая запись аксиомы «у всякого физического есть координаты»):
+
+```
+(=> (instance ?PHYS Physical)
+    (exists (?LOC ?TIME)
+      (and (located ?PHYS ?LOC) (time ?PHYS ?TIME))))
+```
+
+\[
+\forall X\,\big(\mathrm{Physical}(X) \rightarrow \exists L\,\exists T\,(\mathrm{located}(X, L) \wedge \mathrm{time}(X, T))\big)
+\]
+
+Пример 2 — определение Substance («любая часть субстанции — та же субстанция»):
+
+```
+(=> (and (subclass ?TYPE Substance) (instance ?OBJ ?TYPE) (part ?PART ?OBJ))
+    (instance ?PART ?TYPE))
+```
+
+\[
+\forall T\,\forall O\,\forall Q\,\big((T \subseteq \mathrm{Substance} \wedge O \in T \wedge Q \sqsubseteq_{part} O) \rightarrow Q \in T\big)
+\]
+
+Здесь \(Q \sqsubseteq_{part} O\) — отношение «часть целого» (`part`), а не включение множеств — важное различие, к которому вернёмся в разделе про Collection.
+
+## 3. Ветка Physical. Подкласс Object (Объект)
+
+**Определение.** Object — то, что имеет границы и сохраняет тождественность во времени: объект существует «целиком» в каждый момент своей жизни, все его части сосуществуют (3D-подход, эндурантизм) (https://static.aminer.org/pdf/PDF/000/212/663/towards_a_standard_upper_ontology.pdf). Пример-проверка: стол существует весь целиком прямо сейчас — и ножки, и столешница.
+
+Четыре главные ветви под Object:
+
+### SelfConnectedObject (Связный объект)
+
+Части объекта связаны друг с другом (напрямую или через посредников). Стол — связный: столешница связана с ножками. Саксофон со снятой и лежащей в соседней комнате раструбом — связный объект, пока есть соединяющая трубка; коллекция разрозненных деталей — уже нет.
+
+- **Substance (Субстанция)** — «однородное вещество», любая часть которого имеет свойства целого (https://new2.intuit.ru/studies/professional_skill_improvements/1627/courses/270/lecture/6851?page=2). Вода, золото, глина. Отрезанный кусок золота — то же золото; вычерпанная ложка супа — по-прежнему суп. Под Substance: PureSubstance → ElementalSubstance (кислород) и CompoundSubstance (вода как H₂O), Mixture (воздух, бронза).
+- **CorpuscularObject (Корпускулярный объект)** — части обладают свойствами, отличными от свойств целого. Стол состоит из дерева и металла, но ни доска, ни шуруп не являются столом. Сюда попадают почти все «предметы» обыденного мира.
+
+### Collection (Совокупность)
+
+Части **не связаны физически**; связь задаётся отношением `member`. Классические примеры из документации: наборы инструментов, футбольные команды, отары овец (https://github.com/gruninger/colore/blob/master/ontologies/sumo/sumo-cl.clif). Две важные особенности:
+
+- **Коллекция материальна, а не абстрактна:** она имеет положение в пространстве-времени (футбольная команда находится на поле в момент матча), в отличие от класса Dog, который не находится нигде (https://new2.intuit.ru/studies/professional_skill_improvements/1627/courses/270/lecture/6851?page=2).
+- **Тождество сохраняется при смене состава:** продали двух овец, купили трёх — отара та же. У класса такого свойства нет: класс Dog не меняется от того, что собаки рождаются и умирают.
+- В коллекции не бывает пустых: у любой Collection есть хотя бы один член (https://adampease.com/FOIS.pdf).
+
+Три разных отношения, которые важно не путать:
+
+| Отношение | Связывает | Пример |
+|---|---|---|
+| `instance` | вещь и класс | Рекс — экземпляр Dog |
+| `member` | вещь и коллекцию | Рекс — член стаи (физически живой) |
+| `element` | множество и элемент | 3 — элемент множества {3, 5} |
+| `subclass` | класс и класс | Dog — подкласс Animal |
+
+### Region (Регион)
+
+Топографическая локализация: поверхности объектов, географические области, воображаемые места (https://github.com/gruninger/colore/blob/master/ontologies/sumo/sumo-cl.clif). Регион — единственный вид Object, который может локализоваться сам в себе; и он не является подклассом SelfConnectedObject, потому что бывают регионы с несвязанными частями — например, архипелаг (https://hal.science/hal-00012203/document). Примеры: поверхность стола (Surface), Байкал (WaterArea → Lake), Тульская область (GeographicArea), Солнечная система (AstrophysicalRegion).
+
+### Agent (Агент)
+
+Тот, кто может действовать: человек, организация, животное, ИИ-система. Цепочка: Agent → SentientAgent → CognitiveAgent → Human. Агент нужен ветке Process как носитель роли `agent` в интенциональных процессах — без агента не бывает, например, Buying (покупка).
+
+## 4. Ветка Physical. Подкласс Process (Процесс)
+
+**Определение.** Process — то, что «происходит», а не существует: у процесса есть временные стадии, он разворачивается. Кипение воды не «присутствует целиком» в момент t — есть стадия до закипания, бурление, прекращение. Прямое запрещение пересечения: `(disjoint Object Process)` (https://static.aminer.org/pdf/PDF/000/212/663/towards_a_standard_upper_ontology.pdf).
+
+**Ролевые отношения процессов (CaseRole).** Каждый процесс может связываться с участниками через специализированные предикаты (https://arxiv.org/pdf/2012.15835):
+
+- `agent` — деятель (кто делает);
+- `patient` — пациент (над чем совершается);
+- `instrument` — инструмент (чем);
+- `result` — результат (что появляется в итоге);
+- `origin` / `destination` — откуда и куда;
+- `resource` — расходуемый ресурс.
+
+Пример: `(agent ?P ?HUMAN)` — «исполнитель процесса ?P — человек ?HUMAN».
+
+**Основные подклассы Process с примерами:**
+
+| Подкласс | Определение | Примеры | Примерная аксиома |
+|---|---|---|---|
+| IntentionalProcess | агент действует сознательно, с целью | покупка, чтение, вождение | ∃A (\(\mathrm{agent}(P, A) \wedge \mathrm{wants}(A, \mathrm{result}(P))\)) |
+| Creation / Destruction | возникновение / исчезновение объекта | постройка дома; гибель корабля | ∃X (\(\mathrm{result}(P, X)\)) — у творения есть продукт, которого не было до процесса |
+| StateChange | переход состояния вещества | плавление льда, кипение, горение | \(\mathrm{attr}(X, \mathrm{Solid})\) до → \(\mathrm{attr}(X, \mathrm{Liquid})\) после |
+| InternalChange | изменение внутренней структуры при сохранении тождества | выключение устройства, старение | тождество объекта X сохраняется, атрибут меняется |
+| Motion | перемещение в пространстве | ходьба, полёт, течение реки | ∃D (\(\mathrm{moves}(P, D)\)) |
+| Transfer | передача владения/расположения | перевозка груза, передача денег | объект меняет «владельца» или место |
+| BiologicalProcess | процессы организмов | метаболизм, дыхание, рост | участник — Organism |
+| Perception | восприятие органами чувств | видит, слышит | агент получает информацию о мире |
+| Communication | передача информации | утверждение, вопрос, обещание | содержание — Proposition |
+| WeatherProcess | погода | дождь, снегопад | природный процесс без агента |
+| DualObjectProcess | двое-частный процесс | обмен, сделка | два пациента |
+
+**Разбор примера StateChange.** Плавление льда в SUMO можно записать так:
+
+```
+(instance Melt1 Melting)
+(patient Melt1 IceCube1)
+(holdsDuring (BeginFn (WhenFn Melt1)) (attribute IceCube1 Solid))
+(holdsDuring (EndFn   (WhenFn Melt1)) (attribute IceCube1 Liquid))
+```
+
+\[
+\forall P\,\forall X\,\Big(\big(\mathrm{Melting}(P) \wedge \mathrm{patient}(P, X)\big) \rightarrow \big(\mathrm{holdsDuring}(\mathrm{BeginFn}(W(P)), \mathrm{Solid}(X)) \wedge \mathrm{holdsDuring}(\mathrm{EndFn}(W(P)), \mathrm{Liquid}(X))\big)\Big)
+\]
+
+**Разбор примера IntentionalProcess.** Покупка:
+
+```
+(instance B1 Buying)
+(agent B1 Alice)
+(destination B1 Store7)
+(patient B1 Bread1)
+```
+
+\[
+\mathrm{Buying}(B1) \wedge \mathrm{agent}(B1, \text{Alice}) \wedge \mathrm{destination}(B1, \text{Store7}) \wedge \mathrm{patient}(B1, \text{Bread1})
+\]
+
+Обратите внимание на структуру: **вещь (Bread1) остаётся Physical-объектом, а действие (B1) — процессом**; ролью покупателя обладает агент Alice. Это и есть «склейка» двух веток Physical через предикаты-роли.
+
+**Проверка процессов во времени.** Любой процесс имеет длительность: `(=> (instance ?PROC Process) (exists (?DUR) (duration (WhenFn ?PROC) ?DUR)))`, а также стадии — SUMO позволяет разбить процесс на подпроцессы через `subProcess` (https://arxiv.org/pdf/2012.15835).
+
+## 5. Ветка Abstract подробно
+
+Под Abstract сидят пять непересекающихся ветвей (современная структура — https://real.mtak.hu/74043/1/Extensions_to_the_core_ontology_for_robotics_and_automation_2014_u.pdf; в классической статье Нилса и Пиза деление выглядело иначе, Set → Class → Relation — https://static.aminer.org/pdf/PDF/000/212/663/towards_a_standard_upper_ontology.pdf).
+
+Определяющее свойство ветки: абстрактная сущность **не существует ни в определённом месте, ни в определённое время** — в отличие от физической, которая всегда где-то и когда-то (https://www.academia.edu/77748106/Automatic_SUMO_to_UML_translation).
+
+### Quantity (Количество)
+
+Делится на **Number** — чистое число без привязки к системам измерения (7, π, 3,1415...) и **PhysicalQuantity** — число **вместе с единицей измерения** (https://static.aminer.org/pdf/PDF/000/212/663/towards_a_standard_upper_ontology.pdf). Ключевой пример из статьи: «1 метр» и «39,37 дюйма» — это **два разных экземпляра** PhysicalQuantity (именно экземпляра, а не одного объекта с двумя описаниями). Их эквивалентность выражается не тождеством, а отдельной аксиомой пересчёта единиц. Под PhysicalQuantity — измеримые величины: LengthMeasure, MassMeasure, TemperatureMeasure, CurrencyMeasure, TimeDuration.
+
+\[ 1\,\text{м} \ne 39{,}37\,\text{дюйма} \quad \text{как экземпляры, но} \quad \mathrm{MeasureFn}(1, \text{Meter}) = \mathrm{MeasureFn}(39{,}37, \text{Inch}) \ \text{по величине} \]
+
+### Attribute (Атрибут)
+
+Свойство, качество, состояние, «приписанное» объекту — но не являющееся самостоятельной вещью. Хрестоматийный пример: вместо разбиения животных на классы «самки» и «самцы» SUMO вводит атрибуты Female и Male как **экземпляры** класса BiologicalAttribute, а не как классы сущностей (https://static.aminer.org/pdf/PDF/000/212/663/towards_a_standard_upper_ontology.pdf). Связь с объектом — предикат `attribute`: `(attribute Fido Female)`.
+
+Подклассы Attribute: BiologicalAttribute, PsychologicalAttribute, NormativeAttribute (оценки «хорошо/плохо»), SubjectiveAssessmentAttribute (субъективные оценки), RelationalAttribute.
+
+\[
+\mathrm{attribute}(x, A),\ A \in \mathrm{BiologicalAttribute} \quad \text{— «у } x \text{ есть свойство } A\text{»}
+\]
+
+### SetOrClass (Множество или класс)
+
+Теоретико-множественная ветка. Класс — абстрактная совокупность, определяемая своим содержанием (интенсионалом), а не перечислением. Именно здесь живут Relation (отношения) и Function (функции). Бинарные отношения делятся по свойствам: TransitiveRelation, SymmetricRelation, ReflexiveRelation, EquivalenceRelation, PartialOrderingRelation — а также по предметной области: SpatialRelation, TemporalRelation, ProbabilityRelation, CaseRole (https://www.swi-prolog.org/pack/file_details/logicmoo_base/t/KBs/Merge.kif). Пример из разобранной выше аксиомы: отношение `subclass` — экземпляр PartialOrderingRelation, который сам — подкласс TransitiveRelation (https://adimen.ehu.eus/~rigau/publications/TR007-W06-ETL.pdf).
+
+\[
+\mathrm{subclass} \in \mathrm{PartialOrderingRelation} \subseteq \mathrm{TransitiveRelation}
+\]
+
+Пример отношения как «истинного на паре вещей»: `(subclass Dog Animal)` — это утверждение об упорядоченной паре (Dog, Animal), экземпляр отношения subclass.
+
+### Proposition (Пропозиция)
+
+Семантическое содержание, которое может быть выражено любым носителем — одним предложением, книгой, целой библиотекой (https://static.aminer.org/pdf/PDF/000/212/663/towards_a_standard_upper_ontology.pdf). Одна пропозиция — много формулировок: «2+2=4», «два плюс два равно четырём», «quatuor» — все выражают одну и ту же Proposition. Именно пропозиции являются содержанием знаний (`knows`, `believes`), обещаний (`Promising`), утверждений (`Stating`):
+
+\[
+\mathrm{knows}(x, P) \quad \text{где } P \in \mathrm{Proposition}
+\]
+
+### Graph (Граф)
+
+Абстрактный граф как математическая структура. Под ним GraphElement (GraphNode, GraphArc), причём GraphElement наследуется и от Graph — редкий в SUMO пример множественного наследования (https://www.swi-prolog.org/pack/file_details/logicmoo_base/t/KBs/Merge.kif).
+
+### Сводная таблица ветки Abstract
+
+| Подкласс | Что это | Примеры экземпляров |
+|---|---|---|
+| Quantity | величины, числа | 7; 1 метр; 39,37 дюйма; π |
+| Attribute | свойства, качества | Female, Male; DeviceOn; Solid; Liquid |
+| SetOrClass | классы, множества, отношения | Dog; Relation; `subclass`; TransitiveRelation |
+| Proposition | семантическое содержание | содержание теоремы Пифагора; содержание обещания |
+| Graph | абстрактный граф | сетевая структура; маршрут как граф |
+
+## 6. Наглядный пример: одно и то же во всех трёх ветках
+
+Чтобы связать всё вместе, возьмём одну ситуацию и покажем, как она разложена по уровням SUMO:
+
+**Ситуация:** «Алиса выключила лампу в 22:00».
+
+```
+(instance Alice Human)               ; Physical → Object → Agent
+(instance Lamp1 Device)              ; Physical → Object → SelfConnectedObject → Artifact
+(instance Off1 TurningOffDevice)     ; Physical → Process → InternalChange
+(agent Off1 Alice)                   ; роль: кто сделал
+(patient Off1 Lamp1)                 ; роль: над чем
+(time Off1 (HourFn 22 Day1))         ; когда
+(holdsDuring (EndFn (WhenFn Off1)) (attribute Lamp1 DeviceOff))  ; результат-состояние
+```
+
+\[
+\begin{aligned}
+&\mathrm{Human}(\text{Alice}) \wedge \mathrm{Device}(\text{Lamp1}) \wedge \mathrm{TurningOffDevice}(\text{Off1}) \\
+&\wedge\ \mathrm{agent}(\text{Off1}, \text{Alice}) \wedge \mathrm{patient}(\text{Off1}, \text{Lamp1}) \\
+&\wedge\ \mathrm{holdsDuring}\big(\mathrm{EndFn}(W(\text{Off1})),\ \mathrm{DeviceOff}(\text{Lamp1})\big)
+\end{aligned}
+\]
+
+copy
+$$
+\begin{aligned}
+&\mathrm{Human}(\text{Alice}) \wedge \mathrm{Device}(\text{Lamp1}) \wedge \mathrm{TurningOffDevice}(\text{Off1}) \\
+&\wedge\ \mathrm{agent}(\text{Off1}, \text{Alice}) \wedge \mathrm{patient}(\text{Off1}, \text{Lamp1}) \\
+&\wedge\ \mathrm{holdsDuring}\big(\mathrm{EndFn}(W(\text{Off1})),\ \mathrm{DeviceOff}(\text{Lamp1})\big)
+\end{aligned}
+$$
+
+
+И вот здесь появляется ветка Abstract: классы Human, Device, TurningOffDevice, атрибут DeviceOff, а также пропозиция «лампа выключена» — всё это Abstract; в мире физических сущностей есть только Алиса, лампа и само событие выключения. Получается платоновская картина «сверху вниз»: абстрактные «идеи» (классы, атрибуты, пропозиции) — и физические «вещи» (агенты, объекты, процессы), связанные между собой предикатами `instance`, `attribute` и ролями процессов.
+
+## Источники (полные адреса)
+
+- Нилс, Пиз — «Towards a Standard Upper Ontology» (основной текст): https://static.aminer.org/pdf/PDF/000/212/663/towards_a_standard_upper_ontology.pdf
+- Тот же PDF на сайте автора: https://adampease.com/FOIS.pdf
+- Merge.kif (главный файл SUMO): https://www.swi-prolog.org/pack/file_details/logicmoo_base/t/KBs/Merge.kif
+- Исходники SUMO в CLIF: https://github.com/gruninger/colore/blob/master/ontologies/sumo/sumo-cl.clif
+- Лекция «ИНТУИТ» о терминологии SUMO: https://new2.intuit.ru/studies/professional_skill_improvements/1627/courses/270/lecture/6851?page=2
+- Semantic Modeling with SUMO (процессы, роли, примеры): https://arxiv.org/pdf/2012.15835
+- Adimen-SUMO (перевод в логику первого порядка): https://adimen.ehu.eus/~rigau/publications/TR007-W06-ETL.pdf
+- SUMO→UML (атрибуты и абстрактные сущности): https://www.academia.edu/77748106/Automatic_SUMO_to_UML_translation
+- Обзор SUMO с примерами: https://inariksit.github.io/cclaw-zettelkasten/sumo.html
+- Википедия про KIF: https://en.wikipedia.org/wiki/Knowledge_Interchange_Format
+- Платон, «Тимей» (SEP): https://plato.stanford.edu/entries/timaeus/
+
+Могу, если интересно, разобрать детально ещё один узкий вопрос: чем SUMO отличается от DOLCE и BFO в трактовке процесса/объекта — там видны прямо противоположные философские решения, и это наглядно покажет, насколько «верхние онтологии» несут в себе метафизику, а не только инженерию.

@@ -428,6 +428,7 @@ SUMO оказывается неожиданно «платонической» 
 \]
 
 copy
+
 $$
 \begin{aligned}
 &\mathrm{Human}(\text{Alice}) \wedge \mathrm{Device}(\text{Lamp1}) \wedge \mathrm{TurningOffDevice}(\text{Off1}) \\

@@ -6,4 +6,4 @@ Suggested Upper Merged Ontology (SUMO)
 
 
 ## all
-- https://masters.donntu.ru/2012/iii/kalinin/library/article2.html
+- https://masters.donntu.ru/2012/iii/kalinin/library/article2.html ; https://masters.donntu.ru/2012/iii/kalinin/library/index.htm

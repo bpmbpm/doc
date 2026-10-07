@@ -526,3 +526,95 @@ ex:Pay1 a sumo:Payment ;
 Три нотации — три уровня выразительности: SUO-KIF несёт аксиомы и вывод, FOL-запись показывает логическую форму, Turtle даёт граф, пригодный для SPARQL и Linked Data. Полная картина требует всех трёх.
 
 Хотите — добавлю четвёртую нотацию (N-Triples или JSON-LD) или разложу вторую фразу с более тонкой темпоралью, например «Алиса купила хлеб вчера, а съела сегодня» — там уже понадобятся before, holdsDuring и ChangeOfState.
+
+## 1.2
+Сопоставь все три нотации, сделай сводную таблицу.
+
+# Сопоставление трёх нотаций: сводная таблица
+
+## Таблица 1. Построчное соответствие фактов (A-box)
+
+Каждая строка — один факт из записи «Алиса купила хлеб вчера»; три столбца — три нотации.
+
+| # | Факт (по-русски) | SUO-KIF | Логика первого порядка | Turtle |
+|---|---|---|---|---|
+| 1 | Алиса — человек | `(instance Alice1 Human)` | Alice1 ∈ Human | `ex:Alice1 a sumo:Human .` |
+| 2 | Продавец — организация | `(instance Seller1 Organization)` | Seller1 ∈ Organization | `ex:Seller1 a sumo:Organization .` |
+| 3 | Магазин | `(instance Store1 RetailStore)` | Store1 ∈ RetailStore | `ex:Store1 a sumo:RetailStore .` |
+| 4 | Хлеб (купленный кусок) | `(instance BreadPiece1 Bread)` | BreadPiece1 ∈ Bread | `ex:BreadPiece1 a sumo:Bread .` |
+| 5 | «Вчера» как день | `(instance Day20261006 Day)` | Day20261006 ∈ Day | `ex:Day20261006 a sumo:Day .` |
+| 6 | Покупка есть | `(instance Buy1 Buying)` | Buy1 ∈ Buying | `ex:Buy1 a sumo:Buying .` |
+| 7 | Кто купил | `(agent Buy1 Alice1)` | agent(Buy1, Alice1) | `ex:Buy1 sumo:agent ex:Alice1 .` |
+| 8 | Кому (продавцу) | `(destination Buy1 Seller1)` | destination(Buy1, Seller1) | `ex:Buy1 sumo:destination ex:Seller1 .` |
+| 9 | Что куплено | `(patient Buy1 BreadPiece1)` | patient(Buy1, BreadPiece1) | `ex:Buy1 sumo:patient ex:BreadPiece1 .` |
+| 10 | Когда | `(date Buy1 Day20261006)` | date(Buy1, Day20261006) | `ex:Buy1 sumo:date ex:Day20261006 .` |
+| 11 | Где (физически) | `(located Buy1 Store1)` | located(Buy1, Store1) | `ex:Buy1 sumo:located ex:Store1 .` |
+| 12 | Передача хлеба — стадия | `(instance Part1 ChangeOfPossession)` | Part1 ∈ ChangeOfPossession | `ex:Part1 a sumo:ChangeOfPossession .` |
+| 13 | Откуда хлеб | `(origin Part1 Seller1)` | origin(Part1, Seller1) | `ex:Part1 sumo:origin ex:Seller1 .` |
+| 14 | Куда хлеб | `(destination Part1 Alice1)` | destination(Part1, Alice1) | `ex:Part1 sumo:destination ex:Alice1 .` |
+| 15 | Оплата — часть покупки | `(subProcess Pay1 Buy1)` | subProcess(Pay1, Buy1) | `ex:Pay1 sumo:subProcessOf ex:Buy1 .` |
+| 16 | Оплата есть | `(instance Pay1 Payment)` | Pay1 ∈ Payment | `ex:Pay1 a sumo:Payment .` |
+| 17 | Кто платил | `(agent Pay1 Alice1)` | agent(Pay1, Alice1) | `ex:Pay1 sumo:agent ex:Alice1 .` |
+| 18 | Кому заплатили | `(destination Pay1 Seller1)` | destination(Pay1, Seller1) | `ex:Pay1 sumo:destination ex:Seller1 .` |
+| 19 | Сколько заплатили | `(measure Pay1 Money1)` | measure(Pay1, Money1) | `ex:Pay1 sumo:measure ex:Money1 .` |
+| 20 | Сумма = 100 ₽ | `(equal Money1 (MeasureFn 100 Ruble))` | Money1 = MeasureFn(100, Ruble) | `ex:Money1 sumo:magnitude "100"^^xsd:integer .` (единица — отдельным свойством) |
+| 21 | До «сейчас» | `(before (EndFn (WhenFn Buy1)) (BeginFn (WhenFn Now1)))` | End(When(Buy1)) < Begin(When(Now1)) | не выражается напрямую (функции нет) — нужен интервал-индивид или литерал времени |
+
+Обратите внимание на строку 15: единственное место, где направление предиката **разворачивается** между нотациями (`subProcess` → `subProcessOf`), — это не каприз Turtle, а следствие того, что в графе триплетов читается слева направо и «Pay1 — часть Buy1» естественнее записывать от Pay1.
+
+## Таблица 2. Построчное соответствие аксиом (T-box)
+
+Аксиомы — это правила онтологии; Turtle их **не выражает вообще** (в графе триплетов нет импликации и кванторов). Правило живёт в KIF/FOL и подключается к графу рессонером.
+
+| # | Аксиома (смысл) | SUO-KIF | Логика первого порядка | Turtle |
+|---|---|---|---|---|
+| A1 | Иерархия покупки | `(subclass Buying FinancialTransaction)` | Buying ⊆ FinancialTransaction | не выражается в самой записи графа; как правило рессонера |
+| A2 | Покупка ≠ продажа | `(disjoint Buying Selling)` | Buying ∩ Selling = ∅ | не выражается |
+| A3 | Покупка влечёт платёж продавцу | `(=> (and (instance ?BUY Buying) (agent ?BUY ?B) (patient ?BUY ?I)) (exists (?P ?S) (and (instance ?P Payment) (subProcess ?P ?BUY) (agent ?P ?B) (destination ?P ?S))))` | ∀B ∀X ∀I ( B ∈ Buying ∧ agent(B, X) ∧ patient(B, I) → ∃P ∃S ( P ∈ Payment ∧ subProcess(P, B) ∧ agent(P, X) ∧ destination(P, S) ) ) | не выражается; именно эта аксиома «достраивает» строку 16 из строк 6–8 |
+| A4 | У всякого процесса есть агент | `(=> (instance ?P Process) (exists (?C) (agent ?P ?C)))` | ∀P ( P ∈ Process → ∃C agent(P, C) ) | не выражается |
+| A5 | Типизация роли agent | `(domain agent 1 Process) (domain agent 2 Agent)` | agent ⊆ Process × Agent | не выражается (в OWL — как rdfs:domain/owl:allValuesFrom на свойствах) |
+| A6 | Транзитивность subclass | `(=> (subclass ?X ?Y) (subclass ?Y ?Z) (subclass ?X ?Z))` | X ⊆ Y ∧ Y ⊆ Z → X ⊆ Z | не выражается (в OWL — встроенная семантика rdfs:subClassOf) |
+
+Часть аксиом SUMO при переводе в OWL превращается в **синтаксические конструкции OWL**: `subclass` → `rdfs:subClassOf` (транзитивность даёт сам стандарт RDF), `disjoint` → `owl:disjointWith`, типизация аргументов → `rdfs:domain` / `rdfs:range`. Но аксиомы с кванторами и экзистенциальными условиями (как A3, A4) в OWL DL не выражаются без оговорок — они остаются правилами рессонера. Именно поэтому официальная OWL-версия SUMO (http://www.ontologyportal.org/translations/SUMO.owl.txt) — это перевод словаря, а не полный перенос аксиоматики.
+
+## Таблица 3. Сравнительная характеристика нотаций
+
+| Критерий | SUO-KIF | Логика первого порядка (юникод) | Turtle (RDF) |
+|---|---|---|---|
+| Что это | родная машинная нотация SUMO, LISP-подобный синтаксис | математическая каноническая запись | линейная запись графа триплетов |
+| Основной объект | формула (список) | формула | триплет: субъект — предикат — объект |
+| Префиксная/инфиксная запись | префиксная: `(agent Buy1 Alice1)` | инфиксная: agent(Buy1, Alice1) | смешанная: `ex:Buy1 sumo:agent ex:Alice1` |
+| Кванторы (∀, ∃) | есть: `(forall ...)`, `(exists ...)`; неявная универсальность | есть, явно | **нет** |
+| Импликация (→) | есть: `(=> A B)` | есть: → | **нет** |
+| Функции-термы (WhenFn, MeasureFn, BeginFn) | есть, вложенные списки | есть: Begin(When(B)) | **нет**; функции приходится реифицировать в индивиды или литералы (строка 20–21 таблицы 1) |
+| Переменные | есть: `?P` | есть: B, X, P | **нет** (только именованные узлы и литералы) |
+| Ссылки на переменные через средства самого языка | да | да | нет |
+| Семантика | модельно-теоретическая, первого порядка | та же, каноническая | модельно-теоретическая RDF; расширяется OWL DL/RL |
+| Что делает лучше всего | аксиомы и вывод; это исходник SUMO | показывать логическую форму человеку | обмен данными, SPARQL, Linked Data, интеграция со словарями W3C |
+| Что не может | нативный RDF-приёмник не поймёт без трансляции | не исполняется машиной напрямую | не выражает правила и вывод сам по себе |
+| Кто читает | SigmaKEE и рессонеры SUMO | человек, пруверы | любой RDF-стек (Jena, RDFLib, SPARQL-эндпоинты) |
+| Роль в нашем примере | «источник истины»: аксиомы A1–A6 + факты 1–21 | «прозрачная копия» для проверки человеком | «снимок фактов» для графа данных |
+
+## Ключевые структурные различия — итог в трёх пунктах
+
+1. **Выразительность падает слева направо.** SUO-KIF ⊇ FOL ⊇ Turtle по выразимости: в KIF записано всё, в FOL — то же самое в другой записи, в Turtle — только фактология. Обратный перевод не эквивалентен: перенося граф Turtle в рессонер, вы теряете правила, если они не подключены отдельно.
+
+2. **Уровни абстракции различаются назначением, а не «качеством».** KIF — язык определения самой онтологии (T-box + A-box в одном файле); FOL — язык проверки и объяснения её аксиом человеку и пруверу; Turtle — язык публикации данных, согласуемый с экосистемой W3C (SPARQL, OWL, Linked Data).
+
+3. **Три «слома» при трансляции**, которые мы увидели на конкретных строках: реификация функций (MeasureFn, WhenFn → отдельные узлы или литералы, строки 20–21); разворот направления предиката (subProcess → subProcessOf, строка 15); вынос аксиом в рессонер (таблица 2). Все три — типовые, и любой переход «логика → граф данных» в реальных проектах проходит через них.
+
+Схематически конвейер выглядит так:
+
+```
+естественный язык
+   ↓ (сумоизация: выбор классов, ролей, времени)
+SUO-KIF          ← истина онтологии: аксиомы + факты
+   ↕ 1:1
+FOL (юникод)     ← та же семантика, человеческая запись
+   ↓ (трансляция: реификация функций, OWL-мэппинг словаря)
+Turtle (RDF)     ← факты как граф; правила — в рессонере
+   ↓
+SPARQL / Linked Data
+```
+
+Если хотите, следующим шагом могу показать обратный конвейер: SPARQL-запрос к этому графу («все покупки Алисы за прошлый месяц с суммами и продавцами») — и как рессонер достраивает из аксиом то, чего в графе буквально нет (например, сам процесс Selling и факт, что хлеб получен именно в процессе оплаты).

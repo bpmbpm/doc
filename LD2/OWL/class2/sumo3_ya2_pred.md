@@ -846,3 +846,90 @@ ex:Prop1 a sumo:Proposition .   # «Боб играет в шахматы»
 - **TinySUMO vs Merge.kif** — минимальный набор аксиом (включая `(subclass Human Physical)` из тестового набора и `(=> (subclass ?B ?A) (instance ?C ?A))`): https://github.com/ontologyportal/sumo/issues/216
 
 Если хотите, следующим шагом могу написать SPARQL-запросы к этому графу: «найти всех студентов философского факультета с их хобби» — и показать, что рессонер добавит к ответу сверх явных триплетов.
+
+## 3
+
+Отличный вопрос — и он бьёт в самое уязвимое место: SUMO не помечает сущности ярлыками Physical/Abstract, это приходится **вычислять**. Разберу процедуру полностью.
+
+## Общий принцип: поднимаемся по иерархии
+
+Ключ в том, что `subclass` — транзитивное отношение, а корневое разбиение задаёт аксиому:
+
+∀X ( X ∈ Physical ∨ X ∈ Abstract ), и Physical ∩ Abstract = ∅
+
+Значит, для любой сущности достаточно найти её **класс** и подняться по цепочке `subclass` до корня. Куда пришли — то и ответ:
+
+```
+instance(X, C) ∧ C ⊆* Physical → X — Physical
+instance(X, C) ∧ C ⊆* Abstract → X — Abstract
+```
+
+(⊆* — замыкание subclass по транзитивности.)
+
+## Второй ключ: все классы — Abstract
+
+В SUMO есть красивое свойство: **всякий класс — экземпляр SetOrClass**, а SetOrClass сидит под Abstract. Поэтому правило упрощается:
+
+- **Если термин — класс** (то, о чём можно сказать `instance`, второй аргумент) → он **Abstract**. Всегда.
+- **Если термин — индивид** (конкретная вещь, человек, событие, коллекция) → он **Physical**, если только его класс не принадлежит одной из абстрактных веток (Attribute, Quantity, Proposition, SetOrClass).
+
+## Быстрый тест: вопрос «где и когда?»
+
+Практический критерий, совпадающий с формальным: спросите «где и когда это находится/происходит?»
+
+- **Осмысленный ответ есть** → Physical. Клуб — в кафе, вторник; факультет — в здании ТулГУ; покупка — вчера в магазине.
+- **Вопрос не имеет смысла** («где находится класс „студент“? когда была хобби?» — сам атрибут, а не занятие) → Abstract.
+
+## Полная классификация всех сущностей нашего примера
+
+| Сущность | Класс | Цепочка подъёма | Вердикт | Проверка «где и когда?» |
+|---|---|---|---|---|
+| Alice1, Bob1 | Human | Human ⊆ CognitiveAgent ⊆ Agent ⊆ **Object ⊆ Physical** | **Physical** | Алиса — в библиотеке, сейчас |
+| PhilosophyClub1, ChessClub1 | GroupOfPeople | … ⊆ Collection ⊆ **Object ⊆ Physical** | **Physical** | клуб — в аудитории по средам |
+| Library1 | Library | … ⊆ StationaryArtifact ⊆ **Object ⊆ Physical** | **Physical** | есть адрес |
+| ChessSet1, ChessBoard1 | Artifact | … ⊆ CorpuscularObject ⊆ **Object ⊆ Physical** | **Physical** | на полке |
+| PhilosophyFaculty1 | EducationalOrganization | … ⊆ Organization ⊆ Agent ⊆ **Object ⊆ Physical** | **Physical** | частая ловушка! |
+| Day20261006 | Day | Day ⊆ TimeInterval ⊆ TimePosition ⊆ Region ⊆ **Object ⊆ Physical** | **Physical** | см. примечание ниже |
+| Student, PhilosophyStudent, Chess, Go, BoardGame | — (это и есть классы) | классы ∈ SetOrClass ⊆ **Abstract** | **Abstract** | «где находится класс студент?» — вопрос лишён смысла |
+| HobbyPhotography, HobbyChess | — | экземпляры RecreationalAttribute ⊆ Attribute ⊆ **Abstract** | **Abstract** | атрибут ни где, ни когда не находится |
+| Prop1 («Боб играет в шахматы») | — | экземпляр **Proposition ⊆ Abstract** | **Abstract** | пропозиция вне пространства-времени |
+
+Три сюрприза в таблице, которые стоит проговорить:
+
+**1. Организация — Physical, а не Abstract.** Интуиция подсказывает «факультет — это абстракция», но в SUMO Organization — подкласс Agent ⊆ Object: у организации есть состав (люди), юридическая локация, она действует во времени. Абстрактной в SUMO будет **идея** организации, а не сама организация.
+
+**2. Дата — Physical.** В современной SUMO время не абстрактно: TimePosition — подкласс Region, то есть моменты и интервалы — это физические «регионы» на оси времени. Поэтому `Day20261006` — Physical. (В старых версиях SUMO время было абстрактным — ещё один пример того, что вердикт зависит от версии.)
+
+**3. Хобби зависит от моделирования.** Если «фотография» — это атрибут увлечённости (attribute(Alice1, HobbyPhotography)) — Abstract. Если «фотосессия» — конкретное занятие (instance(PhotoSession1, Process)) — Physical. SUMO допускает оба моделирования, и выбор за вами — это типичная развилка доменного моделирования.
+
+## Как это видно прямо из записи: предикаты сами «подсказывают» уровни
+
+Каждый предикат имеет сигнатуру (domain/range), и она выдает ответ автоматически:
+
+```
+instance(Alice1, Student)         → 2-й аргумент всегда класс → Student — Abstract
+member(Alice1, PhilosophyClub1)   → 2-й аргумент всегда Collection → клуб — Physical
+attribute(Alice1, HobbyPhoto)     → 2-й аргумент всегда Attribute → хобби — Abstract
+knows(Alice1, Prop1)              → 2-й аргумент всегда Proposition → Prop1 — Abstract
+located(Филфак1, Тула)            → оба аргумента Physical
+```
+
+Правило: **смотрите на предикат — он скажет, какого типа второй аргумент.** В Turtle это видно так же: в триплете `ex:Alice1 a ex:Student` субъект — индивид (Physical), объект типа — класс (Abstract). Любая связка `a`/`rdf:type` — это по определению мост Physical↔Abstract, как и обсуждалось в группе В.
+
+## Схема принятия решения (алгоритм)
+
+```
+Дана сущность X с классом C (instance(X, C)):
+1. Является ли X сам классом?  (то есть instance(X, SetOrClass))
+   да → Abstract
+2. Иначе поднимаемся по subclass от C к корню:
+   дошли до Object/Process/Collection/Region → Physical
+   дошли до Attribute/Quantity/Proposition/SetOrClass → Abstract
+3. Спорный случай — сверяемся с вопросом «где и когда?»
+   и с документацией класса в Merge.kif (классы Physical живут
+   под Object, абстрактные — под соответствующими ветками Abstract)
+```
+
+Проверим на нашем примере за один проход: Alice1 → Human → … → Object → Physical ✓; HobbyChess → RecreationalAttribute → Attribute → Abstract ✓; Student — сам класс → Abstract ✓. Противоречий нет, потому что разбиение Entity — partition: у каждой сущности ровно один путь.
+
+Если хотите, могу показать обратную задачу: как в Merge.kif формально записано, что «всякий экземпляр класса с физическим предком — Physical» (аксиома наследования разбиения) — и почему она делает проверку шага 2 избыточной для большинства случаев.

@@ -191,4 +191,84 @@ link
 9. Plato. Parmenides. Transl. by B. Jowett. URL: https://classics.mit.edu/Plato/parmenides.html
 
 10. Plato. Sophist. Transl. by B. Jowett. URL: https://classics.mit.edu/Plato/sophist.html
-11. 
+
+## 8. All
+
+Первые 10 позиций — те, что были в исходном ответе; далее — дополнительные релевантные источники.
+
+---
+
+## I. Первоисточники (античные и неоплатонические тексты)
+
+1. **Plato. Parmenides** / transl. by B. Jowett.  
+   https://classics.mit.edu/Plato/parmenides.html
+
+2. **Plato. Sophist** / transl. by B. Jowett.  
+   https://classics.mit.edu/Plato/sophist.html
+
+3. **Aristotle. Metaphysics** / transl. by W. D. Ross.  
+   https://classics.mit.edu/Aristotle/metaphysics.html
+
+4. **Plotinus. The Six Enneads** / transl. by S. MacKenna and B. S. Page.  
+   https://classics.mit.edu/Plotinus/enneads.html
+
+---
+
+## II. Справочная и энциклопедическая литература
+
+5. **Доброхотов, А. Л. Бытие** // Новая философская энциклопедия.  
+   https://iphras.ru/elib/0507.html
+
+6. **Онтология** // Новая философская энциклопедия.  
+   https://iphras.ru/elib/2116.html
+
+7. **Сущее (Хайдеггер)** // Большая российская энциклопедия.  
+   https://bigenc.ru/c/sushchee-khaidegger-6a5e3f
+
+8. **Онтическое** // Большая российская энциклопедия.  
+   https://bigenc.ru/c/onticheskoe-6a1e3f
+
+9. **Stanford Encyclopedia of Philosophy: Being**.  
+   https://plato.stanford.edu/entries/being/
+
+10. **Stanford Encyclopedia of Philosophy: Ontology**.  
+    https://plato.stanford.edu/entries/ontology/
+
+11. **Internet Encyclopedia of Philosophy: Being**.  
+    https://iep.utm.edu/being/
+
+12. **Internet Encyclopedia of Philosophy: Ontology**.  
+    https://iep.utm.edu/ontology/
+
+---
+
+## III. Научные статьи и авторефераты
+
+13. **Гагинский, А. М. О смысле бытия и значениях сущего: историко-философские разыскания** // Философский журнал. 2016. Т. 9, № 3. С. 59–76.  
+    https://doi.org/10.21146/2072-0726-2016-9-3-59-76
+
+14. **Гагинский, А. М. Становление онтологии М. Хайдеггера** : автореф. дис. … канд. филос. наук. Институт философии РАН.  
+    https://iphras.ru/uplfile/aspir/autoreferat/Gaginskiy.pdf
+
+---
+
+## IV. Учебные и лекционные материалы
+
+15. **Бытие как объект философского осмысления** : лекция. Томский политехнический университет.  
+    https://portal.tpu.ru/SHARED/m/MARKGON73/educational_work/lw/lk.5%20Problema%20bytiya1.pdf
+
+---
+
+## V. Философские интернет-ресурсы общего характера
+
+16. **Perseus Digital Library**.  
+    http://www.perseus.tufts.edu/hopper/
+
+17. **Stanford Encyclopedia of Philosophy**.  
+    https://plato.stanford.edu/
+
+18. **Internet Encyclopedia of Philosophy**.  
+    https://iep.utm.edu/
+
+---
+

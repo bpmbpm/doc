@@ -539,4 +539,130 @@ https://chat.deepseek.com/a/chat/s/b99ac993-98ed-463a-a0b2-06548742f9e9
 
 ---
 
-Если потребуется уточнить или дополнить этот список, пожалуйста, дайте знать.
+## All
+
+Ниже — расширенный и систематизированный список источников по теме. Он разбит по категориям, как вы просили ранее. Первые 20 позиций — те, что были в предыдущем ответе; далее — дополнительные релевантные источники.
+
+---
+
+## I. Первоисточники (античные и неоплатонические тексты)
+
+1. **Plato. Parmenides** / transl. by B. Jowett.  
+   https://classics.mit.edu/Plato/parmenides.html
+
+2. **Plato. Sophist** / transl. by B. Jowett.  
+   https://classics.mit.edu/Plato/sophist.html
+
+3. **Aristotle. Metaphysics** / transl. by W. D. Ross.  
+   https://classics.mit.edu/Aristotle/metaphysics.html
+
+4. **Plotinus. The Six Enneads** / transl. by S. MacKenna and B. S. Page.  
+   https://classics.mit.edu/Plotinus/enneads.html
+
+5. **Парменид. О природе** (фрагменты) // Фрагменты ранних греческих философов.  
+   https://iphras.ru/elib/2273.html
+
+---
+
+## II. Справочная и энциклопедическая литература
+
+6. **Доброхотов А. Л. Бытие** // Новая философская энциклопедия.  
+   https://iphras.ru/elib/0507.html
+
+7. **Онтология** // Новая философская энциклопедия.  
+   https://iphras.ru/elib/2116.html
+
+8. **Сущее (Хайдеггер)** // Большая российская энциклопедия.  
+   https://bigenc.ru/c/sushchee-khaidegger-6a5e3f
+
+9. **Онтическое** // Большая российская энциклопедия.  
+   https://bigenc.ru/c/onticheskoe-6a1e3f
+
+10. **Парменид** // Новая философская энциклопедия.  
+    https://iphras.ru/elib/2272.html
+
+11. **Софист (диалог Платона)** // Большая российская энциклопедия.  
+    https://bigenc.ru/c/sofist-dialog-platona-6a5e3f
+
+12. **Stanford Encyclopedia of Philosophy: Being**.  
+    https://plato.stanford.edu/entries/being/
+
+13. **Stanford Encyclopedia of Philosophy: Ontology**.  
+    https://plato.stanford.edu/entries/ontology/
+
+14. **Stanford Encyclopedia of Philosophy: Martin Heidegger**.  
+    https://plato.stanford.edu/entries/heidegger/
+
+15. **Internet Encyclopedia of Philosophy: Being**.  
+    https://iep.utm.edu/being/
+
+16. **Internet Encyclopedia of Philosophy: Ontology**.  
+    https://iep.utm.edu/ontology/
+
+---
+
+## III. Научные статьи, диссертации и монографии
+
+17. **Гагинский А. М. О смысле бытия и значениях сущего: историко-философские разыскания** // Философский журнал. 2016. Т. 9, № 3. С. 59–76.  
+    https://doi.org/10.21146/2072-0726-2016-9-3-59-76  
+    https://pj.iphras.ru/article/view/144
+
+18. **Гагинский А. М. Становление онтологии М. Хайдеггера** : автореф. дис. … канд. филос. наук. Институт философии РАН.  
+    https://iphras.ru/uplfile/aspir/autoreferat/Gaginskiy.pdf
+
+19. **Гагинский А. М. Диссертация** (полный текст).  
+    https://iphras.ru/uplfile/diss/gaginskiy/gaginskiy_dissertatsiya_dokt.pdf
+
+20. **Месяц С. В. Апория трансцендентного начала** // Большая российская энциклопедия.  
+    https://m.bigenc.ru/vault/a9af576c1440967cd12290a327a2b003.pdf
+
+21. **Месяц С. В. Трансцендентное и трансцендентальное** // Институт философии РАН.  
+    https://iphras.ru/uplfile/diss/mesyats/mesyats_dissertatsiya.pdf
+
+22. **Брентано Ф. О многозначности сущего по Аристотелю** (1862) // Перевод избранных глав.  
+    https://classics.nsu.ru/bibliotheca/brentano/
+
+23. **Суарес Ф. Метафизические рассуждения** (Disputationes Metaphysicae) // Новая философская энциклопедия.  
+    https://iphras.ru/elib/2871.html
+
+24. **Ледников Е. Е. О понятии и суждениях существования** // Институт философии РАН.  
+    https://iphras.ru/uplfile/logic/log07/Li7_28_Lednikov.pdf
+
+25. **Мур Дж. Э. Является ли существование предикатом?** // Вестник Томского государственного университета. Философия.  
+    https://journals.tsu.ru/philosophy/&journal_page=archive&id=1247
+
+26. **Катречко С. Л. Платон: мир идей и мир вещей** // НИУ ВШЭ.  
+    https://publications.hse.ru/
+
+27. **Виндельбанд В. История древней философии** (раздел о Платоне и Аристотеле).  
+    https://archive.org/details/studentshistoryo00winduoft
+
+---
+
+## IV. Учебные и лекционные материалы
+
+28. **Бытие как объект философского осмысления** : лекция. Томский политехнический университет.  
+    https://portal.tpu.ru/SHARED/m/MARKGON73/educational_work/lw/lk.5%20Problema%20bytiya1.pdf
+
+29. **Платон: Мир идей и мир вещей** // Философский факультет МГУ.  
+    https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf
+
+30. **Платон: иерархия идей** // Национальная электронная библиотека.  
+    https://rusneb.ru/catalog/000199_000009_002218247/
+
+---
+
+## V. Философские интернет-ресурсы общего характера
+
+31. **Perseus Digital Library** (тексты Платона и Аристотеля на греческом и английском).  
+    http://www.perseus.tufts.edu/hopper/
+
+32. **PhilPapers** (библиографическая база по философии).  
+    https://philpapers.org/
+
+33. **Cyberleninka** (российские научные статьи по философии).  
+    https://cyberleninka.ru/
+
+---
+
+

@@ -965,3 +965,158 @@ Entity (Сущность)
 ---
 
 Если потребуется уточнить или дополнить этот список, пожалуйста, дайте знать.
+
+## g5
+
+Приношу извинения за сбой формата. Исправляю: все ссылки в тексте — в формате `[N](URL)`.
+
+---
+
+## Часть I. Онтология Джона Совы (J. Sowa’s Ontology)
+
+### 1.1. Общая характеристика
+
+Онтология Джона Совы (KR Ontology — Knowledge Representation Ontology) — одна из старейших онтологий верхнего уровня, разработанная в 1990-х годах [1](https://www.jfsowa.com/ontology/toplevel.htm). Она основана на **трёх фундаментальных различениях**, которые дают **двенадцать базовых категорий** [1](https://www.jfsowa.com/ontology/toplevel.htm):
+
+1. **Physical vs. Abstract** — физическое (имеющее пространственно-временную локализацию) vs. абстрактное (информационное) [1](https://www.jfsowa.com/ontology/toplevel.htm)
+2. **Independent vs. Relative vs. Mediating** — независимое (существующее самостоятельно) vs. относительное (требующее связи с другим) vs. опосредующее (связывающее два других) [1](https://www.jfsowa.com/ontology/toplevel.htm)
+3. **Continuant vs. Occurrent** — длящееся (сохраняющее идентичность во времени) vs. происходящее (разворачивающееся во времени) [1](https://www.jfsowa.com/ontology/toplevel.htm)
+
+### 1.2. Таксономия Совы
+
+| Physical (Физическое) | | Abstract (Абстрактное) | |
+|---|---|---|---|
+| **Continuant** | **Occurrent** | **Continuant** | **Occurrent** |
+| **Independent** → Object | **Independent** → Process | **Independent** → Schema | **Independent** → Script |
+| **Relative** → Juncture | **Relative** → Participation | **Relative** → Description | **Relative** → History |
+| **Mediating** → Structure | **Mediating** → Situation | **Mediating** → Reason | **Mediating** → Purpose |
+
+Источник: [1](https://www.jfsowa.com/ontology/toplevel.htm), [2](https://www.jfsowa.com/ontology/krontology.htm).
+
+### 1.3. Таблица соответствий с Платоном
+
+| Понятие | **Платон** | **J. Sowa’s Ontology** | **Комментарий об отличии от Платона** |
+|---|---|---|---|
+| **Корень** | τὸ ἕν (The One) [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf) | — (12 категорий) [1](https://www.jfsowa.com/ontology/toplevel.htm) | У Совы нет трансцендентного начала; онтология **плоская** |
+| **Абстрактное** | ἰδέα (Form) [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf) | **Abstract** (Schema, Script, Description, History, Reason, Purpose) [1](https://www.jfsowa.com/ontology/toplevel.htm) | У Совы абстрактное **включает** информационные объекты |
+| **Конкретное** | τὸ τόδε τι (Particular) [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf) | **Physical** (Object, Process, Juncture, Participation, Structure, Situation) [1](https://www.jfsowa.com/ontology/toplevel.htm) | У Совы физическое **включает** не только объекты, но и процессы |
+| **Неизменное** | ἀεὶ ὄν (Eternal Being) [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf) | **Continuant** [1](https://www.jfsowa.com/ontology/toplevel.htm) | У Совы континуанты **не вечны**, а лишь сохраняют идентичность |
+| **Изменчивое** | γιγνόμενον (Becoming) [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf) | **Occurrent** [1](https://www.jfsowa.com/ontology/toplevel.htm) | У Совы оккурренты **включают** цели и причины |
+| **Отношение** | μέθεξις (Participation) [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf) | **Relative** (Juncture, Participation, Description, History) [1](https://www.jfsowa.com/ontology/toplevel.htm) | У Совы отношение — **самостоятельная категория** |
+
+---
+
+## Часть II. RDFS и OWL: корень «Ресурс»
+
+### 2.1. RDFS: класс «Ресурс»
+
+RDF Schema (RDFS) определяет **базовый набор классов**, среди которых центральное место занимает **`rdfs:Resource`** — **класс всех ресурсов**, «класс всего» [3](https://www.w3.org/TR/rdf-schema/). Все остальные классы являются **подклассами** `rdfs:Resource` [3](https://www.w3.org/TR/rdf-schema/).
+
+| Класс | Английский термин | Определение |
+|---|---|---|
+| `rdfs:Resource` | Resource | Класс всех ресурсов; корень иерархии [3](https://www.w3.org/TR/rdf-schema/) |
+| `rdfs:Class` | Class | Класс всех классов [3](https://www.w3.org/TR/rdf-schema/) |
+| `rdfs:Literal` | Literal | Класс литеральных значений [3](https://www.w3.org/TR/rdf-schema/) |
+| `rdf:Property` | Property | Класс всех свойств [3](https://www.w3.org/TR/rdf-schema/) |
+| `rdf:Statement` | Statement | Класс реифицированных утверждений [3](https://www.w3.org/TR/rdf-schema/) |
+
+### 2.2. OWL: `owl:Thing` и `owl:Nothing`
+
+OWL **расширяет** RDFS и вводит два **предопределённых класса** [4](https://www.w3.org/TR/owl2-overview/), [5](https://www.w3.org/TR/owl-ref/):
+
+| Класс | Английский термин | Определение |
+|---|---|---|
+| `owl:Thing` | Thing | **Класс всех индивидов**; корень иерархии [5](https://www.w3.org/TR/owl-ref/) |
+| `owl:Nothing` | Nothing | **Пустой класс**; подкласс всех классов [5](https://www.w3.org/TR/owl-ref/) |
+
+**`owl:Thing` и `owl:Nothing` образуют «верх» и «низ» решётки классов** [5](https://www.w3.org/TR/owl-ref/). В OWL Full `owl:Thing` **эквивалентен** `rdfs:Resource` [5](https://www.w3.org/TR/owl-ref/). В OWL DL все классы являются **подклассами** `owl:Thing` и **суперклассами** `owl:Nothing` [5](https://www.w3.org/TR/owl-ref/).
+
+### 2.3. Таблица соответствий с Платоном
+
+| Понятие | **Платон** | **RDFS / OWL** | **Комментарий об отличии от Платона** |
+|---|---|---|---|
+| **Корень** | τὸ ἕν (The One) [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf) | **`rdfs:Resource`** / **`owl:Thing`** [3](https://www.w3.org/TR/rdf-schema/), [5](https://www.w3.org/TR/owl-ref/) | У Платона корень **трансцендентен**; в RDFS/OWL — **формален** |
+| **Ничто** | μὴ ὄν (Non-Being) [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf) | **`owl:Nothing`** [5](https://www.w3.org/TR/owl-ref/) | У Платона небытие — **иной способ существования**; в OWL — **пустое множество** |
+| **Абстрактное** | ἰδέα (Form) [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf) | **`owl:Class`** [5](https://www.w3.org/TR/owl-ref/) | У Платона идеи **существуют отдельно**; в OWL класс — **формальная категория** |
+| **Конкретное** | τὸ τόδε τι (Particular) [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf) | **Индивид** [5](https://www.w3.org/TR/owl-ref/) | У Платона вещи **причастны** идеям; в OWL индивиды **инстанцируют** классы |
+| **Отношение** | μέθεξις (Participation) [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf) | **`rdf:Property`** [3](https://www.w3.org/TR/rdf-schema/) | У Платона отношение — **онтологическое**; в RDFS — **формальное** |
+
+---
+
+## Часть III. Protégé: есть ли у него своя онтология?
+
+**Protégé — это редактор онтологий**, а не онтология сама по себе [13](https://protege.stanford.edu/). Он **не имеет** собственной онтологии верхнего уровня [13](https://protege.stanford.edu/). По умолчанию Protégé использует **`owl:Thing`** в качестве **корневого класса** [13](https://protege.stanford.edu/). Пользователь может **импортировать** онтологии верхнего уровня (например, BFO) и строить **доменные онтологии** поверх них [13](https://protege.stanford.edu/).
+
+**Вывод:** Protégé **не может быть включён** в таблицу онтологий верхнего уровня, поскольку он является **инструментом**, а не онтологией [13](https://protege.stanford.edu/).
+
+---
+
+## Часть IV. Расширенная сводная таблица терминов онтологий верхнего уровня
+
+| Понятие | **Платон** | **SUMO** | **DOLCE** | **BFO** | **Cyc** | **DBpedia** | **Schema.org** | **YAGO** | **OWL** | **J. Sowa** |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Корень** | τὸ ἕν [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf) | **Entity** [6](http://www.ontologyportal.org/) | **Particular** [7](https://www.loa.istc.cnr.it/dolce/overview.html) | **Entity** [8](https://github.com/BFO-ontology/BFO) | **Thing** [9](https://www.cs.auckland.ac.nz/~ian/UpperCyc.html) | **owl:Thing** [10](https://www.dbpedia.org/resources/ontology/) | **Thing** [11](https://schema.org/) | **schema:Thing** [12](https://yago-knowledge.org/) | **owl:Thing** [5](https://www.w3.org/TR/owl-ref/) | — [1](https://www.jfsowa.com/ontology/toplevel.htm) |
+| **Ничто** | μὴ ὄν [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf) | — | — | — | — | — | — | — | **owl:Nothing** [5](https://www.w3.org/TR/owl-ref/) | — |
+| **Абстрактное** | ἰδέα [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf) | **Abstract** [6](http://www.ontologyportal.org/) | **Abstract** [7](https://www.loa.istc.cnr.it/dolce/overview.html) | — | **Intangible** [9](https://www.cs.auckland.ac.nz/~ian/UpperCyc.html) | — | **Intangible** [11](https://schema.org/) | **Intangible** [12](https://yago-knowledge.org/) | — | **Abstract** [1](https://www.jfsowa.com/ontology/toplevel.htm) |
+| **Конкретное** | τὸ τόδε τι [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf) | **Physical** [6](http://www.ontologyportal.org/) | **Endurant** [7](https://www.loa.istc.cnr.it/dolce/overview.html) | **Continuant** [8](https://github.com/BFO-ontology/BFO) | **Individual** [9](https://www.cs.auckland.ac.nz/~ian/UpperCyc.html) | — | **Product, Person, Place** [11](https://schema.org/) | **Person, Place, Product** [12](https://yago-knowledge.org/) | — | **Physical** [1](https://www.jfsowa.com/ontology/toplevel.htm) |
+| **Объект** | οὐσία [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf) | **Object** [6](http://www.ontologyportal.org/) | **Endurant** [7](https://www.loa.istc.cnr.it/dolce/overview.html) | **Continuant** [8](https://github.com/BFO-ontology/BFO) | **Individual Object** [9](https://www.cs.auckland.ac.nz/~ian/UpperCyc.html) | — | **Thing** [11](https://schema.org/) | — | — | **Object** [1](https://www.jfsowa.com/ontology/toplevel.htm) |
+| **Процесс** | κίνησις [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf) | **Process** [6](http://www.ontologyportal.org/) | **Perdurant** [7](https://www.loa.istc.cnr.it/dolce/overview.html) | **Occurrent** [8](https://github.com/BFO-ontology/BFO) | **Event** [9](https://www.cs.auckland.ac.nz/~ian/UpperCyc.html) | **Activity** [10](https://www.dbpedia.org/resources/ontology/) | **Event** [11](https://schema.org/) | **Event** [12](https://yago-knowledge.org/) | — | **Process** [1](https://www.jfsowa.com/ontology/toplevel.htm) |
+| **Качество** | ποιόν [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf) | **Attribute** [6](http://www.ontologyportal.org/) | **Quality** [7](https://www.loa.istc.cnr.it/dolce/overview.html) | **Quality** [8](https://github.com/BFO-ontology/BFO) | **Attribute** [9](https://www.cs.auckland.ac.nz/~ian/UpperCyc.html) | — | — | — | — | — |
+| **Отношение** | πρός τι [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf) | **Relation** [6](http://www.ontologyportal.org/) | **Relation** [7](https://www.loa.istc.cnr.it/dolce/overview.html) | **Relation** [8](https://github.com/BFO-ontology/BFO) | **Predicate** [9](https://www.cs.auckland.ac.nz/~ian/UpperCyc.html) | — | — | — | **ObjectProperty** [5](https://www.w3.org/TR/owl-ref/) | **Relative** [1](https://www.jfsowa.com/ontology/toplevel.htm) |
+| **Класс** | γένος [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf) | **SetOrClass** [6](http://www.ontologyportal.org/) | — | — | **Collection** [9](https://www.cs.auckland.ac.nz/~ian/UpperCyc.html) | **Class** [10](https://www.dbpedia.org/resources/ontology/) | — | — | **owl:Class** [5](https://www.w3.org/TR/owl-ref/) | — |
+
+---
+
+## Часть V. Выводы с критическими комментариями
+
+**Вывод 1.** Онтология Джона Совы — **плоская** онтология верхнего уровня, в которой **нет единого корня**, а есть **12 базовых категорий** [1](https://www.jfsowa.com/ontology/toplevel.htm).
+
+> **Критический комментарий.** Отсутствие корня — **сознательный выбор** Совы: он не постулирует трансцендентного начала, а строит онтологию **снизу вверх** от эмпирических различений [1](https://www.jfsowa.com/ontology/toplevel.htm). Это **противоположно** платоновской стратегии, где Единое **предшествует** всему [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf).
+
+**Вывод 2.** В RDFS/OWL **общий корень** — **`rdfs:Resource`** (в OWL Full эквивалентен `owl:Thing`), а **`owl:Nothing`** — **пустой класс**, обозначающий **дно** решётки классов [3](https://www.w3.org/TR/rdf-schema/), [5](https://www.w3.org/TR/owl-ref/).
+
+> **Критический комментарий.** Платоновское **μὴ ὄν** (небытие) **не эквивалентно** `owl:Nothing`: у Платона небытие — **иной способ существования** (становление), а в OWL — **пустое множество** [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf). Это различие **принципиально**.
+
+**Вывод 3.** Protégé **не имеет** собственной онтологии верхнего уровня; это **редактор**, использующий `owl:Thing` как корневой класс по умолчанию [13](https://protege.stanford.edu/).
+
+> **Критический комментарий.** Это означает, что Protégé **не может** рассматриваться в одном ряду с SUMO, DOLCE, BFO и др. [13](https://protege.stanford.edu/). Однако Protégé **позволяет** импортировать **любую** онтологию верхнего уровня [13](https://protege.stanford.edu/).
+
+**Вывод 4.** Различие терминов (идея, универсалия, абстрактная сущность, ресурс, класс) — это **не синонимия**, а **различие онтологических допущений** [1](https://www.jfsowa.com/ontology/toplevel.htm), [3](https://www.w3.org/TR/rdf-schema/), [5](https://www.w3.org/TR/owl-ref/), [6](http://www.ontologyportal.org/), [7](https://www.loa.istc.cnr.it/dolce/overview.html), [8](https://github.com/BFO-ontology/BFO).
+
+> **Критический комментарий.** Платон **постулирует** отдельное существование идей [14](https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf); SUMO **включает** абстрактные сущности в общую иерархию [6](http://www.ontologyportal.org/); RDFS/OWL **формализуют** классы как **множества** [3](https://www.w3.org/TR/rdf-schema/); Sowa **комбинирует** три различения, не сводя их к одному корню [1](https://www.jfsowa.com/ontology/toplevel.htm). Это различие **фундаментально**.
+
+---
+
+## Полный список источников
+
+1. **Sowa J. F. Top-Level Categories** — https://www.jfsowa.com/ontology/toplevel.htm
+
+2. **Sowa J. F. KR Ontology** — https://www.jfsowa.com/ontology/krontology.htm
+
+3. **W3C. RDF Schema 1.1** — https://www.w3.org/TR/rdf-schema/
+
+4. **W3C. OWL 2 Web Ontology Language** — https://www.w3.org/TR/owl2-overview/
+
+5. **W3C. OWL Web Ontology Language Reference** — https://www.w3.org/TR/owl-ref/
+
+6. **SUMO Ontology Portal** — http://www.ontologyportal.org/
+
+7. **DOLCE: Descriptive Ontology for Linguistic and Cognitive Engineering** — https://www.loa.istc.cnr.it/dolce/overview.html
+
+8. **BFO: Basic Formal Ontology** — https://github.com/BFO-ontology/BFO
+
+9. **Cyc Upper Ontology** — https://www.cs.auckland.ac.nz/~ian/UpperCyc.html
+
+10. **DBpedia Ontology** — https://www.dbpedia.org/resources/ontology/
+
+11. **Schema.org** — https://schema.org/
+
+12. **YAGO Knowledge Base** — https://yago-knowledge.org/
+
+13. **Protégé Ontology Editor** — https://protege.stanford.edu/
+
+14. **Платон: Мир идей и мир вещей (МГУ)** — https://philos.msu.ru/sites/default/files/lib/2009.%20%D0%A4%D0%98%D0%9B%D0%9E%D0%A1%D0%9E%D0%A4%D0%98%D0%AF%28%D0%9D%D0%9E%D0%A0%D0%9C%D0%90%29.pdf
+
+---
+
+Если потребуется уточнить или дополнить этот список, пожалуйста, дайте знать.

@@ -1,18 +1,11 @@
 ## 1
 
 Отличная тема! Разбираться в том, как устроены высшие уровни онтологий и как они соотносятся, действительно полезно для работы с данными. Я подобрала схему и поясню, в чём суть связей между DOLCE и BFO на первых четырёх уровнях. 
-[```10```](https://researchspace.csir.co.za/server/api/core/bitstreams/2495356a-71ca-4346-a1ec-5384296df353/content)
+- [```10```](https://researchspace.csir.co.za/server/api/core/bitstreams/2495356a-71ca-4346-a1ec-5384296df353/content)
+- [```3```](https://www.researchgate.net/publication/46273581_Mapping_BFO_and_DOLCE)
+- [```12```](https://www.academia.edu/102288142/BFO_and_DOLCE_So_Far_So_Close_)
 
-[```3```](https://www.researchgate.net/publication/46273581_Mapping_BFO_and_DOLCE)
-
-[```12```](https://www.academia.edu/102288142/BFO_and_DOLCE_So_Far_So_Close_)
-
-Вот как это выглядит визуально:
-
-
-[![NEW - BFO Metal Detector](https://avatars.mds.yandex.net/i?id=e32df6def0f8d3b6c82c827d449e8dae_l-8797773-images-thumbs&n=13)](http://chemelec.com/Projects/Metal-BFO-2/BFO-2.htm)
-
-А теперь разберу по уровням, что к чему относится и в чём нюансы сопоставления.
+по уровням:
 
 *   **1-й уровень.** В DOLCE это просто «сущность» (entity). В BFO тоже базовый уровень — «сущность» (entity). Здесь соответствие прямое: обе онтологии на самом верху описывают всё, что вообще может существовать. [```10```](https://researchspace.csir.co.za/server/api/core/bitstreams/2495356a-71ca-4346-a1ec-5384296df353/content)
 *   **2-й уровень.** DOLCE делит сущности на четыре основные категории: **endurants** (эндуранты — то, что полностью присутствует во времени, например, стол или человек), **perdurants** (пердуранты — то, что разворачивается во времени, например, событие или процесс), **qualities** (качества) и **abstract** (абстрактные сущности). BFO на этом уровне проводит более фундаментальное разделение: **continuants** (континуанты — примерно соответствуют эндурантам: объекты, сохраняющие идентичность во времени) и **occurrents** (оккурренты — процессы, разворачивающиеся во времени, аналог пердурантов). То есть ключевая связь: *endurants ↔ continuants*, *perdurants ↔ occurrents*. [```1```](https://arxiv.org/pdf/2308.01597)[```6```](https://www.researchgate.net/publication/313795548_Information_Architecture_for_Organizations_An_Ontological_Approach)[```10```](https://researchspace.csir.co.za/server/api/core/bitstreams/2495356a-71ca-4346-a1ec-5384296df353/content)

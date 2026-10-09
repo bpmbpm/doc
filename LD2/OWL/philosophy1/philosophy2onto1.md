@@ -1,6 +1,6 @@
 ## contents
 
-- https://github.com/bpmbpm/doc/edit/main/LD2/OWL/philosophy1/philosophy2onto1.md#g2
+- https://github.com/bpmbpm/doc/blob/main/LD2/OWL/philosophy1/philosophy2onto1.md#g2
   - «Entity» в SUMO как расщепление на сущее и суть
 
 ## g1

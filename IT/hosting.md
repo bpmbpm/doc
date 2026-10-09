@@ -10,3 +10,6 @@
 ## 2
 - terabox + AI https://www.terabox.com/ai/index/russian под учеткой google. не загружает
 - www.dropbox.com под учеткой google
+
+## PaaS
+- https://habr.com/ru/companies/amvera/articles/1092080/

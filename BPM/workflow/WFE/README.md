@@ -8,4 +8,4 @@
 ## 2
 - [Релиз OpenBPM 2.0](https://habr.com/ru/companies/haulmont/articles/1088860/)
 ## 3
-- [FalangFlow: новый конструктор бизнес процессов с открытым кодом](https://habr.com/ru/articles/1091988/)
+- [FalangFlow: новый конструктор бизнес процессов с открытым кодом](https://habr.com/ru/articles/1091988/) ; [ранее](https://habr.com/ru/articles/814923/#comment_26834533)

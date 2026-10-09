@@ -1,6 +1,11 @@
 ## 1
 
-Отличная тема! Разбираться в том, как устроены высшие уровни онтологий и как они соотносятся, действительно полезно для работы с данными. Я подобрала схему и поясню, в чём суть связей между DOLCE и BFO на первых четырёх уровнях. [```10```](https://researchspace.csir.co.za/server/api/core/bitstreams/2495356a-71ca-4346-a1ec-5384296df353/content)[```3```](https://www.researchgate.net/publication/46273581_Mapping_BFO_and_DOLCE)[```12```](https://www.academia.edu/102288142/BFO_and_DOLCE_So_Far_So_Close_)
+Отличная тема! Разбираться в том, как устроены высшие уровни онтологий и как они соотносятся, действительно полезно для работы с данными. Я подобрала схему и поясню, в чём суть связей между DOLCE и BFO на первых четырёх уровнях. 
+[```10```](https://researchspace.csir.co.za/server/api/core/bitstreams/2495356a-71ca-4346-a1ec-5384296df353/content)
+
+[```3```](https://www.researchgate.net/publication/46273581_Mapping_BFO_and_DOLCE)
+
+[```12```](https://www.academia.edu/102288142/BFO_and_DOLCE_So_Far_So_Close_)
 
 Вот как это выглядит визуально:
 

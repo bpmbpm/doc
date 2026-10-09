@@ -1,5 +1,9 @@
 ## contents
 
+
+
+- https://github.com/bpmbpm/doc/blob/main/LD2/OWL/philosophy1/philosophy2onto1.md#g1
+  - 1.1. Проблема перевода «Мир» (World / κόσμος)
 - https://github.com/bpmbpm/doc/blob/main/LD2/OWL/philosophy1/philosophy2onto1.md#g2
   - «Entity» в SUMO как расщепление на сущее и суть
 

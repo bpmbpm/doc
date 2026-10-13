@@ -66,3 +66,68 @@ OWL/RDFS — это SoundUnderApproximationдиалект компилятора
 
 Если будешь проектировать онтологию, советую держать в голове этот дуализм: сначала проработай TBox (что ты вообще моделируешь), а потом заполняй ABox (какие реальные объекты под эту модель подходят). Подсказать, как на практике проверить согласованность TBox и ABox? 😊
 
+## 1.2
+
+Отличная тема! Разбираться в том, как устроена дескрипционная логика (Description Logic, DL), действительно полезно, особенно если работаешь с онтологиями (например, в OWL). Я коротко объясню, что такое RBox, и как он стыкуется с ABox и TBox. [```1```](https://eng.libretexts.org/Bookshelves/Computer_Science/Programming_and_Computation_Fundamentals/An_Introduction_to_Ontology_Engineering_%28Keet%29/04%3A_Description_Logics/4.02%3A_Description_Logics_Primer)[```7```](https://ssi.magtu.ru/doc/2014-2/%D0%9C%D0%B8%D0%9F%D0%9E_2_2014-81-89.pdf)[```10```](http://dspace.bsuedu.ru/bitstream/123456789/47696/1/Mikhelev_Formalizatsiya_20.pdf)
+
+## Связь между компонентами
+
+В дескрипционной логике базу знаний (онтологию) часто разбивают на три части — в зависимости от того, *что* именно они описывают:
+* **TBox (Terminological Box)** — содержит *терминологию*, то есть общие знания о понятиях (концептах) и их взаимосвязях. Например: «Все матери являются родителями» (Mother ⊑ Parent) или «Женщина эквивалентна человеку и женскому полу» (Woman ≡ Person ⊓ Female). [```1```](https://eng.libretexts.org/Bookshelves/Computer_Science/Programming_and_Computation_Fundamentals/An_Introduction_to_Ontology_Engineering_%28Keet%29/04%3A_Description_Logics/4.02%3A_Description_Logics_Primer)[```2```](https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F_%D0%BB%D0%BE%D0%B3%D0%B8%D0%BA%D0%B0)
+* **ABox (Assertional Box)** — фиксирует *конкретные факты* об отдельных индивидах (экземплярах). Например: «Анна является матерью» (Mother(Anna)) или «Анна является родителем Петра» (parentOf(Anna, Petr)). [```1```](https://eng.libretexts.org/Bookshelves/Computer_Science/Programming_and_Computation_Fundamentals/An_Introduction_to_Ontology_Engineering_%28Keet%29/04%3A_Description_Logics/4.02%3A_Description_Logics_Primer)
+* **RBox (Relational Box)** — выделяется, когда нужно описать *сложные отношения между самими ролями* (а не между индивидами, как в ABox). То есть RBox работает на уровне «мета-описаний»: задаёт иерархию ролей, их свойства. [```1```](https://eng.libretexts.org/Bookshelves/Computer_Science/Programming_and_Computation_Fundamentals/An_Introduction_to_Ontology_Engineering_%28Keet%29/04%3A_Description_Logics/4.02%3A_Description_Logics_Primer)[```7```](https://ssi.magtu.ru/doc/2014-2/%D0%9C%D0%B8%D0%9F%D0%9E_2_2014-81-89.pdf)[```10```](http://dspace.bsuedu.ru/bitstream/123456789/47696/1/Mikhelev_Formalizatsiya_20.pdf)
+
+Проще говоря: TBox — про понятия, ABox — про конкретные объекты и их связи, а RBox — про правила и свойства самих связей (ролей). [```1```](https://eng.libretexts.org/Bookshelves/Computer_Science/Programming_and_Computation_Fundamentals/An_Introduction_to_Ontology_Engineering_%28Keet%29/04%3A_Description_Logics/4.02%3A_Description_Logics_Primer)[```10```](http://dspace.bsuedu.ru/bitstream/123456789/47696/1/Mikhelev_Formalizatsiya_20.pdf)
+
+## Место RBox в дескрипционной логике
+
+RBox появляется в более выразительных расширениях базовых логик (например, в SHIOQ). В простых логиках (вроде ALC) аксиомы ролей могут включаться прямо в TBox, но когда задача усложняется (нужны транзитивные роли, композиция, иерархия), их выносят в отдельный RBox для ясности и удобства. [```10```](http://dspace.bsuedu.ru/bitstream/123456789/47696/1/Mikhelev_Formalizatsiya_20.pdf)[```7```](https://ssi.magtu.ru/doc/2014-2/%D0%9C%D0%B8%D0%9F%D0%9E_2_2014-81-89.pdf)
+
+**Что может содержать RBox?**
+* **Аксиомы включения ролей** (R ⊑ S) — говорят, что роль R является подролью S (например, «подросток» ⊑ «ребёнок»).
+* **Аксиомы транзитивности** (Trans(R)) — отмечают, что роль R транзитивна (если A связан с B, а B с C, то A связан с C).
+* Иногда и другие свойства (симметричность, функциональность). [```3```](https://arxiv.org/html/2307.09561)[```10```](http://dspace.bsuedu.ru/bitstream/123456789/47696/1/Mikhelev_Formalizatsiya_20.pdf)
+
+## Как всё работает вместе
+
+Когда вы формируете полную базу знаний, вы объединяете эти части: **K = TBox ∪ ABox ∪ RBox**. Механизмы логического вывода (reasoner) используют все три компонента совместно, чтобы делать умозаключения. Например, аксиомы из RBox (скажем, транзитивность роли «является предком») в сочетании с фактами из ABox («Анна — мать Петра», «Пётр — отец Ивана») позволяют системе вывести, что «Анна — предок Ивана». [```10```](http://dspace.bsuedu.ru/bitstream/123456789/47696/1/Mikhelev_Formalizatsiya_20.pdf)[```1```](https://eng.libretexts.org/Bookshelves/Computer_Science/Programming_and_Computation_Fundamentals/An_Introduction_to_Ontology_Engineering_%28Keet%29/04%3A_Description_Logics/4.02%3A_Description_Logics_Primer)
+
+## Пример для наглядности
+
+Допустим, вы моделируете семейную онтологию.
+* **TBox** определяет: Parent ⊑ Person, Child ⊑ Person.
+* **RBox** добавляет: Trans(hasChild) (роль «имеет ребёнка» транзитивна) и, возможно, hierarchy: hasChild ⊑ relatedTo.
+* **ABox** заполняет конкретными фактами: hasChild(Anna, Petr), hasChild(Petr, Ivan).
+
+Система, опираясь на RBox (транзитивность), сможет вывести, что Anna связана с Ivan через цепочку hasChild. [```10```](http://dspace.bsuedu.ru/bitstream/123456789/47696/1/Mikhelev_Formalizatsiya_20.pdf)
+
+Так что RBox — это не замена TBox или ABox, а дополнительный уровень, который добавляет выразительности, позволяя описывать структуру самих отношений, а не только понятия и факты. Если будешь проектировать онтологию со сложными связями — смело выделяй RBox! Подсказать, как какую-нибудь конкретную роль (например, «часть целого» или «предшествует во времени») описать в RBox? [```7```](https://ssi.magtu.ru/doc/2014-2/%D0%9C%D0%B8%D0%9F%D0%9E_2_2014-81-89.pdf)[```10```](http://dspace.bsuedu.ru/bitstream/123456789/47696/1/Mikhelev_Formalizatsiya_20.pdf)
+
+## 1.3
+
+
+## `Parent ⊑ Person`
+
+Символ `⊑` в дескрипционной логике (DL) означает **«является подклассом»** или **«включается в»**. То есть запись `Parent ⊑ Person` переводится так: **«Все родители — это люди»** (или «концепт „Родитель“ включается в концепт „Человек“»). [```1```](https://www.isibang.ac.in/~bisu/ontology/DescriptionLogics_2022.pdf)[```3```](https://www.dbis.informatik.uni-goettingen.de/Teaching/SWPr-SS20/f-owl)[```5```](https://www.researchgate.net/publication/367192507_Semantic_Matching_of_Description_Logics_Ontologies)
+
+Проще говоря: если какой-то индивид (например, Анна) является родителем, то из этой аксиомы система автоматически делает вывод, что Анна — также и человек. Это способ задать иерархию понятий: более узкий концепт (Parent) наследует свойства более широкого (Person). [```1```](https://www.isibang.ac.in/~bisu/ontology/DescriptionLogics_2022.pdf)[```3```](https://www.dbis.informatik.uni-goettingen.de/Teaching/SWPr-SS20/f-owl)
+
+## Что такое транзитивные отношения?
+
+Бинарное отношение называется **транзитивным**, если выполняется такое правило: если первый элемент связан со вторым, а второй — с третьим, то первый обязательно связан и с третьим. Формально: для отношения `R` и элементов `a`, `b`, `c` из выполнения `aRb` и `bRc` следует `aRc`. [```6```](https://neerc.ifmo.ru/wiki/index.php?title=%D0%A2%D1%80%D0%B0%D0%BD%D0%B7%D0%B8%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5_%D0%BE%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B5)[```8```](https://moodle.kstu.ru/pluginfile.php/632293/mod_resource/content/1/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%20%E2%84%962.%20%D0%91%D0%B8%D0%BD%D0%B0%D1%80%D0%BD%D1%8B%D0%B5%20%D0%BE%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%20%D1%81%D0%BE%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B8%D1%8F.pdf)
+
+**Примеры:**
+* Отношение «меньше или равно» на числах транзитивно: если `a ≤ b` и `b ≤ c`, то `a ≤ c`.
+* Отношение «быть предком» тоже транзитивно: если Анна — мать Бориса, а Борис — отец Виктора, то Анна — предок Виктора. [```6```](https://neerc.ifmo.ru/wiki/index.php?title=%D0%A2%D1%80%D0%B0%D0%BD%D0%B7%D0%B8%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5_%D0%BE%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B5)
+
+**А вот пример нетранзитивного отношения:** «есть». Волки едят оленей, олени едят траву, но из этого не следует, что волки едят траву. [```6```](https://neerc.ifmo.ru/wiki/index.php?title=%D0%A2%D1%80%D0%B0%D0%BD%D0%B7%D0%B8%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5_%D0%BE%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B5)
+
+В дескрипционной логике транзитивность часто применяют к ролям (свойствам). Например, можно объявить роль `hasChild` транзитивной. Тогда, если у Анны есть ребёнок Борис, а у Бориса — ребёнок Виктор, система сможет вывести, что у Анны есть внук Виктор (через транзитивное замыкание роли). Это мощный инструмент для автоматического вывода новых фактов из имеющихся аксиом. [```8```](https://moodle.kstu.ru/pluginfile.php/632293/mod_resource/content/1/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%20%E2%84%962.%20%D0%91%D0%B8%D0%BD%D0%B0%D1%80%D0%BD%D1%8B%D0%B5%20%D0%BE%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%20%D1%81%D0%BE%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B8%D1%8F.pdf)
+
+## Как дескрипционная логика связана с другими направлениями?
+
+* **С теорией множеств (Set Theory).** Здесь прямая связь: в семантике DL концепты (классы) интерпретируются как **множества** элементов (индивидов), а роли (свойства, отношения) — как **множества упорядоченных пар** элементов. То есть логика работает с множествами и операциями над ними (объединение, пересечение, дополнение), просто в более структурированном виде, приспособленном для представления знаний. [```1```](https://www.isibang.ac.in/~bisu/ontology/DescriptionLogics_2022.pdf)
+* **С логикой первого порядка (First-Order Logic, FOL).** Дескрипционные логики можно рассматривать как специальные, более выразительные и разрешимые фрагменты логики первого порядка. Многие конструкции DL (концепты, роли, аксиомы включения) имеют прямые аналоги в FOL, но DL фокусируется на задачах представления и вывода знаний в предметных областях, а не на произвольных логических формулах. [```1```](https://www.isibang.ac.in/~bisu/ontology/DescriptionLogics_2022.pdf)
+* **С другими областями.** DL тесно переплетается с семантическими сетями, онтологическим инжинирингом, искусственным интеллектом и семантическим вебом (например, язык OWL построен на основе DL). [```1```](https://www.isibang.ac.in/~bisu/ontology/DescriptionLogics_2022.pdf)[```2```](https://eclass.cmc.msu.ru/pluginfile.php/45295/mod_resource/content/0/Conceptual%20Modeling%202.pdf)
+
+Если какая-то из этих тем зацепила сильнее — например, хочешь разобрать, как именно строится транзитивное замыкание роли, или посмотреть пример сложной онтологии — пиши, разберу детальнее!

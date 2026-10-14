@@ -1,5 +1,6 @@
 google
 ## 1
+SUMO: Quantity, Proposition, Attribute, Relation, Set of Class
 
 В Suggested Upper Merged Ontology (SUMO) все перечисленные вами понятия (за исключением специфического уточнения для классов) относятся к категории Abstract (Абстрактные сущности).  
 Корневой элемент онтологии Entity делится на два непересекающихся класса: Physical (Физические объекты и процессы) и Abstract. [1](https://dl.acm.org/doi/pdf/10.1145/505168.505170), [2](https://en.wikipedia.org/wiki/Suggested_Upper_Merged_Ontology)  

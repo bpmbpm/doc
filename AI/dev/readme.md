@@ -68,3 +68,6 @@ HTML → CSS → JavaScript → React → Next → Node → Express → MongoDB
 - example https://habr.com/ru/articles/982620/#comment_29343506 ; https://github.com/github/spec-kit/blob/main/templates/spec-template.md
 - Почему spec-driven development плохо работает на микросервисах: часть 1. Где теряется контекст https://habr.com/ru/articles/1033510/
 - [Лабораторная работа № 4](https://habr.com/ru/articles/1092010/) SDD (Spec-Driven Development / Specification-Driven Development)
+
+## begin
+- [ИИ‑агенты. Часть 1: Первые шаги](https://habr.com/ru/articles/1094062/)

@@ -4,3 +4,6 @@
 
 ### theory
 - [Дифтонги](https://arnovaschool.com/diftongi-v-anglijskom-yazyike)
+
+### ste
+- https://github.com/bpmbpm/doc/blob/main/AI/dev/method/v1.md#asd-ste-100

@@ -1,5 +1,6 @@
 ## also
 - https://github.com/bpmbpm/doc/tree/main/LD2/DSL
+- https://github.com/bpmbpm/doc/blob/main/AI/dev/method/v1.md
 
 ### project
 - https://github.com/bpmbpm/DSL1

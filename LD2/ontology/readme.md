@@ -12,5 +12,7 @@
 - https://www.w3.org/2007/OWL/wiki/PrimerExampleTurtle
 - https://gist.github.com/balhoff/62fb8f2c1e29bc0d4d27c3df0d005154
 
+## 3
+- https://en.wikipedia.org/wiki/Formal_ontology
 
 

@@ -4,7 +4,8 @@
 
 ### lecture
 - [intuit.ru Онтологии и тезаурусы: модели, инструменты, приложения](https://new2.intuit.ru/studies/professional_skill_improvements/1627/info)
-
+- [Классификации онтологий](https://intuit.ru/personal/program/ontoth1315/empty/klassifikatsii_ontologiy_416/)
+  
 ### confuse
 Spark SQL — модуль Apache Spark, который интегрирует реляционную обработку с функциональным программированием Spark. Он позволяет выполнять распределённые запросы стандарта ANSI SQL, работать с данными в формате DataFrames и использовать оптимизатор Catalyst для построения эффективных планов выполнения.
 

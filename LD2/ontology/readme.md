@@ -15,4 +15,5 @@
 ## 3
 - https://en.wikipedia.org/wiki/Formal_ontology
 
-
+## article
+- https://www.ontology-of-designing.ru/article/

@@ -7,3 +7,6 @@
 
 ### ste
 - https://github.com/bpmbpm/doc/blob/main/AI/dev/method/v1.md#asd-ste-100
+
+## AI study 
+- https://habr.com/ru/articles/1095738/#comment_30541388

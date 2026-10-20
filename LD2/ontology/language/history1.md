@@ -216,3 +216,260 @@ timeline
 - Для **ограничений в моделях**: OCL, SHACL, ALLOY, SBVR.
 - Для **инженерных доменных моделей**: IDEF5, EXPRESS, IFC, SysML, ISO 15926, Gellish.
 - Для **процессов и архитектуры**: BPMN, CMMN, ArchiMate, UML — с последующей формализацией через OCL, OWL или DOL.
+
+## 2.1
+
+Ниже — вертикальная история развития языков описания знаний и онтологий с ключевыми персоналиями, университетами и организациями. Даты указаны для появления/стандартизации ключевых результатов; многие направления развивались параллельно. [cdn.aaai](https://cdn.aaai.org/KR/2004/KR04-078.pdf)
+
+## Вертикальная история
+
+```text
+1950-е–1960-е
+│
+├─ 1950-е
+│  ├─ Newell & Simon, RAND Corporation / Carnegie Institute of Technology
+│  │  └─ Logic Theorist, General Problem Solver: машинные рассуждения и поиск
+│  └─ John McCarthy, Dartmouth / MIT / Stanford
+│     └─ Формализация «Artificial Intelligence» и логического подхода к знанию
+│
+└─ 1960-е
+   ├─ Ross Quillian, Carnegie Mellon University
+   │  └─ Semantic Networks: понятия как узлы, отношения как дуги [45]
+   ├─ Marvin Minsky, MIT
+   │  └─ Идеи структурированного представления знаний, позднее развитые во frames
+   └─ J. Alan Robinson
+      └─ Resolution principle: основа автоматического доказательства теорем
+
+1970-е
+│
+├─ 1972
+│  └─ Alain Colmerauer & Philippe Roussel, University of Marseille / University of Aix-Marseille
+│     └─ Prolog: логическое программирование, Horn clauses
+│
+├─ 1974–1975
+│  └─ Marvin Minsky, MIT AI Laboratory
+│     └─ Frames: объектно-ориентированные структуры со слотами и значениями [45]
+│
+└─ 1976–1984
+   └─ John F. Sowa, IBM / SUNY
+      └─ Conceptual Graphs: графовая форма логики первого порядка [45]
+
+1980-е
+│
+├─ 1980-е
+│  ├─ Ronald J. Brachman, Bell Labs / USC ISI
+│  │  └─ KL-ONE: структурное наследование, концепты и роли
+│  ├─ Hector Levesque, University of Toronto
+│  │  └─ Теория знаний и рассуждений, совместно с Brachman
+│  └─ Из KL-ONE вырастают terminological / description logics  [cs.ox.ac](https://www.cs.ox.ac.uk/ian.horrocks/Publications/download/2010/HoPa10a.pdf)
+│
+├─ 1984
+│  └─ Douglas Lenat, Stanford / MCC / Cycorp
+│     └─ Проект Cyc и язык CycL: масштабная общая онтология
+│
+├─ 1985–1990-е
+│  └─ Robert MacGregor, USC Information Sciences Institute
+│     └─ LOOM: практическая KR/DL-система, потомок KL-ONE  [cs.ox.ac](https://www.cs.ox.ac.uk/ian.horrocks/Publications/download/2010/HoPa10a.pdf)
+│
+└─ 1980-е–1990-е
+   └─ DARPA, Stanford, USC ISI
+      └─ Knowledge Sharing Effort: предпосылки KIF и Ontolingua  [arxiv](https://www.arxiv.org/pdf/1608.03556.pdf)
+
+1990-е
+│
+├─ 1992
+│  ├─ Michael Genesereth & Richard Fikes, Stanford University
+│  │  └─ KIF — Knowledge Interchange Format, FOL-ориентированный язык обмена знаниями  [pdfs.semanticscholar](https://pdfs.semanticscholar.org/3cc7/9faec30a40fbd587dcf6906c7c3425e49c36.pdf)
+│  └─ Thomas Gruber, Stanford University
+│     └─ Ontolingua: онтологическая надстройка над KIF  [pdfs.semanticscholar](https://pdfs.semanticscholar.org/3cc7/9faec30a40fbd587dcf6906c7c3425e49c36.pdf)
+│
+├─ 1990-е
+│  ├─ Michael Kifer, Stony Brook University
+│  │  └─ F-logic: фреймы + объектная модель + логика первого порядка  [pure.uva](https://pure.uva.nl/ws/files/763166/68629_07.pdf)
+│  └─ Georg Lausen, University of Freiburg
+│     └─ Совместные работы по F-logic
+│
+├─ 1995
+│  ├─ Knowledge Based Systems, Inc. (KBSI), College Station, Texas
+│  ├─ Armstrong Laboratory, Wright-Patterson Air Force Base
+│  └─ IDEF5 Ontology Description Capture Method:
+│     schematic language + elaboration language [39][40][42]
+│
+├─ 1996–1999
+│  ├─ W3C, под руководством Tim Berners-Lee
+│  │  └─ Формирование идей Semantic Web
+│  ├─ Ora Lassila, Nokia Research Center
+│  │  └─ RDF: модель триплетов «субъект—предикат—объект»  [webstore.iec](https://webstore.iec.ch/en/publication/63569)
+│  └─ 1999: RDF и RDFS становятся W3C Recommendations  [w3](https://www.w3.org/TR/)
+│
+└─ 1999
+   └─ OMG / Jos Warmer & Anneke Kleppe
+      └─ OCL: язык ограничений для UML-моделей  [w3](https://www.w3.org/2007/OWL/wiki/Ian_Horrocks)
+
+2000–2004: рождение Semantic Web онтологий
+│
+├─ 2000
+│  ├─ Ian Horrocks, University of Manchester
+│  ├─ Dieter Fensel, Vrije Universiteit Amsterdam / University of Innsbruck
+│  ├─ Frank van Harmelen, Vrije Universiteit Amsterdam
+│  └─ OIL — Ontology Inference Layer:
+│     DL + frames + XML/RDF; проект On-To-Knowledge, финансирование ЕС [33][34][36][44]
+│
+├─ 2000–2001
+│  ├─ DARPA DAML Program
+│  ├─ James Hendler, University of Maryland
+│  ├─ Peter F. Patel-Schneider, Bell Labs / Nuance
+│  └─ DAML-ONT: американская ветвь веб-онтологий [34][36]
+│
+├─ 2001
+│  ├─ Объединение DAML-ONT и OIL
+│  └─ DAML+OIL: первая DL-онтология, тесно связанная с RDF/RDFS  [jfsowa](http://www.jfsowa.com/talks/clintro.pdf)
+│
+├─ 2001
+│  └─ Tim Berners-Lee, James Hendler, Ora Lassila
+│     └─ Статья «The Semantic Web»: концептуальный манифест направления [45]
+│
+└─ 2004
+   ├─ W3C Web Ontology Working Group
+   ├─ Ian Horrocks, University of Manchester
+   ├─ Peter F. Patel-Schneider, Bell Labs
+   ├─ Deborah McGuinness, Stanford University
+   └─ OWL становится W3C Recommendation 10 февраля 2004 г. [34][44]
+
+2004–2012: зрелость OWL и логического обмена
+│
+├─ 2004
+│  ├─ W3C RDF Data Access Working Group
+│  └─ SPARQL: язык запросов к RDF; Recommendation — 15 января 2008 г.  [daml](https://www.daml.org/meetings/2004/12/pi/Bell_Labs_Univ_Manchester.pdf)
+│
+├─ 2007
+│  ├─ ISO/IEC JTC 1
+│  ├─ John F. Sowa, Chris Menzel, Pat Hayes и сообщество Common Logic
+│  └─ ISO/IEC 24707: Common Logic — семейство диалектов CLIF, CGIF, XCL  [mkbergman](https://www.mkbergman.com/wp-content/themes/ai3v2/files/2010Posts/a-brief-survey-of-ontology-development-methodologies.pdf)
+│
+├─ 2007–2009
+│  ├─ W3C OWL Working Group
+│  ├─ Boris Motik, University of Oxford
+│  ├─ Peter F. Patel-Schneider
+│  ├─ Ian Horrocks
+│  └─ OWL 2: профили EL, QL, RL; ключи, типы данных, расширенные аннотации  [mkbergman](https://www.mkbergman.com/906/a-brief-survey-of-ontology-development-methodologies/)
+│
+├─ 2009
+│  └─ OWL 2 становится W3C Recommendation; второе издание — 2012 г.  [mkbergman](https://www.mkbergman.com/906/a-brief-survey-of-ontology-development-methodologies/)
+│
+└─ 2009–2010
+   ├─ W3C RIF Working Group
+   ├─ Christian de Sainte Marie, IBM
+   ├─ Harold Boley, University of New Brunswick
+   └─ RIF: Rule Interchange Format — обмен правилами между системами
+
+2010-е: валидация, графы знаний и доменные онтологии
+│
+├─ 2013
+│  └─ W3C
+│     └─ SPARQL 1.1: расширенные запросы, агрегаты, обновления  [daml](https://www.daml.org/meetings/2004/12/pi/Bell_Labs_Univ_Manchester.pdf)
+│
+├─ 2014–2017
+│  ├─ W3C Data Shapes Working Group
+│  ├─ Holger Knublauch, TopQuadrant
+│  ├─ Karen Coyle, библиотечное сообщество
+│  └─ SHACL: Shapes Constraint Language, W3C Recommendation 20 июля 2017 г.  [cs.man.ac](http://www.cs.man.ac.uk/~horrocks/Slides/glasgow.pdf)
+│
+├─ 2012–2018
+│  ├─ Barry Smith, University at Buffalo
+│  ├─ Alan Ruttenberg, Yale University
+│  └─ BFO и биомедицинские OWL-онтологии
+│
+├─ 2010-е
+│  ├─ Nicola Guarino, ISTC-CNR, Italy
+│  │  └─ DOLCE и формальная онтологическая инженерия
+│  ├─ Michael Gruninger, University of Toronto
+│  └─ TOVE / промышленные и экономические онтологии
+│
+└─ 2010-е
+   └─ Google, Microsoft, IBM, Facebook, Amazon
+      └─ Industrial knowledge graphs: Freebase/Google Knowledge Graph, DBpedia, Wikidata и др.
+
+2020-е: графы, ограничения и нейросимволические системы
+│
+├─ 2020-е
+│  ├─ W3C RDF-star / SPARQL-star community
+│  │  └─ Метаданные о триплетах, вложенные утверждения
+│
+├─ 2020-е
+│  ├─ W3C Data Shapes Working Group
+│  └─ SHACL 1.2: развитие shapes, SPARQL-интеграции и валидации  [files.ifi.uzh](https://files.ifi.uzh.ch/ddis/iswc_archive/iswc/pps/web/2006/lsdis.cs.uga.edu/iswc06/workshop_tutorial/tutorial_parsia.pdf)
+│
+├─ 2020-е
+│  ├─ ISO/IEC, W3C, OMG
+│  └─ Интеграция OWL, SHACL, RDF-star, property graphs и GQL
+│
+└─ 2020-е
+   ├─ Stanford, Oxford, MIT, TU Wien, Fraunhofer
+   ├─ Palantir, Siemens, Bosch, SAP
+   └─ Ontology-driven analytics, semantic digital twins,
+      neuro-symbolic AI, LLM + knowledge graphs
+```
+
+## Основные персонажи по направлениям
+
+| Направление | Ключевые деятели | Учреждения |
+|---|---|---|
+| Semantic networks | Ross Quillian | Carnegie Mellon University  [pdfs.semanticscholar](https://pdfs.semanticscholar.org/3cc7/9faec30a40fbd587dcf6906c7c3425e49c36.pdf) |
+| Frames | Marvin Minsky | MIT  [pdfs.semanticscholar](https://pdfs.semanticscholar.org/3cc7/9faec30a40fbd587dcf6906c7c3425e49c36.pdf) |
+| Conceptual Graphs | John F. Sowa | IBM, SUNY  [pdfs.semanticscholar](https://pdfs.semanticscholar.org/3cc7/9faec30a40fbd587dcf6906c7c3425e49c36.pdf) |
+| KL-ONE и DL | Ronald J. Brachman, Hector Levesque | Bell Labs, USC ISI, University of Toronto  |
+| KIF и Ontolingua | Michael Genesereth, Richard Fikes, Thomas Gruber | Stanford University  [pdfs.semanticscholar](https://pdfs.semanticscholar.org/3cc7/9faec30a40fbd587dcf6906c7c3425e49c36.pdf) |
+| CycL | Douglas Lenat | MCC, Cycorp  [pdfs.semanticscholar](https://pdfs.semanticscholar.org/3cc7/9faec30a40fbd587dcf6906c7c3425e49c36.pdf) |
+| F-logic | Michael Kifer, Georg Lausen | Stony Brook University, University of Freiburg  |
+| IDEF5 | KBSI; техническое руководство Armstrong Laboratory | Knowledge Based Systems, Inc.; Wright-Patterson AFB  [segoldmine.ppi-int](https://segoldmine.ppi-int.com/node/44665) |
+| RDF и Semantic Web | Tim Berners-Lee, Ora Lassila | W3C, MIT, Nokia Research Center  [pdfs.semanticscholar](https://pdfs.semanticscholar.org/3cc7/9faec30a40fbd587dcf6906c7c3425e49c36.pdf) |
+| OIL / DAML+OIL / OWL | Ian Horrocks, Peter F. Patel-Schneider, Frank van Harmelen, Dieter Fensel, Deborah McGuinness | University of Manchester, VU Amsterdam, Bell Labs, Stanford, W3C  [cdn.aaai](https://cdn.aaai.org/KR/2004/KR04-078.pdf) |
+| Common Logic | John F. Sowa, Chris Menzel, Pat Hayes | ISO/IEC JTC 1, SUNY, сообщество CL  |
+| OWL 2 | Boris Motik, Ian Horrocks, Peter F. Patel-Schneider | University of Oxford, University of Manchester, W3C  |
+| SPARQL и SHACL | W3C рабочие группы; Holger Knublauch | W3C, TopQuadrant  |
+| Формальная онтология | Barry Smith, Nicola Guarino, Michael Gruninger | University at Buffalo, ISTC-CNR, University of Toronto |
+
+## Сжатая генеалогия
+
+```text
+Semantic Networks (Quillian, 1960-е)
+        │
+        ├── Frames (Minsky, 1975)
+        │       │
+        │       └── KL-ONE (Brachman, 1980-е)
+        │               │
+        │               └── Description Logics
+        │                       │
+        │                       ├── LOOM (MacGregor)
+        │                       ├── OIL (Horrocks, Fensel, van Harmelen, 2000)
+        │                       ├── DAML+OIL (DARPA + EU, 2001)
+        │                       └── OWL (W3C, 2004) → OWL 2 (2009)
+        │
+        └── Conceptual Graphs (Sowa, 1984)
+                │
+                └── CGIF → Common Logic / CLIF (ISO/IEC 24707)
+
+First-Order Logic
+        │
+        ├── KIF (Genesereth & Fikes, 1992)
+        │       ├── Ontolingua (Gruber, 1992)
+        │       ├── SUO-KIF → SUMO (Niles & Pease)
+        │       └── IDEF5 elaboration language (KBSI, 1995)
+        │
+        └── CycL (Lenat, 1984)
+
+RDF / RDFS (W3C, 1999)
+        │
+        ├── OIL → DAML+OIL → OWL → OWL 2
+        ├── SPARQL (2008) → SPARQL 1.1 (2013)
+        ├── SWRL (2004)
+        ├── RIF (2009–2010)
+        └── SHACL (2017) → SHACL 1.2
+```
+
+## Важное уточнение
+
+- **IDEF5** — это прежде всего методология онтологического анализа, реализованная KBSI по контракту для ВВС США; ее формальная часть опирается на идеи логики первого порядка и KIF-подобных представлений. [segoldmine.ppi-int](https://segoldmine.ppi-int.com/node/44665)
+- **SUO-KIF** — не самостоятельный «язык-предок», а практическое расширение KIF, выбранное как носитель SUMO. 
+- **OCL** принадлежит не линии онтологических логик, а линии модельно-ориентированных ограничений: UML/MOF → OCL; при этом OCL может использоваться для аксиом и ограничений онтологически ориентированных моделей.

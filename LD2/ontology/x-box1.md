@@ -20,15 +20,24 @@ TBox описывает общую терминологию и структур�
 KB = \langle TBox, RBox, ABox \rangle
 \]
 
+KB=⟨TBox,RBox,ABox⟩
+
 где **онтология** — это интенциональная часть:
 
 \[
 Ontology = TBox \cup RBox
 \]
 
+Ontology=TBox∪RBox
+
 а ABox — **данные, экземпляры, фактография**, интерпретируемые через онтологию. Именно так обычно разделяют «schema/ontology» и «data/instance» в DL и Semantic Web. [cs.ubc](https://www.cs.ubc.ca/~poole/aibook/2e/html2e/ArtInt2e.Ch14.S3.SS2.html)
 
-Ваше уточнение «точнее включая RBox» существенно: в старых DL текстах RBox иногда не выделяли отдельно, а включали ролевые аксиомы в TBox. Но в выразительных логиках, особенно в \( \mathcal{SROIQ} \), лежащей в основе OWL 2 DL, RBox является отдельной группой аксиом. [ora.ox.ac](https://ora.ox.ac.uk/objects/uuid:5c4dbd42-43c0-40f3-80ca-e7bcc9473836/files/m8e7f6f6b5b9c6c80e54ff3daff7ab343)
+Ваше уточнение «точнее включая RBox» существенно: в старых DL текстах RBox иногда не выделяли отдельно, а включали ролевые аксиомы в TBox. Но в выразительных логиках, особенно в 
+
+\( \mathcal{SROIQ} \),  
+SROIQ
+
+лежащей в основе OWL 2 DL, RBox является отдельной группой аксиом. [ora.ox.ac](https://ora.ox.ac.uk/objects/uuid:5c4dbd42-43c0-40f3-80ca-e7bcc9473836/files/m8e7f6f6b5b9c6c80e54ff3daff7ab343)
 
 ## Почему встречается другая формулировка
 

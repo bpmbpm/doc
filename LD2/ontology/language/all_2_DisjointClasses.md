@@ -244,4 +244,34 @@ https://www.w3.org/TR/owl2-syntax/#Disjoint_Classes
 
 Хочешь разобрать ещё какой-нибудь пример из спецификации — например, как `SubClassOf` работает в том же ключе? 😊
 
+## 1.6
 
+Путаница действительно возникает: синтаксически конструкции вроде `DisjointClasses(Man, Woman)` похожи на предикаты (функторы с аргументами), но по роли в онтологии это **аксиомы**. Я поясню разницу и разберу, как это работает в TBox, RBox и ABox.
+
+## В чём суть
+
+**Предикат** в логике — это выражение, которое утверждает что-то об объектах (например, `isHuman(John)` — предикат `isHuman` применяется к индивиду `John`).
+
+**Аксиома** в контексте онтологий — это правило, которое задаёт структуру всей теории: оно определяет отношения между классами, свойствами или накладывает глобальные ограничения, а не описывает факт про конкретный объект. [```1```](https://scispace.com/pdf/neuro-symbolic-rdf-and-description-logic-reasoners-the-state-y4b1cfgq97.pdf)[```2```](https://eng.libretexts.org/Bookshelves/Computer_Science/Programming_and_Computation_Fundamentals/An_Introduction_to_Ontology_Engineering_%28Keet%29/04%3A_Description_Logics/4.02%3A_Description_Logics_Primer)
+
+Когда вы пишете `DisjointClasses(Man, Woman)`, вы не говорите про конкретного человека. Вы заявляете глобальное правило: **во всей онтологии** не может существовать индивид, который одновременно принадлежит и классу `Man`, и классу `Woman`. То есть это аксиома непересекаемости — она задаёт ограничение на возможные модели онтологии. [```2```](https://eng.libretexts.org/Bookshelves/Computer_Science/Programming_and_Computation_Fundamentals/An_Introduction_to_Ontology_Engineering_%28Keet%29/04%3A_Description_Logics/4.02%3A_Description_Logics_Primer)
+
+В спецификации W3C OWL 2 эту конструкцию называют аксиомой, потому что её роль — формировать базу логических правил онтологии, а не описывать факт. При этом синтаксически она действительно выглядит как предикат (функтор с аргументами) в функциональной нотации. В RDF/Turtle эта аксиома транслируется в тройки через `owl:AllDisjointClasses` и `owl:members` — то есть за синтаксисом «предиката» стоит полноценная логическая аксиома в графе. [```1```](https://scispace.com/pdf/neuro-symbolic-rdf-and-description-logic-reasoners-the-state-y4b1cfgq97.pdf)
+
+## А как в TBox, RBox, ABox?
+
+Разделение на TBox, RBox и ABox — это способ структурировать онтологию по уровню абстракции, а не жёсткое логическое разделение. В каждом из этих «коробок» действительно могут встречаться конструкции, похожие на предикаты, но их роль определяется контекстом. [```1```](https://scispace.com/pdf/neuro-symbolic-rdf-and-description-logic-reasoners-the-state-y4b1cfgq97.pdf)[```6```](https://jens-lehmann.org/files/2014/perspectives_on_ontology_learning.pdf)[```2```](https://eng.libretexts.org/Bookshelves/Computer_Science/Programming_and_Computation_Fundamentals/An_Introduction_to_Ontology_Engineering_%28Keet%29/04%3A_Description_Logics/4.02%3A_Description_Logics_Primer)
+
+*   **TBox (Terminological Box).** Здесь аксиомы описывают отношения между **концептами** (классами). Примеры: `SubClassOf(Man, Person)`, `EquivalentClasses(Man, MalePerson)`, `DisjointClasses(Man, Woman)`. Все они задают правила для структуры классов, а не факты про индивидов. [```1```](https://scispace.com/pdf/neuro-symbolic-rdf-and-description-logic-reasoners-the-state-y4b1cfgq97.pdf)[```6```](https://jens-lehmann.org/files/2014/perspectives_on_ontology_learning.pdf)
+*   **RBox (Relational Box).** Здесь аксиомы описывают свойства **ролей** (свойств). Примеры: `SubRoleOf(hasChild, hasDescendant)`, `Transitive(hasPart)`, `DisjointRoles(hasParent, hasChild)`. Опять же, это правила для иерархии и характеристик ролей, а не утверждения про конкретные пары индивидов. [```6```](https://jens-lehmann.org/files/2014/perspectives_on_ontology_learning.pdf)
+*   **ABox (Assertional Box).** Здесь уже идут **утверждения** (assertions) про конкретных **индивидов**. Примеры: `Mother(Julia)`, `parentOf(Julia, John)`, `julia ≉ john`. Здесь конструкции вроде `Mother(Julia)` или `parentOf(Julia, John)` действительно работают как предикаты: они утверждают свойство или отношение конкретного объекта. [```6```](https://jens-lehmann.org/files/2014/perspectives_on_ontology_learning.pdf)[```2```](https://eng.libretexts.org/Bookshelves/Computer_Science/Programming_and_Computation_Fundamentals/An_Introduction_to_Ontology_Engineering_%28Keet%29/04%3A_Description_Logics/4.02%3A_Description_Logics_Primer)
+
+Ключевое отличие: в TBox и RBox «предикатоподобные» конструкции задают **структуру** (правила для классов и ролей), а в ABox — **факты** (свойства и отношения конкретных объектов).
+
+## Какие статьи почитать
+
+*   **[Jens Lehmann, «Perspectives on Ontology Learning»](https://jens-lehmann.org/files/2014/perspectives_on_ontology_learning.pdf)** — в этой работе хорошо разграничиваются ABox, TBox и RBox, подробно разбираются примеры аксиом каждого типа и объясняется, как они взаимодействуют. [```6```](https://jens-lehmann.org/files/2014/perspectives_on_ontology_learning.pdf)
+*   **[Marco Calvanese, «Knowledge Representation and Ontologies — Part 6: Reasoning in the ALC Family»](https://www.inf.unibz.it/~calvanese/teaching/11-12-kro/lecture-notes/KRO-6-alc.pdf)** — лекции углубляются в логику дескрипционных логик (DL), разбирают формальные определения TBox, ABox и принципы работы с ними, включая вопросы выполнимости и подсуммирования. [```5```](https://www.inf.unibz.it/~calvanese/teaching/11-12-kro/lecture-notes/KRO-6-alc.pdf)
+*   **[LibreTexts, «4.2: Description Logics Primer»](https://eng.libretexts.org/Bookshelves/Computer_Science/Programming_and_Computation_Fundamentals/An_Introduction_to_Ontology_Engineering_%28Keet%29/04%3A_Description_Logics/4.02%3A_Description_Logics_Primer)** — практическое введение в дескрипционные логики, где на понятных примерах показано, как TBox, RBox и ABox работают вместе и в чём разница между аксиомами структуры и аксиомами фактов. [```2```](https://eng.libretexts.org/Bookshelves/Computer_Science/Programming_and_Computation_Fundamentals/An_Introduction_to_Ontology_Engineering_%28Keet%29/04%3A_Description_Logics/4.02%3A_Description_Logics_Primer)
+
+Если будешь разбирать какую-то конкретную задачу (например, как проверить согласованность ABox с TBox или как выразить сложное ограничение в RBox) — пиши, разберу детальнее!

@@ -473,3 +473,150 @@ RDF / RDFS (W3C, 1999)
 - **IDEF5** — это прежде всего методология онтологического анализа, реализованная KBSI по контракту для ВВС США; ее формальная часть опирается на идеи логики первого порядка и KIF-подобных представлений. [segoldmine.ppi-int](https://segoldmine.ppi-int.com/node/44665)
 - **SUO-KIF** — не самостоятельный «язык-предок», а практическое расширение KIF, выбранное как носитель SUMO. 
 - **OCL** принадлежит не линии онтологических логик, а линии модельно-ориентированных ограничений: UML/MOF → OCL; при этом OCL может использоваться для аксиом и ограничений онтологически ориентированных моделей.
+
+## 1.2
+
+не увидел Object Constraint Language (OCL)
+
+Вы правы: в предыдущей вертикальной истории OCL был упомянут лишь строкой в 1999 г., без его собственной линии развития. Ниже — исправленный фрагмент с выделенной историей **Object Constraint Language (OCL)** и его местом в общей генеалогии.
+
+## Вертикальная история OCL
+
+```text
+1980-е–начало 1990-х
+│
+├─ Eiffel, Bertrand Meyer
+│  └─ Design by Contract:
+│     предусловия, постусловия, инварианты
+│
+├─ Syntropy, Steve Cook & John Daniels
+│  └─ Формальная объектная методология;
+│     выражения и ограничения для объектных моделей [48][54][58]
+│
+└─ IBM Insurance Division
+   └─ IBEL — Integrated Business Engineering Language,
+      предшественник OCL [48][52][56]
+
+1995
+│
+└─ Jos Warmer, IBM
+   └─ Развитие IBEL в Object Constraint Language;
+      OCL задуман как читаемый человеком язык
+      бизнес-моделирования и ограничений [48][50][58]
+
+1996–1997
+│
+├─ OMG Object Analysis & Design Task Force
+│  └─ RFP на стандарт объектно-ориентированного
+│     анализа и проектирования [48][58]
+│
+├─ IBM + ObjectTime Limited
+│  └─ Совместное предложение, включающее OCL [48][58]
+│
+└─ 1997
+   └─ OCL входит в предложение UML и становится
+      частью стандарта UML 1.1, принятого OMG в ноябре 1997 г. [46][48][55][58]
+
+1999
+│
+└─ Jos Warmer & Anneke Kleppe
+   └─ Книга «The Object Constraint Language:
+      Precise Modeling with UML»;
+      OCL закрепляется как язык инвариантов,
+      пред- и постусловий в UML [52][59]
+
+2003–2006
+│
+├─ 2003
+│  └─ OMG публикует спецификацию UML 2.0 OCL [46][53]
+│
+└─ 2006
+   └─ OCL 2.0 становится самостоятельной OMG-спецификацией
+      с явно определенной метамоделью [47][53]
+
+2010–2014
+│
+├─ 2010
+│  └─ OCL 2.2 [47]
+│
+├─ 2011
+│  └─ OCL 2.3.1 [47]
+│
+└─ 2014
+   └─ OCL 2.4 — версия, согласованная
+      с UML 2.4.1 и MOF 2.4.1 [47][51]
+```
+
+## Кто создал OCL
+
+| Роль | Персона / организация |
+|---|---|
+| Идейный предшественник | Steve Cook и John Daniels — методология Syntropy  [um](https://www.um.es/giisw/ocltools/ocl.htm) |
+| Непосредственный создатель | Jos Warmer, IBM; развил IBEL в OCL  [um](https://www.um.es/giisw/ocltools/ocl.htm) |
+| Соавтор и семантик OCL 2 | Anneke Kleppe, Klasse Objecten  [amazon](https://www.amazon.de/Object-Constraint-Language-Addison-Wesley-Technology/dp/0321179366) |
+| Организационный дом | Object Management Group, OMG  [ethz](https://ethz.ch/content/dam/ethz/special-interest/infk/inst-infsec/information-security-group-dam/research/publications/pub2007/easst-glitches.pdf) |
+| Интеграция в стандарт | UML Partners, IBM, ObjectTime Limited  [um](https://www.um.es/giisw/ocltools/ocl.htm) |
+
+## Место OCL в классификации
+
+OCL — это **не онтологический язык** и не язык описания знаний в смысле OWL/KIF, а **язык формальных ограничений и выражений** для моделей UML и MOF. Он используется для инвариантов, предусловий, постусловий, вычислимых атрибутов и well-formedness rules метамоделей. [ethz](https://ethz.ch/content/dam/ethz/special-interest/infk/inst-infsec/information-security-group-dam/research/publications/pub2007/easst-glitches.pdf)
+
+```text
+UML / MOF
+   │
+   ├── UML Class Diagrams
+   │      └── структура классов, ассоциаций, наследования
+   │
+   └── OCL
+          └── ограничения, инварианты,
+              пред- и постусловия,
+              правила корректности метамоделей
+```
+
+Его логическая природа ближе к **типизированной объектно-ориентированной логике первого порядка с навигационными выражениями**, чем к description logics. Поэтому корректная линия такая:
+
+```text
+Design by Contract / Syntropy / IBEL
+        │
+        └── OCL 1.x (IBM → OMG UML 1.1, 1997)
+                │
+                └── OCL 2.0 (2006)
+                        │
+                        └── OCL 2.4 (2014)
+```
+
+## Исправленная общая вертикаль
+
+В общей хронологии строку OCL следует читать так:
+
+```text
+1995–1997
+│
+├─ 1995
+│  └─ Jos Warmer, IBM
+│     └─ OCL развивается из IBEL и методологии Syntropy [48][50][58]
+│
+├─ 1997
+│  ├─ IBM и ObjectTime Limited включают OCL
+│  │  в предложение OMG по UML [48][58]
+│  └─ UML 1.1 принят OMG в ноябре 1997 г.;
+│     OCL становится частью UML [46][55][58]
+│
+└─ 1999
+   └─ Jos Warmer & Anneke Kleppe
+      └─ Первая систематическая книга по OCL;
+         OCL — стандартный язык ограничений UML [52][59]
+
+2003–2014
+│
+├─ 2003
+│  └─ UML 2.0 OCL Specification [46][53]
+│
+├─ 2006
+│  └─ OCL 2.0 как отдельная OMG-спецификация [47][53]
+│
+└─ 2014
+   └─ OCL 2.4, согласованный с UML 2.4.1 и MOF 2.4.1 [47][51]
+```
+
+Таким образом, в исходной классификации OCL относится к ветви **«языки ограничений и контрактов»**, а не к ветви **«онтологические логики»**: его соседи — Eiffel contracts, JML, ALLOY, SBVR и SHACL, тогда как OWL, KIF и Common Logic находятся в другой ветви. [ethz](https://ethz.ch/content/dam/ethz/special-interest/infk/inst-infsec/information-security-group-dam/research/publications/pub2007/easst-glitches.pdf)

@@ -476,7 +476,7 @@ RDF / RDFS (W3C, 1999)
 
 ## 1.2
 
-не увидел Object Constraint Language (OCL)
+не увидел Object Constraint Language [(OCL)](https://vestnik.utmn.ru/upload/iblock/388/4_%D0%90.%D0%93.%20%D0%98%D0%B2%D0%B0%D1%88%D0%BA%D0%BE,%20%D0%95.%D0%98.%20%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B0,%20%D0%95.%D0%9E.%20%D0%9E%D0%B2%D1%81%D1%8F%D0%BD%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0,%20%D0%A1.%D0%98.%20%D0%9A%D0%BE%D0%BB%D0%BE%D0%BC%D0%B8%D0%B5%D1%86.pdf) 
 
 Вы правы: в предыдущей вертикальной истории OCL был упомянут лишь строкой в 1999 г., без его собственной линии развития. Ниже — исправленный фрагмент с выделенной историей **Object Constraint Language (OCL)** и его местом в общей генеалогии.
 

@@ -79,4 +79,21 @@ TBox + RBox + ABox →  Knowledge base / populated ontology
 - **В строгом DL-смысле:** правы вы — онтологию образуют TBox и RBox; ABox к онтологии не относится. [cs.ubc](https://www.cs.ubc.ca/~poole/aibook/2e/html2e/ArtInt2e.Ch14.S3.SS2.html)
 - **В широком современном употреблении:** оппонент тоже может быть прав, поскольку «ontology» нередко означает весь DL knowledge base, включая ABox. [ijcai](https://www.ijcai.org/Proceedings/07/Papers/035.pdf)
 - **Наиболее безопасная инженерная практика:** явно различать `ontology` (TBox+RBox), `data/instances` (ABox) и `knowledge base` (все вместе). Это устраняет двусмысленность при моделировании, версионировании и интеграции. [ora.ox.ac](https://ora.ox.ac.uk/objects/uuid:5c4dbd42-43c0-40f3-80ca-e7bcc9473836/files/m8e7f6f6b5b9c6c80e54ff3daff7ab343)
-- 
+
+## 2
+
+кто и где ввел TBox и ABox
+
+Я проверила историю вопроса: разделение базы знаний на **TBox** (Terminological Box) и **ABox** (Assertional Box) действительно появилось в рамках **дескрипционных логик** (Description Logics, DL). [```1```](https://www.inf.unibz.it/~franconi/dl/course/dlhb/dlhb-02.pdf)[```7```](https://courses.cs.umbc.edu/graduate/691/fall17/01/papers/DescriptionLogicHandbook.pdf)
+
+**Кто ввёл.** Ключевой вклад внесли **Рональд Дж. Брачман** (Ronald J. Brachman) и его коллеги. Исторически отправной точкой считают систему **Kl-One** (разрабатывалась в середине 1980-х, публикация 1985 года совместно с Дж. Шмолце). Именно в работах, развивавших идеи Kl-One, впервые чётко обозначили и стали использовать это разделение. Позже концепция прочно вошла в теоретический аппарат дескрипционных логик — об этом, например, подробно пишут Франц Баадер и Вернер Нутт в учебных материалах по базовым дескрипционным логикам. [```7```](https://courses.cs.umbc.edu/graduate/691/fall17/01/papers/DescriptionLogicHandbook.pdf)[```1```](https://www.inf.unibz.it/~franconi/dl/course/dlhb/dlhb-02.pdf)
+
+**Где.** Идея оформилась в академической среде, в исследованиях по представлению знаний и семантическим сетям. Со временем подход стал стандартным в сообществе, работающем с онтологиями и семантическими технологиями. [```7```](https://courses.cs.umbc.edu/graduate/691/fall17/01/papers/DescriptionLogicHandbook.pdf)
+
+**В чём суть разделения.** Авторы предложили чётко разделить два типа знаний:
+* **TBox** содержит *интенсиональные* (терминологические) знания: определения классов (концептов), иерархии, свойства (роли) и отношения между ними. По сути, это «схема» или «таксономия» предметной области. [```7```](https://courses.cs.umbc.edu/graduate/691/fall17/01/papers/DescriptionLogicHandbook.pdf)[```4```](https://www.mkbergman.com/474/making-linked-data-reasonable-using-description-logics-part-1/)
+* **ABox** хранит *экстенсиональные* (ассертивные) знания — конкретные факты об индивидах (экземплярах): к какому классу они принадлежат, какими отношениями связаны друг с другом. [```7```](https://courses.cs.umbc.edu/graduate/691/fall17/01/papers/DescriptionLogicHandbook.pdf)[```4```](https://www.mkbergman.com/474/making-linked-data-reasonable-using-description-logics-part-1/)
+
+**Зачем это нужно.** Такое разделение позволило чётко отделить общее, неизменное знание о предметной области от ситуативных, меняющихся фактов о конкретных объектах. Это упростило разработку алгоритмов логического вывода: одни задачи эффективнее решать для TBox, другие — для ABox. Кроме того, общую часть (TBox) можно повторно использовать с разными наборами конкретных данных (разных ABox). [```7```](https://courses.cs.umbc.edu/graduate/691/fall17/01/papers/DescriptionLogicHandbook.pdf)[```1```](https://www.inf.unibz.it/~franconi/dl/course/dlhb/dlhb-02.pdf)
+
+Так что если в контексте онтологий, OWL или семантических технологий ты встречаешь TBox и ABox — теперь ты знаешь, что это наследие работ по дескрипционным логикам, корни которых уходят в систему Kl-One. [```7```](https://courses.cs.umbc.edu/graduate/691/fall17/01/papers/DescriptionLogicHandbook.pdf)

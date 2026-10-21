@@ -4,4 +4,4 @@
     - Skillbox предлагает нам писать статьи с оплатой от 3 тыс.руб, но с официальным оформлением по гражданско-правовому договору с перечислением налогов.
   - Пиши статьи для codeby и получай деньги https://codeby.net/threads/pishi-stat-i-dlya-codeby-i-poluchai-den-gi.65266/
     - https://codeby.net/threads/predlozheniye-dlya-professional-nykh-avtorov-statei.66956/
-    - Codeby - это не просто сайт со статьями. Это живое сообщество специалистов по кибербезопасности: пентестеров, реверсеров, OSINT-исследователей, сетевиков и всех, кто связан с ИБ.
+    - Codeby - это не просто сайт со статьями. Это живое сообщество специалистов по кибербезопасности: пентестеров, реверсеров, OSINT-исследователей, сетевиков и всех, кто связан с ИБ. https://codeby.net/threads/kancelarskaa-knopka-dobro-pozhalovat-na-codeby-gaid-dlya-novykh-uchastnikov.92618/

@@ -10,3 +10,6 @@ https://www.apqc.org/system/files/resource-file/2024-03/K014039_2024%20Operation
 
 ### см. также
 - https://github.com/bpmbpm/doc/tree/main/IT/bank/process
+
+## all
+- [Референсные модели для корпоративного архитектора](https://habr.com/ru/companies/otus/articles/1001258/)

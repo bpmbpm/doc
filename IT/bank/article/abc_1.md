@@ -15,6 +15,7 @@
 - https://catalog.arppsoft.ru/product/6035434
 
 ## open source
+"Автоматизированная банковская система" "open source"
 -  «Новая российская АБС с открытым кодом, работающая на PostgreSQL и Linux — “1С: Автоматизированная банковская система”».  https://www.cnconf.ru/articles/2024-11-28_open_source_v_bankah_prevrashchaetsya_iz_lekarstva
 
 ## 2

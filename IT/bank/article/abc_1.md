@@ -10,10 +10,12 @@
 - https://www.softlab.ru/products/rs-bank/
 
 ### VaBank FXL
-- [tadviser](https://www.tadviser.ru/index.php/%D0%9F%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82:%D0%A4%D0%BB%D0%B5%D0%BA%D1%81%D0%A1%D0%BE%D1%84%D1%82:_%D0%92%D0%B0-%D0%91%D0%B0%D0%BD%D0%BA_%D0%90%D0%91%D0%A1_(VaBank_FXL))
+- [tadviser](https://www.tadviser.ru/index.php/%D0%9F%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82:%D0%A4%D0%BB%D0%B5%D0%BA%D1%81%D0%A1%D0%BE%D1%84%D1%82:_%D0%92%D0%B0-%D0%91%D0%B0%D0%BD%D0%BA_%D0%90%D0%91%D0%A1_(VaBank_FXL)) ; [Flexible_eXtra_Large](https://www.tadviser.ru/index.php/%D0%9F%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82:%D0%9F%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0_FXL_%28Flexible_eXtra_Large%29)
+- https://www.cnews.ru/news/line/2024-01-25_75_komponent_platformy_fxl
 - https://studfile.net/preview/14404501/
 - https://catalog.arppsoft.ru/product/6035434
-
+- sbertech
+  - https://platformv.sbertech.ru/blog/finopolis-2025-rossijskoe-reshenie-ot-sber-teha-i-fleks-soft-pomozhet-povysit-bezopasnost-bankovskogo-po
 ## open source
 "Автоматизированная банковская система" "open source"
 -  «Новая российская АБС с открытым кодом, работающая на PostgreSQL и Linux — “1С: Автоматизированная банковская система”».  https://www.cnconf.ru/articles/2024-11-28_open_source_v_bankah_prevrashchaetsya_iz_lekarstva

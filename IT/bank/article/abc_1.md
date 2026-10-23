@@ -25,6 +25,6 @@
 ## 2
 - [Не так страшен черт, как его малюют: как мы перевели разработку ЦФТ-Банк на платформу CFT Platform IDE (Admin 2.0)](https://habr.com/ru/companies/nsd/articles/528640/)
 - [Как я 10 лет строю интеграцию в банке: от ESB-монолита к целой линейке систем](https://habr.com/ru/companies/mkb/articles/743880)
-- [Информационная безопасность банковских безналичных платежей. Часть 2 — Типовая IT-инфраструктура банка](https://habr.com/ru/articles/345194/)
+- АРМ КБР-Н [Информационная безопасность банковских безналичных платежей. Часть 2 — Типовая IT-инфраструктура банка](https://habr.com/ru/articles/345194/)
 ## 3
 - https://hightime.media/services/avtomatizirovannye-bankovskie-sistemy/

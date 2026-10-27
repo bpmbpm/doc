@@ -409,6 +409,138 @@ hasPart: Wheel1
 
 ---
 
+## 2.0 mermaid error
+
+Эта ошибка — не про онтологию и не про Turtle. Она про **Mermaid**: ты (или инструмент, который ты используешь) попытался вставить синтаксис Turtle внутрь блока Mermaid — а он его не понимает, потому и ругается на `color: Red`.
+
+---
+
+## В чём именно ошибка
+
+Ты, скорее всего, сделал так:
+
+```mermaid
+classDiagram
+    class Automobile
+    car1 : Automobile
+    car1 : color: Red   ← Mermaid не знает такого синтаксиса
+    car1 : location: ParkingLot1
+```
+
+Mermaid не поддерживает двоеточия после имени экземпляра и не умеет парсить пары «свойство: значение» в таком виде.
+
+---
+
+## Как правильно сделать в Mermaid
+
+### Вариант 1. Через атрибуты класса (если car1 — пример Automobile)
+
+```mermaid
+classDiagram
+    class Automobile {
+        +color: Color
+        +location: Location
+        +hasPart: Wheel
+    }
+    note "Пример экземпляра: car1" as N1
+    N1 --> Automobile
+```
+
+Это показывает, что `Automobile` — класс с такими свойствами, а `car1` — его пример (в виде заметки).
+
+---
+
+### Вариант 2. Через отдельный узел-экземпляр (более наглядно для ABox)
+
+```mermaid
+classDiagram
+    class Automobile
+    class car1 {
+        -type: Automobile
+        -color: Red
+        -location: ParkingLot1
+        -hasPart: Wheel1
+    }
+
+    Automobile <|-- car1
+```
+
+Здесь `car1` — это отдельный класс/узел, который «наследуется» от `Automobile`, а внутри перечислены его свойства. Это компромисс: в строгой онтологии экземпляр — не класс, но для визуализации в Mermaid это самый рабочий вариант.
+
+---
+
+### Вариант 3. Граф связей (лучше для онтологий и RDF)
+
+Если цель — показать именно RDF‑тройки (экземпляр, тип, свойства), используй `graph LR`:
+
+```mermaid
+graph LR
+    subgraph "Экземпляр"
+        car1["car1"]
+    end
+
+    subgraph "Класс"
+        Auto["Automobile"]
+    end
+
+    subgraph "Свойства"
+        Red["Red"]
+        Lot["ParkingLot1"]
+        Wheel["Wheel1"]
+    end
+
+    car1 -- rdf:type --> Auto
+    car1 -- color --> Red
+    car1 -- location --> Lot
+    car1 -- hasPart --> Wheel
+```
+
+Этот вариант максимально близок к семантике RDF/Turtle и не ломается на синтаксисе свойств.
+
+---
+
+## А Turtle при этом остаётся отдельным
+
+Turtle и Mermaid — это разные языки. Не смешивай их в одном блоке.
+
+**Turtle (для загрузки в Protégé, SPARQL и т. п.):**
+
+```turtle
+@prefix : <http://example.org/auto-ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:car1 rdf:type :Automobile ;
+      :color :Red ;
+      :location :ParkingLot1 ;
+      :hasPart :Wheel1 .
+```
+
+**Mermaid (для диаграммы в Confluence/GitHub):** используй один из трёх вариантов выше.
+
+---
+
+## Если ты делаешь это в Confluence
+
+- Блок Turtle ставь как **Code Block** (язык `turtle`).
+- Блок Mermaid ставь как **Mermaid diagram** (макрос или ```mermaid```).
+- Не клади Turtle внутрь Mermaid‑блока.
+
+---
+
+## Связь с твоими задачами
+
+Учитывая, что ты:
+- делал JS‑генерацию схем,
+- работал с YAML‑LD и RDF,
+- строил онтологические деревья,
+
+лучше держать два представления отдельно:
+1. **Turtle** — как источник истины (ABox).
+2. **Mermaid** — как визуализацию для презентации/документации.
+
+Если скажешь, где именно ты это вставляешь (GitHub README, Confluence, свой JS‑рендерер) и что хочешь показать (иерархию классов, ABox‑факты или связи экземпляра), я дам готовый фрагмент строго под этот кейс. 😊
+
+
 ## 2.1
 полный пример с instance в turtle (с prefix)
 

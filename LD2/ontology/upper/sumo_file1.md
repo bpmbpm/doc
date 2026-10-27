@@ -1,6 +1,6 @@
 ## 1
 
-Прямую ссылку я подобрала: **https://github.com/ontologyportal/sumo**.   
+Прямую ссылку я подобрала: https://github.com/ontologyportal/sumo    
 [```4```](https://github.com/ontologyportal/sumo)
 
 Там в репозитории лежат все файлы онтологии. Сразу оговорюсь: SUMO не приходит в виде одного монолитного файла — это набор текстовых файлов в специальном формате **SUO-KIF** (подмножество KIF, Knowledge Interchange Format). [```14```](https://arxiv.org/pdf/2012.15835)[```15```](https://www.researchgate.net/publication/348481439_Semantic_Modeling_with_SUMO)[```4```](https://github.com/ontologyportal/sumo)

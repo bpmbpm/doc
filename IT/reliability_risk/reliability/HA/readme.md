@@ -1,5 +1,5 @@
 ## 1
-- [Реакция на аварию: растянутый кластер против DR-площадки](https://habr.com/ru/companies/T1Holding/articles/420971) автор путает понятия fault tolerance и disaster recovery.
+- [Реакция на аварию: растянутый кластер против DR-площадки](https://habr.com/ru/companies/T1Holding/articles/420971) автор путает понятия fault tolerance и disaster recovery.  
 [«Растянутый кластер», реплики СХД и т.д. — это fault-tolerance.](https://habr.com/ru/companies/T1Holding/articles/420971/#comment_19024165)  
   - FT — это набор технических мероприятий минимизирующий влияние технических неполадок.
   - DR — это уже комплекс как технических так и организационных мероприятий, который позволяет продолжать работу при событии нарушающем работу мер FT.  

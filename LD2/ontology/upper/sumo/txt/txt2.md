@@ -14,3 +14,4 @@ Human находится в разных ветках, но все они вро
 
 Приведи примеры, когда Merge.kif содержит ABox. 
 
+В ветке SetOrClass нет и не может быть Human. См. https://sigma.ontologyportal.org/sigma/Graph.jsp?relation=subclass&term=SetOrClass&up=5&down=6&limit=&inst=inst&fileRestrict=&columns=direct-children&columns=documentation&columns=graph&scrWidth=1266&kb=SUMO&flang=SUO-KIF&lang=EnglishLanguage&view=text&submit=submit

@@ -13,6 +13,6 @@ Human находится в разных ветках, но все они в Phy
 т.е. оба все равно создают физический экземпляр. Не понятно (instance Alice Human) на какую ветку ссылается? Разве не должно быть однозначности?
 Если есть Human в ветке Abstract - укажи точно положение.
 
-Приведи примеры, когда Merge.kif содержит ABox. 
+Приведи примеры, когда Merge.kif содержит ABox. Или твое утверждение ошибочно: "Merge.kif содержит TBox, RBox, фрагменты ABox-подобных классификаций абстрактных индивидов, аксиомы/правила и аннотации."
 
 В ветке SetOrClass нет и не может быть Human. См. https://sigma.ontologyportal.org/sigma/Graph.jsp?relation=subclass&term=SetOrClass&up=5&down=6&limit=&inst=inst&fileRestrict=&columns=direct-children&columns=documentation&columns=graph&scrWidth=1266&kb=SUMO&flang=SUO-KIF&lang=EnglishLanguage&view=text&submit=submit

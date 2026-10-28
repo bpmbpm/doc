@@ -10,3 +10,9 @@
 
 ## AI study 
 - https://habr.com/ru/articles/1095738/#comment_30541388
+
+## 2 voice translation
+- [Переводчик в каждый дом](https://habr.com/ru/articles/1096680/)
+- https://github.com/bpmbpm/voice-translator/tree/main/alternatives
+### tech
+- https://github.com/bpmbpm/doc/blob/main/IT/software/Transcribator.md

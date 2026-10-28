@@ -1,4 +1,6 @@
-продолжение
+продолжение https://www.perplexity.ai/search/675b64bf-4752-4846-87e8-bbcaba111955
+- https://plato.stanford.edu/ENTRiES/abstract-objects/
+- https://www.rep.routledge.com/articles/thematic/abstract-objects/v-1
 ## 1
 Вопросы:  
 1 «Merge.kif в основном задаёт TBox» Почему «в осномном», что кроме TBox задано в  Merge.kif?
@@ -227,3 +229,205 @@ Alice ── instance ──> Human
 - является элементом ветви `Abstract` как класс, то есть экземпляр `Class`. [gupea.ub.gu](https://gupea.ub.gu.se/server/api/core/bitstreams/0ac1d0a0-02e9-42a8-9f2d-30ec04044709/content)
 
 Это не противоречие: **класс физического типа сам является абстрактным элементом онтологии**, а его экземпляры — физическими индивидами. [gupea.ub.gu](https://gupea.ub.gu.se/server/api/core/bitstreams/0ac1d0a0-02e9-42a8-9f2d-30ec04044709/content)
+
+## 1.1
+
+Вопросы:
+1 «Merge.kif — главный файл SUMO, но он не сводится к «чистому TBox». Он содержит структурную онтологию, базовую онтологию, аксиомы и правила, а также метаданные терминов.»
+Разве 
+«Словарь связей между сущностями» и «Правила корректного использования предикатов» и остальное по предикатам – это не RBox? Иногда RBox включают в состав TBox. 
+
+Человекочитаемое описание понятий – это разве не label к термину из TBox? Т.е. это тоже элемент TBox.
+
+2 «Иерархия индивида Алисы» и «Иерархия самого класса Human» - не понятно, неужели в SUMO в обоих ветках есть Human? Сделай выписки из онтологии с переводом. 
+
+
+Да, вы правы: значительная часть того, что я назвал «словарём связей» и «правилами корректного использования предикатов», в терминологии OWL/описательных логик действительно относится к **RBox**. А `documentation` и `termFormat` — это не содержательные аксиомы TBox, а **метаданные / аннотации терминов**. [ar5iv.labs.arxiv](https://ar5iv.labs.arxiv.org/html/2305.07903)
+
+## 1. TBox, RBox и аннотации
+
+В классическом разделении:
+
+| Компонент | Что определяет | Примеры из SUMO |
+|---|---|---|
+| **TBox** | Терминология: классы, иерархии, разбиения, ограничения на классы | `Human`, `Physical`, `Abstract`, `subclass`, `partition`, `disjoint` |
+| **RBox** | Роли/отношения: их иерархия, домены, диапазоны, свойства | `instance`, `attribute`, `part`, `age`, `names`, `domain`, `range` |
+| **ABox** | Конкретные индивиды и факты о них | `Alice`, `AliceCar`, `(instance Alice Human)` |
+| **Аннотации** | Человекочитаемые описания, названия, синонимы | `documentation`, `termFormat` |
+
+Поэтому точнее сказать так:
+
+> **`Merge.kif` содержит TBox, RBox, фрагменты ABox-подобных классификаций абстрактных индивидов, аксиомы/правила и аннотации.**
+
+Ваше замечание верно и по второй части: во многих системах RBox включают в состав TBox, поскольку и классы, и роли — элементы терминологической части базы знаний. В SUMO это особенно естественно: `instance`, `subclass`, `attribute`, `part` и другие предикаты заданы в том же KIF-файле, что и классы. [ar5iv.labs.arxiv](https://ar5iv.labs.arxiv.org/html/2305.07903)
+
+### Исправленная классификация содержимого `Merge.kif`
+
+```text
+Merge.kif
+├── TBox
+│   ├── Классы: Entity, Physical, Abstract, Object, Process, Human
+│   ├── Иерархии: (subclass Human Hominid)
+│   ├── Разбиения: (partition Entity Physical Abstract)
+│   └── Несовместимости: (disjoint Object Process)
+│
+├── RBox
+│   ├── Отношения: instance, subclass, attribute, part, age, names
+│   ├── Домены и диапазоны: domain, range
+│   ├── Свойства отношений: ReflexiveRelation, TransitiveRelation и т. п.
+│   └── Иерархии отношений: subrelation
+│
+├── Аксиомы и правила
+│   ├── (=> ...)
+│   ├── (<=> ...)
+│   ├── (forall ...)
+│   └── (exists ...)
+│
+├── Классификации абстрактных индивидов
+│   ├── (instance Red ColorAttribute)
+│   └── (instance Human Class)
+│
+└── Аннотации
+    ├── (documentation Human ...)
+    └── (termFormat EnglishLanguage Human "human")
+```
+
+`documentation` — это действительно аналог `label` или `comment`: он описывает термин для человека, но не добавляет нового онтологического ограничения. `termFormat` связывает формальный идентификатор с естественноязыковой формой. В SUMO такие конструкции используются для документирования и языкового представления терминов. [fsg.nps](https://fsg.nps.edu/sigma/TreeView.jsp?kb=SUMO&flang=SUO-KIF&lang=EnglishLanguage&file=Languages.kif&line=3424)
+
+## 2. Есть ли два `Human`?
+
+**Нет. В SUMO есть только один `Human`.**
+
+Ошибка в моих предыдущих схемах была в том, что я нарисовал `Human` дважды: один раз как звено в цепочке физического индивида, другой — как элемент ветви `Abstract`. Но это **один и тот же термин**, рассматриваемый с двух сторон:
+
+- `Human` — класс, экземплярами которого являются люди;
+- сам класс `Human` — экземпляр `Class`;
+- `Class` — подкласс `SetOrClass`;
+- `SetOrClass` — подкласс `Abstract`.
+
+При этом экземпляры `Human`, например `Alice`, находятся в ветви `Physical`.
+
+### Выписки из SUMO
+
+Ниже — ключевые аксиомы в том виде, как они используются в SUMO/KIF, с переводом.
+
+```lisp
+(subclass Physical Entity)
+```
+
+**Перевод:** `Physical` является подклассом `Entity`.
+
+```lisp
+(subclass Abstract Entity)
+```
+
+**Перевод:** `Abstract` является подклассом `Entity`. [fsg.nps](https://fsg.nps.edu/sigma/TreeView.jsp?kb=SUMO&flang=SUO-KIF&lang=EnglishLanguage&file=Languages.kif&line=3424)
+
+```lisp
+(partition Entity Physical Abstract)
+```
+
+**Перевод:** `Entity` полностью и без пересечений разбивается на `Physical` и `Abstract`.
+
+```lisp
+(subclass SetOrClass Abstract)
+```
+
+**Перевод:** `SetOrClass` является подклассом `Abstract`. 
+
+```lisp
+(subclass Class SetOrClass)
+```
+
+**Перевод:** `Class` является подклассом `SetOrClass`.
+
+```lisp
+(instance Human Class)
+```
+
+**Перевод:** `Human` является экземпляром класса `Class`; иными словами, `Human` — это класс. 
+
+```lisp
+(subclass Human Hominid)
+```
+
+**Перевод:** `Human` является подклассом `Hominid`. 
+
+```lisp
+(instance Alice Human)
+```
+
+**Перевод:** `Alice` является экземпляром класса `Human`; то есть Алиса — человек.
+
+### Как это читать вместе
+
+```text
+Alice ── instance ──> Human ── instance ──> Class
+                        │
+                        └── subclass ──> Hominid ──> ... ──> Organism ──> ... ──> Object ──> Physical ──> Entity
+```
+
+Читается так:
+
+1. `Alice` — экземпляр `Human`.
+2. `Human` — экземпляр `Class`.
+3. `Human` — подкласс `Hominid`.
+4. Через цепочку предков `Human` восходит к `Organism`, затем к `Object`, затем к `Physical`.
+5. Следовательно, `Alice` — физический индивид.
+
+### Почему `Human` не находится «в обоих ветках»
+
+Правильная картина такая:
+
+```text
+Entity
+├── Abstract
+│   └── SetOrClass
+│       └── Class
+│           └── Human   ← Human как класс
+│
+└── Physical
+    └── Object
+        └── ... 
+            └── Organism
+                └── Hominid
+                    └── Human   ← тот же самый Human как класс физических существ
+                        └── Alice
+```
+
+Здесь `Human` появляется дважды только потому, что схема показывает **две разные связи одного термина**:
+
+```lisp
+(instance Human Class)      ; Human — элемент системы классов
+(subclass Human Hominid)    ; Human — класс живых существ
+```
+
+Но в онтологии это не два разных `Human`, а **один термин с двумя типами утверждений о нём**. [ar5iv.labs.arxiv](https://ar5iv.labs.arxiv.org/html/2305.07903)
+
+### Важное различие
+
+```lisp
+(instance Human Class)
+```
+
+означает:
+
+> `Human` — это класс.
+
+```lisp
+(instance Alice Human)
+```
+
+означает:
+
+> `Alice` — экземпляр класса `Human`.
+
+Поэтому нельзя сказать, что `Human` находится в `Physical`. В `Physical` находится `Alice`, потому что `Alice` — экземпляр `Human`, а `Human` через своих предков восходит к `Physical`.
+
+Сам же `Human`, как любой класс, относится к абстрактной стороне онтологии: это тип, а не конкретный человек. [ar5iv.labs.arxiv](https://ar5iv.labs.arxiv.org/html/2305.07903)
+
+## Итоговая формула
+
+> **`Merge.kif` — это не «чистый TBox», а единый KIF-файл, содержащий TBox, RBox, аксиомы, правила, классификации абстрактных индивидов и аннотации.**  
+> **`Human` в SUMO один: как класс он относится к `Class → SetOrClass → Abstract`, а его экземпляры, такие как `Alice`, относятся к `Physical` через цепочку `Human → Hominid → ... → Organism → Object → Physical`.** [ar5iv.labs.arxiv](https://ar5iv.labs.arxiv.org/html/2305.07903)
+> 

@@ -9,6 +9,7 @@ Human находится в разных ветках, но все они в Phy
   - (subclass Human CognitiveAgent) 	Merge.kif 15074-15074
 - вторая ветка - суперкласс =  Hominid  
   - (subclass Human Hominid) 	Merge.kif 15073-15073  
+
 т.е. оба все равно создают физический экземпляр. Не понятно (instance Alice Human) на какую ветку ссылается? Разве не должно быть однозначности?
 Если есть Human в ветке Abstract - укажи точно положение.
 

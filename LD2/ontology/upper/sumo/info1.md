@@ -102,5 +102,9 @@ SUMO используется в лингвистике, робототехни�
 - [ontologes in automation](https://repositum.tuwien.at/bitstream/20.500.12708/10905/2/Mueller%20Rainer%20-%202008%20-%20Ontologies%20in%20Automation.pdf)
 - Некоторые проблемы широкого внедрения онтологий в IT и направления их решений. https://masters.donntu.ru/2010/fknt/bolotova/library/tez9.htm
 - Best Practices of Ontology Development https://www.nist.gov/system/files/documents/2021/10/14/nist-ai-rfi-cubrc_inc_002.pdf
+- lecture https://cw.fel.cvut.cz/b191/_media/courses/osw/lecture-06upperontologies-s.pdf
+- Deliverable D2.3: Ontologies and datasets for Energy Management System interoperability v2 https://inria.hal.science/hal-01247606/document
+
 ### best
 - https://www.ontology-of-designing.ru/article/2015_1%2815%29/5_Loukachevitch.pdf ПРОЕКТИРОВАНИЕ ЛИНГВИСТИЧЕСКИХ ОНТОЛОГИЙ ДЛЯ ИНФОРМАЦИОННЫХ СИСТЕМ В ШИРОКИХ ПРЕДМЕТНЫХ ОБЛАСТЯХ
+- https://deepai.org/

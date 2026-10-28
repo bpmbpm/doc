@@ -10,6 +10,6 @@ TERCOM "Terrain Contour Matching" Х-101
 - https://topwar.ru/218279-kalibr-m-dlinnaja-ruka-rossijskogo-vmf.html
 
 ## also
-- https://habr.com/ru/companies/ruvds/articles/1098280/#comment_30576082
+- https://habr.com/ru/companies/ruvds/articles/1098280/comments/#comment_30576082
 - https://habr.com/ru/companies/ruvds/articles/1098280/comments/#comment_30569678
 

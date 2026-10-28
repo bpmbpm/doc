@@ -1,5 +1,5 @@
 продолжение https://www.perplexity.ai/search/675b64bf-4752-4846-87e8-bbcaba111955
-- https://plato.stanford.edu/ENTRiES/abstract-objects/
+- https://plato.stanford.edu/ENTRiES/abstract-objects/ ; https://github.com/bpmbpm/doc/blob/main/LD2/ontology/upper/sumo/Physical_Abstract2.md
 - https://www.rep.routledge.com/articles/thematic/abstract-objects/v-1
 ## 1
 Вопросы:  

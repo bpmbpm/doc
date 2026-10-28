@@ -13,6 +13,8 @@
 
 ## 2 voice translation
 - [Переводчик в каждый дом](https://habr.com/ru/articles/1096680/)
+  - https://github.com/UncleAndy/transono/tree/main
+  - https://github.com/UncleAndy/ai-translator
 - https://github.com/bpmbpm/voice-translator/tree/main/alternatives
 ### tech
 - https://github.com/bpmbpm/doc/blob/main/IT/software/Transcribator.md

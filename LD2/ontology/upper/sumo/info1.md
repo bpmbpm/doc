@@ -60,3 +60,29 @@ SUMO возникла как результат объединения разл�
 SUMO используется в лингвистике, робототехнике, для интеграции данных из разных источников и в других задачах, где требуется формальное представление знаний. [```6```](https://cyberleninka.ru/article/n/ontologicheskiy-podhod-k-razrabotke-adaptivnoy-modeli-kompetentsiy-i-professionalnoy-podgotovki-v-sfere-informatsionnyh-tehnologiy)[```13```](https://zakon.ru/blog/2019/1/22/ontologii_-_osnova_yazykov_yuridicheskogo_programmirovaniya)[```5```](https://docs.cntd.ru/document/1303064826/titles/7E40KG)
 
 Если вас интересует какой-то конкретный аспект SUMO (например, как её понятия соотносятся с DOLCE или как с ней работать), уточните — я расскажу подробнее.
+
+## 1.1 article
+
+С удовольствием подобрала для вас несколько ключевых статей про SUMO. Я разделила их по темам, чтобы было проще сориентироваться и выбрать то, что ближе к вашим задачам.
+
+## О самой онтологии и её создании
+* **Ian Niles, Adam Pease. «Towards a standard upper ontology»** (FOIS 2001). Это основополагающая работа — в ней авторы подробно излагают стратегию создания SUMO, обсуждают сложности и детально разбирают самые общие концепты и связи между ними. Именно с неё стоит начать, чтобы понять мотивы и архитектуру онтологии. [```8```](https://dl.acm.org/doi/10.1145/505168.505170?cookieSet=1)
+* **Adam Pease, Ian Niles. «IEEE Standard Upper Ontology: A Progress Report»** (2002). Отчёт о прогрессе в разработке — полезно, чтобы отследить, как развивался проект на ранних этапах. [```14```](https://oa.upm.es/5493/1/Searching_for_a_Time_Ontology_.pdf)
+
+## Практическое применение и интеграция
+* **Robert B. Allen. «Semantic Modeling with SUMO»** (препринт). В статье на примерах показано, как использовать SUMO для семантического моделирования — в том числе для симуляций (например, переходов в моделируемом бензиновом двигателе) с применением Python. [```1```](https://www.researchgate.net/publication/7368359_Wrestling_with_SUMO_and_bio-ontologies)[```4```](https://arxiv.org/pdf/2012.15835)
+* **Javier Álvez, Paqui Lucio, German Rigau. «Adimen-SUMO: Reengineering an Ontology for First-Order Reasoning»** (International Journal of Semantic Web and Information Systems, 2012). Авторы переработали часть аксиом SUMO, чтобы сделать её более удобной для систем автоматического логического вывода (например, в NLP или Semantic Web). [```5```](https://www.semanticscholar.org/paper/Adimen-SUMO%3A-Reengineering-an-Ontology-for-%C3%81lvez-Lucio/c7c7684a2fb5c9f5d194b5364671ad07296b2bba)
+* **Javier Álvez, Itziar Gonzalez-Dios, German Rigau. «Applying the Closed World Assumption to SUMO-based FOL Ontologies»** (arXiv, 2018). Исследование того, как применение предположения замкнутого мира (Closed World Assumption) улучшает качество логического вывода на базе SUMO. [```10```](https://arxiv.org/pdf/1808.04620)
+* **Работа о связи SUMO и WordNet**. Есть несколько публикаций о том, как лексикон WordNet сопоставляли с концептами SUMO — это важно для приложений, связанных с обработкой естественного языка. [```2```](https://arademaker.github.io/files/ontobras-2019-sumo.pdf)[```10```](https://arxiv.org/pdf/1808.04620)
+* **Статья о моделировании времени в SUMO**. В ней разбирается, как в онтологии представлены временные понятия (точки, интервалы) и как они связываются с событиями. [```14```](https://oa.upm.es/5493/1/Searching_for_a_Time_Ontology_.pdf)
+* **Работа о применении SUMO в геологии**. Авторы расширяли SUMO, чтобы формально описать геологическое время (на основе Международной стратиграфической шкалы), и выявили в исходной онтологии некоторые противоречия. [```2```](https://arademaker.github.io/files/ontobras-2019-sumo.pdf)
+* **Исследование об интеграции SUMO с другими форматами**. Например, есть работы о трансляции SUMO (в формате SUO-KIF) в OMDoc для лучшей модульности и документирования. [```12```](https://kwarc.info/people/frabe/students/misev_bsc.pdf)
+* **Работа о представлении SUMO в Grammatical Framework (GF)**. Это позволяет не только проверять консистентность онтологии с помощью системы типов, но и генерировать естественно-языковые конструкции (на английском, румынском, французском и других языках). [```3```](https://publications.lib.chalmers.se/records/fulltext/116606.pdf)
+
+## Как искать ещё
+Если захотите копнуть глубже, советую:
+* Использовать **Google Scholar** и ввести «SUMO» — там собрана большая подборка цитирований основной работы и последующих исследований. [```7```](https://ontologyportal.org/Pubs.html)
+* Заглянуть на **[ontologyportal.org](https://ontologyportal.org/Pubs.html)** — там есть вручную собранная подборка публикаций по теме. [```7```](https://ontologyportal.org/Pubs.html)
+* Искать по ключевым словам: «SUMO integration», «SUMO reasoning», «SUMO and WordNet», «SUMO domain extension».
+
+

@@ -1,5 +1,7 @@
 ## 1
-Да, такой инструмент есть! Я бы рекомендовала **[Sigma](https://github.com/ontologyportal/sigmakee)** (конкретно версию **sigmakee**) — это онлайн-среда, которая как раз создана для работы с SUMO: просмотра, навигации и даже редактирования онтологий. [```16```](https://en.wikipedia.org/wiki/Suggested_Upper_Merged_Ontology)[```17```](https://sourceforge.net/projects/sigmakee/)[```19```](https://github.com/ontologyportal/sigmakee)
+del
+
+Я бы рекомендовала **[Sigma](https://github.com/ontologyportal/sigmakee)** (конкретно версию **sigmakee**) — это онлайн-среда, которая как раз создана для работы с SUMO: просмотра, навигации и даже редактирования онтологий. [```16```](https://en.wikipedia.org/wiki/Suggested_Upper_Merged_Ontology)[```17```](https://sourceforge.net/projects/sigmakee/)[```19```](https://github.com/ontologyportal/sigmakee)
 
 ## Как попробовать
 

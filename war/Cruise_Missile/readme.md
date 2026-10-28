@@ -11,4 +11,4 @@ TERCOM "Terrain Contour Matching" Х-101
 
 ## also
 - https://habr.com/ru/companies/ruvds/articles/1098280/#comment_30576082
-- https://github.com/bpmbpm/doc/tree/main/IT/FBCB2
+

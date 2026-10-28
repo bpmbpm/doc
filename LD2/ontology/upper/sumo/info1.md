@@ -85,4 +85,22 @@ SUMO используется в лингвистике, робототехни�
 * Заглянуть на **[ontologyportal.org](https://ontologyportal.org/Pubs.html)** — там есть вручную собранная подборка публикаций по теме. [```7```](https://ontologyportal.org/Pubs.html)
 * Искать по ключевым словам: «SUMO integration», «SUMO reasoning», «SUMO and WordNet», «SUMO domain extension».
 
+## 1.2
+декабрь 2000
+- https://en.wikipedia.org/wiki/Suggested_Upper_Merged_Ontology Первоначально SUMO была ориентирована на концепции метауровня (общие сущности, не относящиеся к конкретной предметной области), и, таким образом, естественным образом приводила к схеме категоризации для энциклопедий. Изначально Sumo разрабатывалась компанией Teknowledge Corporation.
+  - https://sigma.ontologyportal.org:8080/sigma/Browse.jsp?kb=SUMO 
+- https://www.wikidata.org/wiki/Q7635093
 
+### pdf
+- https://variamu.hypotheses.org/files/2014/03/SUMO-NLP-2014-03-10.pdf
+
+### upper ontologes
+- [ruwiki](https://ru.ruwiki.ru/wiki/%D0%9E%D0%BD%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F_%D0%B2%D1%8B%D1%81%D1%88%D0%B5%D0%B3%D0%BE_%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D1%8F)
+- https://trinidata.ru/files/SemanticModelDesign.pdf РУКОВОДСТВО ПО СОЗДАНИЮ И ПОДДЕРЖКЕ СЕМАНТИЧЕСКОЙ МОДЕЛИ
+- https://www.isko.org/cyclo/ontologies ; https://organicdesign.nz/Foundation_ontology
+- https://vcvpaiva.github.io/includes/pubs/fomi2014_7.pdf
+- [ontologes in automation](https://repositum.tuwien.at/bitstream/20.500.12708/10905/2/Mueller%20Rainer%20-%202008%20-%20Ontologies%20in%20Automation.pdf)
+- Некоторые проблемы широкого внедрения онтологий в IT и направления их решений. https://masters.donntu.ru/2010/fknt/bolotova/library/tez9.htm
+- Best Practices of Ontology Development https://www.nist.gov/system/files/documents/2021/10/14/nist-ai-rfi-cubrc_inc_002.pdf
+### best
+- https://www.ontology-of-designing.ru/article/2015_1%2815%29/5_Loukachevitch.pdf ПРОЕКТИРОВАНИЕ ЛИНГВИСТИЧЕСКИХ ОНТОЛОГИЙ ДЛЯ ИНФОРМАЦИОННЫХ СИСТЕМ В ШИРОКИХ ПРЕДМЕТНЫХ ОБЛАСТЯХ

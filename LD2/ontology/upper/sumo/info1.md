@@ -105,8 +105,15 @@ SUMO используется в лингвистике, робототехни�
 - Best Practices of Ontology Development https://www.nist.gov/system/files/documents/2021/10/14/nist-ai-rfi-cubrc_inc_002.pdf
 - lecture https://cw.fel.cvut.cz/b191/_media/courses/osw/lecture-06upperontologies-s.pdf
 - r4sc-23.pdf [Deliverable D2.3: Ontologies and datasets for Energy Management System interoperability v2](https://inria.hal.science/hal-01247606/document)
-
+- Онтологии верхнего уровня (онтологии opencyc, SUMO, dolse) https://lektsii.org/3-32323.html
+- Foundational Ontologies meet Ontology Matching: A Survey https://semantic-web-journal.net/system/files/swj2650.pdf
 ### best
 - https://www.ontology-of-designing.ru/article/2015_1%2815%29/5_Loukachevitch.pdf ПРОЕКТИРОВАНИЕ ЛИНГВИСТИЧЕСКИХ ОНТОЛОГИЙ ДЛЯ ИНФОРМАЦИОННЫХ СИСТЕМ В ШИРОКИХ ПРЕДМЕТНЫХ ОБЛАСТЯХ
 - https://deepai.org/
 - [Реализации мета-онтологических моделей](https://metatronika.wordpress.com/2017/12/12/%D1%80%D0%B5%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8-%D0%BC%D0%B5%D1%82%D0%B0-%D0%BE%D0%BD%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D1%85-%D0%BC%D0%BE%D0%B4%D0%B5/)
+- Toward the Use of an Upper Ontology for U.S. Government and U.S. Military Domains: An Evaluation https://ontology.ihmc.us/COI/Resources/UpperOntologyUseLong.htm
+- 
+## 2
+- https://gigabaza.ru/doc/8465.html Изначально SUMO разрабатывалась на диалекте языка KIF, в настоящее время выполнен ее перевод на OWL.
+- https://www.cs.upc.edu/~nlp/meaning/documentation/2onYear/WP4.5.pdf
+- https://www.lu.lv/materiali/apgads/raksti/751_pp_52-64.pdf 3.3 Wikipedia-Based Ontologies 

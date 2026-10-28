@@ -3,6 +3,10 @@ https://www.perplexity.ai/
 https://github.com/ontologyportal/sumo  
 Дай подробную инструкцию как ее можно смотреть онлайн, т.е. есть ли онлайн вьювер. 
 
+### best
+- ontologyportal.org не открывается вообще
+- sigma.ontologyportal.org VPN
+
 Да, у меня основной сайт `https://www.ontologyportal.org/` тоже не открылся напрямую при попытке загрузить страницу (таймаут). Но **сам SUMO смотреть онлайн можно** — главный онлайн-инструмент это **Sigma Knowledge Base Browser**, и он доступен по отдельному адресу `sigma.ontologyportal.org`. [sigma.ontologyportal](https://sigma.ontologyportal.org/sigma/Browse.jsp?kb=SUMO)
 
 ## Главный онлайн-вьювер: Sigma

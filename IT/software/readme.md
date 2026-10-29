@@ -30,3 +30,7 @@
 
 ### soft radar
 - https://habr.com/ru/companies/productradar/articles/1084824/
+
+## RDP
+удаленный рабочий стол
+- [Бесплатное ПО, пять лет разработки и немного наглости. Как я пытаюсь попасть в реестр российского ПО](https://habr.com/ru/articles/1100860/)

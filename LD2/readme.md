@@ -1,7 +1,7 @@
 ## best
 - pl/sparql https://github.com/bpmbpm/doc/blob/main/LD2/faq1.md
 - Nevod1212 https://cognito.one/ ; переход на платформу - app.cognito.one
-
+  
 ### lecture
 - [intuit.ru Онтологии и тезаурусы: модели, инструменты, приложения](https://new2.intuit.ru/studies/professional_skill_improvements/1627/info)
 - [Классификации онтологий](https://intuit.ru/personal/program/ontoth1315/empty/klassifikatsii_ontologiy_416/)

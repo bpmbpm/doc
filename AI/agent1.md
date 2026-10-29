@@ -6,3 +6,6 @@
 
 ## 3 psychology
 - [Я попал к психиатру из‑за кодинга с AI](https://habr.com/ru/articles/1080778/) Потом я пересел с VSCode на Cursor, затем в терминальные harness’ы
+
+## manager
+- [Каждый таксист теперь может попробовать поуправлять крупной корпорацией](https://habr.com/ru/articles/1100858/)

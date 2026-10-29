@@ -235,3 +235,239 @@ Prolog:  human(alice)
 > **Алиса является экземпляром класса «человек».**
 
 По структуре это не «функция атом атом» в программном смысле, а **предикат с двумя аргументами**, записанный в префиксной S-выражение-нотации. [frontiersin](https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2026.1820380/pdf)
+
+## 1.1
+
+В стандартной SUMO **нет предиката `InstanceOf`** с таким именем. Базовый предикат — `instance`; его назначение — связать любую сущность с классом, экземпляром которого она является. Отдельных предикатов «физический экземпляр» и «абстрактное свойство экземпляра» в SUMO тоже нет, но их можно определить как расширение. 
+
+## 1. Есть ли `InstanceOf` в SUMO
+
+Нет. В SUMO используется:
+
+```lisp
+(instance Alice Human)
+```
+
+а не:
+
+```lisp
+(InstanceOf Alice Human)
+```
+
+`instance` — стандартное бинарное отношение SUMO. Оно не различает заранее, физический это индивид или абстрактный: это определяется классом во втором аргументе и иерархией SUMO. 
+
+## 2. Ваши два предиката: что они означают
+
+Вы предлагаете разделить одну логическую операцию на две по онтологическому типу второго аргумента:
+
+```lisp
+(ЕстьФизическийЭкземпляр Alice Human)
+```
+
+и
+
+```lisp
+(ЕстьСвойствоЭкземпляра Alice Human)
+```
+
+Но во второй записи есть терминологическая проблема: `Human` — это класс из ветви `Physical`, а не свойство из `Abstract`. Поэтому она не выражает «Алиса имеет свойство Human».
+
+Вероятно, вы имели в виду два разных случая:
+
+```lisp
+;; Алиса — физический экземпляр класса Human
+(ЕстьФизическийЭкземпляр Alice Human)
+
+;; Автомобиль Алисы имеет абстрактное свойство Red
+(ЕстьСвойствоЭкземпляра AliceCar Red)
+```
+
+Тогда первый предикат — это специализированный `instance` с ограничением: второй аргумент должен быть классом, расположенным под `Physical`. Второй — специализированный `attribute` с ограничением: второй аргумент должен быть элементом `Attribute` или иной абстрактной ветви.
+
+## 3. Как определить такие предикаты в SUMO
+
+Можно ввести два собственных отношения и ограничить их через `domain` и `range`.
+
+### Физический экземпляр
+
+```lisp
+(documentation HasPhysicalInstance
+"Связывает индивида с классом, расположенным в ветви Physical.")
+
+(domain HasPhysicalInstance 1 Entity)
+(domain HasPhysicalInstance 2 Physical)
+
+(instance HasPhysicalInstance BinaryRelation)
+```
+
+Использование:
+
+```lisp
+(HasPhysicalInstance Alice Human)
+(HasPhysicalInstance AliceCar Automobile)
+```
+
+Но здесь есть тонкость: `Human` и `Automobile` — классы, а не индивиды ветви `Physical`. В SUMO класс `Human` сам является `Class`, то есть абстрактной сущностью, хотя его экземпляры физичны.
+
+Поэтому строгое ограничение «второй аргумент — Physical» было бы неверным для `Human`. Правильнее ограничить не сам класс, а его экземпляры:
+
+```lisp
+(=>
+  (HasPhysicalInstance ?X ?C)
+  (instance ?C Class))
+
+(=>
+  (HasPhysicalInstance ?X ?C)
+  (subclass ?C Physical))
+```
+
+Тогда:
+
+```lisp
+(HasPhysicalInstance Alice Human)
+```
+
+означает:
+
+> **`Alice` — индивид, тип которого `Human`; класс `Human` расположен в ветви `Physical`.**
+
+### Свойство экземпляра
+
+Для абстрактного свойства ближе всего не `instance`, а `attribute`:
+
+```lisp
+(attribute AliceCar Red)
+```
+
+Можно ввести специализированный предикат:
+
+```lisp
+(documentation HasAbstractProperty
+"Связывает физический индивид с абстрактным значением атрибута.")
+
+(domain HasAbstractProperty 1 Physical)
+(domain HasAbstractProperty 2 Attribute)
+
+(instance HasAbstractProperty BinaryRelation)
+```
+
+Использование:
+
+```lisp
+(HasAbstractProperty AliceCar Red)
+(HasAbstractProperty Alice Asleep)
+```
+
+Здесь ограничение корректно:
+
+- `AliceCar` — `Physical`;
+- `Red` — `ColorAttribute`, то есть `Attribute`;
+- `Attribute` находится в ветви `Abstract`.
+
+Можно даже связать новый предикат с SUMO-отношением `attribute`:
+
+```lisp
+(=>
+  (HasAbstractProperty ?X ?A)
+  (attribute ?X ?A))
+```
+
+## 4. Почему `instance` не подходит для свойств
+
+`instance` отвечает на вопрос:
+
+```text
+К какому классу относится эта сущность?
+```
+
+```lisp
+(instance AliceCar Automobile)
+```
+
+А `attribute` отвечает на вопрос:
+
+```text
+Каким качеством обладает эта сущность?
+```
+
+```lisp
+(attribute AliceCar Red)
+```
+
+Разница:
+
+| Вопрос | Предикат | Пример |
+|---|---|---|
+| Что это за тип вещи? | `instance` | `AliceCar` — `Automobile` |
+| Каким качеством обладает вещь? | `attribute` | `AliceCar` — `Red` |
+| Какова мера свойства? | `age`, `measure`, `length` и т. п. | `Alice` имеет возраст 16 лет |
+| Как объект связан с другим объектом? | `part`, `possesses`, `located` | Алиса владеет автомобилем |
+
+Поэтому:
+
+```lisp
+(instance AliceCar Red)   ; неверно: Red — не класс автомобиля
+(attribute AliceCar Red)  ; верно: Red — атрибут автомобиля
+```
+
+## 5. Аналоги в других синтаксисах
+
+В OWL closest аналог `instance` — `ClassAssertion`. Важно: в функциональном синтаксисе OWL порядок аргументов обратный SUMO: сначала класс, затем индивид. [w3](https://www.w3.org/TR/2009/REC-owl2-syntax-20091027/)
+
+| Система | Запись | Чтение |
+|---|---|---|
+| SUMO | `(instance Alice Human)` | Алиса — экземпляр `Human` |
+| OWL 2 Functional Syntax | `ClassAssertion(a:Human a:Alice)` | `Alice` — экземпляр `Human` |
+| RDF / RDFS | `Alice rdf:type Human` | `Alice` имеет тип `Human` |
+| Description Logic | `Alice ∈ Human` | Алиса принадлежит концепту `Human` |
+| Prolog | `human(alice)` | `alice` — человек |
+
+OWL также позволяет ограничивать отношения через `ObjectPropertyDomain` и `ObjectPropertyRange`: первый задаёт класс первого аргумента, второй — класс второго. Это прямой механизм для ваших идей «второй аргумент должен быть из нужной ветки». [w3](https://www.w3.org/TR/2009/REC-owl2-syntax-20091027/)
+
+## 6. Как выразить вашу идею в OWL
+
+Для «физического экземпляра» можно ввести свойство:
+
+```text
+hasPhysicalInstance
+Domain: Thing
+Range: PhysicalClass
+```
+
+Для «абстрактного свойства»:
+
+```text
+hasAbstractProperty
+Domain: PhysicalThing
+Range: Attribute
+```
+
+В OWL-стиле:
+
+```text
+ClassAssertion(:Human :Alice)
+ObjectPropertyAssertion(:hasAbstractProperty :AliceCar :Red)
+
+ObjectPropertyDomain(:hasAbstractProperty :PhysicalThing)
+ObjectPropertyRange(:hasAbstractProperty :Attribute)
+```
+
+`ObjectPropertyDomain` говорит: если `x hasAbstractProperty y`, то `x` — физическая сущность. `ObjectPropertyRange` говорит: если `x hasAbstractProperty y`, то `y` — атрибут. [w3](https://www.w3.org/TR/2009/REC-owl2-syntax-20091027/)
+
+## 7. Рекомендуемые имена
+
+Вместо русских или калькированных названий лучше использовать точные английские термины:
+
+| Ваш замысел | Рекомендуемое имя | SUMO-аналог |
+|---|---|---|
+| «Есть физический экземпляр класса» | `hasPhysicalInstance` | специализированный `instance` |
+| «Есть абстрактное свойство» | `hasAbstractProperty` | специализированный `attribute` |
+| «Имеет числовую меру» | `hasMeasure` / `hasValue` | `measure`, `age`, `length` |
+| «Имеет имя» | `hasName` | `names` |
+| «Является экземпляром класса» | `instance` | `instance` |
+
+## Итог
+
+> **В SUMO нет `InstanceOf`; есть `instance`.**  
+> **Для физической классификации можно ввести `hasPhysicalInstance`, ограничив второй аргумент классами ветви `Physical`.**  
+> **Для свойств лучше использовать не `instance`, а специализированный `hasAbstractProperty`, ограниченный `Attribute` из ветви `Abstract`; его естественный базовый аналог в SUMO — `attribute`.** [w3](https://www.w3.org/TR/2009/REC-owl2-syntax-20091027/)

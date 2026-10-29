@@ -1,6 +1,7 @@
 ### News
 #### ArchiMate NEXT Specification
 - [habr](https://habr.com/ru/posts/932602/) ; [opengroup](https://publications.opengroup.org/s250)
+- [ArchiMate 4.0: собираем первую модель с нуля за 6 шагов](https://habr.com/ru/companies/otus/articles/1047058/)
 ### tool
 - https://github.com/bpmbpm/doc/tree/main/BPM/enEA/Archi
 ### info

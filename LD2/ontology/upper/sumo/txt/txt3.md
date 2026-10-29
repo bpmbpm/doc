@@ -622,4 +622,212 @@ Alice01 ── possesses ──> AliceCar01
 
 > **Граница не копирует `Human` и не создаёт его копию. Она проверяет образ в TBox, выдаёт уникальную маркировку `Alice01` и регистрирует в ABox факт: `Alice01` — экземпляр `Human`.**  
 > **Для абстрактных характеристик маркировка нового физического индивида не создаётся: создаётся или выбирается значение, которое привязывается к уже существующему `id` через `attribute` или `names`.**
-> 
+
+
+## 2.1
+
+Коротко: **`Young` и `YoungAdult` не являются стандартными базовыми классами `Merge.kif` в том виде, в каком я их использовал ранее**. Для популярного примера лучше не inventировать термин, а использовать проверяемый SUMO-атрибут, например `Female`/`Male` — либо явно объявить `YoungAdult` как собственное расширение. Для `names` ветвь иная: это не класс-атрибут, а **бинарное отношение**; его «иерархия» — это иерархия отношений, а не ветвь `Attribute`. [arxiv](https://arxiv.org/pdf/2012.15835.pdf)
+
+## 1. `Young` и `YoungAdult`
+
+Я должен исправить предыдущий пример: нельзя уверенно утверждать, что в текущем `Merge.kif` есть готовые классы `Young` или `YoungAdult` с такими цепочками наследования. В SUMO возраст обычно моделируют не одним словом-атрибутом, а через измерение:
+
+```lisp
+(age Alice01 (MeasureFn 16 YearDuration))
+```
+
+Это сложнее, но онтологически точнее: возраст — величина, а не просто ярлык.
+
+Если вам нужен простой «атомарный» ярлык, его следует объявить самостоятельно:
+
+```lisp
+(subclass YoungAdult Human)
+
+(documentation YoungAdult
+"Человек, находящийся в раннем взрослом возрасте.")
+
+(instance Alice01 YoungAdult)
+```
+
+Тогда иерархия будет такой:
+
+```text
+Entity
+└── Physical
+    └── Object
+        └── ... → Organism → Hominid → Human → YoungAdult → Alice01
+```
+
+И параллельно, через второго родителя `Human`:
+
+```text
+Entity
+└── Physical
+    └── Object
+        └── ... → Agent → CognitiveAgent → Human → YoungAdult → Alice01
+```
+
+**Перевод:** `Alice01` — молодой взрослый человек; она наследует и биологическую, и агентную ветви `Human`.
+
+Но это уже **ваше расширение SUMO**, а не готовый термин базового `Merge.kif`.
+
+### Лучше для базовой SUMO
+
+Если не хочется вводить собственный класс, используйте измерение:
+
+```lisp
+(age Alice01 (MeasureFn 16 YearDuration))
+```
+
+Перевод:
+
+> **Возраст `Alice01` равен 16 годам.**
+
+Здесь `16` — число, `YearDuration` — единица измерения года, а `(MeasureFn 16 YearDuration)` — конкретное значение длительности.
+
+## 2. Полная ветвь `names`
+
+`names` — это не класс и не атрибут. Это **бинарное отношение** (предикат), связывающее символьную строку и сущность.
+
+```lisp
+(names "Алиса" Alice01)
+```
+
+Читается:
+
+> **Строка “Алиса” является именем `Alice01`.**
+
+Его место в SUMO можно показать так:
+
+```text
+Entity
+└── Abstract
+    └── Relation
+        └── Predicate
+            └── BinaryRelation
+                └── names
+```
+
+То есть `names` — не значение свойства, а **правило связи**: оно соединяет два аргумента.
+
+```text
+"Алиса" ── names ──> Alice01
+```
+
+### Аргументы `names`
+
+```lisp
+(names ?STRING ?ENTITY)
+```
+
+| Позиция | Тип | Пример |
+|---|---|---|
+| 1 | `SymbolicString` | `"Алиса"` |
+| 2 | `Entity` | `Alice01` |
+
+`SymbolicString` — класс символьных/алфавитно-цифровых последовательностей; он относится к абстрактной части онтологии. [ontology.nps](https://ontology.nps.edu/sigma/TreeView.jsp?lang=EnglishLanguage&simple=yes&kb=SUMO&file=domainEnglishFormat.kif&line=13578)
+
+Поэтому `Alice01` стоит вторым не потому, что он «менее важен», а потому что так определён предикат:
+
+```text
+names(имя, тот, кого называют)
+```
+
+Если хочется привычного порядка «объект — имя», можно определить собственное отношение:
+
+```lisp
+(instance hasName BinaryRelation)
+
+(domain hasName 1 Entity)
+(domain hasName 2 SymbolicString)
+
+(=>
+  (hasName ?X ?S)
+  (names ?S ?X))
+```
+
+Тогда можно писать:
+
+```lisp
+(hasName Alice01 "Алиса")
+```
+
+Но это уже пользовательское расширение SUMO, а не стандартный предикат.
+
+## 3. Как отличить `names`, `attribute` и `instance`
+
+| Предикат | Что связывает | Пример | Ветвь второго аргумента |
+|---|---|---|---|
+| `instance` | Индивид и класс | `(instance Alice01 Human)` | `Class` |
+| `attribute` | Индивид и значение атрибута | `(attribute AliceCar01 Red)` | `Attribute` |
+| `names` | Строку и сущность | `(names "Алиса" Alice01)` | `Entity` |
+| `age` | Индивид и длительность | `(age Alice01 (MeasureFn 16 YearDuration))` | `TimeDuration` |
+| `possesses` | Агента и объект | `(possesses Alice01 AliceCar01)` | `Object` |
+
+Поэтому:
+
+```lisp
+(attribute Alice01 YoungAdult)   ; только если YoungAdult объявлен как Attribute
+(instance Alice01 YoungAdult)    ; если YoungAdult объявлен как подкласс Human
+(names "Алиса" Alice01)          ; стандартная SUMO-запись имени
+```
+
+В моём предыдущем примере `(attribute Alice01 YoungAdult)` был неудачен, если `YoungAdult` вводится как подкласс `Human`. Тогда правильно:
+
+```lisp
+(instance Alice01 YoungAdult)
+```
+
+## 4. Проверяемый простой пример без новых терминов
+
+Чтобы не добавлять `YoungAdult`, можно построить рассказ так:
+
+```lisp
+;; 1. На границе создаётся и маркируется физический индивид
+(instance Alice01 Human)
+
+;; 2. В карточку Alice01 вписывается имя
+(names "Алиса" Alice01)
+
+;; 3. В карточку вписывается измеряемая характеристика
+(age Alice01 (MeasureFn 16 YearDuration))
+
+;; 4. Создаётся второй физический индивид
+(instance AliceCar01 Automobile)
+
+;; 5. Фиксируется отношение владения
+(possesses Alice01 AliceCar01)
+
+;; 6. В карточку автомобиля вписывается абстрактное значение цвета
+(attribute AliceCar01 Red)
+```
+
+## 5. Итоговая схема
+
+```text
+TBox — мир идей
+├── Human
+│   ├── Hominid → ... → Physical
+│   └── CognitiveAgent → ... → Physical
+├── Automobile → ... → Physical
+├── Red → ColorAttribute → Attribute → Abstract
+├── names → BinaryRelation → Predicate → Relation → Abstract
+└── age → BinaryRelation → Predicate → Relation → Abstract
+
+Граница — маркировка и регистрация
+├── Alice01 получает id и связь с Human
+└── AliceCar01 получает id и связь с Automobile
+
+ABox — мир вещей в сознании
+├── Alice01 ── instance ──> Human
+├── "Алиса" ── names ──> Alice01
+├── Alice01 ── age ──> 16 лет
+├── AliceCar01 ── instance ──> Automobile
+├── AliceCar01 ── attribute ──> Red
+└── Alice01 ── possesses ──> AliceCar01
+```
+
+## Главная поправка
+
+> **`Young` / `YoungAdult` не следует подавать как готовые базовые термины SUMO без проверки конкретной версии. Для возраста корректнее использовать `(age Alice01 (MeasureFn 16 YearDuration))`; для простого ярлыка нужно объявить собственный класс или атрибут.**  
+> **`names` — не ветвь `Attribute`, а бинарное отношение: `(names "Алиса" Alice01)` связывает строку-имя с индивидом `Alice01`.** [arxiv](https://arxiv.org/pdf/2012.15835.pdf)

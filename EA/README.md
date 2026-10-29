@@ -3,7 +3,8 @@ Enterprise Architecture
 - https://github.com/bpmbpm/doc/tree/main/BPM/enEA/ ; [Archi](https://github.com/bpmbpm/doc/tree/main/BPM/enEA/Archi)
 ### best
 - https://github.com/bpmbpm/doc/blob/main/EA/GOST/version2/readme.md
-- Example 
+- Example https://github.com/bpmbpm/doc/tree/main/EA/Example
+- https://github.com/bpmbpm/doc/tree/main/BPM/notation/ArchiMate
 ### notation
 - EA нотации см. https://github.com/bpmbpm/doc/tree/main/BPM/notation
 - также: https://github.com/bpmbpm/doc/blob/main/BPM/notation/ArchiMate/interest1.md

@@ -12,8 +12,8 @@
 
 ### also
 - https://github.com/bpmbpm/doc/blob/main/IT/security/home_server.md#home_server
+- https://github.com/bpmbpm/doc/tree/main/IT/hardware/PC
 - https://github.com/bpmbpm/doc/tree/main/mix/audio
-- https://github.com/bpmbpm/doc/tree/main/IT/hardware
 
 ### old server
 - [Конвертация старых физических серверов в виртуалки (часть 1)](https://habr.com/ru/articles/1010628/)

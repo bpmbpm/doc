@@ -5,3 +5,6 @@
 - https://github.com/bpmbpm/doc/tree/main/LD2/ontology/wikidata_plato
 - https://github.com/bpmbpm/doc/tree/main/LD2/ontology/plato
 - https://github.com/bpmbpm/doc/blob/main/LD2/OWL/class/platon1.md
+
+## logic
+- Перевод SUMO-K на теорию множеств высшего порядка https://ar5iv.labs.arxiv.org/html/2305.07903

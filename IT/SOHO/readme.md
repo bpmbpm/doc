@@ -11,6 +11,7 @@
 - [Бэкап файлов без программирования](https://habr.com/ru/articles/979448/)
 
 ### also
+- https://github.com/bpmbpm/doc/blob/main/IT/security/home_server.md#home_server
 - https://github.com/bpmbpm/doc/tree/main/mix/audio
 - https://github.com/bpmbpm/doc/tree/main/IT/hardware
 

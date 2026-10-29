@@ -452,4 +452,324 @@ Entity
 
 Но в базовой SUMO правильный и однозначный ответ: **`Person` отсутствует; используйте `Human`.** [github](https://github.com/ontologyportal/sumo/blob/master/People.kif)
 
+## 2.2
+
+Какие свойства есть у Human в Merge kif
+
+У `Human` в `Merge.kif` нет большого набора «собственных свойств» в смысле атрибутов вроде роста, возраста или цвета. `Human` — это **класс**, поэтому у него прежде всего есть **классовые характеристики**: родительские классы, документация, связь с метаклассом `Class` и аксиомы, в которых он используется. [ontolog.cim3](http://ontolog.cim3.net/file/resource/reference/SIGMA-kee/suo-kif--AdamPease_20040218.pdf)
+
+## Прямые утверждения о `Human`
+
+В базовой SUMO к `Human` напрямую относятся примерно такие положения:
+
+```lisp
+(subclass Human Hominid)
+(subclass Human CognitiveAgent)
+(instance Human Class)
+```
+
+**Перевод:**
+
+- `Human` — подкласс `Hominid`;
+- `Human` — подкласс `CognitiveAgent`;
+- `Human` — экземпляр метакласса `Class`, то есть сам является классом. [home.nr](http://home.nr.no/~plison/pdfs/lectures/compling2010/pdfs/compling2010-ontologies.pdf)
+
+Также у `Human` есть документация:
+
+```lisp
+(documentation Human
+"Modern man, the only remaining species of the Homo genus. ...")
+```
+
+**Перевод:** современный человек, единственный сохранившийся вид рода *Homo*. В ранней версии SUMO также указано, что если термин описывает человека с точки зрения профессии, семьи или социального статуса, то следует использовать классы из иерархии `Group`, а не сам `Human`. [ontologyportal](https://www.ontologyportal.org/SUMOhistory/SUMO1.8.txt)
+
+## Что `Human` наследует
+
+Поскольку `Human` имеет двух родителей, его экземпляры наследуют характеристики по двум ветвям.
+
+```text
+Human
+├── Hominid
+│   └── ... → Animal → Organism → ... → Object → Physical
+└── CognitiveAgent
+    └── Agent → ... → Object → Physical
+```
+
+
+
+| Ветвь | Что даёт экземпляру `Human` |
+|---|---|
+| `Hominid` | Биологическая природа: организм, животное, материальный объект, локализация в пространстве-времени |
+| `CognitiveAgent` | Способность быть субъектом намеренных действий, познания, коммуникации, желаний и целей |
+| `Object` | Пространственная целостность, наличие частей, возможность занимать место |
+| `Physical` | Нахождение в пространстве-времени |
+
+Поэтому для `Alice` из `(instance Alice Human)` можно вывести, что она:
+
+- физический объект;
+- организм;
+- гоминид;
+- когнитивный агент;
+- возможный субъект процессов и намеренных действий.
+
+## Аксиомы, использующие `Human`
+
+В `Merge.kif` и связанных материалах `Human` встречается не только в иерархии, но и в правилах. Например, в учебном описании SUO-KIF приведено правило:
+
+```lisp
+(=>
+  (and
+    (instance ?P Human)
+    (attribute ?SL Asleep))
+  (not
+    (exists ?ACT
+      (and
+        (instance ?ACT IntentionalProcess)
+        (overlaps ?ACT ?SL)
+        (agent ?ACT ?P)))))
+```
+
+**Перевод:** если `?P` — человек и находится в состоянии `Asleep`, то не существует намеренного процесса `?ACT`, пересекающегося с этим состоянием, агентом которого является `?P`. Иными словами: спящий человек не может одновременно совершать намеренное действие. [ontolog.cim3](http://ontolog.cim3.net/file/resource/reference/SIGMA-kee/suo-kif--AdamPease_20040218.pdf)
+
+Это пример того, как `Human` участвует в **ограничении на возможные состояния и процессы**, а не просто в классификации.
+
+## Важно: «свойства» и «атрибуты»
+
+В SUMO нужно различать:
+
+| Термин | Что означает | Пример |
+|---|---|---|
+| **Свойство класса** | Характеристика самого класса или его места в онтологии | `Human` — подкласс `Hominid` и `CognitiveAgent` |
+| **Атрибут экземпляра** | Качество конкретного индивида | `(attribute Alice Asleep)` |
+| **Отношение экземпляра** | Связь индивида с другим индивидом или значением | `(age Alice (MeasureFn 16 YearDuration))` |
+| **Наследуемая характеристика** | То, что экземпляр получает через цепочку `subclass` | `Alice` — организм и физический объект |
+
+То есть у самого `Human` нет атрибута «рост» или «возраст». Эти атрибуты могут иметь экземпляры `Human`:
+
+```lisp
+(instance Alice Human)
+(age Alice (MeasureFn 16 YearDuration))
+(attribute Alice Asleep)
+```
+
+## О возможном разбиении `Man` / `Woman`
+
+В некоторых материалах по SUMO/MILO встречается конструкция:
+
+```lisp
+(partition Human Man Woman)
+```
+
+**Перевод:** `Human` полностью разбивается на `Man` и `Woman`.
+
+Однако это не следует считать универсальным свойством текущего базового `Merge.kif` без проверки конкретной версии: такие разбиения и связанные с ними термины могут находиться в дополнительных модулях или меняться между версиями. В приведённом источнике это упомянуто в контексте SUMO и MILO, а не как безусловная аксиома базового `Merge.kif`. [home.nr](http://home.nr.no/~plison/pdfs/lectures/compling2010/pdfs/compling2010-ontologies.pdf)
+
+## Итог
+
+У `Human` в `Merge.kif` есть прежде всего следующие **классовые свойства**:
+
+```lisp
+(subclass Human Hominid)
+(subclass Human CognitiveAgent)
+(instance Human Class)
+(documentation Human "...")
+```
+
+А экземпляры `Human` наследуют:
+
+```text
+Physical
+└── Object
+    ├── ... → Organism → Hominid → Human
+    └── ... → Agent → CognitiveAgent → Human
+```
+
+Поэтому `Human` — это не «объект со свойствами», а **класс физических когнитивных агентов**, экземпляры которого могут иметь возраст, имя, цвет глаз, состояние сна, намерения, родственные и социальные отношения. [ontolog.cim3](http://ontolog.cim3.net/file/resource/reference/SIGMA-kee/suo-kif--AdamPease_20040218.pdf)
+
+## 2.3
+
+Да, можете. Запись
+
+```lisp
+(instance Alice Physical)
+```
+
+логически корректна: она создаёт в ABox физический индивид `Alice` и относит его к самому общему физическому классу. Но это **минимальная и очень слабая классификация**: она говорит лишь «Алиса — нечто физическое», не уточняя, организм это, объект, процесс, агент или человек. [ontology.nps](https://ontology.nps.edu/sigma/TreeView.jsp?kb=SUMO&flang=SUO-KIF&lang=EnglishLanguage&file=Sports.kif&line=851)
+
+## Что именно фиксирует эта запись
+
+```lisp
+(instance Alice Physical)
+```
+
+означает:
+
+```text
+Alice — экземпляр класса Physical.
+```
+
+Поскольку в SUMO:
+
+```lisp
+(subclass Physical Entity)
+(partition Entity Physical Abstract)
+```
+
+можно вывести:
+
+```text
+Alice — Entity
+Alice — не Abstract
+```
+
+Но нельзя вывести, что `Alice` — человек, организм, объект или агент. Эти сведения нужно добавить отдельными утверждениями. [ontology.nps](https://ontology.nps.edu/sigma/TreeView.jsp?kb=SUMO&flang=SUO-KIF&lang=EnglishLanguage&file=Sports.kif&line=851)
+
+## Как потом уточнять
+
+Можно строить классификацию постепенно:
+
+```lisp
+(instance Alice Physical)
+(instance Alice Object)
+(instance Alice Organism)
+(instance Alice Human)
+```
+
+Однако в SUMO это избыточно. Достаточно указать наиболее конкретный класс:
+
+```lisp
+(instance Alice Human)
+```
+
+Потому что действует аксиома наследования:
+
+```lisp
+(=>
+  (and
+    (subclass ?SUB ?CLASS)
+    (instance ?INST ?SUB))
+  (instance ?INST ?CLASS))
+```
+
+**Перевод:** если `?SUB` — подкласс `?CLASS`, а `?INST` — экземпляр `?SUB`, то `?INST` — также экземпляр `?CLASS`. [site.uottawa](https://www.site.uottawa.ca/~tcl/factguru1/sumo/subclass.html)
+
+Поэтому из:
+
+```lisp
+(instance Alice Human)
+(subclass Human Hominid)
+(subclass Hominid ... Organism)
+(subclass Organism ... Object)
+(subclass Object Physical)
+```
+
+система сама выведет:
+
+```text
+Alice — Hominid
+Alice — Organism
+Alice — Object
+Alice — Physical
+Alice — Entity
+```
+
+## Как правильно читать вашу модель
+
+Ваша идея «сначала создаём физический индивид, затем уточняем» допустима, но лучше формулировать её так:
+
+```text
+1. Создаём индивида Alice.
+2. Классифицируем его наиболее конкретным известным классом.
+3. Более общие классы выводятся автоматически.
+```
+
+То есть не так:
+
+```lisp
+(instance Alice Physical)     ; «создаём физическую вещь»
+(instance Alice Human)        ; «уточняем, что это человек»
+```
+
+а так:
+
+```lisp
+(instance Alice Human)        ; создаём и сразу классифицируем как человека
+```
+
+Если на момент создания вы ещё не знаете, человек это или нет, можно временно использовать более общую категорию:
+
+```lisp
+(instance X Physical)
+```
+
+а позднее заменить или дополнить её:
+
+```lisp
+(instance X Human)
+```
+
+Но тогда `(instance X Physical)` не нужно удалять: оно останется истинным как следствие `(instance X Human)`.
+
+## Когда `(instance Alice Physical)` оправдан
+
+| Ситуация | Подходящая запись |
+|---|---|
+| Известно только, что сущность физична | `(instance X Physical)` |
+| Известно, что это устойчивый предмет, но не известно какой | `(instance X Object)` |
+| Известно, что это событие или процесс | `(instance X Process)` |
+| Известно, что это живой организм | `(instance X Organism)` |
+| Известно, что это человек | `(instance X Human)` |
+| Известно, что это конкретная Алиса | `(instance Alice Human)` |
+
+## Важное ограничение
+
+Нельзя одновременно утверждать:
+
+```lisp
+(instance Alice Physical)
+(instance Alice Abstract)
+```
+
+Потому что:
+
+```lisp
+(partition Entity Physical Abstract)
+```
+
+делает `Physical` и `Abstract` взаимоисключающими. [ontology.nps](https://ontology.nps.edu/sigma/TreeView.jsp?kb=SUMO&flang=SUO-KIF&lang=EnglishLanguage&file=Sports.kif&line=851)
+
+Также не стоит путать:
+
+```lisp
+(instance Alice Physical)   ; Alice — физический индивид
+(instance Human Class)      ; Human — класс
+```
+
+Первое относится к конкретному человеку, второе — к самому классу `Human`.
+
+## Рекомендация для вашей модели
+
+Если вы хотите явно моделировать акт «создания вещи», можно использовать такую последовательность:
+
+```lisp
+;; Шаг 1: вводим идентификатор физического индивида
+(instance Alice Physical)
+
+;; Шаг 2: уточняем его тип, когда это становится известно
+(instance Alice Human)
+```
+
+Но семантически точнее и экономнее — сразу классифицировать по самому конкретному классу:
+
+```lisp
+(instance Alice Human)
+```
+
+Тогда `Physical` не исчезает: он будет выведен автоматически через иерархию `Human → ... → Object → Physical`. [ontology.nps](https://ontology.nps.edu/sigma/TreeView.jsp?kb=SUMO&flang=SUO-KIF&lang=EnglishLanguage&file=Sports.kif&line=851)
+
+## Итог
+
+> **Да, `(instance Alice Physical)` допустим: он создаёт и классифицирует `Alice` как физический индивид.**  
+> **Но это классификация максимальной общности. Если вы знаете, что Алиса — человек, лучше сразу писать `(instance Alice Human)`, а `Physical`, `Object`, `Organism` и `Hominid` система выведет сама.** [ontology.nps](https://ontology.nps.edu/sigma/TreeView.jsp?kb=SUMO&flang=SUO-KIF&lang=EnglishLanguage&file=Sports.kif&line=851)
+
 

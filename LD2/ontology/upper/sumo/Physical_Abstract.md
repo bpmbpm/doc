@@ -1,3 +1,5 @@
+## 0
+- https://en.wikipedia.org/wiki/Abstract_and_concrete
 ## 1
 Зачем вводить Object и Process в разделе Physical, ведь если бы ввели их в разделе Abstract, то ничего не изменилось бы.  
 Например, при объявлении  

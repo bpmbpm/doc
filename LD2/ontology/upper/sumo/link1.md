@@ -17,4 +17,6 @@ Suggested Upper Merged Ontology
     - Graph
     - GraphElement
   - Роли, которые сущности выполняют в процессе – агент, пациенс (patient), инструмент и т. д.
-- http://ontolog-archives.cim3.net/file/work/SOCoP/Educational/Munn-Smith_Applied-Ontology.pdf 
+- http://ontolog-archives.cim3.net/file/work/SOCoP/Educational/Munn-Smith_Applied-Ontology.pdf
+  - 173 Chapter 8: Categories: The Top-Level Ontology 
+  - 176 Figure 2: The OpenCYC Upper Ontology http://www.cyc.com/cyccdoc/upperont-diagram.html

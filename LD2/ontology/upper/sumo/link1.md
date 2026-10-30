@@ -20,3 +20,7 @@ Suggested Upper Merged Ontology
 - http://ontolog-archives.cim3.net/file/work/SOCoP/Educational/Munn-Smith_Applied-Ontology.pdf ; https://philarchive.org/archive/MUNAOA-2 Katherine Munn, Barry Smith Applied Ontology An Introduction ; http://ontolog-archives.cim3.net/file/work/SOCoP/Educational/Munn-Smith_Applied-Ontology.pdf
   - 173 Chapter 8: Categories: The Top-Level Ontology 
   - 176 Figure 2: The OpenCYC Upper Ontology http://www.cyc.com/cyccdoc/upperont-diagram.html
+
+## all
+общие
+- Онтология по естественным наукам и технологиям ОЕНТ: структура, состав и современное состояние rdl-journal.ru›article/download/288/314/314 

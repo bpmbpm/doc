@@ -1,3 +1,5 @@
+## best
+- https://github.com/bpmbpm/doc/blob/main/LD2/ontology/upper/sumo/info1.md#best
 ## 1
 Suggested Upper Merged Ontology  
 "Physical Abstract" "Suggested Upper Merged Ontology" 

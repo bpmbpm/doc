@@ -25,5 +25,5 @@ Suggested Upper Merged Ontology
 
 ## all
 общие
-- Онтология по естественным наукам и технологиям ОЕНТ: структура, состав и современное состояние rdl-journal.ru›article/download/288/314/314  
+- Онтология по естественным наукам и технологиям ОЕНТ: структура, состав и современное состояние [rdl-journal.ru](https://rdl-journal.ru/article/download/288/314/314) 
 - Лексические онтологии wordnet в технологиях semantic wеb https://www.interface.ru/home.asp?artId=36209

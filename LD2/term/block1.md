@@ -260,15 +260,19 @@ graph LR
 
 С учётом ваших задач по логике и квантификации, то же утверждение можно записать так:
 
+$$
 \[
 \exists p \, \exists c \, \big( \text{Process}(p) \land \text{Artifact}(c) \land \text{agent}(p, \text{Мама}) \land \text{patient}(p, c) \land \text{beneficiary}(p, \text{Сын}) \big)
 \]
+$$
 
 Или, если хочется явно связать костюм и процесс:
 
+$$
 \[
 \exists p \big( \text{Process}(p) \land \text{agent}(p, \text{Мама}) \land \exists c (\text{Artifact}(c) \land \text{patient}(p, c)) \land \text{beneficiary}(p, \text{Сын}) \big)
 \]
+$$
 
 Здесь:
 - `Process`, `Artifact` — классы (унарные предикаты);

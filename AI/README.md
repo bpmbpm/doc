@@ -1,5 +1,4 @@
 ### AI
-OpenAI, Microsoft, Google, Meta, Anthropic vs DeepSeek, Alibaba, Baidu, Tencent https://habr.com/ru/articles/1102656/ Их могущество построено на чудовищно неэффективном математическом фундаменте — архитектуре Transformer, созданной еще в 2017 году.
 - https://aistudio.google.com/ ; https://chatgpt.com ;
 - https://www.you.com
 - https://www.perplexity.ai/ ; [wiki](https://ru.wikipedia.org/wiki/Perplexity_AI)
@@ -9,6 +8,10 @@ OpenAI, Microsoft, Google, Meta, Anthropic vs DeepSeek, Alibaba, Baidu, Tencent 
 - [Топ-12 нейросетей на русском языке](https://giga.chat/help/articles/neural-networks-in-russian) 
 ### Chief AI Officer
 - [Chief AI Officer](https://habr.com/ru/articles/1006660/)
+
+### vs
+- OpenAI, Microsoft, Google, Meta, Anthropic vs DeepSeek, Alibaba, Baidu, Tencent https://habr.com/ru/articles/1102656/ Их могущество построено на чудовищно неэффективном математическом фундаменте — архитектуре Transformer, созданной еще в 2017 году.
+- https://www.bloomberg.com/graphics/2026-us-china-ai-race/
 
 ### Achievements
 - [ИИ впервые официально прошел строгий тест Тьюринга](https://habr.com/ru/news/896938/)

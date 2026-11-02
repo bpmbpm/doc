@@ -1,4 +1,5 @@
 ### AI
+OpenAI, Microsoft, Google, Meta, Anthropic vs DeepSeek, Alibaba, Baidu, Tencent
 - https://aistudio.google.com/ ; https://chatgpt.com ;
 - https://www.you.com
 - https://www.perplexity.ai/ ; [wiki](https://ru.wikipedia.org/wiki/Perplexity_AI)

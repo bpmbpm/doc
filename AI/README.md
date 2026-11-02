@@ -1,5 +1,5 @@
 ### AI
-OpenAI, Microsoft, Google, Meta, Anthropic vs DeepSeek, Alibaba, Baidu, Tencent https://habr.com/ru/articles/1102656/
+OpenAI, Microsoft, Google, Meta, Anthropic vs DeepSeek, Alibaba, Baidu, Tencent https://habr.com/ru/articles/1102656/ Их могущество построено на чудовищно неэффективном математическом фундаменте — архитектуре Transformer, созданной еще в 2017 году.
 - https://aistudio.google.com/ ; https://chatgpt.com ;
 - https://www.you.com
 - https://www.perplexity.ai/ ; [wiki](https://ru.wikipedia.org/wiki/Perplexity_AI)

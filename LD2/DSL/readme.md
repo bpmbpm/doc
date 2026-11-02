@@ -8,3 +8,7 @@
 
 ### also
 - https://github.com/bpmbpm/doc/tree/main/AI/dev/DSL
+
+## 2
+- [Последний язык программирования уже написан. С чем останутся те, кто продолжит писать код?](https://habr.com/ru/articles/1102558/)
+- [DSL в эпоху ИИ: делать или не делать…](https://habr.com/ru/companies/moex/articles/1089584/)

@@ -1,7 +1,7 @@
 ## article
 - [ИТ‑шаманизм — когда айтишники старой волны замыкают на себя как можно больше процессов, чтобы их не уволили](https://habr.com/ru/companies/h3llo_cloud/articles/1092538/) h3llo.cloud https://h3llo.cloud/
   - [Ещё одна попытка порвать старый оверхед банков](https://habr.com/ru/companies/h3llo_cloud/articles/1091920)
-
+- [Разбираем банковские реквизиты из карточки компании: БИК, корсчёт и контрольные суммы](https://habr.com/ru/articles/1102682/)
 ## info
 - https://github.com/C4be/MAI-practice-API-gateway-for-integration-with-banking-systems Разработка API-шлюза для интеграции с банковскими системами
   

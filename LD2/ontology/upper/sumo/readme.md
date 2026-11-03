@@ -9,3 +9,10 @@ Suggested Upper Merged Ontology
 
 ## 3
 - https://inariksit.github.io/cclaw-zettelkasten/sumo.html !
+  - SUMO (Suggested Upper-Merged Ontology) использует подход, сочетающий предметные онтологии и верхнюю онтологию.
+  - SUMO написан на языке SUO-KIF. В отличие от большинства языков онтологий, SUO-KIF не относится к дескриптивной.
+  - И предикаты, и функции имеют область определения . Мы уже рассматривали области определения homeAddress,
+  - Адам Пиз: «WordNet подходит для моделирования языка. SUMO подходит для моделирования истин о мире».
+- https://ontolearner.readthedocs.io/benchmarking/upper_ontology/sumo.html
+- https://aitp-conference.org/2019/slides/AP.pdf
+- https://home.asoftware.cz/school/disertace/outputs/test.html

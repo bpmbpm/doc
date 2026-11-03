@@ -8,3 +8,6 @@
 
 ## logic
 - Перевод SUMO-K на теорию множеств высшего порядка https://ar5iv.labs.arxiv.org/html/2305.07903
+
+## 2
+- https://www.jfsowa.com/ontology/

@@ -6,3 +6,6 @@ Suggested Upper Merged Ontology
 - Merge.kif https://raw.githubusercontent.com/ontologyportal/sumo/master/Merge.kif
 ## 2
 - https://github.com/ontologyportal/sumo/blob/master/Government.kif
+
+## 3
+- https://inariksit.github.io/cclaw-zettelkasten/sumo.html

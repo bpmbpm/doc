@@ -17,4 +17,4 @@ Suggested Upper Merged Ontology
 - https://aitp-conference.org/2019/slides/AP.pdf
 - https://home.asoftware.cz/school/disertace/outputs/test.html
 - Providing First-Order Reasoning Support to Large and Complex Ontologies https://adimen.ehu.eus/~rigau/publications/TR007-WP06.pdf 
-- Verifying and Mapping the Mereotopology of Upper-level Ontologies https://pdfs.semanticscholar.org/9bd0/0339e6b8624853b657c5aaac26027e5fa97d.pdf
+- Verifying and Mapping the Mereotopology of Upper-level Ontologies https://pdfs.semanticscholar.org/9bd0/0339e6b8624853b657c5aaac26027e5fa97d.pdf Проверка и отображение мереотопологии онтологий верхнего уровня (ru)

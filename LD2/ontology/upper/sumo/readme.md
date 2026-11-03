@@ -8,4 +8,4 @@ Suggested Upper Merged Ontology
 - https://github.com/ontologyportal/sumo/blob/master/Government.kif
 
 ## 3
-- https://inariksit.github.io/cclaw-zettelkasten/sumo.html
+- https://inariksit.github.io/cclaw-zettelkasten/sumo.html !

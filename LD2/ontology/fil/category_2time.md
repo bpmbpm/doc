@@ -27,7 +27,7 @@
 
 [![Теоретические основы онтологического инжиниринга. Классификация онтологий - презентация, доклад, проект скачать](https://avatars.mds.yandex.net/i?id=45664d2e9361aa49904983326e23e1ea_l-5234804-images-thumbs&n=13)](https://mypresentation.ru/presentation/teoreticheskie-osnovy-ontologicheskogo-inzhiniringa-klassifikaciya-ontologij)
 
-см.
+см. Теоретические основы онтологического инжиниринга. Классификация онтологий - презентация, доклад, проект 
 - https://mypresentation.ru/presentation/teoreticheskie-osnovy-ontologicheskogo-inzhiniringa-klassifikaciya-ontologij
 - https://avatars.mds.yandex.net/i?id=45664d2e9361aa49904983326e23e1ea_l-5234804-images-thumbs&n=13
 

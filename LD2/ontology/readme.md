@@ -28,3 +28,7 @@
 Возможно онтологию можно формализовать на русском \ английском языке, но не представляю как: там так много неоднозначности.  
 Обычно онтологию формализуют на языках знаний, липс-подобных, дескрипционных логик (Description Logics, DL), Linked Data (OWL\манчестерский синтаксис) и т.п.
 
+## ru
+- https://cyberleninka.ru/article/n/metody-i-sredstva-postroeniya-ontologiy-dlya-intellektualizatsii-seti-internet Под формальной моделью онтологии О часто понимают упорядоченную тройку вида O = <C, R, F>,
+- Языки описания онтологий для технических предметных областей https://cyberleninka.ru/article/n/yazyki-opisaniya-ontologiy-dlya-tehnicheskih-predmetnyh-oblastey
+- Использование онтологии SUMO для пополнения онтологии InTez https://cyberleninka.ru/article/n/ispolzovanie-ontologii-sumo-dlya-popolneniya-ontologii-intez

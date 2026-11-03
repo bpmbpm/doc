@@ -11,3 +11,6 @@
 
 ## 2
 - https://www.jfsowa.com/ontology/
+
+## 3
+- https://new2.intuit.ru/studies/professional_skill_improvements/1627/courses/270/lecture/6851?page=2

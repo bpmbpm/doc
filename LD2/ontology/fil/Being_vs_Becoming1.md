@@ -1,3 +1,7 @@
+## link
+- [Being vs Becoming: Philosophy and History](https://livinginbecoming.com/being-vs-becoming-philosophy-and-history/)
+- https://thecontentauthority.com/blog/being-vs-becoming
+- https://thisvsthat.io/becoming-vs-being
 ## 1
 **Being** и **becoming** — это два понятия, которые часто противопоставляют, поскольку они отражают разные аспекты существования: статичное состояние и динамичный процесс изменения. [```1```](https://thecontentauthority.com/blog/being-vs-becoming)[```2```](https://thisvsthat.io/becoming-vs-being)[```4```](https://livinginbecoming.com/being-vs-becoming-philosophy-and-history/)
 

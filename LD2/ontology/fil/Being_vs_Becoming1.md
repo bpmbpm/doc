@@ -6,7 +6,8 @@
 - https://publications.hse.ru/mirror/pubs/share/folder/n8z7bv35xu/direct/175214674
 - [philos.msu.ru](https://philos.msu.ru/sites/default/files/lib/2005.%D0%9E%D0%9D%D0%A2%D0%9E%D0%9B%D0%9E%D0%93%D0%98%D0%AF%20%D0%98%20%D0%A2%D0%95%D0%9E%D0%A0%D0%98%D0%AF%20%D0%9F%D0%9E%D0%97%D0%9D%D0%90%D0%9D%D0%98%D0%AF.pdf)
   - стр. 3 «philia» (любовь) и «sophia» (мудрость)
-  - стр. 100 § 5. Фундаментальная онтология М. Хайдеггера 
+  - стр. 100 § 5. Фундаментальная онтология М. Хайдеггера
+  - стр. 102 Феномен — это само себя показывающее бытие, т.е. очевидное для нас сущее
 ## 1
 **Being** и **becoming** — это два понятия, которые часто противопоставляют, поскольку они отражают разные аспекты существования: статичное состояние и динамичный процесс изменения. [```1```](https://thecontentauthority.com/blog/being-vs-becoming)[```2```](https://thisvsthat.io/becoming-vs-being)[```4```](https://livinginbecoming.com/being-vs-becoming-philosophy-and-history/)
 

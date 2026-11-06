@@ -1,8 +1,10 @@
 ## best
 - https://en.wikipedia.org/wiki/Entity
-- http://philosophystorm.ru/taxonomy/term/4466 Философский штурм: Сущее и Естящее, О сущности вещи N и её верификации
+- http://philosophystorm.ru/taxonomy/term/4466 Философский штурм: Сущее и Естящее,
+  - О сущности вещи N и её верификации
   ![ris](https://proza.ru/pics/2020/08/23/933.gif)
-
+  - Человек. К тождеству форм сущности и сущего
+    ![ris](http://philosophystorm.ru/sites/default/files/k_tozhdestvu_form_sushchnosti_i_sushego.png)
 ## 1
 - Сущее (на латыни ens) от бытия (esse) отличали уже схоласты. https://fil.wikireading.ru/97334
 - Ушаков https://slovar.cc/rus/ushakov/457734.html

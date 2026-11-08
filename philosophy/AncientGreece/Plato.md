@@ -7,3 +7,7 @@ Plato, Платон (428/27 – 348/47 до н. э.) – это прозвище
 ## 2
 - [Как обойти Llama-3 70B моделью в 600 раз меньше: Теорема Платона, JEPA и революция Моделей Мира](https://habr.com/ru/articles/1105086/)
 - Platonic Representation Hypothesis
+  - https://phillipi.github.io/prh/
+- Аллегория пещеры
+  - https://en.wikipedia.org/wiki/Allegory_of_the_cave
+    - Слепые и слон — приблизительный аналог в восточной философии.

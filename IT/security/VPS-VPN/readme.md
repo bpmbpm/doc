@@ -1,3 +1,5 @@
+## 1
+- [Методичка по построению VPN, осень 2026](https://habr.com/ru/articles/1103460/)
 ## step
 - [Outline: Делаем свой личный VPN от Google за 5$ в месяц (и за 1€ для продвинутых)](https://habr.com/ru/articles/358828/)
   - OpenVPN

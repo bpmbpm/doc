@@ -15,4 +15,4 @@
 - https://github.com/bpmbpm/doc/tree/main/LD2/ontology/fil Being_vs_Becoming etc
 
 ## теории групп
-- https://habr.com/ru/articles/879808/
+- https://habr.com/ru/articles/879808/ Язык мироздания — теория групп и теория категорий

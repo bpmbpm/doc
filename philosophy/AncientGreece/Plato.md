@@ -9,5 +9,5 @@ Plato, Платон (428/27 – 348/47 до н. э.) – это прозвище
 - Platonic Representation Hypothesis
   - https://phillipi.github.io/prh/
 - Аллегория пещеры
-  - https://en.wikipedia.org/wiki/Allegory_of_the_cave
+  - https://en.wikipedia.org/wiki/Allegory_of_the_cave ; [ru Миф о пещере](https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D1%84_%D0%BE_%D0%BF%D0%B5%D1%89%D0%B5%D1%80%D0%B5)
     - Слепые и слон — приблизительный аналог в восточной философии.

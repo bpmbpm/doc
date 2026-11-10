@@ -28,3 +28,4 @@ typeScript etc
 
 ## 2
 - [DI во фронтенде: от Context API к Composition Root](https://habr.com/ru/articles/1072780/)
+- [Модернизация JavaScript-проекта для моделирования физических экспериментов и роль ИИ в этом](https://habr.com/ru/articles/1105568/)

@@ -17,5 +17,5 @@
   - интерфейс не имеет доступа к Node и общается с главным процессом только через типизированный IPC, данные каждого канала проверяются Zod;
 
 ## for dev
-- [Первый продакшен Sheeternetes: запустили телеграм-бот, компьют и данные которого живут целиком в Google-таблице](https://habr.com/ru/articles/1105748/) my Как вариант эмулировать triple store на google или git
+- [Первый продакшен Sheeternetes: запустили телеграм-бот, компьют и данные которого живут целиком в Google-таблице](https://habr.com/ru/articles/1105748/) my Как вариант эмулировать triple store на google или git. У бесплатного аккаунта Google на таймеры Apps Script отпущено девяносто минут в сутки.
 - https://github.com/bpmbpm/mdld-test/tree/main/ver3

@@ -15,3 +15,7 @@
   - Excalidraw для холста, Mermaid в песочнице, FullCalendar, React Flow для графа;
   - SQLite с шифрованием (better-sqlite3-multiple-ciphers) в ней лежат все данные, FTS5 для поиска;
   - интерфейс не имеет доступа к Node и общается с главным процессом только через типизированный IPC, данные каждого канала проверяются Zod;
+
+## for dev
+- [Первый продакшен Sheeternetes: запустили телеграм-бот, компьют и данные которого живут целиком в Google-таблице](https://habr.com/ru/articles/1105748/) my Как вариант эмулировать triple store на google
+- https://github.com/bpmbpm/mdld-test/tree/main/ver3

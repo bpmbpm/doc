@@ -1,3 +1,6 @@
+## link
+- https://new2.intuit.ru/studies/professional_skill_improvements/1627/courses/270/lecture/6851?page=2
+
 ## 1
 Приведи полное дерево иерархии до Персона \ Человек в SUMO, BFO, DOLCE.  
 Аналогично сделай для Процесс.
@@ -182,3 +185,149 @@ Perdurant (Пердурант — сущность, происходящая в�
 Итого: один и тот же человек в SUMO — примат и когнитивный агент одновременно, в BFO — просто материальный объект, нуждающийся в доменной надстройке, в DOLCE — физический носитель интенциональности. Это не противоречие, а три разных «проекционных критерия»: инженерный, научный и лингвистический.
 
 Если интересно, могу так же разложить четвёртую точку зрения — например, GFO или онтологию Совы, где раскол идёт уже иначе (Continuant/Process у Совы вообще без качества отдельной ветви).
+
+## 2
+нет Person? Как тогда в них задать Алиса есть персона (человек)?
+
+Хорошие уточняющие вопросы. Проверю пару спорных мест: иерархию Person в OpenCyc, верхний уровень Совы и то, как корректно «заводить» конкретного человека в BFO.
+Уточню ещё несколько моментов: определение Person в DUL (DOLCE+DnS Ultralight), иерархию Person в Cyc и рабочие ссылки для просмотра веток.
+Теперь проверю иерархию вокруг Person в Cyc — это ключевое место, где Cyc как раз различает Person и Homo sapiens.
+Ещё один заход: посмотрю страницу агентов у Совы и архивные страницы OpenCyc для Person.
+Осталось собрать рабочие ссылки для просмотра веток (Ontobee, LOA, OpenCyc) — сделаю последний заход.
+Последний штрих — прямые ссылки на BFO-спеку и OpenCyc-таксономию:
+Да, всё верно: **в ядре BFO и DOLCE класса Person/Human нет** — и это не дыра, а принципиальное проектное решение. Но утверждение «Алиса — персона» в них выразить можно, и сейчас покажу как, заодно закрою корень DOLCE и добавлю Сову с OpenCyc.
+
+## 1. Как в BFO и DOLCE записать «Алиса есть персона»
+
+**BFO.** BFO доменно-нейтральна по построению: в ней нет физических, химических и биологических терминов, они приходят из доменных онтологий методом «спуска вниз» (downward population). Человек в практике OBO — это класс `Homo sapiens` из NCBI Taxonomy, размещённый под `BFO:Object`. Поэтому каноническая запись: [```80```](https://github.com/BFO-ontology/BFO)[```36```](https://arxiv.org/abs/2411.16609)[```34```](https://www.researchgate.net/publication/386144523_F_--_A_Model_of_Events_based_on_the_Foundational_Ontology_DOLCEDnS_Ultralite)
+
+```
+Alisa rdf:type obo:NCBITaxon_9606    ; Homo sapiens, подкласс BFO:Object (BFO_0000030)
+```
+
+Если нужна именно «персона» в социально-правовом смысле — это уже **Role** (`BFO_0000023`, зависимая сущность, реализуемая в социальных процессах), как это делают, например, в OMRSE с социальными ролями: [```34```](https://www.researchgate.net/publication/386144523_F_--_A_Model_of_Events_based_on_the_Foundational_Ontology_DOLCEDnS_Ultralite)
+
+```
+Alisa bearer-of :PersonRole   ; :PersonRole ⊑ BFO:Role, реализуется в социальных процессах
+```
+
+**DOLCE.** В ядре DOLCE «персона» намеренно расщеплена на два класса: человек как физический носитель интенций — `AgentivePhysicalObject` (APO), а «персона» как социальный статус (юридическое лицо, член организации) — `AgentiveSocialObject` (ASO). Напрямую:
+
+```
+Alisa rdf:type dolce:AgentivePhysicalObject
+```
+
+А в рабочей OWL-версии DOLCE — **DOLCE+DnS Ultralight (DUL)** — есть готовый класс `dul:Person`: это «здравосмысленный гибрид» APO и ASO, ровно чтобы не выбирать между телом и социальным статусом: [```34```](https://www.researchgate.net/publication/386144523_F_--_A_Model_of_Events_based_on_the_Foundational_Ontology_DOLCEDnS_Ultralite)[```32```](https://spice-h2020.eu/document/deliverable/D6.2.pdf)
+
+```
+Alisa rdf:type dul:Person
+```
+
+Для сравнения: в Cyc `Person` — первоклассный термин, и там различие между биологией и социальной персоной решено иначе — см. ниже.
+
+## 2. DOLCE: корень целиком
+
+Действительно, в прошлом ответе я показал дерево от Endurant. Полная вертикаль такая: DOLCE — онтология **партикуляров** (конкретных индивидов, а не универсалий), и у неё четыре верхних категории: [```14```](http://www.loa-cnr.it/Papers/D07_v21a.pdf)
+
+```
+Particular (Партикуляр — конкретный индивид)
+├── Spatio-temporal Particular (существует в пространстве-времени)
+│   ├── Endurant (эндурант — «целиком присутствует» в любой момент)
+│   │   ├── Physical Endurant
+│   │   │   ├── Amount of Matter (количество материи)
+│   │   │   ├── Feature (признак-часть)
+│   │   │   └── Physical Object
+│   │   │       ├── Non-Agentive Physical Object (организмы, вещи)
+│   │   │       └── Agentive Physical Object ⬅ «Алиса-человек»
+│   │   └── Non-Physical Endurant
+│   │       ├── Mental Object (мысли, гипотезы)
+│   │       └── Social Object
+│   │           ├── Agentive Social Object ⬅ «Алиса-персона» как соц. статус
+│   │           └── Non-Agentive Social Object (цены, законы)
+│   ├── Perdurant (пердурант — «частично присутствует»)
+│   │   ├── Eventive: Achievement / Accomplishment
+│   │   └── Stative: State / Process
+│   └── Quality (качество) → Physical / Temporal / Abstract Quality
+└── Abstract (абстракции: множества, регионы качеств — quale)
+```
+
+Нюанс: в OWL-версии DOLCE-Lite верхнее разбиение упрощено до пары «Abstract ↔ Spatio-temporal Particular», а Endurant/Perdurant/Quality — под последним. Примеры эндурантов в DOLCE — «таблица, человек, кот»; пердурантов — «теннисный матч, лекция». [```11```](https://www.researchgate.net/publication/382718938_Choosing_the_Sweet_Life_with_DOLCE)[```15```](https://arxiv.org/pdf/2308.01597)
+
+## 3. Онтология Джона Совы (KR Ontology)
+
+Это не дерево, а **решётка** (lattice), построенная из девяти примитивов: триада Пирса *Independent / Relative / Mediating*, дихотомия *Physical / Abstract* и дихотомия *Continuant / Occurrent*: [```9```](https://jfsowa.com/ontology/toplevel.htm)[```8```](https://www.academia.edu/537206/Categories_The_top_level_ontology)
+
+```
+Entity (T)                     ⊥ (Absurdity — противоречивый ноль)
+├── Independent (I) — самостоятельное
+├── Relative (R)   — связанное с чем-то
+├── Mediating (M)  — связывающее другое
+├── Physical (P)   / Abstract (A)
+└── Continuant (C) / Occurrent (O)
+```
+
+Из пересечений примитивов получаются **12 центральных категорий** — «алмаз Совы»: [```9```](https://jfsowa.com/ontology/toplevel.htm)
+
+| | Independent | Relative | Mediating |
+|---|---|---|---|
+| **Physical Continuant** | Object (IPC) | Juncture (RPC) | Structure (MPC) |
+| **Physical Occurrent** | Process (IPO) | Participation (RPO) | Situation (MPO) |
+| **Abstract Continuant** | Schema (IAC) | Description (RAC) | Reason (MAC) |
+| **Abstract Occurrent** | Script (IAO) | History (RAO) | Purpose (MAO) |
+
+**Person.** На верхнем уровне отдельного класса нет: человек — это `Object (IPC)` (актуальность, сохраняющая тождество во времени). Агентность у Совы — отдельная тема: агент определяется как «одушевлённая сущность, способная что-то делать намеренно», и это определение намеренно охватывает людей, животных, роботов и софтботов. Средний уровень (LivingThing → Human и т. п.) в KR Ontology не зафиксирован жёстко — иерархия генерируется из набора различений под конкретное приложение. «Алиса есть человек» здесь — `Alisa: Object`, плюс агентная интерпретация. [```9```](https://jfsowa.com/ontology/toplevel.htm)[```59```](https://jfsowa.com/ontology/agents.htm)[```31```](https://jfsowa.com/ontology/)
+
+**Process.** У Совы `Process (IPO) = Actuality ∩ Occurrent` — сам класс определяется уже через два примитива; подчёркивается, что один и тот же объект (даже бриллиант) при разном масштабе может рассматриваться как объект или как процесс. Дальше идут различения непрерывных/дискретных процессов и каузальности (страница Processes и Causality). [```9```](https://jfsowa.com/ontology/toplevel.htm)[```59```](https://jfsowa.com/ontology/agents.htm)
+
+## 4. OpenCyc
+
+Cyc — самая «энциклопедическая» из пяти: цель — здравый смысл, а не философия. Таксономия Cyc — тоже решётка с множественным наследованием, узлы — коллекции, связи — `isa`/`genls`. Верхняя часть (схематично): [```26```](https://en.wikipedia.org/wiki/Cyc)[```49```](https://cybernetics.fandom.com/ru/wiki/Cyc)
+
+```
+Thing
+├── MathematicalOrComputationalThing (математика, формулы, программы)
+└── SomethingExisting (существует во времени)
+    ├── PartiallyIntangible (частично нематериальное)
+    └── PartiallyTangible (частично материальное)
+        └── SpatiallyDistributedObject → OrganicObject → Animal → ... 
+```
+
+**Person.** Здесь интересней всего: Cyc держит **две параллельные коллекции** — биологическую и здравосмысленную:
+
+```
+Animal ────────► ... ──► HomoSapiens ⊑ BiologicalSpecies (биологический вид)
+PartiallyHuman (лица И группы людей)
+   └── Person ⬅ (genls #$Person #$Animal — подтверждается напрямую)
+         ├── HumanAdult (взрослый человек — типичный агент)
+         ├── HumanChild
+         └── HumanBaby
+```
+
+То есть `#$Person` — это здравосмысленная/социальная коллекция (наследуется и от Animal, и от PartiallyHuman, чьи члены — либо люди, либо группы людей), а `#$HomoSapiens` — строго биологический вид, и Cyc не отождествляет их через `genls`, а связывает косвенно. Запись:
+
+```cyc
+(isa Alisa #$Person)
+(isa Alisa #$HumanAdult)          ; если хочется уточнить
+```
+
+**Process.** В Cyc события живут под временной ветвью `SomethingExisting` → `TemporalThing`, которая делится на `StaticThing` (состояния) и `Event` (события); внутри `Event` есть `PhysicalEvent`, `SocialEvent`, `StateChangeEvent` и `Process` — цепочку родовителей Cyc всегда досчитывает сам по `genls`-утверждениям, полной статической картинки «дерева» у него нет в принципе. Схему я привожу по ключевым коллекциям — точную ветку легко проверить в OWL-дампе (ссылка ниже).
+
+## 5. Обновлённая сводная таблица
+
+| | SUMO | BFO | DOLCE | Sowa | OpenCyc |
+|---|---|---|---|---|---|
+| **Корень** | Entity | Entity | Particular | Entity (T), 9 примитивов | Thing |
+| **Главный разлом** | Physical ↔ Abstract | Continuant ↔ Occurrent | Endurant ↔ Perdurant ↔ Quality ↔ Abstract | 3 дихотомии × трихотомия → решётка | Мат./немат. + здравый смысл |
+| **Где «человек»** | Human (двойное наследование) | Нет в ядре; NCBITaxon под Object | APO (+ ASO); в DUL — `Person` | Object (IPC) + агентность | `Person` — первоклассная коллекция |
+| **Где «процесс»** | Прямой наследник Physical | Ядро ветви Occurrent | Stative-пердурант (кумулятивный) | Process (IPO) — пересечение примитивов | Event / Process в TemporalThing |
+| **Ориентация** | Инженерная, вывод | Реалистская, наука | Когнитивная, язык | Семиотика Пирса + лингвистика | Энциклопедия здравого смысла |
+
+## 6. Где смотреть эти ветки
+
+- **SUMO**: интерактивный браузер Sigma — [Sigma Knowledge Base Browser](https://sigma.ontologyportal.org/sigma/Browse.jsp?kb=SUMO), адрес конкретного термина строится по шаблону `...Browse.jsp?kb=SUMO&term=Human` (или `&term=Process`); исходники — [репозиторий sumo](https://www.researchgate.net/publication/338935289_Aligning_Conference_Ontologies_with_SUMO_A_Report_on_Manual_Alignment_via_WordNet).
+- **BFO**: официальный [репозиторий со спецификацией и User's Guide](https://github.com/BFO-ontology/BFO); иерархия BFO 2020 с определениями на русском — в [ГОСТ Р 59798-2021](https://docs.cntd.ru/document/1200181577); для визуального просмотра терминов стандартный инструмент OBO — Ontobee (`ontobee.org/ontology/BFO`). [```72```](https://www.researchgate.net/publication/309153173_Ontobee_A_linked_ontology_data_server_to_support_ontology_term_dereferencing_linkage_query_and_integration)
+- **DOLCE**: страница модуля со скачиванием OWL-версий — [LOA / DOLCE](http://www.loa-cnr.it/DOLCE.html); файл `DOLCE-Lite.owl` лежит на сайте LOA (сейчас loa.istc.cnr.it/ontologies); DUL доступен как `DUL.owl` через Ontology Design Patterns. [```74```](https://datascience.codata.org/articles/10.5334/dsj-2025-023)
+- **Sowa**: [Top-Level Categories с «алмазом» и аксиомами](https://jfsowa.com/ontology/toplevel.htm) и [индекс всей KR Ontology](https://jfsowa.com/ontology/).
+- **OpenCyc**: онлайн-браузер sw.opencyc.org закрыт вместе с самим OpenCyc в 2017 году, но копии страниц есть в web.archive.org, а сам дамп OpenCyc 4.0 (239 тыс. терминов) — [на SourceForge](https://sourceforge.net/projects/opencyc/); для ResearchCyc у Cycorp есть документация API на GitHub. [```26```](https://en.wikipedia.org/wiki/Cyc)[```30```](https://github.com/AndrewSmart/opencyc)
+
+Забавный итог: по вопросу «есть ли Person» четыре онтологии дают четыре разных стратегии — «принесите класс извне» (BFO), «расщепите и объедините снаружи» (DOLCE/DUL), «задайте критерий агентности» (Sowa) и «имейте обе коллекции и не путайте» (Cyc). Если хотите, следующим шагом могу показать, как эти четыре записи про Алису сшиваются друг с другом — то есть конкретные правила маппинга `dul:Person ↔ NCBITaxon_9606 ↔ #$Person`.

@@ -332,3 +332,131 @@ PartiallyHuman (лица И группы людей)
 - **OpenCyc**: онлайн-браузер sw.opencyc.org закрыт вместе с самим OpenCyc в 2017 году, но копии страниц есть в web.archive.org, а сам дамп OpenCyc 4.0 (239 тыс. терминов) — [на SourceForge](https://sourceforge.net/projects/opencyc/); для ResearchCyc у Cycorp есть документация API на GitHub. [```26```](https://en.wikipedia.org/wiki/Cyc)[```30```](https://github.com/AndrewSmart/opencyc)
 
 Забавный итог: по вопросу «есть ли Person» четыре онтологии дают четыре разных стратегии — «принесите класс извне» (BFO), «расщепите и объедините снаружи» (DOLCE/DUL), «задайте критерий агентности» (Sowa) и «имейте обе коллекции и не путайте» (Cyc). Если хотите, следующим шагом могу показать, как эти четыре записи про Алису сшиваются друг с другом — то есть конкретные правила маппинга `dul:Person ↔ NCBITaxon_9606 ↔ #$Person`.
+
+№№ 3
+
+Приведи примеры других онтологий, где есть Person или Human
+
+Соберу проверенные примеры: уточню точные IRI классов Person в FIBO, UFO и NCI Thesaurus, чтобы код в ответе был корректным.
+Здесь картинка проще, чем с фундаментальными онтологиями: почти все прикладные схемы — RDF/OWL, и объявление всегда одно и то же — тройка `субъект rdf:type класс`, различается только сам класс и то, что он «умеет». Пройдусь по семи разным экосистемам.
+
+## 1. FOAF — социальный веб
+
+Класс `foaf:Person` («natural person»), подкласс `foaf:Agent`; типичное связывание через профиль и свойства: [spec FOAF](https://xmlns.com/foaf/spec/)
+
+```turtle
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://example.org/people/alisa>
+    a foaf:Person ;
+    foaf:name "Алиса" ;
+    foaf:mbox <mailto:alisa@example.org> .
+```
+
+## 2. schema.org — разметка страниц
+
+Тот же паттерн, но в JSON-LD, которым размечают сайты поисковики: [schema.org/Person](https://schema.org/Person)
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Алиса",
+  "birthDate": "1990-05-14"
+}
+```
+
+## 3. PROV-O — происхождение данных
+
+Здесь `prov:Person` — подкласс `prov:Agent`, а тот — подкласс `prov:Entity`; «персона» явно встроена в ветку участников процесса порождения данных: [W3C PROV-O](https://www.w3.org/TR/prov-o/)
+
+```turtle
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix ex:   <http://example.org/> .
+
+ex:alisa a prov:Person .
+ex:report prov:wasAttributedTo ex:alisa .
+```
+
+## 4. CIDOC CRM — культурное наследие
+
+Двусловный кодовый класс: `E21_Person`, подкласс `E39_Actor`. Определение широкое — «кто реальный или воображаемый, кто мог бы быть участником события», так что сюда осознанно попадают и литературные герои: [CIDOC CRM](https://cidoc-crm.org/)
+
+```turtle
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<http://data.example.org/person/alisa>
+    a crm:E21_Person ;
+    rdfs:label "Алиса" .
+```
+
+## 5. DBpedia и Wikidata — графы знаний
+
+В DBpedia тип под `dbo:Person` (`dbo:Human` — его подкласс):
+
+```turtle
+dbr:Alisa a dbo:Person .
+```
+
+В Wikidata чуть тоньше: там различают «person» (Q215627 — общий класс персоны, включая юридических) и «human» (Q5) — официальная рекомендация для людей использовать именно Q5 через свойство P31: [```wikidata.org```](https://www.wikidata.org/wiki/Q215627)
+
+```turtle
+wd:Q123456 p:P31 wd:Q5 .   # «это экземпляр человека»
+```
+
+## 6. NCI Thesaurus — биомедицинская ветка (BFO-экосистема)
+
+Класс `ncit:C25190` («Person») и `ncit:C14225` («Homo sapiens»); NCIt публикуется в OWL и используется как эталонная терминология в биомедицине: [```nci.nih.gov```](https://wiki.nci.nih.gov/spaces/EVS/pages/7472532/NCI+Thesaurus+NCIt)
+
+```turtle
+@prefix ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> .
+
+:Alisa a ncit:C14225 .   # экземпляр Homo sapiens
+# или a ncit:C25190 — если типируется как «персона» вообще
+```
+
+## 7. FIBO — финансовая индустрия
+
+Класс `fibo-fnd-aap-ppl:Person` — «individual human being, with consciousness of self», синоним «natural person»; вокруг него специализируются юридически значимые классы вроде `LegallyCapableAdult` — «лицо, достигшее возраста большинства в юрисдикции»: [```inferal.com```](https://ontology.inferal.com/imports/fibo/FND/AgentsAndPeople/People.ttl)
+
+```turtle
+@prefix ppl: <https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/> .
+
+:Alisa a ppl:Person .
+# при необходимости: :Alisa a ppl:LegallyCapableAdult .
+```
+
+Просматривается через [спек-браузер EDM Council](https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/).
+
+## 8. gUFO (UFO/OntoUML) — с метатипом
+
+Самый изощрённый случай: класс `:Person` типируется **дважды** — как подкласс `gufo:Object` (это его онтологическая природа) и как экземпляр `gufo:Kind` (метатип «жёсткий сортал», принцип тождественности). Приём называется OWL 2 punning — один и тот же IRI играет роль и класса, и индивида: [```arxiv.org```](https://arxiv.org/pdf/2603.20948)[```nemo.inf.ufes.br```](https://nemo.inf.ufes.br/files/jpalmeida-tpsales-ontobras-2021-gufo-tutorial-v1.0.pdf)
+
+```turtle
+:Person  rdfs:subClassOf gufo:Object ;
+         rdf:type gufo:Kind .
+
+:Alisa   a :Person .
+
+:Student a :PersonRole ;      # роль — антиригидный класс
+         rdfs:subClassOf :Person .
+:Alisa   a :Student .          # Алиса может перестать быть студентом,
+                               # но не может перестать быть персоной
+```
+
+## Сводка: одно объявление, семь сигнатур
+
+| Онтология | Класс | IRI класса | Объявление экземпляра |
+|---|---|---|---|
+| FOAF | `foaf:Person` | строчный префикс, CamelCase | `x a foaf:Person` |
+| schema.org | `schema:Person` | строчные, словарь для веба | `"@type": "Person"` |
+| PROV-O | `prov:Person ⊑ prov:Agent` | W3C-namespace | `x a prov:Person` |
+| CIDOC CRM | `E21_Person ⊑ E39_Actor` | кодовые классы (E21) | `x a crm:E21_Person` |
+| Wikidata | Q5 (human) | цифровые коды | `P31 → Q5` |
+| NCIt | `C25190` / `C14225` | цифровые коды | `x a ncit:C25190` |
+| FIBO | `ppl:Person` | длинные композитные префиксы | `x a ppl:Person` |
+| gUFO | `:Person a gufo:Kind` | свой префикс + метатип | `x a :Person` |
+
+Два практических вывода. Во-первых, на практике один и тот же ресурс часто типируют **несколькими типами сразу** — это нормальный способ сшить экосистемы: `:Alisa a foaf:Person, prov:Agent, dbo:Person`. Во-вторых, обратите внимание на расщепление «human vs person», которое повторяется снова и снова: Wikidata (Q5 vs Q215627), FIBO (Person vs юридически способные подклассы), DOLCE (APO vs ASO), Cyc (HomoSapiens vs Person) — прикладные онтологии независимо переизобрели ту же пару различений, что я показывал в фундаментальных.
+
+Если хотите, могу показать, как одно и то же лицо «переезжает» между этими схемами: например, полный профиль Алисы с совмещёнными типами и правилами эквивалентности `foaf:Person ≈ schema:Person ≈ dbo:Person` — это частая реальная задача в интеграции данных.

@@ -2,6 +2,9 @@
 - https://new2.intuit.ru/studies/professional_skill_improvements/1627/courses/270/lecture/6851?page=2
 - https://ailev.livejournal.com/516389.html 9. Современные онтологии подразумевают не только описание понятий, но и описание их связей (правила).
 - https://wiki.bitplan.com/index.php/Upper_Ontology ; https://inariksit.github.io/cclaw-zettelkasten/top_ontology_domain_ontologies.html
+- https://www.cs.ubc.ca/~poole/aibook/2e/html2e/ArtInt2e.Ch14.S3.SS3.html
+- https://www.w3.org/TR/owl-primer/
+
 ## 1
 Приведи полное дерево иерархии до Персона \ Человек в SUMO, BFO, DOLCE.  
 Аналогично сделай для Процесс.

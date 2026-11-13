@@ -633,4 +633,172 @@ Human / Person
 
 Именно это расхождение между бытовым словом и формальной онтологической терминологией является основной причиной того, что «простая» задача оказывается не такой простой.
 
+## 2.1
+
+По таблице: Одно и то же слово может означать разное:  
+В ней же по SUMO должно быть два разных Human.  
+В SUMO есть Person? 
+
+Вы правы: в предыдущей таблице я неточно представил SUMO и неполно отразил Cyc и BFO. Ниже — исправленная версия с уточнением: **в базовом SUMO (`Merge.kif`) есть `Human`, но нет отдельного класса `Person`**; «два Human» — скорее всего, путаница с двумя родительскими ветками `Human` либо с классом в дополнительном модуле, а не дубликат одного и того же класса. [raw.githubusercontent](https://raw.githubusercontent.com/ontologyportal/sumo/master/Merge.kif)
+
+## SUMO: Human, а не Person
+
+В текущем `Merge.kif` SUMO определение человека выглядит так: [raw.githubusercontent](https://raw.githubusercontent.com/ontologyportal/sumo/master/Merge.kif)
+
+```lisp
+(subclass Human Hominid)
+(subclass Human CognitiveAgent)
+
+(documentation Human
+  EnglishWrittenLanguage
+  "Modern man, the only remaining species of the Homo genus.")
+```
+
+То есть `Human` имеет **два непосредственных родителя**:
+
+```text
+Entity
+└── Physical
+    └── Object
+        ├── Agent
+        │   └── CognitiveAgent
+        │       └── Human
+        └── OrganicObject
+            └── Organism
+                └── Animal
+                    └── Hominid
+                        └── Human
+```
+
+Это не два класса `Human`, а **один класс с двумя родительскими осями**: биологической (`Hominid`) и когнитивно-агентной (`CognitiveAgent`). SUMO явно разрешает классу иметь несколько надклассов. [raw.githubusercontent](https://raw.githubusercontent.com/ontologyportal/sumo/master/Merge.kif)
+
+### Полный путь к Human
+
+```text
+Entity
+└── Physical
+    └── Object
+        └── SelfConnectedObject
+            └── OrganicObject
+                └── Organism
+                    └── Animal
+                        └── Hominid
+                            └── Human
+```
+
+Параллельный путь:
+
+```text
+Entity
+└── Physical
+    └── Object
+        └── Agent
+            └── CognitiveAgent
+                └── Human
+```
+
+### Прямые подклассы Human
+
+Из `Merge.kif` следуют как минимум: [raw.githubusercontent](https://raw.githubusercontent.com/ontologyportal/sumo/master/Merge.kif)
+
+```text
+Human
+├── Man
+├── Woman
+└── HumanChild
+```
+
+В SUMO `Man` и `Woman` определены через атрибуты пола и являются подклассами `Human`; `HumanChild` также встречается как самостоятельный класс. [raw.githubusercontent](https://raw.githubusercontent.com/ontologyportal/sumo/master/Merge.kif)
+
+### Есть ли Person в SUMO?
+
+В базовом `Merge.kif` класса `Person` нет; документация SUMO использует `Human` как канонический термин. Например, в формализациях на базе SUMO встречается `(instance ?PERSON Human)`, а не `(instance ?PERSON Person)`. [raw.githubusercontent](https://raw.githubusercontent.com/ontologyportal/sumo/master/Merge.kif)
+
+Поэтому для SUMO правильная запись:
+
+```lisp
+(instance Alice Human)
+```
+
+А не:
+
+```lisp
+(instance Alice Person)
+```
+
+Если в каком-то инструменте, экспорте или стороннем модуле SUMO видны и `Human`, и `Person`, это, вероятнее всего, результат маппинга, импорта из другой онтологии или использования domain-модуля, а не наличие двух одноимённых классов в ядре SUMO.
+
+## Исправленная таблица
+
+| Онтология | Класс для «Алиса — человек» | Есть ли `Human`? | Есть ли `Person`? | Как записать | Комментарий |
+|---|---|---:|---:|---|---|
+| **SUMO** | `Human` | Да | Нет в `Merge.kif` | `(instance Alice Human)` | Человек = биологический вид + когнитивный агент |
+| **BFO** | Обычно `Human` или `Person` в доменном слое | Иногда | Иногда | `Alice a :Human` | Сам BFO не обязан определять `Person`; он задаёт верхние категории |
+| **DOLCE / DUL** | `Person` | Обычно нет | Да | `Alice a dul:Person` | Персона как агентивный физический объект |
+| **GFO** | `Person` или `Human` | Зависит от модуля | Да | `Alice a gfo:Person` | Терминология зависит от версии |
+| **UFO** | `Person` | Обычно нет | Да | `Alice a ufo:Person` | Персона как тип агента |
+| **Cyc** | `Person` | Обычно нет | Да | `(isa Alice Person)` | Персона в широком смысле |
+| **PROTON** | `Person` | Обычно нет | Да | `Alice a ptop:Person` | Персона как агент |
+| **schema.org** | `Person` | Нет | Да | `Alice a schema:Person` | Практичный веб-словарь |
+| **FOAF** | `Person` | Нет | Да | `Alice a foaf:Person` | Персона как агент |
+| **Wikidata** | `human` Q5 | Да | Да, `person` Q215627 | `Алиса P31 Q5` | Для конкретного человека — Q5, не Q215627 |
+
+## Почему Cyc и BFO не были в таблице
+
+Это была моя ошибка в предыдущем ответе: я упомянул Cyc и BFO в тексте, но не включил их в сводную таблицу как отдельные строки с корректной терминологией.
+
+- **Cyc** следует включить: его основной термин — `Person`, а не `Human`; запись `(isa Alice Person)` является естественной для CycL.
+- **BFO** следует включить с оговоркой: BFO — это действительно верхняя онтология, но она обычно не фиксирует `Person` как собственный верхний класс; `Person` появляется в прикладных или среднеуровневых онтологиях, построенных на BFO. В IOF/BFO-ориентированных спецификациях `person` является подклассом `bfo:object`. 
+- **DOLCE, GFO, UFO, PROTON** также следовало показать отдельно, поскольку в них чаще используется `Person`, а не `Human`.
+
+## Почему Human и Person различаются
+
+`Human` и `Person` не обязательно эквивалентны.
+
+```text
+Human  = биологический человек, Homo sapiens
+Person = персона, субъект, носитель роли или агент
+```
+
+В OWL их можно объявить эквивалентными только отдельной аксиомой:
+
+```turtle
+:Person owl:equivalentClass :Human .
+```
+
+Это означает одновременно:
+
+```turtle
+:Person rdfs:subClassOf :Human .
+:Human  rdfs:subClassOf :Person .
+```
+
+Но без такой аксиомы система не вправе считать `Person` и `Human` синонимами. [w3](https://www.w3.org/TR/owl2-primer/)
+
+## Почему возникает «сбой»
+
+Проблема не в том, что онтологии не могут выразить факт «Алиса — человек». Они могут. Проблема в том, что **разные онтологии выбирают разные основные термины и разные оси классификации**.
+
+| Причина | Что происходит |
+|---|---|
+| Разные основные термины | SUMO выбирает `Human`, DOLCE/FOAF/schema.org — `Person` |
+| Разные оси классификации | SUMO делит человека на биологическую и когнитивную линии |
+| Множественное наследование | `Human` имеет двух родителей: `Hominid` и `CognitiveAgent` |
+| Разная глубина онтологии | BFO остаётся на уровне `Object`, а `Person` добавляет доменный слой |
+| Разные цели | SUMO — формальная логика, Cyc — контекстные рассуждения, schema.org — веб-данные |
+| Неявная семантика слов | «Человек» и «персона» в быту кажутся синонимами, в онтологии — нет |
+
+## Практический вывод
+
+Для вашей задачи:
+
+- В **SUMO** пишите: `(instance Alice Human)`.
+- В **Cyc** пишите: `(isa Alice Person)`.
+- В **DOLCE / FOAF / schema.org / PROTON** пишите: `Alice a Person`.
+- В **Wikidata** пишите: `Алиса P31 Q5`, то есть `instance of human`.
+- Не используйте `Agent`, `Individual`, `Organism` или `Animal` как основной класс для Алисы.
+
+Главный вывод: **`Human` — наиболее прямой термин для биологического человека; `Person` — наиболее распространённый термин для персоны/агента.** SUMO использует `Human`, большинство практических веб-онтологий — `Person`, а Wikidata разделяет оба понятия явно. [raw.githubusercontent](https://raw.githubusercontent.com/ontologyportal/sumo/master/Merge.kif)
+
+
 

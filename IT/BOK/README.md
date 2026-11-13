@@ -33,3 +33,6 @@ Business Technology Architecture Body of Knowledge
 - PM_BA https://github.com/bpmbpm/doc/blob/main/PM_BA/README.md
 - https://github.com/bpmbpm/bpm-tensor/tree/main/info/organization
 - https://github.com/bpmbpm/doc/blob/main/BPM/technology/readme.md
+
+## also 
+- https://github.com/bpmbpm/doc/tree/main/IT/standardization

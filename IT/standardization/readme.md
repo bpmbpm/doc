@@ -29,3 +29,6 @@
 ### разное
 - [Учебник CIO](https://4cio.ru/content/uchebnik_all_2.pdf)
 - [Сенаторов](https://www.cnews.ru/reviews/free/gov2007/int/cbr/)
+
+## also 
+- https://github.com/bpmbpm/doc/blob/main/IT/BOK/README.md

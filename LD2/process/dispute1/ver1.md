@@ -72,9 +72,9 @@ Object vs Process – это как черное vs белое.
 
 Каждый объект привязан к процессу, полагаю, что без процесса он не существует (в Мире вещей). Видимо в этом и будет суть (будущей) процессно-ориентированной онтологии, когда объект будет обозначен как элемент процесса, но не сущность вне его. 
 Создание экземпляра процесса – по аналогии с экземпляром объекта, т.е. через предикат instance. Как пример из автоматизации - создание экземпляра процесса в WF-engine (camunda, runa etc).       
-Полагаю, что более фундаментального (логичного и взаимоувязанного), чем ARIS по идеологии (онтологии) процессов – вряд ли что-то есть. Если есть – покажите.
-Первая сотня [SUMO term:](http://sigma.ontologyportal.org/sigma/Graph.jsp)  
-Ветка [Процесс в SUMO:](https://sigma.ontologyportal.org/sigma/Graph.jsp?relation=subclass&term=Process&up=1&down=1&limit=&inst=inst&fileRestrict=&columns=direct-children&columns=documentation&columns=graph&scrWidth=1258&kb=SUMO&flang=SUO-KIF&lang=EnglishLanguage&view=text&submit=submit)
+Полагаю, что более фундаментального (логичного и взаимоувязанного), чем ARIS по идеологии (онтологии) процессов – вряд ли что-то есть. Если есть – покажите.  
+Первая сотня [SUMO term:](http://sigma.ontologyportal.org/sigma/Graph.jsp)   
+Ветка [Процесс в SUMO:](https://sigma.ontologyportal.org/sigma/Graph.jsp?relation=subclass&term=Process&up=1&down=1&limit=&inst=inst&fileRestrict=&columns=direct-children&columns=documentation&columns=graph&scrWidth=1258&kb=SUMO&flang=SUO-KIF&lang=EnglishLanguage&view=text&submit=submit)  
 В DOLCE, BFO и др. тоже есть Process (иногда немного зарыта) и даже у некоторых как подкласс к Process есть Событие. Но все они далеки от ARIS – идеологии. 
 Да, и SUMO - очень далека от идеала, но зато в ней наиболее точно показана развилка Physical. 
 

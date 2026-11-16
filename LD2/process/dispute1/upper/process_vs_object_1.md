@@ -346,3 +346,149 @@ Process (Процесс)
 - **Bercič, V. (2004). *Simple Life-Events Ontology in SU(M)O-KIF*** — пример моделирования «события» как подкласса `IntentionalProcess` и использования `subProcess`: [https://dl.ifip.org/db/conf/kmgov/kmgov2004/BercicV04.pdf](https://dl.ifip.org/db/conf/kmgov/kmgov2004/BercicV04.pdf) [dl.ifip](https://dl.ifip.org/db/conf/kmgov/kmgov2004/BercicV04.pdf)
 - **Rodrigues, F. H., Abel, M. (2019). *What to consider about events: A survey on the ontology of occurrents*** — анализ трактовки событий, процессов и временных частей в SUMO: [https://journals.sagepub.com/doi/10.3233/AO-190217](https://journals.sagepub.com/doi/10.3233/AO-190217)
   
+## 3
+
+Каждый процесс может иметь:
+
+subProcess — временные части/стадии;
+
+agent, patient, instrument, resource, origin, destination, result — участников и роли;
+
+manner, frequency, causes, precondition — характеристики и связи с другими процессами;
+
+отсутствие единого input/output: вход и выход выражаются через resource, patient, instrument и result.
+
+Да — **все перечисленные отношения существуют в базовой SUMO**, но моя прежняя формулировка нуждается в уточнении: `manner`, `frequency`, `causes` и `precondition` — это не «атрибуты процесса» в объектно-ориентированном смысле, а **бинарные предикаты** (отношения), связывающие процесс с другим элементом онтологии. [cl.uni-heidelberg](https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf)
+
+## Что подтверждается
+
+| Отношение SUMO | Перевод | Домены (примерная сигнатура) | Есть в SUMO? |
+|---|---|---|---|
+| `subProcess` | Подпроцесс | `Process × Process` | Да |
+| `agent` | Агент | `Process × Agent` | Да |
+| `patient` | Пациент | `Process × Entity` | Да |
+| `instrument` | Инструмент | `Process × Object` | Да |
+| `resource` | Ресурс | `Process × Object` | Да |
+| `origin` | Источник | `Process × Object` | Да |
+| `destination` | Назначение | `Process × Object` | Да |
+| `result` | Результат | `Process × Entity` | Да |
+| `manner` | Образ действия | `Process × Attribute` | Да |
+| `frequency` | Частота | `Process × TimeDuration` | Да |
+| `causes` | Вызывает | `Process × Process` | Да |
+| `precondition` | Предусловие | `Process × Formula` | Да |
+| `input` | Вход | — | **Нет как универсального отношения** |
+| `output` | Выход | — | **Нет как универсального отношения** |
+
+Перечень `agent`, `causes`, `destination`, `instrument`, `origin`, `patient`, `result` и `subProcess` прямо включён в перечень базовых отношений SUMO; для каждого приведены определения.  Исследования, использующие SUMO, также прямо называют `Patient`, `Instrument`, `Agent` и `subProcess` предикатами, доступными для процессов. [cl.uni-heidelberg](https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf)
+
+## Точные роли
+
+### Части процесса
+
+```kif
+(subProcess ?SUBPROC ?PROC)
+```
+
+`subProcess` означает, что `SUBPROC` — подпроцесс `PROC`; подпроцесс понимается как **временно выделенная часть** процесса, собственная или несобственная. [cl.uni-heidelberg](https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf)
+
+```kif
+(temporalPart (WhenFn ?SUBPROC) (WhenFn ?PROC))
+```
+
+То есть время подпроцесса является временной частью времени родительского процесса. [cl.uni-heidelberg](https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf)
+
+### Участники и роли
+
+- `agent` — активный детерминант процесса, одушевлённый или неодушевлённый, с намерением или без него. [cl.uni-heidelberg](https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf)
+- `patient` — участник процесса, который может быть перемещён, сказан, пережит и т. п.; пациент может, но не обязан структурно измениться. [cl.uni-heidelberg](https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf)
+- `instrument` — средство, используемое агентом для осуществления события и **не изменяемое** этим событием; например, ключ в процессе открывания двери. [cl.uni-heidelberg](https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf)
+- `resource` — то, что присутствует в начале процесса, используется процессом и вследствие этого изменяется; `resource` и `instrument` не могут относиться к одной и той же паре «процесс–объект». [cl.uni-heidelberg](https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf)
+- `origin` — место или источник, где процесс начался; источник присутствует в начале, но не обязательно участвует на протяжении всего процесса. [cl.uni-heidelberg](https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf)
+- `destination` — цель или конечная точка процесса; например, город как пункт назначения перемещения. [cl.uni-heidelberg](https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf)
+- `result` — продукт или выход действия; `result` — наиболее близкая к «выходу процесса» роль, но она не тождественна обобщённому `output`. [cl.uni-heidelberg](https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf)
+
+Пример из SUMO-расширения для передачи данных:
+
+```kif
+(origin ?Transfer ?Origin)
+(destination ?Transfer ?Destination)
+(instrument ?Transfer ?System)
+(patient ?Transfer ?Data)
+```
+
+Здесь `Transfer` — процесс передачи, у которого есть источник, назначение, система-инструмент и данные-пациент. [github](https://github.com/ontologyportal/sumo/blob/master/QoSontology.kif)
+
+## Характеристики процесса
+
+### manner
+
+```kif
+(manner ?PROCESS ?ATTRIBUTE)
+```
+
+`manner` связывает процесс с `Attribute` (*Атрибут*) — характеристикой способа выполнения. Это отношение есть в SUMO; в моём предыдущем перечне оно указано верно, но его лучше называть не «атрибутом», а **отношением процесс–атрибут**. [cl.uni-heidelberg](https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf)
+
+### frequency
+
+```kif
+(frequency ?PROCESS ?TIME_DURATION)
+```
+
+`frequency` связывает процесс с `TimeDuration` (*Временная длительность*) и выражает периодичность или повторяемость. Это тоже отношение, а не встроенное числовое поле. [cl.uni-heidelberg](https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf)
+
+### causes
+
+```kif
+(causes ?PROCESS1 ?PROCESS2)
+```
+
+`causes` означает, что экземпляр `PROCESS1` вызывает экземпляр `PROCESS2`. Оба аргумента — процессы; это отношение причинности между процессами, а не связь процесса с объектом. [cl.uni-heidelberg](https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf)
+
+### precondition
+
+```kif
+(precondition ?PROCESS ?FORMULA)
+```
+
+`precondition` связывает процесс с `Formula` (*Формула*) — логическим условием, которое должно выполняться. Это отношение предусловия, а не «входной ресурс». [cl.uni-heidelberg](https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf)
+
+## Вход и выход
+
+Утверждение **«отсутствие единого input/output»** верно: в базовой SUMO нет общих предикатов `input` и `output`, применимых к любому `Process`. Вместо них вход и выход выражаются через семантически более точные роли. [cl.uni-heidelberg](https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf)
+
+| Моделируемый смысл | Отношение SUMO | Перевод |
+|---|---|---|
+| Потребляемый материал/входной ресурс | `resource` | Ресурс |
+| Объект воздействия | `patient` | Пациент |
+| Инструмент или средство | `instrument` | Инструмент |
+| Созданный продукт | `result` | Результат |
+| Куда перемещается объект | `destination` | Назначение |
+| Откуда начинается перемещение | `origin` | Источник |
+
+Например, в производственном процессе:
+
+```text
+Baking (Выпекание)
+├── resource: Dough (Тесто)          — вход, изменяемый ресурс
+├── instrument: Oven (Печь)          — инструмент, не изменяется процессом
+├── agent: Baker (Пекарь)            — агент
+├── result: Bread (Хлеб)             — выход
+└── subProcess: Heating (Нагревание) — временная часть
+```
+
+Здесь `resource` — вход в смысле потребляемого материала, а `result` — выход в смысле созданной сущности. Различие принципиально: ресурс изменяется процессом, инструмент — нет. [cl.uni-heidelberg](https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf)
+
+## Исправленная формулировка
+
+Корректнее сказать так:
+
+> Каждый `Process` в SUMO может быть связан отношениями `subProcess`, `agent`, `patient`, `instrument`, `resource`, `origin`, `destination`, `result`, `manner`, `frequency`, `causes` и `precondition`. Отношения `agent`, `patient`, `instrument`, `resource`, `origin`, `destination` и `result` выражают участников и роли; `subProcess` — временные части; `manner`, `frequency`, `causes` и `precondition` — характеристики и причинно-условные связи. Универсальных отношений `input` и `output` в SUMO нет: вход обычно моделируют через `resource` или `patient`, а выход — через `result` и/или `destination`. [cl.uni-heidelberg](https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf)
+
+## Источники
+
+- **Reiter, M. (2007). *Towards a Linking of FrameNet and SUMO*** — перечень и определения отношений `agent`, `causes`, `destination`, `instrument`, `origin`, `patient`, `result`, `subProcess`; объяснение различий `instrument` и `resource`: [https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf](https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf) [cl.uni-heidelberg](https://www.cl.uni-heidelberg.de/~reiter/publications/Reiter2007.pdf)
+- **Journal of Biomedical Semantics (2012)** — подтверждает использование `Patient`, `Instrument`, `Agent` и `subProcess` как предикатов SUMO для процессов: [https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-3-1](https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-3-1) [jbiomedsem.biomedcentral](https://jbiomedsem.biomedcentral.com/articles/10.1186/2041-1480-3-1)
+- **SUMO `QoSontology.kif`** — практический пример одновременного использования `origin`, `destination`, `instrument` и `patient`: [https://github.com/ontologyportal/sumo/blob/master/QoSontology.kif](https://github.com/ontologyportal/sumo/blob/master/QoSontology.kif) [github](https://github.com/ontologyportal/sumo/blob/master/QoSontology.kif)
+- **Методология разработки производственных процессных онтологий** — разъяснение различий `agent`, `instrument`, `resource` и `result`: [https://www.jstage.jst.go.jp/article/jima/64/2E/64_303/_pdf](https://www.jstage.jst.go.jp/article/jima/64/2E/64_303/_pdf) [jstage.jst.go](https://www.jstage.jst.go.jp/article/jima/64/2E/64_303/_pdf)
+
+  

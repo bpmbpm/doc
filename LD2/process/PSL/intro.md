@@ -11,5 +11,6 @@
 Отношения определяются среди классов, например:  
 (происшествие - ... активности - произошедшая активность)  
 (до временная точка временная точка)
+- https://masters.donntu.ru/2012/fknt/gorokhov/library/grushvitskiy_design2.pdf
 ### gost
 - https://files.stroyinf.ru/Data2/1/4293780/4293780211.pdf !!

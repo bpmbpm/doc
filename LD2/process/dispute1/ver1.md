@@ -1,6 +1,6 @@
 ## link
 - https://github.com/aigents/iai/blob/main/docs/2025/ontologies-webstructor-aigents-2025.pdf https://t.me/rusontology/16233
-  - ![ris](/pic/UFO_ORL.jpg)
+  - ![ris](pic/UFO_ORL.jpg)
 
 ## 1
 Большинство upper онтологий под object имеет статику (динамический обьект), а под process - динамику (динамический объект).

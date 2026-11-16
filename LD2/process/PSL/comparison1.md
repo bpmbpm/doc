@@ -3,6 +3,10 @@ PSL
 - Process Specification Language (NIST, ISO 18629) — процессная онтология для обмена информацией о процессах между системами: workflow, планирование, реинжиниринг бизнес-процессов. Формально она описана в KIF/CLIF, а не в LTL — это скорее «сводный словарь процессов», чем язык свойств. В 18629-11—2010 есть определения Онтологии. 
 - Business Property Specification Language (BPSL) — любопытный тёзка: графический язык комплаенс-правил для WS-BPEL, транслирующийся в LTL. Назван «в пику» PSL, и это ещё один аргумент проверять, о какой PSL идёт речь в конкретной статье
 
+bpm
+- ARIS https://bpmbpm.github.io/doc/BPM/ARIS/SCHEER/BASE/10-0sr6_Method_Manual.pdf ; https://www.claudiubrandas.ro/bachelor/cig/1/aris/ARIS%20Method.pdf
+- workflow patterns \ Pattern 2 (Parallel Split) http://workflowpatterns.com/patterns/control/basic/wcp2.php
+
 ## 1
 Есть Язык спецификации свойств ( PSL ), покажи как он соотносится с workflow, например, http://www.workflowpatterns.com/ или ARIS Method Reference manual (там онтология - все классы и предикаты).
 

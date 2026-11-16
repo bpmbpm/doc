@@ -1,4 +1,10 @@
 ## process_vs_object
+
+Process - The class of things ...  that happen and have temporal parts or stages.
+-  AutomatedProcess
+-  NaturalProcess
+
+  
 ### 1
 Покажи на примере онтологии SUMO разделение ветвей object и process. Дай полную иерархию до цитируемых классов и дочерние классы. Покажи признаки по которым идет разделение. Также покажи "присутствуют целиком и "временные части". Дай ссылки на статьи, где это подробно показано.
 

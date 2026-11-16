@@ -4,3 +4,6 @@
 ## wiki
 -  https://en.wikipedia.org/wiki/Object-oriented_ontology
 -  https://en.wikipedia.org/wiki/Process_ontology
+
+## also
+- https://github.com/bpmbpm/doc/tree/main/LD2/BPM

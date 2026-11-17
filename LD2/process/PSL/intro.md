@@ -20,6 +20,7 @@ PSL (Process Specification Language, язык спецификаций проц�
 - https://masters.donntu.ru/2012/fknt/gorokhov/library/grushvitskiy_design2.pdf
 ### gost
 - https://files.stroyinf.ru/Data2/1/4293780/4293780211.pdf !!
+- https://meganorm.ru/Data/528/52843.pdf ГОСТ 18629-14-2011
 
 ### Process_Specification_Language
 - https://en.wikipedia.org/wiki/Process_Specification_Language
@@ -27,3 +28,5 @@ PSL (Process Specification Language, язык спецификаций проц�
     - ISO TC 184/SC 4, standards for industrial data
     - Process ontology, ontologies for processes https://en.wikipedia.org/wiki/Process_ontology
       - Методология объектно-процессной обработки https://en.wikipedia.org/wiki/Object_Process_Methodology
+
+- http://ontologydesignpatterns.org/index.php/Ontology_Design_Patterns_._org_(ODP) Object process methodology (OPM) 

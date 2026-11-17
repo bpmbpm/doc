@@ -1,5 +1,5 @@
 ## link
-link 1
+## link 1
 - https://t.me/rusontology/16233
   - https://github.com/aigents/iai/blob/main/docs/2025/ontologies-webstructor-aigents-2025.pdf
   - Тут идея такая, что есть абстрактный бизнес процесс (например, правила проведения сделки, на схеме называется "Method"), экземпляром которого являются реально исполняемые процессы (например, различные сделки, исполняемые в компании и находящиеся на различных этапах исполнения, на схеме называется "Process").
@@ -14,9 +14,10 @@ link 1
 - https://golos.id/ru--upravlenie/@aigents/predstavlenie-sobytii-i-scenariev-prichinno-sledstvennyi-analiz-v-platforme-aigents
 - https://arxiv.org/pdf/1807.02072
 
-link2
+## link2
 https://www.youtube.com/live/Wsfk3BDbZNg?is=CoCkeFMJ_svL9QWL Онтология процессов vs. Онтология объектов
 
+## PSL
 Psl (P Specification Language) вроде как три:
 - Property 1850
 - Process Iso 18629 - кстати там (включая  гост) есть определение онтологии - это в копилку определений онтологий

@@ -2,9 +2,9 @@
 - https://github.com/bpmbpm/doc/blob/main/LD2/process/PSL/intro.md
 
 ## PSL 
-- Property Specification Language (IEEE 1850) — язык свойств на темпоральной логике из мира верификации железа; это то, о чём мы говорили в прошлый раз.
+- *Property* Specification Language (IEEE 1850) — язык свойств на темпоральной логике из мира верификации железа; это то, о чём мы говорили в прошлый раз.
 - Process Specification Language (NIST, ISO 18629) — процессная онтология для обмена информацией о процессах между системами: workflow, планирование, реинжиниринг бизнес-процессов. Формально она описана в KIF/CLIF, а не в LTL — это скорее «сводный словарь процессов», чем язык свойств. В 18629-11—2010 есть определения Онтологии. 
-- Business Property Specification Language (BPSL) — любопытный тёзка: графический язык комплаенс-правил для WS-BPEL, транслирующийся в LTL. Назван «в пику» PSL, и это ещё один аргумент проверять, о какой PSL идёт речь в конкретной статье
+- Business *Property* Specification Language (BPSL) — любопытный тёзка: графический язык комплаенс-правил для WS-BPEL, транслирующийся в LTL. Назван «в пику» PSL, и это ещё один аргумент проверять, о какой PSL идёт речь в конкретной статье
 
 bpm
 - ARIS https://bpmbpm.github.io/doc/BPM/ARIS/SCHEER/BASE/10-0sr6_Method_Manual.pdf ; https://www.claudiubrandas.ro/bachelor/cig/1/aris/ARIS%20Method.pdf

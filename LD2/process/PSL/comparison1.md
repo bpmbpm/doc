@@ -1,5 +1,5 @@
 ## also
-- https://github.com/bpmbpm/doc/blob/main/LD2/process/PSL/intro.md Process
+- https://github.com/bpmbpm/doc/blob/main/LD2/process/PSL/intro.md Property
 
 ## PSL 
 - *Property* Specification Language (IEEE 1850) — язык свойств на темпоральной логике из мира верификации железа; это то, о чём мы говорили в прошлый раз.

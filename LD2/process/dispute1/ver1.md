@@ -13,7 +13,10 @@
   - Согласен, и в этой схеме границы как раз нет. Счет - объект с короткой цепочкой состояний (открыт, действует, закрыт), контракт - такой же объект с длинной. Проводка - объект-событие, поэтому она и константна: случившееся не меняется, ошибку исправляют сторно, то есть новым событием. А то, что процесс ее исполнения не фиксируется - выбор зернистости, для учета она атомарна. "Статичнее" и "динамичнее" тут означает только число переходов.
 - https://golos.id/ru--upravlenie/@aigents/predstavlenie-sobytii-i-scenariev-prichinno-sledstvennyi-analiz-v-platforme-aigents
 - https://arxiv.org/pdf/1807.02072
-- Alexey Neznanov: https://hal.science/hal-05200765v1/file/ALFEDAGHI.pdf
+- Alexey Neznanov: https://hal.science/hal-05200765v1/file/ALFEDAGHI.pdf - The model involves three thimacs: customer, vehicle, and car service, т.е. клиент, машина, автосервис - это и есть thimacs. Структура thimacs построена на пяти генетических действиях: создании, обработке, высвобождении, передаче и получении.
+  - thimacs (thing/machine). Цель этой статьи — предложить более общее применение понятия «процесс» с точными определениями, основанными на концептуальном представлении, называемом «вещь-машина» (thinging machine, TM). ... on the conceptual representation called thinging machine (TM) modeling.
+  - https://www.researchgate.net/publication/335589504_ThingMachine-s_Thimacs_Applied_to_Structural_Description_in_Software_Engineering Аналогично, но с примером не на BPMN, а UML.
+    
 ## link2
 - https://www.youtube.com/live/Wsfk3BDbZNg?is=CoCkeFMJ_svL9QWL Онтология процессов vs. Онтология объектов
 - Alexander Boldachev

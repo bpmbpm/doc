@@ -7,10 +7,10 @@ Ideas_and_Things.md
 
 Приведу несколько картинок:  
 1 База Знаний  
-![ris1](pic/sumo_aris.jpg)
+![ris2](pic/knowledge_base.jpg) 
 
 2 Привязка к SUMO (Первичная / вторичная субстанция – это по Аристотелю)  
-![ris2](pic/knowledge_base.jpg) 
+![ris1](pic/sumo_aris.jpg)
 
 3 Фрагмент SUMO  
 ![ris1](pic/sumo.jpg)

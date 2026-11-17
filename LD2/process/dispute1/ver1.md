@@ -13,7 +13,7 @@
   - Согласен, и в этой схеме границы как раз нет. Счет - объект с короткой цепочкой состояний (открыт, действует, закрыт), контракт - такой же объект с длинной. Проводка - объект-событие, поэтому она и константна: случившееся не меняется, ошибку исправляют сторно, то есть новым событием. А то, что процесс ее исполнения не фиксируется - выбор зернистости, для учета она атомарна. "Статичнее" и "динамичнее" тут означает только число переходов.
 - https://golos.id/ru--upravlenie/@aigents/predstavlenie-sobytii-i-scenariev-prichinno-sledstvennyi-analiz-v-platforme-aigents
 - https://arxiv.org/pdf/1807.02072
-
+- Neznanov: https://hal.science/hal-05200765v1/file/ALFEDAGHI.pdf
 ## link2
 https://www.youtube.com/live/Wsfk3BDbZNg?is=CoCkeFMJ_svL9QWL Онтология процессов vs. Онтология объектов
 

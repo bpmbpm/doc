@@ -1,7 +1,7 @@
 ## link
 ## link 1
 - https://t.me/rusontology/16233
-  - https://github.com/aigents/iai/blob/main/docs/2025/ontologies-webstructor-aigents-2025.pdf
+  - https://github.com/aigents/iai/blob/main/docs/2025/ontologies-webstructor-aigents-2025.pdf Anton Kolonin
   - Тут идея такая, что есть абстрактный бизнес процесс (например, правила проведения сделки, на схеме называется "Method"), экземпляром которого являются реально исполняемые процессы (например, различные сделки, исполняемые в компании и находящиеся на различных этапах исполнения, на схеме называется "Process").
   - ![ris](pic/UFO_ORL.jpg)
   - В этом смысле границы между объектами и процессами размываются. Счет более статичен (хотя его можно открыть и закрыть), контракт по счету заказчика более динамичен, запись о проводке по контракту вообще константна, хотя процесс ее исполнения вообще не фиксируется.
@@ -13,9 +13,14 @@
   - Согласен, и в этой схеме границы как раз нет. Счет - объект с короткой цепочкой состояний (открыт, действует, закрыт), контракт - такой же объект с длинной. Проводка - объект-событие, поэтому она и константна: случившееся не меняется, ошибку исправляют сторно, то есть новым событием. А то, что процесс ее исполнения не фиксируется - выбор зернистости, для учета она атомарна. "Статичнее" и "динамичнее" тут означает только число переходов.
 - https://golos.id/ru--upravlenie/@aigents/predstavlenie-sobytii-i-scenariev-prichinno-sledstvennyi-analiz-v-platforme-aigents
 - https://arxiv.org/pdf/1807.02072
-- Neznanov: https://hal.science/hal-05200765v1/file/ALFEDAGHI.pdf
+- Alexey Neznanov: https://hal.science/hal-05200765v1/file/ALFEDAGHI.pdf
 ## link2
-https://www.youtube.com/live/Wsfk3BDbZNg?is=CoCkeFMJ_svL9QWL Онтология процессов vs. Онтология объектов
+- https://www.youtube.com/live/Wsfk3BDbZNg?is=CoCkeFMJ_svL9QWL Онтология процессов vs. Онтология объектов
+- Alexander Boldachev
+  - Событийная онтология vs объектная https://habr.com/ru/articles/706916/
+  - Акты, классы и семантический сахар https://habr.com/ru/articles/708026/
+  - Executable Ontologies: Synthesizing Event Semantics with Dataflow Architecture https://arxiv.org/abs/2509.09775
+  - Subject-Event Ontology Without Global Time: Foundations and Execution Semantics https://arxiv.org/abs/2510.18040
 
 ## PSL
 Psl (P Specification Language) вроде как три:

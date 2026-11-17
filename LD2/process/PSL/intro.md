@@ -1,4 +1,6 @@
-## PSL 
+## PSL
+### also
+- https://github.com/bpmbpm/doc/blob/main/LD2/process/PSL/comparison1.md
 ### wiki
 - https://en.wikipedia.org/wiki/Property_Specification_Language ;
 - ru https://sewiki.ru/PSL ; https://support.kaspersky.ru/kos-community-edition/1.1/ssp_descr_psl_syntax_intro

@@ -11,8 +11,9 @@
     - То, что у вас на схеме названо Method, у нас называется сценарием. Это модель процесса, и она входит в саму онтологию. Сценарием мы называем ее потому, что она описывает то, что может быть выполнено, и выполняется по заданной схеме. А результат выполнения - как раз цепочка состояний.
     - сейчас у “онтологов” это называется 4d-fluents 
   - Согласен, и в этой схеме границы как раз нет. Счет - объект с короткой цепочкой состояний (открыт, действует, закрыт), контракт - такой же объект с длинной. Проводка - объект-событие, поэтому она и константна: случившееся не меняется, ошибку исправляют сторно, то есть новым событием. А то, что процесс ее исполнения не фиксируется - выбор зернистости, для учета она атомарна. "Статичнее" и "динамичнее" тут означает только число переходов.
-- https://golos.id/ru--upravlenie/@aigents/predstavlenie-sobytii-i-scenariev-prichinno-sledstvennyi-analiz-v-platforme-aigents
-- https://arxiv.org/pdf/1807.02072
+- Anton Kolonin Fig.2 Data Model
+  - https://golos.id/ru--upravlenie/@aigents/predstavlenie-sobytii-i-scenariev-prichinno-sledstvennyi-analiz-v-platforme-aigents
+  - https://arxiv.org/pdf/1807.02072
 - thimacs (thing/machine): 
   - Alexey Neznanov: https://hal.science/hal-05200765v1/file/ALFEDAGHI.pdf - The model involves three thimacs: customer, vehicle, and car service, т.е. клиент, машина, автосервис - это и есть thimacs. Структура thimacs построена на пяти генетических действиях: создании, обработке, высвобождении, передаче и получении.  
   Цель этой статьи — предложить более общее применение понятия «процесс» с точными определениями, основанными на концептуальном представлении, называемом «вещь-машина» (thinging machine, TM). ... on the conceptual representation called thinging machine (TM) modeling.

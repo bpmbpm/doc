@@ -6,11 +6,13 @@
 - [Машина, которая никогда не останавливается: как одно предложение поставило предел человеческому познанию](https://habr.com/ru/articles/981908/)
 ### programm
 - [Регулярная катастрофа и как её избежать. Подход к регулярным выражениям](https://habr.com/ru/companies/sberdevices/articles/954296/)
-### также
-- [BPM/workflow/math](https://github.com/bpmbpm/doc/tree/main/BPM/workflow/math)
-- [Математика креативности](https://habr.com/ru/articles/946764/)
-- Теория связей https://github.com/bpmbpm/doc/tree/main/METAMODEL/LINK
+### also
+- https://github.com/bpmbpm/doc/tree/main/LD2/logic
 - https://github.com/bpmbpm/doc/tree/main/METAMODEL
+- BPM/workflow/math https://github.com/bpmbpm/doc/tree/main/BPM/workflow/math
+- Теория связей https://github.com/bpmbpm/doc/tree/main/METAMODEL/LINK
+- [Математика креативности](https://habr.com/ru/articles/946764/)
+  
 ### Теория всего
 - [Теория всего или С(Х,Y) Парадигма](https://habr.com/ru/articles/973460/)
 - [Единая теория информации: от стохастической метрики к непрерывному пространству и эффективной гравитации](https://habr.com/ru/articles/971362/) ; [Единый Принцип Организации (ЕПО)](https://github.com/Jobsbka/UPO)

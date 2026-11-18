@@ -19,3 +19,6 @@
 
 ## base
 - [Велосипедостроение: создаем физику для собственной Вселенной](https://habr.com/ru/articles/1105728/)
+
+## new
+- https://iphras.ru/26_12_01_evans.htm

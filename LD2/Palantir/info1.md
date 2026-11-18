@@ -1,4 +1,8 @@
 ## 1
+- https://www.palantir.com/docs/foundry/ontology/overview
+- развёрнутое описание от Палантира: https://blog.palantir.com/connecting-ai-to-decisions-with-the-palantir-ontology-c73f7b0a1a72
+
+## 2
 - https://t.me/rusontology/16273 Хозяйке на заметку: Sutra-OS (https://github.com/0nelight/sutra-os) - An open-source, self-hosted ontology platform. Your data becomes one model you own: typed, linked, changed only through rules the server enforces, and every number traces back to its source.
 
 В описании ссылаются на палантировский пост: Ontology-Oriented Software Development https://blog.palantir.com/ontology-oriented-software-development-68d7353fdb12

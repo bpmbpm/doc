@@ -1,0 +1,2 @@
+## 1
+- https://cs.hse.ru/dse/news/1213776496.html Доклад под названием “Pillars and Foundations of Object-Attribute Data: A Journey from Philosophy to Visualization, Venturing into Physics, Mathematics, Logic, and Programming” систематизирует современные представления об объекто-признаковых данных и сравнивает онтики философов, семиотиков, логиков, математиков, физиков, метрологов, исследователей в области наук о данных, экспертов в прикладных областях, программистов и специалистов по проектированию взаимодействия с пользователем. 

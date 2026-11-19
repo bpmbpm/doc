@@ -414,3 +414,656 @@
 - https://dvcs.w3.org/hg/prov/raw-file/tip/ontology/Overview.html **Модель данных PROV** [ PROV-DM ] представляет собой набор концепций для представления информации о происхождении данных в различных областях применения. В этом документе приведено сопоставление модели данных PROV с онтологией PROV с использованием языка онтологий OWL2 [ OWL2-OVERVIEW ].  
 Мы кратко представим некоторые термины моделирования OWL2, которые будут использоваться для описания онтологии PROV. Экземпляр OWL2 — это отдельный объект в предметной области, например, человек по имени Алиса или автомобиль по имени KITT. Набор объектов, обладающих общими характеристиками, образует класс . Person и Car — примеры классов, представляющих наборы отдельных людей и автомобилей соответственно. Свойства объектов OWL2 используются для связывания объектов, классов или создания иерархии свойств. Например, свойство объекта "hasOwner" можно использовать для связывания автомобиля с человеком. Свойства типов данных OWL2 используются для связывания объектов или классов со значениями данных, включая типы данных XML Schema [ XMLSCHEMA11-2 ].  
 ![ris](https://dvcs.w3.org/hg/prov/raw-file/tip/ontology/diagrams/starting-points.svg)
+
+## 2
+1 Расшифруй: 
+Таким образом, вашу идею можно сформулировать так: объект — это устойчивый идентифицируемый узел состояния; процесс — это авторизованная среда операций; событие — атомарный факт изменения или публикации; а меж процессное взаимодействие — это управляемый набор передач, ссылок, подписок, производных объектов и политик разрешения конфликтов.
+
+2 Если добавить еще "Множество состояний", то это видимо усложнит теорию? Также не понятно - одно событие может быть в разных процессах. Однако в каждом процесс - конечный набор событий. Более того, разные процессы могут иметь одни и теже операции (функции в ARIS). Покажи варианты учета событий.
+
+3 Снабжай рассуждения схемами в mermaid (в названии узлов не должно быть скобок и кавычек). Проиллюстрируй ранее указанные операции (внутри и меж процессные) и свои новые предложения.  
+
+---
+
+Да, вы правы по всем четырём пунктам. Ссылка действительно устарела; корректнее опираться на актуальный репозиторий BFO и его спецификацию. В BFO объект — это **continuant** (сохраняет идентичность во времени), а процесс — **occurrent** (развертывается во времени и зависит от участвующих continuant’ов). [ontology.buffalo](https://ontology.buffalo.edu/smith/articles/Functions-in-BFO.pdf)
+
+Ниже я уточняю модель и убираю из неё избыточность: **множество состояний не обязательно делать глобальным**; лучше сделать его локальным для типа объекта, а события — общими фактами, которые разные процессы могут по-разному интерпретировать.
+
+## 1. Исправленная ссылка на BFO
+
+Старый файл `BFO_Nov20.docx` недоступен. Актуальная точка входа — сайт BFO: [https://ontology.buffalo.edu/bfo/](https://ontology.buffalo.edu/bfo/) , а спецификация BFO 2.0 размещена в репозитории `BFO-ontology/BFO`. [ontology.buffalo](https://ontology.buffalo.edu/smith/articles/Functions-in-BFO.pdf)
+
+Ключевые понятия BFO:
+
+- `Continuant` — сущность, сохраняющая идентичность во времени: объект, качество, роль.
+- `Occurrent` — сущность, имеющая временные части: процесс, событие, начало и завершение процесса.
+- Процесс зависит от участвующих в нём continuant’ов; объект участвует в процессе. [ontology.buffalo](https://ontology.buffalo.edu/smith/articles/Material_Entities.pdf)
+
+В вашей модели это соответствует следующему:
+
+```mermaid
+flowchart LR
+    Object --> participates_in --> Process
+    Process --> creates --> Object
+    Process --> changes --> State
+    State --> belongs_to --> Object
+```
+
+Но BFO не решает инженерные вопросы владения, ссылок, подписок и конфликтов. Для этого нужна дополнительная модель — ваша ПОМ.
+
+## 2. Что такое «владелец»
+
+**Владелец — это не обязательно процесс.** Это более точно назвать **контролирующим субъектом или ответственностью**, а не «владением» в бытовом смысле.
+
+У объекта могут быть несколько независимых ролей:
+
+| Роль | Кто может быть носителем | Что означает |
+|---|---|---|
+| `custodian` | Пользователь, отдел, система, организация | Кто отвечает за существование и целостность объекта |
+| `responsibleProcess` | Экземпляр процесса | Какой процесс сейчас ведёт жизненный цикл объекта |
+| `author` | Пользователь или система | Кто создал объект |
+| `editor` | Пользователь, роль, процесс | Кто имеет право изменять |
+| `reader` | Пользователь, роль, процесс | Кто может читать |
+| `approver` | Пользователь или роль | Кто может перевести в утверждающее состояние |
+| `notifiedParty` | Пользователь, процесс, система | Кого уведомляют о событии |
+
+Пример заявления:
+
+```mermaid
+flowchart TD
+    Application --> custodian --> RecordsDepartment
+    Application --> responsibleProcess --> ApprovalProcess
+    Application --> author --> Employee
+    Application --> approver --> Manager
+    Application --> reader --> LegalDepartment
+    Application --> notifiedParty --> Applicant
+```
+
+То есть в предыдущем ответе выражение:
+
+`owner(o) = p`
+
+было слишком сильным. Лучше использовать отношение **ответственности процесса**:
+
+`responsibleFor(p, o)`
+
+Оно означает: *экземпляр процесса `p` в данный момент уполномочен вести объект `o` по определённым правилам*, но не обязательно является его единственным «хозяином».
+
+Формально:
+
+`responsibleFor : P × O × T → Bool`
+
+где:
+
+- `P` — множество процессов;
+- `O` — множество объектов;
+- `T` — моменты времени.
+
+Например:
+
+`responsibleFor(Согласование_заявления, Заявление_17, t₁) = true`  
+`responsibleFor(Утверждение_заявления, Заявление_17, t₂) = true`
+
+При этом юридический отдел может иметь лишь право чтения:
+
+`can(Юридический_отдел, Заявление_17, read) = true`  
+`can(Юридический_отдел, Заявление_17, update) = false`
+
+```mermaid
+flowchart LR
+    ApprovalProcess --> responsibleFor --> Application
+    LegalDepartment --> canRead --> Application
+    Manager --> canApprove --> Application
+    Applicant --> receivesEventsAbout --> Application
+```
+
+**Вывод:** слово «владелец» лучше заменить на `custodian` или `responsibleProcess`. Владелец отвечает за объект; ответственный процесс ведёт его текущую обработку; права определяют, что разрешено другим участникам.
+
+## 3. Расшифровка итоговой формулы
+
+Фраза:
+
+> объект — это устойчивый идентифицируемый узел состояния; процесс — это авторизованная среда операций; событие — атомарный факт изменения или публикации; а межпроцессное взаимодействие — это управляемый набор передач, ссылок, подписок, производных объектов и политик разрешения конфликтов.
+
+означает следующее.
+
+### Объект — узел состояния
+
+Объект — это не просто запись в базе. Это сущность с идентификатором, которая существует во времени и имеет изменяющееся состояние.
+
+Пример:
+
+`Заявление №17`
+
+Оно остаётся **тем же самым заявлением**, даже если меняется статус:
+
+`создано → на_согласовании → согласовано → утверждено`
+
+Формально:
+
+`id(Заявление_17) = id(Заявление_17) при всех t`
+
+но:
+
+`state(Заявление_17, t₁) ≠ state(Заявление_17, t₂)`
+
+```mermaid
+flowchart LR
+    Created --> UnderReview --> Approved --> Archived
+```
+
+### Процесс — среда операций
+
+Процесс — это не просто последовательность шагов. Это среда, в которой определены:
+
+- какие объекты можно использовать;
+- какие операции разрешены;
+- какие роли выполняют действия;
+- какие предусловия должны быть выполнены;
+- какие события могут быть опубликованы;
+- куда объект может быть передан дальше.
+
+Пример:
+
+`Процесс согласования заявления`
+
+может разрешать:
+
+`read, comment, approve, reject, requestChanges`
+
+но не разрешать:
+
+`delete, publishToPublic, createContract`
+
+```mermaid
+flowchart TD
+    ApprovalProcess --> permits --> Read
+    ApprovalProcess --> permits --> Comment
+    ApprovalProcess --> permits --> Approve
+    ApprovalProcess --> permits --> Reject
+    ApprovalProcess --> forbids --> Delete
+    ApprovalProcess --> forbids --> PublishPublic
+```
+
+### Событие — атомарный факт
+
+Событие — это не «действие» и не «состояние». Это зафиксированный факт, что **что-то уже произошло**.
+
+Примеры:
+
+- `Заявление_17 создано`
+- `Заявление_17 отправлено на согласование`
+- `Заявление_17 утверждено`
+- `Заявление_17 передано в архив`
+
+Формально:
+
+`e = objectId, eventType, payload, timestamp, sourceProcess`
+
+Событие не меняет объект напрямую. Оно **фиксирует**, что изменение уже произошло.
+
+```mermaid
+flowchart LR
+    ApprovalProcess --> publishes --> ApplicationApprovedEvent
+    ApplicationApprovedEvent --> describes --> Application
+    NotificationProcess --> consumes --> ApplicationApprovedEvent
+```
+
+### Межпроцессное взаимодействие
+
+Процессы не обязаны напрямую изменять объекты друг друга. Они могут взаимодействовать через:
+
+- передачу ответственности;
+- ссылку на объект;
+- подписку на события;
+- публикацию события;
+- создание производного объекта;
+- блокировку или резервирование;
+- версионирование и слияние.
+
+```mermaid
+flowchart LR
+    ProcessA --> handoff --> ProcessB
+    ProcessA --> publishes --> Event
+    ProcessB --> subscribes --> Event
+    ProcessB --> creates --> DerivedObject
+    ProcessC --> references --> Object
+```
+
+## 4. Состояния и события: как не усложнять теорию
+
+Добавление «множества состояний» **не обязано усложнять теорию**, если не делать его глобальным.
+
+Плохой вариант — один общий список состояний для всех объектов:
+
+`S = {создано, согласовано, утверждено, активно, закрыто, удалено, …}`
+
+Это быстро становится противоречивым: состояние `согласовано` имеет смысл для заявления, но не для физического предмета или платежа.
+
+Лучше определить состояния **по типу объекта**:
+
+`States : O → ℘S`
+
+где `℘S` — множество всех подмножеств `S`.
+
+То есть:
+
+`States(Заявление) = {создано, на_согласовании, согласовано, утверждено, отклонено, архивировано}`
+
+`States(Договор) = {черновик, на_согласовании, подписан, расторгнут}`
+
+`States(Материал) = {на_складе, зарезервирован, выдан, израсходован}`
+
+А сам объект хранит лишь текущее состояние:
+
+`o.state ∈ States(type(o))`
+
+```mermaid
+flowchart TD
+    ObjectType --> defines --> StateMachine
+    StateMachine --> contains --> Created
+    StateMachine --> contains --> UnderReview
+    StateMachine --> contains --> Approved
+    StateMachine --> contains --> Rejected
+    StateMachine --> contains --> Archived
+```
+
+## События: один факт — много интерпретаций
+
+Вы правильно заметили: одно и то же событие может быть важно для нескольких процессов.
+
+Например:
+
+`Заявление_17 утверждено`
+
+может быть интересно:
+
+- процессу уведомлений;
+- процессу архивирования;
+- процессу формирования приказа;
+- процессу бухгалтерского учёта;
+- процессу контроля сроков.
+
+Но **событие не принадлежит процессу**. Оно принадлежит объекту или предметной области, а процессы лишь подписываются на него.
+
+Формально:
+
+`Event = objectId, eventType, payload, timestamp, sourceProcess`
+
+Подписка:
+
+`Subscription = subscriberProcess, eventPattern, handler`
+
+Тогда:
+
+`on e ∈ eventPattern ⇒ handler(subscriberProcess, e)`
+
+```mermaid
+flowchart TD
+    ApplicationApprovedEvent --> consumed_by --> NotificationProcess
+    ApplicationApprovedEvent --> consumed_by --> ArchiveProcess
+    ApplicationApprovedEvent --> consumed_by --> OrderCreationProcess
+    ApplicationApprovedEvent --> consumed_by --> AccountingProcess
+    ApplicationApprovedEvent --> consumed_by --> DeadlineControlProcess
+```
+
+Это не означает, что каждый процесс «содержит» событие. Каждый процесс имеет **собственную проекцию** события:
+
+`view(p, e) = relevantInformationFor(p, e)`
+
+Например:
+
+- для уведомлений важны заявитель и канал связи;
+- для архива важны срок хранения и категория документа;
+- для бухгалтерии важны сумма, статья расходов и контрагент;
+- для контроля сроков важны дедлайн и ответственный.
+
+```mermaid
+flowchart LR
+    Event --> projection --> NotificationView
+    Event --> projection --> ArchiveView
+    Event --> projection --> AccountingView
+    Event --> projection --> ControlView
+```
+
+## Одинаковые операции в разных процессах
+
+Вы также правы: разные процессы могут иметь одинаковые операции, как функции в ARIS. Например, `согласовать`, `утвердить`, `зарегистрировать`, `архивировать` могут повторяться.
+
+Поэтому операцию нужно отделить от процесса.
+
+`Operation = operationType, preconditions, effects, permissions, eventTemplate`
+
+Процесс не определяет операцию заново, а **использует** её с собственной конфигурацией:
+
+`ProcessOperation = process, operation, role, rules, eventMapping`
+
+Пример:
+
+| Операция | Процесс согласования | Процесс утверждения | Процесс архивирования |
+|---|---|---|---|
+| `approve` | Переводит в `согласовано` | Переводит в `утверждено` | Не используется |
+| `archive` | Не используется | Может быть разрешена | Переводит в `архивировано` |
+| `read` | Разрешена | Разрешена | Разрешена |
+| `comment` | Разрешена | Разрешена | Обычно запрещена |
+
+Формально:
+
+`can(p, o, a) = permissionPolicy(p, o, a) ∧ stageAllows(p, a) ∧ roleAllows(actor, a)`
+
+```mermaid
+flowchart TD
+    OperationApprove --> used_by --> ApprovalProcess
+    OperationApprove --> used_by --> ReviewProcess
+    OperationArchive --> used_by --> ArchiveProcess
+    OperationRead --> used_by --> ApprovalProcess
+    OperationRead --> used_by --> ReviewProcess
+    OperationRead --> used_by --> ArchiveProcess
+```
+
+## Варианты учёта событий
+
+Есть три практичных варианта. Их можно комбинировать.
+
+### Вариант A: события принадлежат объекту
+
+Событие привязано к жизненному циклу объекта:
+
+`events(o) = (e₁, e₂, …, eₙ)`
+
+Любой процесс может подписаться, но не становится владельцем события.
+
+```mermaid
+flowchart TD
+    Application --> eventLog --> CreatedEvent
+    Application --> eventLog --> SentForReviewEvent
+    Application --> eventLog --> ApprovedEvent
+    CreatedEvent --> read_by --> ProcessA
+    SentForReviewEvent --> read_by --> ProcessB
+    ApprovedEvent --> read_by --> ProcessC
+```
+
+Плюс: простая история и аудит.  
+Минус: при очень большом числе процессов журнал становится перегруженным.
+
+### Вариант B: события принадлежат процессу
+
+Каждый процесс публикует собственные события:
+
+`events(p) = (e₁, e₂, …, eₙ)`
+
+Другие процессы подписываются на события конкретного процесса.
+
+```mermaid
+flowchart LR
+    ReviewProcess --> publishes --> ReviewCompletedEvent
+    ApprovalProcess --> publishes --> ApplicationApprovedEvent
+    NotificationProcess --> subscribes --> ReviewCompletedEvent
+    ArchiveProcess --> subscribes --> ApplicationApprovedEvent
+```
+
+Плюс: понятна ответственность за публикацию.  
+Минус: труднее получить единую историю объекта, если события разбросаны по процессам.
+
+### Вариант C: события принадлежат предметной области
+
+Есть общий журнал доменных событий:
+
+`DomainEventLog`
+
+Каждое событие содержит:
+
+`objectId, eventType, sourceProcess, timestamp, payload`
+
+Процессы не владеют событиями, а лишь являются их источниками или потребителями.
+
+```mermaid
+flowchart TD
+    ProcessA --> writes --> DomainEventLog
+    ProcessB --> writes --> DomainEventLog
+    ProcessC --> writes --> DomainEventLog
+    DomainEventLog --> read_by --> ProcessD
+    DomainEventLog --> read_by --> ProcessE
+    DomainEventLog --> read_by --> ProcessF
+```
+
+Плюс: единая история, независимость процессов, хорошая масштабируемость.  
+Минус: нужна инфраструктура событий и соглашения о схемах событий.
+
+**Рекомендация:** используйте вариант C как основной, а вариант A — как проекцию: для каждого объекта можно построить его историю из общего журнала:
+
+`history(o) = filter(DomainEventLog, e.objectId = o.id)`
+
+## Обновлённая формальная модель
+
+Базовые сущности:
+
+- `O` — типы объектов.
+- `P` — типы процессов.
+- `I` — идентификаторы.
+- `T` — моменты времени.
+- `S` — универсум возможных состояний.
+- `A` — типы операций.
+- `E` — типы событий.
+- `R` — роли.
+- `U` — пользователи или агенты.
+
+Экземпляр объекта:
+
+`o(t) = id, type, state, attrs, custodian, responsibleProcess, version, lifecycle`
+
+где:
+
+`state ∈ States(type(o))`
+
+`custodian ∈ U ∪ OrgUnit ∪ System`
+
+`responsibleProcess ∈ P ∪ {∅}`
+
+Экземпляр процесса:
+
+`π(t) = pid, ptype, stage, participants, context, activeObjects`
+
+Операция:
+
+`a = operationType, preconditions, effects, permissions, eventTemplate`
+
+Право на операцию:
+
+`can(actor, o, a, p, t) = roleAllows(actor, a) ∧ policyAllows(p, o, a) ∧ stageAllows(p, a) ∧ preconditions(o, a)`
+
+Событие:
+
+`e = eventId, objectId, eventType, payload, timestamp, sourceProcess, actor`
+
+Публикация:
+
+`publish(p, o, e) ⇒ DomainEventLog ← DomainEventLog ∪ {e}`
+
+Подписка:
+
+`subscribe(p₂, pattern, handler)`
+
+Обработка:
+
+`e ∈ pattern ⇒ handler(p₂, e)`
+
+## Схема полной модели
+
+```mermaid
+flowchart TD
+    ObjectType --> defines --> ObjectStateModel
+    ObjectStateModel --> defines --> AllowedStates
+    ObjectStateModel --> defines --> AllowedTransitions
+
+    ProcessType --> defines --> ProcessStages
+    ProcessType --> defines --> ProcessRules
+    ProcessType --> defines --> ProcessOperations
+
+    OperationType --> used_by --> ProcessType
+    OperationType --> has --> Preconditions
+    OperationType --> has --> Effects
+    OperationType --> has --> Permissions
+    OperationType --> has --> EventTemplate
+
+    ObjectInstance --> has --> CurrentState
+    ObjectInstance --> has --> Custodian
+    ObjectInstance --> has --> ResponsibleProcess
+    ObjectInstance --> has --> Version
+    ObjectInstance --> has --> History
+
+    ProcessInstance --> operates_on --> ObjectInstance
+    ProcessInstance --> publishes --> DomainEvent
+    DomainEvent --> stored_in --> DomainEventLog
+    DomainEventLog --> consumed_by --> OtherProcessInstance
+```
+
+## Операции внутри процесса
+
+```mermaid
+flowchart TD
+    ProcessInstance --> create --> ObjectInstance
+    ProcessInstance --> read --> ObjectInstance
+    ProcessInstance --> update --> ObjectInstance
+    ProcessInstance --> transition --> ObjectInstance
+    ProcessInstance --> validate --> ObjectInstance
+    ProcessInstance --> lock --> ObjectInstance
+    ProcessInstance --> clone --> ObjectCopy
+    ProcessInstance --> split --> ObjectPartA
+    ProcessInstance --> split --> ObjectPartB
+    ProcessInstance --> merge --> MergedObject
+    ProcessInstance --> archive --> ObjectInstance
+    ProcessInstance --> destroy --> ObjectInstance
+```
+
+Пример:
+
+`Согласование_заявления` создаёт объект:
+
+`create(Согласование_заявления, Заявление, attrs)`
+
+Затем меняет состояние:
+
+`transition(Согласование_заявления, Заявление_17, на_согласовании)`
+
+И публикует событие:
+
+`publish(Согласование_заявления, Заявление_17, заявление_отправлено_на_согласование)`
+
+## Операции между процессами
+
+```mermaid
+flowchart LR
+    ProcessA --> handoff --> ProcessB
+    ProcessA --> delegate --> ProcessB
+    ProcessA --> share --> ProcessB
+    ProcessA --> publish --> DomainEvent
+    ProcessB --> subscribe --> DomainEvent
+    ProcessB --> derive --> DerivedObject
+    ProcessC --> reference --> ObjectInstance
+    ProcessA --> fork --> BranchObjectA
+    ProcessA --> fork --> BranchObjectB
+    BranchObjectA --> merge --> MergedObject
+    BranchObjectB --> merge --> MergedObject
+    ProcessA --> reserve --> ObjectInstance
+```
+
+### Передача ответственности
+
+`handoff(p₁, p₂, o)`
+
+Процесс `p₁` прекращает быть ответственным за объект, а `p₂` становится ответственным.
+
+```mermaid
+flowchart LR
+    ReviewProcess --> handoff --> ApprovalProcess
+    ApprovalProcess --> becomes_responsible_for --> Application
+```
+
+### Делегирование прав
+
+`delegate(p₁, p₂, o, rights)`
+
+`p₁` остаётся ответственным, но `p₂` получает ограниченные права.
+
+```mermaid
+flowchart LR
+    ApprovalProcess --> delegates --> LegalReviewProcess
+    LegalReviewProcess --> limited_rights --> Application
+```
+
+### Совместная работа
+
+`share(p₁, p₂, o, rights, conflictPolicy)`
+
+Оба процесса видят объект, но изменения регулируются политикой.
+
+```mermaid
+flowchart LR
+    ProcessA --> shared_access --> ObjectInstance
+    ProcessB --> shared_access --> ObjectInstance
+    ConflictPolicy --> governs --> ConcurrentChanges
+```
+
+### Публикация и подписка
+
+`publish(p₁, o, e)`  
+`subscribe(p₂, pattern, handler)`
+
+```mermaid
+flowchart LR
+    ApprovalProcess --> publishes --> ApplicationApprovedEvent
+    ApplicationApprovedEvent --> consumed_by --> NotificationProcess
+    ApplicationApprovedEvent --> consumed_by --> ArchiveProcess
+    ApplicationApprovedEvent --> consumed_by --> OrderCreationProcess
+```
+
+### Производный объект
+
+`derive(p₂, o, rule) → o′`
+
+```mermaid
+flowchart LR
+    Application --> source_of --> Order
+    ApprovalProcess --> creates --> Order
+    Order --> references --> Application
+```
+
+### Ссылка без копирования
+
+`reference(p₂, o)`
+
+```mermaid
+flowchart LR
+    ObjectInstance --> referenced_by --> ProcessC
+    ProcessC --> stores --> Reference
+    Reference --> points_to --> ObjectInstance
+```
+
+### Форк и слияние
+
+`fork(p, o) → o₁, o₂`  
+`merge(p, o₁, o₂, conflictPolicy) → o₃`
+
+```mermaid
+flowchart TD
+    OriginalObject --> fork --> BranchA
+    OriginalObject --> fork --> BranchB
+    BranchA --> merge --> MergedObject
+    BranchB --> merge --> MergedObject
+```
+
+## Уточнённая итоговая формулировка
+
+Ваша теория может звучать так:
+
+> **Объект — это идентифицируемая сущность, сохраняющая идентичность во времени и обладающая типизированным жизненным циклом. Процесс — это авторизованная среда выполнения операций над объектами. Состояние объекта локально для его типа. Событие — атомарный зафиксированный факт, порождённый процессом и относящийся к объекту. Разные процессы могут читать, интерпретировать и реагировать на одно и то же событие. Межпроцессное взаимодействие осуществляется через передачу ответственности, делегирование прав, совместный доступ, ссылки, публикации, подписки, производные объекты, версионирование и политики разрешения конфликтов.**
+
+Это лучше прежней формулировки, потому что:
+
+- не предполагает, что объект принадлежит процессу;
+- разделяет ответственность, права и участие;
+- делает состояния локальными для типа объекта;
+- позволяет одному событию иметь много потребителей;
+- допускает повторное использование одинаковых операций разными процессами;
+- не требует заранее фиксировать все события в каждом процессе.

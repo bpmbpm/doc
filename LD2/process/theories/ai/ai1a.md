@@ -1060,3 +1060,8 @@ flowchart TD
 `f(e_in, o_target, o_context) = e_out, ΔS(o_target)`
 
 Это близко к EPC по структуре, к Event Calculus — по семантике изменения состояния, и к сетям Петри — по атомарности перехода. [link.springer](https://link.springer.com/content/pdf/10.1007/0-387-34456-X_16.pdf)
+
+## 2.1 link
+Event Calculus
+- https://translated.turbopages.org/proxy_u/en-ru.ru.848b27df-6aff09f2-c7272b84-74722d776562/https/en.wikipedia.org/wiki/Event_calculus
+- https://dai.fmph.uniba.sk/~sefranek/kri/handbook/chapter17.pdf

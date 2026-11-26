@@ -1,6 +1,7 @@
 ## 4-MP
 - https://cbr.ru/Crosscut/LawActs/File/12208
-
+  - [https://habr.com/ru/companies/alp_itsm/articles/1112070/](https://habr.com/ru/companies/alp_itsm/articles/1112070/#comment_30679806)
+  
 Все определения «операционная устойчивость» и «операционная надежность» согласно Банку России (4-МР, 850-П, СТО БР БФБО-1.5-2023, ГОСТ Р 57580.3-2022 и т.п.).  
 Укажи их взаимосвязь, схожесть, различие. 
 

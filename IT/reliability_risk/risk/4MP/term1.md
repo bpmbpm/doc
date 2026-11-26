@@ -195,20 +195,22 @@
 
 Я помогу подготовить шаблоны регламентов или метрики КПУР. [15] 
 
-[1] [https://continuity.pro](https://continuity.pro/?p=756)
-[2] [https://rtmtech.ru](https://rtmtech.ru/news/4-mr-bank-rossii/)
-[3] [https://www.profit-security.ru](https://www.profit-security.ru/tpost/9z1kg50571-polozheniya-banka-rossii-779-p-i-787-p-r)
-[4] [https://www.cbr.ru](https://www.cbr.ru/Queries/UniDbQuery/File/90134/2857)
-[5] [https://www.garant.ru](https://www.garant.ru/products/ipo/prime/doc/414360383/)
-[6] [https://www.consultant.ru](https://www.consultant.ru/document/cons_doc_LAW_425816/)
-[7] [https://isbd.ru](https://isbd.ru/p16788)
-[8] [https://rtmtech.ru](https://rtmtech.ru/news/bank-rossii-opublikoval-polozhenie-850-p/)
+[1] [https://continuity.pro](https://continuity.pro/?p=756)  
+Еще одно новая сущность: планы обеспечения (восстановления) операционной устойчивости, операционной надежности для каждого сценария нарушения операционной устойчивости и (или) сценария нарушения операционной надежности соответственно. Подразумевается, что эти планы будут модулями уже существующего Плана ОНиВД. 
+
+[2] [https://rtmtech.ru](https://rtmtech.ru/news/4-mr-bank-rossii/)  
+[3] [https://www.profit-security.ru](https://www.profit-security.ru/tpost/9z1kg50571-polozheniya-banka-rossii-779-p-i-787-p-r)  
+[4] [https://www.cbr.ru](https://www.cbr.ru/Queries/UniDbQuery/File/90134/2857)  
+[5] [https://www.garant.ru](https://www.garant.ru/products/ipo/prime/doc/414360383/)  
+[6] [https://www.consultant.ru](https://www.consultant.ru/document/cons_doc_LAW_425816/)  
+[7] [https://isbd.ru](https://isbd.ru/p16788)  
+[8] [https://rtmtech.ru](https://rtmtech.ru/news/bank-rossii-opublikoval-polozhenie-850-p/)  
 [9] [https://edu.softline.com](https://edu.softline.com/news/operatsionnaya-nadezhnost-finansovykh-organizatsiy-kto-obyazan-vypolnyat-trebovaniya-banka-rossii/)
-[10] [https://ibdarb.ru](https://ibdarb.ru/shedule/5/event26779/)
-[11] [https://www.consultant.ru](https://www.consultant.ru/document/cons_doc_LAW_538263/)
-[12] [https://rtmtech.ru](https://rtmtech.ru/articles/operational-reliability/)
-[13] [https://rtmtech.ru](https://rtmtech.ru/services/779p-787p/)
-[14] [https://hh.ru](https://hh.ru/vacancy/134338572)
+[10] [https://ibdarb.ru](https://ibdarb.ru/shedule/5/event26779/)  
+[11] [https://www.consultant.ru](https://www.consultant.ru/document/cons_doc_LAW_538263/)  
+[12] [https://rtmtech.ru](https://rtmtech.ru/articles/operational-reliability/)  
+[13] [https://rtmtech.ru](https://rtmtech.ru/services/779p-787p/)  
+[14] [https://hh.ru](https://hh.ru/vacancy/134338572)  
 [15] [https://www.consultant.ru](https://www.consultant.ru/document/cons_doc_LAW_538263/ca70e1c66262f5ce975c482b829fa8333303844b/)
 
 

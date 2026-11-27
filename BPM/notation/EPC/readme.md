@@ -10,4 +10,5 @@
 - https://github.com/bpmbpm/doc/blob/main/METAMODEL/PROCESS/EPC/epc_mermaid.md
 
 ## 2
+- https://infostart.ru/1c/
 - [Рисуем процессы в СППР в нотации EPC](https://infostart.ru/1c/tools/1580249/)
